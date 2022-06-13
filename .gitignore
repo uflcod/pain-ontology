@@ -35,5 +35,6 @@ temp/
 *.temp
 
 # temp files create during extract process
+temp-mirror.owl
 temp-mireot.owl
 temp-star-pain.owl
