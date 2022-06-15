@@ -274,9 +274,19 @@ code{
     <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "http://purl.obolibrary.org/obo/pain.owl",
+    "@id": "http://http://purl.obolibrary.org/obo/pain.owl",
     "@type": [
       "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/creator": [
+      {
+        "@value": "https://orcid.org/0000-0001-9625-1899 Bill Duncan"
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@value": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
     ],
     "https://schema.org/name": [
       {
@@ -298,7 +308,7 @@ code{
               <strong>IRI</strong>
             </dt>
             <dd>
-              <code>http://purl.obolibrary.org/obo/pain.owl</code>
+              <code>http://http://purl.obolibrary.org/obo/pain.owl</code>
             </dd>
           </div>
           <div>
@@ -306,6 +316,22 @@ code{
               <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
             </dt>
             <dd><p>Pain Ontology</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/creator" title="An entity responsible for making the resource. Defined in DCMI Metadata Terms">Creator</a>
+            </dt>
+            <dd>
+              <a href="https://orcid.org/0000-0001-9625-1899 Bill Duncan">https://orcid.org/0000-0001-9625-1899 Bill Duncan</a>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/license" title="A legal document giving official permission to do something with the resource. Defined in DCMI Metadata Terms">License</a>
+            </dt>
+            <dd>
+              <a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a>
+            </dd>
           </div>
         </dl>
       </div>
@@ -328,14 +354,25 @@ code{
               </th>
               <td>
                 <ul>
-                  <li><p>See http://ontology.buffalo.edu/smith/articles/pain.pdf page 6.</p></li>
                   <li><p>a bodily process in an organism S involving two integrated levels:</p>
 <p>(a) activation of the nociceptive system and associated emotion generating brain components of S, and</p>
 <p>(b) a simultaneous aversive sensory and emotional experience on the part of S,</p>
 <p>where (b) is phenomenologically similar to the sort of aversive experience involved in PCT pain.</p></li>
+                  <li><p>See http://ontology.buffalo.edu/smith/articles/pain.pdf page 6.</p></li>
                   <li><p>‘Phenomenologically similar’ means inter alia: (1) that the experience is ‘of’ or is ‘targeted towards’ some region R of the body of S, so that all pain is in this sense (and however diffusely) localized; (2) that the experience involves a dimension of unpleas- antness which – as is shown by the case of pain asymbolia – is not necessarily of the sort that involves suffering or aversion on the part of the subject S.
 This definition is formulated in such a way that small children and even some ani- mals can experience canonical pain, even though they do not have the cognitive re- sources to represent their experience as one that is caused in this or that way. This ad- dresses one recognized shortcoming of the IASP definition [Rollin BE. Science and Ethics, Cambridge : Cambridge University Press, 2006.].</p></li>
                 </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000037">ns2:PAIN_0000037</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
             <tr>
@@ -346,13 +383,19 @@ This definition is formulated in such a way that small children and even some an
                 <ul>
                   <li>
                     <span>
-                      <a href="http://purl.obolibrary.org/obo/PAIN_0000001">obo:PAIN_0000001</a>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000001">ns2:PAIN_0000001</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://purl.obolibrary.org/obo/PAIN_0000002">obo:PAIN_0000002</a>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000002">ns2:PAIN_0000002</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000038">ns2:PAIN_0000038</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -378,7 +421,7 @@ This definition is formulated in such a way that small children and even some an
               </th>
               <td>
                 <span>
-                  <a href="http://purl.obolibrary.org/obo/PAIN_0000000">obo:PAIN_0000000</a>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000000">ns2:PAIN_0000000</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -391,13 +434,13 @@ This definition is formulated in such a way that small children and even some an
                 <ul>
                   <li>
                     <span>
-                      <a href="http://purl.obolibrary.org/obo/PAIN_0000003">obo:PAIN_0000003</a>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000003">ns2:PAIN_0000003</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://purl.obolibrary.org/obo/PAIN_0000004">obo:PAIN_0000004</a>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000004">ns2:PAIN_0000004</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -423,7 +466,7 @@ This definition is formulated in such a way that small children and even some an
               </th>
               <td>
                 <span>
-                  <a href="http://purl.obolibrary.org/obo/PAIN_0000000">obo:PAIN_0000000</a>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000000">ns2:PAIN_0000000</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -458,6 +501,8 @@ an aversive reaction on the part of S directed towards that which is presumed by
 and also,</p>
 <p>(6) such that the sensory experience is sufficiently intense to communicate the presence of tissue damage to the subject.</p></li>
                   <li><p>See http://ontology.buffalo.edu/smith/articles/pain.pdf page 5.</p></li>
+                  <li><p>[The] patient experiences pain of the evolutionarily most basic sort, which is to say: pain in response to and in concordance with simultaneously existing tissue damage. This tissue damage is both the experienced target and the cause of the pain experience. Here the nociceptive system and the peripheral trauma are aligned; clear signals connect the one with the other.
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.</p></li>
                 </ul>
               </td>
             </tr>
@@ -467,7 +512,7 @@ and also,</p>
               </th>
               <td>
                 <span>
-                  <a href="http://purl.obolibrary.org/obo/PAIN_0000001">obo:PAIN_0000001</a>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000001">ns2:PAIN_0000001</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -487,11 +532,23 @@ and also,</p>
             </tr>
             <tr>
               <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>[The] patient experiences pain that is associated with some disorder outside the nociceptive system, a disorder existing either now or in the past. In some cases (for example myofascial pain) this disorder is predominantly associated with peripheral trauma; in other cases (for example tension headache) predominantly not. But in every case PNT pain is marked by the fact that it is discordant in terms of some attribute, such as intensity, spatial extent, or episode frequency or duration, relative to the state of the underlying tissue.
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.</p></li>
+                  <li><p>examples: allodynia, regional myofascial pain</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
                 <span>
-                  <a href="http://purl.obolibrary.org/obo/PAIN_0000001">obo:PAIN_0000001</a>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000001">ns2:PAIN_0000001</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -511,19 +568,30 @@ and also,</p>
             </tr>
             <tr>
               <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000037">ns2:PAIN_0000037</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
               </th>
               <td>
                 <ul>
                   <li>
                     <span>
-                      <a href="http://purl.obolibrary.org/obo/PAIN_0000006">obo:PAIN_0000006</a>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000006">ns2:PAIN_0000006</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://purl.obolibrary.org/obo/PAIN_0000007">obo:PAIN_0000007</a>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000007">ns2:PAIN_0000007</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -545,11 +613,18 @@ and also,</p>
             </tr>
             <tr>
               <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>[There] is, for example, a mere report in a medical record attributed to the statements of a patient, but no pain is being experienced by the patient (a fact which may or may not be detectable by an external observer).
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.</p></td>
+            </tr>
+            <tr>
+              <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
                 <span>
-                  <a href="http://purl.obolibrary.org/obo/PAIN_0000005">obo:PAIN_0000005</a>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000005">ns2:PAIN_0000005</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -569,11 +644,18 @@ and also,</p>
             </tr>
             <tr>
               <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>[Tissue] damage normally of the sort to cause pain does not activate the pain system (as contrasted with pain asymbolia, where pain is experienced, so that the pain system is activated, but the patient does not experience the pain as something that is suffered).
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.</p></td>
+            </tr>
+            <tr>
+              <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
                 <span>
-                  <a href="http://purl.obolibrary.org/obo/PAIN_0000005">obo:PAIN_0000005</a>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000005">ns2:PAIN_0000005</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -595,13 +677,1159 @@ and also,</p>
               <th>
                 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
               </th>
-              <td><p>an unpleasant sensory and emotional experience associated with actual or potential tissue damage, or described in terms of such damage [Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums].</p></td>
+              <td>
+                <ul>
+                  <li><p>an unpleasant sensory and emotional experience associated with actual or potential tissue damage, or described in terms of such damage [Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums].</p></li>
+                  <li><p>IASP: International Association for the Study of Pain</p></li>
+                  <li><p>[The] IASP definition gives a prominent role to descriptions containing
+reference to tissue damage of varying states. Such descriptions are central to the clinician’s understanding of pain phenomena of both the PNT and NN types, neither of which necessarily has apparent tissue damage at the putative locus of pain, because the corresponding experiences are heavily influenced by processes independent of direct stimulus transmission.<br />
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 7.</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000037">ns2:PAIN_0000037</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="paintestingprocedure">
+          <h3>pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000009</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000039">ns2:PAIN_0000039</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000010">ns2:PAIN_0000010</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000013">ns2:PAIN_0000013</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000016">ns2:PAIN_0000016</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000017">ns2:PAIN_0000017</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="tempraturepaintestingprocedure">
+          <h3>temprature pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000010</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000009">ns2:PAIN_0000009</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000011">ns2:PAIN_0000011</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000012">ns2:PAIN_0000012</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000019">ns2:PAIN_0000019</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="heatpaintestingprocedure">
+          <h3>heat pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000011</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000010">ns2:PAIN_0000010</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000014">ns2:PAIN_0000014</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="coldpaintestingprocedure">
+          <h3>cold pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000012</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000010">ns2:PAIN_0000010</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000015">ns2:PAIN_0000015</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="temporalsummationpaintestingprocedure">
+          <h3>temporal summation pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000013</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000009">ns2:PAIN_0000009</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000018">ns2:PAIN_0000018</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000019">ns2:PAIN_0000019</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="temporalsummationofheatpaintestingprocedure">
+          <h3>temporal summation of heat pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000014</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000011">ns2:PAIN_0000011</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000019">ns2:PAIN_0000019</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="temporalsummationofcoldpaintestingprocedure">
+          <h3>temporal summation of cold pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000015</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000012">ns2:PAIN_0000012</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000019">ns2:PAIN_0000019</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="pressurepaintestingprocedure">
+          <h3>pressure pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000016</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000009">ns2:PAIN_0000009</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="punctatepaintestingprocedure">
+          <h3>punctate pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000017</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000009">ns2:PAIN_0000009</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000018">ns2:PAIN_0000018</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="temporalsummationofpunctatepaintestingprocedure">
+          <h3>temporal summation of punctate pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000018</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000013">ns2:PAIN_0000013</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000017">ns2:PAIN_0000017</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="temporalsummationoftempraturepaintestingprocedure">
+          <h3>temporal summation of temprature pain testing procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000019</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000010">ns2:PAIN_0000010</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000013">ns2:PAIN_0000013</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000014">ns2:PAIN_0000014</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000015">ns2:PAIN_0000015</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="painsensitivityprofile">
+          <h3>pain sensitivity profile
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000020</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000039">ns2:PAIN_0000039</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000021">ns2:PAIN_0000021</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000022">ns2:PAIN_0000022</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000023">ns2:PAIN_0000023</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000024">ns2:PAIN_0000024</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000025">ns2:PAIN_0000025</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="lowpressurepainsensitivity">
+          <h3>low pressure pain sensitivity
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000021</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000020">ns2:PAIN_0000020</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="averagepainsensitivity">
+          <h3>average pain sensitivity
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000022</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000020">ns2:PAIN_0000020</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="highpunctatetemporalsummationsensitivity">
+          <h3>high punctate temporal summation sensitivity
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000023</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000020">ns2:PAIN_0000020</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="highcoldpainsensitivity">
+          <h3>high cold pain sensitivity
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000024</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000020">ns2:PAIN_0000020</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="highheatpainandhightempratureofheatpainsensitivity">
+          <h3>high heat pain and high temprature of heat pain sensitivity
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000025</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000020">ns2:PAIN_0000020</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="painquestionnaire">
+          <h3>pain questionnaire
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000026</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000039">ns2:PAIN_0000039</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000027">ns2:PAIN_0000027</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000028">ns2:PAIN_0000028</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000034">ns2:PAIN_0000034</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="InVivoCopingQuestionnaire">
+          <h3>In Vivo Coping Questionnaire
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000027</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000026">ns2:PAIN_0000026</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="PainVigilanceandAwarenessQuestionnaire">
+          <h3>Pain Vigilance and Awareness Questionnaire
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000028</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000026">ns2:PAIN_0000026</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="painscalescore">
+          <h3>pain scale score
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000029</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000039">ns2:PAIN_0000039</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000030">ns2:PAIN_0000030</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000031">ns2:PAIN_0000031</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000032">ns2:PAIN_0000032</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000033">ns2:PAIN_0000033</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="KohnReactivityScale">
+          <h3>Kohn Reactivity Scale
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000030</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000029">ns2:PAIN_0000029</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="GradedChronicPainScale">
+          <h3>Graded Chronic Pain Scale
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000031</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000029">ns2:PAIN_0000029</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="LikertScale">
+          <h3>Likert Scale
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000032</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000029">ns2:PAIN_0000029</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="WesternOntarioandMcMasterUniversitiesOsteoarthritisIndex">
+          <h3>Western Ontario and McMaster Universities Osteoarthritis Index
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000033</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000029">ns2:PAIN_0000029</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="widespreadconditionquestionnaire">
+          <h3>widespread condition questionnaire
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000034</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000026">ns2:PAIN_0000026</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="paininhibition">
+          <h3>pain inhibition
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000035</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000039">ns2:PAIN_0000039</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="paincoping">
+          <h3>pain coping
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000036</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000039">ns2:PAIN_0000039</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Smithpaper">
+          <h3>Smith paper
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000037</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000000">ns2:PAIN_0000000</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000005">ns2:PAIN_0000005</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000008">ns2:PAIN_0000008</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="neuropathicnociception(NN)">
+          <h3>neuropathic nociception (NN)
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000038</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>[The] patient experiences pain, as in the above, but here the pain is caused by some disorder in the nociceptive system. The latter is, as it were, derailed from its normal functioning and is firing on its own. Thus the patient is experiencing pain, which may be experienced as having a peripheral cause, but the pain is the result of a neuropathic disorder of the nociceptive system.
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.obolibrary.org/obo/PAIN_0000000">ns2:PAIN_0000000</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="painphenotypingpaper">
+          <h3>pain phenotyping paper
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.obolibrary.org/obo/PAIN_0000039</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000009">ns2:PAIN_0000009</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000020">ns2:PAIN_0000020</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000026">ns2:PAIN_0000026</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000029">ns2:PAIN_0000029</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000035">ns2:PAIN_0000035</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.obolibrary.org/obo/PAIN_0000036">ns2:PAIN_0000036</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
             </tr>
           </table>
         </div>
       </div>
       <div class="section" id="annotationproperties">
         <h2>Annotation Properties</h2>
+        <div class="property entity" id="contributor">
+          <h3>contributor
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/elements/1.1/contributor</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="creator">
+          <h3>creator
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/elements/1.1/creator</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="description">
+          <h3>description
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/elements/1.1/description</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="license">
+          <h3>license
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/elements/1.1/license</code>
+              </td>
+            </tr>
+          </table>
+        </div>
         <div class="property entity" id="title">
           <h3>title
             <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
@@ -610,7 +1838,20 @@ and also,</p>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://purl.org/dc/terms/title</code>
+                <code>http://purl.org/dc/elements/1.1/title</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="license1">
+          <h3>license
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/license</code>
               </td>
             </tr>
           </table>
@@ -619,17 +1860,29 @@ and also,</p>
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
+          <dt id="dc">dc</dt>
+          <dd>
+            <code>http://purl.org/dc/elements/1.1/</code>
+          </dd>
           <dt id="dcterms">dcterms</dt>
           <dd>
             <code>http://purl.org/dc/terms/</code>
           </dd>
-          <dt id="obo">obo</dt>
+          <dt id="ns1">ns1</dt>
+          <dd>
+            <code>http://http://purl.obolibrary.org/obo/</code>
+          </dd>
+          <dt id="ns2">ns2</dt>
           <dd>
             <code>http://purl.obolibrary.org/obo/</code>
           </dd>
           <dt id="owl">owl</dt>
           <dd>
             <code>http://www.w3.org/2002/07/owl#</code>
+          </dd>
+          <dt id="prov">prov</dt>
+          <dd>
+            <code>http://www.w3.org/ns/prov#</code>
           </dd>
           <dt id="rdf">rdf</dt>
           <dd>
@@ -709,6 +1962,99 @@ and also,</p>
             <li>
               <a href="#pain(IASP)">pain (IASP)</a>
             </li>
+            <li>
+              <a href="#paintestingprocedure">pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#tempraturepaintestingprocedure">temprature pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#heatpaintestingprocedure">heat pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#coldpaintestingprocedure">cold pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#temporalsummationpaintestingprocedure">temporal summation pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#temporalsummationofheatpaintestingprocedure">temporal summation of heat pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#temporalsummationofcoldpaintestingprocedure">temporal summation of cold pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#pressurepaintestingprocedure">pressure pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#punctatepaintestingprocedure">punctate pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#temporalsummationofpunctatepaintestingprocedure">temporal summation of punctate pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#temporalsummationoftempraturepaintestingprocedure">temporal summation of temprature pain testing procedure</a>
+            </li>
+            <li>
+              <a href="#painsensitivityprofile">pain sensitivity profile</a>
+            </li>
+            <li>
+              <a href="#lowpressurepainsensitivity">low pressure pain sensitivity</a>
+            </li>
+            <li>
+              <a href="#averagepainsensitivity">average pain sensitivity</a>
+            </li>
+            <li>
+              <a href="#highpunctatetemporalsummationsensitivity">high punctate temporal summation sensitivity</a>
+            </li>
+            <li>
+              <a href="#highcoldpainsensitivity">high cold pain sensitivity</a>
+            </li>
+            <li>
+              <a href="#highheatpainandhightempratureofheatpainsensitivity">high heat pain and high temprature of heat pain sensitivity</a>
+            </li>
+            <li>
+              <a href="#painquestionnaire">pain questionnaire</a>
+            </li>
+            <li>
+              <a href="#InVivoCopingQuestionnaire">In Vivo Coping Questionnaire</a>
+            </li>
+            <li>
+              <a href="#PainVigilanceandAwarenessQuestionnaire">Pain Vigilance and Awareness Questionnaire</a>
+            </li>
+            <li>
+              <a href="#painscalescore">pain scale score</a>
+            </li>
+            <li>
+              <a href="#KohnReactivityScale">Kohn Reactivity Scale</a>
+            </li>
+            <li>
+              <a href="#GradedChronicPainScale">Graded Chronic Pain Scale</a>
+            </li>
+            <li>
+              <a href="#LikertScale">Likert Scale</a>
+            </li>
+            <li>
+              <a href="#WesternOntarioandMcMasterUniversitiesOsteoarthritisIndex">Western Ontario and McMaster Universities Osteoarthritis Index</a>
+            </li>
+            <li>
+              <a href="#widespreadconditionquestionnaire">widespread condition questionnaire</a>
+            </li>
+            <li>
+              <a href="#paininhibition">pain inhibition</a>
+            </li>
+            <li>
+              <a href="#paincoping">pain coping</a>
+            </li>
+            <li>
+              <a href="#Smithpaper">Smith paper</a>
+            </li>
+            <li>
+              <a href="#neuropathicnociception(NN)">neuropathic nociception (NN)</a>
+            </li>
+            <li>
+              <a href="#painphenotypingpaper">pain phenotyping paper</a>
+            </li>
           </ul>
         </li>
         <li>
@@ -717,7 +2063,22 @@ and also,</p>
           </h4>
           <ul class="second">
             <li>
+              <a href="#contributor">contributor</a>
+            </li>
+            <li>
+              <a href="#creator">creator</a>
+            </li>
+            <li>
+              <a href="#description">description</a>
+            </li>
+            <li>
+              <a href="#license">license</a>
+            </li>
+            <li>
               <a href="#title">title</a>
+            </li>
+            <li>
+              <a href="#license1">license</a>
             </li>
           </ul>
         </li>
@@ -727,13 +2088,22 @@ and also,</p>
           </h4>
           <ul class="second">
             <li>
+              <a href="#dc">dc</a>
+            </li>
+            <li>
               <a href="#dcterms">dcterms</a>
             </li>
             <li>
-              <a href="#obo">obo</a>
+              <a href="#ns1">ns1</a>
+            </li>
+            <li>
+              <a href="#ns2">ns2</a>
             </li>
             <li>
               <a href="#owl">owl</a>
+            </li>
+            <li>
+              <a href="#prov">prov</a>
             </li>
             <li>
               <a href="#rdf">rdf</a>
