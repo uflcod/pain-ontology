@@ -1,4 +1,4 @@
-# Current Ontologies with Pain Terms
+# Ontologies with Pain Terms
 An [EBI Ontology Lookup Service search](https://www.ebi.ac.uk/ols/search?q=pain) found over 7,000 terms containing the word 'pain'. Below are brief summaries of the `pain` term/class found in the most relevant ontologies. `Pain` terms from SNOMED CT and MeSH are also included.  
 
 With the exception of SNOMED CT and MeSH, the `owl` directory contains portions of the ontologies in which the `pain` term, the hierarchy containing `pain`, any children of `pain`, and a number of related axioms and associated terms have been extracted (using [robot](http://robot.obolibrary.org/)). In order to view the ontologies, you will need to install the [Protégé](https://protege.stanford.edu/) ontology editor. Details on how `robot` is used to extract the ontologies can be found by viewing the `*.sh` files in the `scripts` directory.
