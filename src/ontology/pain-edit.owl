@@ -250,7 +250,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000025> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000026> (pain questionnaire)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000026> "pain questionnaire"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000026> <http://purl.obolibrary.org/obo/PAIN_0000039>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000026> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000027> (In Vivo Coping Questionnaire)
 
@@ -266,6 +266,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000028> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000029> "pain scale score"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000029> <http://purl.obolibrary.org/obo/COB_0000121>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/PAIN_0000000>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000030> (Kohn Reactivity Scale)
 
