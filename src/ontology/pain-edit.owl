@@ -56,6 +56,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000037>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000041>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
@@ -301,7 +302,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000035> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000036> (pain coping)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000036> "pain coping"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/PAIN_0000039>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000037> (Smith paper)
 
@@ -323,6 +324,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000039> "pa
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "chronic pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/BFO_0000016>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/MFOEM_000203>))
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000041> (chronic pain coping)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000041> "chronic pain coping"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> <http://purl.obolibrary.org/obo/PAIN_0000036>)
 
 
 )
