@@ -10,7 +10,7 @@ Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/pain/cob-import.owl>
+Ontology(<http://purl.obolibrary.org/obo/pain/cob_import.owl>
 Annotation(dc:description "COB import used for the pain ontology.
 
 COB brings together key terms from a wide range of OBO projects to improve interoperability. 
