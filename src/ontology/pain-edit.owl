@@ -217,10 +217,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000019> "te
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000019> <http://purl.obolibrary.org/obo/PAIN_0000010>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000019> <http://purl.obolibrary.org/obo/PAIN_0000013>)
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000020> (pain sensitivity profile)
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000020> (pain sensitivity)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000020> "pain sensitivity profile"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000020> <http://purl.obolibrary.org/obo/PAIN_0000039>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000020> "pain sensitivity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000020> <http://purl.obolibrary.org/obo/BFO_0000016>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000021> (low pressure pain sensitivity)
 
