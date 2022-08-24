@@ -57,6 +57,16 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000042>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000043>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000051>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
@@ -321,6 +331,9 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000039> "pa
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000040> (chronic pain)
 
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000040> "Chronic pain is pain that persists or recurs for longer than three months.
+
+https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "chronic pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/BFO_0000016>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/MFOEM_000203>))
@@ -329,6 +342,61 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000041> "chronic pain coping"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> <http://purl.obolibrary.org/obo/PAIN_0000036>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000042> (migrain **)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000042> "migrain **"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000042> <http://purl.obolibrary.org/obo/PAIN_0000040>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/PAIN_0000043>))
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000043> (headache pain)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000043> "headache pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000043> <http://purl.obolibrary.org/obo/MFOEM_000203>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000044> (cluster headache)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000044> "cluster headache"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000044> <http://purl.obolibrary.org/obo/PAIN_0000043>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000045> (tension headache)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000045> "tension headache"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000045> <http://purl.obolibrary.org/obo/PAIN_0000043>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000046> (episodic pain)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000046> "episodic pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000046> <http://purl.obolibrary.org/obo/PAIN_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000047> (chronic neuropathic pain)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000047> "Chronic neuropathic pain is chronic pain caused by a lesion or disease of the somatosensory nervous system.
+
+https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000047> "chronic neuropathic pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000047> <http://purl.obolibrary.org/obo/PAIN_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000048> (pain mechanism)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000048> "pain mechanism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000048> <http://purl.obolibrary.org/obo/OGMS_0000060>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000049> (nociplatic mechanism)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000049> "nociplatic mechanism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000049> <http://purl.obolibrary.org/obo/PAIN_0000048>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000050> (nociceptive mechanism)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000050> "nociceptive mechanism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000050> <http://purl.obolibrary.org/obo/PAIN_0000048>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000051> (neurpathic mechanism)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000051> "damage to nervous system (e.g., damage to a nociceptor)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000051> "neurpathic mechanism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000051> <http://purl.obolibrary.org/obo/PAIN_0000048>)
 
 
 )
