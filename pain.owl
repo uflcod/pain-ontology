@@ -1122,12 +1122,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000133 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000133"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000163 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000163">
@@ -2297,7 +2291,7 @@ This definition is formulated in such a way that small children and even some an
     <!-- http://purl.obolibrary.org/obo/PAIN_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">pain testing procedure</rdfs:label>
     </owl:Class>
     
@@ -2400,8 +2394,8 @@ This definition is formulated in such a way that small children and even some an
     <!-- http://purl.obolibrary.org/obo/PAIN_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000039"/>
-        <rdfs:label xml:lang="en">pain sensitivity profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="en">pain sensitivity</rdfs:label>
     </owl:Class>
     
 
@@ -2454,7 +2448,7 @@ This definition is formulated in such a way that small children and even some an
     <!-- http://purl.obolibrary.org/obo/PAIN_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label xml:lang="en">pain questionnaire</rdfs:label>
     </owl:Class>
     
@@ -2481,7 +2475,13 @@ This definition is formulated in such a way that small children and even some an
     <!-- http://purl.obolibrary.org/obo/PAIN_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000121"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">pain scale score</rdfs:label>
     </owl:Class>
     
