@@ -265,7 +265,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000028> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000029> (pain scale score)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000029> "pain scale score"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000029> <http://purl.obolibrary.org/obo/PAIN_0000039>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000029> <http://purl.obolibrary.org/obo/COB_0000121>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000030> (Kohn Reactivity Scale)
 
