@@ -14,7 +14,7 @@ Prefix(ace_lexicon:=<http://attempto.ifi.uzh.ch/ace_lexicon#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/pain/mfoem-import.owl>
-Annotation(obo:comment "Emotion Ontology import used for the pain ontology.
+Annotation(dc:description "Emotion Ontology import used for the pain ontology.
 
 The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It was originally developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. 
 

@@ -10,10 +10,11 @@ Ontology(<http://http://purl.obolibrary.org/obo/pain.owl>
 Import(<http://purl.obolibrary.org/obo/pain/cob-import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/mfoem-import.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/creator> "https://orcid.org/0000-0001-9625-1899 Bill Duncan")
+Annotation(<http://purl.org/dc/elements/1.1/date> "2022-08-23")
+Annotation(<http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/publicdomain/zero/1.0/")
 Annotation(<http://purl.org/dc/elements/1.1/title> "Pain Ontology")
 Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/publicdomain/zero/1.0/")
 
-Declaration(Class(<http://purl.obolibrary.org/obo#chronic_pain>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000002>))
@@ -54,6 +55,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000036>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000037>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000039>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000040>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
@@ -62,13 +64,14 @@ Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 
 
+
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo#chronic_pain> (chronic pain)
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000060> (bodily process)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo#chronic_pain> "chronic pain")
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000000> (pain (IASP))
 
@@ -77,6 +80,7 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000000> "
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000000> "[The] IASP definition gives a prominent role to descriptions containing reference to tissue damage of varying states. Such descriptions are central to the clinician’s understanding of pain phenomena of both the PNT and NN types, neither of which necessarily has apparent tissue damage at the putative locus of pain, because the corresponding experiences are heavily influenced by processes independent of direct stimulus transmission.  
 See http://ontology.buffalo.edu/smith/articles/pain.pdf page 7.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000000> "pain (IASP)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000000> ObjectUnionOf(<http://purl.obolibrary.org/obo/MFOEM_000203> <http://purl.obolibrary.org/obo/PAIN_0000040>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000001> (canonical pain)
 
@@ -312,6 +316,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000038> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000039> (pain phenotyping paper)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000039> "pain phenotyping paper"@en)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000040> (chronic pain)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "chronic pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/BFO_0000016>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/MFOEM_000203>))
 
 
 )
