@@ -67,6 +67,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000053>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
@@ -331,12 +333,9 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000039> "pa
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000040> (chronic pain)
 
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000040> "Chronic pain is pain that persists or recurs for longer than three months.
-
-https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000040> "Pain that persists or recurs for longer than three months.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "chronic pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/BFO_0000016>)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/MFOEM_000203>))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/PAIN_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000041> (chronic pain coping)
 
@@ -397,6 +396,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000050> <http://purl.obolibrary
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000051> "damage to nervous system (e.g., damage to a nociceptor)")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000051> "neurpathic mechanism"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000051> <http://purl.obolibrary.org/obo/PAIN_0000048>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000052> (pain)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000052> "A subjective affective feeling that is sensorially and emotionally unpleasant and is associated with actual or potential tissue damage, or described in terms of such damage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000052> "pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000052> <http://purl.obolibrary.org/obo/MFOEM_000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000053> (accute pain)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000053> "accute pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/PAIN_0000052>)
 
 
 )
