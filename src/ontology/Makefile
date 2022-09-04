@@ -4,6 +4,9 @@ ONTBASE=                    $(URIBASE)/$(ONT)
 EDIT_FORMAT=                owl
 SRC=						$(ONT)-edit.$(EDIT_FORMAT)
 RELEASEDIR=                 ../..
+MIRRORDIR=                  mirror
+IMPORTDIR=                  imports
+SUBSETDIR=                  subsets
 CATALOG=                    catalog-v001.xml
 ROBOT=                      robot --catalog $(CATALOG)
 RELEASEDIR=                 ../..
@@ -31,4 +34,19 @@ $(ONT).owl: $(SRC)
 			--annotation owl:versionInfo $(VERSION) \
 		reduce \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
-		
+
+$(MIRRORDIR)/uberon.owl:
+	 $(ROBOT) \
+	   convert -I http://purl.obolibrary.org/obo/uberon.owl \
+	   -o  $@.tmp.owl && mv $@.tmp.owl $@
+
+
+$(IMPORTDIR)/uberon: $(MIRRORDIR)/uberon.owl
+	$(ROBOT) extract \
+	  --method STAR \
+	  --input $< \
+	  --term-file $@_terms.txt \
+	  --annotate-with-source true \
+	  --individuals exclude \
+	  annotate --ontology-iri $(URIBASE)/$(ONT)/uberon_import.owl \
+	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
