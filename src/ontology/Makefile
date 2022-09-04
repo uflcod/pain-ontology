@@ -42,11 +42,15 @@ $(MIRRORDIR)/uberon.owl:
 
 
 $(IMPORTDIR)/uberon: $(MIRRORDIR)/uberon.owl
-	$(ROBOT) extract \
+	$(ROBOT) \
+	  extract \
 	  --method STAR \
 	  --input $< \
 	  --term-file $@_terms.txt \
 	  --annotate-with-source true \
 	  --individuals exclude \
-	  annotate --ontology-iri $(URIBASE)/$(ONT)/uberon_import.owl \
+	  remove \
+	    --select "<http://purl.obolibrary.org/obo/NCBITaxon_*>" \
+	  annotate \
+	    --ontology-iri $(URIBASE)/$(ONT)/uberon_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
