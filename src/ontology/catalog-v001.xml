@@ -3,5 +3,6 @@
     <group id="imports" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/pain/cob_import.owl" uri="imports/cob_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/pain/mfoem_import.owl" uri="imports/mfoem_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/pain/uberon_import.owl" uri="imports/uberon_import.owl"/>
     </group>
 </catalog>
