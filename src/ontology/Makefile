@@ -40,6 +40,21 @@ $(MIRRORDIR)/uberon.owl:
 	   convert -I http://purl.obolibrary.org/obo/uberon.owl \
 	   -o  $@.tmp.owl && mv $@.tmp.owl $@
 
+$(MIRRORDIR)/cob.owl:
+	 $(ROBOT) \
+	   convert -I http://purl.obolibrary.org/obo/cob.owl \
+	   -o  $@.tmp.owl && mv $@.tmp.owl $@
+
+ $(MIRRORDIR)/mfoem.owl:
+	 $(ROBOT) \
+	   convert -I http://purl.obolibrary.org/obo/mfoem.owl \
+	   -o  $@.tmp.owl && mv $@.tmp.owl $@
+
+$(MIRRORDIR)/omo.owl:
+	 $(ROBOT) \
+	   convert -I http://purl.obolibrary.org/obo/omo.owl \
+	   -o  $@.tmp.owl && mv $@.tmp.owl $@
+
 
 $(IMPORTDIR)/uberon: $(MIRRORDIR)/uberon.owl
 	$(ROBOT) \
