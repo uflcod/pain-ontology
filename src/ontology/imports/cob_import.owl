@@ -105,14 +105,6 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#deprecated -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#deprecated">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cob_import.owl"/>
-    </rdf:Description>
-    
-
-
     <!-- http://www.w3.org/2002/07/owl#versionInfo -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
@@ -148,14 +140,6 @@
     
 
 
-    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cob_import.owl"/>
-    </rdf:Description>
-    
-
-
     <!-- http://www.w3.org/2001/XMLSchema#integer -->
 
     <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer">
@@ -167,14 +151,6 @@
     <!-- http://www.w3.org/2001/XMLSchema#nonNegativeInteger -->
 
     <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cob_import.owl"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#string -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cob_import.owl"/>
     </rdf:Description>
     
@@ -732,18 +708,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_0000005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000005">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no longer needed</obo:IAO_0000116>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cob_import.owl"/>
-        <rdfs:label xml:lang="en">obsolete_elementary charge</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/COB_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
@@ -785,19 +749,6 @@
         <rdfs:comment>We would like to have cardinality restrictions on the logic, but there are some technical limitations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cob_import.owl"/>
         <rdfs:label xml:lang="en">molecular entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000014 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000014">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000115>A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.</obo:IAO_0000115>
-        <rdfs:comment>Terms moved to &apos;molecular entity&apos;, see https://github.com/OBOFoundry/Experimental-OBO-Core/issues/33</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cob_import.owl"/>
-        <rdfs:label xml:lang="en">obsolete macromolecular entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 

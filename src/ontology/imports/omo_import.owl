@@ -844,14 +844,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#deprecated -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#deprecated">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omo_import.owl"/>
-    </rdf:Description>
-    
-
-
     <!-- http://www.w3.org/2002/07/owl#versionInfo -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
@@ -874,14 +866,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
 
     <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omo_import.owl"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omo_import.owl"/>
     </rdf:Description>
     
@@ -982,20 +966,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000224 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000224">
-        <obo:IAO_0000115 xml:lang="en">Core is an instance of a grouping of terms from an ontology or ontologies. It is used by the ontology to identify main classes.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omo_import.owl"/>
-        <rdfs:label xml:lang="en">obsolete_core</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
     
 
