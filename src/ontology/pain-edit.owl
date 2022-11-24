@@ -7,6 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://http://purl.obolibrary.org/obo/pain.owl>
+Import(<http://purl.obolibrary.org/obo/omo/releases/2022-04-27/omo.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/cob_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/mfoem_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/uberon_import.owl>)
