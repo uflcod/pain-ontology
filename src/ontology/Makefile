@@ -35,6 +35,7 @@ $(ONT).owl: $(SRC)
 		reduce \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
+# ===== ontology mirrors ===== #
 $(MIRRORDIR)/uberon.owl:
 	 $(ROBOT) \
 	   convert -I http://purl.obolibrary.org/obo/uberon.owl \
@@ -55,17 +56,46 @@ $(MIRRORDIR)/omo.owl:
 	   convert -I http://purl.obolibrary.org/obo/omo.owl \
 	   -o  $@.tmp.owl && mv $@.tmp.owl $@
 
+# ===== ontology imports ===== #
+$(IMPORTDIR)/omo: $(MIRRORDIR)/omo.owl
+	$(ROBOT) \
+	  annotate \
+	    --input $< \
+        --annotate-defined-by true \
+	    --ontology-iri $(URIBASE)/$(ONT)/omo_import.owl \
+	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
+
+$(IMPORTDIR)/cob: $(MIRRORDIR)/cob.owl
+	$(ROBOT) \
+	  annotate \
+	    --input $< \
+        --annotate-defined-by true \
+	    --ontology-iri $(URIBASE)/$(ONT)/cob_import.owl \
+	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
+
+$(IMPORTDIR)/mfoem: $(MIRRORDIR)/mfoem.owl
+	$(ROBOT) \
+	  extract \
+	    --method MIREOT \
+	    --input $< \
+		--upper-term OGMS:0000060 \
+	    --lower-term MFOEM:000203 \
+		--lower-term GO:0048266 \
+	  annotate \
+	  	--annotate-defined-by true \
+	    --ontology-iri $(URIBASE)/$(ONT)/mfoem_import.owl \
+	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
 
 $(IMPORTDIR)/uberon: $(MIRRORDIR)/uberon.owl
 	$(ROBOT) \
 	  extract \
-	  --method STAR \
-	  --input $< \
-	  --term-file $@_terms.txt \
-	  --annotate-with-source true \
-	  --individuals exclude \
+	    --method STAR \
+	    --input $< \
+	    --term-file $@_terms.txt \
+	    --individuals exclude \
 	  remove \
 	    --select "<http://purl.obolibrary.org/obo/NCBITaxon_*>" \
 	  annotate \
+	  	--annotate-defined-by true \
 	    --ontology-iri $(URIBASE)/$(ONT)/uberon_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
