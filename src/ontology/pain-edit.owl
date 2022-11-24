@@ -12,7 +12,7 @@ Import(<http://purl.obolibrary.org/obo/cob/releases/2022-11-02/cob.owl>)
 Import(<http://purl.obolibrary.org/obo/omo/releases/2022-04-27/omo.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pato/releases/2022-11-09/pato.owl>)
-Annotation(<http://purl.org/dc/elements/1.1/creator> "https://orcid.org/0000-0001-9625-1899 Bill Duncan")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "https://orcid.org/0000-0001-9625-1899")
 Annotation(<http://purl.org/dc/elements/1.1/date> "2022-08-23")
 Annotation(<http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/publicdomain/zero/1.0/")
 Annotation(<http://purl.org/dc/elements/1.1/title> "Pain Ontology")
@@ -54,24 +54,18 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000035>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000036>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000037>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000040>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000042>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000043>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000044>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000045>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000051>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000053>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002411>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
@@ -86,6 +80,23 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/MFOEM_000203> (feeling of pain)
+
+AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/resources/terminology/") rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000203> "Six key notes and etymology:
+
+- Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.
+ 
+- Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.
+
+- Through their life experiences, individuals learn the concept of pain.
+
+- A person’s report of an experience as pain should be respected.
+ 
+- Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
+ 
+- Verbal description is only one of several behaviors to express pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.")
+SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002411> <http://purl.obolibrary.org/obo/GO_0019233>))
+
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000060> (bodily process)
 
 SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)
@@ -97,7 +108,7 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000000> "
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000000> "[The] IASP definition gives a prominent role to descriptions containing reference to tissue damage of varying states. Such descriptions are central to the clinician’s understanding of pain phenomena of both the PNT and NN types, neither of which necessarily has apparent tissue damage at the putative locus of pain, because the corresponding experiences are heavily influenced by processes independent of direct stimulus transmission.  
 See http://ontology.buffalo.edu/smith/articles/pain.pdf page 7.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000000> "pain (IASP)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000000> ObjectUnionOf(<http://purl.obolibrary.org/obo/MFOEM_000203> <http://purl.obolibrary.org/obo/PAIN_0000040>))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000000> <http://purl.obolibrary.org/obo/PAIN_0000037>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000001> (canonical pain)
 
@@ -177,59 +188,81 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000008> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000009> (pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000009> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000009> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000009> "pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000009> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000010> (temprature pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000010> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000010> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000010> "temprature pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000010> <http://purl.obolibrary.org/obo/PAIN_0000009>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000011> (heat pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000011> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000011> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000011> "heat pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000011> <http://purl.obolibrary.org/obo/PAIN_0000010>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000012> (cold pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000012> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000012> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000012> "cold pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000012> <http://purl.obolibrary.org/obo/PAIN_0000010>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000013> (temporal summation pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000013> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000013> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000013> "temporal summation pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000013> <http://purl.obolibrary.org/obo/PAIN_0000009>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000014> (temporal summation of heat pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000014> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000014> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000014> "temporal summation of heat pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000014> <http://purl.obolibrary.org/obo/PAIN_0000011>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000014> <http://purl.obolibrary.org/obo/PAIN_0000019>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000015> (temporal summation of cold pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000015> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000015> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000015> "temporal summation of cold pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000015> <http://purl.obolibrary.org/obo/PAIN_0000012>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000015> <http://purl.obolibrary.org/obo/PAIN_0000019>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000016> (pressure pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000016> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000016> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000016> "pressure pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000016> <http://purl.obolibrary.org/obo/PAIN_0000009>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000017> (punctate pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000017> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000017> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000017> "punctate pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000017> <http://purl.obolibrary.org/obo/PAIN_0000009>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000018> (temporal summation of punctate pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000018> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000018> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000018> "temporal summation of punctate pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000018> <http://purl.obolibrary.org/obo/PAIN_0000013>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000018> <http://purl.obolibrary.org/obo/PAIN_0000017>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000019> (temporal summation of temprature pain testing procedure)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000019> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000019> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000019> "temporal summation of temprature pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000019> <http://purl.obolibrary.org/obo/PAIN_0000010>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000019> <http://purl.obolibrary.org/obo/PAIN_0000013>)
@@ -266,47 +299,65 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000025> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000026> (pain questionnaire)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000026> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000026> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000026> "pain questionnaire"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000026> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000027> (In Vivo Coping Questionnaire)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000027> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000027> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000027> "In Vivo Coping Questionnaire"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000027> <http://purl.obolibrary.org/obo/PAIN_0000026>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000028> (Pain Vigilance and Awareness Questionnaire)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000028> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000028> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000028> "Pain Vigilance and Awareness Questionnaire"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000028> <http://purl.obolibrary.org/obo/PAIN_0000026>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000029> (pain scale score)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000029> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000029> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000029> "pain scale score"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000029> <http://purl.obolibrary.org/obo/COB_0000121>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/PAIN_0000000>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000030> (Kohn Reactivity Scale)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000030> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000030> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000030> "Kohn Reactivity Scale"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000030> <http://purl.obolibrary.org/obo/PAIN_0000029>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000031> (Graded Chronic Pain Scale)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000031> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000031> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000031> "Graded Chronic Pain Scale"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000031> <http://purl.obolibrary.org/obo/PAIN_0000029>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000032> (Likert Scale)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000032> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000032> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000032> "Likert Scale"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000032> <http://purl.obolibrary.org/obo/PAIN_0000029>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000033> (Western Ontario and McMaster Universities Osteoarthritis Index)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000033> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000033> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000033> "Western Ontario and McMaster Universities Osteoarthritis Index"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000033> <http://purl.obolibrary.org/obo/PAIN_0000029>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000034> (widespread condition questionnaire)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000034> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000034> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000034> "widespread condition questionnaire"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000034> <http://purl.obolibrary.org/obo/PAIN_0000026>)
 
@@ -315,14 +366,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000034> <http://purl.obolibrary
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000035> "pain inhibition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000035> <http://purl.obolibrary.org/obo/PAIN_0000039>)
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000036> (pain coping)
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000037> (concepts from papers)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000036> "pain coping"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/BFO_0000015>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000037> (Smith paper)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000037> "Smith paper"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000037> "concepts from papers"@en)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000038> (neuropathic nociception (NN))
 
@@ -334,47 +380,32 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000038> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000039> (pain phenotyping paper)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000039> "pain phenotyping paper"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000039> <http://purl.obolibrary.org/obo/PAIN_0000037>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000040> (chronic pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000040> "Pain that persists or recurs for longer than three months.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000040> "A feeling pain that persists or recurs for longer than three months.")
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000040> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000040> "2022-11-24T06:02:26Z")
+AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000040> "Chronic pain often becomes the sole or predominant clinical problem in some patients. As such it may warrant specific diagnostic evaluation, therapy and rehabilitation. Chronic pain is a frequent condition, affecting an estimated 20% of people worldwide.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "chronic pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/PAIN_0000052>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/MFOEM_000203>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001863>))
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000041> (chronic pain coping)
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000042> (chronic primary pain)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000041> "chronic pain coping"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> <http://purl.obolibrary.org/obo/PAIN_0000036>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000042> (migrain **)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000042> "migrain **"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000042> "Chronic pain that occurs in one or more anatomical regions that persists or recurs for longer than 3 months, and that is characterized by significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles).")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000042> "https://orcid.org/0000-0001-9625-1899"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000042> "2022-11-24T06:02:26Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000042> "2022-11-24T06:02:26Z"^^xsd:dateTime)
+AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000042> "Chronic primary pain is multifactorial: biological psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate independently of identified biological or psychological contributors unless another diagnosis would better account for the presenting symptoms.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000042> "chronic primary pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000042> <http://purl.obolibrary.org/obo/PAIN_0000040>)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/PAIN_0000043>))
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000043> (headache pain)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000043> "headache pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000043> <http://purl.obolibrary.org/obo/MFOEM_000203>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000044> (cluster headache)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000044> "cluster headache"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000044> <http://purl.obolibrary.org/obo/PAIN_0000043>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000045> (tension headache)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000045> "tension headache"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000045> <http://purl.obolibrary.org/obo/PAIN_0000043>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000046> (episodic pain)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000046> "episodic pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000046> <http://purl.obolibrary.org/obo/PAIN_0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000047> (chronic neuropathic pain)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000047> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000047> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000047> "Chronic neuropathic pain is chronic pain caused by a lesion or disease of the somatosensory nervous system.
 
 https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/")
@@ -383,35 +414,41 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000047> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000048> (pain mechanism)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000048> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000048> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000048> "pain mechanism"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000048> <http://purl.obolibrary.org/obo/OGMS_0000060>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000049> (nociplatic mechanism)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000049> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000049> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000049> "nociplatic mechanism"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000049> <http://purl.obolibrary.org/obo/PAIN_0000048>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000050> (nociceptive mechanism)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000050> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000050> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000050> "nociceptive mechanism"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000050> <http://purl.obolibrary.org/obo/PAIN_0000048>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000051> (neurpathic mechanism)
 
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000051> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000051> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000051> "damage to nervous system (e.g., damage to a nociceptor)")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000051> "neurpathic mechanism"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000051> <http://purl.obolibrary.org/obo/PAIN_0000048>)
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000052> (pain)
-
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000052> "A subjective affective feeling that is sensorially and emotionally unpleasant and is associated with actual or potential tissue damage, or described in terms of such damage.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000052> "pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000052> <http://purl.obolibrary.org/obo/MFOEM_000006>)
-
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000053> (accute pain)
 
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/topics/acute-pain/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000053> "A feeling of pain that happens suddenly, starts out sharp or intense, and serves as a warning sign of disease or threat to the body.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000053> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000053> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000053> "accute pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/PAIN_0000052>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/MFOEM_000203>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000389>))
 
 
 ############################
