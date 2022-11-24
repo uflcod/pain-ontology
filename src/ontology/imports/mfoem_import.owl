@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/pain/mfoem_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/mfoem_import.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2022-07-19/MFOEM.owl"/>
     </owl:Ontology>
     
@@ -47,7 +47,7 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -153,7 +153,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/MFOEM_000010 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/MFOEM_000010">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
         <rdfs:label>synonym</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -162,7 +162,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -170,7 +170,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -178,7 +178,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -186,7 +186,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -194,7 +194,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -213,7 +213,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
 
     <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
     </rdf:Description>
     
 
@@ -221,7 +221,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/2001/XMLSchema#string -->
 
     <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
     </rdf:Description>
     
 
@@ -243,7 +243,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavior</rdfs:label>
     </owl:Class>
     
@@ -255,7 +255,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process that results in a change in the behavior of an organism as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioral response to pain</rdfs:label>
     </owl:Class>
     
@@ -279,7 +279,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
 </rdfs:comment>
         <rdfs:comment>Subjective affective feeling can have greater or weaker physiological or mental components. The bodily processes that are experienced will usually involve some mental process.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
         <rdfs:label>subjective affective feeling</rdfs:label>
     </owl:Class>
     
@@ -290,7 +290,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>A mental process that has positive or negative valence.</obo:IAO_0000115>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
         <rdfs:label xml:lang="en">affective process</rdfs:label>
     </owl:Class>
     
@@ -304,7 +304,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 (a) activation of the nociceptive system and associated emotion generating brain components of S, and 
 (b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.</obo:IAO_0000115>
         <rdfs:comment>Here `phenomenologically similar&apos; means inter alia: (1) that the experience is `of&apos; or is `targeted towards&apos; some region R of the body of S, so that all pain is in this sense (and however diffusely) localized; (2) that the experience involves a dimension of unpleasantness which -- as is shown by the case of pain asymbolia -- is not necessarily of the sort that involves suffering or aversion on the part of the subject S. </rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
         <rdfs:label xml:lang="en">feeling of pain</rdfs:label>
     </owl:Class>
     
@@ -319,7 +319,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:comment>A bodily process which brings into being, sustains or modifies a cognitive representation or a behavior inducing state.</rdfs:comment>
         <rdfs:comment>Examples include thinking, feeling pain, remembering and emotion as occurrent experiences.</rdfs:comment>
         <rdfs:comment>Mental processes can varying in the degree to which they involve consciousness.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental process</rdfs:label>
         <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
     </owl:Class>
@@ -332,7 +332,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/mfoem_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily process</rdfs:label>
     </owl:Class>
 </rdf:RDF>
