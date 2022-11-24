@@ -141,8 +141,9 @@ $(IMPORTDIR)/uberon: $(MIRRORDIR)/uberon.owl
 	$(ROBOT) \
 	  extract \
 	    --input $< \
-	    --method STAR \
-	    --term-file $@_terms.txt \
+	    --method MIREOT \
+	    --upper-term BFO:0000015 \
+		--lower-term GO:0019233 \
 	    --individuals exclude \
 	  remove \
 	    --select "owl:deprecated='true'^^xsd:boolean" \
