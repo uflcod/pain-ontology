@@ -269,31 +269,43 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000019> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000020> (pain sensitivity)
 
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000020> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000020> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000020> "pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000020> <http://purl.obolibrary.org/obo/BFO_0000016>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000021> (low pressure pain sensitivity)
 
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000021> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000021> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000021> "low pressure pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000021> <http://purl.obolibrary.org/obo/PAIN_0000020>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000022> (average pain sensitivity)
 
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000022> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000022> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000022> "average pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000022> <http://purl.obolibrary.org/obo/PAIN_0000020>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000023> (high punctate temporal summation sensitivity)
 
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000023> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000023> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000023> "high punctate temporal summation sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000023> <http://purl.obolibrary.org/obo/PAIN_0000020>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000024> (high cold pain sensitivity)
 
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000024> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000024> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000024> "high cold pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000024> <http://purl.obolibrary.org/obo/PAIN_0000020>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000025> (high heat pain and high temprature of heat pain sensitivity)
 
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000025> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000025> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000025> "high heat pain and high temprature of heat pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000025> <http://purl.obolibrary.org/obo/PAIN_0000020>)
 

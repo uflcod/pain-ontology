@@ -3092,6 +3092,8 @@ This definition is formulated in such a way that small children and even some an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <terms:contributor>https://orcid.org/0000-0001-9625-1899</terms:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">pain sensitivity</rdfs:label>
     </owl:Class>
     
@@ -3101,6 +3103,8 @@ This definition is formulated in such a way that small children and even some an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000020"/>
+        <terms:contributor>https://orcid.org/0000-0001-9625-1899</terms:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">low pressure pain sensitivity</rdfs:label>
     </owl:Class>
     
@@ -3110,6 +3114,8 @@ This definition is formulated in such a way that small children and even some an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000020"/>
+        <terms:contributor>https://orcid.org/0000-0001-9625-1899</terms:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">average pain sensitivity</rdfs:label>
     </owl:Class>
     
@@ -3119,6 +3125,8 @@ This definition is formulated in such a way that small children and even some an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000020"/>
+        <terms:contributor>https://orcid.org/0000-0001-9625-1899</terms:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">high punctate temporal summation sensitivity</rdfs:label>
     </owl:Class>
     
@@ -3128,6 +3136,8 @@ This definition is formulated in such a way that small children and even some an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000020"/>
+        <terms:contributor>https://orcid.org/0000-0001-9625-1899</terms:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">high cold pain sensitivity</rdfs:label>
     </owl:Class>
     
@@ -3137,6 +3147,8 @@ This definition is formulated in such a way that small children and even some an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000020"/>
+        <terms:contributor>https://orcid.org/0000-0001-9625-1899</terms:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">high heat pain and high temprature of heat pain sensitivity</rdfs:label>
     </owl:Class>
     
