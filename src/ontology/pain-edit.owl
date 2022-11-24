@@ -71,6 +71,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000053>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
@@ -336,6 +337,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000039> "pa
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000040> (chronic pain)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000040> "Pain that persists or recurs for longer than three months.")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000040> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "chronic pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/PAIN_0000052>)
 
@@ -409,6 +411,15 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000052> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000053> "accute pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/PAIN_0000052>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9625-1899> "Bill Duncan")
 
 
 )
