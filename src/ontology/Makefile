@@ -144,6 +144,7 @@ $(IMPORTDIR)/uberon: $(MIRRORDIR)/uberon.owl
 	    --method MIREOT \
 	    --upper-term BFO:0000015 \
 		--lower-term GO:0019233 \
+		--lower-term RO:0002411 \
 	    --individuals exclude \
 	  remove \
 	    --select "owl:deprecated='true'^^xsd:boolean" \
