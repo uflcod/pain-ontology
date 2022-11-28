@@ -453,12 +453,12 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000051> "
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000051> "neurpathic mechanism"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000051> <http://purl.obolibrary.org/obo/PAIN_0000048>)
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000053> (accute pain)
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000053> (acute pain)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/topics/acute-pain/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000053> "A feeling of pain that happens suddenly, starts out sharp or intense, and serves as a warning sign of disease or threat to the body.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000053> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000053> "2022-11-24T06:02:26Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000053> "accute pain"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000053> "acute pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/MFOEM_000203>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000389>))
 
