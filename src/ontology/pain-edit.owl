@@ -193,11 +193,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000009> "pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000009> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000010> (temprature pain testing procedure)
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000010> (temperature pain testing procedure)
 
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000010> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000010> "2022-11-24T06:02:26Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000010> "temprature pain testing procedure"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000010> "temperature pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000010> <http://purl.obolibrary.org/obo/PAIN_0000009>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000011> (heat pain testing procedure)
@@ -396,7 +396,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000039> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000040> (chronic pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000040> "A feeling pain that persists or recurs for longer than three months.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000040> "A feeling of pain that persists or recurs for longer than three months.")
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000040> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000040> "2022-11-24T06:02:26Z")
 AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000040> "Chronic pain often becomes the sole or predominant clinical problem in some patients. As such it may warrant specific diagnostic evaluation, therapy and rehabilitation. Chronic pain is a frequent condition, affecting an estimated 20% of people worldwide.")
