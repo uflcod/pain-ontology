@@ -1,0 +1,13 @@
+format-version: 1.2
+data-version: pain/releases/2022-12-01/pain-full.owl
+date: 01:12:2022 21:58
+ontology: pain/pain-full
+property_value: http://purl.org/dc/terms/description "None" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/title "Pain Ontology" xsd:string
+property_value: owl:versionInfo "2022-12-01" xsd:string
+
+[Term]
+id: PAIN:0000000
+name: root node
+
