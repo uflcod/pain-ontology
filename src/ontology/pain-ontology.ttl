@@ -1,0 +1,331 @@
+@prefix : <http://http://purl.obolibrary.org/obo/pain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://http://purl.obolibrary.org/obo/pain.owl> .
+
+<http://http://purl.obolibrary.org/obo/pain.owl> rdf:type owl:Ontology ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "https://orcid.org/0000-0001-9625-1899 Bill Duncan" ;
+                                                  <http://purl.org/dc/elements/1.1/title> "Pain Ontology" ;
+                                                  <http://purl.org/dc/terms/license> "https://creativecommons.org/publicdomain/zero/1.0/" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/PAIN_0000000
+<http://purl.obolibrary.org/obo/PAIN_0000000> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000037> ;
+                                              <http://purl.org/dc/elements/1.1/description> """a bodily process in an organism S involving two integrated levels:
+
+  (a) activation of the nociceptive system and associated emotion generating brain components of S, and
+ 
+  (b) a simultaneous aversive sensory and emotional experience on the part of S,
+  
+where (b) is phenomenologically similar to the sort of aversive experience involved in PCT pain.""" ;
+                                              rdfs:comment "See http://ontology.buffalo.edu/smith/articles/pain.pdf page 6." ,
+                                                           """‘Phenomenologically similar’ means inter alia: (1) that the experience is ‘of’ or is ‘targeted towards’ some region R of the body of S, so that all pain is in this sense (and however diffusely) localized; (2) that the experience involves a dimension of unpleas- antness which – as is shown by the case of pain asymbolia – is not necessarily of the sort that involves suffering or aversion on the part of the subject S.
+This definition is formulated in such a way that small children and even some ani- mals can experience canonical pain, even though they do not have the cognitive re- sources to represent their experience as one that is caused in this or that way. This ad- dresses one recognized shortcoming of the IASP definition [Rollin BE. Science and Ethics, Cambridge : Cambridge University Press, 2006.].""" ;
+                                              rdfs:label "pain"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000001
+<http://purl.obolibrary.org/obo/PAIN_0000001> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000000> ;
+                                              rdfs:label "canonical pain"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000002
+<http://purl.obolibrary.org/obo/PAIN_0000002> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000000> ;
+                                              rdfs:label "variant pain"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000003
+<http://purl.obolibrary.org/obo/PAIN_0000003> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000001> ;
+                                              <http://purl.org/dc/elements/1.1/description> """(1) a bodily process in an organism S involving two integrated levels:
+
+  (1a) activation of the nociceptive system including the pain-associated emotion- generating brain components of S, and
+
+  (1b) a simultaneous sensory and aversive experience on the part of S
+
+that is,
+  (2) caused by damage to tissue located in a region R of the body of the subject S,
+
+  (3) experienced by S as being caused by this damage,4) such as to involve 
+an aversive reaction on the part of S directed towards that which is presumed by S to be causing this damage,
+
+  (5) concordant with the tissue damage on both levels (1a) and (1b),
+and also,
+
+   (6) such that the sensory experience is sufficiently intense to communicate the presence of tissue damage to the subject.""" ;
+                                              rdfs:comment "See http://ontology.buffalo.edu/smith/articles/pain.pdf page 5." ,
+                                                           """[The] patient experiences pain of the evolutionarily most basic sort, which is to say: pain in response to and in concordance with simultaneously existing tissue damage. This tissue damage is both the experienced target and the cause of the pain experience. Here the nociceptive system and the peripheral trauma are aligned; clear signals connect the one with the other.
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.""" ;
+                                              rdfs:label "pain with concordant tissue damage (PCT)"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000004
+<http://purl.obolibrary.org/obo/PAIN_0000004> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000001> ;
+                                              rdfs:comment """[The] patient experiences pain that is associated with some disorder outside the nociceptive system, a disorder existing either now or in the past. In some cases (for example myofascial pain) this disorder is predominantly associated with peripheral trauma; in other cases (for example tension headache) predominantly not. But in every case PNT pain is marked by the fact that it is discordant in terms of some attribute, such as intensity, spatial extent, or episode frequency or duration, relative to the state of the underlying tissue.
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.""" ,
+                                                           "examples: allodynia, regional myofascial pain" ;
+                                              rdfs:label "pain without concordant tissue damage (PNT)"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000005
+<http://purl.obolibrary.org/obo/PAIN_0000005> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000037> ;
+                                              rdfs:label "pain-related phenomenon without pain (PRP)"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000006
+<http://purl.obolibrary.org/obo/PAIN_0000006> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000005> ;
+                                              rdfs:comment """[There] is, for example, a mere report in a medical record attributed to the statements of a patient, but no pain is being experienced by the patient (a fact which may or may not be detectable by an external observer).
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.""" ;
+                                              rdfs:label "pain behavior without pain (PBWP)"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000007
+<http://purl.obolibrary.org/obo/PAIN_0000007> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000005> ;
+                                              rdfs:comment """[Tissue] damage normally of the sort to cause pain does not activate the pain system (as contrasted with pain asymbolia, where pain is experienced, so that the pain system is activated, but the patient does not experience the pain as something that is suffered).
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.""" ;
+                                              rdfs:label "tissue damage without pain (TWP)"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000008
+<http://purl.obolibrary.org/obo/PAIN_0000008> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000037> ;
+                                              <http://purl.org/dc/elements/1.1/description> "an unpleasant sensory and emotional experience associated with actual or potential tissue damage, or described in terms of such damage [Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums]." ;
+                                              rdfs:comment "IASP: International Association for the Study of Pain" ,
+                                                           """[The] IASP definition gives a prominent role to descriptions containing
+reference to tissue damage of varying states. Such descriptions are central to the clinician’s understanding of pain phenomena of both the PNT and NN types, neither of which necessarily has apparent tissue damage at the putative locus of pain, because the corresponding experiences are heavily influenced by processes independent of direct stimulus transmission.  
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 7.""" ;
+                                              rdfs:label "pain (IASP)"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000009
+<http://purl.obolibrary.org/obo/PAIN_0000009> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000039> ;
+                                              rdfs:label "pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000010
+<http://purl.obolibrary.org/obo/PAIN_0000010> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000009> ;
+                                              rdfs:label "temprature pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000011
+<http://purl.obolibrary.org/obo/PAIN_0000011> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000010> ;
+                                              rdfs:label "heat pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000012
+<http://purl.obolibrary.org/obo/PAIN_0000012> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000010> ;
+                                              rdfs:label "cold pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000013
+<http://purl.obolibrary.org/obo/PAIN_0000013> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000009> ;
+                                              rdfs:label "temporal summation pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000014
+<http://purl.obolibrary.org/obo/PAIN_0000014> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000011> ,
+                                                              <http://purl.obolibrary.org/obo/PAIN_0000019> ;
+                                              rdfs:label "temporal summation of heat pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000015
+<http://purl.obolibrary.org/obo/PAIN_0000015> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000012> ,
+                                                              <http://purl.obolibrary.org/obo/PAIN_0000019> ;
+                                              rdfs:label "temporal summation of cold pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000016
+<http://purl.obolibrary.org/obo/PAIN_0000016> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000009> ;
+                                              rdfs:label "pressure pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000017
+<http://purl.obolibrary.org/obo/PAIN_0000017> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000009> ;
+                                              rdfs:label "punctate pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000018
+<http://purl.obolibrary.org/obo/PAIN_0000018> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000013> ,
+                                                              <http://purl.obolibrary.org/obo/PAIN_0000017> ;
+                                              rdfs:label "temporal summation of punctate pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000019
+<http://purl.obolibrary.org/obo/PAIN_0000019> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000010> ,
+                                                              <http://purl.obolibrary.org/obo/PAIN_0000013> ;
+                                              rdfs:label "temporal summation of temprature pain testing procedure"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000020
+<http://purl.obolibrary.org/obo/PAIN_0000020> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000039> ;
+                                              rdfs:label "pain sensitivity profile"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000021
+<http://purl.obolibrary.org/obo/PAIN_0000021> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000020> ;
+                                              rdfs:label "low pressure pain sensitivity"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000022
+<http://purl.obolibrary.org/obo/PAIN_0000022> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000020> ;
+                                              rdfs:label "average pain sensitivity"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000023
+<http://purl.obolibrary.org/obo/PAIN_0000023> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000020> ;
+                                              rdfs:label "high punctate temporal summation sensitivity"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000024
+<http://purl.obolibrary.org/obo/PAIN_0000024> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000020> ;
+                                              rdfs:label "high cold pain sensitivity"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000025
+<http://purl.obolibrary.org/obo/PAIN_0000025> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000020> ;
+                                              rdfs:label "high heat pain and high temprature of heat pain sensitivity"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000026
+<http://purl.obolibrary.org/obo/PAIN_0000026> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000039> ;
+                                              rdfs:label "pain questionnaire"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000027
+<http://purl.obolibrary.org/obo/PAIN_0000027> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000026> ;
+                                              rdfs:label "In Vivo Coping Questionnaire"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000028
+<http://purl.obolibrary.org/obo/PAIN_0000028> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000026> ;
+                                              rdfs:label "Pain Vigilance and Awareness Questionnaire"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000029
+<http://purl.obolibrary.org/obo/PAIN_0000029> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000039> ;
+                                              rdfs:label "pain scale score"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000030
+<http://purl.obolibrary.org/obo/PAIN_0000030> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000029> ;
+                                              rdfs:label "Kohn Reactivity Scale"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000031
+<http://purl.obolibrary.org/obo/PAIN_0000031> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000029> ;
+                                              rdfs:label "Graded Chronic Pain Scale"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000032
+<http://purl.obolibrary.org/obo/PAIN_0000032> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000029> ;
+                                              rdfs:label "Likert Scale"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000033
+<http://purl.obolibrary.org/obo/PAIN_0000033> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000029> ;
+                                              rdfs:label "Western Ontario and McMaster Universities Osteoarthritis Index"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000034
+<http://purl.obolibrary.org/obo/PAIN_0000034> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000026> ;
+                                              rdfs:label "widespread condition questionnaire"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000035
+<http://purl.obolibrary.org/obo/PAIN_0000035> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000039> ;
+                                              rdfs:label "pain inhibition"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000036
+<http://purl.obolibrary.org/obo/PAIN_0000036> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000039> ;
+                                              rdfs:label "pain coping"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000037
+<http://purl.obolibrary.org/obo/PAIN_0000037> rdf:type owl:Class ;
+                                              rdfs:label "Smith paper"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000038
+<http://purl.obolibrary.org/obo/PAIN_0000038> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PAIN_0000000> ;
+                                              rdfs:comment """[The] patient experiences pain, as in the above, but here the pain is caused by some disorder in the nociceptive system. The latter is, as it were, derailed from its normal functioning and is firing on its own. Thus the patient is experiencing pain, which may be experienced as having a peripheral cause, but the pain is the result of a neuropathic disorder of the nociceptive system.
+See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.""" ;
+                                              rdfs:label "neuropathic nociception (NN)"@en .
+
+
+###  http://purl.obolibrary.org/obo/PAIN_0000039
+<http://purl.obolibrary.org/obo/PAIN_0000039> rdf:type owl:Class ;
+                                              rdfs:label "pain phenotyping paper"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

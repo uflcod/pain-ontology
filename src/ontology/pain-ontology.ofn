@@ -1,0 +1,97 @@
+Prefix(:=<http://http://purl.obolibrary.org/obo/pain.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://http://purl.obolibrary.org/obo/pain.owl>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000008>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000000> (pain)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000000> "See http://ontology.buffalo.edu/smith/articles/pain.pdf page 6.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000000> "a bodily process in an organism S involving two integrated levels:
+
+  (a) activation of the nociceptive system and associated emotion generating brain components of S, and
+ 
+  (b) a simultaneous aversive sensory and emotional experience on the part of S,
+  
+where (b) is phenomenologically similar to the sort of aversive experience involved in PCT pain.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000000> "‘Phenomenologically similar’ means inter alia: (1) that the experience is ‘of’ or is ‘targeted towards’ some region R of the body of S, so that all pain is in this sense (and however diffusely) localized; (2) that the experience involves a dimension of unpleas- antness which – as is shown by the case of pain asymbolia – is not necessarily of the sort that involves suffering or aversion on the part of the subject S.
+This definition is formulated in such a way that small children and even some ani- mals can experience canonical pain, even though they do not have the cognitive re- sources to represent their experience as one that is caused in this or that way. This ad- dresses one recognized shortcoming of the IASP definition [Rollin BE. Science and Ethics, Cambridge : Cambridge University Press, 2006.].")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000000> "pain"@en)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000001> (canonical pain)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000001> "canonical pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000001> <http://purl.obolibrary.org/obo/PAIN_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000002> (variant pain)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000002> "variant pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000002> <http://purl.obolibrary.org/obo/PAIN_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000003> (pain with concordant tissue damage (PCT))
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000003> "(1) a bodily process in an organism S involving two integrated levels:
+
+  (1a) activation of the nociceptive system including the pain-associated emotion- generating brain components of S, and
+
+  (1b) a simultaneous sensory and aversive experience on the part of S
+
+that is,
+  (2) caused by damage to tissue located in a region R of the body of the subject S,
+
+  (3) experienced by S as being caused by this damage,4) such as to involve 
+an aversive reaction on the part of S directed towards that which is presumed by S to be causing this damage,
+
+  (5) concordant with the tissue damage on both levels (1a) and (1b),
+and also,
+
+   (6) such that the sensory experience is sufficiently intense to communicate the presence of tissue damage to the subject.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000003> "See http://ontology.buffalo.edu/smith/articles/pain.pdf page 5.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000003> "pain with concordant tissue damage (PCT)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000003> <http://purl.obolibrary.org/obo/PAIN_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000004> (pain without concordant tissue damage (PNT))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000004> "pain without concordant tissue damage (PNT)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000004> <http://purl.obolibrary.org/obo/PAIN_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000005> (pain-related phenomenon without pain (PRP))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000005> "pain-related phenomenon without pain (PRP)"@en)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000006> (pain behavior without pain (PBWP))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000006> "pain behavior without pain (PBWP)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000006> <http://purl.obolibrary.org/obo/PAIN_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000007> (tissue damage without pain (TWP))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000007> "tissue damage without pain (TWP)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000007> <http://purl.obolibrary.org/obo/PAIN_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000008> (pain (IASP))
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000008> "an unpleasant sensory and emotional experience associated with actual or potential tissue damage, or described in terms of such damage [Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums].")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000008> "pain (IASP)"@en)
+
+
+)
