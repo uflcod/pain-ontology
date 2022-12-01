@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/pain
+
+idspace: PAIN
+base_url: /obo/pain
+
+products:
+- pain.owl: https://raw.githubusercontent.com/wdduncan/pain-ontology/main/pain.owl
+- pain.obo: https://raw.githubusercontent.com/wdduncan/pain-ontology/main/pain.obo
+
+term_browser: ontobee
+example_terms:
+- PAIN_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/wdduncan/pain-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/wdduncan/pain-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/PAIN?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/wdduncan/pain-ontology/main/
