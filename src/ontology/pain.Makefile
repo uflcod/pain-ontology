@@ -3,9 +3,6 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-# $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
-#	@echo "this is a test"
-
 # =========================
 # ontology imports
 # =========================
@@ -20,7 +17,8 @@ all-imports:
 #	@echo $(patsubst %, $(IMPORTDIR)/%, $(IMPORTS)) # testing
 	make $(patsubst %, $(IMPORTDIR)/%, $(IMPORTS))
 
-$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
+
+$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl.gz
 	$(ROBOT) \
 	  remove \
 		--input $< \
@@ -32,7 +30,8 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 		--ontology-iri $(URIBASE)/$(ONT)/$@_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
 
-$(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl
+
+$(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl.gz
 	$(ROBOT) \
 	  remove \
 		--input $< \
@@ -42,7 +41,8 @@ $(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl
 		--ontology-iri $(URIBASE)/$(ONT)/$@_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
 
-$(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl
+
+$(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl.gz
 	$(ROBOT) \
 	  extract \
 		--input $< \
@@ -57,7 +57,8 @@ $(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl
 		--ontology-iri $(URIBASE)/$(ONT)/$@_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
 
-$(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl
+
+$(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl.gz
 	$(ROBOT) \
 	  extract \
 		--input $< \
@@ -75,7 +76,8 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl
 		--ontology-iri $(URIBASE)/$(ONT)/$@_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
 
-$(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl
+
+$(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl.gz
 	$(ROBOT) \
 	  remove \
 		--input $< \
@@ -98,3 +100,21 @@ $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl
 all-mirrors:
 #	@echo $(patsubst %, mirror-%, $(IMPORTS)) # testing
 	make $(patsubst %, mirror-%, $(IMPORTS))
+
+# === gzip ontology mirrors ===
+
+$(MIRRORDIR)/omo.owl.gz: $(MIRRORDIR)/omo.owl
+	gzip -fk $< 
+
+$(MIRRORDIR)/cob.owl.gz: $(MIRRORDIR)/cob.owl
+	gzip -fk $< 
+
+$(MIRRORDIR)/mfoem.owl.gz: $(MIRRORDIR)/mfoem.owl
+	gzip -fk $< 
+
+$(MIRRORDIR)/pato.owl.gz: $(MIRRORDIR)/pato.owl
+	gzip -fk $< 
+
+$(MIRRORDIR)/uberon.owl.gz: $(MIRRORDIR)/uberon.owl
+	gzip -fk $< 
+
