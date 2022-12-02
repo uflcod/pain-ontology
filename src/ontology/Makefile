@@ -103,7 +103,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  omo cob mfoem pato uberon
+IMPORTS = 
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -255,7 +255,7 @@ ALLSEED = $(PRESEED) \
 $(IMPORTSEED): $(ALLSEED) | $(TMPDIR)
 	if [ $(IMP) = true ]; then cat $(ALLSEED) | sort | uniq > $@; fi
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 
+ANNOTATION_PROPERTIES=
 
 # ----------------------------------------
 # Import modules
@@ -271,34 +271,8 @@ $(IMPORTDIR)/%_terms_combined.txt: $(IMPORTSEED) $(IMPORTDIR)/%_terms.txt
 
 
 
-$(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/$*_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: omo
-
-$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in pain.Makefile!" && false
-## Module for ontology: cob
-
-$(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in pain.Makefile!" && false
-## Module for ontology: mfoem
-
-$(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in pain.Makefile!" && false
-## Module for ontology: pato
-
-$(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in pain.Makefile!" && false
-## Module for ontology: uberon
-
-$(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in pain.Makefile!" && false
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -328,51 +302,6 @@ IMP=true # Global parameter to bypass import generation
 MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=true # Global parameter to bypass handling of large imports
 
-
-
-## ONTOLOGY: omo
-.PHONY: mirror-omo
-.PRECIOUS: $(MIRRORDIR)/omo.owl
-mirror-omo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/omo.owl --create-dirs -o $(MIRRORDIR)/omo.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/omo.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: cob
-.PHONY: mirror-cob
-.PRECIOUS: $(MIRRORDIR)/cob.owl
-mirror-cob: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/cob.owl --create-dirs -o $(MIRRORDIR)/cob.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/cob.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: mfoem
-.PHONY: mirror-mfoem
-.PRECIOUS: $(MIRRORDIR)/mfoem.owl
-mirror-mfoem: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/mfoem.owl --create-dirs -o $(MIRRORDIR)/mfoem.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/mfoem.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: pato
-.PHONY: mirror-pato
-.PRECIOUS: $(MIRRORDIR)/pato.owl
-mirror-pato: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/pato.owl --create-dirs -o $(MIRRORDIR)/pato.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/pato.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: uberon
-.PHONY: mirror-uberon
-.PRECIOUS: $(MIRRORDIR)/uberon.owl
-mirror-uberon: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/uberon.owl --create-dirs -o $(MIRRORDIR)/uberon.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/uberon.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
