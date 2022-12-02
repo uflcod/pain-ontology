@@ -3,6 +3,8 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+# $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
+#	@echo "this is a test"
 
 # =========================
 # ontology imports
@@ -18,7 +20,7 @@ all-imports:
 #	@echo $(patsubst %, $(IMPORTDIR)/%, $(IMPORTS)) # testing
 	make $(patsubst %, $(IMPORTDIR)/%, $(IMPORTS))
 
-$(IMPORTDIR)/omo: $(MIRRORDIR)/omo.owl
+$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 	$(ROBOT) \
 	  remove \
 		--input $< \
@@ -30,7 +32,7 @@ $(IMPORTDIR)/omo: $(MIRRORDIR)/omo.owl
 		--ontology-iri $(URIBASE)/$(ONT)/$@_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
 
-$(IMPORTDIR)/cob: $(MIRRORDIR)/cob.owl
+$(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl
 	$(ROBOT) \
 	  remove \
 		--input $< \
@@ -40,7 +42,7 @@ $(IMPORTDIR)/cob: $(MIRRORDIR)/cob.owl
 		--ontology-iri $(URIBASE)/$(ONT)/$@_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
 
-$(IMPORTDIR)/mfoem: $(MIRRORDIR)/mfoem.owl
+$(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl
 	$(ROBOT) \
 	  extract \
 		--input $< \
@@ -55,7 +57,7 @@ $(IMPORTDIR)/mfoem: $(MIRRORDIR)/mfoem.owl
 		--ontology-iri $(URIBASE)/$(ONT)/$@_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
 
-$(IMPORTDIR)/uberon: $(MIRRORDIR)/uberon.owl
+$(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl
 	$(ROBOT) \
 	  extract \
 		--input $< \
@@ -73,7 +75,7 @@ $(IMPORTDIR)/uberon: $(MIRRORDIR)/uberon.owl
 		--ontology-iri $(URIBASE)/$(ONT)/$@_import.owl \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@_import.owl
 
-$(IMPORTDIR)/pato: $(MIRRORDIR)/pato.owl
+$(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl
 	$(ROBOT) \
 	  remove \
 		--input $< \
