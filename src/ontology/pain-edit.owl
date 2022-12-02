@@ -77,7 +77,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002411>))
-Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
@@ -478,15 +477,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000053> "acute pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/MFOEM_000203>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000389>))
-
-
-############################
-#   Named Individuals
-############################
-
-# Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
-
-AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9625-1899> "Bill Duncan")
 
 
 )
