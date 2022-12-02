@@ -19,8 +19,10 @@ import_group:
     - id: mfoem
       module_type: custom
     - id: pato
+      is_large: TRUE
       module_type: custom
     - id: uberon
+      is_large: TRUE
       module_type: custom
 robot_java_args: '-Xmx16G'
 custom_makefile_header: |
