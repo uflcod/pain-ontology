@@ -99,19 +99,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#cre
 
 # Class: <http://purl.obolibrary.org/obo/MFOEM_000203> (feeling of pain)
 
-AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/resources/terminology/") rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000203> "Six key notes and etymology:
-
-- Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.
- 
-- Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.
-
-- Through their life experiences, individuals learn the concept of pain.
-
-- A person’s report of an experience as pain should be respected.
- 
-- Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
- 
-- Verbal description is only one of several behaviors to express pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.")
 SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002411> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000060> (bodily process)
