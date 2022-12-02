@@ -10,14 +10,21 @@ Ontology(<http://http://purl.obolibrary.org/obo/pain.owl>
 Import(<http://purl.obolibrary.org/obo/MFOEM/2022-07-19/MFOEM.owl>)
 Import(<http://purl.obolibrary.org/obo/cob/releases/2022-11-02/cob.owl>)
 Import(<http://purl.obolibrary.org/obo/omo/releases/2022-04-27/omo.owl>)
-Import(<http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pato/releases/2022-11-09/pato.owl>)
+Import(<http://purl.obolibrary.org/obo/uberon/releases/2022-09-30/uberon.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/creator> "https://orcid.org/0000-0001-9625-1899")
 Annotation(<http://purl.org/dc/elements/1.1/date> "2022-08-23")
 Annotation(<http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/publicdomain/zero/1.0/")
 Annotation(<http://purl.org/dc/elements/1.1/title> "Pain Ontology")
 Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/publicdomain/zero/1.0/")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000203>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000002>))
@@ -65,14 +72,24 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002411>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 
 
 
@@ -82,19 +99,6 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 
 # Class: <http://purl.obolibrary.org/obo/MFOEM_000203> (feeling of pain)
 
-AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/resources/terminology/") rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000203> "Six key notes and etymology:
-
-- Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.
- 
-- Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.
-
-- Through their life experiences, individuals learn the concept of pain.
-
-- A person’s report of an experience as pain should be respected.
- 
-- Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
- 
-- Verbal description is only one of several behaviors to express pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.")
 SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002411> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000060> (bodily process)
@@ -269,42 +273,42 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000019> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000020> (pain sensitivity)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000020> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000020> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000020> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000020> "pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000020> <http://purl.obolibrary.org/obo/BFO_0000016>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000021> (low pressure pain sensitivity)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000021> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000021> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000021> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000021> "low pressure pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000021> <http://purl.obolibrary.org/obo/PAIN_0000020>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000022> (average pain sensitivity)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000022> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000022> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000022> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000022> "average pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000022> <http://purl.obolibrary.org/obo/PAIN_0000020>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000023> (high punctate temporal summation sensitivity)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000023> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000023> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000023> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000023> "high punctate temporal summation sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000023> <http://purl.obolibrary.org/obo/PAIN_0000020>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000024> (high cold pain sensitivity)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000024> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000024> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000024> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000024> "high cold pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000024> <http://purl.obolibrary.org/obo/PAIN_0000020>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000025> (high heat pain and high temprature of heat pain sensitivity)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000025> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000025> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000025> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000025> "high heat pain and high temprature of heat pain sensitivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000025> <http://purl.obolibrary.org/obo/PAIN_0000020>)
@@ -456,7 +460,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000051> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000053> (acute pain)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/topics/acute-pain/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000053> "A feeling of pain that happens suddenly, starts out sharp or intense, and serves as a warning sign of disease or threat to the body.")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000053> "https://orcid.org/0000-0001-9625-1899")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000053> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000053> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000053> "acute pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/MFOEM_000203>)
