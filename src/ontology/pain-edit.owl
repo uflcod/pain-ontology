@@ -400,10 +400,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000039> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000040> (chronic pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000040> "A feeling of pain that persists or recurs for longer than three months.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000040> "A feeling of pain that persists or recurs over an extended period of time in which each incidence of pain is attributed to the same underlying condition.")
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000040> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000040> "2022-11-24T06:02:26Z")
-AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000040> "Chronic pain often becomes the sole or predominant clinical problem in some patients. As such it may warrant specific diagnostic evaluation, therapy and rehabilitation. Chronic pain is a frequent condition, affecting an estimated 20% of people worldwide.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000040> "Chronic pain persists or recurs for longer than three months and may persist despite successful management of the condition that initially caused it, or because the underlying medical condition cannot be treated successfully.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "chronic pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/MFOEM_000203>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001863>))
