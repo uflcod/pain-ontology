@@ -19,7 +19,7 @@ all-imports:
 	make $(patsubst %, $(IMPORTDIR)/%_import.owl, $(IMPORTS))
 #	make  imports/omo_import.owl
 
-$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl.gz
+$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 	$(ROBOT) \
 	  remove \
 		--input $< \
