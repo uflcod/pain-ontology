@@ -7,11 +7,14 @@
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo mfoem pato uberon ro iao
+IMPORTS =  omo mfoem pato uberon ro iao omrse
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
 IMPORT_FILES = $(IMPORT_OWL_FILES)
+
+.PHONY: all_imports
+all_imports: $(IMPORT_FILES)
 
 .PHONY: all-imports
 all-imports:
@@ -20,6 +23,7 @@ all-imports:
 #	make  imports/omo_import.owl
 
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
+	@echo "*** building $@ ***"
 	$(ROBOT) \
 	  remove \
 		--input $< \
@@ -34,6 +38,7 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 	  --output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl $(IMPORTDIR)/mfoem_terms.txt 
+	@echo "*** building $@ ***"
 	$(ROBOT) \
 		filter \
 			--input $< \
@@ -52,6 +57,7 @@ $(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl $(IMPORTDIR)/mfoem_terms.t
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms.txt
+	@echo "*** building $@ ***"
 	$(ROBOT) \
 		filter \
 			--input $< \
@@ -72,6 +78,7 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
+	@echo "*** building $@ ***"
 	$(ROBOT) \
 		filter \
 			--input $< \
@@ -90,6 +97,7 @@ $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.txt
+	@echo "*** building $@ ***"
 	$(ROBOT) \
 		filter \
 			--input $< \
@@ -108,6 +116,7 @@ $(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.t
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
+	@echo "*** building $@ ***"
 	$(ROBOT) \
 		filter \
 			--input $< \
@@ -126,6 +135,7 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
+	@echo "*** building $@ ***"
 	$(ROBOT) \
 		filter \
 			--input $< \
@@ -149,98 +159,24 @@ $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
 
 .PHONY: all-mirrors
 all-mirrors:
-#	@echo $(patsubst %, $(MIRRORDIR)/%.owl.gz, $(IMPORTS)) # testing
-	make $(patsubst %, $(MIRRORDIR)/%.owl.gz, $(IMPORTS))
+#	@echo $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS)) # testing
+	make $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
 
 download-mirrors:
 #	@echo $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS)) # testing
 	make $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
 
-# --- gzip ontology mirrors ---
-
-$(MIRRORDIR)/omo.owl.gz:
-	gzip -fk $(MIRRORDIR)/omo.owl
-
-$(MIRRORDIR)/cob.owl.gz: 
-	gzip -fk $(MIRRORDIR)/cob.owl
-
-$(MIRRORDIR)/mfoem.owl.gz: 
-	gzip -fk $(MIRRORDIR)/mfoem.owl
-
-$(MIRRORDIR)/pato.owl.gz: 
-	gzip -fk $(MIRRORDIR)/pato.owl
-
-$(MIRRORDIR)/uberon.owl.gz: 
-	gzip -fk $(MIRRORDIR)/uberon.owl
-
-## ONTOLOGY: omo
-.PHONY: mirror-omo
-.PRECIOUS: $(MIRRORDIR)/omo.owl
-mirror-omo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/omo.owl --create-dirs -o $(MIRRORDIR)/omo.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/omo.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: cob
-.PHONY: mirror-cob
-.PRECIOUS: $(MIRRORDIR)/cob.owl
-mirror-cob: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/cob.owl --create-dirs -o $(MIRRORDIR)/cob.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/cob.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: mfoem
-.PHONY: mirror-mfoem
-.PRECIOUS: $(MIRRORDIR)/mfoem.owl
-mirror-mfoem: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/mfoem.owl --create-dirs -o $(MIRRORDIR)/mfoem.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/mfoem.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: pato
-.PHONY: mirror-pato
-.PRECIOUS: $(MIRRORDIR)/pato.owl
-mirror-pato: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/pato.owl --create-dirs -o $(MIRRORDIR)/pato.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/pato.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: uberon
-.PHONY: mirror-uberon
-.PRECIOUS: $(MIRRORDIR)/uberon.owl
-mirror-uberon: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/uberon.owl --create-dirs -o $(MIRRORDIR)/uberon.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/uberon.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-## ONTOLOGY: RO
-.PHONY: mirror-ro
-.PRECIOUS: $(MIRRORDIR)/ro.owl
-mirror-ro: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/ro.owl --create-dirs -o $(MIRRORDIR)/ro.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/ro.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-## ONTOLOGY: OMRSE
-.PHONY: mirror-omrse
-.PRECIOUS: $(MIRRORDIR)/omrse.owl
-mirror-omrse: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/omrse.owl --create-dirs -o $(MIRRORDIR)/omrse.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/omrse.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-## ONTOLOGY: IAO
-.PHONY: mirror-iao
-.PRECIOUS: $(MIRRORDIR)/iao.owl
-mirror-iao: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/iao.owl --create-dirs -o $(MIRRORDIR)/iao.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/iao.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
 	if [ $(IMP) = true ] && [ $(MIR) = true ] && [ -f $(TMPDIR)/mirror-$*.owl ]; then if cmp -s $(TMPDIR)/mirror-$*.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
 		cp $(TMPDIR)/mirror-$*.owl $@; fi; fi
+
+.PHONY: mirror-%
+mirror-%: | $(TMPDIR)
+	@echo "*** mirroring $* ***"
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then \
+		curl -L $(URIBASE)/$*.owl \
+			--create-dirs -o $(MIRRORDIR)/$(notdir $*).temp.owl --retry 4 --max-time 200 && \
+		$(ROBOT) convert \
+			--input $(MIRRORDIR)/$(notdir $*).temp.owl \
+			--output $(MIRRORDIR)/$(notdir $*).owl && \
+		rm  $(MIRRORDIR)/$*.temp.owl; fi
