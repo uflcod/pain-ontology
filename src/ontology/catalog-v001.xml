@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/pain/imports/iao_import.owl" uri="imports/iao_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl" uri="imports/omrse_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-    <uri id="Imports Wizard Entry" name="https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl" uri="imports/omrse_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/uberon/releases/2022-09-30/uberon.owl" uri="imports/uberon_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MFOEM/2022-07-19/MFOEM.owl" uri="imports/mfoem_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/pato/releases/2022-11-09/pato.owl" uri="imports/pato_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/cob/releases/2022-11-02/cob.owl" uri="imports/cob_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omo/releases/2022-04-27/omo.owl" uri="imports/omo_import.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/pain/imports/omo_import.owl" uri="imports/omo_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/pain/imports/omo_import.obo" uri="imports/omo_import.obo"/>
-        <uri name="http://purl.obolibrary.org/obo/pain/imports/cob_import.owl" uri="imports/cob_import.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/pain/imports/cob_import.obo" uri="imports/cob_import.obo"/>
         <uri name="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl" uri="imports/mfoem_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.obo" uri="imports/mfoem_import.obo"/>
         <uri name="http://purl.obolibrary.org/obo/pain/imports/pato_import.owl" uri="imports/pato_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/pain/imports/pato_import.obo" uri="imports/pato_import.obo"/>
         <uri name="http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/pain/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/pain/imports/iao_import.owl" uri="imports/iao_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/pain/imports/iao_import.obo" uri="imports/iao_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/pain/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl" uri="imports/omrse_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/pain/imports/omrse_import.obo" uri="imports/omrse_import.obo"/>
     </group>
 </catalog>
