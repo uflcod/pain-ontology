@@ -58,23 +58,25 @@ $(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl.gz
 		--ontology-iri $(URIBASE)/$(ONT)/$@ \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl.gz
+$(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms.txt
 	$(ROBOT) \
-	  extract \
-		--input $< \
-		--method MIREOT \
-		--upper-term BFO:0000015 \
-		--lower-term GO:0019233 \
-		--lower-term RO:0002411 \
-		--individuals exclude \
-	  remove \
-		--select "owl:deprecated='true'^^xsd:boolean" \
-	  remove \
-		--select "<http://purl.obolibrary.org/obo/NCBITaxon_*>" \
-	  annotate \
-	  	--annotate-defined-by true \
-		--ontology-iri $(URIBASE)/$(ONT)/$@ \
-	  --output $@.tmp.owl && mv $@.tmp.owl $@
+		filter \
+			--input $< \
+			--term-file $(word 2, $^) \
+			--select "annotations self ancestors" \
+			--axioms logical \
+			--signature true \
+			--trim true \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		remove \
+			--select "<http://purl.obolibrary.org/obo/NCBITaxon_*>" \
+		annotate \
+			--annotate-defined-by true \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/$@ \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl.gz
 	$(ROBOT) \
