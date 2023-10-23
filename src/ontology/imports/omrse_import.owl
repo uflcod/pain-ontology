@@ -1,4 +1,4 @@
-Prefix(:=<https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,8 +6,8 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>
-<https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>
+Ontology(<http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>
+<http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -59,87 +59,87 @@ Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 
 # Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000179> (<http://purl.obolibrary.org/obo/BFO_0000179>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000180> (<http://purl.obolibrary.org/obo/BFO_0000180>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000111> (<http://purl.obolibrary.org/obo/IAO_0000111>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000111> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000114> (<http://purl.obolibrary.org/obo/IAO_0000114>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (<http://purl.obolibrary.org/obo/IAO_0000116>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (<http://purl.obolibrary.org/obo/IAO_0000117>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (<http://purl.obolibrary.org/obo/IAO_0000118>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000118> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (<http://purl.obolibrary.org/obo/IAO_0000119>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000412> (<http://purl.obolibrary.org/obo/IAO_0000412>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000412> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000600> (<http://purl.obolibrary.org/obo/IAO_0000600>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000601> (<http://purl.obolibrary.org/obo/IAO_0000601>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000602> (<http://purl.obolibrary.org/obo/IAO_0000602>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (<http://purl.obolibrary.org/obo/IAO_0010000>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0001900> (<http://purl.obolibrary.org/obo/RO_0001900>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0001900> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: <http://purl.org/dc/elements/1.1/contributor> (<http://purl.org/dc/elements/1.1/contributor>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/contributor> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: rdfs:comment (rdfs:comment)
 
-AnnotationAssertion(rdfs:isDefinedBy rdfs:comment <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy rdfs:comment <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: rdfs:isDefinedBy (rdfs:isDefinedBy)
 
-AnnotationAssertion(rdfs:isDefinedBy rdfs:isDefinedBy <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy rdfs:isDefinedBy <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: rdfs:label (rdfs:label)
 
-AnnotationAssertion(rdfs:isDefinedBy rdfs:label <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy rdfs:label <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 # Annotation Property: rdfs:seeAlso (rdfs:seeAlso)
 
-AnnotationAssertion(rdfs:isDefinedBy rdfs:seeAlso <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy rdfs:seeAlso <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 
 ############################
@@ -155,7 +155,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000052> "inheres_in"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0001901>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0000052> "Note that this relation was previously called \"inheres in\", but was changed to be called \"characteristic of\" because BFO2 uses \"inheres in\" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000052> "characteristic of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0002314>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0000053>)
@@ -171,7 +171,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000053> "bearer_of"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000053> "is bearer of"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/RO_0001901>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000053> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000053> "bearer_of"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000053> "has characteristic"@en)
 InverseFunctionalObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>)
@@ -183,7 +183,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000085> "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0000085> "A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000085> "has_function"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000085> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000085> "has function"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/RO_0000053>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/BFO_0000004>)
@@ -194,7 +194,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000086> "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0000086> "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000086> "has_quality"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000086> "has quality"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/RO_0000053>)
 
@@ -204,7 +204,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000087> "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0000087> "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000087> "has_role"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000087> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000087> "has role"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/RO_0000053>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/BFO_0000004>)
@@ -213,7 +213,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obo
 # Object Property: <http://purl.obolibrary.org/obo/RO_0000091> (has disposition)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000091> "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000091> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000091> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000091> "has disposition"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000091> <http://purl.obolibrary.org/obo/RO_0000053>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0000091> <http://purl.obolibrary.org/obo/BFO_0000004>)
@@ -226,7 +226,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002314> "inheres in part of")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002314> <http://www.ncbi.nlm.nih.gov/pubmed/20064205>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/RO_0002314> <http://purl.obolibrary.org/obo/RO_0001901>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002314> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002314> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002314> "characteristic of part of"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002314> <http://purl.obolibrary.org/obo/ro/docs/reflexivity/>)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002314> <http://purl.obolibrary.org/obo/RO_0002502>)
@@ -234,7 +234,7 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002314> <http://purl.obo
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002502> (depends on)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002502> <https://orcid.org/0000-0002-6601-2165>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002502> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002502> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002502> "depends on")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002502> <http://purl.obolibrary.org/obo/BFO_0000169>)
 
@@ -245,7 +245,7 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002502> <ht
 
 # Datatype: rdf:PlainLiteral (rdf:PlainLiteral)
 
-AnnotationAssertion(rdfs:isDefinedBy rdf:PlainLiteral <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy rdf:PlainLiteral <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 
 ############################
@@ -407,7 +407,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "human being")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NCBITaxon_9606> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0100026>)
 
@@ -427,7 +427,7 @@ OBI doesn't take position as to  when an organism starts or ends being an organi
 This issue is outside the scope of OBI.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0100026> "GROUP: OBI Biomaterial Branch")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0100026> "WEB: http://en.wikipedia.org/wiki/Organism"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0100026> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0100026> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0100026> "organism"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0100026> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
@@ -436,7 +436,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0100026> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000007> "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000007> "Mathias Brochhausen"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OMRSE_00000007> "http://en.wikipedia.org/wiki/Gender_role"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000007> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000007> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000007> "gender role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000007> <http://purl.obolibrary.org/obo/OMRSE_00000049>)
 
@@ -445,7 +445,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000007> <http://purl.obolibra
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000008> "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the male sex in the context of the culture in question."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000008> "Mathias Brochhausen"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OMRSE_00000008> "male gender"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000008> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000008> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000008> "male gender role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000008> <http://purl.obolibrary.org/obo/OMRSE_00000007>)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000008> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/OBI_0100026>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/OBI_0100026>)))
@@ -455,7 +455,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000008> ObjectIntersectionOf(
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000009> "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the female sex in the context of the culture in question."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000009> "Mathias Brochhausen"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OMRSE_00000009> "female gender"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000009> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000009> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000009> "female gender role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000009> <http://purl.obolibrary.org/obo/OMRSE_00000007>)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000009> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/OBI_0100026>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/OBI_0100026>)))
@@ -466,7 +466,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000010> "Mathias Brochhausen")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000010> "William R. Hogan"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OMRSE_00000010> "health care role"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000010> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000010> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000010> "human health care role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000010> <http://purl.obolibrary.org/obo/OMRSE_00002072>)
 
@@ -478,7 +478,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OMRSE_00000011> "patient"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OMRSE_00000011> "CAFE domain expert working group."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000011> "In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications."@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000011> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000011> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000011> "patient role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000011> <http://purl.obolibrary.org/obo/OMRSE_00000010>)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000011> <http://purl.obolibrary.org/obo/OMRSE_00000049>)
@@ -486,7 +486,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000011> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/OMRSE_00000030> (human patient role)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000030> "A patient role that inheres in a human being."@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000030> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000030> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000030> "human patient role"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000030> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OMRSE_00000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000030> <http://purl.obolibrary.org/obo/OMRSE_00000011>)
@@ -494,7 +494,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000030> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/OMRSE_00000048> (material entity role)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000048> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000048> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000048> "material entity role"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/BFO_0000040>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000048> <http://purl.obolibrary.org/obo/BFO_0000023>)
@@ -503,7 +503,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000048> ObjectAllValuesFrom(<
 
 # Class: <http://purl.obolibrary.org/obo/OMRSE_00000049> (organism role)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000049> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000049> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000049> "organism role"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000049> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OMRSE_00000048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/OBI_0100026>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000049> <http://purl.obolibrary.org/obo/OMRSE_00000048>)
@@ -512,7 +512,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000049> ObjectAllValuesFrom(<
 
 # Class: <http://purl.obolibrary.org/obo/OMRSE_00000050> (Homo sapiens role)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000050> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000050> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000050> "Homo sapiens role"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OMRSE_00000049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000050> <http://purl.obolibrary.org/obo/OMRSE_00000049>)
@@ -525,14 +525,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00002072> "Matthew Diller"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00002072> "Mathias Brochhausen"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00002072> "Previous definition: A role played by an entity in human social processes."@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00002072> <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00002072> <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00002072> "role in human social processes"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00002072> <http://purl.obolibrary.org/obo/OMRSE_00000048>)
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00002072> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/BFO_0000040>))
 
 # Class: owl:Thing (owl:Thing)
 
-AnnotationAssertion(rdfs:isDefinedBy owl:Thing <https://w3id.org/neural-electronic-interface-ontology/neio/imports/omrse_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy owl:Thing <http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 
 
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>))))

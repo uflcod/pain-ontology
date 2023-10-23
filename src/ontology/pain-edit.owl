@@ -7,11 +7,12 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://http://purl.obolibrary.org/obo/pain.owl>
-Import(<http://purl.obolibrary.org/obo/MFOEM/2022-07-19/MFOEM.owl>)
-Import(<http://purl.obolibrary.org/obo/cob/releases/2022-11-02/cob.owl>)
-Import(<http://purl.obolibrary.org/obo/omo/releases/2022-04-27/omo.owl>)
-Import(<http://purl.obolibrary.org/obo/pato/releases/2022-11-09/pato.owl>)
-Import(<http://purl.obolibrary.org/obo/uberon/releases/2022-09-30/uberon.owl>)
+Import(<http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+Import(<http://purl.obolibrary.org/obo/pain/imports/omo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
+Import(<http://purl.obolibrary.org/obo/pain/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/pain/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/creator> "https://orcid.org/0000-0001-9625-1899")
 Annotation(<http://purl.org/dc/elements/1.1/date> "2022-08-23")
 Annotation(<http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/publicdomain/zero/1.0/")
@@ -100,10 +101,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#cre
 # Class: <http://purl.obolibrary.org/obo/MFOEM_000203> (feeling of pain)
 
 SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002411> <http://purl.obolibrary.org/obo/GO_0019233>))
-
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000060> (bodily process)
-
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000000> (pain (IASP))
 

@@ -7,7 +7,7 @@
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo mfoem pato uberon
+IMPORTS =  omo mfoem pato uberon ro
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -107,6 +107,24 @@ $(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.t
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
+	$(ROBOT) \
+		filter \
+			--input $< \
+			--term-file $(word 2, $^) \
+			--select "annotations self ancestors" \
+			--axioms logical \
+			--signature true \
+			--trim true \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		annotate \
+			--annotate-defined-by true \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/$@ \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
+
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------
@@ -181,6 +199,21 @@ mirror-uberon: | $(TMPDIR)
 		$(ROBOT) convert -i $(MIRRORDIR)/uberon.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
+## ONTOLOGY: RO
+.PHONY: mirror-ro
+.PRECIOUS: $(MIRRORDIR)/ro.owl
+mirror-ro: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/ro.owl --create-dirs -o $(MIRRORDIR)/ro.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/ro.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+## ONTOLOGY: RO
+.PHONY: mirror-omrse
+.PRECIOUS: $(MIRRORDIR)/omrse.owl
+mirror-omrse: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/omrse.owl --create-dirs -o $(MIRRORDIR)/omrse.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/omrse.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
 	if [ $(IMP) = true ] && [ $(MIR) = true ] && [ -f $(TMPDIR)/mirror-$*.owl ]; then if cmp -s $(TMPDIR)/mirror-$*.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
