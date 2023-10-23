@@ -91,6 +91,24 @@ $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl.gz
 		--ontology-iri $(URIBASE)/$(ONT)/$@ \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@
 
+$(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.txt
+	$(ROBOT) \
+		filter \
+			--input $< \
+			--term-file $(word 2, $^) \
+			--select "annotations self ancestors" \
+			--axioms logical \
+			--signature true \
+			--trim true \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		annotate \
+			--annotate-defined-by true \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/$@ \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
+
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------
