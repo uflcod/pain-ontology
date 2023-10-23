@@ -7,6 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://http://purl.obolibrary.org/obo/pain.owl>
+Import(<http://purl.obolibrary.org/obo/pain/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
@@ -21,7 +22,6 @@ Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/publi
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
-Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000121>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000203>))
@@ -336,7 +336,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000028> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000029> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000029> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000029> "pain scale score"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000029> <http://purl.obolibrary.org/obo/COB_0000121>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000029> <http://purl.obolibrary.org/obo/IAO_0000109>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/PAIN_0000000>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000030> (Kohn Reactivity Scale)

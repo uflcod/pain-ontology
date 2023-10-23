@@ -7,7 +7,7 @@
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo mfoem pato uberon ro
+IMPORTS =  omo mfoem pato uberon ro iao
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -125,6 +125,24 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
+	$(ROBOT) \
+		filter \
+			--input $< \
+			--term-file $(word 2, $^) \
+			--select "annotations self ancestors" \
+			--axioms logical \
+			--signature true \
+			--trim true \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		annotate \
+			--annotate-defined-by true \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/$@ \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
+
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------
@@ -207,12 +225,20 @@ mirror-ro: | $(TMPDIR)
 		$(ROBOT) convert -i $(MIRRORDIR)/ro.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
-## ONTOLOGY: RO
+## ONTOLOGY: OMRSE
 .PHONY: mirror-omrse
 .PRECIOUS: $(MIRRORDIR)/omrse.owl
 mirror-omrse: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/omrse.owl --create-dirs -o $(MIRRORDIR)/omrse.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/omrse.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+## ONTOLOGY: IAO
+.PHONY: mirror-iao
+.PRECIOUS: $(MIRRORDIR)/iao.owl
+mirror-iao: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/iao.owl --create-dirs -o $(MIRRORDIR)/iao.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/iao.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
