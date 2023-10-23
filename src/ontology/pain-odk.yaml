@@ -1,6 +1,6 @@
 id: pain
 title: "Pain Ontology"
-github_org: wdduncan
+github_org: uflcod
 repo: pain-ontology
 report_fail_on: None
 export_formats:

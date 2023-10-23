@@ -11,15 +11,15 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2022-12-02/pain-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2022-12-08/pain-base.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9625-1899</dc:creator>
         <dc:date>2022-08-23</dc:date>
         <dc:license>https://creativecommons.org/publicdomain/zero/1.0/</dc:license>
         <dc:title>Pain Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license>https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02:12:2022 15:27</oboInOwl:date>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-12-02</owl:versionInfo>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">08:12:2022 13:26</oboInOwl:date>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-12-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -662,22 +662,16 @@ See http://ontology.buffalo.edu/smith/articles/pain.pdf page 4.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A feeling of pain that persists or recurs for longer than three months.</obo:IAO_0000115>
+        <obo:IAO_0000115>A feeling of pain that persists or recurs over an extended period of time in which each incidence of pain is attributed to the same underlying condition.</obo:IAO_0000115>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:comment>Chronic pain often becomes the sole or predominant clinical problem in some patients. As such it may warrant specific diagnostic evaluation, therapy and rehabilitation. Chronic pain is a frequent condition, affecting an estimated 20% of people worldwide.</rdfs:comment>
+        <rdfs:comment>Chronic pain persists or recurs for longer than three months and may persist despite successful management of the condition that initially caused it, or because the underlying medical condition cannot be treated successfully.</rdfs:comment>
         <rdfs:label xml:lang="en">chronic pain</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A feeling of pain that persists or recurs for longer than three months.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/</obo:IAO_0000119>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000040"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget>Chronic pain often becomes the sole or predominant clinical problem in some patients. As such it may warrant specific diagnostic evaluation, therapy and rehabilitation. Chronic pain is a frequent condition, affecting an estimated 20% of people worldwide.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic pain persists or recurs for longer than three months and may persist despite successful management of the condition that initially caused it, or because the underlying medical condition cannot be treated successfully.</owl:annotatedTarget>
         <dc:source>https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/</dc:source>
     </owl:Axiom>
     
@@ -781,6 +775,7 @@ https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/</rdfs:
         <obo:IAO_0000115>A feeling of pain that happens suddenly, starts out sharp or intense, and serves as a warning sign of disease or threat to the body.</obo:IAO_0000115>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:comment>Acute pain is caused by injury, surgery, illness, trauma, or painful medical procedures and generally lasts from a few minutes to less than six months. Acute pain usually disappears whenever the underlying cause is treated or healed.</rdfs:comment>
         <rdfs:label xml:lang="en">acute pain</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -788,6 +783,12 @@ https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/</rdfs:
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A feeling of pain that happens suddenly, starts out sharp or intense, and serves as a warning sign of disease or threat to the body.</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.iasp-pain.org/resources/topics/acute-pain/</obo:IAO_0000119>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000053"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Acute pain is caused by injury, surgery, illness, trauma, or painful medical procedures and generally lasts from a few minutes to less than six months. Acute pain usually disappears whenever the underlying cause is treated or healed.</owl:annotatedTarget>
+        <dc:source>https://www.iasp-pain.org/resources/topics/acute-pain/</dc:source>
     </owl:Axiom>
     
 
