@@ -81,20 +81,23 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl.gz
+$(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
 	$(ROBOT) \
-	  remove \
-		--input $< \
-		--select "owl:deprecated='true'^^xsd:boolean" \
-	  extract \
-		--method MIREOT \
-		--upper-term PATO:0000001 \
-		--lower-term PATO:0002387 \
-		--lower-term PATO:0002414 \
-	  annotate \
-	  	--annotate-defined-by true \
-		--ontology-iri $(URIBASE)/$(ONT)/$@ \
-	  --output $@.tmp.owl && mv $@.tmp.owl $@
+		filter \
+			--input $< \
+			--term-file $(word 2, $^) \
+			--select "annotations self ancestors" \
+			--axioms logical \
+			--signature true \
+			--trim true \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		annotate \
+			--annotate-defined-by true \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/$@ \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.txt
 	$(ROBOT) \
