@@ -43,20 +43,23 @@ $(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl.gz
 		--ontology-iri $(URIBASE)/$(ONT)/$@ \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl.gz
+$(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl $(IMPORTDIR)/mfoem_terms.txt 
 	$(ROBOT) \
-	  extract \
-		--input $< \
-		--method MIREOT \
-		--upper-term OGMS:0000060 \
-		--lower-term MFOEM:000203 \
-		--lower-term GO:0048266 \
-	 remove \
-		--select "owl:deprecated='true'^^xsd:boolean" \
-	  annotate \
-	  	--annotate-defined-by true \
-		--ontology-iri $(URIBASE)/$(ONT)/$@ \
-	  --output $@.tmp.owl && mv $@.tmp.owl $@
+		filter \
+			--input $< \
+			--term-file $(word 2, $^) \
+			--select "annotations self ancestors" \
+			--axioms logical \
+			--signature true \
+			--trim true \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		annotate \
+			--annotate-defined-by true \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/$@ \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms.txt
 	$(ROBOT) \
