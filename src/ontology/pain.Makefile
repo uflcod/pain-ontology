@@ -29,6 +29,8 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl.gz
 	  annotate \
 		--annotate-defined-by true \
 		--ontology-iri $(URIBASE)/$(ONT)/$@ \
+		--version-iri $(URIBASE)/$(ONT)/$@ \
+	convert --format ofn \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl.gz
