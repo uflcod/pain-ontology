@@ -11,14 +11,14 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2023-10-30/pain-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2023-10-31/pain-simple.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9625-1899</dc:creator>
         <dc:date>2022-08-23</dc:date>
         <dc:license>https://creativecommons.org/publicdomain/zero/1.0/</dc:license>
         <dc:title>Pain Ontology</dc:title>
         <terms:license>https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
-        <oboInOwl:date>30:10:2023 09:54</oboInOwl:date>
-        <owl:versionInfo>2023-10-30</owl:versionInfo>
+        <oboInOwl:date>31:10:2023 13:04</oboInOwl:date>
+        <owl:versionInfo>2023-10-31</owl:versionInfo>
     </owl:Ontology>
     
 
