@@ -78,7 +78,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002411>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-6378-1703>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9990-8331>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-1118-1738>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0002-7282-0836>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0008-8150-9779>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
@@ -408,7 +413,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000042> (chronic primary pain)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000042> "Chronic pain that occurs in one or more anatomical regions that persists or recurs for longer than 3 months, and that is characterized by significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles).")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000042> "https://orcid.org/0000-0001-9625-1899"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000042> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000042> "2022-11-24T06:02:26Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000042> "2022-11-24T06:02:26Z"^^xsd:dateTime)
 AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000042> "Chronic primary pain is multifactorial: biological psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate independently of identified biological or psychological contributors unless another diagnosis would better account for the presenting symptoms.")
@@ -469,9 +474,29 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> ObjectSomeValuesFrom(<h
 #   Named Individuals
 ############################
 
+# Individual: <https://orcid.org/0000-0001-6378-1703> (Mattew Diller)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6378-1703> "Mattew Diller"@en)
+
 # Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9625-1899> "Bill Duncan")
+
+# Individual: <https://orcid.org/0000-0001-9990-8331> (Alex Diehl)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9990-8331> "Alex Diehl"@en)
+
+# Individual: <https://orcid.org/0000-0002-1118-1738> (John Beverley)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1118-1738> "John Beverley"@en)
+
+# Individual: <https://orcid.org/0009-0002-7282-0836> (Finn Wilson)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0002-7282-0836> "Finn Wilson"@en)
+
+# Individual: <https://orcid.org/0009-0008-8150-9779> (Jisoo Seo)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0008-8150-9779> "Jisoo Seo"@en)
 
 
 )
