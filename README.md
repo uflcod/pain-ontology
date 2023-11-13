@@ -8,6 +8,9 @@ Other ontologies are also reviewed.
 
 More information can be found at http://obofoundry.org/ontology/pain
 
+## Term Spreadsheet
+[Google spreadsheet for adding terms.](https://docs.google.com/spreadsheets/d/1sVXeL8tnsFrqt8x9v4T9Euka-L5_y4RSvrlPgArfp8U/edit#gid=0)  
+
 ## Versions
 
 ### Stable release versions
