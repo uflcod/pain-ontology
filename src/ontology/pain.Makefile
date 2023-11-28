@@ -7,7 +7,7 @@
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo mfoem pato uberon ro iao omrse
+IMPORTS =  omo mfoem pato uberon ro iao omrse go
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
