@@ -1,0 +1,3 @@
+http://purl.obolibrary.org/obo/BFO_0000050 # part of
+http://purl.obolibrary.org/obo/GO_0048265  # response to pain
+http://purl.obolibrary.org/obo/GO_0048266  # behavioral response to pain
