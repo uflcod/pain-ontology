@@ -266,11 +266,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000018> "te
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000018> <http://purl.obolibrary.org/obo/PAIN_0000013>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000018> <http://purl.obolibrary.org/obo/PAIN_0000017>)
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000019> (temporal summation of temprature pain testing procedure)
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000019> (temporal summation of temperature pain testing procedure)
 
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000019> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000019> "2022-11-24T06:02:26Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000019> "temporal summation of temprature pain testing procedure"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000019> "temporal summation of temperature pain testing procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000019> <http://purl.obolibrary.org/obo/PAIN_0000010>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000019> <http://purl.obolibrary.org/obo/PAIN_0000013>)
 
