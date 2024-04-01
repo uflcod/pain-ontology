@@ -147,11 +147,11 @@ For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
 # Travis Continuous Integration System
 
-Check the build status here: [![Build Status](https://travis-ci.org/uflcod/pain-ontology.svg?branch=main)](https://travis-ci.org/wdduncan/pain-ontology)
+Check the build status here: [![Build Status](https://travis-ci.org/uflcod/pain-ontology.svg?branch=main)](https://travis-ci.org/uflcod/pain-ontology)
 
 Note: if you have only just created this project you will need to authorize travis for this repo.
 
- 1. Go to [https://travis-ci.org/profile/wdduncan](https://travis-ci.org/profile/wdduncan)
+ 1. Go to [https://travis-ci.org/profile/uflcod](https://travis-ci.org/profile/uflcod)
  2. click the "Sync account" button
  3. Click the tick symbol next to pain-ontology
 
