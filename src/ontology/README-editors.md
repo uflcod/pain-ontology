@@ -24,7 +24,7 @@ The editors version is [pain-edit.owl](pain-edit.owl)
 
 [../../pain.owl](../../pain.owl) is the release version
 
-To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/wdduncan/pain-ontology) for details.
+To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/uflcod/pain-ontology) for details.
 
 You should discuss the git workflow you should use with the maintainer
 of this repo, who should document it here. If you are the maintainer,
