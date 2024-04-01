@@ -32,7 +32,7 @@ you can contact the odk developers for assistance. You may want to
 copy the flow an existing project, for example GO: [Gene Ontology
 Editors Tutorial](https://go-protege-tutorial.readthedocs.io/en/latest/).
 
-In general, it is bad practice to commit changes to master. It is
+In general, it is bad practice to commit changes to main. It is
 better to make changes on a branch, and make Pull Requests.
 
 ## ID Ranges
@@ -87,7 +87,7 @@ first type
 
     git branch
 
-to make sure you are on master
+to make sure you are on main
 
     cd src/ontology
     sh run.sh make all
@@ -110,12 +110,12 @@ And type a brief description of the release in the editor window
 
 Finally type:
 
-    git push origin master
+    git push origin main
 
 IMMEDIATELY AFTERWARDS (do *not* make further modifications) go here:
 
- * https://github.com/wdduncan/pain-ontology/releases
- * https://github.com/wdduncan/pain-ontology/releases/new
+ * https://github.com/uflcod/pain-ontology/releases
+ * https://github.com/uflcod/pain-ontology/releases/new
 
 __IMPORTANT__: The value of the "Tag version" field MUST be
 
@@ -147,7 +147,7 @@ For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
 # Travis Continuous Integration System
 
-Check the build status here: [![Build Status](https://travis-ci.org/wdduncan/pain-ontology.svg?branch=master)](https://travis-ci.org/wdduncan/pain-ontology)
+Check the build status here: [![Build Status](https://travis-ci.org/uflcod/pain-ontology.svg?branch=main)](https://travis-ci.org/wdduncan/pain-ontology)
 
 Note: if you have only just created this project you will need to authorize travis for this repo.
 
