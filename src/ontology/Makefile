@@ -55,9 +55,9 @@ ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --anno
 OTHER_SRC =                 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
-FORMATS = $(sort  owl owl)
+FORMATS = $(sort  owl obo)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
-RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full $(ONT)-simple $(ONT)-non-classified $(ONT)-base $(ONT)-full)
+RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full $(ONT)-simple $(ONT)-non-classified)
 
 # ----------------------------------------
 # Top-level targets
@@ -403,7 +403,10 @@ $(ONT)-simple.owl: $(SRC) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILES)
 		annotate --ontology-iri $(ONTBASE)/$@ \
 		$(ANNOTATE_ONTOLOGY_VERSION) \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
-		
+
+$(ONT).obo: $(ONT).owl
+	$(ROBOT) convert --input $< --check false -f obo -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+	
 # ----------------------------------------
 # Debugging Tools
 # ----------------------------------------
