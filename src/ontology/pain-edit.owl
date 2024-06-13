@@ -430,6 +430,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000041> "2024-06-13T18:47:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000041> "nociceptive pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> <http://purl.obolibrary.org/obo/PAIN_0000036>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000331>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000042> (chronic primary pain)
 
@@ -447,6 +448,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000043> "2024-06-13T18:47:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000043> "nociplastic pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000043> <http://purl.obolibrary.org/obo/PAIN_0000036>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000179>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000044> (neuropathic pain)
 
