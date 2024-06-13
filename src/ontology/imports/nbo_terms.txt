@@ -1,0 +1,4 @@
+http://purl.obolibrary.org/obo/NBO_0000331         # nociceptive behavior
+http://purl.obolibrary.org/obo/NBO_0000179         # sensitization
+http://purl.obolibrary.org/obo/nbo#in_response_to  # in response to
+http://purl.obolibrary.org/obo/GO_0019233          # sensory perception of pain
