@@ -1,3 +1,12 @@
 http://purl.obolibrary.org/obo/BFO_0000050 # part of
+http://purl.obolibrary.org/obo/BFO_0000051 # has part
 http://purl.obolibrary.org/obo/GO_0048265  # response to pain
 http://purl.obolibrary.org/obo/GO_0048266  # behavioral response to pain
+http://purl.obolibrary.org/obo/GO_0019233  # sensory perception of pain
+http://purl.obolibrary.org/obo/GO_0019234  # sensory perception of fast pain
+http://purl.obolibrary.org/obo/GO_0019235  # sensory perception of slow pain
+http://purl.obolibrary.org/obo/GO_0062149  # detection of stimulus involved in sensory perception of pain
+http://purl.obolibrary.org/obo/GO_0050968  # detection of chemical stimulus involved in sensory perception of pain
+http://purl.obolibrary.org/obo/GO_0050967  # detection of electrical stimulus involved in sensory perception of pain
+http://purl.obolibrary.org/obo/GO_0050966  # detection of mechanical stimulus involved in sensory perception of pain
+http://purl.obolibrary.org/obo/GO_0050965  # detection of temperature stimulus involved in sensory perception of pain
