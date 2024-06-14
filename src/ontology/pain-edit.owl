@@ -442,9 +442,11 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "
 - Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
 
  - Verbal description is only one of several behaviors to express pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "an unpleasant sensory and emotional experience associated with actual or potential tissue damage, or described in terms of such damage")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000036> "pain"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PAIN_0000036> "Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PAIN_0000036> "- The Revised IASP definition of pain: concepts, challenges, and compromises. 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
+
+- Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/MF_0000020>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0019233>))
 
