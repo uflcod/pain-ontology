@@ -134,7 +134,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000061> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000061> "2024-06-13T22:09:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000061> "experienced as"@en)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/MF_0000020>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/GO_0050877>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/MF_0000020>)
 
 
