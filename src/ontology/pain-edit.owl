@@ -89,11 +89,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000056>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000057>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000058>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000065>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000060>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000061>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000062>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002411>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-6378-1703>))
@@ -120,12 +123,13 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#cre
 #   Object Properties
 ############################
 
-# Object Property: <http://purl.obolibrary.org/obo/PAIN_0000060> (pain occurres in)
+# Object Property: <http://purl.obolibrary.org/obo/PAIN_0000060> (pain experienced in)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000060> "A relation between pain and an anatomical entity in which the pain is subjectively experienced as occurring in the anatomical entity.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000060> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000060> "2024-06-13T22:01:34Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000060> "pain occurres in"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000060> "pain experienced in"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/PAIN_0000060> <http://purl.obolibrary.org/obo/PAIN_0000062>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000060> <http://purl.obolibrary.org/obo/PAIN_0000036>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/PAIN_0000060> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 
@@ -137,6 +141,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000061> "experienced as"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/GO_0050877>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/MF_0000020>)
+
+# Object Property: <http://purl.obolibrary.org/obo/PAIN_0000062> (A relation between a physical sensation and an anatomical entity in which the sensation is subjectively experienced as occurring in the anatomical entity.)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000062> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000062> "2025-04-28T16:36:53Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "A relation between a physical sensation and an anatomical entity in which the sensation is subjectively experienced as occurring in the anatomical entity.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "experienced in"@en)
 
 
 
@@ -450,6 +461,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 - Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/MF_0000020>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0019233>))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0001062>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000037> (concepts from papers)
 
@@ -593,13 +605,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000055> "ph
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000055> <http://purl.obolibrary.org/obo/PAIN_0000036>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/PAIN_0000056>))
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000056> (localized pain)
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000056> (anatomically discreet pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://ospinamedical.com/orthopedic-blog/localized-vs-radicular-pain-decoding-your-discomfort") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000056> "Pain that is confined or restricted to a particular area of the body.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://ospinamedical.com/orthopedic-blog/localized-vs-radicular-pain-decoding-your-discomfort") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000056> "Pain that is confined or restricted to a particular anatomical area (or zone) of the body.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000056> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000056> "2024-06-13T21:27:59Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000056> "localized pain"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000056> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000060> <http://purl.obolibrary.org/obo/UBERON_0001062>)))
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PAIN_0000056> "localized pain")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000056> "anatomically discreet pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000056> <http://purl.obolibrary.org/obo/PAIN_0000036>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000057> (knee osteoarthritis pain)
 
@@ -623,6 +636,22 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000059> "nociplastic knee osteoarthritis pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000059> <http://purl.obolibrary.org/obo/PAIN_0000057>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000179>))
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000063> (stump pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000063> "Pain that is experienced in the area proximal to an amputation site.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000063> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000063> "2025-04-28T16:45:26Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PAIN_0000063> "residual limb pain")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000063> "stump pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000063> <http://purl.obolibrary.org/obo/PAIN_0000056>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000065> (pain associated with emotional response)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000065> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000065> "2025-04-28T16:56:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000065> "pain associated with emotional response"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000065> <http://purl.obolibrary.org/obo/PAIN_0000036>)
 
 
 ############################
