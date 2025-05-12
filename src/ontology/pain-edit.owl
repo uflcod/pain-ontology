@@ -71,12 +71,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000041>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000042>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000043>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000046>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000050>))
@@ -87,8 +85,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000054>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000056>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000057>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000058>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000059>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000065>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
@@ -154,10 +150,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "ex
 ############################
 #   Classes
 ############################
-
-# Class: <http://purl.obolibrary.org/obo/MFOEM_000203> (feeling of pain)
-
-SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002411> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000000> (pain (IASP))
 
@@ -461,7 +453,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 - Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/MF_0000020>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0019233>))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0001062>))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002411> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000037> (concepts from papers)
 
@@ -486,32 +478,23 @@ AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.o
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000040> "2022-11-24T06:02:26Z")
 AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000040> "Chronic pain persists or recurs for longer than three months and may persist despite successful management of the condition that initially caused it, or because the underlying medical condition cannot be treated successfully.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "chronic pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/MFOEM_000203>)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001863>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001863>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000041> (nociceptive pain)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000041> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000041> "2024-06-13T18:47:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000041> "nociceptive pain"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000331>)))
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000042> (chronic primary pain)
-
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000042> "Chronic pain that occurs in one or more anatomical regions that persists or recurs for longer than 3 months, and that is characterized by significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles).")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000042> "https://orcid.org/0000-0001-9625-1899")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000042> "2022-11-24T06:02:26Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000042> "2022-11-24T06:02:26Z"^^xsd:dateTime)
-AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000042> "Chronic primary pain is multifactorial: biological psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate independently of identified biological or psychological contributors unless another diagnosis would better account for the presenting symptoms.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000042> "chronic primary pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000042> <http://purl.obolibrary.org/obo/PAIN_0000040>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> <http://purl.obolibrary.org/obo/PAIN_0000036>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000331>))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000043> (nociplastic pain)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000043> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000043> "2024-06-13T18:47:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000043> "nociplastic pain"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000043> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000179>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000043> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0046960>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000044> (neuropathic pain)
 
@@ -533,16 +516,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000046> "2024-06-13T21:22:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000046> "central nervous system neuropathic pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000046> <http://purl.obolibrary.org/obo/PAIN_0000044>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000047> (chronic neuropathic pain)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000047> "https://orcid.org/0000-0001-9625-1899")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000047> "2022-11-24T06:02:26Z")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000047> "Chronic neuropathic pain is chronic pain caused by a lesion or disease of the somatosensory nervous system.
-
-https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000047> "chronic neuropathic pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000047> <http://purl.obolibrary.org/obo/PAIN_0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000048> (pain mechanism)
 
@@ -587,8 +560,7 @@ AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.o
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000053> "2022-11-24T06:02:26Z")
 AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/source> "https://www.iasp-pain.org/resources/topics/acute-pain/") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000053> "Acute pain is caused by injury, surgery, illness, trauma, or painful medical procedures and generally lasts from a few minutes to less than six months. Acute pain usually disappears whenever the underlying cause is treated or healed.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000053> "acute pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/MFOEM_000203>)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000389>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000389>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000054> (referred pain)
 
@@ -621,21 +593,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000057> "knee osteoarthritis pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000057> <http://purl.obolibrary.org/obo/PAIN_0000056>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000331>))
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000058> (nociceptive knee osteoarthritis pain)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000058> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000058> "2024-06-13T21:34:48Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000058> "nociceptive knee osteoarthritis pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000058> <http://purl.obolibrary.org/obo/PAIN_0000057>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000059> (nociplastic knee osteoarthritis pain)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000059> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000059> "2024-06-13T21:35:01Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000059> "nociplastic knee osteoarthritis pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000059> <http://purl.obolibrary.org/obo/PAIN_0000057>)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000179>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000063> (stump pain)
 

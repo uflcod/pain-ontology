@@ -4,3 +4,5 @@ http://purl.obolibrary.org/obo/RO_0002215     # capable of
 http://purl.obolibrary.org/obo/BFO_0000051    # has part
 http://purl.obolibrary.org/obo/BFO_0000050    # part of
 http://purl.obolibrary.org/obo/RO_0002411     # causally upstream of
+http://purl.obolibrary.org/obo/RO_0002327     # enables
+http://purl.obolibrary.org/obo/RO_0002333     # enabled by

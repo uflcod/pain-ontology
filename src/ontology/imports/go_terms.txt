@@ -10,3 +10,4 @@ http://purl.obolibrary.org/obo/GO_0050968  # detection of chemical stimulus invo
 http://purl.obolibrary.org/obo/GO_0050967  # detection of electrical stimulus involved in sensory perception of pain
 http://purl.obolibrary.org/obo/GO_0050966  # detection of mechanical stimulus involved in sensory perception of pain
 http://purl.obolibrary.org/obo/GO_0050965  # detection of temperature stimulus involved in sensory perception of pain
+http://purl.obolibrary.org/obo/GO_0046960  # sensitization

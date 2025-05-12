@@ -13,6 +13,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006950>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007611>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007612>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009581>))
@@ -27,9 +29,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019234>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019235>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0033555>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046958>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046960>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048265>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050877>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050896>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050906>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050907>))
@@ -49,7 +54,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000233>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002161>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
@@ -72,10 +76,6 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (<http://purl.obolibrary.org/obo/IAO_0000233>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
-
-# Annotation Property: <http://purl.obolibrary.org/obo/RO_0002161> (<http://purl.obolibrary.org/obo/RO_0002161>)
-
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#created_by> (<http://www.geneontology.org/formats/oboInOwl#created_by>)
 
@@ -166,17 +166,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/GO_0006950> (response to stress)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mah") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0006950> "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0006950> "https://github.com/geneontology/go-ontology/issues/26810"^^xsd:anyURI)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0006950> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0006950> "response to abiotic stress")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0006950> "response to biotic stress")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0006950> "GO:0006950")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.org/obo/go#goslim_candida>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.org/obo/go#goslim_chembl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.org/obo/go#goslim_drosophila>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.org/obo/go#goslim_metagenomics>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.org/obo/go#goslim_plant>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0006950> "Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.org/obo/go#goslim_plant_ribbon>)
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006950> "response to stress")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.org/obo/GO_0050896>)
@@ -184,6 +184,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0006950> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/GO_0007600> (sensory perception)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0007600> "The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.")
+AnnotationAssertion(Annotation(rdfs:label "Sensory Perception") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0007600> "Reactome:R-HSA-9709957")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0007600> "Wikipedia:Perception")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0007600> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0007600> "GO:0007600")
@@ -207,7 +208,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0007610> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0007610> "single-organism behavior")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0007610> "GO:0007610")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/go#goslim_agr>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0007610> "1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
@@ -215,6 +216,26 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0007610> "1.
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007610> "behavior")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/GO_0032501>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0007611> (learning or memory)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:jid") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:8938125") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0007611> "The acquisition and processing of information and/or the storage and retrieval of this information over time.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0007611> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0007611> "GO:0007611")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0007611> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007611> "learning or memory")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0007611> <http://purl.obolibrary.org/obo/GO_0007610>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0007611> <http://purl.obolibrary.org/obo/GO_0050890>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0007612> (learning)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0582227089") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0721662544") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0007612> "Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0007612> "Wikipedia:Learning")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0007612> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0007612> "GO:0007612")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0007612> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007612> "learning")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0007612> <http://purl.obolibrary.org/obo/GO_0007611>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0008150> (biological_process)
 
@@ -295,7 +316,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0009605> "response to environmental stimulus")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0009605> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0009605> "GO:0009605")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0009605> <http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0009605> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0009605> <http://purl.obolibrary.org/obo/go#goslim_drosophila>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0009605> <http://purl.obolibrary.org/obo/go#goslim_plant>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0009605> "Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.")
@@ -322,7 +343,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/GO_0009628> "response to abiotic stress")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0009628> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0009628> "GO:0009628")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0009628> <http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0009628> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0009628> <http://purl.obolibrary.org/obo/go#goslim_metagenomics>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0009628> <http://purl.obolibrary.org/obo/go#goslim_plant>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0009628> "Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.")
@@ -346,7 +367,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0016048> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/GO_0019233> (sensory perception of pain)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019233> "The series of events required for an organism to receive a painful stimulus, convert it to a molecular signal, and recognize and characterize the signal. Pain is medically defined as the physical sensation of discomfort or distress caused by injury or illness, so can hence be described as a harmful stimulus which signals current (or impending) tissue damage. Pain may come from extremes of temperature, mechanical damage, electricity or from noxious chemical substances. This is a neurological process.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019233> "The series of events required for an organism to receive a painful stimulus, convert it to a molecular signal, and recognize and characterize the signal. A painful stimulus is any physical or chemical event that has the potential to cause tissue damage (actual or perceived) and activates the nociceptive system.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0019233> "https://github.com/geneontology/go-ontology/issues/29807"^^xsd:anyURI)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0019233> "Wikipedia:Nociception")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/GO_0019233> "perception of physiological pain")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0019233> "biological_process")
@@ -358,7 +380,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0019233> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/GO_0019234> (sensory perception of fast pain)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://www.spine-health.com/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019234> "The series of events required for an organism to receive a fast pain stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. Fast pain is often subjectively described as a sharp or stabbing pain; in humans, the signals from a fast pain stimulus are perceived and relayed along myelinated A-delta fibers to the central nervous system, reaching their target in about 0.1 seconds.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:38704307") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019234> "The series of events required for an organism to receive a fast pain stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. Fast pain is often subjectively described as a sharp or stabbing pain; in humans, the signals from a fast pain stimulus are perceived and relayed along myelinated A-delta fibers to the central nervous system, reaching their target in about 0.1 seconds.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0019234> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0019234> "GO:0019234")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019234> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
@@ -367,7 +389,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0019234> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/GO_0019235> (sensory perception of slow pain)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://www.people.vcu.edu/~mikuleck/ssspain/") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://www.spine-health.com/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019235> "The series of events required for an organism to receive a slow pain stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. Slow pain is often subjectively described as an aching or throbbing pain; in humans, the signals from a slow pain stimulus are perceived and relayed along unmyelinated C fibers to the central nervous system, reaching their target in about 1 second. Slow pain is often associated with tissue destruction.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:38704307") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://www.people.vcu.edu/~mikuleck/ssspain/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019235> "The series of events required for an organism to receive a slow pain stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. Slow pain is often subjectively described as an aching or throbbing pain; in humans, the signals from a slow pain stimulus are perceived and relayed along unmyelinated C fibers to the central nervous system, reaching their target in about 1 second. Slow pain is often associated with tissue destruction.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0019235> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0019235> "GO:0019235")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019235> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
@@ -377,10 +399,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0019235> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/GO_0032501> (multicellular organismal process)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:isa_complete") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0032501> "Any biological process, occurring at the level of a multicellular organism, pertinent to its function.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/NCBITaxon_2>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/NCBITaxon_2157>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/NCBITaxon_4896>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/NCBITaxon_4932>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0032501> "https://github.com/geneontology/go-ontology/issues/27189"^^xsd:anyURI)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_0032501> "jl")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_0032501> "2012-09-19T16:07:47Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0032501> "GO:0044707")
@@ -391,6 +410,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSyno
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0032501> "GO:0032501")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/go#goslim_pir>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0032501> "Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0032501> "multicellular organismal process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/GO_0008150>)
@@ -404,6 +424,26 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0033555>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0033555> "multicellular organismal response to stress")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0033555> <http://purl.obolibrary.org/obo/GO_0006950>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0033555> <http://purl.obolibrary.org/obo/GO_0032501>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0046958> (nonassociative learning)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0582227089") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0046958> "A simple form of learning whereby the repeated presence of a stimulus leads to a change in the probability or strength of the response to that stimulus. There is no association of one type of stimulus with another, rather it is a generalized response to the environment.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0046958> "unconditional response")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0046958> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0046958> "GO:0046958")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0046958> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0046958> "nonassociative learning")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0046958> <http://purl.obolibrary.org/obo/GO_0007612>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0046960> (sensitization)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0582227089") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0046960> "An increased in a behavioral response to a repeated stimulus. For example, a shock to the tail of the marine snail Aplysia, to which the snail responds by withdrawing its gill, will result in increased gill withdrawal the next time the skin is touched.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0046960> "Wikipedia:Sensitization")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0046960> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0046960> "GO:0046960")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0046960> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0046960> "sensitization")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0046960> <http://purl.obolibrary.org/obo/GO_0046958>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0048265> (response to pain)
 
@@ -429,7 +469,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0048266> ObjectSomeValuesFrom(<htt
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050877> (nervous system process)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mtg_cardio") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050877> "A organ system process carried out by any of the organs or tissues of neurological system.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mtg_cardio") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050877> "An organ system process carried out by any of the organs or tissues of the neurological system.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0050877> "https://github.com/geneontology/go-ontology/issues/13824"^^xsd:anyURI)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050877> "neurological system process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050877> "neurophysiological process")
@@ -445,6 +485,17 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050877>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050877> "nervous system process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/GO_0003008>)
 
+# Class: <http://purl.obolibrary.org/obo/GO_0050890> (cognition)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0721619908") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050890> "The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0050890> "Wikipedia:Cognition")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050890> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050890> "GO:0050890")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050890> <http://purl.obolibrary.org/obo/go#goslim_drosophila>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050890> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050890> "cognition")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050890> <http://purl.obolibrary.org/obo/GO_0050877>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0050896> (response to stimulus)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:bf") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050896> "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.")
@@ -452,12 +503,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternative
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050896> "physiological response to stimulus")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050896> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050896> "GO:0050896")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/go#goslim_agr>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/go#goslim_mouse>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/go#goslim_pir>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/go#prokaryote_subset>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/go#goslim_prokaryote>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0050896> "Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050896> "response to stimulus")
