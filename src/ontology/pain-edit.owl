@@ -71,10 +71,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000042>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000043>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000050>))
@@ -85,8 +87,22 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000054>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000056>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000059>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000076>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
@@ -486,6 +502,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000041> "nociceptive pain"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0048265>)))
 
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000042> (sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000042> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000042> "2025-05-12T17:02:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000042> "sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000042> <http://purl.obolibrary.org/obo/PATO_0001236>)
+
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000043> (nociplastic pain)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000043> <https://orcid.org/0000-0001-9625-1899>)
@@ -513,6 +536,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000046> "2024-06-13T21:22:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000046> "central nervous system neuropathic pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000046> <http://purl.obolibrary.org/obo/PAIN_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000047> (dull sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000047> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000047> "2025-05-12T17:02:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000047> "dull sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000047> <http://purl.obolibrary.org/obo/PAIN_0000042>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000048> (pain mechanism)
 
@@ -591,6 +621,20 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000057> "kn
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000057> <http://purl.obolibrary.org/obo/PAIN_0000056>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000331>))
 
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000058> (throbbing sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000058> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000058> "2025-05-12T17:06:15Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000058> "throbbing sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000058> <http://purl.obolibrary.org/obo/PAIN_0000042>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000059> (burning sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000059> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000059> "2025-05-12T17:06:31Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000059> "burning sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000059> <http://purl.obolibrary.org/obo/PAIN_0000042>)
+
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000063> (stump pain)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000063> "Pain that is experienced in the area proximal to an amputation site.")
@@ -600,12 +644,96 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000063> "stump pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000063> <http://purl.obolibrary.org/obo/PAIN_0000056>)
 
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000064> (freezing sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000064> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000064> "2025-05-12T17:06:51Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000064> "freezing sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000064> <http://purl.obolibrary.org/obo/PAIN_0000042>)
+
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000065> (pain associated with emotional response)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000065> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000065> "2025-04-28T16:56:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000065> "pain associated with emotional response"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000065> <http://purl.obolibrary.org/obo/PAIN_0000036>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000066> (shooting sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000066> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000066> "2025-05-12T17:07:06Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000066> "shooting sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000066> <http://purl.obolibrary.org/obo/PAIN_0000042>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000067> (sharp sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000067> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000067> "2025-05-12T17:08:02Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000067> "sharp sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000067> <http://purl.obolibrary.org/obo/PAIN_0000042>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000068> (intense sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000068> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000068> "2025-05-12T17:08:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000068> "intense sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000068> <http://purl.obolibrary.org/obo/PAIN_0000042>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000069> (aching sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000069> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000069> "2025-05-12T17:08:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000069> "aching sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000069> <http://purl.obolibrary.org/obo/PAIN_0000042>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000070> (stabbing sensation quality)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000070> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000070> "2025-05-12T17:09:02Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000070> "stabbing sensation quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000070> <http://purl.obolibrary.org/obo/PAIN_0000042>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000071> (stabbing pain)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000071> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000071> "2025-05-12T17:09:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000071> "stabbing pain"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000071> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PAIN_0000070>)))
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000072> (sharp pain)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000072> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000072> "2025-05-12T17:09:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000072> "sharp pain"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000072> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PAIN_0000067>)))
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000073> (dull pain)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000073> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000073> "2025-05-12T17:09:53Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000073> "dull pain"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000073> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PAIN_0000047>)))
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000074> (burning pain)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000074> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000074> "2025-05-12T17:10:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000074> "burning pain"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000074> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PAIN_0000059>)))
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000075> (freezing pain)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000075> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000075> "2025-05-12T17:10:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000075> "freezing pain"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000075> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PAIN_0000064>)))
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000076> (shooting pain)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000076> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000076> "2025-05-12T17:10:35Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000076> "shooting pain"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000076> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PAIN_0000066>)))
 
 
 ############################
