@@ -452,8 +452,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
 - Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/MF_0000020>)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0019233>))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002411> <http://purl.obolibrary.org/obo/GO_0019233>))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000037> (concepts from papers)
 
@@ -485,9 +484,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectIntersecti
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000041> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000041> "2024-06-13T18:47:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000041> "nociceptive pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> <http://purl.obolibrary.org/obo/PAIN_0000036>)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000331>))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0048265>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000043> (nociplastic pain)
 
