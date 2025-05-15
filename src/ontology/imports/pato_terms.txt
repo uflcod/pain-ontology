@@ -4,3 +4,4 @@ http://purl.obolibrary.org/obo/BFO_0000050    # part of
 http://purl.obolibrary.org/obo/PATO_0002414   # chronic-active
 http://purl.obolibrary.org/obo/PATO_0002387   # peracute
 http://purl.obolibrary.org/obo/PATO_0001167   # damaged
+http://purl.obolibrary.org/obo/PATO_0010005   # spatial distribution of a process
