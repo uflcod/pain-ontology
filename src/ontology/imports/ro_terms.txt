@@ -7,3 +7,7 @@ http://purl.obolibrary.org/obo/RO_0002411     # causally upstream of
 http://purl.obolibrary.org/obo/RO_0002404     # causally downstream of
 http://purl.obolibrary.org/obo/RO_0002327     # enables
 http://purl.obolibrary.org/obo/RO_0002333     # enabled by
+http://purl.obolibrary.org/obo/RO_0002233     # has iput
+http://purl.obolibrary.org/obo/RO_0002352     # input of
+http://purl.obolibrary.org/obo/RO_0002234     # has output
+http://purl.obolibrary.org/obo/RO_0002353     # output of
