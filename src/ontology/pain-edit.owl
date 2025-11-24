@@ -89,6 +89,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000056>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000057>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000058>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000065>))
@@ -119,6 +120,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000089>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000090>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000091>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000092>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000093>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000095>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000096>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000097>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
@@ -451,7 +457,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000035> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000036> (pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/terminology/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000036> "A mental process that produces an unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/terminology/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000036> "An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000036> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000036> "2024-06-13T18:46:52Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "Six key notes and etymology:
@@ -467,12 +473,13 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "
 - Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
 
  - Verbal description is only one of several behaviors to express pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "The \"emotional\" part of pain captures the affective (i.e., unpleasant) dimension of experiencing pain.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000036> "pain"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PAIN_0000036> "- The Revised IASP definition of pain: concepts, challenges, and compromises. 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
 - Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/MF_0000020>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/PAIN_0000097>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000037> (concepts from papers)
@@ -624,7 +631,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000057> "2024-06-13T21:33:51Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000057> "knee osteoarthritis pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000057> <http://purl.obolibrary.org/obo/PAIN_0000079>)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NBO_0000331>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000058> (throbbing sensation quality)
 
@@ -639,6 +645,18 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000059> "2025-05-12T17:06:31Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000059> "burning sensation quality"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000059> <http://purl.obolibrary.org/obo/PAIN_0000042>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000060> (emotion process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000060> "A behavioral response that includes overt action, cognitive or verbal response, or physiological reaction in response to a situation or event, or  internal process,  which evokes positive or negative feelings (i.e., emotional experiences).")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000060> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000060> "2025-11-24T16:37:35Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000060> "Some MFEOM notes:
+
+MFOEM definition of emotion:
+An affective process that is a synchronized aggregate of constituent mental processes that is focused on a real or imagined stimulus.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000060> "emotion process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000060> <http://purl.obolibrary.org/obo/GO_0007610>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000063> (stump pain)
 
@@ -851,6 +869,46 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000092> "2025-06-23T17:11:58Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000092> "widespread pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000092> <http://purl.obolibrary.org/obo/PAIN_0000036>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000093> (anxiety process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000093> "An emotion process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000093> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000093> "2025-11-24T16:38:38Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000093> "anxiety process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000093> <http://purl.obolibrary.org/obo/PAIN_0000060>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000094> (fear process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000094> "An emotion process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000094> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000094> "2025-11-24T16:39:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000094> "fear process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000094> <http://purl.obolibrary.org/obo/PAIN_0000060>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000095> (phenomenal cognitive experience)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000095> "A cognitive process during which an organism is aware of something either internal or external to itself.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000095> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000095> "2025-11-24T16:41:36Z"^^xsd:dateTime)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/consciousness") rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000095> "phenomenal cognitive experience"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000095> <http://purl.obolibrary.org/obo/GO_0050890>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000096> (emotional experience (feeling))
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/feeling") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000096> "A phenomenal cognitive experience evaluated as pleasant or unpleasant.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000096> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000096> "2025-11-24T16:42:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000096> "emotional experience (feeling)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000096> <http://purl.obolibrary.org/obo/PAIN_0000095>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000097> (sensory experience)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/sensation") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000097> "A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000097> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000097> "2025-11-24T16:44:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000097> "sensory experience"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000097> <http://purl.obolibrary.org/obo/PAIN_0000095>)
 
 
 ############################
