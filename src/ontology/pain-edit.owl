@@ -11,7 +11,6 @@ Import(<http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
-Import(<http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/pato_import.owl>)
@@ -28,6 +27,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000203>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000331>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000001>))
@@ -122,7 +122,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000092>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000060>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000061>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000062>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
@@ -151,16 +150,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#cre
 #   Object Properties
 ############################
 
-# Object Property: <http://purl.obolibrary.org/obo/PAIN_0000060> (pain experienced in)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000060> "A relation between pain and an anatomical entity in which the pain is subjectively experienced as occurring in the anatomical entity.")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000060> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000060> "2024-06-13T22:01:34Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000060> "pain experienced in"@en)
-SubObjectPropertyOf(<http://purl.obolibrary.org/obo/PAIN_0000060> <http://purl.obolibrary.org/obo/PAIN_0000062>)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000060> <http://purl.obolibrary.org/obo/PAIN_0000036>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/PAIN_0000060> <http://purl.obolibrary.org/obo/UBERON_0001062>)
-
 # Object Property: <http://purl.obolibrary.org/obo/PAIN_0000061> (experienced as)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000061> "A relation between a nervous system process and a mental process in which the nervous system process is gives rise to an experiential mental process.")
@@ -170,11 +159,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000061> "ex
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/GO_0050877>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/MF_0000020>)
 
-# Object Property: <http://purl.obolibrary.org/obo/PAIN_0000062> (A relation between a physical sensation and an anatomical entity in which the sensation is subjectively experienced as occurring in the anatomical entity.)
+# Object Property: <http://purl.obolibrary.org/obo/PAIN_0000062> (experienced in)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000062> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000062> "2025-04-28T16:36:53Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "A relation between a physical sensation and an anatomical entity in which the sensation is subjectively experienced as occurring in the anatomical entity.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "A relation between a physical sensation and an anatomical entity or site where an anatomical entity is usually located in which the sensation is subjectively experienced as occurring in the anatomical entity or site.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "experienced in"@en)
 
 
