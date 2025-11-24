@@ -35,6 +35,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048265>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050877>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050893>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050894>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050896>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050906>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050907>))
@@ -495,6 +497,25 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050890> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050890> "cognition")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050890> <http://purl.obolibrary.org/obo/GO_0050877>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0050893> (sensory processing)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0721662544") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050893> "Any neural process required for an organism to sense and interpret the dimensions of a sensory experience: modality, location, intensity and affect.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050893> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050893> "GO:0050893")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050893> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050893> "sensory processing")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050893> <http://purl.obolibrary.org/obo/GO_0050890>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050893> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))
+
+# Class: <http://purl.obolibrary.org/obo/GO_0050894> (determination of affect)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0721662544") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050894> "Any process in which an emotional response is associated with a particular sensory stimulation.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050894> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050894> "GO:0050894")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050894> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050894> "determination of affect")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050894> <http://purl.obolibrary.org/obo/GO_0050893>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050896> (response to stimulus)
 
