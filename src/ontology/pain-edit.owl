@@ -479,8 +479,8 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PAIN_0000036> "
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
 - Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <http://purl.obolibrary.org/obo/PAIN_0000060>))
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/PAIN_0000097>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <http://purl.obolibrary.org/obo/PAIN_0000060>))
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000037> (concepts from papers)
@@ -623,6 +623,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000056> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000056> "2024-06-13T21:27:59Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PAIN_0000056> "localized pain")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000056> "define using PATO:localized")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000056> "localized pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000056> <http://purl.obolibrary.org/obo/PAIN_0000036>)
 
@@ -784,6 +785,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000079> <http://purl.obolibrary
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000080> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000080> "2025-06-23T16:58:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000080> "pain that is experienced in the UBERON:main body axis.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000080> "axial pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000080> <http://purl.obolibrary.org/obo/PAIN_0000056>)
 
@@ -864,12 +866,22 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000091> "visceral pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000091> <http://purl.obolibrary.org/obo/PAIN_0000056>)
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000092> (widespread pain)
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000092> (chronic widespread pain)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000092> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000092> "2025-06-23T17:11:58Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000092> "widespread pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000092> <http://purl.obolibrary.org/obo/PAIN_0000036>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000092> "Chronic widespread pain (CWP) is diffuse pain in at least 4 of 5 body regions and is associated with significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles). CWP is multifactorial: biological, psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate when the pain is not directly attributable to a nociceptive process in these regions and there are features consistent with nociplastic pain and identified psychological and social contributors.
+
+https://www.findacode.com/icd-11/code-849253504.html")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000092> "Consider:
+- Include quantrants/regions of body in the definition. 
+  - E.g., >= 3 quadrants & axial
+  - >= 4 body regions
+- Use the notion of functional region instead of regions divided by joints.
+
+define as chronic & multi-localized.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000092> "chronic widespread pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000092> <http://purl.obolibrary.org/obo/PAIN_0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000093> (anxiety process)
 
