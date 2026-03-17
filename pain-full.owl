@@ -4276,6 +4276,35 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PAIN_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000090"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003700"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000090"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003700"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T13:10:32Z</terms:created>
+        <oboInOwl:hasExactSynonym>TMJ pain</oboInOwl:hasExactSynonym>
+        <rdfs:label>temporomandibular joint pain</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PAIN_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000009">
