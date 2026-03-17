@@ -1,0 +1,2 @@
+http://purl.bioontology.org/ontology/EMRO/0000002  # emotional experience (feeling)
+http://purl.bioontology.org/ontology/EMRO/0000005  # sensory experience
