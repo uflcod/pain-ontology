@@ -41,17 +41,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050896>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050906>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050907>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050961>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050963>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050965>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050966>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050967>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050968>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050974>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050981>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050982>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0051602>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0051606>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0062149>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -594,23 +589,6 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0050961> ObjectIntersection
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050961> <http://purl.obolibrary.org/obo/GO_0016048>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050961> <http://purl.obolibrary.org/obo/GO_0050906>)
 
-# Class: <http://purl.obolibrary.org/obo/GO_0050963> (detection of electrical stimulus involved in sensory perception)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dos") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050963> "The series of events in which an electrical stimulus is received by a cell and converted into a molecular signal as part of sensory perception.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050963> "sensory detection of electrical stimulus")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050963> "sensory detection of electrical stimulus during sensory perception")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050963> "sensory perception, sensory detection of electrical stimulus")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050963> "sensory perception, sensory transduction of electrical stimulus")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050963> "sensory transduction of electrical stimulus")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050963> "sensory transduction of electrical stimulus during sensory perception")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050963> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050963> "GO:0050963")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050963> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050963> "detection of electrical stimulus involved in sensory perception")
-EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0050963> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050981> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050963> <http://purl.obolibrary.org/obo/GO_0050906>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050963> <http://purl.obolibrary.org/obo/GO_0050981>)
-
 # Class: <http://purl.obolibrary.org/obo/GO_0050965> (detection of temperature stimulus involved in sensory perception of pain)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dos") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050965> "The series of events involved in the perception of pain in which a temperature stimulus is received and converted into a molecular signal.")
@@ -630,7 +608,7 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050965>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050965> "detection of temperature stimulus involved in sensory perception of pain")
 EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0050965> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0016048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019233>)))
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050965> <http://purl.obolibrary.org/obo/GO_0050961>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050965> <http://purl.obolibrary.org/obo/GO_0062149>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050965> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050966> (detection of mechanical stimulus involved in sensory perception of pain)
 
@@ -647,24 +625,7 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050966>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050966> "detection of mechanical stimulus involved in sensory perception of pain")
 EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0050966> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019233>)))
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050966> <http://purl.obolibrary.org/obo/GO_0050974>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050966> <http://purl.obolibrary.org/obo/GO_0062149>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0050967> (detection of electrical stimulus involved in sensory perception of pain)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dos") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050967> "The series of events that contribute to the perception of pain in which an electrical stimulus is received and converted into a molecular signal.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "perception of pain, detection of electrical stimulus")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "perception of pain, sensory detection of electrical stimulus")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "perception of pain, sensory transduction of electrical stimulus")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050967> "biological_process")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "detection of electrical stimulus during sensory perception of pain")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "sensory detection of electrical stimulus during perception of pain")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "sensory transduction of electrical stimulus during perception of pain")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050967> "GO:0050967")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050967> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050967> "detection of electrical stimulus involved in sensory perception of pain")
-EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0050967> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050981> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019233>)))
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050967> <http://purl.obolibrary.org/obo/GO_0050963>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050967> <http://purl.obolibrary.org/obo/GO_0062149>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050966> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050968> (detection of chemical stimulus involved in sensory perception of pain)
 
@@ -681,7 +642,7 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050968>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050968> "detection of chemical stimulus involved in sensory perception of pain")
 EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0050968> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019233>)))
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050968> <http://purl.obolibrary.org/obo/GO_0050907>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050968> <http://purl.obolibrary.org/obo/GO_0062149>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050968> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019233>))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050974> (detection of mechanical stimulus involved in sensory perception)
 
@@ -700,16 +661,6 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0050974> ObjectIntersection
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050974> <http://purl.obolibrary.org/obo/GO_0050906>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050974> <http://purl.obolibrary.org/obo/GO_0050982>)
 
-# Class: <http://purl.obolibrary.org/obo/GO_0050981> (detection of electrical stimulus)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dos") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050981> "The series of events by which an electrical stimulus is received and converted into a molecular signal.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050981> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050981> "GO:0050981")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050981> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050981> "detection of electrical stimulus")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050981> <http://purl.obolibrary.org/obo/GO_0009582>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050981> <http://purl.obolibrary.org/obo/GO_0051602>)
-
 # Class: <http://purl.obolibrary.org/obo/GO_0050982> (detection of mechanical stimulus)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dos") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050982> "The series of events by which a mechanical stimulus is received and converted into a molecular signal.")
@@ -720,16 +671,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050982> "dete
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050982> <http://purl.obolibrary.org/obo/GO_0009581>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050982> <http://purl.obolibrary.org/obo/GO_0009582>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050982> <http://purl.obolibrary.org/obo/GO_0009612>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0051602> (response to electrical stimulus)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0051602> "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an electrical stimulus.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0051602> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0051602> "response to electricity")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0051602> "GO:0051602")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0051602> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0051602> "response to electrical stimulus")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0051602> <http://purl.obolibrary.org/obo/GO_0009628>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0051606> (detection of stimulus)
 
@@ -744,18 +685,27 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0051606>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0051606> "detection of stimulus")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0051606> <http://purl.obolibrary.org/obo/GO_0050896>)
 
-# Class: <http://purl.obolibrary.org/obo/GO_0062149> (detection of stimulus involved in sensory perception of pain)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:19837031") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0062149> "The series of events involved in the perception of pain in which a stimulus is received and converted into a molecular signal.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dos") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050967> "OBSOLETE. The series of events that contribute to the perception of pain in which an electrical stimulus is received and converted into a molecular signal.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0050967> "https://github.com/geneontology/go-ontology/issues/31306"^^xsd:anyURI)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "perception of pain, detection of electrical stimulus")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "perception of pain, sensory detection of electrical stimulus")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "perception of pain, sensory transduction of electrical stimulus")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050967> "biological_process")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "detection of electrical stimulus during sensory perception of pain")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "sensory detection of electrical stimulus during perception of pain")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0050967> "sensory transduction of electrical stimulus during perception of pain")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050967> "GO:0050967")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0050967> "This term was obsoleted because it is a pre-composed term that should be captured as a GO-CAM model.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050967> "obsolete detection of electrical stimulus involved in sensory perception of pain")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/GO_0050967> "true"^^xsd:boolean)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:19837031") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0062149> "OBSOLETE. The series of events involved in the perception of pain in which a stimulus is received and converted into a molecular signal.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0062149> "https://github.com/geneontology/go-ontology/issues/31330"^^xsd:anyURI)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_0062149> "dph")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_0062149> "2019-09-13T13:48:47Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0062149> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0062149> "GO:0062149")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0062149> <http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0062149> "detection of stimulus involved in sensory perception of pain")
-EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0062149> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019233>)))
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0062149> <http://purl.obolibrary.org/obo/GO_0050906>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0062149> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019233>))
-
-
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0062149> "This term was obsoleted because it is a pre-composed term that should be captured as a GO-CAM model.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0062149> "obsolete detection of stimulus involved in sensory perception of pain")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/GO_0062149> "true"^^xsd:boolean)
 )

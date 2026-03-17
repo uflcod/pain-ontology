@@ -5,3 +5,24 @@ http://purl.obolibrary.org/obo/GO_0019233     # sensory perception of pain
 http://purl.obolibrary.org/obo/UBERON_0003714 # neural tissue
 http://purl.obolibrary.org/obo/CL_0000125     # glial cell
 http://purl.obolibrary.org/obo/CL_0000540     # neuron
+http://purl.obolibrary.org/obo/UBERON_0013701 # main body axis
+http://purl.obolibrary.org/obo/UBERON_0000974 # neck
+http://purl.obolibrary.org/obo/UBERON_0005462 # lower back
+http://purl.obolibrary.org/obo/UBERON_0006073 # thoracic region of vertebral column (upper back)
+http://purl.obolibrary.org/obo/UBERON_0001137 # dorsum (back)
+http://purl.obolibrary.org/obo/UBERON_0001465 # knee
+http://purl.obolibrary.org/obo/UBERON_0002387 # pes (foot)
+http://purl.obolibrary.org/obo/UBERON_0001466 # pedal digit (toe)
+http://purl.obolibrary.org/obo/UBERON_0003700 # temporomandibular joint
+http://purl.obolibrary.org/obo/UBERON_0001456 # face
+http://purl.obolibrary.org/obo/UBERON_0000165 # mouth
+http://purl.obolibrary.org/obo/UBERON_0001461 # elbow
+http://purl.obolibrary.org/obo/UBERON_0002398 # manus (hand)
+http://purl.obolibrary.org/obo/UBERON_0002389 # manual digit (finger)
+http://purl.obolibrary.org/obo/UBERON_0001467 # shoulder
+http://purl.obolibrary.org/obo/UBERON_0001460 # arm
+http://purl.obolibrary.org/obo/UBERON_0000978 # leg
+http://purl.obolibrary.org/obo/UBERON_0003129 # skull
+http://purl.obolibrary.org/obo/UBERON_0011156 # facial skeleton
+http://purl.obolibrary.org/obo/UBERON_0001684 # mandible
+http://purl.obolibrary.org/obo/UBERON_0002397 # maxilla

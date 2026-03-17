@@ -81,30 +81,6 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_00001
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
 
-# Annotation Property: rdfs:comment (rdfs:comment)
-
-AnnotationAssertion(rdfs:isDefinedBy rdfs:comment <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
-
-# Annotation Property: rdfs:isDefinedBy (rdfs:isDefinedBy)
-
-AnnotationAssertion(rdfs:isDefinedBy rdfs:isDefinedBy <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
-
-# Annotation Property: rdfs:label (rdfs:label)
-
-AnnotationAssertion(rdfs:isDefinedBy rdfs:label <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
-
-# Annotation Property: rdfs:seeAlso (rdfs:seeAlso)
-
-AnnotationAssertion(rdfs:isDefinedBy rdfs:seeAlso <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
-
-
-############################
-#   Datatypes
-############################
-
-# Datatype: rdf:PlainLiteral (rdf:PlainLiteral)
-
-AnnotationAssertion(rdfs:isDefinedBy rdf:PlainLiteral <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
 
 
 ############################
@@ -218,10 +194,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OGMS_0000060> "
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000060> "bodily process")
 SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)
-
-# Class: owl:Thing (owl:Thing)
-
-AnnotationAssertion(rdfs:isDefinedBy owl:Thing <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
 
 
 )
