@@ -7,12 +7,13 @@
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo mfoem pato uberon ro iao omrse go nbo cl
+IMPORTS =  omo mfoem pato uberon ro iao omrse go nbo cl emro
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
 IMPORT_FILES = $(IMPORT_OWL_FILES)
 
+.PHONY: .FORCE
 .PHONY: all_imports
 all_imports: $(IMPORT_FILES)
 
@@ -36,6 +37,20 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 		--version-iri $(URIBASE)/$(ONT)/$@ \
 	convert --format ofn \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@
+
+$(IMPORTDIR)/emro_import.owl: $(MIRRORDIR)/emro.owl  $(IMPORTDIR)/emro_terms.txt
+	@echo "*** building $@ ***"
+	$(ROBOT) extract --method BOT \
+			--input $< \
+			--term-file $(word 2, $^) \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		annotate \
+			--annotate-defined-by true \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/$@ \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl $(IMPORTDIR)/mfoem_terms.txt 
 	@echo "*** building $@ ***"
@@ -214,26 +229,71 @@ $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
 # Mirroring upstream ontologies
 # ----------------------------------------
 
+# This is a general rule for mirroring an ontology. It checks if the mirror needs to be updated by comparing the downloaded 
+# file with the existing mirror file. If they are different or if force update is requested, it updates the mirror. 
+# Otherwise, it ignores the update.
+# $(1) is the name of the ontology to mirror, 
+# $(2) is an optional base URL to download from (defaults to $(URIBASE)), 
+# and $(3) is a flag to force update regardless of whether the source has changed or not.
+define mirror-ontology
+		@if [ "$(strip $(MIR))" = "true" ] && \
+				[ "$(strip $(IMP))" = "true" ] && \
+				[ "$(strip $(IMP_LARGE))" = "true" ]; then \
+			echo "*** mirroring $(1) ***"; \
+			download_url_base=$(if $(strip $(2)),$(2),$(URIBASE)); \
+			echo "url: $$download_url_base/$(1).owl"; \
+			\
+		curl -L $$download_url_base/$(strip $(1)).owl \
+			--create-dirs -o $(TMPDIR)/$(strip $(1)).temp.owl --retry 4 --max-time 200; \
+		\
+		if [ "$(strip $(3))" = "true" ] || \
+			! cmp -s $(TMPDIR)/$(strip $(1)).temp.owl $(MIRRORDIR)/$(strip $(1)).owl ; then \
+			echo "Mirrors different or force=true, UPDATING.\n" && \
+			$(ROBOT) convert \
+			--input $(TMPDIR)/$(strip $(1)).temp.owl \
+			--output $(TMPDIR)/$(strip $(1)).owl && \
+			cp $(TMPDIR)/$(strip $(1)).temp.owl $(MIRRORDIR)/$(strip $(1)).owl; \
+		else \
+			echo "Mirror identical, IGNORING."; \
+		fi; \
+		rm -f $(TMPDIR)/$(strip $(1)).temp.owl; \
+	fi
+endef
+
+
+# forces the mirror to update regardless of whether the source has changed or not
+.PHONY: mirror-%-force
+mirror-%-force:
+	$(call mirror-ontology,$*,,true)
+
+.PHONY: mirror-emro-force
+mirror-emro-force:
+	$(call mirror-ontology,emro,,true)
+
+# only updates the mirror if the source has changed since the last mirror
+.PHONY: mirror-%
+mirror-%: | $(MIRRORDIR)/%.owl
+	$(call mirror-ontology,$*,,false)
+
+.PHONY: mirror-emro
+mirror-emro: | $(MIRRORDIR)/emro.owl
+	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,false)
+
+# calling $(MIRRORDIR)/%.owl will not force the mirror to be updated
+# need to use the -B option will force the mirror to download but will
+# only update the mirror directory if the download and mirror are different
+$(MIRRORDIR)/%.owl: | $(MIRRORDIR)
+	$(call mirror-ontology,$*,,false)
+
+$(MIRRORDIR)/emro.owl: | $(MIRRORDIR)
+	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,false)
+
 .PHONY: all-mirrors
 all-mirrors:
 #	@echo $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS)) # testing
 	make $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
 
-download-mirrors:
+.PHONY: all-mirrors-force
+all-mirrors-force:
 #	@echo $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS)) # testing
-	make $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
-
-$(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
-	if [ $(IMP) = true ] && [ $(MIR) = true ] && [ -f $(TMPDIR)/mirror-$*.owl ]; then if cmp -s $(TMPDIR)/mirror-$*.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
-		cp $(TMPDIR)/mirror-$*.owl $@; fi; fi
-
-.PHONY: mirror-%
-mirror-%: | $(TMPDIR)
-	@echo "*** mirroring $* ***"
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then \
-		curl -L $(URIBASE)/$*.owl \
-			--create-dirs -o $(MIRRORDIR)/$(notdir $*).temp.owl --retry 4 --max-time 200 && \
-		$(ROBOT) convert \
-			--input $(MIRRORDIR)/$(notdir $*).temp.owl \
-			--output $(MIRRORDIR)/$(notdir $*).owl && \
-		rm  $(MIRRORDIR)/$*.temp.owl; fi
+	make $(patsubst %, mirror-%-force, $(IMPORTS))
