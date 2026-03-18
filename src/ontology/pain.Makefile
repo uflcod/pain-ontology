@@ -246,47 +246,39 @@ define mirror-ontology
 		curl -L $$download_url_base/$(strip $(1)).owl \
 			--create-dirs -o $(TMPDIR)/$(strip $(1)).temp.owl --retry 4 --max-time 200; \
 		\
-		if [ "$(strip $(3))" = "true" ] || \
+		if [ "$(strip $(3))" = "force" ] || \
 			! cmp -s $(TMPDIR)/$(strip $(1)).temp.owl $(MIRRORDIR)/$(strip $(1)).owl ; then \
-			echo "Mirrors different or force=true, UPDATING.\n" && \
+			echo "Mirrors different or update is forced, !!! UPDATING !!!.\n" && \
 			$(ROBOT) convert \
 			--input $(TMPDIR)/$(strip $(1)).temp.owl \
 			--output $(TMPDIR)/$(strip $(1)).owl && \
 			cp $(TMPDIR)/$(strip $(1)).temp.owl $(MIRRORDIR)/$(strip $(1)).owl; \
 		else \
-			echo "Mirror identical, IGNORING."; \
+			echo "Mirrors identical, !!! IGNORING !!!."; \
 		fi; \
 		rm -f $(TMPDIR)/$(strip $(1)).temp.owl; \
 	fi
 endef
 
 
-# forces the mirror to update regardless of whether the source has changed or not
-.PHONY: mirror-%-force
-mirror-%-force:
-	$(call mirror-ontology,$*,,true)
+# force-mirror-% forces the mirror to updates regardless of whether the source has changed or not
+.PHONY: mirror-% force-mirror-%
+mirror-% force-mirror-%:
+	$(call mirror-ontology,$*,,$(firstword $(subst -, ,$@)))
 
-.PHONY: mirror-emro-force
-mirror-emro-force:
-	$(call mirror-ontology,emro,,true)
-
-# only updates the mirror if the source has changed since the last mirror
-.PHONY: mirror-%
-mirror-%: | $(MIRRORDIR)/%.owl
-	$(call mirror-ontology,$*,,false)
-
-.PHONY: mirror-emro
-mirror-emro: | $(MIRRORDIR)/emro.owl
-	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,false)
+.PHONY: mirror-emro force-mirror-emro
+mirror-emro force-mirror-emro: | $(MIRRORDIR)
+	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,$(firstword $(subst -, ,$@)))
 
 # calling $(MIRRORDIR)/%.owl will not force the mirror to be updated
 # need to use the -B option will force the mirror to download but will
 # only update the mirror directory if the download and mirror are different
+# call force-mirror-% to force the mirrored ontology to update
 $(MIRRORDIR)/%.owl: | $(MIRRORDIR)
-	$(call mirror-ontology,$*,,false)
+	$(call mirror-ontology,$*,,)
 
 $(MIRRORDIR)/emro.owl: | $(MIRRORDIR)
-	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,false)
+	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,)
 
 .PHONY: all-mirrors
 all-mirrors:
