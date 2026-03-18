@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>
-<http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>
+Annotation(rdfs:comment "Derived from http://purl.bioontology.org/ontology/emro.owl")
 
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000000>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000001>))

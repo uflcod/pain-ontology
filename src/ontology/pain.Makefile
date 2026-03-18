@@ -7,7 +7,16 @@
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo mfoem pato uberon ro iao omrse go nbo cl emro
+ANNOTATE_IMPORT_FILE = \
+	annotate \
+		--remove-annotations \
+		--interpolate true \
+		--link-annotation dc:source %{ontology_iri} \
+		--annotate-defined-by true \
+		--ontology-iri $(URIBASE)/$(ONT)/$@ 
+# 		--version-iri $(URIBASE)/$(ONT)/$@ 
+
+IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -31,45 +40,28 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 		--select "owl:deprecated='true'^^xsd:boolean" \
 	  remove \
 		--select classes \
-	  annotate \
-		--annotate-defined-by true \
-		--ontology-iri $(URIBASE)/$(ONT)/$@ \
-		--version-iri $(URIBASE)/$(ONT)/$@ \
-	convert --format ofn \
+	 $(ANNOTATE_IMPORT_FILE) \
+	 convert --format ofn \
 	  --output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/emro_import.owl: $(MIRRORDIR)/emro.owl  $(IMPORTDIR)/emro_terms.txt
 	@echo "*** building $@ ***"
-	$(ROBOT) extract --method BOT \
+	$(ROBOT) \
+		extract --method BOT \
 			--input $< \
 			--term-file $(word 2, $^) \
-		remove \
-			--select "owl:deprecated='true'^^xsd:boolean" \
 		annotate \
+			--remove-annotations \
+			--interpolate true \
+			--annotation rdfs:comment "Derived from %{ontology_iri}" \
 			--annotate-defined-by true \
 			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl $(IMPORTDIR)/mfoem_terms.txt 
-	@echo "*** building $@ ***"
-	$(ROBOT) \
-		filter \
-			--input $< \
-			--term-file $(word 2, $^) \
-			--select "annotations self ancestors" \
-			--axioms logical \
-			--signature true \
-			--trim true \
-		remove \
-			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
-		convert --format ofn \
-		--output $@.tmp.owl && mv $@.tmp.owl $@
+# 		--link-annotation dc:source %{version_iri} \
 
 $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms.txt 
 	@echo "*** building $@ ***"
@@ -83,10 +75,7 @@ $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms.txt
 			--trim true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+		$(ANNOTATE_IMPORT_FILE) \
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -102,10 +91,7 @@ $(IMPORTDIR)/cl_import.owl: $(MIRRORDIR)/cl.owl $(IMPORTDIR)/cl_terms.txt
 			--trim true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+		$(ANNOTATE_IMPORT_FILE) \
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 		
@@ -123,10 +109,7 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 			--select "owl:deprecated='true'^^xsd:boolean" \
 		remove \
 			--select "<http://purl.obolibrary.org/obo/NCBITaxon_*>" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+		$(ANNOTATE_IMPORT_FILE) \
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -142,10 +125,7 @@ $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
 			--trim true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+		$(ANNOTATE_IMPORT_FILE) \
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -161,10 +141,7 @@ $(IMPORTDIR)/nbo_import.owl: $(MIRRORDIR)/nbo.owl $(IMPORTDIR)/nbo_terms.txt
 			--trim true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+		$(ANNOTATE_IMPORT_FILE) \
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 		
@@ -180,10 +157,7 @@ $(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.t
 			--trim true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+		$(ANNOTATE_IMPORT_FILE) \
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -199,10 +173,7 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
 			--trim true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+		$(ANNOTATE_IMPORT_FILE) \
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -218,10 +189,7 @@ $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
 			--trim true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+		$(ANNOTATE_IMPORT_FILE) \
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -286,6 +254,6 @@ all-mirrors:
 	make $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
 
 .PHONY: all-mirrors-force
-all-mirrors-force:
+force-all-mirrors:
 #	@echo $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS)) # testing
-	make $(patsubst %, mirror-%-force, $(IMPORTS))
+	make $(patsubst %, force-mirror-%, $(IMPORTS))

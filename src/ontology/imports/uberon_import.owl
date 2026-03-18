@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl>
-<http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl>
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/uberon.owl>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -131,6 +131,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/UBPROP_0000011>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/UBPROP_0000012>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/UBPROP_0000013>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://purl.org/pav/authoredBy>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
@@ -236,6 +237,10 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/UBPROP_0000
 # Annotation Property: <http://purl.org/dc/terms/contributor> (<http://purl.org/dc/terms/contributor>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl>)
+
+# Annotation Property: <http://purl.org/dc/terms/source> (<http://purl.org/dc/terms/source>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl>)
 
 # Annotation Property: <http://purl.org/pav/authoredBy> (<http://purl.org/pav/authoredBy>)
 

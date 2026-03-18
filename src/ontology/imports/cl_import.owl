@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>
-<http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/cl.owl>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
@@ -58,6 +58,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000424>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002161>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002175>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
@@ -101,6 +102,10 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002175>
 # Annotation Property: <http://purl.org/dc/terms/contributor> (<http://purl.org/dc/terms/contributor>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+
+# Annotation Property: <http://purl.org/dc/terms/source> (<http://purl.org/dc/terms/source>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#creation_date> (<http://www.geneontology.org/formats/oboInOwl#creation_date>)
 
