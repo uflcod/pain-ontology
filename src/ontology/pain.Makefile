@@ -16,7 +16,7 @@ ANNOTATE_IMPORT_FILE = \
 		--ontology-iri $(URIBASE)/$(ONT)/$@ 
 # 		--version-iri $(URIBASE)/$(ONT)/$@ 
 
-IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro
+IMPORTS =  omo mfoem pato uberon ro iao omrse go nbo cl emro
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -193,6 +193,21 @@ $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
+$(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl $(IMPORTDIR)/mfoem_terms.txt 
+	@echo "*** building $@ ***"
+	$(ROBOT) \
+		filter \
+			--input $< \
+			--term-file $(word 2, $^) \
+			--select "annotations self ancestors" \
+			--axioms logical \
+			--signature true \
+			--trim true \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		$(ANNOTATE_IMPORT_FILE) \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------
