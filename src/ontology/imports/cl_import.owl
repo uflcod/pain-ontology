@@ -7,7 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>
-Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/cl.owl>)
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/cl/releases/2026-03-17/cl.owl>)
+Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/cl.owl")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
@@ -69,6 +70,7 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#source>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasDerivedFrom>))
 Declaration(AnnotationProperty(<http://xmlns.com/foaf/0.1/depiction>))
 Declaration(AnnotationProperty(<https://w3id.org/sssom/mapping_justification>))
 ############################
@@ -77,83 +79,79 @@ Declaration(AnnotationProperty(<https://w3id.org/sssom/mapping_justification>))
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (<http://purl.obolibrary.org/obo/IAO_0000116>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (<http://purl.obolibrary.org/obo/IAO_0000233>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000424> (<http://purl.obolibrary.org/obo/IAO_0000424>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000424> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000424> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0002161> (<http://purl.obolibrary.org/obo/RO_0002161>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0002175> (<http://purl.obolibrary.org/obo/RO_0002175>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://purl.org/dc/terms/contributor> (<http://purl.org/dc/terms/contributor>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
-
-# Annotation Property: <http://purl.org/dc/terms/source> (<http://purl.org/dc/terms/source>)
-
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#creation_date> (<http://www.geneontology.org/formats/oboInOwl#creation_date>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (<http://www.geneontology.org/formats/oboInOwl#hasDbXref>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> (<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#id> (<http://www.geneontology.org/formats/oboInOwl#id>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#inSubset> (<http://www.geneontology.org/formats/oboInOwl#inSubset>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#source> (<http://www.geneontology.org/formats/oboInOwl#source>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#source> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#source> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.w3.org/2004/02/skos/core#prefLabel> (<http://www.w3.org/2004/02/skos/core#prefLabel>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://xmlns.com/foaf/0.1/depiction> (<http://xmlns.com/foaf/0.1/depiction>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/depiction> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/depiction> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <https://w3id.org/sssom/mapping_justification> (<https://w3id.org/sssom/mapping_justification>)
 
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/sssom/mapping_justification> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/sssom/mapping_justification> <http://purl.obolibrary.org/obo/cl.owl>)
 
 
 ############################
@@ -172,7 +170,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/valid_for_go_gp2term>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/valid_for_go_ontology>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/valid_for_gocam>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000050> "part of")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000050> "part of"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/BFO_0000050> <http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections>)
@@ -194,7 +192,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/valid_for_go_annotation_extension>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/valid_for_go_ontology>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/valid_for_gocam>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000051> "has part"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0002131>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
@@ -206,7 +204,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/valid_for_go_ontology>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/valid_for_gocam>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/BFO_0000066> "Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000066> "occurs in"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/BFO_0000066> "https://wiki.geneontology.org/Occurs_in"^^xsd:anyURI)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/BFO_0000003>)
@@ -219,7 +217,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000424> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/valid_for_go_annotation_extension>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/valid_for_gocam>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002131> "overlaps"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/RO_0002323>)
 SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>)
@@ -228,7 +226,7 @@ SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002215> "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. ")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capable of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/RO_0002216>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/BFO_0000004>)
@@ -237,7 +235,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obo
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002216> (capable of part of)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002216> "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002216> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002216> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002216> "capable of part of"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002216> <http://purl.obolibrary.org/obo/ro/docs/reflexivity/>)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002216> <http://purl.obolibrary.org/obo/RO_0002328>)
@@ -246,13 +244,13 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002216> <http://purl.obo
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002323> (mereotopologically related to)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002323> "A mereological relationship or a topological relationship")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002323> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002323> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002323> "mereotopologically related to"@en)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002328> (functionally related to)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002328> "A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002328> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002328> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002328> "functionally related to"@en)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002410> (causally related to)
@@ -273,13 +271,13 @@ For the second, we consider a relationship to be regulatory if the system in whi
 For the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.
 
 Each of these 3 primitives can be composed to yield a cross-product of different relation types.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002410> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002410> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002410> "causally related to"@en)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002500> (causal agent in process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002500> "A relationship between a material entity and a process where the material entity has some causal role that influences the process")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002500> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002500> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002500> "causal agent in process")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002500> <http://purl.obolibrary.org/obo/RO_0002595>)
 
@@ -287,7 +285,7 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002500> <http://purl.obo
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002595> "A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002595> "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002595> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002595> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002595> "causal relation between material entity and a process")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002595> <http://purl.obolibrary.org/obo/RO_0002410>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002595> <http://purl.obolibrary.org/obo/BFO_0000040>)
@@ -301,21 +299,21 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002595> <http://purl.obo
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000003> (<http://purl.obolibrary.org/obo/BFO_0000003>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/cl.owl>)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000003>))
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000004> (<http://purl.obolibrary.org/obo/BFO_0000004>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/cl.owl>)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000004>))
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000015> (<http://purl.obolibrary.org/obo/BFO_0000015>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000040> (<http://purl.obolibrary.org/obo/BFO_0000040>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Class: <http://purl.obolibrary.org/obo/CL_0000000> (cell)
 
@@ -335,7 +333,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/ubprop#_upper_level>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CL_0000000> "The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one).")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000000> "cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/UBERON_0000061>)
@@ -348,7 +346,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000006> <http://purl.obolibrary.org/obo/cl#cellxgene_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000006> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000006> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000006> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000006> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000006> "neuronal receptor cell")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000006> "neuronal receptor cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000006> <http://purl.obolibrary.org/obo/CL_0000101>)
@@ -368,7 +366,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000101> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000101> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000101> <http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000101> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000101> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000101> "sensory neuron")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000101> "sensory neuron")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000101> <http://purl.obolibrary.org/obo/CL_0000526>)
@@ -380,7 +378,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CL_0000197> "receptor cell")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000197> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000197> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000197> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000197> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000197> "sensory receptor cell")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000197> "sensory receptor cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000197> <http://purl.obolibrary.org/obo/CL_0000255>)
@@ -394,7 +392,7 @@ AnnotationAssertion(Annotation(rdfs:seeAlso "https://www.thefreedictionary.com/n
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000198> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000198> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CL_0000198> "Editor note: request detection of stimulus involved in sensory perception of pain; add develops_from relationship")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000198> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000198> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000198> "pain receptor cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000198> <http://purl.obolibrary.org/obo/CL_0000006>)
 
@@ -404,7 +402,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<https://w3id.org/sssom/mapping_justification> <https://w3id.org/semapv/vocab/UnspecifiedMatching>) <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0000211> "ZFA:0009128")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000211> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000211> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000211> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000211> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000211> "electrically active cell")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000211> "electrically active cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000211> <http://purl.obolibrary.org/obo/CL_0000000>)
@@ -415,7 +413,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0000255> "MESH:D005057")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000255> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000255> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000255> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000255> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000255> "eukaryotic cell")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000255> "eukaryotic cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000255> <http://purl.obolibrary.org/obo/CL_0000000>)
@@ -426,7 +424,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<https://w3id.org/sssom/mapping_justification> <https://w3id.org/semapv/vocab/UnspecifiedMatching>) <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0000393> "ZFA:0009190")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000393> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000393> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000393> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000393> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000393> "electrically responsive cell")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000393> "electrically responsive cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000393> <http://purl.obolibrary.org/obo/CL_0000211>)
@@ -437,7 +435,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<https://w3id.org/sssom/mapping_justification> <https://w3id.org/semapv/vocab/UnspecifiedMatching>) <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0000404> "ZFA:0009193")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000404> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000404> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000404> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000404> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000404> "electrically signaling cell")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000404> "electrically signaling cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000404> <http://purl.obolibrary.org/obo/CL_0000211>)
@@ -453,7 +451,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000526> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000526> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000526> <http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000526> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000526> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000526> "afferent neuron")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000526> "afferent neuron")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000526> <http://purl.obolibrary.org/obo/CL_0000540>)
@@ -475,7 +473,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000540> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000540> <http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CL_0000540> "These cells are also reportedly CD4-negative and CD200-positive. They are also capable of producing CD40L and IFN-gamma.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000540> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000540> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000540> "neuron")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000540> "neuron")
 AnnotationAssertion(<http://xmlns.com/foaf/0.1/depiction> <http://purl.obolibrary.org/obo/CL_0000540> "https://www.swissbiopics.org/api/image/Neuron_cells.svg"^^xsd:anyURI)
@@ -488,7 +486,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CL_0000540> ObjectSomeValuesFrom(<htt
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000551> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000551> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000551> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000551> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000551> "unimodal nocireceptor")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000551> <http://purl.obolibrary.org/obo/CL_0000198>)
 
@@ -496,7 +494,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CL_0000551> <http://purl.obolibrary.o
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000567> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000567> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000567> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000567> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000567> "polymodal nocireceptor")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000567> <http://purl.obolibrary.org/obo/CL_0000198>)
 
@@ -511,7 +509,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0002319> <http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0002319> <http://purl.obolibrary.org/obo/cl#human_subset>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0002319> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0002319> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0002319> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0002319> "neural cell")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0002319> "neural cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0002319> <http://purl.obolibrary.org/obo/CL_0000255>)
@@ -523,7 +521,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obo
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0001508> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0001508> "GO:0001508")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0001508> "Action potentials typically propagate across excitable membranes. This class covers both action potentials that propagate and those that fail to do so.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0001508> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0001508> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0001508> "action potential")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0001508> <http://purl.obolibrary.org/obo/GO_0042391>)
 
@@ -537,7 +535,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obo
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0003008> "organ system process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0003008> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0003008> "GO:0003008")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003008> "system process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.org/obo/GO_0032501>)
 
@@ -561,7 +559,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_pombe>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_yeast>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008150> "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
@@ -572,7 +570,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0019226> "signal transmission along a neuron")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0019226> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0019226> "GO:0019226")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019226> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019226> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019226> "transmission of nerve impulse")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0019226> <http://purl.obolibrary.org/obo/GO_0050877>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0019226> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0001508>))
@@ -583,7 +581,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0019228> "biological_process")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0019228> "generation of action potential")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0019228> "GO:0019228")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019228> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019228> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019228> "neuronal action potential")
 EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0019228> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0001508> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/CL_0000540>)))
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0019228> <http://purl.obolibrary.org/obo/GO_0001508>)
@@ -606,7 +604,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/go#goslim_pir>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0032501> "Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0032501> "multicellular organismal process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/GO_0008150>)
 
@@ -615,7 +613,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.o
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:jl") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mtg_cardio") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0198506732") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0042391> "Any process that modulates the establishment or extent of a membrane potential, the electric potential existing across any membrane arising from charges in the membrane itself and from the charges present in the media on either side of the membrane.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0042391> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0042391> "GO:0042391")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0042391> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0042391> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0042391> "regulation of membrane potential")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0042391> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0042391> <http://purl.obolibrary.org/obo/GO_0065008>)
@@ -634,7 +632,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/go#goslim_generic>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/go#goslim_pir>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050877> "nervous system process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/GO_0003008>)
@@ -647,7 +645,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0065007> "GO:0065007")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/go#goslim_pir>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0065007> "biological regulation")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/GO_0008150>)
 
@@ -661,7 +659,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0065008> "GO:0065008")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/go#goslim_pir>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0065008> "regulation of biological quality")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/GO_0065007>)
 
@@ -699,7 +697,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/uberon/core#common_anatomy>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/uberon/core#upper_level>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000061> "anatomical structure")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/UBERON_0000061> "anatomical structure")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/BFO_0000004>)
@@ -725,7 +723,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/UBERON_0000465> "UBERON:0000465")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/uberon/core#common_anatomy>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/uberon/core#upper_level>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000465> "material anatomical entity")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/UBERON_0000465> "material anatomical entity")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/BFO_0000040>)
@@ -758,7 +756,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/UBERON_0001062> "UBERON:0001062")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/uberon/core#common_anatomy>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/uberon/core#upper_level>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity")
 

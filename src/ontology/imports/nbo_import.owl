@@ -7,7 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>
-Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/nbo.owl>)
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/nbo/releases/2023-07-04/nbo.owl>)
+Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/nbo.owl")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -26,6 +27,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000330>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000331>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000607>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000751>))
+Declaration(Class(owl:Thing))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/nbo#in_response_to>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
@@ -46,85 +48,82 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#xref>))
+Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasDerivedFrom>))
 ############################
 #   Annotation Properties
 ############################
 
 # Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000179> (<http://purl.obolibrary.org/obo/BFO_0000179>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000180> (<http://purl.obolibrary.org/obo/BFO_0000180>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (<http://purl.obolibrary.org/obo/IAO_0000116>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (<http://purl.obolibrary.org/obo/IAO_0000233>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000600> (<http://purl.obolibrary.org/obo/IAO_0000600>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000601> (<http://purl.obolibrary.org/obo/IAO_0000601>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000602> (<http://purl.obolibrary.org/obo/IAO_0000602>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (<http://purl.obolibrary.org/obo/IAO_0010000>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0002161> (<http://purl.obolibrary.org/obo/RO_0002161>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://purl.org/dc/elements/1.1/date> (<http://purl.org/dc/elements/1.1/date>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
-
-# Annotation Property: <http://purl.org/dc/terms/source> (<http://purl.org/dc/terms/source>)
-
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#created_by> (<http://www.geneontology.org/formats/oboInOwl#created_by>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> (<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> (<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#source> (<http://www.geneontology.org/formats/oboInOwl#source>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#source> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#source> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#xref> (<http://www.geneontology.org/formats/oboInOwl#xref>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#xref> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#xref> <http://purl.obolibrary.org/obo/nbo.owl>)
 
 
 ############################
@@ -133,7 +132,7 @@ AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInO
 
 # Object Property: <http://purl.obolibrary.org/obo/nbo#in_response_to> (in_response_to)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/nbo#in_response_to> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/nbo#in_response_to> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/nbo#in_response_to> "in_response_to"@en)
 
 
@@ -195,13 +194,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/GO_0003008> (system process)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003008> "system process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.org/obo/GO_0032501>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0007600> (sensory perception)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0007600> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0007600> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007600> "sensory perception")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0007600> <http://purl.obolibrary.org/obo/GO_0050877>)
 
@@ -209,7 +208,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0007600> <http://purl.obolibrary.o
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0007610> "1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
 2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007610> "behavior")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/GO_0032501>)
 
@@ -219,14 +218,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0008150> "https://github.com/geneontology/go-ontology/issues/24968"^^xsd:anyURI)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008150> "A biological process is an evolved process")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008150> "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological process"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0019233> (sensory perception of pain)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019233> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019233> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019233> "sensory perception of pain")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0019233> <http://purl.obolibrary.org/obo/GO_0007600>)
 
@@ -236,14 +235,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/NCBITaxon_2157>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/NCBITaxon_4896>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/NCBITaxon_4932>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0032501> "multicellular organismal process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/GO_0008150>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050877> (nervous system process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0050877> "https://github.com/geneontology/go-ontology/issues/13824"^^xsd:anyURI)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050877> "nervous system process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/GO_0003008>)
 
@@ -257,7 +256,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NBO_0000308> "perception behavior")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000308> "behavior_ontology")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/NBO_0000308> "Example: moving head to watch passing object.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000308> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000308> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000308> "sensation behavior")
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000308> <http://purl.obolibrary.org/obo/NBO_0000607>)
 
@@ -271,7 +270,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NBO_0000313> "behaviour")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000313> "behavior_ontology")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#xref> <http://purl.obolibrary.org/obo/NBO_0000313> "GO:0007610")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000313> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000313> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000313> "behavior process")
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000313> <http://purl.obolibrary.org/obo/GO_0007610>)
 
@@ -282,7 +281,7 @@ AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibra
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/NBO_0000327> "George Gkoutos")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000327> "behavior_ontology")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/NBO_0000327> "Sensations arising from the internal organs (the viscera), such as pain or the sense of fullness of the stomach or bladder, may therefore be included, although they are usually considered separately as visceral sensations. Pain arising from the viscera is often felt as though it comes from some part of the body surface or underlying tissue.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000327> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000327> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000327> "somatic sensation related behavior")
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000327> <http://purl.obolibrary.org/obo/NBO_0000751>)
 
@@ -291,7 +290,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000327> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/NBO_0000330> "2011-04-05T11:11:48Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/NBO_0000330> "George Gkoutos")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000330> "behavior_ontology")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000330> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000330> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000330> "cutaneous sensation behavior")
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000330> <http://purl.obolibrary.org/obo/NBO_0000327>)
 
@@ -302,7 +301,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NBO_0000331> "nociception")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NBO_0000331> "pain")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000331> "behavior_ontology")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000331> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000331> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000331> "nociceptive behavior")
 EquivalentClasses(<http://purl.obolibrary.org/obo/NBO_0000331> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NBO_0000330> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/nbo#in_response_to> <http://purl.obolibrary.org/obo/GO_0019233>)))
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000331> <http://purl.obolibrary.org/obo/NBO_0000330>)
@@ -314,7 +313,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#sou
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/NBO_0000607> "2011-04-14T03:51:13Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/NBO_0000607> "George Gkoutos")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000607> "behavior_ontology")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000607> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000607> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000607> "cognitive behavior")
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000607> <http://purl.obolibrary.org/obo/NBO_0000313>)
 
@@ -323,7 +322,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000607> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/NBO_0000751> "2012-03-16T05:23:06Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/NBO_0000751> "gkoutos")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000751> "behavior_ontology")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000751> <http://purl.obolibrary.org/obo/pain/imports/nbo_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NBO_0000751> <http://purl.obolibrary.org/obo/nbo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000751> "perception behavior by means")
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000751> <http://purl.obolibrary.org/obo/NBO_0000308>)
 

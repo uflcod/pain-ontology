@@ -7,7 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>
-Annotation(rdfs:comment "Derived from http://purl.bioontology.org/ontology/emro.owl")
+Annotation(<http://purl.org/dc/terms/source> <http://purl.bioontology.org/ontology/emro/releases/2026-03-16/emro.owl>)
+Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.bioontology.org/ontology/emro.owl")
 
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000000>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000001>))
@@ -38,6 +39,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0001900>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0040042>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
@@ -49,113 +51,114 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#shorthand>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasDerivedFrom>))
 ############################
 #   Annotation Properties
 ############################
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000111> (<http://purl.obolibrary.org/obo/IAO_0000111>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000114> (<http://purl.obolibrary.org/obo/IAO_0000114>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (<http://purl.obolibrary.org/obo/IAO_0000116>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (<http://purl.obolibrary.org/obo/IAO_0000117>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (<http://purl.obolibrary.org/obo/IAO_0000118>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (<http://purl.obolibrary.org/obo/IAO_0000119>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (<http://purl.obolibrary.org/obo/IAO_0000232>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (<http://purl.obolibrary.org/obo/IAO_0000233>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000424> (<http://purl.obolibrary.org/obo/IAO_0000424>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000424> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000424> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0001900> (<http://purl.obolibrary.org/obo/RO_0001900>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0001900> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0040042> (<http://purl.obolibrary.org/obo/RO_0040042>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0040042> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0040042> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.org/dc/terms/contributor> (<http://purl.org/dc/terms/contributor>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://purl.org/dc/terms/created> (<http://purl.org/dc/terms/created>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#created_by> (<http://www.geneontology.org/formats/oboInOwl#created_by>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#creation_date> (<http://www.geneontology.org/formats/oboInOwl#creation_date>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> (<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (<http://www.geneontology.org/formats/oboInOwl#hasDbXref>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> (<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#id> (<http://www.geneontology.org/formats/oboInOwl#id>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#id> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#inSubset> (<http://www.geneontology.org/formats/oboInOwl#inSubset>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#shorthand> (<http://www.geneontology.org/formats/oboInOwl#shorthand>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#shorthand> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#shorthand> <http://purl.bioontology.org/ontology/emro.owl>)
 
 # Annotation Property: <http://www.w3.org/2004/02/skos/core#prefLabel> (<http://www.w3.org/2004/02/skos/core#prefLabel>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.bioontology.org/ontology/emro.owl>)
 
 
 ############################
@@ -267,7 +270,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000000> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000000> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000000> "2025-11-24T20:50:19Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000000> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000000> <http://purl.bioontology.org/ontology/emro.owl>)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000000> "emotion process"@en)
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000000> <http://purl.obolibrary.org/obo/GO_0007610>)
 
@@ -278,7 +281,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000001> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000001> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000001> "2025-11-24T20:52:17Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000001> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000001> <http://purl.bioontology.org/ontology/emro.owl>)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000001> "phenomenal cognitive experience"@en)
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000001> <http://purl.obolibrary.org/obo/GO_0050890>)
 
@@ -289,7 +292,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000002> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000002> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000002> "2025-11-24T20:52:39Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000002> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000002> <http://purl.bioontology.org/ontology/emro.owl>)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000002> "emotional experience (feeling)"@en)
 EquivalentClasses(<http://purl.bioontology.org/ontology/EMRO/0000002> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/EMRO/0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.bioontology.org/ontology/EMRO/0000000>)))
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000002> <http://purl.bioontology.org/ontology/EMRO/0000001>)
@@ -302,7 +305,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000005> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000005> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000005> "2025-11-24T20:59:47Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000005> <http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000005> <http://purl.bioontology.org/ontology/emro.owl>)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000005> "sensory experience"@en)
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000005> <http://purl.bioontology.org/ontology/EMRO/0000001>)
 

@@ -7,7 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>
-Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/MFOEM.owl>)
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/MFOEM/2025-07-31/MFOEM.owl>)
+Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/MFOEM.owl")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -17,6 +18,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000195>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000203>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000060>))
+Declaration(Class(owl:Thing))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
@@ -30,61 +32,58 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/MFOEM_000010>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
+Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasDerivedFrom>))
 ############################
 #   Annotation Properties
 ############################
 
 # Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000179> (<http://purl.obolibrary.org/obo/BFO_0000179>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000180> (<http://purl.obolibrary.org/obo/BFO_0000180>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (<http://purl.obolibrary.org/obo/IAO_0000116>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (<http://purl.obolibrary.org/obo/IAO_0000119>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000600> (<http://purl.obolibrary.org/obo/IAO_0000600>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000601> (<http://purl.obolibrary.org/obo/IAO_0000601>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000602> (<http://purl.obolibrary.org/obo/IAO_0000602>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (<http://purl.obolibrary.org/obo/IAO_0010000>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/MFOEM_000010> (<http://purl.obolibrary.org/obo/MFOEM_000010>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000010> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
-
-# Annotation Property: <http://purl.org/dc/terms/source> (<http://purl.org/dc/terms/source>)
-
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000010> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> (<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
 
 
@@ -158,14 +157,14 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "
 
 ")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "Subjective affective feeling can have greater or weaker physiological or mental components. The bodily processes that are experienced will usually involve some mental process.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000006> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000006> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000006> "subjective affective feeling")
 SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000006> <http://purl.obolibrary.org/obo/MFOEM_000195>)
 
 # Class: <http://purl.obolibrary.org/obo/MFOEM_000195> (affective process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000195> "A mental process that has positive or negative valence.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000195> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000195> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000195> "affective process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000195> <http://purl.obolibrary.org/obo/MF_0000020>)
 
@@ -175,7 +174,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 (a) activation of the nociceptive system and associated emotion generating brain components of S, and 
 (b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000203> "Here `phenomenologically similar' means inter alia: (1) that the experience is `of' or is `targeted towards' some region R of the body of S, so that all pain is in this sense (and however diffusely) localized; (2) that the experience involves a dimension of unpleasantness which -- as is shown by the case of pain asymbolia -- is not necessarily of the sort that involves suffering or aversion on the part of the subject S. ")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000203> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000203> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000203> "feeling of pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000203> <http://purl.obolibrary.org/obo/MFOEM_000006>)
 
@@ -186,7 +185,7 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "A 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "A bodily process which brings into being, sustains or modifies a cognitive representation or a behavior inducing state.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "Examples include thinking, feeling pain, remembering and emotion as occurrent experiences.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "Mental processes can varying in the degree to which they involve consciousness.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000020> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000020> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000020> "mental process")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/MF_0000020> "GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.' ")
 SubClassOf(<http://purl.obolibrary.org/obo/MF_0000020> <http://purl.obolibrary.org/obo/OGMS_0000060>)
@@ -196,7 +195,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MF_0000020> <http://purl.obolibrary.o
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000060> "A process in which at least one bodily component of an organsim participates.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OGMS_0000060> "http://www.jbiomedsem.com/content/1/1/10")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OGMS_0000060> "From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000060> "bodily process")
 SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
