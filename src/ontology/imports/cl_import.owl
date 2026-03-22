@@ -10,13 +10,16 @@ Ontology(<http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>
 Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/cl/releases/2026-03-17/cl.owl>)
 Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/cl.owl")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000095>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000125>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000197>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000198>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000211>))
@@ -28,16 +31,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000551>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000567>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0002319>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001508>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019226>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019228>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042391>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050877>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0065007>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0065008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
@@ -59,9 +57,9 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000424>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002161>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002175>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
@@ -105,13 +103,13 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002175>
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/cl.owl>)
 
+# Annotation Property: <http://purl.org/dc/terms/description> (<http://purl.org/dc/terms/description>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/cl.owl>)
+
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#creation_date> (<http://www.geneontology.org/formats/oboInOwl#creation_date>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/cl.owl>)
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>)
-
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/cl.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (<http://www.geneontology.org/formats/oboInOwl#hasDbXref>)
 
@@ -297,10 +295,18 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002595> <http://purl.obo
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (<http://purl.obolibrary.org/obo/BFO_0000002>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/cl.owl>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000002>))
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000003>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000003>))
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000003> (<http://purl.obolibrary.org/obo/BFO_0000003>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/cl.owl>)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000003>))
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000002>))
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000004> (<http://purl.obolibrary.org/obo/BFO_0000004>)
 
@@ -352,6 +358,17 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000006> <http://purl.obolibrary.org/obo/CL_0000101>)
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000006> <http://purl.obolibrary.org/obo/CL_0000197>)
 
+# Class: <http://purl.obolibrary.org/obo/CL_0000095> (neuron associated cell)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000095> <http://purl.obolibrary.org/obo/cl#cellxgene_subset>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000095> <http://purl.obolibrary.org/obo/cl#human_subset>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000095> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000095> <http://purl.obolibrary.org/obo/cl.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000095> "neuron associated cell")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000095> "neuron associated cell")
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000095> <http://purl.obolibrary.org/obo/BFO_0000002>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000095> <http://purl.obolibrary.org/obo/CL_0002319>)
+
 # Class: <http://purl.obolibrary.org/obo/CL_0000101> (sensory neuron)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0721662544") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CL_0000101> "Any neuron having a sensory function; an afferent neuron conveying sensory impulses.")
@@ -370,6 +387,35 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000101>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000101> "sensory neuron")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000101> "sensory neuron")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000101> <http://purl.obolibrary.org/obo/CL_0000526>)
+
+# Class: <http://purl.obolibrary.org/obo/CL_0000125> (glial cell)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "MESH:D009457") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CL_0000125> "A non-neuronal cell of the nervous system. They not only provide physical support, but also respond to injury, regulate the ionic and chemical composition of the extracellular milieu. Guide neuronal migration during development, and exchange metabolites with neurons.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/CL_0000125> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1002/glia.24343") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1038/nn1988") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/cshperspect.a020602") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1126/science.aat0473") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.3389/fncel.2017.00024") <http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/CL_0000125> "Glial cells, also known as neuroglia or simply glia, are non-neuronal cells in the central and peripheral nervous systems that provide support and protection for neurons. They constitute approximately half of the total cells in the human brain and more than half in other parts of the nervous system. Glial cells perform several key functions including, but not limited to, maintaining homeostasis, forming the myelin sheath around the neuron axons, and providing support and nutrition to neurons.
+These different functions are performed by various glial cell types, including astrocytes, oligodendrocytes, microglia and other specialized types. Astrocytes, for example, are the most abundant glial cells and provide metabolic and nutrient support to neurons, help regulate the extracellular ion and neurotransmitter levels, and play a role in the formation and maintenance of the blood-brain barrier, contributing to the overall homeostasis and functioning of the nervous system. Additionally, astrocytes are involved in synaptic communication and participate in processes such as synaptogenesis and synaptic pruning.
+Oligodendrocytes in the central nervous system function to insulate neurons by producing a fatty substance known as myelin. The myelin sheath enhances the speed and efficiency of nerve impulse conduction along the axons. 
+Microglia, the immune cells of the central nervous system, protect neurons from pathogens and clear away dead neurons through phagocytosis, a process also known as cellular eating. They also contribute to the regulation of inflammation in response to signals of tissue damage or infection in the central nervous system by releasing cytokines and other signaling molecules that modulate the immune response.
+Despite their overarching function in the support and protection of neurons, glial cells have also been shown to play significant roles in the pathophysiology of many psychiatric and neurodegenerative diseases, such as Alzheimer’s, Parkinson’s Disease and multiple sclerosis.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0000125> "BTO:0002606")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0000125> "CALOHA:TS-0415")
+AnnotationAssertion(Annotation(<https://w3id.org/sssom/mapping_justification> <https://w3id.org/semapv/vocab/ManualMappingCuration>) <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0000125> "FBbt:00005144")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0000125> "FMA:54536")
+AnnotationAssertion(Annotation(<https://w3id.org/sssom/mapping_justification> <https://w3id.org/semapv/vocab/UnspecifiedMatching>) <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0000125> "ZFA:0009073")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CL_0000125> "neuroglial cell")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CL_0000125> "neuroglia")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000125> <http://purl.obolibrary.org/obo/cl#cellxgene_subset>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000125> <http://purl.obolibrary.org/obo/cl#human_subset>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000125> <http://purl.obolibrary.org/obo/cl#mouse_subset>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000125> <http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CL_0000125> "Not all glial cells develop from glioblasts, with microglia developing from the mesoderm instead. See https://github.com/obophenotype/cell-ontology/issues/1571")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CL_0000125> <http://purl.obolibrary.org/obo/cl.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000125> "glial cell")
+AnnotationAssertion(Annotation(rdfs:label "glial cell on CELLxGENE CellGuide") rdfs:seeAlso <http://purl.obolibrary.org/obo/CL_0000125> "https://cellxgene.cziscience.com/cellguide/CL_0000125")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0000125> "glial cell")
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000125> <http://purl.obolibrary.org/obo/CL_0000095>)
 
 # Class: <http://purl.obolibrary.org/obo/CL_0000197> (sensory receptor cell)
 
@@ -514,17 +560,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0002319> "neur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/CL_0002319> "neural cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0002319> <http://purl.obolibrary.org/obo/CL_0000255>)
 
-# Class: <http://purl.obolibrary.org/obo/GO_0001508> (action potential)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:go_curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:978-0-07-139011-8") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0001508> "A process in which membrane potential cycles through a depolarizing spike, triggered in response to depolarization above some threshold, followed by repolarization. This cycle is driven by the flow of ions through various voltage gated channels with different thresholds and ion specificities.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/GO_0001508> <http://purl.obolibrary.org/obo/NCBITaxon_4895>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0001508> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0001508> "GO:0001508")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0001508> "Action potentials typically propagate across excitable membranes. This class covers both action potentials that propagate and those that fail to do so.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0001508> <http://purl.obolibrary.org/obo/cl.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0001508> "action potential")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0001508> <http://purl.obolibrary.org/obo/GO_0042391>)
-
 # Class: <http://purl.obolibrary.org/obo/GO_0003008> (system process)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mtg_cardio") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0003008> "A multicellular organismal process carried out by any of the organs or tissues in an organ system. An organ system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a biological objective.")
@@ -573,20 +608,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019226> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019226> "transmission of nerve impulse")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0019226> <http://purl.obolibrary.org/obo/GO_0050877>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0019226> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0001508>))
-
-# Class: <http://purl.obolibrary.org/obo/GO_0019228> (neuronal action potential)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:isa_complete") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019228> "An action potential that occurs in a neuron.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0019228> "biological_process")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0019228> "generation of action potential")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0019228> "GO:0019228")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019228> <http://purl.obolibrary.org/obo/cl.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019228> "neuronal action potential")
-EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0019228> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0001508> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/CL_0000540>)))
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0019228> <http://purl.obolibrary.org/obo/GO_0001508>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0019228> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0019226>))
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0019228> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/CL_0000540>))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0032501> (multicellular organismal process)
 
@@ -608,16 +629,6 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0032501>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0032501> "multicellular organismal process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/GO_0008150>)
 
-# Class: <http://purl.obolibrary.org/obo/GO_0042391> (regulation of membrane potential)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:jl") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mtg_cardio") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0198506732") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0042391> "Any process that modulates the establishment or extent of a membrane potential, the electric potential existing across any membrane arising from charges in the membrane itself and from the charges present in the media on either side of the membrane.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0042391> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0042391> "GO:0042391")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0042391> <http://purl.obolibrary.org/obo/cl.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0042391> "regulation of membrane potential")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0042391> <http://purl.obolibrary.org/obo/BFO_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0042391> <http://purl.obolibrary.org/obo/GO_0065008>)
-
 # Class: <http://purl.obolibrary.org/obo/GO_0050877> (nervous system process)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mtg_cardio") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050877> "An organ system process carried out by any of the organs or tissues of the neurological system.")
@@ -636,32 +647,6 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050877>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050877> "nervous system process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/GO_0003008>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0065007> (biological regulation)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:isa_complete") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mah") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pr") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:vw") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0065007> "Any process that modulates a measurable attribute of any biological process, quality or function.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/GO_0065007> "regulation")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0065007> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0065007> "GO:0065007")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/go#goslim_pir>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/cl.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0065007> "biological regulation")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/GO_0008150>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0065008> (regulation of biological quality)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:isa_complete") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mah") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pr") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:vw") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0065008> "Any process that modulates a qualitative or quantitative trait of a biological quality. A biological quality is a measurable attribute of an organism or part of an organism, such as size, mass, shape, color, etc.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0065008> "https://github.com/geneontology/go-ontology/issues/30599"^^xsd:anyURI)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0065008> "regulation of biological attribute")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0065008> "regulation of biological characteristic")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0065008> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0065008> "GO:0065008")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/go#goslim_pir>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/cl.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0065008> "regulation of biological quality")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/GO_0065007>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000061> (anatomical structure)
 

@@ -10,6 +10,7 @@ Ontology(<http://purl.obolibrary.org/obo/pain/imports/go_import.owl>
 Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/go/releases/2026-01-23/go.owl>)
 Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/go.owl")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001508>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006950>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007600>))
@@ -25,11 +26,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009605>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009612>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009628>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019228>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019234>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019235>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0033555>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042391>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046958>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046960>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048265>))
@@ -48,6 +51,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050968>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050974>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050982>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0051606>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0065007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0065008>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -56,6 +61,7 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>))
@@ -88,6 +94,10 @@ AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInO
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> (<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/go.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/go.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (<http://www.geneontology.org/formats/oboInOwl#hasDbXref>)
 
@@ -152,6 +162,16 @@ TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/GO_0001508> (action potential)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:go_curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:978-0-07-139011-8") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0001508> "A process in which membrane potential cycles through a depolarizing spike, triggered in response to depolarization above some threshold, followed by repolarization. This cycle is driven by the flow of ions through various voltage gated channels with different thresholds and ion specificities.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0001508> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0001508> "GO:0001508")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0001508> "Action potentials typically propagate across excitable membranes. This class covers both action potentials that propagate and those that fail to do so.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0001508> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0001508> "action potential")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0001508> <http://purl.obolibrary.org/obo/GO_0042391>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0003008> (system process)
 
@@ -365,6 +385,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0016048> <http://purl.obolibrary.o
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0016048> <http://purl.obolibrary.org/obo/GO_0009581>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0016048> <http://purl.obolibrary.org/obo/GO_0009582>)
 
+# Class: <http://purl.obolibrary.org/obo/GO_0019228> (neuronal action potential)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:isa_complete") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019228> "An action potential that occurs in a neuron.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0019228> "biological_process")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0019228> "generation of action potential")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0019228> "GO:0019228")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0019228> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019228> "neuronal action potential")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0019228> <http://purl.obolibrary.org/obo/GO_0001508>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0019233> (sensory perception of pain)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019233> "The series of events required for an organism to receive a painful stimulus, convert it to a molecular signal, and recognize and characterize the signal. A painful stimulus is any physical or chemical event that has the potential to cause tissue damage (actual or perceived) and activates the nociceptive system.")
@@ -424,6 +454,15 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0033555>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0033555> "multicellular organismal response to stress")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0033555> <http://purl.obolibrary.org/obo/GO_0006950>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0033555> <http://purl.obolibrary.org/obo/GO_0032501>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0042391> (regulation of membrane potential)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:jl") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mtg_cardio") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0198506732") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0042391> "Any process that modulates the establishment or extent of a membrane potential, the electric potential existing across any membrane arising from charges in the membrane itself and from the charges present in the media on either side of the membrane.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0042391> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0042391> "GO:0042391")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0042391> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0042391> "regulation of membrane potential")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0042391> <http://purl.obolibrary.org/obo/GO_0065008>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0046958> (nonassociative learning)
 
@@ -687,6 +726,32 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0051606> <http://purl.obolibrary.org/obo/go.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0051606> "detection of stimulus")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0051606> <http://purl.obolibrary.org/obo/GO_0050896>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0065007> (biological regulation)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:isa_complete") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mah") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pr") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:vw") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0065007> "Any process that modulates a measurable attribute of any biological process, quality or function.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/GO_0065007> "regulation")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0065007> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0065007> "GO:0065007")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/go#goslim_pir>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0065007> "biological regulation")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0065007> <http://purl.obolibrary.org/obo/GO_0008150>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0065008> (regulation of biological quality)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:isa_complete") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mah") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pr") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:vw") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0065008> "Any process that modulates a qualitative or quantitative trait of a biological quality. A biological quality is a measurable attribute of an organism or part of an organism, such as size, mass, shape, color, etc.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0065008> "https://github.com/geneontology/go-ontology/issues/30599"^^xsd:anyURI)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0065008> "regulation of biological attribute")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0065008> "regulation of biological characteristic")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0065008> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0065008> "GO:0065008")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/go#goslim_pir>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0065008> "regulation of biological quality")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0065008> <http://purl.obolibrary.org/obo/GO_0065007>)
 
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dos") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050967> "OBSOLETE. The series of events that contribute to the perception of pain in which an electrical stimulus is received and converted into a molecular signal.")
