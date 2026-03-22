@@ -22,5 +22,6 @@
         <uri name="http://purl.obolibrary.org/obo/pain/imports/go_import.owl" uri="imports/go_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/pain/imports/go_import.obo" uri="imports/go_import.obo"/>
         <uri name="http://purl.obolibrary.org/obo/pain/imports/emro_import.owl" uri="imports/emro_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/pain/components/pain_contributors.owl" uri="components/pain_contributors.owl"/>
     </group>
 </catalog>
