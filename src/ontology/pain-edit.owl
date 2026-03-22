@@ -11,6 +11,7 @@ Import(<http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/iao_import.owl>)
+Import(<http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/ro_import.owl>)
@@ -64,10 +65,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000047>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000048>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000049>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000050>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000053>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000054>))
@@ -445,35 +442,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000047> "2025-05-12T17:02:36Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000047> "dull sensation quality"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000047> <http://purl.obolibrary.org/obo/PAIN_0000042>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000048> (pain mechanism)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000048> "https://orcid.org/0000-0001-9625-1899")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000048> "2022-11-24T06:02:26Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000048> "pain mechanism"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000048> <http://purl.obolibrary.org/obo/OGMS_0000060>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000049> (nociplatic mechanism)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000049> "https://orcid.org/0000-0001-9625-1899")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000049> "2022-11-24T06:02:26Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000049> "nociplatic mechanism"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000049> <http://purl.obolibrary.org/obo/PAIN_0000048>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000050> (nociceptive mechanism)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000050> "https://orcid.org/0000-0001-9625-1899")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000050> "2022-11-24T06:02:26Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000050> "nociceptive mechanism"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000050> <http://purl.obolibrary.org/obo/PAIN_0000048>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000051> (neurpathic mechanism)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PAIN_0000051> "https://orcid.org/0000-0001-9625-1899")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PAIN_0000051> "2022-11-24T06:02:26Z")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000051> "damage to nervous system (e.g., damage to a nociceptor)")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000051> "neurpathic mechanism"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000051> <http://purl.obolibrary.org/obo/PAIN_0000048>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000052> (peripheral nervous system neuropathic pain)
 
