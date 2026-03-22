@@ -11,7 +11,6 @@ Import(<http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/iao_import.owl>)
-Import(<http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/ro_import.owl>)
@@ -147,12 +146,12 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#cre
 
 # Object Property: <http://purl.obolibrary.org/obo/PAIN_0000061> (experienced as)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000061> "A relation between a nervous system process and a mental process in which the nervous system process is gives rise to an experiential mental process.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000061> "A relation between a nervous system process and a cognitive process in which the nervous system process is gives rise to an experiential mental process.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000061> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000061> "2024-06-13T22:09:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000061> "experienced as"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/GO_0050877>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/MF_0000020>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/GO_0050890>)
 
 # Object Property: <http://purl.obolibrary.org/obo/PAIN_0000062> (experienced in)
 
