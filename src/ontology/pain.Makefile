@@ -254,6 +254,11 @@ define mirror-ontology
 		curl -L $$download_url_base/$(strip $(1)).owl \
 			--create-dirs -o $(TMPDIR)/$(strip $(1)).temp.owl --retry 4 --max-time 200; \
 		\
+		if [ ! -f "$(MIRRORDIR)/$(strip $(1)).owl" ]; then \
+			echo "touch $(MIRRORDIR)/$(strip $(1)).owl " && \
+			touch $(MIRRORDIR)/$(strip $(1)).owl; \
+		fi; \
+		\
 		if [ "$(strip $(3))" = "force" ] || \
 			! cmp -s $(TMPDIR)/$(strip $(1)).temp.owl $(MIRRORDIR)/$(strip $(1)).owl ; then \
 			echo "Mirrors different or update is forced, !!! UPDATING !!!.\n" && \
