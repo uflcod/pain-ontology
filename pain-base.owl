@@ -17,7 +17,7 @@
         <terms:creator>https://orcid.org/0000-0001-9625-1899</terms:creator>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Pain Ontology</terms:title>
-        <oboInOwl:date>24:03:2026 12:05</oboInOwl:date>
+        <oboInOwl:date>24:03:2026 15:58</oboInOwl:date>
         <owl:versionInfo>2026-03-24</owl:versionInfo>
     </owl:Ontology>
     
@@ -254,12 +254,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -272,14 +266,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CL_0000198 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000198"/>
@@ -288,9 +274,7 @@
 
     <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502"/>
     
 
 
