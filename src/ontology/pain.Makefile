@@ -99,14 +99,12 @@ $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
-# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
-	
-# $(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl $(IMPORTDIR)/mfoem_terms.txt 
-# 	@echo "*** building $@ ***"
-# 	$(call onotlogy-annotation,$<)
-# 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
-# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
-	
+
+$(IMPORTDIR)/bfo_import.owl:  $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms.txt
+	@echo "*** building $@ ***"
+	$(call onotlogy-annotation,$<)
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------
