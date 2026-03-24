@@ -17,12 +17,12 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-03-23/pain-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-03-24/pain-full.owl"/>
         <terms:created>2022-08-23</terms:created>
         <terms:creator>https://orcid.org/0000-0001-9625-1899</terms:creator>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Pain Ontology</terms:title>
-        <owl:versionInfo>2026-03-23</owl:versionInfo>
+        <owl:versionInfo>2026-03-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2140,6 +2140,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:BFO_0000179>process</obo:BFO_0000179>
+        <obo:BFO_0000180>Process</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">a process of cell-division, \ a beating of the heart</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a process of meiosis</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a process of sleeping</obo:IAO_0000112>
@@ -2147,11 +2149,25 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000112 xml:lang="en">the flight of a bird</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">your process of aging.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: The realm of occurrents is less pervasively marked by the presence of natural units than is the case in the realm of independent continuants. Thus there is here no counterpart of ‘object’. In BFO 1.0 ‘process’ served as such a counterpart. In BFO 2.0 ‘process’ is, rather, the occurrent counterpart of ‘material entity’. Those natural – as contrasted with engineered, which here means: deliberately executed – units which do exist in the realm of occurrents are typically either parasitic on the existence of natural units on the continuant side, or they are fiat in nature. Thus we can count lives; we can count football games; we can count chemical reactions performed in experiments or in chemical manufacturing. We cannot count the processes taking place, for instance, in an episode of insect mating behavior.Even where natural units are identifiable, for example cycles in a cyclical process such as the beating of a heart or an organism’s sleep/wake cycle, the processes in question form a sequence with no discontinuities (temporal gaps) of the sort that we find for instance where billiard balls or zebrafish or planets are separated by clear spatial gaps. Lives of organisms are process units, but they too unfold in a continuous series from other, prior processes such as fertilization, and they unfold in turn in continuous series of post-life processes such as post-mortem decay. Clear examples of boundaries of processes are almost always of the fiat sort (midnight, a time of death as declared in an operating theater or on a death certificate, the initiation of a state of war)</obo:IAO_0000116>
+        <obo:IAO_0000602>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label xml:lang="en">process</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
+    </owl:Axiom>
     
 
 
@@ -2323,7 +2339,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ubprop#_upper_level"/>
         <rdfs:comment>The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>cell</rdfs:label>
         <skos:prefLabel>cell</skos:prefLabel>
     </owl:Class>
@@ -2386,7 +2401,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>neuron associated cell</rdfs:label>
         <skos:prefLabel>neuron associated cell</skos:prefLabel>
     </owl:Class>
@@ -2460,7 +2474,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment>Not all glial cells develop from glioblasts, with microglia developing from the mesoderm instead. See https://github.com/obophenotype/cell-ontology/issues/1571</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>glial cell</rdfs:label>
         <rdfs:seeAlso>https://cellxgene.cziscience.com/cellguide/CL_0000125</rdfs:seeAlso>
         <skos:prefLabel>glial cell</skos:prefLabel>
@@ -2574,7 +2587,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>electrically active cell</rdfs:label>
         <skos:prefLabel>electrically active cell</skos:prefLabel>
     </owl:Class>
@@ -2602,7 +2614,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>eukaryotic cell</rdfs:label>
         <skos:prefLabel>eukaryotic cell</skos:prefLabel>
     </owl:Class>
@@ -2624,7 +2635,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>electrically responsive cell</rdfs:label>
         <skos:prefLabel>electrically responsive cell</skos:prefLabel>
     </owl:Class>
@@ -2652,7 +2662,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>electrically signaling cell</rdfs:label>
         <skos:prefLabel>electrically signaling cell</skos:prefLabel>
     </owl:Class>
@@ -2732,7 +2741,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment>These cells are also reportedly CD4-negative and CD200-positive. They are also capable of producing CD40L and IFN-gamma.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>neuron</rdfs:label>
         <skos:prefLabel>neuron</skos:prefLabel>
         <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.swissbiopics.org/api/image/Neuron_cells.svg</foaf:depiction>
@@ -2797,7 +2805,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>neural cell</rdfs:label>
         <skos:prefLabel>neural cell</skos:prefLabel>
     </owl:Class>
@@ -2859,7 +2866,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2910,7 +2916,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:id>GO:0007600</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>sensory perception</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3039,7 +3044,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>biological_process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3273,17 +3277,17 @@ Despite their overarching function in the support and protection of neurons, gli
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019228"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An action potential that occurs in a neuron.</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>generation of action potential</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019228"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>generation of action potential</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An action potential that occurs in a neuron.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3301,7 +3305,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:hasRelatedSynonym>nociception</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0019233</oboInOwl:id>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>sensory perception of pain</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3376,7 +3379,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>multicellular organismal process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3543,7 +3545,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label>nervous system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -6094,12 +6095,6 @@ define as chronic &amp; multi-localized.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/UBERON_0034921"/>
         <obo:IAO_0000115>Anatomical structure that performs a specific function or group of functions [WP].</obo:IAO_0000115>
         <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_110815"/>
@@ -8907,34 +8902,7 @@ define as chronic &amp; multi-localized.</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/UBERON_0003714 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003714">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Portion of tissue in the nervous system which consists of neurons and glial cells, and may also contain parts of the vasculature.</obo:IAO_0000115>
         <obo:UBPROP_0000001>One of the four types of tissue in traditional classifications. Cells forming the brain, spinal cord and peripheral nervous system.[AAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000012>FMA definition includes vasculature</obo:UBPROP_0000012>
@@ -9942,12 +9910,6 @@ define as chronic &amp; multi-localized.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>An anatomical structure that has more than one cell as a part.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
