@@ -11,14 +11,14 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-03-17/pain-base.owl"/>
-        <dc:creator>https://orcid.org/0000-0001-9625-1899</dc:creator>
-        <dc:date>2022-08-23</dc:date>
-        <dc:title>Pain Ontology</dc:title>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-03-23/pain-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <terms:created>2022-08-23</terms:created>
+        <terms:creator>https://orcid.org/0000-0001-9625-1899</terms:creator>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>17:03:2026 09:12</oboInOwl:date>
-        <owl:versionInfo>2026-03-17</owl:versionInfo>
+        <terms:title>Pain Ontology</terms:title>
+        <oboInOwl:date>23:03:2026 19:43</oboInOwl:date>
+        <owl:versionInfo>2026-03-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -106,9 +106,27 @@
     
 
 
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -163,8 +181,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PAIN_0000061">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GO_0050877"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>A relation between a nervous system process and a mental process in which the nervous system process is gives rise to an experiential mental process.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <obo:IAO_0000115>A relation between a nervous system process and a cognitive process in which the nervous system process is gives rise to an experiential mental process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T22:09:02Z</terms:created>
         <rdfs:label xml:lang="en">experienced as</rdfs:label>
@@ -236,6 +254,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -248,9 +272,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000198 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000198"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cob.owl"/>
+        <rdfs:label>characteristic</rdfs:label>
+    </owl:Class>
     
 
 
@@ -278,6 +320,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0050890 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050890"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -287,24 +335,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM_000203 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000203"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000020"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060"/>
     
 
 
@@ -814,51 +844,6 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:02:36Z</terms:created>
         <rdfs:label xml:lang="en">dull sensation quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">pain mechanism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000049 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000048"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">nociplatic mechanism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000050 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000048"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">nociceptive mechanism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000048"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:comment>damage to nervous system (e.g., damage to a nociceptor)</rdfs:comment>
-        <rdfs:label xml:lang="en">neurpathic mechanism</rdfs:label>
     </owl:Class>
     
 
@@ -1621,6 +1606,14 @@ define as chronic &amp; multi-localized.</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000389 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000389"/>
@@ -1777,6 +1770,16 @@ define as chronic &amp; multi-localized.</rdfs:comment>
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-24T02:12:52Z</terms:created>
+        <rdfs:label>obsolete class</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1790,57 +1793,43 @@ define as chronic &amp; multi-localized.</rdfs:comment>
 
     <!-- https://orcid.org/0000-0001-6378-1703 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-6378-1703">
-        <rdfs:label xml:lang="en">Mattew Diller</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-6378-1703"/>
     
 
 
     <!-- https://orcid.org/0000-0001-9625-1899 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-9625-1899">
-        <rdfs:label>Bill Duncan</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-9625-1899"/>
     
 
 
     <!-- https://orcid.org/0000-0001-9990-8331 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-9990-8331">
-        <rdfs:label xml:lang="en">Alexander D. Diehl</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-9990-8331"/>
     
 
 
     <!-- https://orcid.org/0000-0002-1118-1738 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-1118-1738">
-        <rdfs:label xml:lang="en">John Beverley</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-1118-1738"/>
     
 
 
     <!-- https://orcid.org/0009-0002-7282-0836 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0009-0002-7282-0836">
-        <rdfs:label xml:lang="en">Finn Wilson</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://orcid.org/0009-0002-7282-0836"/>
     
 
 
     <!-- https://orcid.org/0009-0006-7251-3026 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0009-0006-7251-3026">
-        <rdfs:label xml:lang="en">Gopikrishnan M Chandrasekharan</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://orcid.org/0009-0006-7251-3026"/>
     
 
 
     <!-- https://orcid.org/0009-0008-8150-9779 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0009-0008-8150-9779">
-        <rdfs:label xml:lang="en">Jisoo Seo</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://orcid.org/0009-0008-8150-9779"/>
 </rdf:RDF>
 
 

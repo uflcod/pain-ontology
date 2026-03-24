@@ -11,12 +11,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-03-17/pain-simple.owl"/>
-        <dc:creator>https://orcid.org/0000-0001-9625-1899</dc:creator>
-        <dc:date>2022-08-23</dc:date>
-        <dc:title>Pain Ontology</dc:title>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-03-23/pain-simple.owl"/>
+        <terms:created>2022-08-23</terms:created>
+        <terms:creator>https://orcid.org/0000-0001-9625-1899</terms:creator>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo>2026-03-17</owl:versionInfo>
+        <terms:title>Pain Ontology</terms:title>
+        <owl:versionInfo>2026-03-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -53,15 +53,32 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cl_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/emro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/iao_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/pato_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl"/>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -87,11 +104,13 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/emro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/iao_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/mfoem_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl"/>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -99,6 +118,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
     
 
 
@@ -149,26 +174,32 @@
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/date -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -180,23 +211,24 @@
 
     <!-- http://purl.org/dc/elements/1.1/source -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cl_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/emro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/pato_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -204,14 +236,34 @@
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/emro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -221,14 +273,18 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cl_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/emro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/pato_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -242,12 +298,11 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cl_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/emro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/pato_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl"/>
+        <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</rdfs:seeAlso>
     </owl:AnnotationProperty>
     
 
@@ -322,11 +377,11 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cl_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/pato_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:label>part of</rdfs:label>
         <rdfs:label>part_of</rdfs:label>
@@ -362,13 +417,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cl_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/pato_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
         <rdfs:label>has part</rdfs:label>
         <rdfs:label>has_part</rdfs:label>
@@ -389,7 +442,7 @@ We will try to build it back up by elaborating the various subproperties that ar
 Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/iao_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">is about</rdfs:label>
     </owl:ObjectProperty>
     
@@ -398,7 +451,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://purl.obolibrary.org/obo/PAIN_0000061 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PAIN_0000061">
-        <obo:IAO_0000115>A relation between a nervous system process and a mental process in which the nervous system process is gives rise to an experiential mental process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a nervous system process and a cognitive process in which the nervous system process is gives rise to an experiential mental process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T22:09:02Z</terms:created>
         <rdfs:label xml:lang="en">experienced as</rdfs:label>
@@ -429,8 +482,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/omrse_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">has characteristic</rdfs:label>
     </owl:ObjectProperty>
     
@@ -442,7 +494,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000115>inverse of enables</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">enabled by</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Enabled_by</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -457,7 +509,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115>inverse of upstream of</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">causally downstream of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -484,10 +536,10 @@ For the third, we consider the effect of the upstream process on the output(s) o
 Each of these 3 primitives can be composed to yield a cross-product of different relation types.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/cl_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/pato_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label xml:lang="en">causally related to</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
@@ -508,7 +560,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pain/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">causally upstream of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -954,50 +1006,6 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:02:36Z</terms:created>
         <rdfs:label xml:lang="en">dull sensation quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000048">
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">pain mechanism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000049 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000048"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">nociplatic mechanism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000050 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000048"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">nociceptive mechanism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000048"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:comment>damage to nervous system (e.g., damage to a nociceptor)</rdfs:comment>
-        <rdfs:label xml:lang="en">neurpathic mechanism</rdfs:label>
     </owl:Class>
     
 
