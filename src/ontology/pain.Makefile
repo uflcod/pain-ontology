@@ -7,7 +7,7 @@
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo mfoem pato uberon ro iao omrse go nbo cl emro
+IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -22,7 +22,7 @@ all-imports:
 #	@echo $(patsubst %, $(IMPORTDIR)/%_import.owl, $(IMPORTS)) # testing
 	$(MAKE) $(patsubst %, $(IMPORTDIR)/%_import.owl, $(IMPORTS))
 
-		
+
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 	@echo "*** building $@ ***" 
 	$(call onotlogy-annotation,$<)
@@ -49,22 +49,26 @@ $(IMPORTDIR)/emro_import.owl: $(MIRRORDIR)/emro.owl  $(IMPORTDIR)/emro_terms.txt
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 
 $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms.txt 
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 
 $(IMPORTDIR)/cl_import.owl: $(MIRRORDIR)/cl.owl $(IMPORTDIR)/cl_terms.txt 
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 		
 $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 	
 	$(ROBOT) \
 		remove \
@@ -76,27 +80,32 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 $(IMPORTDIR)/nbo_import.owl: $(MIRRORDIR)/nbo.owl $(IMPORTDIR)/nbo_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 		
 $(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 	
 $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 	
 $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 	
-$(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl $(IMPORTDIR)/mfoem_terms.txt 
-	@echo "*** building $@ ***"
-	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+# $(IMPORTDIR)/mfoem_import.owl: $(MIRRORDIR)/mfoem.owl $(IMPORTDIR)/mfoem_terms.txt 
+# 	@echo "*** building $@ ***"
+# 	$(call onotlogy-annotation,$<)
+# 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 	
 # ----------------------------------------
 # Mirroring upstream ontologies
@@ -185,6 +194,7 @@ endef
 # general function for extracting terms from an ontology
 # the extract method is parameter $(4), but this won't work with MIREOT
 # this is used by many of the imports/%_import.owl targets
+# note: the ontology is filtered after the extract
 # parameters: $(1): target; $(2): mirror file; $(3): term file; $(4): extract method
 define extract-ontology
 	$(ROBOT) \
@@ -195,6 +205,13 @@ define extract-ontology
 			--annotate-defined-by true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
+		filter \
+			--term-file $(3) \
+			--exclude-terms imports/exclude_terms.txt \
+			--select "annotations self ancestors" \
+			--axioms logical \
+			--signature true \
+			--trim true \
 		merge \
 			--include-annotations true \
 			--input $(TMPDIR)/$(notdir $(basename $(2)))_onotlogy_annotations.owl \
