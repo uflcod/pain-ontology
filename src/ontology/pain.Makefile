@@ -7,7 +7,7 @@
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro
+IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro bfo cob
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -69,7 +69,8 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
-	
+
+# remove uneeded NCBI Taxon terms
 	$(ROBOT) \
 		remove \
 			--input $@ \
@@ -94,7 +95,7 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
-	
+
 $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
@@ -105,6 +106,30 @@ $(IMPORTDIR)/bfo_import.owl:  $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms.txt
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
+$(IMPORTDIR)/cob_import.owl:  $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms.txt
+	@echo "*** building $@ ***"
+# 	$(call onotlogy-annotation,$<)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
+# 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+	$(ROBOT) \
+		filter \
+			--input $< \
+			--term-file $(lastword $^) \
+			--exclude-terms $(IMPORTDIR)/exclude_terms.txt \
+			--select "annotations self ancestors" \
+			--axioms all \
+			--signature true \
+			--trim true \
+		annotate \
+			--annotate-defined-by true \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		annotate \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+		convert \
+			--format ofn \
+	--output $@.tmp.owl && mv $@.tmp.owl $@
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------
@@ -172,7 +197,7 @@ define filter-ontology
 			--term-file $(3) \
 			--exclude-terms $(IMPORTDIR)/exclude_terms.txt \
 			--select $(4) \
-			--axioms logical \
+			--axioms all \
 			--signature true \
 			--trim true \
 		annotate \
@@ -201,23 +226,32 @@ define extract-ontology
 			--term-file $(3) \
 		annotate \
 			--annotate-defined-by true \
-		remove \
-			--select "owl:deprecated='true'^^xsd:boolean" \
 		filter \
 			--term-file $(3) \
-			--exclude-terms imports/exclude_terms.txt \
 			--select "annotations self ancestors" \
-			--axioms logical \
+			--axioms all \
 			--signature true \
 			--trim true \
 		merge \
 			--include-annotations true \
 			--input $(TMPDIR)/$(notdir $(basename $(2)))_onotlogy_annotations.owl \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+			--term-file imports/exclude_terms.txt \
+			--axioms all \
 		annotate \
 			--ontology-iri $(URIBASE)/$(ONT)/$(1) \
 		convert \
 			--format ofn \
-	--output $(1).tmp.owl && mv $(1).tmp.owl $(1)
+	--output $(1).tmp.owl
+
+	$(ROBOT) \
+		remove \
+			--input $(1).tmp.owl \
+			--term-file $(IMPORTDIR)/exclude_terms.txt \
+			--axioms all \
+		convert --format ofn \
+	--output $(1) && rm $(1).tmp.owl
 endef
 
 #### Mirror Functions ####

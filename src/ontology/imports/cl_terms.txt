@@ -7,4 +7,3 @@ http://purl.obolibrary.org/obo/CL_0000198    # pain receptor cell (exact synonym
 http://purl.obolibrary.org/obo/CL_0000567    # polymodal nocireceptor
 http://purl.obolibrary.org/obo/CL_0000551    # unimodal nocireceptor
 http://purl.obolibrary.org/obo/CL_0000125    # glial cell
-http://purl.obolibrary.org/obo/BFO_0000015   # processs
