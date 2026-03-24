@@ -11,8 +11,12 @@ Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/MFO
 Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/MFOEM.owl")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000195>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000203>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000060>))
 Declaration(Class(owl:Thing))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
@@ -21,7 +25,6 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000601>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/MFOEM_000010>))
@@ -40,35 +43,31 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (example of usage)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (editor note)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (<http://purl.obolibrary.org/obo/IAO_0000116>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (definition source)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (<http://purl.obolibrary.org/obo/IAO_0000119>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000600> (elucidation)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000600> (<http://purl.obolibrary.org/obo/IAO_0000600>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000601> (has associated axiom(nl))
-
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/MFOEM.owl>)
-
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000602> (has associated axiom(fol))
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000602> (<http://purl.obolibrary.org/obo/IAO_0000602>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (has axiom label)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (<http://purl.obolibrary.org/obo/IAO_0010000>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/MFOEM.owl>)
 
@@ -101,23 +100,6 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000001
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)
 
-# Class: <http://purl.obolibrary.org/obo/BFO_0000003> (occurrent)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000003> "occurrent")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000003> "Occurrent")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000003> "BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000003> "BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players."@en)
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/0000006>) Annotation(rdfs:comment "per discussion with Barry Smith") <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000003> "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process."@en)
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/0000012>) <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000003> "Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by 'spn[e]' and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write 'spr[e]' and `spl[e]' respectively for the spread and spell of e, omitting mention of the frame.")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/077-002>) <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000003> "An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])"@en)
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/108-001>) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000003> "Every occurrent occupies_spatiotemporal_region some spatiotemporal region. (axiom label in BFO2 Reference: [108-001])"@en)
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/079-001>) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000003> "b is an occurrent entity iff b is an entity that has temporal parts. (axiom label in BFO2 Reference: [079-001])"@en)
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/108-001>) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000003> "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] ")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/079-001>) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000003> "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] ")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/bfo.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000003> "occurrent"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/BFO_0000001>)
-
 # Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000015> "process")
@@ -134,7 +116,65 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/083-003>) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000015> "(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] ")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/bfo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/MFOEM_000006> (subjective affective feeling)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000006> "An affective process that involves the experience of internal or external sensory stimuli.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/MFOEM_000010> <http://purl.obolibrary.org/obo/MFOEM_000006> "affective consciousness")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/MFOEM_000006> "http://purl.obolibrary.org/obo/MFOEM_000202")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "As a subclass of 'affective process', subjective affective feelings have valence. Valence refers to the 'the subjective value of an event, object, person, or other entity in the life space of the individual' (https://dictionary.apa.org/valence). Valence ranges from negative to positive.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "Bodily sensations and the experiences of emotions (e.g., feeling calm) would both qualify as examples of 'subjective affective feeling'.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "Excluded the following subjective feelings which appear on the GRID questionnaire since they seem debatable to what extent they are really *feelings* and to what extent they are actually *evaluations* or other things:
+
+-- felt submissive/dominant
+-- felt powerless/powerful
+
+
+
+")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "Subjective affective feeling can have greater or weaker physiological or mental components. The bodily processes that are experienced will usually involve some mental process.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000006> <http://purl.obolibrary.org/obo/MFOEM.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000006> "subjective affective feeling")
+SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000006> <http://purl.obolibrary.org/obo/MFOEM_000195>)
+
+# Class: <http://purl.obolibrary.org/obo/MFOEM_000195> (affective process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000195> "A mental process that has positive or negative valence.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000195> <http://purl.obolibrary.org/obo/MFOEM.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000195> "affective process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000195> <http://purl.obolibrary.org/obo/MF_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/MFOEM_000203> (feeling of pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000203> "A subjective affective feeling in an organism S, involving two integrated levels: 
+(a) activation of the nociceptive system and associated emotion generating brain components of S, and 
+(b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000203> "Here `phenomenologically similar' means inter alia: (1) that the experience is `of' or is `targeted towards' some region R of the body of S, so that all pain is in this sense (and however diffusely) localized; (2) that the experience involves a dimension of unpleasantness which -- as is shown by the case of pain asymbolia -- is not necessarily of the sort that involves suffering or aversion on the part of the subject S. ")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000203> <http://purl.obolibrary.org/obo/MFOEM.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000203> "feeling of pain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000203> <http://purl.obolibrary.org/obo/MFOEM_000006>)
+
+# Class: <http://purl.obolibrary.org/obo/MF_0000020> (mental process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MF_0000020> "A bodily process that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "A 'mental process' is a subclass of 'bodily process', as mental processes occur within the body, specifically involving the brain.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "A bodily process which brings into being, sustains or modifies a cognitive representation or a behavior inducing state.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "Examples include thinking, feeling pain, remembering and emotion as occurrent experiences.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "Mental processes can varying in the degree to which they involve consciousness.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000020> <http://purl.obolibrary.org/obo/MFOEM.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000020> "mental process")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/MF_0000020> "GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.' ")
+SubClassOf(<http://purl.obolibrary.org/obo/MF_0000020> <http://purl.obolibrary.org/obo/OGMS_0000060>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000060> (bodily process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000060> "A process in which at least one bodily component of an organsim participates.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OGMS_0000060> "http://www.jbiomedsem.com/content/1/1/10")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OGMS_0000060> "From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/MFOEM.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000060> "bodily process")
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 
 )

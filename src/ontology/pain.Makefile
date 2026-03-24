@@ -163,6 +163,7 @@ define filter-ontology
 		filter \
 			--input $(2) \
 			--term-file $(3) \
+			--exclude-terms $(IMPORTDIR)/exclude_terms.txt \
 			--select $(4) \
 			--axioms logical \
 			--signature true \

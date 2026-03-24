@@ -56,47 +56,47 @@ Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasDerivedFrom>))
 #   Annotation Properties
 ############################
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000111> (editor preferred term)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000111> (<http://purl.obolibrary.org/obo/IAO_0000111>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (example of usage)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000114> (has curation status)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000114> (<http://purl.obolibrary.org/obo/IAO_0000114>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (editor note)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (<http://purl.obolibrary.org/obo/IAO_0000116>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (term editor)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (<http://purl.obolibrary.org/obo/IAO_0000117>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (alternative label)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (<http://purl.obolibrary.org/obo/IAO_0000118>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (definition source)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (<http://purl.obolibrary.org/obo/IAO_0000119>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (curator note)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (<http://purl.obolibrary.org/obo/IAO_0000232>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (term tracker item)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (<http://purl.obolibrary.org/obo/IAO_0000233>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000424> (expand expression to)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000424> (<http://purl.obolibrary.org/obo/IAO_0000424>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000424> <http://purl.bioontology.org/ontology/emro.owl>)
 
@@ -128,11 +128,11 @@ AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInO
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (has cross-reference)
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (<http://www.geneontology.org/formats/oboInOwl#hasDbXref>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has exact synonym)
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.bioontology.org/ontology/emro.owl>)
 
@@ -140,7 +140,7 @@ AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInO
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.bioontology.org/ontology/emro.owl>)
 
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (has related synonym)
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.bioontology.org/ontology/emro.owl>)
 
@@ -266,6 +266,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002323> "mere
 # Class: <http://purl.bioontology.org/ontology/EMRO/0000000> (emotion process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000000> "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000000> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000000> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000000> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000000> "2025-11-24T20:50:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000000> <http://purl.bioontology.org/ontology/emro.owl>)
@@ -275,6 +277,8 @@ SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000000> <http://purl.obol
 # Class: <http://purl.bioontology.org/ontology/EMRO/0000001> (phenomenal cognitive experience)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/consciousness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000001> "A cognitive process during which an organism is aware of something either internal or external to itself.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000001> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000001> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000001> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000001> "2025-11-24T20:52:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000001> <http://purl.bioontology.org/ontology/emro.owl>)
@@ -284,6 +288,8 @@ SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000001> <http://purl.obol
 # Class: <http://purl.bioontology.org/ontology/EMRO/0000002> (emotional experience (feeling))
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/feeling") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000002> "A phenomenal cognitive experience evaluated as pleasant or unpleasant.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000002> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000002> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000002> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000002> "2025-11-24T20:52:39Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000002> <http://purl.bioontology.org/ontology/emro.owl>)
@@ -295,6 +301,8 @@ SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000002> ObjectSomeValuesF
 # Class: <http://purl.bioontology.org/ontology/EMRO/0000005> (sensory experience)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/sensation") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000005> "A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000005> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000005> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000005> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000005> "2025-11-24T20:59:47Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000005> <http://purl.bioontology.org/ontology/emro.owl>)

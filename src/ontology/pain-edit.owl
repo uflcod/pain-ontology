@@ -25,6 +25,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000000>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000000>))
@@ -106,6 +107,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000093>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000094>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000061>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000062>))
@@ -160,6 +162,16 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "ex
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000017> (realizable entity)
+
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/COB_0000502>)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000502> (characteristic)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/COB_0000502> <http://purl.obolibrary.org/obo/cob.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000502> "characteristic")
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000502> <http://purl.obolibrary.org/obo/BFO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000000> (temporomandibular joint pain)
 
@@ -743,6 +755,16 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000094> "2026-03-17T03:25:24Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000094> "knee pain")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000094> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0001465>)))
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/COB_0000502>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (obsolete class)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "2026-03-24T02:12:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "obsolete class")
 
 
 
