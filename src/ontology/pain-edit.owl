@@ -164,10 +164,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "ex
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/COB_0000502> (characteristic)
-
-SubClassOf(<http://purl.obolibrary.org/obo/COB_0000502> <http://purl.obolibrary.org/obo/BFO_0000001>)
-
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000000> (temporomandibular joint pain)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000000> <https://orcid.org/0000-0001-9625-1899>)

@@ -109,7 +109,8 @@ $(IMPORTDIR)/bfo_import.owl:  $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms.txt
 $(IMPORTDIR)/cob_import.owl:  $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
 
 # ----------------------------------------
 # Mirroring upstream ontologies
