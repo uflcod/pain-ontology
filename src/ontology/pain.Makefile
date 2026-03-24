@@ -139,7 +139,7 @@ all-mirrors:
 #	@echo $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS)) # testing
 	make $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
 
-.PHONY: all-mirrors-force
+.PHONY: force-all-mirrors
 force-all-mirrors:
 #	@echo $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS)) # testing
 	make $(patsubst %, force-mirror-%, $(IMPORTS))
