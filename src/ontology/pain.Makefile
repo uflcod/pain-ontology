@@ -108,28 +108,9 @@ $(IMPORTDIR)/bfo_import.owl:  $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms.txt
 
 $(IMPORTDIR)/cob_import.owl:  $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms.txt
 	@echo "*** building $@ ***"
-# 	$(call onotlogy-annotation,$<)
-# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
-# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
-# 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
-	$(ROBOT) \
-		filter \
-			--input $< \
-			--term-file $(lastword $^) \
-			--exclude-terms $(IMPORTDIR)/exclude_terms.txt \
-			--select "annotations self ancestors" \
-			--axioms all \
-			--signature true \
-			--trim true \
-		annotate \
-			--annotate-defined-by true \
-		remove \
-			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-		convert \
-			--format ofn \
-	--output $@.tmp.owl && mv $@.tmp.owl $@
+	$(call onotlogy-annotation,$<)
+	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
+
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------

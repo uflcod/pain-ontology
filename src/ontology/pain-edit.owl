@@ -164,10 +164,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "ex
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/BFO_0000017> (realizable entity)
-
-SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/COB_0000502>)
-
 # Class: <http://purl.obolibrary.org/obo/COB_0000502> (characteristic)
 
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000502> <http://purl.obolibrary.org/obo/BFO_0000001>)
