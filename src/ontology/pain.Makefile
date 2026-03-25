@@ -128,6 +128,11 @@ pain_release_fast:
 	$(MAKE) pain_release IMP=false PAT=false MIR=false COMP=false
 
 .PHONY: pain_initial_release
+pain_initial_release: prepare_initial_release
+	@tmp_release_assets="$(patsubst %, $(RELEASEDIR)/%, $(RELEASE_ASSETS))"; \
+	for f in $$tmp_release_assets; do \
+		$(call remove-obsolete-class,$$f); \
+	done
 
 # ----------------------------------------
 # Mirroring upstream ontologies
