@@ -265,7 +265,9 @@ define remove-obsolete-class
 	$(ROBOT) \
 		remove \
 			--input $(1) \
-			--term "<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>" \
+			--term http://www.geneontology.org/formats/oboInOwl#ObsoleteClass \
+			--select "self descendants" \
+			--signature true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
 	--output $(TMPDIR)/$$(basename $(1)).tmp.owl && mv $(TMPDIR)/$$(basename $(1)).tmp.owl $(1)
