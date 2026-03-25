@@ -270,7 +270,7 @@ define remove-obsolete-class
 			--signature true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
-	--output $(TMPDIR)/$$(basename $(1)).tmp.owl && mv $(TMPDIR)/$$(basename $(1)).tmp.owl $(1)
+	--output $(TMPDIR)/$$(basename $(1)) && mv $(TMPDIR)/$$(basename $(1)) $(1)
 endef
 
 #### Mirror Functions ####
