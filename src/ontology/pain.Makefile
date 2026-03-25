@@ -24,7 +24,7 @@ all-imports:
 
 
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
-	@echo "*** building $@ ***" 
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(ROBOT) \
 		filter \
@@ -42,30 +42,30 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/emro_import.owl: $(MIRRORDIR)/emro.owl  $(IMPORTDIR)/emro_terms.txt
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 
 $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms.txt 
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 
 $(IMPORTDIR)/cl_import.owl: $(MIRRORDIR)/cl.owl $(IMPORTDIR)/cl_terms.txt 
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 		
 $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms.txt
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
@@ -79,38 +79,55 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/nbo_import.owl: $(MIRRORDIR)/nbo.owl $(IMPORTDIR)/nbo_terms.txt
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 		
 $(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.txt
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 	
 $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 
 $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
 $(IMPORTDIR)/bfo_import.owl:  $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms.txt
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
 $(IMPORTDIR)/cob_import.owl:  $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms.txt
-	@echo "*** building $@ ***"
+	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
+
+# ----------------------------------------
+# Release Management
+# ----------------------------------------
+
+.PHONY: pain_release
+pain_release: prepare_release
+	@tmp_release_assets="$(patsubst %, $(RELEASEDIR)/%, $(RELEASE_ASSETS))"; \
+	for f in $$tmp_release_assets; do \
+		$(call remove-obsolete-class,$$f); \
+	done
+
+.PHONY: pain_release_fast
+pain_release_fast: 
+	$(MAKE) pain_release IMP=false PAT=false MIR=false COMP=false
+
+.PHONY: pain_initial_release
 
 # ----------------------------------------
 # Mirroring upstream ontologies
@@ -234,6 +251,19 @@ define extract-ontology
 			--axioms all \
 		convert --format ofn \
 	--output $(1) && rm $(1).tmp.owl
+endef
+
+#### Release Functions ####
+
+define remove-obsolete-class
+	echo "\n removing ObsoleteClass from $(1) ($$(basename $(1))) \n"; \
+	$(ROBOT) \
+		remove \
+			--input $(1) \
+			--term "<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>" \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+	--output $(TMPDIR)/$$(basename $(1)).tmp.owl && mv $(TMPDIR)/$$(basename $(1)).tmp.owl $(1)
 endef
 
 #### Mirror Functions ####

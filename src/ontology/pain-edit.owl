@@ -753,8 +753,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary
 
 # Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (obsolete class)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "2026-03-24T02:12:52Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "obsolete class")
 
 
