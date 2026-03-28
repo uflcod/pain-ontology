@@ -22,7 +22,6 @@
 # these can be overwritten on the command line
 
 URIBASE=                    http://purl.obolibrary.org/obo
-# URIBASE=  					http://purl.bioontology.org/ontology
 ONT=                        pain
 ONTBASE=                    $(URIBASE)/$(ONT)
 EDIT_FORMAT=                owl
