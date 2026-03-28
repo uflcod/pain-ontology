@@ -3,11 +3,23 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+# -------------------------------------------
+# testing onology with the HermiT reasoner
+# -------------------------------------------
+
+test-dl: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
+	$(ROBOT) reason --input $(SRC) --reasoner HERMIT  --equivalent-classes-allowed asserted-only \
+                --exclude-tautologies structural --output $(TMPDIR)/$@.owl &&\
+	echo "\n*** DL Test Successful ***\n"
+
 # ----------------------------------------
 # ontology imports
 # ----------------------------------------
 
 IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro bfo cob
+
+# Define variables needed for bioportal iri	
+URIBASE = http://purl.bioontology.org/ontology
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -286,7 +298,7 @@ define mirror-ontology
 				[ "$(strip $(IMP))" = "true" ] && \
 				[ "$(strip $(IMP_LARGE))" = "true" ]; then \
 			echo "*** mirroring $(1) ***"; \
-			download_url_base=$(if $(strip $(2)),$(2),$(URIBASE)); \
+			download_url_base=$(if $(strip $(2)),$(2),$(OBOBASE)); \
 			echo "url: $$download_url_base/$(1).owl"; \
 			\
 		curl -L $$download_url_base/$(strip $(1)).owl \
