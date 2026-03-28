@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/pain/imports/pato_import.owl#>)
+Prefix(:=<http://purl.bioontology.org/ontology/pain/imports/pato_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/pain/imports/pato_import.owl>
+Ontology(<http://purl.bioontology.org/ontology/pain/imports/pato_import.owl>
 Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/pato/releases/2025-05-14/pato.owl>)
 Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/pato.owl")
 
