@@ -3,6 +3,16 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+# -------------------------------------------
+# testing onology with the HermiT reasoner
+# -------------------------------------------
+
+.PHONY: test-dl
+test-dl: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
+	$(ROBOT) reason --input $(SRC) --reasoner HERMIT  --equivalent-classes-allowed asserted-only \
+                --exclude-tautologies structural --output $(TMPDIR)/test-dl.owl && rm $(TMPDIR)/test-dl.owl &&\
+	@echo "\n*** DL Test Successful ***\n"
+
 # ----------------------------------------
 # ontology imports
 # ----------------------------------------
