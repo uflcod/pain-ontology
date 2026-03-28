@@ -7,11 +7,10 @@
 # testing onology with the HermiT reasoner
 # -------------------------------------------
 
-.PHONY: test-dl
 test-dl: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
 	$(ROBOT) reason --input $(SRC) --reasoner HERMIT  --equivalent-classes-allowed asserted-only \
-                --exclude-tautologies structural --output $(TMPDIR)/test-dl.owl && rm $(TMPDIR)/test-dl.owl &&\
-	@echo "\n*** DL Test Successful ***\n"
+                --exclude-tautologies structural --output $(TMPDIR)/$@.owl &&\
+	echo "\n*** DL Test Successful ***\n"
 
 # ----------------------------------------
 # ontology imports
@@ -19,8 +18,8 @@ test-dl: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2
 
 IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro bfo cob
 
-# Define variables needed for bioportal iri
-OBOBASE = http://purl.obolibrary.org/obo
+# Define variables needed for bioportal iri	
+URIBASE = http://purl.bioontology.org/ontology
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
