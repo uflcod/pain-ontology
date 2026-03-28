@@ -20,7 +20,6 @@ test-dl: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2
 IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro bfo cob
 
 # Define variables needed for bioportal iri
-URIBASE =  http://purl.bioontology.org/ontology
 OBOBASE = http://purl.obolibrary.org/obo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
