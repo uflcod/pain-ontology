@@ -374,9 +374,9 @@ $(ONT)-base.owl: $(SRC) $(OTHER_SRC)
 # Full: The full artefacts with imports merged, reasoned
 $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT) merge --input $< \
-		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+		reason --reasoner HERMIT --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
-		reduce -r ELK \
+		reduce -r HERMIT \
 		annotate --ontology-iri $(ONTBASE)/$@ \
 		$(ANNOTATE_ONTOLOGY_VERSION) \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
@@ -393,12 +393,12 @@ $(ONT)-non-classified.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 #	remove --select imports --trim false
 $(ONT)-simple.owl: $(SRC) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILES)
 	$(ROBOT) merge --input $< $(patsubst %, -i %, $(OTHER_SRC)) \
-		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+		reason --reasoner HERMIT --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		remove --axioms equivalent \
 		relax \
 		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self" --trim true --signature true \
-		reduce -r hermit \
+		reduce -r HERMIT \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ \
 		$(ANNOTATE_ONTOLOGY_VERSION) \
