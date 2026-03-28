@@ -9,6 +9,10 @@
 
 IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro bfo cob
 
+# Define variables needed for bioportal iri
+URIBASE =  http://purl.bioontology.org/ontology
+OBOBASE = http://purl.obolibrary.org/obo
+
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
 IMPORT_FILES = $(IMPORT_OWL_FILES)
@@ -286,7 +290,7 @@ define mirror-ontology
 				[ "$(strip $(IMP))" = "true" ] && \
 				[ "$(strip $(IMP_LARGE))" = "true" ]; then \
 			echo "*** mirroring $(1) ***"; \
-			download_url_base=$(if $(strip $(2)),$(2),$(URIBASE)); \
+			download_url_base=$(if $(strip $(2)),$(2),$(OBOBASE)); \
 			echo "url: $$download_url_base/$(1).owl"; \
 			\
 		curl -L $$download_url_base/$(strip $(1)).owl \
