@@ -149,6 +149,7 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#note>))
 
 # Object Property: <http://purl.bioontology.org/ontology/PAIN/0000061> (experienced as)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.bioontology.org/ontology/PAIN/0000061> "Concomitant continuous pain (CCP) in trigeminal neuralgia is often experienced as burning or throbbing.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000061> "A relation between a nervous system process and a cognitive process in which the nervous system process is gives rise to an experiential mental process.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000061> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000061> "2024-06-13T22:09:02Z"^^xsd:dateTime)
@@ -158,6 +159,7 @@ ObjectPropertyRange(<http://purl.bioontology.org/ontology/PAIN/0000061> <http://
 
 # Object Property: <http://purl.bioontology.org/ontology/PAIN/0000062> (A relation between a physical sensation and an anatomical entity or site where an anatomical entity is usually located in which the sensation is subjectively experienced as occurring in the anatomical entity or site.)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.bioontology.org/ontology/PAIN/0000062> "Brain freeze is a brief, intense pain experienced in the forehead.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000062> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000062> "2025-04-28T16:36:53Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000062> "A relation between a physical sensation and an anatomical entity or site where an anatomical entity is usually located in which the sensation is subjectively experienced as occurring in the anatomical entity or site.")
@@ -294,7 +296,7 @@ AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.b
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.bioontology.org/ontology/PAIN/0000020> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000020> "obsolete pain sensitivity"@en)
 AnnotationAssertion(owl:deprecated <http://purl.bioontology.org/ontology/PAIN/0000020> "true"^^xsd:boolean)
-SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000020> <http://purl.obolibrary.org/obo/BFO_0000016>)
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000020> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000026> (obsolete pain questionnaire)
 
