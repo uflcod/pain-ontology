@@ -35,7 +35,7 @@ Please carefully read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Reporting problems with the ontology
 
-Please use our [Issue Tracker](https://github.com/wdduncan/pain-ontology/issues/) for reporting problems with the ontology. 
+Please use our [Issue Tracker](https://github.com/uflcod/pain-ontology/issues) for reporting problems with the ontology. 
 To learn how to write a good issue [see here](#great-issues).
 
 <a id="requesting-terms"></a>
@@ -45,7 +45,7 @@ To learn how to write a good issue [see here](#great-issues).
 Before you write a new request, please consider the following: 
 
 - **Does the term already exist?** Before submitting suggestions for new ontology terms, check whether the term exist, 
-either as a primary term or a synonym term. You can search for your term using [OLS](http://www.ebi.ac.uk/ols/ontologies/pain).
+either as a primary term or a synonym term. You can search for your term using [OLS](http://www.ebi.ac.uk/ols/).
 - **Can you provide a definition for the term?** It should be very clear what the term means, and you should be
 able to provide a concise definition, ideally with a scientific reference.
 - **Is the ontology in scope for the term?** Sometimes, it is hard to tell whether a term "belongs" in
@@ -59,10 +59,10 @@ community resource, it is often necessary to do at least some of the work of add
 
 #### How to write a new term request
 
-Request a new term _via_ the GitHub [Issue Tracker](https://github.com/wdduncan/pain-ontology/issues/).
+Request a new term _via_ the GitHub [Issue Tracker](https://github.com/uflcod/pain-ontology/issues).
 
 It is important to remember that it takes a lot of time for curators to process issues submitted to the tracker.
-To make this work easier, please always use issue templates if they are available (https://github.com/wdduncan/pain-ontology/issues/new/choose).
+To make this work easier, please always use issue templates if they are available (https://github.com/uflcod/pain-ontology/issues/new/choose).
 
 For how to write a good term request, please read the [best practices carefully](#great-issues).
 
