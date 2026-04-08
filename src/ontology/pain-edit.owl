@@ -78,7 +78,6 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000059>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000060>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000063>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000064>))
-Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000065>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000066>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000067>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000068>))
@@ -532,13 +531,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000064> "2025-05-12T17:06:51Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000064> "freezing sensation quality"@en)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000064> <http://purl.bioontology.org/ontology/PAIN/0000042>)
-
-# Class: <http://purl.bioontology.org/ontology/PAIN/0000065> (pain associated with emotional response)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000065> <http://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000065> "2025-04-28T16:56:17Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000065> "pain associated with emotional response"@en)
-SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000065> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000066> (shooting sensation quality)
 
