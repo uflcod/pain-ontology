@@ -64,6 +64,15 @@ $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 
+# remove pato:quality in order to avoid confusion with bfo:quality
+	$(ROBOT) \
+		remove \
+			--input $@ \
+			--term http://purl.obolibrary.org/obo/PATO_0000001 \
+		convert --format ofn \
+	--output $@.tmp.owl && mv $@.tmp.owl $@
+
+
 $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms.txt 
 	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
