@@ -8,23 +8,25 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/pain/pain-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-03-28/pain-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-04-08/pain-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0006-7251-3026"/>
         <terms:created>2022-08-23</terms:created>
         <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g, acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <terms:title>Pain Ontology</terms:title>
-        <oboInOwl:date>28:03:2026 10:43</oboInOwl:date>
-        <owl:versionInfo>2026-03-28</owl:versionInfo>
+        <terms:title>The Pain Ontology</terms:title>
+        <oboInOwl:date>08:04:2026 17:26</oboInOwl:date>
+        <owl:versionInfo>2026-04-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -37,6 +39,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
 
 
@@ -130,6 +138,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
@@ -154,6 +168,18 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -170,6 +196,7 @@
     <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/PAIN/0000061">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GO_0050877"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <obo:IAO_0000112>Concomitant continuous pain (CCP) in trigeminal neuralgia is often experienced as burning or throbbing.</obo:IAO_0000112>
         <obo:IAO_0000115>A relation between a nervous system process and a cognitive process in which the nervous system process is gives rise to an experiential mental process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T22:09:02Z</terms:created>
@@ -181,6 +208,7 @@
     <!-- http://purl.bioontology.org/ontology/PAIN/0000062 -->
 
     <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/PAIN/0000062">
+        <obo:IAO_0000112>Brain freeze is a brief, intense pain experienced in the forehead.</obo:IAO_0000112>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-28T16:36:53Z</terms:created>
         <rdfs:label>A relation between a physical sensation and an anatomical entity or site where an anatomical entity is usually located in which the sensation is subjectively experienced as occurring in the anatomical entity or site.</rdfs:label>
@@ -204,6 +232,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
     
 
 
@@ -274,7 +308,9 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced in the temporomandibular joint.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T13:10:32Z</terms:created>
         <oboInOwl:hasExactSynonym>TMJ pain</oboInOwl:hasExactSynonym>
         <rdfs:label>temporomandibular joint pain</rdfs:label>
@@ -282,13 +318,51 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000001 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
+        <obo:IAO_0000115>Pain that is persistently occuring in the background.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T16:42:44Z</terms:created>
+        <rdfs:label>concomitant continuous pain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain that is persistently occuring in the background.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32791919</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000002 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000056"/>
+        <obo:IAO_0000115>Pain that is experienced in the skin, muscles, joints, and bones.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T18:15:23Z</terms:created>
+        <rdfs:label>somatic pain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain that is experienced in the skin, muscles, joints, and bones.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.verywellhealth.com/what-is-somatic-pain-2564619</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/PAIN/0000009 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">pain testing procedure</rdfs:label>
+        <rdfs:label>obsolete pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -299,7 +373,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000009"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">temperature pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete temperature pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -310,7 +385,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000010"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">heat pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete heat pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -321,7 +397,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000010"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">cold pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete cold pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -332,7 +409,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000009"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">temporal summation pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete temporal summation pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -344,7 +422,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000019"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">temporal summation of heat pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete temporal summation of heat pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -356,7 +435,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000019"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">temporal summation of cold pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete temporal summation of cold pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -367,7 +447,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000009"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">pressure pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete pressure pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -378,7 +459,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000009"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">punctate pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete punctate pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -390,7 +472,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000017"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">temporal summation of punctate pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete temporal summation of punctate pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -402,7 +485,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000013"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">temporal summation of temperature pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete temporal summation of temperature pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -410,65 +494,11 @@
     <!-- http://purl.bioontology.org/ontology/PAIN/0000020 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">pain sensitivity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/PAIN/0000021 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000020"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">low pressure pain sensitivity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/PAIN/0000022 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000020"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">average pain sensitivity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/PAIN/0000023 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000020"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">high punctate temporal summation sensitivity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/PAIN/0000024 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000020"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">high cold pain sensitivity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/PAIN/0000025 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000025">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000020"/>
-        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
-        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">high heat pain and high temprature of heat pain sensitivity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete pain sensitivity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -476,10 +506,11 @@
     <!-- http://purl.bioontology.org/ontology/PAIN/0000026 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">pain questionnaire</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete pain questionnaire</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -490,7 +521,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000026"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">In Vivo Coping Questionnaire</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete In Vivo Coping Questionnaire</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -501,7 +533,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000026"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">Pain Vigilance and Awareness Questionnaire</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Pain Vigilance and Awareness Questionnaire</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -509,10 +542,11 @@
     <!-- http://purl.bioontology.org/ontology/PAIN/0000029 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">pain scale score</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete pain scale score</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -523,7 +557,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000029"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">Kohn Reactivity Scale</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Kohn Reactivity Scale</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -534,7 +569,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000029"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">Graded Chronic Pain Scale</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Graded Chronic Pain Scale</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -545,7 +581,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000029"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">Likert Scale</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Likert Scale</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -556,7 +593,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000029"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">Western Ontario and McMaster Universities Osteoarthritis Index</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Western Ontario and McMaster Universities Osteoarthritis Index</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -567,7 +605,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000026"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">widespread condition questionnaire</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete widespread condition questionnaire</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -620,6 +659,45 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
     
 
 
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000037 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
+        <obo:IAO_0000115>Pain without known cause or of spontaneous origin.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T17:09:41Z</terms:created>
+        <rdfs:label>idiopathic pain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain without known cause or of spontaneous origin.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/idiopathic</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000038 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
+        <obo:IAO_0000115>Acute transient pain that is severe and has an intensity that flares over baseline.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T17:10:12Z</terms:created>
+        <oboInOwl:hasRelatedSynonym>breakthrough pain</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>episodic pain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000038"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Acute transient pain that is severe and has an intensity that flares over baseline.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:16675817</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/PAIN/0000040 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000040">
@@ -634,17 +712,19 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>A feeling of pain that persists or recurs over an extended period of time in which each incidence of pain is attributed to the same underlying condition.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pain that persists or recurs over an extended period of time in which each incidence of pain is attributed to the same underlying condition.</obo:IAO_0000115>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:comment>Chronic pain persists or recurs for longer than three months and may persist despite successful management of the condition that initially caused it, or because the underlying medical condition cannot be treated successfully.</rdfs:comment>
+        <rdfs:comment>In many cases, the pain is initially caused by tissue damage or disease. The continuation of the pain is often the result of pathological changes in the central nervous system.</rdfs:comment>
         <rdfs:label xml:lang="en">chronic pain</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000040"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget>Chronic pain persists or recurs for longer than three months and may persist despite successful management of the condition that initially caused it, or because the underlying medical condition cannot be treated successfully.</owl:annotatedTarget>
-        <dc:source>https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/</dc:source>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain that persists or recurs over an extended period of time in which each incidence of pain is attributed to the same underlying condition.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:31971706</obo:IAO_0000119>
+        <obo:IAO_0000119>https://dictionary.apa.org/chronic-pain</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/</obo:IAO_0000119>
     </owl:Axiom>
     
 
@@ -667,10 +747,19 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that arises from actual or threatened damage to non-neural tissue and is due to the activation of nociceptors.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T18:47:03Z</terms:created>
         <rdfs:label xml:lang="en">nociceptive pain</rdfs:label>
+        <skos:note>The term is used to describe pain occurring with a normally functioning somatosensory nervous system to contrast with the abnormal function seen in neuropathic or nociplasitic pain.</skos:note>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain that arises from actual or threatened damage to non-neural tissue and is due to the activation of nociceptors.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.iasp-pain.org/resources/terminology/</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -678,6 +767,13 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A process quality that is the characteristic of a sensory experience.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:02:29Z</terms:created>
         <rdfs:label xml:lang="en">sensation quality</rdfs:label>
@@ -699,10 +795,17 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that arises from altered nociception despite no clear evidence of actual or threatened tissue damage causing the activation of peripheral nociceptors or evidence for disease or lesion of the somatosensory system causing the pain.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T18:47:11Z</terms:created>
         <rdfs:label xml:lang="en">nociplastic pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000043"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain that arises from altered nociception despite no clear evidence of actual or threatened tissue damage causing the activation of peripheral nociceptors or evidence for disease or lesion of the somatosensory system causing the pain.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.iasp-pain.org/resources/terminology/</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -720,10 +823,20 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain caused by a lesion or disease of the somatosensory nervous system.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T18:47:32Z</terms:created>
         <rdfs:label xml:lang="en">neuropathic pain</rdfs:label>
+        <skos:note>Neuropathic pain is a clinical description (and not a diagnosis) which requires a demonstrable lesion or a disease that satisfies established neurological diagnostic criteria. The term lesion is commonly used when diagnostic investigations (e.g. imaging, neurophysiology, biopsies, lab tests) reveal an abnormality or when there was obvious trauma.</skos:note>
+        <skos:note>Somatosensory refers to information about the body per se including visceral organs, rather than information about the external world (e.g., vision, hearing, or olfaction). The presence of symptoms or signs (e.g., touch-evoked pain) alone does not justify the use of the term neuropathic. Some disease entities, such as trigeminal neuralgia, are currently defined by their clinical presentation rather than by objective diagnostic testing. Other diagnoses such as postherpetic neuralgia are normally based upon the history. It is common when investigating neuropathic pain that diagnostic testing may yield inconclusive or even inconsistent data. In such instances, clinical judgment is required to reduce the totality of findings in a patient into one putative diagnosis or concise group of diagnoses.</skos:note>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000044"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain caused by a lesion or disease of the somatosensory nervous system.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.iasp-pain.org/resources/terminology/</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -752,10 +865,17 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000046">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000044"/>
+        <obo:IAO_0000115>Pain caused by a lesion or disease of the central somatosensory nervous system.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:22:21Z</terms:created>
         <rdfs:label xml:lang="en">central nervous system neuropathic pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000046"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain caused by a lesion or disease of the central somatosensory nervous system.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.iasp-pain.org/resources/terminology/</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -763,10 +883,18 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000047">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000042"/>
+        <obo:IAO_0000115>A sensation quality that characterizes a sensation as being persistent, deep, or nagging rather than a sharp or stabbing.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:02:36Z</terms:created>
         <rdfs:label xml:lang="en">dull sensation quality</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000047"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A sensation quality that characterizes a sensation as being persistent, deep, or nagging rather than a sharp or stabbing.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.healthline.com/health/dull-pain</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.merriam-webster.com/dictionary/dull</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -774,10 +902,17 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000052">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000044"/>
+        <obo:IAO_0000115>Pain caused by a lesion or disease of the peripheral somatosensory nervous system.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:22:44Z</terms:created>
         <rdfs:label xml:lang="en">peripheral nervous system neuropathic pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000052"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain caused by a lesion or disease of the peripheral somatosensory nervous system.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.iasp-pain.org/resources/terminology/</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -795,7 +930,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>A feeling of pain that happens suddenly, starts out sharp or intense, and serves as a warning sign of disease or threat to the body.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pain that happens suddenly, starts out sharp or intense, and serves as a warning sign of disease or threat to the body.</obo:IAO_0000115>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:comment>Acute pain is caused by injury, surgery, illness, trauma, or painful medical procedures and generally lasts from a few minutes to less than six months. Acute pain usually disappears whenever the underlying cause is treated or healed.</rdfs:comment>
@@ -804,14 +939,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000053"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A feeling of pain that happens suddenly, starts out sharp or intense, and serves as a warning sign of disease or threat to the body.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pain that happens suddenly, starts out sharp or intense, and serves as a warning sign of disease or threat to the body.</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.iasp-pain.org/resources/topics/acute-pain/</obo:IAO_0000119>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000053"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget>Acute pain is caused by injury, surgery, illness, trauma, or painful medical procedures and generally lasts from a few minutes to less than six months. Acute pain usually disappears whenever the underlying cause is treated or healed.</owl:annotatedTarget>
-        <dc:source>https://www.iasp-pain.org/resources/topics/acute-pain/</dc:source>
     </owl:Axiom>
     
 
@@ -820,10 +949,18 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000054">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
+        <obo:IAO_0000115>Pain that is experienced in an area different from the area stimulated.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:22:52Z</terms:created>
         <rdfs:label xml:lang="en">referred pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000054"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain that is experienced in an area different from the area stimulated.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:37448749</obo:IAO_0000119>
+        <obo:IAO_0000119>https://dictionary.apa.org/referred-sensation</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -837,6 +974,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>Pain that is experienced in an area where a limb no longer exists.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:23:11Z</terms:created>
         <rdfs:label xml:lang="en">phantom limb pain</rdfs:label>
@@ -867,6 +1005,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000056"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Pain that is confined or restricted to a particular anatomical area (or zone) of the body.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:18077092</obo:IAO_0000119>
         <obo:IAO_0000119>https://ospinamedical.com/orthopedic-blog/localized-vs-radicular-pain-decoding-your-discomfort</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -887,6 +1026,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000058">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000042"/>
+        <obo:IAO_0000115>A rhythmic, pulsating, or beating sensation quality in which the intensity waxes and wanes in periodic bursts.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:06:15Z</terms:created>
         <rdfs:label xml:lang="en">throbbing sensation quality</rdfs:label>
@@ -898,6 +1038,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000059">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000042"/>
+        <obo:IAO_0000115>A intense, searing, or hot sensation quality.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:06:31Z</terms:created>
         <rdfs:label xml:lang="en">burning sensation quality</rdfs:label>
@@ -919,7 +1060,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the lower back.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T03:22:33Z</terms:created>
         <rdfs:label>lower back pain</rdfs:label>
     </owl:Class>
@@ -931,7 +1073,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000063">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000056"/>
         <obo:IAO_0000115>Pain that is experienced in the area proximal to an amputation site.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-28T16:45:26Z</terms:created>
         <oboInOwl:hasExactSynonym>residual limb pain</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">stump pain</rdfs:label>
@@ -943,20 +1085,10 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000064">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000042"/>
+        <obo:IAO_0000115>A sensation quality that characterizes a sensation as being intensely cold, typically accompanied by qualities of stillness, heaviness, numbness, and in extreme cases a paradoxical burning or painful character.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:06:51Z</terms:created>
         <rdfs:label xml:lang="en">freezing sensation quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/PAIN/0000065 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000065">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-28T16:56:17Z</terms:created>
-        <rdfs:label xml:lang="en">pain associated with emotional response</rdfs:label>
     </owl:Class>
     
 
@@ -965,6 +1097,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000066">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000042"/>
+        <obo:IAO_0000115>A sudden, intense, and sharp sensation quality.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:07:06Z</terms:created>
         <rdfs:label xml:lang="en">shooting sensation quality</rdfs:label>
@@ -976,6 +1109,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000067">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000042"/>
+        <obo:IAO_0000115>A piercing, stabbling, cutting, or prickling sensation quality.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:08:02Z</terms:created>
         <rdfs:label xml:lang="en">sharp sensation quality</rdfs:label>
@@ -987,10 +1121,17 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000068">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000042"/>
+        <obo:IAO_0000115>A great or extreme sensation quality.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:08:30Z</terms:created>
         <rdfs:label xml:lang="en">intense sensation quality</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000068"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A great or extreme sensation quality.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.merriam-webster.com/dictionary/intense</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -998,6 +1139,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000069">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000042"/>
+        <obo:IAO_0000115>A diffuse, sustained, low-to-moderate intensity, dull, deep, pressure-like sensation quality that lacks sharp localization.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:08:36Z</terms:created>
         <rdfs:label xml:lang="en">aching sensation quality</rdfs:label>
@@ -1009,6 +1151,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000070">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000042"/>
+        <obo:IAO_0000115>An intense, sudden, and sharp sensation, often described as a knife-like or shooting, sensation quality that pierces a specific area.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:09:02Z</terms:created>
         <rdfs:label xml:lang="en">stabbing sensation quality</rdfs:label>
@@ -1030,6 +1173,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain experienced as an intense, sudden, and sharp sensation, often described as a knife-like or shooting pain that pierces a specific body area.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:09:33Z</terms:created>
         <rdfs:label xml:lang="en">stabbing pain</rdfs:label>
@@ -1051,6 +1195,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced as piercing, stabbling, cutting, or prickling.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:09:47Z</terms:created>
         <rdfs:label xml:lang="en">sharp pain</rdfs:label>
@@ -1072,10 +1217,17 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced as a deep ache, pressure, or heaviness rather than a sharp, stabbing sensation.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:09:53Z</terms:created>
         <rdfs:label xml:lang="en">dull pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000073"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain that is experienced as a deep ache, pressure, or heaviness rather than a sharp, stabbing sensation.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.healthline.com/health/dull-pain</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -1093,7 +1245,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced as an intense, searing, or hot sensation.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:10:00Z</terms:created>
         <rdfs:label xml:lang="en">burning pain</rdfs:label>
     </owl:Class>
@@ -1114,6 +1267,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced as a burning or aching sensation and is the result of cold stimuli.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:10:18Z</terms:created>
         <rdfs:label xml:lang="en">freezing pain</rdfs:label>
@@ -1135,6 +1289,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced as a sudden, intense, and sharp sensation that moves or radiates through the body, often from one point to another.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:10:35Z</terms:created>
         <rdfs:label xml:lang="en">shooting pain</rdfs:label>
@@ -1156,6 +1311,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced in a limb, such as an arm or leg.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:57:24Z</terms:created>
         <rdfs:label xml:lang="en">limb pain</rdfs:label>
@@ -1177,7 +1333,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the finger.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:57:32Z</terms:created>
         <rdfs:label xml:lang="en">finger pain</rdfs:label>
     </owl:Class>
@@ -1198,6 +1355,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced in a lower limb.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:57:36Z</terms:created>
         <rdfs:label xml:lang="en">lower limb pain</rdfs:label>
@@ -1219,7 +1377,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the main axis of the body.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:58:46Z</terms:created>
         <rdfs:label xml:lang="en">axial pain</rdfs:label>
     </owl:Class>
@@ -1240,7 +1399,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the back.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:59:01Z</terms:created>
         <rdfs:label xml:lang="en">back pain</rdfs:label>
     </owl:Class>
@@ -1261,7 +1421,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:59:08Z</terms:created>
         <rdfs:label xml:lang="en">neck pain</rdfs:label>
     </owl:Class>
@@ -1282,7 +1442,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in an upper limb.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:59:31Z</terms:created>
         <rdfs:label xml:lang="en">upper limb</rdfs:label>
     </owl:Class>
@@ -1303,7 +1464,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the hand.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:01:00Z</terms:created>
         <rdfs:label xml:lang="en">hand pain</rdfs:label>
     </owl:Class>
@@ -1324,7 +1486,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the elbow.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:01:20Z</terms:created>
         <rdfs:label xml:lang="en">elbow pain</rdfs:label>
     </owl:Class>
@@ -1345,7 +1508,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the shoulder.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:01:25Z</terms:created>
         <rdfs:label xml:lang="en">shoulder pain</rdfs:label>
     </owl:Class>
@@ -1366,6 +1530,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced in the foot.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:01:49Z</terms:created>
         <rdfs:label xml:lang="en">foot pain</rdfs:label>
@@ -1387,6 +1552,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced in the toe.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:01:54Z</terms:created>
         <rdfs:label xml:lang="en">toe pain</rdfs:label>
@@ -1408,7 +1574,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the head.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:02:29Z</terms:created>
         <rdfs:label xml:lang="en">head pain</rdfs:label>
     </owl:Class>
@@ -1437,7 +1604,9 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the orofacial region, which includes the mouth and face.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:02:39Z</terms:created>
         <rdfs:label xml:lang="en">orofacial pain</rdfs:label>
     </owl:Class>
@@ -1448,10 +1617,18 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000091">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000056"/>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the internal organs.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:05:02Z</terms:created>
         <rdfs:label xml:lang="en">visceral pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000091"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain that is experienced in the internal organs.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK12991/</obo:IAO_0000119>
+        <terms:source>PMID:26516492</terms:source>
+    </owl:Axiom>
     
 
 
@@ -1469,20 +1646,32 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Chronic pain that diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:11:58Z</terms:created>
-        <rdfs:comment>Chronic widespread pain (CWP) is diffuse pain in at least 4 of 5 body regions and is associated with significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles). CWP is multifactorial: biological, psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate when the pain is not directly attributable to a nociceptive process in these regions and there are features consistent with nociplastic pain and identified psychological and social contributors.
-
-https://www.findacode.com/icd-11/code-849253504.html</rdfs:comment>
-        <rdfs:comment>Consider:
+        <rdfs:comment>Chronic widespread pain (CWP) is associated with significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles). CWP is multifactorial: biological, psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate when the pain is not directly attributable to a nociceptive process in these regions and there are features consistent with nociplastic pain and identified psychological and social contributors.</rdfs:comment>
+        <rdfs:label xml:lang="en">chronic widespread pain</rdfs:label>
+        <skos:note>Additional criteria to consider:
 - Include quantrants/regions of body in the definition. 
   - E.g., &gt;= 3 quadrants &amp; axial
   - &gt;= 4 body regions
 - Use the notion of functional region instead of regions divided by joints.
 
-define as chronic &amp; multi-localized.</rdfs:comment>
-        <rdfs:label xml:lang="en">chronic widespread pain</rdfs:label>
+define as chronic &amp; multi-localized.</skos:note>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000092"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Chronic pain that diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:39445928</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.findacode.com/icd-11/code-849253504.html</obo:IAO_0000119>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000092"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Chronic widespread pain (CWP) is associated with significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles). CWP is multifactorial: biological, psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate when the pain is not directly attributable to a nociceptive process in these regions and there are features consistent with nociplastic pain and identified psychological and social contributors.</owl:annotatedTarget>
+        <terms:source>https://www.findacode.com/icd-11/code-849253504.html</terms:source>
+    </owl:Axiom>
     
 
 
@@ -1500,7 +1689,8 @@ define as chronic &amp; multi-localized.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <obo:IAO_0000115>Pain that is experienced in the upper back.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T03:22:41Z</terms:created>
         <rdfs:label>upper back pain</rdfs:label>
     </owl:Class>
@@ -1521,6 +1711,7 @@ define as chronic &amp; multi-localized.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced in the knee.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T03:25:24Z</terms:created>
         <rdfs:label>knee pain</rdfs:label>
@@ -1582,22 +1773,40 @@ define as chronic &amp; multi-localized.</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0050967 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050967">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0062149"/>
+    </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0062149 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0062149">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/PAIN_0000040 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000040">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/PAIN/0000036"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000058"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Pain that is experienced as a rhythmic, pulsating, or beating sensation in which the pain&apos;s intensity waxes and wanes in periodic bursts. Throbbing pain is typically synchronized with the cardiac cycle.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T19:58:42Z</terms:created>
+        <rdfs:label>throbbing pain</rdfs:label>
     </owl:Class>
     
 
@@ -1622,7 +1831,17 @@ define as chronic &amp; multi-localized.</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001236 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001236"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </owl:Class>
     
 
 
@@ -1755,6 +1974,14 @@ define as chronic &amp; multi-localized.</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/UBERON_0013701 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013701"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <rdfs:label>obsolete class</rdfs:label>
+    </owl:Class>
     
 
 
