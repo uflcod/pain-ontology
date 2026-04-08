@@ -16,7 +16,7 @@ test-dl: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo pato uberon ro iao omrse go nbo cl emro bfo cob
+IMPORTS =  omo pato uberon ro omrse go nbo cl emro bfo cob
 
 # Define variables needed for bioportal iri	
 URIBASE = http://purl.bioontology.org/ontology
@@ -117,10 +117,11 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self ancestors")
 
-$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
-	@echo "\n *** building $@ *** \n"
-	$(call onotlogy-annotation,$<)
-	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# BD (2026-04-08): IAO not needed for now
+# $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
+# 	@echo "\n *** building $@ *** \n"
+# 	$(call onotlogy-annotation,$<)
+# 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
 $(IMPORTDIR)/bfo_import.owl:  $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms.txt
 	@echo "\n *** building $@ *** \n"
