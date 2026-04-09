@@ -141,7 +141,11 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#broadMatch>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#closeMatch>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#narrowMatch>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#note>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
 
 ############################
 #   Object Properties
@@ -196,6 +200,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000002> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000002> "2026-04-08T18:15:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000002> "somatic pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000002> <http://snomed.info/id/48429009>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000002> <http://purl.bioontology.org/ontology/PAIN/0000056>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000009> (obsolete pain testing procedure)
@@ -394,6 +399,15 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.bioontology.org/ontology/PAIN/0000
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
 - Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000036> <http://id.nlm.nih.gov/mesh/D010146>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000036> <http://purl.obolibrary.org/obo/HP_0012531>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000036> <http://purl.obolibrary.org/obo/MFOEM_000203>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000036> <http://purl.obolibrary.org/obo/NCIT_C3303>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000036> <http://purl.obolibrary.org/obo/OGMS_0000085>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000036> <http://purl.obolibrary.org/obo/OMIT_0011149>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000036> <http://purl.obolibrary.org/obo/SCDO_0000851>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000036> <http://purl.obolibrary.org/obo/SYMP_0000099>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000036> <http://semanticscience.org/resource/SIO_000951>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000036> <http://purl.bioontology.org/ontology/EMRO/0000005>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.bioontology.org/ontology/EMRO/0000000>))
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0019233>))
@@ -415,6 +429,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000038> "2026-04-08T17:10:12Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.bioontology.org/ontology/PAIN/0000038> "breakthrough pain")
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000038> "episodic pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000038> <http://purl.obolibrary.org/obo/HP_0032148>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.bioontology.org/ontology/PAIN/0000038> <http://purl.obolibrary.org/obo/NCIT_C9203>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000038> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000040> (chronic pain)
@@ -424,6 +440,9 @@ AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.b
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.bioontology.org/ontology/PAIN/0000040> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:comment <http://purl.bioontology.org/ontology/PAIN/0000040> "In many cases, the pain is initially caused by tissue damage or disease. The continuation of the pain is often the result of pathological changes in the central nervous system.")
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000040> "chronic pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000040> <http://purl.obolibrary.org/obo/HP_0012532>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000040> <http://purl.obolibrary.org/obo/NCIT_C26940>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000040> <http://purl.obolibrary.org/obo/SYMP_0000837>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000040> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001863>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000041> (nociceptive pain)
@@ -433,6 +452,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000041> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000041> "2024-06-13T18:47:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000041> "nociceptive pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000041> <http://id.nlm.nih.gov/mesh/D059226>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000041> <http://purl.obolibrary.org/obo/SYMP_0000831>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.bioontology.org/ontology/PAIN/0000041> "The term is used to describe pain occurring with a normally functioning somatosensory nervous system to contrast with the abnormal function seen in neuropathic or nociplasitic pain.")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000041> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0048265>)))
 
@@ -442,6 +463,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000042> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000042> "2025-05-12T17:02:29Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000042> "sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000042> <http://snomed.info/id/272144002>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000042> <http://purl.obolibrary.org/obo/PATO_0001236>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.bioontology.org/ontology/EMRO/0000005>))
 
@@ -451,6 +473,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000043> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000043> "2024-06-13T18:47:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000043> "nociplastic pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000043> <http://id.nlm.nih.gov/mesh/D000098653>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000043> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0046960>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000044> (neuropathic pain)
@@ -460,6 +483,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000044> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000044> "2024-06-13T18:47:32Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000044> "neuropathic pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000044> <http://purl.obolibrary.org/obo/HP_6000040>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000044> <http://purl.obolibrary.org/obo/MONDO_0009752>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000044> <http://purl.obolibrary.org/obo/MONDO_0700057>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000044> <http://purl.obolibrary.org/obo/NCIT_C96210>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000044> <http://purl.obolibrary.org/obo/SYMP_0000832>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000044> <http://snomed.info/id/247398009>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000044> <http://www.ebi.ac.uk/efo/EFO_0005762>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.bioontology.org/ontology/PAIN/0000044> "Neuropathic pain is a clinical description (and not a diagnosis) which requires a demonstrable lesion or a disease that satisfies established neurological diagnostic criteria. The term lesion is commonly used when diagnostic investigations (e.g. imaging, neurophysiology, biopsies, lab tests) reveal an abnormality or when there was obvious trauma.")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.bioontology.org/ontology/PAIN/0000044> "Somatosensory refers to information about the body per se including visceral organs, rather than information about the external world (e.g., vision, hearing, or olfaction). The presence of symptoms or signs (e.g., touch-evoked pain) alone does not justify the use of the term neuropathic. Some disease entities, such as trigeminal neuralgia, are currently defined by their clinical presentation rather than by objective diagnostic testing. Other diagnoses such as postherpetic neuralgia are normally based upon the history. It is common when investigating neuropathic pain that diagnostic testing may yield inconclusive or even inconsistent data. In such instances, clinical judgment is required to reduce the totality of findings in a patient into one putative diagnosis or concise group of diagnoses.")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000044> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <http://purl.bioontology.org/ontology/PAIN/0000045>)))
@@ -477,6 +507,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000046> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000046> "2024-06-13T21:22:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000046> "central nervous system neuropathic pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000046> <http://snomed.info/id/1259040000>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000046> <http://purl.bioontology.org/ontology/PAIN/0000044>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000047> (dull sensation quality)
@@ -485,6 +516,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000047> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000047> "2025-05-12T17:02:36Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000047> "dull sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000047> <http://snomed.info/id/410708008>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000047> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000052> (peripheral nervous system neuropathic pain)
@@ -493,6 +525,8 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000052> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000052> "2024-06-13T21:22:44Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000052> "peripheral nervous system neuropathic pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000052> <http://purl.obolibrary.org/obo/MONDO_0005244>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000052> <http://snomed.info/id/279981003>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000052> <http://purl.bioontology.org/ontology/PAIN/0000044>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000053> (acute pain)
@@ -502,6 +536,9 @@ AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.b
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.bioontology.org/ontology/PAIN/0000053> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:comment <http://purl.bioontology.org/ontology/PAIN/0000053> "Acute pain is caused by injury, surgery, illness, trauma, or painful medical procedures and generally lasts from a few minutes to less than six months. Acute pain usually disappears whenever the underlying cause is treated or healed.")
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000053> "acute pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000053> <http://purl.obolibrary.org/obo/NCIT_C27003>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000053> <http://purl.obolibrary.org/obo/OMIT_0027663>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000053> <http://purl.obolibrary.org/obo/SYMP_0000839>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000053> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000389>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000054> (referred pain)
@@ -510,6 +547,10 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMI
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000054> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000054> "2024-06-13T21:22:52Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000054> "referred pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000054> <http://id.nlm.nih.gov/mesh/D053591>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000054> <http://purl.obolibrary.org/obo/OMIT_0025470>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000054> <http://purl.obolibrary.org/obo/SYMP_0000862>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000054> <http://snomed.info/id/6617009>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000054> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000055> (phantom limb pain)
@@ -518,6 +559,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000055> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000055> "2024-06-13T21:23:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000055> "phantom limb pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000055> <http://id.nlm.nih.gov/mesh/D010591>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000055> <http://purl.obolibrary.org/obo/NCIT_C79703>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000055> <http://purl.obolibrary.org/obo/OAE_0002792>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000055> <http://purl.obolibrary.org/obo/SYMP_0000830>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000055> <http://snomed.info/id/710110008>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000055> <http://www.ebi.ac.uk/efo/EFO_0022850>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000055> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000055> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000061> <http://purl.bioontology.org/ontology/PAIN/0000056>))
 
@@ -527,10 +574,12 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMI
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000056> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000056> "2024-06-13T21:27:59Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000056> "localized pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000056> <http://snomed.info/id/112104007>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000056> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000627>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000057> (knee osteoarthritis pain)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000057> "knee pain resulting from knee osteoarthritis.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000057> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000057> "2024-06-13T21:33:51Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000057> "knee osteoarthritis pain"@en)
@@ -542,6 +591,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000058> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000058> "2025-05-12T17:06:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000058> "throbbing sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000058> <http://snomed.info/id/410704005>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000058> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000059> (burning sensation quality)
@@ -550,6 +600,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000059> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000059> "2025-05-12T17:06:31Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000059> "burning sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000059> <http://snomed.info/id/62404004>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000059> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000060> (lower back pain)
@@ -558,6 +609,9 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000060> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000060> "2026-03-17T03:22:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000060> "lower back pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000060> <http://id.nlm.nih.gov/mesh/D017116>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000060> <http://purl.obolibrary.org/obo/NCIT_C34788>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000060> <http://purl.obolibrary.org/obo/SYMP_0000006>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000060> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000081> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0005462>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000063> (stump pain)
@@ -567,6 +621,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000063> "2025-04-28T16:45:26Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.bioontology.org/ontology/PAIN/0000063> "residual limb pain")
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000063> "stump pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000063> <http://snomed.info/id/247381009>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000063> <http://purl.bioontology.org/ontology/PAIN/0000056>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000064> (freezing sensation quality)
@@ -575,6 +630,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000064> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000064> "2025-05-12T17:06:51Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000064> "freezing sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000064> <http://snomed.info/id/84162001>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000064> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000066> (shooting sensation quality)
@@ -583,6 +639,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000066> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000066> "2025-05-12T17:07:06Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000066> "shooting sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000066> <http://snomed.info/id/410705006>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000066> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000067> (sharp sensation quality)
@@ -591,6 +648,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000067> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000067> "2025-05-12T17:08:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000067> "sharp sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000067> <http://purl.obolibrary.org/obo/HP_0025281>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000067> <http://snomed.info/id/410707003>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000067> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000068> (intense sensation quality)
@@ -599,6 +658,9 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000068> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000068> "2025-05-12T17:08:30Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000068> "intense sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.bioontology.org/ontology/PAIN/0000068> <http://purl.obolibrary.org/obo/ExO_0000065>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.bioontology.org/ontology/PAIN/0000068> <http://purl.obolibrary.org/obo/FBcv_0000169>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.bioontology.org/ontology/PAIN/0000068> <http://semanticscience.org/resource/SIO_001212>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000068> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000069> (aching sensation quality)
@@ -607,6 +669,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000069> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000069> "2025-05-12T17:08:36Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000069> "aching sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000069> <http://snomed.info/id/410711009>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000069> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000070> (stabbing sensation quality)
@@ -615,6 +678,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000070> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000070> "2025-05-12T17:09:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000070> "stabbing sensation quality"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000070> <http://snomed.info/id/410706007>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000070> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000071> (stabbing pain)
@@ -623,6 +687,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000071> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000071> "2025-05-12T17:09:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000071> "stabbing pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000071> <http://snomed.info/id/55145008>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000071> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000070>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000072> (sharp pain)
@@ -631,6 +696,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000072> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000072> "2025-05-12T17:09:47Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000072> "sharp pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000072> <http://purl.obolibrary.org/obo/NCIT_C101179>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000072> <http://snomed.info/id/8708008>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000072> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000067>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000073> (dull pain)
@@ -639,6 +706,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000073> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000073> "2025-05-12T17:09:53Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000073> "dull pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000073> <http://purl.obolibrary.org/obo/NCIT_C101175>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000073> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000047>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000074> (burning pain)
@@ -647,6 +715,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000074> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000074> "2025-05-12T17:10:00Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000074> "burning pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000074> <http://purl.obolibrary.org/obo/NCIT_C101172>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000074> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000059>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000075> (freezing pain)
@@ -655,6 +724,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000075> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000075> "2025-05-12T17:10:18Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000075> "freezing pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000075> <http://snomed.info/id/723300005>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000075> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000064>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000076> (shooting pain)
@@ -663,6 +733,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000076> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000076> "2025-05-12T17:10:35Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000076> "shooting pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000076> <http://purl.obolibrary.org/obo/NCIT_C101180>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000076> <http://snomed.info/id/49575005>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000076> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000066>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000077> (limb pain)
@@ -671,6 +743,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000077> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000077> "2025-06-23T16:57:24Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000077> "limb pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000077> <http://purl.obolibrary.org/obo/NCIT_C187370>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000077> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000056> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0002529>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000078> (finger pain)
@@ -679,6 +752,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000078> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000078> "2025-06-23T16:57:32Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000078> "finger pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000078> <http://purl.obolibrary.org/obo/HP_0030837>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000078> <http://snomed.info/id/18876004>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000078> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000084> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0002389>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000079> (lower limb pain)
@@ -703,6 +778,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000081> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000081> "2025-06-23T16:59:01Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000081> "back pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000081> <http://id.nlm.nih.gov/mesh/D001416>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000081> <http://purl.obolibrary.org/obo/HP_0003418>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000081> <http://purl.obolibrary.org/obo/NCIT_C41830>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000081> <http://purl.obolibrary.org/obo/OMIT_0002792>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000081> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000080> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0001137>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000082> (neck pain)
@@ -710,14 +789,17 @@ EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000081> ObjectInte
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000082> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000082> "2025-06-23T16:59:08Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000082> "neck pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000082> <http://purl.obolibrary.org/obo/NCIT_C50663>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000082> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000080> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0000974>)))
 
-# Class: <http://purl.bioontology.org/ontology/PAIN/0000083> (upper limb)
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000083> (upper limb pain)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000083> "Pain that is experienced in an upper limb.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000083> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000083> "2025-06-23T16:59:31Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000083> "upper limb"@en)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000083> "upper limb pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000083> <http://purl.obolibrary.org/obo/HP_0012513>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000083> <http://snomed.info/id/102556003>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000083> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000077> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0008785>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000084> (hand pain)
@@ -726,6 +808,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000084> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000084> "2025-06-23T17:01:00Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000084> "hand pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000084> <http://purl.obolibrary.org/obo/HP_0046505>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000084> <http://snomed.info/id/53057004>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000084> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000083> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0002398>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000085> (elbow pain)
@@ -734,6 +818,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000085> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000085> "2025-06-23T17:01:20Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000085> "elbow pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000085> <http://purl.obolibrary.org/obo/SYMP_0000441>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000085> <http://snomed.info/id/202480001>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000085> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000083> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0001461>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000086> (shoulder pain)
@@ -742,6 +828,11 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000086> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000086> "2025-06-23T17:01:25Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000086> "shoulder pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000086> <http://id.nlm.nih.gov/mesh/D020069>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000086> <http://purl.obolibrary.org/obo/HP_0030834>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000086> <http://purl.obolibrary.org/obo/NCIT_C35022>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000086> <http://purl.obolibrary.org/obo/OMIT_0019996>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000086> <http://purl.obolibrary.org/obo/SYMP_0000443>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000086> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000083> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0001467>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000087> (foot pain)
@@ -750,6 +841,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000087> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000087> "2025-06-23T17:01:49Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000087> "foot pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000087> <http://purl.obolibrary.org/obo/NCIT_C34618>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000087> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000079> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0002387>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000088> (toe pain)
@@ -783,6 +875,11 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000091> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000091> "2025-06-23T17:05:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000091> "visceral pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000091> <http://id.nlm.nih.gov/mesh/D059265>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000091> <http://purl.obolibrary.org/obo/OAE_0005440>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000091> <http://purl.obolibrary.org/obo/OMIT_0027553>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000091> <http://purl.obolibrary.org/obo/SYMP_0000833>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000091> <http://snomed.info/id/73645008>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000091> <http://purl.bioontology.org/ontology/PAIN/0000056>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000092> (chronic widespread pain)
@@ -815,6 +912,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000094> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000094> "2026-03-17T03:25:24Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000094> "knee pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000094> <http://purl.obolibrary.org/obo/HP_0030839>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000094> <http://purl.obolibrary.org/obo/SYMP_0000442>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000094> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000079> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0001465>)))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
@@ -831,6 +930,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000040> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000040> "2026-04-08T19:58:42Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "throbbing pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000040> <http://snomed.info/id/29695002>)
 EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000058>)))
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001236> (process quality)
