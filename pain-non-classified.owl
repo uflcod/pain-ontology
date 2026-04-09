@@ -17,7 +17,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/pain/pain-non-classified.owl">
-        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-04-08/pain-non-classified.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-04-09/pain-non-classified.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -29,7 +29,7 @@
         <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g, acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>The Pain Ontology</terms:title>
-        <owl:versionInfo>2026-04-08</owl:versionInfo>
+        <owl:versionInfo>2026-04-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1231,6 +1231,24 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#note -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
@@ -1240,6 +1258,12 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
     
 
 
@@ -2099,6 +2123,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T18:15:23Z</terms:created>
         <rdfs:label>somatic pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/48429009"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000002"/>
@@ -2403,6 +2428,15 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
 - Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.</rdfs:seeAlso>
+        <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D010146"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0012531"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000203"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3303"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000085"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OMIT_0011149"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SCDO_0000851"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000099"/>
+        <skos:closeMatch rdf:resource="http://semanticscience.org/resource/SIO_000951"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
@@ -2442,6 +2476,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T17:10:12Z</terms:created>
         <oboInOwl:hasRelatedSynonym>breakthrough pain</oboInOwl:hasRelatedSynonym>
         <rdfs:label>episodic pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0032148"/>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9203"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000038"/>
@@ -2471,6 +2507,9 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:comment>In many cases, the pain is initially caused by tissue damage or disease. The continuation of the pain is often the result of pathological changes in the central nervous system.</rdfs:comment>
         <rdfs:label xml:lang="en">chronic pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0012532"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26940"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000837"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000040"/>
@@ -2506,6 +2545,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T18:47:03Z</terms:created>
         <rdfs:label xml:lang="en">nociceptive pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D059226"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000831"/>
         <skos:note>The term is used to describe pain occurring with a normally functioning somatosensory nervous system to contrast with the abnormal function seen in neuropathic or nociplasitic pain.</skos:note>
     </owl:Class>
     <owl:Axiom>
@@ -2531,6 +2572,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:02:29Z</terms:created>
         <rdfs:label xml:lang="en">sensation quality</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/272144002"/>
     </owl:Class>
     
 
@@ -2553,6 +2595,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T18:47:11Z</terms:created>
         <rdfs:label xml:lang="en">nociplastic pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D000098653"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000043"/>
@@ -2582,6 +2625,13 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T18:47:32Z</terms:created>
         <rdfs:label xml:lang="en">neuropathic pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_6000040"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/MONDO_0009752"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/MONDO_0700057"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96210"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000832"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/247398009"/>
+        <skos:closeMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005762"/>
         <skos:note>Neuropathic pain is a clinical description (and not a diagnosis) which requires a demonstrable lesion or a disease that satisfies established neurological diagnostic criteria. The term lesion is commonly used when diagnostic investigations (e.g. imaging, neurophysiology, biopsies, lab tests) reveal an abnormality or when there was obvious trauma.</skos:note>
         <skos:note>Somatosensory refers to information about the body per se including visceral organs, rather than information about the external world (e.g., vision, hearing, or olfaction). The presence of symptoms or signs (e.g., touch-evoked pain) alone does not justify the use of the term neuropathic. Some disease entities, such as trigeminal neuralgia, are currently defined by their clinical presentation rather than by objective diagnostic testing. Other diagnoses such as postherpetic neuralgia are normally based upon the history. It is common when investigating neuropathic pain that diagnostic testing may yield inconclusive or even inconsistent data. In such instances, clinical judgment is required to reduce the totality of findings in a patient into one putative diagnosis or concise group of diagnoses.</skos:note>
     </owl:Class>
@@ -2623,6 +2673,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:22:21Z</terms:created>
         <rdfs:label xml:lang="en">central nervous system neuropathic pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/1259040000"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000046"/>
@@ -2641,6 +2692,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:02:36Z</terms:created>
         <rdfs:label xml:lang="en">dull sensation quality</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/410708008"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000047"/>
@@ -2660,6 +2712,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:22:44Z</terms:created>
         <rdfs:label xml:lang="en">peripheral nervous system neuropathic pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005244"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/279981003"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000052"/>
@@ -2689,6 +2743,9 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:comment>Acute pain is caused by injury, surgery, illness, trauma, or painful medical procedures and generally lasts from a few minutes to less than six months. Acute pain usually disappears whenever the underlying cause is treated or healed.</rdfs:comment>
         <rdfs:label xml:lang="en">acute pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27003"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OMIT_0027663"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000839"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000053"/>
@@ -2707,6 +2764,10 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:22:52Z</terms:created>
         <rdfs:label xml:lang="en">referred pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D053591"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OMIT_0025470"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000862"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/6617009"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000054"/>
@@ -2732,6 +2793,12 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:23:11Z</terms:created>
         <rdfs:label xml:lang="en">phantom limb pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D010591"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79703"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OAE_0002792"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000830"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/710110008"/>
+        <skos:closeMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0022850"/>
     </owl:Class>
     
 
@@ -2754,6 +2821,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:27:59Z</terms:created>
         <rdfs:label xml:lang="en">localized pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/112104007"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000056"/>
@@ -2769,6 +2837,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000057">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000094"/>
+        <obo:IAO_0000115>knee pain resulting from knee osteoarthritis.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T21:33:51Z</terms:created>
         <rdfs:label xml:lang="en">knee osteoarthritis pain</rdfs:label>
@@ -2784,6 +2853,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:06:15Z</terms:created>
         <rdfs:label xml:lang="en">throbbing sensation quality</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/410704005"/>
     </owl:Class>
     
 
@@ -2796,6 +2866,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:06:31Z</terms:created>
         <rdfs:label xml:lang="en">burning sensation quality</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/62404004"/>
     </owl:Class>
     
 
@@ -2818,6 +2889,9 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T03:22:33Z</terms:created>
         <rdfs:label>lower back pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D017116"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C34788"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000006"/>
     </owl:Class>
     
 
@@ -2831,6 +2905,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-28T16:45:26Z</terms:created>
         <oboInOwl:hasExactSynonym>residual limb pain</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">stump pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/247381009"/>
     </owl:Class>
     
 
@@ -2843,6 +2918,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:06:51Z</terms:created>
         <rdfs:label xml:lang="en">freezing sensation quality</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/84162001"/>
     </owl:Class>
     
 
@@ -2855,6 +2931,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:07:06Z</terms:created>
         <rdfs:label xml:lang="en">shooting sensation quality</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/410705006"/>
     </owl:Class>
     
 
@@ -2867,6 +2944,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:08:02Z</terms:created>
         <rdfs:label xml:lang="en">sharp sensation quality</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0025281"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/410707003"/>
     </owl:Class>
     
 
@@ -2879,6 +2958,9 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:08:30Z</terms:created>
         <rdfs:label xml:lang="en">intense sensation quality</rdfs:label>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/ExO_0000065"/>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000169"/>
+        <skos:relatedMatch rdf:resource="http://semanticscience.org/resource/SIO_001212"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000068"/>
@@ -2897,6 +2979,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:08:36Z</terms:created>
         <rdfs:label xml:lang="en">aching sensation quality</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/410711009"/>
     </owl:Class>
     
 
@@ -2909,6 +2992,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:09:02Z</terms:created>
         <rdfs:label xml:lang="en">stabbing sensation quality</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/410706007"/>
     </owl:Class>
     
 
@@ -2931,6 +3015,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:09:33Z</terms:created>
         <rdfs:label xml:lang="en">stabbing pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/55145008"/>
     </owl:Class>
     
 
@@ -2953,6 +3038,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:09:47Z</terms:created>
         <rdfs:label xml:lang="en">sharp pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C101179"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/8708008"/>
     </owl:Class>
     
 
@@ -2975,6 +3062,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:09:53Z</terms:created>
         <rdfs:label xml:lang="en">dull pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C101175"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000073"/>
@@ -3003,6 +3091,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:10:00Z</terms:created>
         <rdfs:label xml:lang="en">burning pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C101172"/>
     </owl:Class>
     
 
@@ -3025,6 +3114,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:10:18Z</terms:created>
         <rdfs:label xml:lang="en">freezing pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/723300005"/>
     </owl:Class>
     
 
@@ -3047,6 +3137,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:10:35Z</terms:created>
         <rdfs:label xml:lang="en">shooting pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C101180"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/49575005"/>
     </owl:Class>
     
 
@@ -3069,6 +3161,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:57:24Z</terms:created>
         <rdfs:label xml:lang="en">limb pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C187370"/>
     </owl:Class>
     
 
@@ -3091,6 +3184,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:57:32Z</terms:created>
         <rdfs:label xml:lang="en">finger pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0030837"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/18876004"/>
     </owl:Class>
     
 
@@ -3157,6 +3252,10 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:59:01Z</terms:created>
         <rdfs:label xml:lang="en">back pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D001416"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0003418"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41830"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OMIT_0002792"/>
     </owl:Class>
     
 
@@ -3178,6 +3277,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:59:08Z</terms:created>
         <rdfs:label xml:lang="en">neck pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50663"/>
     </owl:Class>
     
 
@@ -3199,7 +3299,9 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <obo:IAO_0000115>Pain that is experienced in an upper limb.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T16:59:31Z</terms:created>
-        <rdfs:label xml:lang="en">upper limb</rdfs:label>
+        <rdfs:label xml:lang="en">upper limb pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0012513"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/102556003"/>
     </owl:Class>
     
 
@@ -3222,6 +3324,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:01:00Z</terms:created>
         <rdfs:label xml:lang="en">hand pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0046505"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/53057004"/>
     </owl:Class>
     
 
@@ -3244,6 +3348,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:01:20Z</terms:created>
         <rdfs:label xml:lang="en">elbow pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000441"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/202480001"/>
     </owl:Class>
     
 
@@ -3266,6 +3372,11 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:01:25Z</terms:created>
         <rdfs:label xml:lang="en">shoulder pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D020069"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0030834"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35022"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OMIT_0019996"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000443"/>
     </owl:Class>
     
 
@@ -3288,6 +3399,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:01:49Z</terms:created>
         <rdfs:label xml:lang="en">foot pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C34618"/>
     </owl:Class>
     
 
@@ -3375,6 +3487,11 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:05:02Z</terms:created>
         <rdfs:label xml:lang="en">visceral pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D059265"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OAE_0005440"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OMIT_0027553"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000833"/>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/73645008"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000091"/>
@@ -3469,6 +3586,8 @@ define as chronic &amp; multi-localized.</skos:note>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T03:25:24Z</terms:created>
         <rdfs:label>knee pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0030839"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000442"/>
     </owl:Class>
     
 
@@ -5383,6 +5502,7 @@ Despite their overarching function in the support and protection of neurons, gli
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T19:58:42Z</terms:created>
         <rdfs:label>throbbing pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/29695002"/>
     </owl:Class>
     
 
