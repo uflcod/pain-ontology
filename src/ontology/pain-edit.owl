@@ -66,6 +66,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000044>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000045>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000046>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000047>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000048>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000052>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000053>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000054>))
@@ -519,6 +520,13 @@ AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/000004
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000047> <http://snomed.info/id/410708008>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000047> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000048> (widespread pain)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000048> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000048> "2026-04-12T22:16:38Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000048> "widespread pain")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000048> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001566>)))
+
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000052> (peripheral nervous system neuropathic pain)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/terminology/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000052> "Pain caused by a lesion or disease of the peripheral somatosensory nervous system.")
@@ -896,7 +904,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.bioo
 - Use the notion of functional region instead of regions divided by joints.
 
 define as chronic & multi-localized.")
-EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000092> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001791>)))
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000092> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001566>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000093> (upper back pain)
 
