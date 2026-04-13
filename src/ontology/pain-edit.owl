@@ -520,11 +520,14 @@ AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/000004
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000047> <http://snomed.info/id/410708008>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000047> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
-# Class: <http://purl.bioontology.org/ontology/PAIN/0000048> (widespread pain)
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000048> (generalized pain)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000048> "Pain that is experienced throughout the body rather than in a specific area.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000048> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000048> "2026-04-12T22:16:38Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000048> "widespread pain")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.bioontology.org/ontology/PAIN/0000048> "widespread pain")
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000048> "generalized pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000048> "http://snomed.info/id/82991003")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000048> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001566>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000052> (peripheral nervous system neuropathic pain)
