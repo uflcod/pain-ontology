@@ -17,7 +17,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/pain/pain-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-04-10/pain-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-04-13/pain-full.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -29,7 +29,7 @@
         <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g, acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>The Pain Ontology</terms:title>
-        <owl:versionInfo>2026-04-10</owl:versionInfo>
+        <owl:versionInfo>2026-04-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1361,8 +1361,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
@@ -1575,7 +1573,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>overlaps</oboInOwl:shorthand>
         <rdfs:comment>&quot;(forall (x y) (iff (overlaps x y) (exists (z) (and (part of z x) (part of z y)))))&quot; CLIF []</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
@@ -1726,7 +1723,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>A mereological relationship or a topological relationship</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
@@ -2055,7 +2051,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000005">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000001"/>
-        <obo:IAO_0000115>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
+        <obo:IAO_0000115>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2066,7 +2062,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</owl:annotatedTarget>
+        <owl:annotatedTarget>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/sensation</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2488,6 +2484,37 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <obo:IAO_0000119>https://www.healthline.com/health/dull-pain</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.merriam-webster.com/dictionary/dull</obo:IAO_0000119>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000048 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000048">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/PAIN/0000036"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001566"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001566"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Pain that is experienced throughout the body rather than in a specific area.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-12T22:16:38Z</terms:created>
+        <oboInOwl:hasExactSynonym>widespread pain</oboInOwl:hasExactSynonym>
+        <rdfs:label>generalized pain</rdfs:label>
+        <skos:closeMatch>http://snomed.info/id/82991003</skos:closeMatch>
+    </owl:Class>
     
 
 
@@ -3454,19 +3481,14 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                     <rdf:Description rdf:about="http://purl.bioontology.org/ontology/PAIN/0000040"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001791"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001566"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001791"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Chronic pain that diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000048"/>
+        <obo:IAO_0000115>Chronic pain that is diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:11:58Z</terms:created>
         <rdfs:comment>Chronic widespread pain (CWP) is associated with significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles). CWP is multifactorial: biological, psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate when the pain is not directly attributable to a nociceptive process in these regions and there are features consistent with nociplastic pain and identified psychological and social contributors.</rdfs:comment>
@@ -3482,7 +3504,7 @@ define as chronic &amp; multi-localized.</skos:note>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000092"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic pain that diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic pain that is diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:39445928</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.findacode.com/icd-11/code-849253504.html</obo:IAO_0000119>
     </owl:Axiom>
@@ -4174,7 +4196,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:hasExactSynonym>organ system process</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0003008</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>system process</rdfs:label>
@@ -4267,7 +4288,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <rdfs:comment>1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
 2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>behavior</rdfs:label>
         <skos:prefLabel>behavioral response to stimulus</skos:prefLabel>
@@ -4352,7 +4372,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
         <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>biological_process</rdfs:label>
@@ -4687,7 +4706,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>multicellular organismal process</rdfs:label>
@@ -4853,7 +4871,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>nervous system process</rdfs:label>
@@ -4877,7 +4894,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0050890</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>cognition</rdfs:label>
         <skos:prefLabel>cognitive process</skos:prefLabel>
@@ -5655,6 +5671,31 @@ Despite their overarching function in the support and protection of neurons, gli
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A process quality inhering in a bearer by virtue of the bearer&apos;s magnitude of the temporal extent between the starting and ending point.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PATOC:mellybelly</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001566 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001566">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000060"/>
+        <obo:IAO_0000115>A spatial pattern inhering in a bearer by virtue of the bearer&apos;s being spread out or scattered about or divided up.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001567"/>
+        <oboInOwl:hasAlternativeId>PATO:0001513</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>diffuse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>scattered</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001566</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>distributed</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001566"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A spatial pattern inhering in a bearer by virtue of the bearer&apos;s being spread out or scattered about or divided up.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
