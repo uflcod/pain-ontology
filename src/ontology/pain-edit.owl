@@ -110,6 +110,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000094>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
@@ -188,12 +189,12 @@ EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000000> ObjectInte
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000001> (concomitant continuous pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32791919") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000001> "Pain that is persistently occuring in the background.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32791919") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000001> "Chronic pain that is persistently occuring in the background.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000001> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000001> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000001> "2026-04-08T16:42:44Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000001> "concomitant continuous pain")
-SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000001> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000001> <http://purl.bioontology.org/ontology/PAIN/0000040>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000002> (somatic pain)
 
@@ -436,7 +437,7 @@ SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000038> <http://purl.bioo
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000040> (chronic pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:31971706") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/chronic-pain") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000040> "Pain that persists or recurs over an extended period of time in which each incidence of pain is attributed to the same underlying condition.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000040> "Pain that persists for three months or longer.")
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.bioontology.org/ontology/PAIN/0000040> "https://orcid.org/0000-0001-9625-1899")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.bioontology.org/ontology/PAIN/0000040> "2022-11-24T06:02:26Z")
 AnnotationAssertion(rdfs:comment <http://purl.bioontology.org/ontology/PAIN/0000040> "In many cases, the pain is initially caused by tissue damage or disease. The continuation of the pain is often the result of pathological changes in the central nervous system.")
@@ -934,6 +935,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0050967> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/GO_0062149> (obsolete detection of stimulus involved in sensory perception of pain)
 
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0062149> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000000> (chronic high impact pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000000> "Chronic pain that significantly impacts a person's ability to function.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000000> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000000> "2026-05-01T20:50:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000000> "chronic high impact pain")
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000000> <http://purl.bioontology.org/ontology/PAIN/0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000040> (throbbing pain)
 
