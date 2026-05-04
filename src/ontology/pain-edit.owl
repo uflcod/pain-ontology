@@ -30,6 +30,7 @@ Annotation(<http://purl.org/dc/terms/license> "http://creativecommons.org/licens
 Annotation(<http://purl.org/dc/terms/title> "The Pain Ontology")
 
 Declaration(Class(<http://purl.bioontology.org/ontology/0000049>))
+Declaration(Class(<http://purl.bioontology.org/ontology/0000050>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000000>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000005>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000000>))
@@ -111,7 +112,6 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000094>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
@@ -185,6 +185,14 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/0000049> "throbbing pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/0000049> <http://snomed.info/id/29695002>)
 EquivalentClasses(<http://purl.bioontology.org/ontology/0000049> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000058>)))
+
+# Class: <http://purl.bioontology.org/ontology/0000050> (chronic high impact pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/0000050> "Chronic pain that significantly impacts a person's ability to function.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/0000050> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/0000050> "2026-05-01T20:50:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/0000050> "chronic high impact pain")
+SubClassOf(<http://purl.bioontology.org/ontology/0000050> <http://purl.bioontology.org/ontology/PAIN/0000040>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000000> (temporomandibular joint pain)
 
@@ -944,14 +952,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0050967> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/GO_0062149> (obsolete detection of stimulus involved in sensory perception of pain)
 
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0062149> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000000> (chronic high impact pain)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000000> "Chronic pain that significantly impacts a person's ability to function.")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000000> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000000> "2026-05-01T20:50:40Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000000> "chronic high impact pain")
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000000> <http://purl.bioontology.org/ontology/PAIN/0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001236> (process quality)
 
