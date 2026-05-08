@@ -25,7 +25,7 @@ Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0009-0002-7
 Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0009-0003-5583-4731>)
 Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0009-0006-7251-3026>)
 Annotation(<http://purl.org/dc/terms/created> "2022-08-23")
-Annotation(<http://purl.org/dc/terms/description> "The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g, acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).")
+Annotation(<http://purl.org/dc/terms/description> "The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).")
 Annotation(<http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/")
 Annotation(<http://purl.org/dc/terms/title> "The Pain Ontology")
 
