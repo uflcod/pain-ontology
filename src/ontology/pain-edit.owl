@@ -163,12 +163,12 @@ AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/000006
 ObjectPropertyDomain(<http://purl.bioontology.org/ontology/PAIN/0000061> <http://purl.obolibrary.org/obo/GO_0050877>)
 ObjectPropertyRange(<http://purl.bioontology.org/ontology/PAIN/0000061> <http://purl.obolibrary.org/obo/GO_0050890>)
 
-# Object Property: <http://purl.bioontology.org/ontology/PAIN/0000062> (A relation between a physical sensation and an anatomical entity or site where an anatomical entity is usually located in which the sensation is subjectively experienced as occurring in the anatomical entity or site.)
+# Object Property: <http://purl.bioontology.org/ontology/PAIN/0000062> (experienced in)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.bioontology.org/ontology/PAIN/0000062> "Brain freeze is a brief, intense pain experienced in the forehead.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000062> "A relation between a physical sensation and an anatomical entity or site where an anatomical entity is usually located in which the sensation is subjectively experienced as occurring in the anatomical entity or site.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000062> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000062> "2025-04-28T16:36:53Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000062> "A relation between a physical sensation and an anatomical entity or site where an anatomical entity is usually located in which the sensation is subjectively experienced as occurring in the anatomical entity or site.")
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000062> "experienced in"@en)
 
 
