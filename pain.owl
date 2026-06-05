@@ -17,7 +17,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/pain.owl">
-        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-04-13/pain.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-06-05/pain.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -26,10 +26,10 @@
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0006-7251-3026"/>
         <terms:created>2022-08-23</terms:created>
-        <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g, acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
+        <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>The Pain Ontology</terms:title>
-        <owl:versionInfo>2026-04-13</owl:versionInfo>
+        <owl:versionInfo>2026-06-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1331,9 +1331,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/PAIN/0000062">
         <obo:IAO_0000112>Brain freeze is a brief, intense pain experienced in the forehead.</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a physical sensation and an anatomical entity or site where an anatomical entity is usually located in which the sensation is subjectively experienced as occurring in the anatomical entity or site.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-28T16:36:53Z</terms:created>
-        <rdfs:label>A relation between a physical sensation and an anatomical entity or site where an anatomical entity is usually located in which the sensation is subjectively experienced as occurring in the anatomical entity or site.</rdfs:label>
         <rdfs:label xml:lang="en">experienced in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1973,6 +1973,48 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- http://purl.bioontology.org/ontology/0000049 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/0000049">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/PAIN/0000036"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000058"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000058"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Pain that is experienced as a rhythmic, pulsating, or beating sensation in which the pain&apos;s intensity waxes and wanes in periodic bursts. Throbbing pain is typically synchronized with the cardiac cycle.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T19:58:42Z</terms:created>
+        <rdfs:label>throbbing pain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://snomed.info/id/29695002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/0000050 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000040"/>
+        <obo:IAO_0000115>Chronic pain that significantly impacts a person&apos;s ability to function.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-01T20:50:40Z</terms:created>
+        <rdfs:label>chronic high impact pain</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/EMRO/0000000 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000000">
@@ -2102,8 +2144,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.bioontology.org/ontology/PAIN/0000001 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
-        <obo:IAO_0000115>Pain that is persistently occuring in the background.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000040"/>
+        <obo:IAO_0000115>Chronic pain that is persistently occuring in the background.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T16:42:44Z</terms:created>
@@ -2112,7 +2154,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pain that is persistently occuring in the background.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic pain that is persistently occuring in the background.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32791919</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2134,6 +2176,262 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <owl:annotatedTarget>Pain that is experienced in the skin, muscles, joints, and bones.</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.verywellhealth.com/what-is-somatic-pain-2564619</obo:IAO_0000119>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000009 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000009">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label>obsolete pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000010 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000009"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete temperature pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000011 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000010"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete heat pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000012 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000010"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete cold pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000013 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000009"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete temporal summation pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000014 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000019"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete temporal summation of heat pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000015 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000019"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete temporal summation of cold pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000016 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000009"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete pressure pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000017 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000009"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete punctate pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000018 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000013"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000017"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete temporal summation of punctate pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000019 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000013"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete temporal summation of temperature pain testing procedure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000020 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000020">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete pain sensitivity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000026 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000026">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete pain questionnaire</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000027 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000026"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete In Vivo Coping Questionnaire</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000028 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000026"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete Pain Vigilance and Awareness Questionnaire</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000029 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000029">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete pain scale score</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000030 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000029"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete Kohn Reactivity Scale</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000031 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000029"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete Graded Chronic Pain Scale</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000032 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000029"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete Likert Scale</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000033 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000029"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete Western Ontario and McMaster Universities Osteoarthritis Index</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/PAIN/0000034 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000026"/>
+        <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
+        <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">obsolete widespread condition questionnaire</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
     
 
 
@@ -2251,7 +2549,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pain that persists or recurs over an extended period of time in which each incidence of pain is attributed to the same underlying condition.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pain that persists for three months or longer.</obo:IAO_0000115>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
         <rdfs:comment>In many cases, the pain is initially caused by tissue damage or disease. The continuation of the pain is often the result of pathological changes in the central nervous system.</rdfs:comment>
@@ -2263,9 +2561,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000040"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pain that persists or recurs over an extended period of time in which each incidence of pain is attributed to the same underlying condition.</owl:annotatedTarget>
-        <obo:IAO_0000119>PMID:31971706</obo:IAO_0000119>
-        <obo:IAO_0000119>https://dictionary.apa.org/chronic-pain</obo:IAO_0000119>
+        <owl:annotatedTarget>Pain that persists for three months or longer.</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -5213,6 +5509,44 @@ Despite their overarching function in the support and protection of neurons, gli
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0050967 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050967">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0062149"/>
+        <obo:IAO_0000115>OBSOLETE. The series of events that contribute to the perception of pain in which an electrical stimulus is received and converted into a molecular signal.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/31306</obo:IAO_0000233>
+        <oboInOwl:hasExactSynonym>perception of pain, detection of electrical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>perception of pain, sensory detection of electrical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>perception of pain, sensory transduction of electrical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>detection of electrical stimulus during sensory perception of pain</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sensory detection of electrical stimulus during perception of pain</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sensory transduction of electrical stimulus during perception of pain</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0050967</oboInOwl:id>
+        <rdfs:comment>This term was obsoleted because it is a pre-composed term that should be captured as a GO-CAM model.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>obsolete detection of electrical stimulus involved in sensory perception of pain</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0050967"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>OBSOLETE. The series of events that contribute to the perception of pain in which an electrical stimulus is received and converted into a molecular signal.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0050967"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>detection of electrical stimulus during sensory perception of pain</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0050968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050968">
@@ -5347,6 +5681,30 @@ Despite their overarching function in the support and protection of neurons, gli
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0062149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0062149">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115>OBSOLETE. The series of events involved in the perception of pain in which a stimulus is received and converted into a molecular signal.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/31330</obo:IAO_0000233>
+        <oboInOwl:created_by>dph</oboInOwl:created_by>
+        <oboInOwl:creation_date>2019-09-13T13:48:47Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0062149</oboInOwl:id>
+        <rdfs:comment>This term was obsoleted because it is a pre-composed term that should be captured as a GO-CAM model.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>obsolete detection of stimulus involved in sensory perception of pain</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0062149"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>OBSOLETE. The series of events involved in the perception of pain in which a stimulus is received and converted into a molecular signal.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:19837031</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0065007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0065007">
@@ -5398,36 +5756,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000040">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/PAIN/0000036"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000058"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000058"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Pain that is experienced as a rhythmic, pulsating, or beating sensation in which the pain&apos;s intensity waxes and wanes in periodic bursts. Throbbing pain is typically synchronized with the cardiac cycle.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T19:58:42Z</terms:created>
-        <rdfs:label>throbbing pain</rdfs:label>
-        <skos:closeMatch rdf:resource="http://snomed.info/id/29695002"/>
-    </owl:Class>
     
 
 
@@ -10187,6 +10515,14 @@ Despite their overarching function in the support and protection of neurons, gli
         <owl:annotatedTarget>anatomical cluster</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CARO:0020001</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <rdfs:label>obsolete class</rdfs:label>
+    </owl:Class>
     
 
 
