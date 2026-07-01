@@ -113,6 +113,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000092>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000093>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000094>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000095>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000096>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1061,6 +1062,20 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000095> "http://purl.obolibrary.org/obo/SYMP_0000838")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000095> "http://snomed.info/id/879969009")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000095> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000096> (cancer pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000096> "Pain that caused by the effects of cancer (e.g., neoplasm growth, tissue invasion, metastases), the diagnosis of cancer, or the treatment of cancer.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000096> "cancer pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000096> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000096> "2026-07-01T16:09:05Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.bioontology.org/ontology/PAIN/0000096> "cancer-associated pain")
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000096> "cancer pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000096> "http://id.nlm.nih.gov/mesh/D000072716")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000096> "http://purl.obolibrary.org/obo/NCIT_C178565")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000096> "http://purl.obolibrary.org/obo/SCDO_1000452")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000096> "http://www.ebi.ac.uk/efo/EFO_0801084")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000096> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
