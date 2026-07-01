@@ -119,6 +119,8 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000098>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000099>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000100>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000101>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000102>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000103>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1137,6 +1139,27 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000101> "continuous pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000101> "http://snomed.info/id/426206001")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000101> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000689>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000102> (cramping sensation quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000102> "A constricting, gripping, or squeezing sensation quality. It is often associated with involuntary muscle contraction.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000102> "cramping sensation quality (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000102> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000102> "2026-07-01T17:36:26Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000102> "cramping sensation quality")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000102> "http://snomed.info/id/410709000")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000102> <http://purl.bioontology.org/ontology/PAIN/0000042>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000103> (cramping pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000103> "Pain that is experienced as a constricting, gripping, or squeezing sensation. It is often associated with involuntary muscle contraction.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000103> "cramping pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000103> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000103> "2026-07-01T17:39:15Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000103> "cramping pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000103> "http://purl.obolibrary.org/obo/NCIT_C101173")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000103> "http://snomed.info/id/279093005")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000103> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
