@@ -575,6 +575,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000051> "2026-07-01T01:25:36Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000051> "abdominal pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://id.nlm.nih.gov/mesh/D015746")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://purl.obolibrary.org/obo/HP_0002027")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://purl.obolibrary.org/obo/NCIT_C26682")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://purl.obolibrary.org/obo/OMIT_0016397")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://purl.obolibrary.org/obo/SYMP_0000457")
