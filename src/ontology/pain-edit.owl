@@ -262,10 +262,12 @@ SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000002> <http://purl.bioo
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000003> (allodynia)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000003> "Pain due to a stimulus that does not normally provoke pain.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/terminology") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000003> "Pain due to a stimulus that does not normally provoke pain.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000003> "allodynia (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000003> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000003> "2026-07-01T15:38:59Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.bioontology.org/ontology/PAIN/0000003> "The stimulus leads to an unexpectedly painful response. This is a clinical term that does not imply a mechanism. Allodynia may be seen after different types of somatosensory stimuli applied to many different tissues.
+See entry in https://www.iasp-pain.org/resources/terminology.")
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000003> "allodynia")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000003> "http://purl.obolibrary.org/obo/HP_0012533")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000003> "http://purl.obolibrary.org/obo/NCIT_C180616")
@@ -294,7 +296,7 @@ SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000005> <http://purl.bioo
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000006> (hyperalgesia)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000006> "Increased pain from a stimulus that normally provokes pain.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/terminology") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000006> "Increased pain from a stimulus that normally provokes pain.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000006> "hyperalgesia (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000006> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000006> "2026-07-01T23:22:01Z"^^xsd:dateTime)
@@ -307,7 +309,7 @@ SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000006> ObjectSomeValuesF
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000007> (hypoalgesia)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000007> "Diminished pain in response to a normally painful stimulus.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/terminology") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000007> "Diminished pain in response to a normally painful stimulus.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000007> "hypoalgesia (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000007> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000007> "2026-07-01T23:29:23Z"^^xsd:dateTime)
@@ -1224,10 +1226,12 @@ EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000103> ObjectInte
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000104> (dysesthesia)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000104> "An unpleasant abnormal sensory experience, whether spontaneous or evoked.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/terminology") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000104> "An unpleasant abnormal sensory experience, whether spontaneous or evoked.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000104> "dysesthesia (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000104> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000104> "2026-07-01T17:55:31Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.bioontology.org/ontology/PAIN/0000104> "An unpleasant abnormal sensation, whether spontaneous or evoked. Note: Compare with pain and with paresthesia. Special cases of dysesthesia include hyperalgesia and allodynia. A dysesthesia should always be unpleasant and a paresthesia should not be unpleasant, although it is recognized that the borderline may present some difficulties when it comes to deciding as to whether a sensation is pleasant or unpleasant. It should always be specified whether the sensations are spontaneous or evoked.
+See entry in https://www.iasp-pain.org/resources/terminology.")
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000104> "dysesthesia")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000104> "http://purl.obolibrary.org/obo/NCIT_C28246")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000104> "http://snomed.info/id/279079003")
