@@ -122,6 +122,8 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000101>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000102>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000103>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000104>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000105>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1173,6 +1175,25 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000104> "http://snomed.info/id/279079003")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.bioontology.org/ontology/PAIN/0000104> "http://purl.obolibrary.org/obo/HP_0012534")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000104> <http://purl.bioontology.org/ontology/EMRO/0000005>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000105> (electric sensation quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000105> "A sudden, brief, shock-like sensation quality resembling an electric current.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000105> "electric sensation quality (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000105> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000105> "2026-07-01T19:11:49Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000105> "electric sensation quality")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000105> <http://purl.bioontology.org/ontology/PAIN/0000042>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000106> (electric pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000106> "Pain that is experienced as a sudden, brief, shock-like sensation resembling an electric current.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000106> "electric pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000106> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000106> "2026-07-01T19:13:35Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000106> "electric pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000106> "http://snomed.info/id/723316007")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000106> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000105>)))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
