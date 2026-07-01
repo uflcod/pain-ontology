@@ -11,10 +11,12 @@ Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/pat
 Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/pato.owl")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000057>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000627>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000689>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001167>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
@@ -24,6 +26,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001566>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001791>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002323>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002387>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002414>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0010005>))
@@ -167,6 +170,21 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_000005
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000057> (occurrence)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000057> "A quality of a single process inhering in a bearer by virtue of the bearer's occurrence.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000057> "PATO:0000156")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000057> "PATO:0000158")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/PATO_0000057> "temporal")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000057> "incidence")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000057> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000057> "PATO:0000057")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000057> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000057> <http://purl.obolibrary.org/obo/pato#hpo_slim>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000057> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000057> "occurrence")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000057> <http://purl.obolibrary.org/obo/PATO_0002323>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000060> (spatial pattern)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000060> "A spatial quality inhering in a bearer by virtue of the bearer's exhibiting repetition of placement of its parts.")
@@ -221,6 +239,19 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000627> <http://purl.obolibrary.org/obo/pato.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000627> "localized")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000627> <http://purl.obolibrary.org/obo/PATO_0000060>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000689> (continuous)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "thefreedictionary.com:thefreedictionary.com") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000689> "A quality of a single process inhering in a bearer by virtue of the bearer's being uninterrupted in time, sequence, substance, or extent.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002604> <http://purl.obolibrary.org/obo/PATO_0000689> <http://purl.obolibrary.org/obo/PATO_0000690>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000689> "PATO:0000429")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000689> "uninterrupted")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000689> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000689> "PATO:0000689")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000689> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000689> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000689> "continuous")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000689> <http://purl.obolibrary.org/obo/PATO_0000057>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001020> (damage)
 
@@ -343,6 +374,18 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0002062> <http://purl.obolibrary.org/obo/pato.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002062> "physical quality of a process")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002062> <http://purl.obolibrary.org/obo/PATO_0001236>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002323> (temporal distribution quality)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:LC") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002323> "A temporal distribution pattern of process occurrences within a regulation/reference process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0002323> <https://orcid.org/0000-0002-2061-091X>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002323> "2011-11-22T01:12:28Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002323> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002323> "PATO:0002323")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0002323> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0002323> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002323> "temporal distribution quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002323> <http://purl.obolibrary.org/obo/PATO_0002062>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002387> (peracute)
 
