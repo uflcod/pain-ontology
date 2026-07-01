@@ -41,6 +41,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000004>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000005>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000006>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000007>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000008>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000009>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000010>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000011>))
@@ -318,6 +319,22 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000007> "http://purl.obolibrary.org/obo/SYMP_0000835")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000007> "http://snomed.info/id/6810008")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000007> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000008> (paresthesia)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000008> "An abnormal sensory experience, whether spontaneous or evoked, that is not unpleasant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000008> "paresthesia (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000008> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000008> "2026-07-01T23:48:57Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.bioontology.org/ontology/PAIN/0000008> "Paresthesia be used to describe an abnormal sensation that is not unpleasant while dysesthesia be used preferentially for an abnormal sensation that is considered to be unpleasant. The use of one term (paresthesia) to indicate spontaneous sensations and the other to refer to evoked sensations is not favored. There is a sense in which, since paresthesia refers to abnormal sensations in general, it might include dysesthesia, but the reverse is not true. Dysesthesia does not include all abnormal sensations, but only those that are unpleasant.
+See entry in https://www.iasp-pain.org/resources/terminology.")
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000008> "paresthesia")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000008> "http://id.nlm.nih.gov/mesh/D010292")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000008> "http://purl.obolibrary.org/obo/HP_0003401")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000008> "http://purl.obolibrary.org/obo/NCIT_C28177")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000008> "http://purl.obolibrary.org/obo/SYMP_0000435")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000008> "http://snomed.info/id/91019004")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000008> <http://purl.bioontology.org/ontology/EMRO/0000005>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000009> (obsolete pain testing procedure)
 
