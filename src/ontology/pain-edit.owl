@@ -127,6 +127,9 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000106>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000107>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000108>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000109>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000110>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000111>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000112>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1228,6 +1231,37 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000109> "http://purl.obolibrary.org/obo/OMIT_0027581")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000109> "http://snomed.info/id/279069000")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000109> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000110> (facial pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000110> "Orofacial pain that is experienced in the face.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000110> "facial pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000110> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000110> "2026-07-01T20:00:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000110> "facial pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000110> "http://purl.obolibrary.org/obo/NCIT_C79594")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000110> "http://purl.obolibrary.org/obo/OMIT_0006381")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000110> "http://snomed.info/id/95668009")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000110> "http://www.ebi.ac.uk/efo/EFO_0009625")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000110> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000090> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0001456>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000111> (hip pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000111> "Pain that is experienced in the hip.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000111> "hip pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000111> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000111> "2026-07-01T20:20:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000111> "hip pain")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000111> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000056> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0001464>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000112> (inflammatory pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000112> "Nociceptive pain that arises from the activation and sensitization of nociceptors by inflammatory mediators released in response to tissue injury or disease.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000112> "inflammatory pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000112> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000112> "2026-07-01T20:25:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000112> "inflammatory pain")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000112> <http://purl.bioontology.org/ontology/PAIN/0000041>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
