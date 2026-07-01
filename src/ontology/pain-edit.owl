@@ -132,6 +132,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000111>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000112>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000113>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000114>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000115>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1285,6 +1286,15 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000114> "intermittent pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000114> "http://snomed.info/id/314642004")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000114> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000113>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000115> (jaw pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000115> "Orofacial pain that is experienced in the jaw.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000115> "jaw pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000115> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000115> "2026-07-01T20:49:02Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000115> "jaw pain")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000115> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000090> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0011595>)))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
