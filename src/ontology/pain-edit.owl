@@ -116,6 +116,8 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000095>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000096>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000097>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000098>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000099>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000100>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -725,7 +727,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000064> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000064> "2025-05-12T17:06:51Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000064> "freezing sensation quality"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000064> <http://snomed.info/id/84162001>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.bioontology.org/ontology/PAIN/0000064> <http://snomed.info/id/84162001>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000064> <http://purl.bioontology.org/ontology/PAIN/0000042>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000065> (aching pain)
@@ -1103,6 +1105,25 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000098> "chronic low back pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000098> "http://snomed.info/id/278860009")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000098> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000040> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0005462>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000099> (cold sensation quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000099> "A sensation quality that characterizes a sensation as being cooler than the surrounding environment or stimulus.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000099> "cold sensation quality (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000099> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000099> "2026-07-01T16:47:04Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000099> "cold sensation quality")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000099> "http://snomed.info/id/84162001")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000099> <http://purl.bioontology.org/ontology/PAIN/0000042>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000100> (cold pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000100> "Pain that is experienced as a result of cold stimuli at intensities below the freezing threshold.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000100> "cold pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000100> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000100> "2026-07-01T16:57:37Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000100> "cold pain")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000100> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
