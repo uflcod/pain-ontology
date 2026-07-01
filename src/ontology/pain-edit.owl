@@ -115,6 +115,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000094>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000095>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000096>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000097>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000098>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1092,6 +1093,16 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000097> "http://purl.obolibrary.org/obo/SYMP_0000576")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000097> "http://snomed.info/id/29857009")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000097> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000080> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0001443>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000098> (chronic low back pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000098> "Chronic pain that is experienced in the lower back.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000098> "chronic low back pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000098> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000098> "2026-07-01T16:38:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000098> "chronic low back pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000098> "http://snomed.info/id/278860009")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000098> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000040> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0005462>)))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
