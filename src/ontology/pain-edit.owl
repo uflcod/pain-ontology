@@ -130,6 +130,8 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000109>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000110>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000111>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000112>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000113>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000114>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1261,7 +1263,28 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bi
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000112> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000112> "2026-07-01T20:25:50Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000112> "inflammatory pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000112> "http://snomed.info/id/65761003")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000112> <http://purl.bioontology.org/ontology/PAIN/0000041>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000113> (intermittent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000113> "A process quality that characterizes a process as being marked by breaks or interruptions.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000113> "intermittent (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000113> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000113> "2026-07-01T20:36:04Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000113> "intermittent")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000113> "http://purl.obolibrary.org/obo/ExO_0000052")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000113> <http://purl.obolibrary.org/obo/PATO_0000057>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000114> (intermittent pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000114> "Pain that occurs in discrete episodes separated by pain-free intervals.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000114> "intermittent pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000114> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000114> "2026-07-01T20:40:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000114> "intermittent pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000114> "http://snomed.info/id/314642004")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000114> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000113>)))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
