@@ -124,6 +124,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000103>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000104>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000105>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000106>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000107>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1194,6 +1195,15 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000106> "electric pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000106> "http://snomed.info/id/723316007")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000106> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000105>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000107> (fibromyalgia pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000107> "Chronic widespread pain associated with fibromyalgia, typically accompanied by fatigue, sleep disturbance, and somatic and cognitive symptoms.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000107> "fibromyalgia pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000107> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000107> "2026-07-01T19:16:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000107> "fibromyalgia pain")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000107> <http://purl.bioontology.org/ontology/PAIN/0000092>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
