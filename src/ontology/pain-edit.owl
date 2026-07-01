@@ -36,6 +36,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000005>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000000>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000001>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000002>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000003>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000009>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000010>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000011>))
@@ -229,6 +230,20 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000002> "somatic pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000002> <http://snomed.info/id/48429009>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000002> <http://purl.bioontology.org/ontology/PAIN/0000056>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000003> (allodynia)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000003> "Pain due to a stimulus that does not normally provoke pain.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000003> "allodynia (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000003> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000003> "2026-07-01T15:38:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000003> "allodynia")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000003> "http://purl.obolibrary.org/obo/SYMP_0000840")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000003> "http://purl.obolibrary.org/obo/HP_0012533")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000003> "http://purl.obolibrary.org/obo/NCIT_C180616")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000003> "http://purl.obolibrary.org/obo/UPHENO_7000639")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000003> "http://snomed.info/id/247404004")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000003> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000009> (obsolete pain testing procedure)
 
