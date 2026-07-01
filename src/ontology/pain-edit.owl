@@ -69,6 +69,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000045>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000046>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000047>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000048>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000051>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000052>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000053>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000054>))
@@ -565,6 +566,20 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000048> "generalized pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000048> "http://snomed.info/id/82991003")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000048> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001566>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000051> (abdominal pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000051> "Pain that is experienced in the abdomen.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000051> "abdominal pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000051> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000051> "2026-07-01T01:25:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000051> "abdominal pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://id.nlm.nih.gov/mesh/D015746")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://purl.obolibrary.org/obo/NCIT_C26682")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://purl.obolibrary.org/obo/OMIT_0016397")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://purl.obolibrary.org/obo/SYMP_0000457")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000051> "http://snomed.info/id/21522001")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000051> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0000916>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000052> (peripheral nervous system neuropathic pain)
 
