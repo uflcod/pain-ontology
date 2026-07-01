@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/pain.owl>
+Ontology(<http://purl.bioontology.org/ontology/pain.owl>
 Import(<http://purl.bioontology.org/ontology/pain/components/pain_contributors.owl>)
 Import(<http://purl.bioontology.org/ontology/pain/imports/bfo_import.owl>)
 Import(<http://purl.bioontology.org/ontology/pain/imports/cl_import.owl>)
@@ -125,6 +125,8 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000104>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000105>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000106>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000107>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000108>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1204,6 +1206,28 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000107> "2026-07-01T19:16:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000107> "fibromyalgia pain")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000107> <http://purl.bioontology.org/ontology/PAIN/0000092>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000108> (myofascial pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000108> "Musculoskeletal pain that arises from muscle and surrounding fascia, often associated with the presence of trigger points.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000108> "myofascial pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000108> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000108> "2026-07-01T19:36:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000108> "myofascial pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000108> "http://snomed.info/id/279062009")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000108> <http://purl.bioontology.org/ontology/PAIN/0000109>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000109> (musculoskeletal pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000109> "Pain that originates in the musculoskeletal system.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000109> "musculoskeletal pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000109> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000109> "2026-07-01T19:47:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000109> "musculoskeletal pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000109> "http://purl.obolibrary.org/obo/NCIT_C3244")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000109> "http://purl.obolibrary.org/obo/OMIT_0027581")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000109> "http://snomed.info/id/279069000")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000109> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
