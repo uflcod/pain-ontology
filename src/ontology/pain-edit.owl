@@ -81,6 +81,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000059>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000060>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000063>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000064>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000065>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000066>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000067>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000068>))
@@ -706,6 +707,17 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000064> "freezing sensation quality"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000064> <http://snomed.info/id/84162001>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000064> <http://purl.bioontology.org/ontology/PAIN/0000042>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000065> (aching pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000065> "Pain that is experienced as a diffuse, sustained, low-to-moderate intensity, dull, deep, pressure-like sensation that lacks sharp localization.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000065> "aching pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000065> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000065> "2026-07-01T01:37:54Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000065> "aching pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000065> "http://purl.obolibrary.org/obo/NCIT_C100856")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000065> "http://snomed.info/id/27635008")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000065> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000069>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000066> (shooting sensation quality)
 
