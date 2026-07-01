@@ -40,6 +40,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000003>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000004>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000005>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000006>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000007>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000009>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000010>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000011>))
@@ -303,6 +304,18 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000006> "http://snomed.info/id/55406008")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000006> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000117>))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000007> (hypoalgesia)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000007> "Diminished pain in response to a normally painful stimulus.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000007> "hypoalgesia (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000007> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000007> "2026-07-01T23:29:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000007> "hypoalgesia")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000007> "http://purl.obolibrary.org/obo/MP_0003043")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000007> "http://purl.obolibrary.org/obo/SYMP_0000835")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000007> "http://snomed.info/id/6810008")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000007> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000009> (obsolete pain testing procedure)
 
