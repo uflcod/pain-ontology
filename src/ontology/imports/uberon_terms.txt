@@ -32,3 +32,4 @@ http://purl.obolibrary.org/obo/UBERON_0011595 # jaw region
 http://purl.obolibrary.org/obo/UBERON_0001710 # lower jaw region
 http://purl.obolibrary.org/obo/UBERON_0001709 # upper jaw region
 http://purl.obolibrary.org/obo/UBERON_0001645 # trigeminal nerve
+http://purl.obolibrary.org/obo/UBERON_0001464 # hip
