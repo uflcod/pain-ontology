@@ -1159,7 +1159,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000103> "cramping pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000103> "http://purl.obolibrary.org/obo/NCIT_C101173")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000103> "http://snomed.info/id/279093005")
-SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000103> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000103> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000102>)))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
