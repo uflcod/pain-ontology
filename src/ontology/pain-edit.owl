@@ -118,6 +118,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000097>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000098>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000099>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000100>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000101>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -220,13 +221,14 @@ EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000000> ObjectInte
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000001> (concomitant continuous pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32791919") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000001> "Persistent background pain that occurs alongside paroxysmal pain attacks, characteristic of conditions such as trigeminal neuralgia.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32791919") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1277654/full") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000001> "Persistent background pain that occurs alongside paroxysmal pain attacks, characteristic of conditions such as trigeminal neuralgia.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000001> "concomitant continuous pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000001> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000001> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000001> "2026-04-08T16:42:44Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000001> "concomitant continuous pain")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000001> <http://purl.bioontology.org/ontology/PAIN/0000040>)
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000689>))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000002> (somatic pain)
 
@@ -1124,6 +1126,17 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000100> "2026-07-01T16:57:37Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000100> "cold pain")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000100> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000101> (continuous pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000101> "Pain that is persistently present without pain-free intervals.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000101> "continuous pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000101> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000101> "2026-07-01T17:07:58Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.bioontology.org/ontology/PAIN/0000101> "concomitant continuous pain")
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000101> "continuous pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000101> "http://snomed.info/id/426206001")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000101> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000689>)))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
