@@ -83,6 +83,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000046>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000047>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000048>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000049>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000050>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000051>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000052>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000053>))
@@ -763,6 +764,17 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000049> "tingling pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000049> "http://snomed.info/id/786837007")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000049> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000039>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000050> (wrist pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000050> "Pain that is experienced in the wrist.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000050> "wrist pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000050> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000050> "2026-07-02T00:35:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000050> "wrist pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000050> "http://purl.obolibrary.org/obo/HP_0030836")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000050> "http://snomed.info/id/56608008")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000050> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000077> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0004452>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000051> (abdominal pain)
 
