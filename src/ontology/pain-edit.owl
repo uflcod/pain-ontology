@@ -55,6 +55,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000018>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000019>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000020>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000021>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000022>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000026>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000027>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000028>))
@@ -448,6 +449,18 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://p
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.bioontology.org/ontology/PAIN/0000021> "http://snomed.info/id/699190008")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.bioontology.org/ontology/PAIN/0000021> "http://www.orpha.net/ORDO/Orphanet_46348")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000021> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000022> (pelvic pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000022> "Pain that is experienced in the pelvis.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000022> "pelvic pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000022> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000022> "2026-07-02T00:09:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000022> "pelvic pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000022> "http://id.nlm.nih.gov/mesh/D017699")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000022> "http://purl.obolibrary.org/obo/NCIT_C40122")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000022> "http://snomed.info/id/30473006")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000022> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000056> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0002355>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000026> (obsolete pain questionnaire)
 
