@@ -72,6 +72,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000035>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000036>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000037>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000038>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000039>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000040>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000041>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000042>))
@@ -81,6 +82,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000045>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000046>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000047>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000048>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000049>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000051>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000052>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000053>))
@@ -638,6 +640,15 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.bioontology.org/ontology/PAIN/0000038> <http://purl.obolibrary.org/obo/NCIT_C9203>)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000038> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000039> (tingling sensation quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000039> "A prickling, pins-and-needles sensation quality, often with a fine, vibratory character.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000039> "tingling sensation quality (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000039> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000039> "2026-07-02T00:27:41Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000039> "tingling sensation quality")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000039> <http://purl.bioontology.org/ontology/PAIN/0000042>)
+
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000040> (chronic pain)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000040> "Pain that persists or recurs for longer than 3 months, in which each incidence of pain is attributed to the same underlying condition.")
@@ -742,6 +753,16 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000048> "generalized pain")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000048> "http://snomed.info/id/82991003")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000048> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001566>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000049> (tingling pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000049> "Pain that is experienced as a prickling, pins-and-needles sensation.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000049> "tingling pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000049> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000049> "2026-07-02T00:28:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000049> "tingling pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000049> "http://snomed.info/id/786837007")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000049> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000039>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000051> (abdominal pain)
 
