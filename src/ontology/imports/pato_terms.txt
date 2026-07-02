@@ -4,7 +4,9 @@ http://purl.obolibrary.org/obo/BFO_0000050    # part of
 http://purl.obolibrary.org/obo/PATO_0002414   # chronic-active
 http://purl.obolibrary.org/obo/PATO_0002387   # peracute
 http://purl.obolibrary.org/obo/PATO_0001167   # damaged
-http://purl.obolibrary.org/obo/PATO_0010005   # spatial distribution of a process
 http://purl.obolibrary.org/obo/PATO_0000627   # localized
 http://purl.obolibrary.org/obo/PATO_0001791   # multi-localised
 http://purl.obolibrary.org/obo/PATO_0001566   # distributed
+http://purl.obolibrary.org/obo/PATO_0000689   # continuous
+http://purl.obolibrary.org/obo/PATO_0001551   # increased sensitivity of a process
+http://purl.obolibrary.org/obo/PATO_0001552   # decreased sensitivity of a process

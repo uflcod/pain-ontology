@@ -23,3 +23,14 @@ http://purl.obolibrary.org/obo/UBERON_0003129 # skull
 http://purl.obolibrary.org/obo/UBERON_0011156 # facial skeleton
 http://purl.obolibrary.org/obo/UBERON_0001684 # mandible
 http://purl.obolibrary.org/obo/UBERON_0002397 # maxilla
+http://purl.obolibrary.org/obo/UBERON_0000916 # abdomen
+http://purl.obolibrary.org/obo/UBERON_0004452 # carpal region (wrist, wrist region)
+http://purl.obolibrary.org/obo/UBERON_0004454 # tarsal region (ankle, ankle region)
+http://purl.obolibrary.org/obo/UBERON_0001443 # chest
+http://purl.obolibrary.org/obo/UBERON_0002355 # pelvic region of trunk (pelvis, pelvic region)
+http://purl.obolibrary.org/obo/UBERON_0011595 # jaw region
+http://purl.obolibrary.org/obo/UBERON_0001710 # lower jaw region
+http://purl.obolibrary.org/obo/UBERON_0001709 # upper jaw region
+http://purl.obolibrary.org/obo/UBERON_0001645 # trigeminal nerve
+http://purl.obolibrary.org/obo/UBERON_0001464 # hip
+http://purl.obolibrary.org/obo/UBERON_0002204 # Musculoskeletal system
