@@ -56,6 +56,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000019>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000020>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000021>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000022>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000023>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000026>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000027>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000028>))
@@ -461,6 +462,18 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000022> "http://purl.obolibrary.org/obo/NCIT_C40122")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000022> "http://snomed.info/id/30473006")
 EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000022> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000056> ObjectSomeValuesFrom(<http://purl.bioontology.org/ontology/PAIN/0000062> <http://purl.obolibrary.org/obo/UBERON_0002355>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000023> (postsurgical pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000023> "Pain that develops after a surgical procedure, occurring at or near the surgical site.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000023> "postsurgical pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000023> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000023> "2026-07-02T00:15:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000023> "postsurgical pain")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000023> "http://id.nlm.nih.gov/mesh/D010149")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000023> "http://purl.obolibrary.org/obo/NCIT_C34887")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000023> "http://snomed.info/id/213299007")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000023> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000026> (obsolete pain questionnaire)
 
