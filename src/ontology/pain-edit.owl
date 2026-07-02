@@ -151,6 +151,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000116>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000117>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000118>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000119>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000120>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -1511,6 +1512,15 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000119> "2026-07-02T01:37:49Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000119> "mixed pain")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000119> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000120> (mechanical pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000120> "Pain that is provoked or worsened by mechanical loading, movement, or postural change.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000120> "mechanical pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000120> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000120> "2026-07-02T01:40:44Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000120> "mechanical pain")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000120> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
