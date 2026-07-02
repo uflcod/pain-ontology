@@ -57,6 +57,8 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000020>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000021>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000022>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000023>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000024>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000025>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000026>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000027>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000028>))
@@ -474,6 +476,24 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000023> "http://purl.obolibrary.org/obo/NCIT_C34887")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000023> "http://snomed.info/id/213299007")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000023> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000024> (pressure sensation quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000024> "A sensation quality that characterizes a sensation as involving compression, heaviness, or sustained force applied to a body region.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000024> "pressure sensation quality (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000024> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000024> "2026-07-02T00:18:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000024> "pressure sensation quality")
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000024> <http://purl.bioontology.org/ontology/PAIN/0000042>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000025> (pressure pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000025> "Pain that is experienced as a sensation of compression, heaviness, or sustained force.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000025> "pressure pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000025> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000025> "2026-07-02T00:22:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000025> "pressure pain")
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000025> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000024>)))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000026> (obsolete pain questionnaire)
 
