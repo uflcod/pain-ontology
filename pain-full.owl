@@ -17,7 +17,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/pain/pain-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-07-01/pain-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-07-03/pain-full.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -29,7 +29,7 @@
         <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>The Pain Ontology</terms:title>
-        <owl:versionInfo>2026-07-01</owl:versionInfo>
+        <owl:versionInfo>2026-07-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2004,7 +2004,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000589>throbbing pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T19:58:42Z</terms:created>
-        <rdfs:label>throbbing pain</rdfs:label>
+        <rdfs:label xml:lang="en">throbbing pain</rdfs:label>
         <skos:closeMatch rdf:resource="http://snomed.info/id/29695002"/>
     </owl:Class>
     
@@ -2019,7 +2019,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000589>chronic high impact (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-01T20:50:40Z</terms:created>
-        <rdfs:label>chronic high impact pain</rdfs:label>
+        <rdfs:label xml:lang="en">chronic high impact pain</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/0000050"/>
@@ -2152,7 +2152,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T13:10:32Z</terms:created>
         <oboInOwl:hasExactSynonym>TMJ pain</oboInOwl:hasExactSynonym>
-        <rdfs:label>temporomandibular joint pain</rdfs:label>
+        <rdfs:label xml:lang="en">temporomandibular joint pain</rdfs:label>
     </owl:Class>
     
 
@@ -2162,20 +2162,13 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000001">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000101"/>
-        <obo:IAO_0000115>Chronic pain that is persistently occuring in the background.</obo:IAO_0000115>
         <obo:IAO_0000115>Persistent background pain that occurs alongside paroxysmal pain attacks, characteristic of conditions such as trigeminal neuralgia.</obo:IAO_0000115>
         <obo:IAO_0000589>concomitant continuous pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T16:42:44Z</terms:created>
-        <rdfs:label>concomitant continuous pain</rdfs:label>
+        <rdfs:label xml:lang="en">concomitant continuous pain</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic pain that is persistently occuring in the background.</owl:annotatedTarget>
-        <obo:IAO_0000119>PMID:32791919</obo:IAO_0000119>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2194,7 +2187,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000589>somatic pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T18:15:23Z</terms:created>
-        <rdfs:label>somatic pain</rdfs:label>
+        <rdfs:label xml:lang="en">somatic pain</rdfs:label>
         <skos:closeMatch rdf:resource="http://snomed.info/id/48429009"/>
     </owl:Class>
     <owl:Axiom>
@@ -2216,7 +2209,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T15:38:59Z</terms:created>
         <terms:description>The stimulus leads to an unexpectedly painful response. This is a clinical term that does not imply a mechanism. Allodynia may be seen after different types of somatosensory stimuli applied to many different tissues.
 See entry in https://www.iasp-pain.org/resources/terminology.</terms:description>
-        <rdfs:label>allodynia</rdfs:label>
+        <rdfs:label xml:lang="en">allodynia</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0012533</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C180616</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SYMP_0000840</skos:closeMatch>
@@ -2240,7 +2233,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>sensitivity to painful stimulus (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T23:13:11Z</terms:created>
-        <rdfs:label>sensitivity to painful stimulus</rdfs:label>
+        <rdfs:label xml:lang="en">sensitivity to painful stimulus</rdfs:label>
     </owl:Class>
     
 
@@ -2253,7 +2246,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>decreased sensitivity to painful stimulus (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T23:19:07Z</terms:created>
-        <rdfs:label>decreased sensitivity to painful stimulus</rdfs:label>
+        <rdfs:label xml:lang="en">decreased sensitivity to painful stimulus</rdfs:label>
     </owl:Class>
     
 
@@ -2272,7 +2265,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>hyperalgesia (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T23:22:01Z</terms:created>
-        <rdfs:label>hyperalgesia</rdfs:label>
+        <rdfs:label xml:lang="en">hyperalgesia</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MP_0005407</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SYMP_0000836</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/55406008</skos:closeMatch>
@@ -2294,7 +2287,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>hypoalgesia (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T23:29:23Z</terms:created>
-        <rdfs:label>hypoalgesia</rdfs:label>
+        <rdfs:label xml:lang="en">hypoalgesia</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MP_0003043</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SYMP_0000835</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/6810008</skos:closeMatch>
@@ -2318,7 +2311,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T23:48:57Z</terms:created>
         <terms:description>Paresthesia be used to describe an abnormal sensation that is not unpleasant while dysesthesia be used preferentially for an abnormal sensation that is considered to be unpleasant. The use of one term (paresthesia) to indicate spontaneous sensations and the other to refer to evoked sensations is not favored. There is a sense in which, since paresthesia refers to abnormal sensations in general, it might include dysesthesia, but the reverse is not true. Dysesthesia does not include all abnormal sensations, but only those that are unpleasant.
 See entry in https://www.iasp-pain.org/resources/terminology.</terms:description>
-        <rdfs:label>paresthesia</rdfs:label>
+        <rdfs:label xml:lang="en">paresthesia</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D010292</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0003401</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C28177</skos:closeMatch>
@@ -2334,7 +2327,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
         <oboInOwl:creation_date>2022-11-24T06:02:26Z</oboInOwl:creation_date>
-        <rdfs:label>obsolete pain testing procedure</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete pain testing procedure</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -2484,7 +2477,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>paroxysmal pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T23:58:46Z</terms:created>
-        <rdfs:label>paroxysmal pain</rdfs:label>
+        <rdfs:label xml:lang="en">paroxysmal pain</rdfs:label>
         <skos:relatedMatch>http://purl.obolibrary.org/obo/MONDO_0008179</skos:relatedMatch>
         <skos:relatedMatch>http://snomed.info/id/699190008</skos:relatedMatch>
         <skos:relatedMatch>http://www.orpha.net/ORDO/Orphanet_46348</skos:relatedMatch>
@@ -2517,7 +2510,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>pelvic pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:09:24Z</terms:created>
-        <rdfs:label>pelvic pain</rdfs:label>
+        <rdfs:label xml:lang="en">pelvic pain</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D017699</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C40122</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/30473006</skos:closeMatch>
@@ -2533,7 +2526,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>postsurgical pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:15:17Z</terms:created>
-        <rdfs:label>postsurgical pain</rdfs:label>
+        <rdfs:label xml:lang="en">postsurgical pain</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D010149</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C34887</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/213299007</skos:closeMatch>
@@ -2549,7 +2542,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>pressure sensation quality (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:18:59Z</terms:created>
-        <rdfs:label>pressure sensation quality</rdfs:label>
+        <rdfs:label xml:lang="en">pressure sensation quality</rdfs:label>
     </owl:Class>
     
 
@@ -2579,7 +2572,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>pressure pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:22:19Z</terms:created>
-        <rdfs:label>pressure pain</rdfs:label>
+        <rdfs:label xml:lang="en">pressure pain</rdfs:label>
     </owl:Class>
     
 
@@ -2700,7 +2693,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>temporomandibular disorder pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:24:58Z</terms:created>
-        <rdfs:label>temporomandibular disorder pain</rdfs:label>
+        <rdfs:label xml:lang="en">temporomandibular disorder pain</rdfs:label>
     </owl:Class>
     
 
@@ -2767,7 +2760,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T17:09:41Z</terms:created>
-        <rdfs:label>idiopathic pain</rdfs:label>
+        <rdfs:label xml:lang="en">idiopathic pain</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000037"/>
@@ -2788,7 +2781,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T17:10:12Z</terms:created>
         <oboInOwl:hasRelatedSynonym>breakthrough pain</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>episodic pain</rdfs:label>
+        <rdfs:label xml:lang="en">episodic pain</rdfs:label>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0032148"/>
         <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9203"/>
     </owl:Class>
@@ -2809,7 +2802,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <obo:IAO_0000589>tingling sensation quality (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:27:41Z</terms:created>
-        <rdfs:label>tingling sensation quality</rdfs:label>
+        <rdfs:label xml:lang="en">tingling sensation quality</rdfs:label>
     </owl:Class>
     
 
@@ -2835,7 +2828,6 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pain that persists for three months or longer.</obo:IAO_0000115>
         <obo:IAO_0000115>Pain that persists or recurs for longer than 3 months, in which each incidence of pain is attributed to the same underlying condition.</obo:IAO_0000115>
         <obo:IAO_0000589>chronic pain (PAIN)</obo:IAO_0000589>
         <dc:contributor>https://orcid.org/0000-0001-9625-1899</dc:contributor>
@@ -2846,12 +2838,6 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26940"/>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000837"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000040"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pain that persists for three months or longer.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/</obo:IAO_0000119>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000040"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3110,7 +3096,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-12T22:16:38Z</terms:created>
         <oboInOwl:hasExactSynonym>widespread pain</oboInOwl:hasExactSynonym>
-        <rdfs:label>generalized pain</rdfs:label>
+        <rdfs:label xml:lang="en">generalized pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/82991003</skos:closeMatch>
     </owl:Class>
     
@@ -3141,7 +3127,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <obo:IAO_0000589>tingling pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:28:59Z</terms:created>
-        <rdfs:label>tingling pain</rdfs:label>
+        <rdfs:label xml:lang="en">tingling pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/786837007</skos:closeMatch>
     </owl:Class>
     
@@ -3172,7 +3158,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <obo:IAO_0000589>wrist pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:35:00Z</terms:created>
-        <rdfs:label>wrist pain</rdfs:label>
+        <rdfs:label xml:lang="en">wrist pain</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0030836</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/56608008</skos:closeMatch>
     </owl:Class>
@@ -3204,7 +3190,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <obo:IAO_0000589>abdominal pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T01:25:36Z</terms:created>
-        <rdfs:label>abdominal pain</rdfs:label>
+        <rdfs:label xml:lang="en">abdominal pain</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D015746</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0002027</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C26682</skos:closeMatch>
@@ -3429,7 +3415,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <obo:IAO_0000589>lower back pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T03:22:33Z</terms:created>
-        <rdfs:label>lower back pain</rdfs:label>
+        <rdfs:label xml:lang="en">lower back pain</rdfs:label>
         <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D017116"/>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C34788"/>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000006"/>
@@ -3491,7 +3477,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <obo:IAO_0000589>aching pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T01:37:54Z</terms:created>
-        <rdfs:label>aching pain</rdfs:label>
+        <rdfs:label xml:lang="en">aching pain</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C100856</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/27635008</skos:closeMatch>
     </owl:Class>
@@ -4310,7 +4296,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <obo:IAO_0000589>upper back pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T03:22:41Z</terms:created>
-        <rdfs:label>upper back pain</rdfs:label>
+        <rdfs:label xml:lang="en">upper back pain</rdfs:label>
     </owl:Class>
     
 
@@ -4340,7 +4326,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <obo:IAO_0000589>knee pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T03:25:24Z</terms:created>
-        <rdfs:label>knee pain</rdfs:label>
+        <rdfs:label xml:lang="en">knee pain</rdfs:label>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0030839"/>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000442"/>
     </owl:Class>
@@ -4355,7 +4341,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <obo:IAO_0000589>breakthrough pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T16:04:35Z</terms:created>
-        <rdfs:label>breakthrough pain</rdfs:label>
+        <rdfs:label xml:lang="en">breakthrough pain</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D059390</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0032149</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SCDO_0000162</skos:closeMatch>
@@ -4374,7 +4360,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T16:09:05Z</terms:created>
         <oboInOwl:hasExactSynonym>cancer-associated pain</oboInOwl:hasExactSynonym>
-        <rdfs:label>cancer pain</rdfs:label>
+        <rdfs:label xml:lang="en">cancer pain</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D000072716</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C178565</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SCDO_1000452</skos:closeMatch>
@@ -4408,7 +4394,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <obo:IAO_0000589>chest pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T16:31:16Z</terms:created>
-        <rdfs:label>chest pain</rdfs:label>
+        <rdfs:label xml:lang="en">chest pain</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D002637</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0100749</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C38665</skos:closeMatch>
@@ -4444,7 +4430,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <obo:IAO_0000589>chronic low back pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T16:38:17Z</terms:created>
-        <rdfs:label>chronic low back pain</rdfs:label>
+        <rdfs:label xml:lang="en">chronic low back pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/278860009</skos:closeMatch>
     </owl:Class>
     
@@ -4458,7 +4444,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <obo:IAO_0000589>cold sensation quality (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T16:47:04Z</terms:created>
-        <rdfs:label>cold sensation quality</rdfs:label>
+        <rdfs:label xml:lang="en">cold sensation quality</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/84162001</skos:closeMatch>
     </owl:Class>
     
@@ -4472,7 +4458,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <obo:IAO_0000589>cold pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T16:57:37Z</terms:created>
-        <rdfs:label>cold pain</rdfs:label>
+        <rdfs:label xml:lang="en">cold pain</rdfs:label>
     </owl:Class>
     
 
@@ -4503,7 +4489,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T17:07:58Z</terms:created>
         <oboInOwl:hasExactSynonym>concomitant continuous pain</oboInOwl:hasExactSynonym>
-        <rdfs:label>continuous pain</rdfs:label>
+        <rdfs:label xml:lang="en">continuous pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/426206001</skos:closeMatch>
     </owl:Class>
     
@@ -4517,7 +4503,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <obo:IAO_0000589>cramping sensation quality (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T17:36:26Z</terms:created>
-        <rdfs:label>cramping sensation quality</rdfs:label>
+        <rdfs:label xml:lang="en">cramping sensation quality</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/410709000</skos:closeMatch>
     </owl:Class>
     
@@ -4548,7 +4534,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <obo:IAO_0000589>cramping pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T17:39:15Z</terms:created>
-        <rdfs:label>cramping pain</rdfs:label>
+        <rdfs:label xml:lang="en">cramping pain</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C101173</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/279093005</skos:closeMatch>
     </owl:Class>
@@ -4565,7 +4551,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T17:55:31Z</terms:created>
         <terms:description>An unpleasant abnormal sensation, whether spontaneous or evoked. Note: Compare with pain and with paresthesia. Special cases of dysesthesia include hyperalgesia and allodynia. A dysesthesia should always be unpleasant and a paresthesia should not be unpleasant, although it is recognized that the borderline may present some difficulties when it comes to deciding as to whether a sensation is pleasant or unpleasant. It should always be specified whether the sensations are spontaneous or evoked.
 See entry in https://www.iasp-pain.org/resources/terminology.</terms:description>
-        <rdfs:label>dysesthesia</rdfs:label>
+        <rdfs:label xml:lang="en">dysesthesia</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C28246</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/279079003</skos:closeMatch>
         <skos:relatedMatch>http://purl.obolibrary.org/obo/HP_0012534</skos:relatedMatch>
@@ -4587,7 +4573,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>electric sensation quality (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T19:11:49Z</terms:created>
-        <rdfs:label>electric sensation quality</rdfs:label>
+        <rdfs:label xml:lang="en">electric sensation quality</rdfs:label>
     </owl:Class>
     
 
@@ -4617,7 +4603,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>electric pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T19:13:35Z</terms:created>
-        <rdfs:label>electric pain</rdfs:label>
+        <rdfs:label xml:lang="en">electric pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/723316007</skos:closeMatch>
     </owl:Class>
     
@@ -4631,7 +4617,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>fibromyalgia pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T19:16:27Z</terms:created>
-        <rdfs:label>fibromyalgia pain</rdfs:label>
+        <rdfs:label xml:lang="en">fibromyalgia pain</rdfs:label>
     </owl:Class>
     
 
@@ -4644,7 +4630,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>myofascial pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T19:36:55Z</terms:created>
-        <rdfs:label>myofascial pain</rdfs:label>
+        <rdfs:label xml:lang="en">myofascial pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/279062009</skos:closeMatch>
     </owl:Class>
     
@@ -4658,7 +4644,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>musculoskeletal pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T19:47:10Z</terms:created>
-        <rdfs:label>musculoskeletal pain</rdfs:label>
+        <rdfs:label xml:lang="en">musculoskeletal pain</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C3244</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0027581</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/279069000</skos:closeMatch>
@@ -4691,7 +4677,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>facial pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T20:00:46Z</terms:created>
-        <rdfs:label>facial pain</rdfs:label>
+        <rdfs:label xml:lang="en">facial pain</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C79594</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0006381</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/95668009</skos:closeMatch>
@@ -4725,7 +4711,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>hip pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T20:20:30Z</terms:created>
-        <rdfs:label>hip pain</rdfs:label>
+        <rdfs:label xml:lang="en">hip pain</rdfs:label>
     </owl:Class>
     
 
@@ -4738,7 +4724,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>inflammatory pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T20:25:50Z</terms:created>
-        <rdfs:label>inflammatory pain</rdfs:label>
+        <rdfs:label xml:lang="en">inflammatory pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/65761003</skos:closeMatch>
     </owl:Class>
     
@@ -4752,7 +4738,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>intermittent (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T20:36:04Z</terms:created>
-        <rdfs:label>intermittent</rdfs:label>
+        <rdfs:label xml:lang="en">intermittent</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/ExO_0000052</skos:closeMatch>
     </owl:Class>
     
@@ -4783,7 +4769,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>intermittent pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T20:40:34Z</terms:created>
-        <rdfs:label>intermittent pain</rdfs:label>
+        <rdfs:label xml:lang="en">intermittent pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/314642004</skos:closeMatch>
     </owl:Class>
     
@@ -4814,7 +4800,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>jaw pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T20:49:02Z</terms:created>
-        <rdfs:label>jaw pain</rdfs:label>
+        <rdfs:label xml:lang="en">jaw pain</rdfs:label>
     </owl:Class>
     
 
@@ -4825,7 +4811,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001552"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T22:48:40Z</terms:created>
-        <rdfs:label>decreased sensitivity to painful stimulus</rdfs:label>
+        <rdfs:label xml:lang="en">decreased sensitivity to painful stimulus</rdfs:label>
     </owl:Class>
     
 
@@ -4839,7 +4825,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>increased sensitivity to painful stimulus (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T22:49:50Z</terms:created>
-        <rdfs:label>increased sensitivity to painful stimulus</rdfs:label>
+        <rdfs:label xml:lang="en">increased sensitivity to painful stimulus</rdfs:label>
     </owl:Class>
     
 
@@ -4854,7 +4840,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:42:45Z</terms:created>
         <terms:description>Trigeminal neuralgia pain typically presents as paroxysmal, electric shock-like attacks and sometimes accompanied by concomitant continuous pain.</terms:description>
-        <rdfs:label>trigeminal neuralgia pain</rdfs:label>
+        <rdfs:label xml:lang="en">trigeminal neuralgia pain</rdfs:label>
         <skos:relatedMatch>http://id.nlm.nih.gov/mesh/D014277</skos:relatedMatch>
         <skos:relatedMatch>http://purl.obolibrary.org/obo/HP_0100661</skos:relatedMatch>
         <skos:relatedMatch>http://purl.obolibrary.org/obo/MONDO_0008599</skos:relatedMatch>
@@ -4871,7 +4857,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>mixed pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T01:37:49Z</terms:created>
-        <rdfs:label>mixed pain</rdfs:label>
+        <rdfs:label xml:lang="en">mixed pain</rdfs:label>
     </owl:Class>
     
 
@@ -4884,7 +4870,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>mechanical pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T01:40:44Z</terms:created>
-        <rdfs:label>mechanical pain</rdfs:label>
+        <rdfs:label xml:lang="en">mechanical pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/9626006</skos:closeMatch>
     </owl:Class>
     
@@ -4898,7 +4884,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>movement-evoked pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T01:44:08Z</terms:created>
-        <rdfs:label>movement-evoked pain</rdfs:label>
+        <rdfs:label xml:lang="en">movement-evoked pain</rdfs:label>
         <skos:closeMatch>http://snomed.info/id/425423002</skos:closeMatch>
     </owl:Class>
     
@@ -4912,7 +4898,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>osteoarthritis pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T01:48:41Z</terms:created>
-        <rdfs:label>osteoarthritis pain</rdfs:label>
+        <rdfs:label xml:lang="en">osteoarthritis pain</rdfs:label>
     </owl:Class>
     
 
@@ -6828,7 +6814,7 @@ Despite their overarching function in the support and protection of neurons, gli
         <obo:IAO_0000589>ankle pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T15:55:25Z</terms:created>
-        <rdfs:label>ankle pain</rdfs:label>
+        <rdfs:label xml:lang="en">ankle pain</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0030840</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/247373008</skos:closeMatch>
     </owl:Class>
@@ -6908,6 +6894,7 @@ Despite their overarching function in the support and protection of neurons, gli
     <!-- http://purl.obolibrary.org/obo/PATO_0000068 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
         <obo:IAO_0000115>A quality of an entity that is descriptive or observational, typically not represented numerically.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0000068</oboInOwl:id>
