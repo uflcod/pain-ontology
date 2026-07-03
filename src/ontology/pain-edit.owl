@@ -257,7 +257,6 @@ EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000000> ObjectInte
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000001> (concomitant continuous pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32791919") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000001> "Chronic pain that is persistently occuring in the background.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32791919") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1277654/full") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000001> "Persistent background pain that occurs alongside paroxysmal pain attacks, characteristic of conditions such as trigeminal neuralgia.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000001> "concomitant continuous pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000001> <https://orcid.org/0000-0001-9625-1899>)
@@ -659,7 +658,6 @@ SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000039> <http://purl.bioo
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000040> (chronic pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000040> "Pain that persists for three months or longer.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000040> "Pain that persists or recurs for longer than 3 months, in which each incidence of pain is attributed to the same underlying condition.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000040> "chronic pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.bioontology.org/ontology/PAIN/0000040> "https://orcid.org/0000-0001-9625-1899")
