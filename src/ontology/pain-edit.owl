@@ -1401,6 +1401,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000108> "myofascial pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000108> "http://snomed.info/id/279062009")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000108> <http://purl.bioontology.org/ontology/PAIN/0000109>)
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000627>))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000109> (musculoskeletal pain)
 
