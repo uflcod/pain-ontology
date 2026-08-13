@@ -29,8 +29,6 @@ Annotation(<http://purl.org/dc/terms/description> "The Pain Ontology contains te
 Annotation(<http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/")
 Annotation(<http://purl.org/dc/terms/title> "The Pain Ontology")
 
-Declaration(Class(<http://purl.bioontology.org/ontology/0000049>))
-Declaration(Class(<http://purl.bioontology.org/ontology/0000050>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000000>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000001>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000002>))
@@ -151,6 +149,8 @@ Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000119>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000120>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000121>))
 Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000122>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000123>))
+Declaration(Class(<http://purl.bioontology.org/ontology/PAIN/0000124>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
@@ -220,26 +220,6 @@ AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/000006
 ############################
 #   Classes
 ############################
-
-# Class: <http://purl.bioontology.org/ontology/0000049> (throbbing pain)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/0000049> "Pain that is experienced as a rhythmic, pulsating, or beating sensation in which the pain's intensity waxes and wanes in periodic bursts. Throbbing pain is typically synchronized with the cardiac cycle.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/0000049> "throbbing pain (PAIN)")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/0000049> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/0000049> "2026-04-08T19:58:42Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/0000049> "throbbing pain"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/0000049> <http://snomed.info/id/29695002>)
-EquivalentClasses(<http://purl.bioontology.org/ontology/0000049> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000058>)))
-
-# Class: <http://purl.bioontology.org/ontology/0000050> (chronic high impact pain)
-
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/fact-sheets/high-impact-chronic-pain/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/0000050> "Chronic pain that frequently limits life or work activities.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/0000050> "Chronic pain that significantly impacts a person's ability to function.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/0000050> "chronic high impact (PAIN)")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/0000050> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/0000050> "2026-05-01T20:50:40Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/0000050> "chronic high impact pain"@en)
-SubClassOf(<http://purl.bioontology.org/ontology/0000050> <http://purl.bioontology.org/ontology/PAIN/0000040>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000000> (temporomandibular joint pain)
 
@@ -1536,6 +1516,26 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000122> "2026-07-02T01:48:41Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000122> "osteoarthritis pain"@en)
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000122> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000123> (throbbing pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000123> "Pain that is experienced as a rhythmic, pulsating, or beating sensation in which the pain's intensity waxes and wanes in periodic bursts. Throbbing pain is typically synchronized with the cardiac cycle.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000123> "throbbing pain (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000123> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000123> "2026-04-08T19:58:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000123> "throbbing pain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000123> <http://snomed.info/id/29695002>)
+EquivalentClasses(<http://purl.bioontology.org/ontology/PAIN/0000123> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/PAIN/0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.bioontology.org/ontology/PAIN/0000058>)))
+
+# Class: <http://purl.bioontology.org/ontology/PAIN/0000124> (chronic high impact pain)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.iasp-pain.org/resources/fact-sheets/high-impact-chronic-pain/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000124> "Chronic pain that frequently limits life or work activities.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000124> "Chronic pain that significantly impacts a person's ability to function.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000124> "chronic high impact (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000124> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000124> "2026-05-01T20:50:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000124> "chronic high impact pain"@en)
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000124> <http://purl.bioontology.org/ontology/PAIN/0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
 
