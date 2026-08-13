@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.bioontology.org/ontology/pain/imports/go_import.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/pain/imports/go_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,8 +6,8 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.bioontology.org/ontology/pain/imports/go_import.owl>
-Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/go/releases/2026-01-23/go.owl>)
+Ontology(<http://purl.obolibrary.org/obo/pain/imports/go_import.owl>
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/go/releases/2026-07-26/go.owl>)
 Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/go.owl")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001508>))
@@ -107,7 +107,7 @@ TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0001508> (action potential)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:go_curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:978-0-07-139011-8") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0001508> "A process in which membrane potential cycles through a depolarizing spike, triggered in response to depolarization above some threshold, followed by repolarization. This cycle is driven by the flow of ions through various voltage gated channels with different thresholds and ion specificities.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:978-0-07-139011-8") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0001508> "A process in which membrane potential cycles through a depolarizing spike, triggered in response to depolarization above some threshold, followed by repolarization. This cycle is driven by the flow of ions through various voltage gated channels with different thresholds and ion specificities.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0001508> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0001508> "GO:0001508")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0001508> "Action potentials typically propagate across excitable membranes. This class covers both action potentials that propagate and those that fail to do so.")
@@ -440,13 +440,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0048265> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/GO_0048266> (behavioral response to pain)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:jid") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0048266> "Any process that results in a change in the behavior of an organism as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0048266> "https://github.com/geneontology/go-ontology/issues/31407"^^xsd:anyURI)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0048266> "behavioural response to pain")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0048266> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0048266> "GO:0048266")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0048266> <http://purl.obolibrary.org/obo/go.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0048266> "behavioral response to pain")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0048266> <http://purl.obolibrary.org/obo/GO_0007610>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0048266> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0048265>))
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0048266> <http://purl.obolibrary.org/obo/GO_0048265>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0050877> (nervous system process)
 

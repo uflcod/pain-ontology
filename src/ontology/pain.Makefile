@@ -17,10 +17,6 @@ test-dl: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2
 # ----------------------------------------
 
 IMPORTS =  omo pato uberon ro omrse go nbo cl emro bfo cob
-
-# Define variables needed for bioportal iri	
-URIBASE = http://purl.bioontology.org/ontology
-
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
 IMPORT_FILES = $(IMPORT_OWL_FILES)
@@ -165,9 +161,10 @@ pain_initial_release: prepare_initial_release
 mirror-% force-mirror-%:
 	$(call mirror-ontology,$*,,$(firstword $(subst -, ,$@)))
 
-.PHONY: mirror-emro force-mirror-emro
-mirror-emro force-mirror-emro: | $(MIRRORDIR)
-	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,$(firstword $(subst -, ,$@)))
+## EMRO is part of the OBO Foundry (accepted on 2026-06-23). This targent is not needed for the pain ontology. It can use the OBO mirror of EMRO. However, this target is kept here in case the OBO purl.
+# .PHONY: mirror-emro force-mirror-emro
+# mirror-emro force-mirror-emro: | $(MIRRORDIR)
+#	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,$(firstword $(subst -, ,$@)))
 
 # calling $(MIRRORDIR)/%.owl will not force the mirror to be updated
 # need to use the -B option will force the mirror to download but will
@@ -176,8 +173,9 @@ mirror-emro force-mirror-emro: | $(MIRRORDIR)
 $(MIRRORDIR)/%.owl: | $(MIRRORDIR)
 	$(call mirror-ontology,$*,,)
 
-$(MIRRORDIR)/emro.owl: | $(MIRRORDIR)
-	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,)
+## EMRO is part of the OBO Foundry (accepted on 2026-06-23). This targent is not needed for the pain ontology. It can use the OBO mirror of EMRO. However, this target is kept here in case the OBO purl.
+# $(MIRRORDIR)/emro.owl: | $(MIRRORDIR)
+# 	$(call mirror-ontology,emro,https://raw.githubusercontent.com/uflcod/emotion-response-ontology/main,)
 
 .PHONY: all-mirrors
 all-mirrors:
@@ -304,12 +302,12 @@ endef
 # $(2) is an optional base URL to download from (defaults to $(URIBASE)), 
 # and $(3) is a flag to force update regardless of whether the source has changed or not.
 define mirror-ontology
-		@if [ "$(strip $(MIR))" = "true" ] && \
-				[ "$(strip $(IMP))" = "true" ] && \
-				[ "$(strip $(IMP_LARGE))" = "true" ]; then \
-			echo "*** mirroring $(1) ***"; \
-			download_url_base=$(if $(strip $(2)),$(2),$(OBOBASE)); \
-			echo "url: $$download_url_base/$(1).owl"; \
+	@if [ "$(strip $(MIR))" = "true" ] && \
+			[ "$(strip $(IMP))" = "true" ] && \
+			[ "$(strip $(IMP_LARGE))" = "true" ]; then \
+		echo "*** mirroring $(1) ***"; \
+		download_url_base=$(if $(strip $(2)),$(2),$(URIBASE)); \
+		echo "url: $$download_url_base/$(1).owl"; \
 			\
 		curl -L $$download_url_base/$(strip $(1)).owl \
 			--create-dirs -o $(TMPDIR)/$(strip $(1)).temp.owl --retry 4 --max-time 200; \
