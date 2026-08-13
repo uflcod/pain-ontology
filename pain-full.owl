@@ -17,7 +17,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/pain/pain-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-07-03/pain-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/pain/releases/2026-08-13/pain-full.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -29,7 +29,7 @@
         <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>The Pain Ontology</terms:title>
-        <owl:versionInfo>2026-07-03</owl:versionInfo>
+        <owl:versionInfo>2026-08-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2182,7 +2182,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.bioontology.org/ontology/PAIN/0000002 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
         <obo:IAO_0000115>Pain that is experienced in the skin, muscles, joints, and bones.</obo:IAO_0000115>
         <obo:IAO_0000589>somatic pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
@@ -4625,6 +4625,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.bioontology.org/ontology/PAIN/0000108 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000056"/>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000109"/>
         <obo:IAO_0000115>Musculoskeletal pain that arises from muscle and surrounding fascia, often associated with the presence of trigger points.</obo:IAO_0000115>
         <obo:IAO_0000589>myofascial pain (PAIN)</obo:IAO_0000589>
@@ -4639,8 +4640,8 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.bioontology.org/ontology/PAIN/0000109 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/PAIN/0000109">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000036"/>
-        <obo:IAO_0000115>Pain that originates in the musculoskeletal system.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/PAIN/0000002"/>
+        <obo:IAO_0000115>Somatic pain that originates in the musculoskeletal system.</obo:IAO_0000115>
         <obo:IAO_0000589>musculoskeletal pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T19:47:10Z</terms:created>
