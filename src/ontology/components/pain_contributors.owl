@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.bioontology.org/ontology/pain/components/pain_contributors.owl>
+Ontology(<http://purl.obolibrary.org/obo/pain/components/pain_contributors.owl>
 
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-6378-1703>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))

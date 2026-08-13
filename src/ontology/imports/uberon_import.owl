@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.bioontology.org/ontology/pain/imports/uberon_import.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,8 +6,8 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.bioontology.org/ontology/pain/imports/uberon_import.owl>
-Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/uberon/releases/2025-12-04/uberon.owl>)
+Ontology(<http://purl.obolibrary.org/obo/pain/imports/uberon_import.owl>
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/uberon/releases/2026-06-19/uberon.owl>)
 Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/uberon.owl")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
@@ -218,6 +218,7 @@ SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0002215> "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0002215> "osteoclast SubClassOf 'capable of' some 'bone resorption'")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002215> "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002215> "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. ")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0002215> "RO:0002215")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0002215> "capable_of")
@@ -307,7 +308,6 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/NCBITaxon_33090>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/NCBITaxon_4751>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "AAO:0010825")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "AEO:0000003")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "BILA:0000003")
@@ -423,7 +423,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000075> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000122> (neuron projection bundle)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CARO:0001001") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:DOS") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBbt:00005099") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000122> "A fasciculated bundle of neuron projections (GO:0043005), largely or completely lacking synapses.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CARO:0001001") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBbt:00005099") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-7073-9172") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000122> "A fasciculated bundle of neuron projections (GO:0043005), largely or completely lacking synapses.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/UBERON_0000122> "UBERON:0005163")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000122> "CARO:0001001")
 AnnotationAssertion(Annotation(<https://w3id.org/sssom/mapping_justification> <https://w3id.org/semapv/vocab/ManualMappingCuration>) <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000122> "FBbt:00005099")
@@ -441,7 +441,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000122> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000165> (mouth)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Mouth") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://github.com/obophenotype/uberon/wiki/The-digestive-tract") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000165> "The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening. In vertebrates, this extends to the pharynx and includes gums, lips, tongue and parts of the palate. Typically also includes the teeth, except where these occur elsewhere (e.g. pharyngeal jaws) or protrude from the mouth (tusks).")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000165> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-06-20") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "AAO:0010355") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "AAO") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "AAO:BJB") <http://purl.obolibrary.org/obo/UBPROP_0000001> <http://purl.obolibrary.org/obo/UBERON_0000165> "Cavity in which food is initially ingested and generally contains teeth, tongue and glands.[AAO]")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-09-17") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "VHOG:0000812") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "VHOG") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "DOI:10.1038/nature07309 Hejnol A, Martindale MQ, Acoel development indicates the independent evolution of the bilaterian mouth and anus. Nature (2008)") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "http://bgee.unil.ch/") <http://purl.obolibrary.org/obo/UBPROP_0000003> <http://purl.obolibrary.org/obo/UBERON_0000165> "Molecular and developmental cell lineage data suggest that the acoel mouth opening is homologous to the mouth of protostomes and deuterostomes and that the last common ancestor of the Bilateria (the 'urbilaterian') had only this single digestive opening.[well established][VHOG]")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/UBPROP_0000007> <http://purl.obolibrary.org/obo/UBERON_0000165> "oral")
@@ -540,7 +539,6 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000467> <http://purl.obolibrary.org/obo/NCBITaxon_33090>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000467> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000467> <http://purl.obolibrary.org/obo/NCBITaxon_4751>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000467> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GO:0048731") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/UBERON_0000467> "system")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000467> "AAO:0000007")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000467> "AEO:0000011")
@@ -590,7 +588,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000467> ObjectSomeValuesFrom(
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000475> (organism subdivision)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CARO:0000032") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CARO:DOS") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0001-9114-8737") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000475> "Anatomical structure which is a subdivision of a whole organism, consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CARO:0000032") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0001-9114-8737") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-7073-9172") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000475> "Anatomical structure which is a subdivision of a whole organism, consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000475> <http://purl.obolibrary.org/obo/NCBITaxon_33090>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000475> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000475> <http://purl.obolibrary.org/obo/NCBITaxon_4751>)
@@ -749,7 +747,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000974> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000978> (leg)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Leg#Limb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000978> "The portion of the hindlimb that contains both the stylopod and zeugopod.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0000978> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-09-17") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "VHOG:0000345") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "VHOG") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "ISBN:978-0198540472 Janvier P, Early vertebrates (1996) p.268") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "http://bgee.unil.ch/") <http://purl.obolibrary.org/obo/UBPROP_0000003> <http://purl.obolibrary.org/obo/UBERON_0000978> "Most anatomists now agree that the three proximal bones of the tetrapod limbs are homologous to the two or three proximal elements of the paired fin skeleton of other sarcopterygians, that is the humerus-femur, radius-tibia, and ulna-fibula.[well established][VHOG]")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "3") <http://purl.obolibrary.org/obo/UBPROP_0000013> <http://purl.obolibrary.org/obo/UBERON_0000978> "The term leg can mean: [1] an appendage on which an animal walks [2] the entire hindlimb of a tetrapod [3] the segment of a human leg between knee and ankle (cf FMA) [4] the region of a hindlimb include the stylopod and zeugopod, but excluding the autopod. We define this class as [4], and thus 'leg' is compltely analagous to 'arm'. For [1], see the class 'locomotive weight-bearing appendage'. For [2] we use 'hindlimb'. For")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000978> "BTO:0000721")
@@ -827,7 +824,6 @@ DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0000982> <http://purl.obo
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001021> (nerve)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBbt:00005105") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0002-6601-2165") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0001021> "An enclosed, cable-like bundle of axons in the peripheral nervous system originating in a nerve root in the central nervous system (or a condensed nervous structure) connecting with peripheral structures.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001021> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-08-14") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "TAO:0007009") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "TAO") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "ZFIN:curator") <http://purl.obolibrary.org/obo/UBPROP_0000001> <http://purl.obolibrary.org/obo/UBERON_0001021> "A portion of tissue which is a fasiculated group of axons.[TAO]")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/UBPROP_0000007> <http://purl.obolibrary.org/obo/UBERON_0001021> "nervous")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001021> "AAO:0011070")
@@ -1138,7 +1134,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001464> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001465> (knee)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-6601-2165") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0001465> "A segment of the hindlimb that corresponds to the joint connecting a hindlimb stylopod and zeugopod.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001465> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001465> "BTO:0003595")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001465> "CALOHA:TS-2220")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001465> "EHDAA2:0000895")
@@ -1297,7 +1292,6 @@ DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0001474> <http://purl.obo
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001645> (trigeminal nerve)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0471209627") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Trigeminal_nerve") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0001645> "Cranial nerve that has three branches - the ophthalmic (supplying the skin of the nose and upper jaw), the maxillary and the mandibular (supplying the lower jaw).")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001645> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-06-20") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "AAO:0010470") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "AAO") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "AAO:EJS") <http://purl.obolibrary.org/obo/UBPROP_0000001> <http://purl.obolibrary.org/obo/UBERON_0001645> "Nerve consists of motor and sensory components. Ganglion cells of the sensory component form the proximal part of the trigeminal (Gasserian) ganglion. From the ganglion 3 major rami innervate jaws, snout, and buccal roof.[AAO]")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-09-17") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "VHOG:0000704") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "VHOG") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43, ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.625") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "http://bgee.unil.ch/") <http://purl.obolibrary.org/obo/UBPROP_0000003> <http://purl.obolibrary.org/obo/UBERON_0001645> "We conclude this section by listing some of the many synapomorphies of craniates, including (...) (5) cranial nerves (...) (reference 1); Phylogenetically, the cranial nerves are thought to have evolved from dorsal and ventral nerves of a few anterior spinal nerves that became incorporated into the braincase. Dorsal and ventral nerves fuse in the trunk but not in the head, and they produce two series: dorsal cranial nerves (V, VII, IX, and X) and ventral cranial nerves (III, IV, VI, and XIII) (reference 2).[well established][VHOG]")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "ISBN:0471888893") <http://purl.obolibrary.org/obo/UBPROP_0000008> <http://purl.obolibrary.org/obo/UBERON_0001645> "the ophthalmic usually usually merges with the other two. In some vertebrates, the ophthalmic emerges from the brain separately[Kardong] The trigeminal nerve has 3 branches in mammals - similar branches are present in nonmammalian vertebrates, but in some a separate profundus nerve that corresponds to opthalmic branch in mammls")
@@ -1356,7 +1350,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001645> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001684> (mandible)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Human_mandible") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Mandible") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0001684> "A dentary bone that is the only bone in one of the lateral halves of the lower jaw skeleton.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001684> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/UBPROP_0000007> <http://purl.obolibrary.org/obo/UBERON_0001684> "mandibular")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#external_ontology> "ZFA") <http://purl.obolibrary.org/obo/UBPROP_0000012> <http://purl.obolibrary.org/obo/UBERON_0001684> "Note in ZFA 'mandible' is a syn for the ventral mandibular arch, which is a portion of the 1st pharyngeal arch; however the term 'mandibular symphysis' refers to the dentary")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/UBPROP_0000013> <http://purl.obolibrary.org/obo/UBERON_0001684> "'mandible' also refers to either the upper OR lower part of the beak in birds")
@@ -1470,7 +1463,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001710> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001785> (cranial nerve)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Cranial_nerve") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0001785> "Cranial nerves are nerves that emerge directly from the brain, in contrast to spinal nerves, which emerge from segments of the spinal cord.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001785> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-08-14") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "TAO:0000641") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "TAO") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "ZFIN:curator") <http://purl.obolibrary.org/obo/UBPROP_0000001> <http://purl.obolibrary.org/obo/UBERON_0001785> "Twelve pairs of cranial nerves exit/enter the cranium through openings in the skull. The nerves contain efferent axons with motor and glandular functions, as well as afferent axons from cranial ganglia with sensory functions. The nerves are numbered in a rostral to caudal sequence, with the exception of the lateral line nerves.[TAO]")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-09-17") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "VHOG:0000279") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "VHOG") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "http://bgee.unil.ch/") <http://purl.obolibrary.org/obo/UBPROP_0000003> <http://purl.obolibrary.org/obo/UBERON_0001785> "We conclude this section by listing some of the many synapomorphies of craniates, including (...) (5) cranial nerves (...).[well established][VHOG]")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/UBPROP_0000012> <http://purl.obolibrary.org/obo/UBERON_0001785> "See https://github.com/obophenotype/mouse-anatomy-ontology/issues/6")
@@ -1694,7 +1686,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002389> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0002397> (maxilla)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Maxilla") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://palaeos.com/vertebrates/glossary/glossaryM.html") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0002397> "The bone which normally forms the lateral upper jaw in osteichthyans, including tetrapods.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0002397> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-08-14") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "TAO:0000270") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "TAO") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "TAO:GA_TG") <http://purl.obolibrary.org/obo/UBPROP_0000001> <http://purl.obolibrary.org/obo/UBERON_0002397> "Dermal bone that forms part of the upper jaw, located antero-ventral to the premaxilla. The maxilla is a paired bone.[TAO]")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-06-20") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "AAO:0000285") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "AAO") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "AAO:LAP") <http://purl.obolibrary.org/obo/UBPROP_0000001> <http://purl.obolibrary.org/obo/UBERON_0002397> "Paired, intramembranous bone located on the lateral sides of the skull, posterior to the premaxillae.[AAO]")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#date_retrieved> "2012-08-14") Annotation(<http://www.geneontology.org/formats/oboInOwl#external_class> "TAO:0000270") Annotation(<http://www.geneontology.org/formats/oboInOwl#ontology> "TAO") <http://purl.obolibrary.org/obo/UBPROP_0000002> <http://purl.obolibrary.org/obo/UBERON_0002397> "relationship loss: overlaps autopalatine-maxillary joint (TAO:0001942)[TAO]")
@@ -1703,6 +1694,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#dat
 AnnotationAssertion(<http://purl.obolibrary.org/obo/UBPROP_0000007> <http://purl.obolibrary.org/obo/UBERON_0002397> "maxillary")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/UBERON_0002397> "upper jaw bone")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0002397> "AAO:0000285")
+AnnotationAssertion(Annotation(<https://w3id.org/sssom/mapping_justification> <https://w3id.org/semapv/vocab/LexicalMatching>) <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0002397> "BTO:0006516")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0002397> "CALOHA:TS-2217")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0002397> "EHDAA2:0001068")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0002397> "EHDAA:8043")
@@ -2216,7 +2208,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004905> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/UBERON_0004921> (subdivision of digestive tract)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0002-6601-2165") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0004921> "A proximal-distal subdivision of the digestive tract.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0004921> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<https://w3id.org/sssom/mapping_justification> <https://w3id.org/semapv/vocab/ManualMappingCuration>) <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0004921> "FBbt:00100315")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0004921> "FMA:71131")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FMA:71131") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UBERON_0004921> "alimentary system subdivision")
@@ -2614,7 +2605,6 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0011216> <http://purl.obolibrary.org/obo/NCBITaxon_33090>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0011216> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0011216> <http://purl.obolibrary.org/obo/NCBITaxon_4751>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0011216> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<https://w3id.org/sssom/mapping_justification> <https://w3id.org/semapv/vocab/ManualMappingCuration>) <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0011216> "FBbt:00007330")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0011216> "FMA:67509")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0011216> "SCTID:91690000")
@@ -2740,7 +2730,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0015212> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0034713> (cranial neuron projection bundle)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0471888893") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0002-6601-2165") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0034713> "Any of the cranial nerves, or their central nervous system analogs (the optic tract, the epiphyseal tract). These analogs are not true nerves, and are instead evaginated sensory afferents emanating from the brain.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0034713> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0002-6601-2165") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UBERON_0034713> "cranial nerve fiber bundle")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0002-6601-2165") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UBERON_0034713> "cranial nerve fiber tract")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0002-6601-2165") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UBERON_0034713> "cranial nerve or tract")

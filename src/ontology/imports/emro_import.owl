@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.bioontology.org/ontology/pain/imports/emro_import.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/pain/imports/emro_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,15 +6,15 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.bioontology.org/ontology/pain/imports/emro_import.owl>
-Annotation(<http://purl.org/dc/terms/source> <http://purl.bioontology.org/ontology/emro/releases/2026-04-13/emro.owl>)
-Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.bioontology.org/ontology/emro.owl")
+Ontology(<http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/emro/releases/2026-06-22/emro.owl>)
+Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/emro.owl")
 
-Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000000>))
-Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000001>))
-Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000002>))
-Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
@@ -35,6 +35,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000233>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000424>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000589>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0001900>))
@@ -113,52 +114,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002323> "mere
 #   Classes
 ############################
 
-# Class: <http://purl.bioontology.org/ontology/EMRO/0000000> (emotion process)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000000> "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000000> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000000> <https://orcid.org/0000-0001-9990-8331>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000000> <https://orcid.org/0000-0002-0766-8455>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000000> "2025-11-24T20:50:19Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000000> <http://purl.bioontology.org/ontology/emro.owl>)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000000> "emotion process"@en)
-SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000000> <http://purl.obolibrary.org/obo/GO_0007610>)
-
-# Class: <http://purl.bioontology.org/ontology/EMRO/0000001> (phenomenal cognitive experience)
-
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/consciousness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000001> "A cognitive process during which an organism is aware of something either internal or external to itself.")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000001> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000001> <https://orcid.org/0000-0001-9990-8331>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000001> <https://orcid.org/0000-0002-0766-8455>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000001> "2025-11-24T20:52:17Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000001> <http://purl.bioontology.org/ontology/emro.owl>)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000001> "phenomenal cognitive experience"@en)
-SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000001> <http://purl.obolibrary.org/obo/GO_0050890>)
-
-# Class: <http://purl.bioontology.org/ontology/EMRO/0000002> (emotional experience (feeling))
-
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/feeling") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000002> "A phenomenal cognitive experience evaluated as pleasant or unpleasant.")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000002> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000002> <https://orcid.org/0000-0001-9990-8331>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000002> <https://orcid.org/0000-0002-0766-8455>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000002> "2025-11-24T20:52:39Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000002> <http://purl.bioontology.org/ontology/emro.owl>)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000002> "emotional experience (feeling)"@en)
-EquivalentClasses(<http://purl.bioontology.org/ontology/EMRO/0000002> ObjectIntersectionOf(<http://purl.bioontology.org/ontology/EMRO/0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.bioontology.org/ontology/EMRO/0000000>)))
-SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000002> <http://purl.bioontology.org/ontology/EMRO/0000001>)
-SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.bioontology.org/ontology/EMRO/0000000>))
-
-# Class: <http://purl.bioontology.org/ontology/EMRO/0000005> (sensory experience)
-
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/sensation") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000005> "A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000005> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000005> <https://orcid.org/0000-0001-9990-8331>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000005> <https://orcid.org/0000-0002-0766-8455>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000005> "2025-11-24T20:59:47Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.bioontology.org/ontology/EMRO/0000005> <http://purl.bioontology.org/ontology/emro.owl>)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000005> "sensory experience"@en)
-SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000005> <http://purl.bioontology.org/ontology/EMRO/0000001>)
-
 # Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000015> "process")
@@ -174,6 +129,56 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <htt
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/083-003>) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000015> "(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] ")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/bfo.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0000000> (emotion process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000000> "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000000> "emotion process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000000> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000000> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000000> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0000000> "2025-11-24T20:50:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0000000> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0000000> "emotion process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000000> <http://purl.obolibrary.org/obo/GO_0007610>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0000001> (phenomenal cognitive experience)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/consciousness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000001> "A cognitive process during which an organism is aware of something either internal or external to itself."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000001> "phenomenal cognitive experience (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000001> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000001> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000001> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0000001> "2025-11-24T20:52:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0000001> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0000001> "phenomenal cognitive experience"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000001> <http://purl.obolibrary.org/obo/GO_0050890>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0000002> (emotional experience)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/feeling") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000002> "A phenomenal cognitive experience evaluated as pleasant or unpleasant."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000002> "emotional experience (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000002> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000002> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000002> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0000002> "2025-11-24T20:52:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0000002> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0000002> "emotional experience"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/EMRO_0000002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/EMRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/EMRO_0000000>)))
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000002> <http://purl.obolibrary.org/obo/EMRO_0000001>)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/EMRO_0000000>))
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0000005> (sensory experience)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/sensation") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000005> "A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000005> "sensory experience (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000005> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000005> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000005> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0000005> "2025-11-24T20:59:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0000005> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0000005> "sensory experience"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000005> <http://purl.obolibrary.org/obo/EMRO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0003008> (system process)
 

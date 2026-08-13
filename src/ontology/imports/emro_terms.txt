@@ -1,4 +1,4 @@
-http://purl.bioontology.org/ontology/EMRO/0000000  # emotion process
-http://purl.bioontology.org/ontology/EMRO/0000002  # emotional experience (feeling)
-http://purl.bioontology.org/ontology/EMRO/0000005  # sensory experience
-http://purl.obolibrary.org/obo/BFO_0000050         # part of
+http://purl.obolibrary.org/obo/EMRO_0000000  # emotion process
+http://purl.obolibrary.org/obo/EMRO_0000002  # emotional experience
+http://purl.obolibrary.org/obo/EMRO_0000005  # sensory experience
+http://purl.obolibrary.org/obo/BFO_0000050   # part of
