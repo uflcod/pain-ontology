@@ -274,7 +274,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontol
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000002> "2026-04-08T18:15:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000002> "somatic pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000002> <http://snomed.info/id/48429009>)
-SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000002> <http://purl.bioontology.org/ontology/PAIN/0000056>)
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000002> <http://purl.bioontology.org/ontology/PAIN/0000036>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000003> (allodynia)
 
@@ -1401,10 +1401,11 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/0000108> "myofascial pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000108> "http://snomed.info/id/279062009")
 SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000108> <http://purl.bioontology.org/ontology/PAIN/0000109>)
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000627>))
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000109> (musculoskeletal pain)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000109> "Pain that originates in the musculoskeletal system.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/PAIN/0000109> "Somatic pain that originates in the musculoskeletal system.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.bioontology.org/ontology/PAIN/0000109> "musculoskeletal pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/PAIN/0000109> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/PAIN/0000109> "2026-07-01T19:47:10Z"^^xsd:dateTime)
@@ -1412,7 +1413,7 @@ AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/PAIN/000010
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000109> "http://purl.obolibrary.org/obo/NCIT_C3244")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000109> "http://purl.obolibrary.org/obo/OMIT_0027581")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.bioontology.org/ontology/PAIN/0000109> "http://snomed.info/id/279069000")
-SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000109> <http://purl.bioontology.org/ontology/PAIN/0000036>)
+SubClassOf(<http://purl.bioontology.org/ontology/PAIN/0000109> <http://purl.bioontology.org/ontology/PAIN/0000002>)
 
 # Class: <http://purl.bioontology.org/ontology/PAIN/0000110> (facial pain)
 
