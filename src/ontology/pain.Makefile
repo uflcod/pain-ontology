@@ -16,7 +16,7 @@ test-dl: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo pato uberon ro omrse go nbo cl emro bfo cob
+IMPORTS =  omo pato uberon ro omrse go nbo cl emro bfo cob obi ogms ohd
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
 IMPORT_FILES = $(IMPORT_OWL_FILES)
@@ -131,6 +131,21 @@ $(IMPORTDIR)/cob_import.owl:  $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms.txt
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
 
 $(IMPORTDIR)/obi_import.owl:  $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt
+	@echo "\n *** building $@ *** \n"
+	$(call onotlogy-annotation,$<)
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+
+$(IMPORTDIR)/ogms_import.owl:  $(MIRRORDIR)/ogms.owl $(IMPORTDIR)/ogms_terms.txt
+	@echo "\n *** building $@ *** \n"
+	$(call onotlogy-annotation,$<)
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+
+$(IMPORTDIR)/ido_import.owl:  $(MIRRORDIR)/ido.owl $(IMPORTDIR)/ido_terms.txt
+	@echo "\n *** building $@ *** \n"
+	$(call onotlogy-annotation,$<)
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+
+$(IMPORTDIR)/ohd_import.owl:  $(MIRRORDIR)/ohd.owl $(IMPORTDIR)/ohd_terms.txt
 	@echo "\n *** building $@ *** \n"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
