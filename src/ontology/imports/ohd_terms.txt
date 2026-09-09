@@ -1,0 +1,81 @@
+http://purl.obolibrary.org/obo/OHD_0000002 # dental procedure
+http://purl.obolibrary.org/obo/OHD_0000004 # tooth restoration procedure
+http://purl.obolibrary.org/obo/OHD_0010009 # sensory hypersensitivity
+http://purl.obolibrary.org/obo/OHD_0010012 # sensory hypersensitivity due to crack in enamel
+http://purl.obolibrary.org/obo/OHD_0010014 # dentin hypersensitivity due to exposed dentin
+http://purl.obolibrary.org/obo/OHD_0010016 # dentin hypersensitivity due to tooth wear or abrasion
+http://purl.obolibrary.org/obo/OHD_0010018 # dentin hypersensitivity due to a fracture resulting in exposed dentin
+http://purl.obolibrary.org/obo/OHD_0010021 # periodontitis due to operation
+http://purl.obolibrary.org/obo/OHD_0010025 # gingivitis
+http://purl.obolibrary.org/obo/OHD_0010026 # gingivitis due to infection
+http://purl.obolibrary.org/obo/OHD_0010029 # gingivitis due to bacterial infection
+http://purl.obolibrary.org/obo/OHD_0010031 # viral infection
+http://purl.obolibrary.org/obo/OHD_0010032 # gingivitis due to viral infection
+http://purl.obolibrary.org/obo/OHD_0010034 # fungal infection
+http://purl.obolibrary.org/obo/OHD_0010035 # gingivitis due to fungal infection
+http://purl.obolibrary.org/obo/OHD_0010042 # oral mucosal inflammation
+http://purl.obolibrary.org/obo/OHD_0010043 # oral mucosal inflammation due to infection
+http://purl.obolibrary.org/obo/OHD_0010044 # oral mucosal inflammation due to bacterial infection
+http://purl.obolibrary.org/obo/OHD_0010046 # oral mucosal inflammation due to viral infection
+http://purl.obolibrary.org/obo/OHD_0010048 # oral mucosal inflammation due to fungal infection
+http://purl.obolibrary.org/obo/OHD_0010054 # gingivitis due to injury
+http://purl.obolibrary.org/obo/OHD_0010056 # oral mucosal inflammation due to injury
+http://purl.obolibrary.org/obo/OHD_0010060 # pulpitis
+http://purl.obolibrary.org/obo/OHD_0010066 # reversible pulpitis due to dentin infection
+http://purl.obolibrary.org/obo/OHD_0010068 # irreversible pulpitis due to dentin infection
+http://purl.obolibrary.org/obo/OHD_0010070 # periodontitis
+http://purl.obolibrary.org/obo/OHD_0010072 # periodontitis due to injury
+http://purl.obolibrary.org/obo/OHD_0010075 # dentin hypersensitivity due to developmental dental hard tissue defect
+http://purl.obolibrary.org/obo/OHD_0010080 # reversible pulpitis due to dental caries not extending to the pulp
+http://purl.obolibrary.org/obo/OHD_0010082 # reversible pulpitis due to dental hard tissue fracture with exposed dentin
+http://purl.obolibrary.org/obo/OHD_0010090 # apical periodontitis due to endodontic disease
+http://purl.obolibrary.org/obo/OHD_0010092 # exposed dental pulp due to dental injury
+http://purl.obolibrary.org/obo/OHD_0010096 # bacterial infection
+http://purl.obolibrary.org/obo/OHD_0010098 # irreversible pulpitis due to dental pulp infection
+http://purl.obolibrary.org/obo/OHD_0010100 # periodontal disease
+http://purl.obolibrary.org/obo/OHD_0010103 # chronic periodontitis
+http://purl.obolibrary.org/obo/OHD_0010107 # reversible pulpitis due to tooth crack without evidence of missing tooth substance
+http://purl.obolibrary.org/obo/OHD_0010110 # periodontal disease due to aggressive periodontitis
+http://purl.obolibrary.org/obo/OHD_0010113 # periodontal disease due to necrotizing ulcerative periodontitis
+## http://purl.obolibrary.org/obo/OHD_0010140 # acute pain
+## http://purl.obolibrary.org/obo/OHD_0010141 # chronic pain
+http://purl.obolibrary.org/obo/OHD_0010143 # hyperocclusion
+http://purl.obolibrary.org/obo/OHD_0010144 # hyperarticulation
+http://purl.obolibrary.org/obo/OHD_0010145 # hyperocclusion following dental restorative procedure
+http://purl.obolibrary.org/obo/OHD_0010146 # hyperarticulation following dental restorative procedure
+http://purl.obolibrary.org/obo/OHD_0010148 # dental injury
+http://purl.obolibrary.org/obo/OHD_0010151 # irreversible pulpitis due to dental hard tissue fracture without pulp exposure
+http://purl.obolibrary.org/obo/OHD_0010160 # irreversible pulpitis due to tooth crack without evidence of missing tooth substance
+http://purl.obolibrary.org/obo/OHD_0010163 # irreversible pulpitis due to dental hard tissue fracture with pulp exposure
+http://purl.obolibrary.org/obo/OHD_0010165 # external cervical root resorption process
+http://purl.obolibrary.org/obo/OHD_0010172 # endodontic infection
+http://purl.obolibrary.org/obo/OHD_0010174 # intraradicular endodontic infection
+http://purl.obolibrary.org/obo/OHD_0010176 # extraradicular endodontic infection
+http://purl.obolibrary.org/obo/OHD_0010180 # hematological disorder due to infectious disorder
+http://purl.obolibrary.org/obo/OHD_0010183 # periodontal abscess
+http://purl.obolibrary.org/obo/OHD_0010184 # malignant lesion
+http://purl.obolibrary.org/obo/OHD_0010189 # infective peri-implantitis
+http://purl.obolibrary.org/obo/OHD_0010194 # irreversible pulpitis due to carious pulp exposure and dental pulp infection
+http://purl.obolibrary.org/obo/OHD_0010197 # oral mucosal inflammation due to non-iatrogenic injury
+http://purl.obolibrary.org/obo/OHD_0010199 # oral mucosal inflammation due to radiation or chemotherapy
+http://purl.obolibrary.org/obo/OHD_0010205 # recurrent juvenile parotitis
+http://purl.obolibrary.org/obo/OHD_0010208 # local benign lesion
+http://purl.obolibrary.org/obo/OHD_0010210 # local malignancy
+http://purl.obolibrary.org/obo/OHD_0010212 # remote malignancy
+http://purl.obolibrary.org/obo/OHD_0010220 # chronic frequent pain
+http://purl.obolibrary.org/obo/OHD_0010221 # chronic infrequent pain
+http://purl.obolibrary.org/obo/OHD_0010222 # chronic frequent pain with pain referral
+http://purl.obolibrary.org/obo/OHD_0010223 # chronic frequent pain without pain referral
+http://purl.obolibrary.org/obo/OHD_0010226 # chronic highly frequent pain
+http://purl.obolibrary.org/obo/OHD_0010229 # chronic highly frequent pain without pain referral
+http://purl.obolibrary.org/obo/OHD_0010230 # chronic highly frequent pain with pain referral
+http://purl.obolibrary.org/obo/OHD_0010248 # concomitant continuous pain
+http://purl.obolibrary.org/obo/OHD_0010251 # idiopathic pain
+## http://purl.obolibrary.org/obo/OHD_0010252 # neuropathic pain
+http://purl.obolibrary.org/obo/OHD_0010266 # episodic pain
+http://purl.obolibrary.org/obo/OHD_0010291 # tendonitis
+http://purl.obolibrary.org/obo/OHD_0010305 # myositis
+http://purl.obolibrary.org/obo/OHD_0010306 # inflammatory arthritis
+http://purl.obolibrary.org/obo/OHD_0010307 # non-systemic inflammatory arthritis
+http://purl.obolibrary.org/obo/OHD_0010308 # systemic inflammatory arthritis
+http://purl.obolibrary.org/obo/OHD_0010309 # degenerative joint disease
