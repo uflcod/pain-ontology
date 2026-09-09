@@ -130,6 +130,11 @@ $(IMPORTDIR)/cob_import.owl:  $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms.txt
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
 
+$(IMPORTDIR)/obi_import.owl:  $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt
+	@echo "\n *** building $@ *** \n"
+	$(call onotlogy-annotation,$<)
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+
 # ----------------------------------------
 # Release Management
 # ----------------------------------------

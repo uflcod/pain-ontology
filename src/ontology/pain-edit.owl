@@ -13,6 +13,7 @@ Import(<http://purl.obolibrary.org/obo/pain/imports/cl_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/cob_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/emro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/go_import.owl>)
+Import(<http://purl.obolibrary.org/obo/pain/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pain/imports/ro_import.owl>)
@@ -29,6 +30,9 @@ Annotation(<http://purl.org/dc/terms/description> "The Pain Ontology contains te
 Annotation(<http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/")
 Annotation(<http://purl.org/dc/terms/title> "The Pain Ontology")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000002>))
@@ -151,16 +155,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000121>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000122>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000123>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000124>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000066>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001863>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000061>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PAIN_0000062>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002411>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-6378-1703>))
@@ -220,6 +220,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "ex
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050967> <http://purl.obolibrary.org/obo/GO_0062149>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0062149> (obsolete detection of stimulus involved in sensory perception of pain)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0062149> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000000> (temporomandibular joint pain)
 
@@ -904,11 +912,19 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000065> ObjectIntersecti
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000066> (shooting sensation quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000066> "A sudden, intense, and sharp sensation quality.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000066> "Pain that is experienced in the ankle.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000066> "ankle pain (PAIN)")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000066> "shooting sensation quality (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000066> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000066> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000066> "2025-05-12T17:07:06Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000066> "2026-07-01T15:55:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000066> "ankle pain"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000066> "shooting sensation quality"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000066> <http://snomed.info/id/410705006>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000066> "http://purl.obolibrary.org/obo/HP_0030840")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000066> "http://snomed.info/id/247373008")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000066> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0004454>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000066> <http://purl.obolibrary.org/obo/PAIN_0000042>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000067> (sharp sensation quality)
@@ -1536,25 +1552,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000124> "2026-05-01T20:50:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000124> "chronic high impact pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000124> <http://purl.obolibrary.org/obo/PAIN_0000040>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0050967> (obsolete detection of electrical stimulus involved in sensory perception of pain)
-
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0050967> <http://purl.obolibrary.org/obo/GO_0062149>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0062149> (obsolete detection of stimulus involved in sensory perception of pain)
-
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0062149> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
-
-# Class: <http://purl.obolibrary.org/obo/PAIN_0000066> (ankle pain)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000066> "Pain that is experienced in the ankle.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000066> "ankle pain (PAIN)")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000066> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000066> "2026-07-01T15:55:25Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000066> "ankle pain"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000066> "http://purl.obolibrary.org/obo/HP_0030840")
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000066> "http://snomed.info/id/247373008")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000066> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0004454>)))
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000068> (qualitative)
 
