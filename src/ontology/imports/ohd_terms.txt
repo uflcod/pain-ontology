@@ -37,8 +37,6 @@ http://purl.obolibrary.org/obo/OHD_0010103 # chronic periodontitis
 http://purl.obolibrary.org/obo/OHD_0010107 # reversible pulpitis due to tooth crack without evidence of missing tooth substance
 http://purl.obolibrary.org/obo/OHD_0010110 # periodontal disease due to aggressive periodontitis
 http://purl.obolibrary.org/obo/OHD_0010113 # periodontal disease due to necrotizing ulcerative periodontitis
-## http://purl.obolibrary.org/obo/OHD_0010140 # acute pain
-## http://purl.obolibrary.org/obo/OHD_0010141 # chronic pain
 http://purl.obolibrary.org/obo/OHD_0010143 # hyperocclusion
 http://purl.obolibrary.org/obo/OHD_0010144 # hyperarticulation
 http://purl.obolibrary.org/obo/OHD_0010145 # hyperocclusion following dental restorative procedure
@@ -62,16 +60,8 @@ http://purl.obolibrary.org/obo/OHD_0010205 # recurrent juvenile parotitis
 http://purl.obolibrary.org/obo/OHD_0010208 # local benign lesion
 http://purl.obolibrary.org/obo/OHD_0010210 # local malignancy
 http://purl.obolibrary.org/obo/OHD_0010212 # remote malignancy
-http://purl.obolibrary.org/obo/OHD_0010220 # chronic frequent pain
-http://purl.obolibrary.org/obo/OHD_0010221 # chronic infrequent pain
-http://purl.obolibrary.org/obo/OHD_0010222 # chronic frequent pain with pain referral
-http://purl.obolibrary.org/obo/OHD_0010223 # chronic frequent pain without pain referral
-http://purl.obolibrary.org/obo/OHD_0010226 # chronic highly frequent pain
-http://purl.obolibrary.org/obo/OHD_0010229 # chronic highly frequent pain without pain referral
-http://purl.obolibrary.org/obo/OHD_0010230 # chronic highly frequent pain with pain referral
 http://purl.obolibrary.org/obo/OHD_0010248 # concomitant continuous pain
 http://purl.obolibrary.org/obo/OHD_0010251 # idiopathic pain
-## http://purl.obolibrary.org/obo/OHD_0010252 # neuropathic pain
 http://purl.obolibrary.org/obo/OHD_0010266 # episodic pain
 http://purl.obolibrary.org/obo/OHD_0010291 # tendonitis
 http://purl.obolibrary.org/obo/OHD_0010305 # myositis
