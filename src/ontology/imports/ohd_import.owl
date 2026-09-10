@@ -17,12 +17,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000504>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000586>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000061>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000085>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000096>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000097>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000102>))
@@ -111,7 +109,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0010205>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0010208>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0010210>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0010212>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0010248>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0010289>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0010291>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0010305>))
@@ -274,14 +271,6 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0000011
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000020> (symptom)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000020> "A process experienced by the patient, which can only be experienced by the patient, that is hypothesized to be clinically relevant."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OGMS_0000020> "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OGMS_0000020> <http://purl.obolibrary.org/obo/ogms.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000020> "symptom")
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000020> <http://purl.obolibrary.org/obo/BFO_0000015>)
-
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000031> (disease)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000031> "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism."@en)
@@ -323,15 +312,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OGMS_0000061> <http://purl.obolibrary.org/obo/ogms.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000061> "pathological bodily process")
 SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000061> <http://purl.obolibrary.org/obo/OGMS_0000060>)
-
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000085> (pain)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000085> "A bodily process in an organism S involving two integrated levels: (a) activation of the nociceptive system and associated emotion generating brain components of S, and (b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000085> "Albert Goldfain")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OGMS_0000085> "http://www.referent-tracking.com/RTU/sendfile/?file=painTokyo1_27_2011.pdf")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OGMS_0000085> <http://purl.obolibrary.org/obo/ogms.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000085> "pain")
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000085> <http://purl.obolibrary.org/obo/OGMS_0000020>)
 
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000096> (health care process)
 
@@ -1195,15 +1175,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OHD_0010212> <http://purl.obolibrary.org/obo/ohd.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0010212> "remote malignancy"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OHD_0010212> <http://purl.obolibrary.org/obo/OHD_0010184>)
-
-# Class: <http://purl.obolibrary.org/obo/OHD_0010248> (concomitant continuous pain)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OHD_0010248> "Pain that is persistently occuring in the background.")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OHD_0010248> <https://orcid.org/0009-0003-5583-4731>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OHD_0010248> "2025-07-02T19:13:19Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OHD_0010248> <http://purl.obolibrary.org/obo/ohd.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0010248> "concomitant continuous pain"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OHD_0010248> <http://purl.obolibrary.org/obo/OGMS_0000085>)
 
 # Class: <http://purl.obolibrary.org/obo/OHD_0010289> (inflammation)
 
