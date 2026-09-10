@@ -1178,7 +1178,8 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMI
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000090> "orofacial pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000090> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000090> <https://orcid.org/0009-0003-5583-4731>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000090> "2025-06-23T17:02:39Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000090> "2025-04-04T15:42:46Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0000090> "http://purl.obolibrary.org/obo/OHD_0010296")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000090> "orofacial pain"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000090> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000089> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0000165>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0001456>))))
 

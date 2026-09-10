@@ -79,3 +79,4 @@ http://purl.obolibrary.org/obo/OHD_0010306 # inflammatory arthritis
 http://purl.obolibrary.org/obo/OHD_0010307 # non-systemic inflammatory arthritis
 http://purl.obolibrary.org/obo/OHD_0010308 # systemic inflammatory arthritis
 http://purl.obolibrary.org/obo/OHD_0010309 # degenerative joint disease
+http://purl.obolibrary.org/obo/OHD_0010296 # 
