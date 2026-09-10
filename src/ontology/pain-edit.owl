@@ -175,6 +175,7 @@ Declaration(NamedIndividual(<https://orcid.org/0009-0006-7251-3026>))
 Declaration(NamedIndividual(<https://orcid.org/0009-0008-8150-9779>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OHD_0010296>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
@@ -189,12 +190,28 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/modified>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#broadMatch>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#closeMatch>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#narrowMatch>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#note>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/OHD_0010296> (ICOP)
+
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/OHD_0010296> "This subset property pulls out terms related to the International Classification of Orofacial Pain, 1st edition.")
+AnnotationAssertion(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/OHD_0010296> "PMID:32103673")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0010296> "ICOP")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/OHD_0010296> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#SubsetProperty> (subset_property)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#SubsetProperty> "subset_property")
+
 
 ############################
 #   Object Properties

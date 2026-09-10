@@ -143,29 +143,14 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000601>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OHD_0010296>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#source>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#exactMatch>))
 Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasDerivedFrom>))
-############################
-#   Annotation Properties
-############################
-
-# Annotation Property: <http://purl.obolibrary.org/obo/OHD_0010296> (ICOP)
-
-AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/OHD_0010296> "This subset property pulls out terms related to the International Classification of Orofacial Pain, 1st edition.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#source> <http://purl.obolibrary.org/obo/OHD_0010296> "PMID: 32103673")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OHD_0010296> "PMID:32103673")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OHD_0010296> <http://purl.obolibrary.org/obo/ohd.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0010296> "ICOP"@en)
-
 
 
 ############################
