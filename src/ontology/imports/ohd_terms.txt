@@ -61,8 +61,6 @@ http://purl.obolibrary.org/obo/OHD_0010208 # local benign lesion
 http://purl.obolibrary.org/obo/OHD_0010210 # local malignancy
 http://purl.obolibrary.org/obo/OHD_0010212 # remote malignancy
 http://purl.obolibrary.org/obo/OHD_0010248 # concomitant continuous pain
-http://purl.obolibrary.org/obo/OHD_0010251 # idiopathic pain
-http://purl.obolibrary.org/obo/OHD_0010266 # episodic pain
 http://purl.obolibrary.org/obo/OHD_0010291 # tendonitis
 http://purl.obolibrary.org/obo/OHD_0010305 # myositis
 http://purl.obolibrary.org/obo/OHD_0010306 # inflammatory arthritis
