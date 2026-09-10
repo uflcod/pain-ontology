@@ -10,15 +10,19 @@ Ontology(<http://purl.obolibrary.org/obo/pain/imports/pato_import.owl>
 Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/pato/releases/2025-05-14/pato.owl>)
 Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/pato.owl")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000057>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000068>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000069>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000161>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000380>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000627>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000689>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000912>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001167>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
@@ -38,6 +42,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002304>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002323>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002387>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002414>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0050000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0055003>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>))
@@ -50,6 +56,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002500>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002595>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002604>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
@@ -168,6 +175,17 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002595> <http://purl.obo
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000044> (frequency)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:http://en.wikipedia.org/wiki/frequency") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000044> "A physical quality which inheres in a bearer by virtue of the number of the bearer's repetitive actions in a particular time.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000044> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000044> "PATO:0000044")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000044> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000044> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000044> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000044> "frequency")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000044> <http://purl.obolibrary.org/obo/PATO_0050000>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000051> (morphology)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000051> "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure.")
@@ -240,6 +258,32 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_000014
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000141> "structure")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000141> <http://purl.obolibrary.org/obo/PATO_0000051>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000161> (rate)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:melissa") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000161> "A quality of a single process inhering in a bearer by virtue of the bearer's occurrence per unit time.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000161> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000161> "PATO:0000161")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000161> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000161> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000161> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000161> "rate")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000161> <http://purl.obolibrary.org/obo/PATO_0002062>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000380> (increased frequency)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000380> "A frequency which is relatively high.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002604> <http://purl.obolibrary.org/obo/PATO_0000380> <http://purl.obolibrary.org/obo/PATO_0000381>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000380> "high frequency")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000380> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000380> "frequent")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000380> "PATO:0000380")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000380> <http://purl.obolibrary.org/obo/pato#mpath_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000380> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000380> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000380> "increased frequency")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000380> <http://purl.obolibrary.org/obo/PATO_0000044>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000380> <http://purl.obolibrary.org/obo/PATO_0055003>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000389> (acute)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "dictionary:reference") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000389> "A quality of a process inhering in a bearer by virtue of the bearer's having a sudden onset, sharp rise, and short course.")
@@ -279,6 +323,21 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000689> <http://purl.obolibrary.org/obo/pato.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000689> "continuous")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000689> <http://purl.obolibrary.org/obo/PATO_0000057>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000912> (increased rate)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATO:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000912> "A rate which is relatively high.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002604> <http://purl.obolibrary.org/obo/PATO_0000912> <http://purl.obolibrary.org/obo/PATO_0000911>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000912> "fast rate")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000912> "high rate")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000912> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000912> "PATO:0000912")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000912> <http://purl.obolibrary.org/obo/pato#mpath_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000912> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000912> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000912> "increased rate")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000912> <http://purl.obolibrary.org/obo/PATO_0000161>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000912> <http://purl.obolibrary.org/obo/PATO_0002304>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001020> (damage)
 
@@ -533,6 +592,27 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0002414> <http://purl.obolibrary.org/obo/pato.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002414> "chronic-active")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002414> <http://purl.obolibrary.org/obo/PATO_0001863>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0050000> (rate of occurence)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-9943-9018") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0050000> "The number of repeated events per unit time, occurring in a repeating series. (e.g. the number of heart beats occurring over 1 minute)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0050000> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0050000> "PATO:0050000")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0050000> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0050000> "rate of occurence")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0050000> <http://purl.obolibrary.org/obo/PATO_0000161>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0055003> (increased rate of occurrence)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0003-4148-4606") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0055003> "A rate of occurrence that is relatively high.")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/PATO_0055003> "2020-08-19T09:23:19Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0055003> <https://orcid.org/0000-0003-4148-4606>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0055003> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0055003> "PATO:0055003")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0055003> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0055003> "increased rate of occurrence")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0055003> <http://purl.obolibrary.org/obo/PATO_0000912>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0055003> <http://purl.obolibrary.org/obo/PATO_0050000>)
 
 
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002131>)

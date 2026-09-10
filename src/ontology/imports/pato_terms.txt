@@ -10,3 +10,4 @@ http://purl.obolibrary.org/obo/PATO_0001566   # distributed
 http://purl.obolibrary.org/obo/PATO_0000689   # continuous
 http://purl.obolibrary.org/obo/PATO_0001551   # increased sensitivity of a process
 http://purl.obolibrary.org/obo/PATO_0001552   # decreased sensitivity of a process
+http://purl.obolibrary.org/obo/PATO_0000380   # increased frequency
