@@ -44,6 +44,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002304>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002323>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002387>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002414>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002630>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0050000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0055003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0055004>))
@@ -624,6 +625,18 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0002414> <http://purl.obolibrary.org/obo/pato.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002414> "chronic-active")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002414> <http://purl.obolibrary.org/obo/PATO_0001863>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002630> (episodic)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATO:MAH") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002630> "An occurrence quality inhering in a bearer by virtue of the bearer's having a course that occurs occasionally.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0002630> <https://orcid.org/0000-0001-9114-8737>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002630> "2014-05-26T06:50:16Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002630> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002630> "PATO:0002630")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0002630> <http://purl.obolibrary.org/obo/pato#hpo_slim>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0002630> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002630> "episodic")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002630> <http://purl.obolibrary.org/obo/PATO_0000057>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0050000> (rate of occurence)
 

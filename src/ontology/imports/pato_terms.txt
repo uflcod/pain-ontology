@@ -12,3 +12,4 @@ http://purl.obolibrary.org/obo/PATO_0001551   # increased sensitivity of a proce
 http://purl.obolibrary.org/obo/PATO_0001552   # decreased sensitivity of a process
 http://purl.obolibrary.org/obo/PATO_0000380   # increased frequency
 http://purl.obolibrary.org/obo/PATO_0000381   # decreased frequency
+http://purl.obolibrary.org/obo/PATO_0002630   # episodic
