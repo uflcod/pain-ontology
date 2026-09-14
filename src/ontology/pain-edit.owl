@@ -1279,6 +1279,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000038> "ep
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000038> <http://purl.obolibrary.org/obo/HP_0032148>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.obolibrary.org/obo/PAIN_0000038> <http://purl.obolibrary.org/obo/NCIT_C9203>)
 EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000038> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002630>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000038> <http://purl.obolibrary.org/obo/PAIN_0000128>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000039> (tingling sensation quality)
 
@@ -2134,6 +2135,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000114> "intermittent pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000114> "http://snomed.info/id/314642004")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000114> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PAIN_0000113>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000114> <http://purl.obolibrary.org/obo/PAIN_0000128>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000115> (jaw pain)
 
