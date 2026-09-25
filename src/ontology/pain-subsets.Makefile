@@ -33,6 +33,17 @@ $(SUBSETDIR)/icop.owl: $(ONT).owl $(SPARQLDIR)/icop-subset.rq $(SUBSETDIR)/icop-
 			--version-iri $(URIBASE)/$(ONT)/releases/$(VERSION)/$(notdir $@) \
 			--annotation owl:versionInfo $(VERSION) \
 		--output $@ &&\
-	rm $@.tmp.owl
+	rm $@.tmp.owl &&\
+	rm $@.tmp.txt
 .PRECIOUS: $(SUBSETDIR)/icop.owl
 
+$(SUBSETDIR)/%.tsv: $(SUBSETDIR)/%.owl
+	$(ROBOT) query -f tsv -i $< -s ../sparql/labels.sparql $@
+.PRECIOUS: $(SUBSETDIR)/%.tsv
+
+$(SUBSETDIR)/%.obo: $(SUBSETDIR)/%.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+
+$(SUBSETDIR)/%.json: $(SUBSETDIR)/%.owl
+	$(ROBOT) convert --input $< --check false -f json -o $@.tmp.json &&\
+	mv $@.tmp.json $@

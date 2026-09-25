@@ -309,22 +309,6 @@ $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
 		cp $(TMPDIR)/mirror-$*.owl $@; fi; fi
 
 
-
-
-# ----------------------------------------
-# Subsets
-# ----------------------------------------
-$(SUBSETDIR)/%.tsv: $(SUBSETDIR)/%.owl
-	$(ROBOT) query -f tsv -i $< -s ../sparql/labels.sparql $@
-.PRECIOUS: $(SUBSETDIR)/%.tsv
-
-$(SUBSETDIR)/%.owl: $(ONT).owl | $(SUBSETDIR)
-	$(OWLTOOLS) $< --extract-ontology-subset --fill-gaps --subset $* -o $@.tmp.owl && mv $@.tmp.owl $@ &&\
-	$(ROBOT) annotate --input $@ --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $@.tmp.owl && mv $@.tmp.owl $@
-.PRECIOUS: $(SUBSETDIR)/%.owl
-
-
-
 # ---------------------------------------------
 # Sparql queries: Table exports / Query Reports
 # ---------------------------------------------
