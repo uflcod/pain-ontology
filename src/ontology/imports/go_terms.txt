@@ -25,3 +25,5 @@ http://purl.obolibrary.org/obo/GO_0050965  # detection of temperature stimulus i
 http://purl.obolibrary.org/obo/GO_0046960  # sensitization
 http://purl.obolibrary.org/obo/GO_0050893  # sensory processing
 http://purl.obolibrary.org/obo/GO_0050894  # determination of affect
+http://purl.obolibrary.org/obo/GO_0002524  # hypersensitivity
+http://purl.obolibrary.org/obo/GO_0006955  # immune response
