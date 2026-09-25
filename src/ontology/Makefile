@@ -535,3 +535,4 @@ endef
 export data
 
 include pain.Makefile
+include pain-subsets.Makefile
