@@ -158,6 +158,9 @@ $(IMPORTDIR)/ohd_import.owl:  $(MIRRORDIR)/ohd.owl $(IMPORTDIR)/ohd_terms.txt
 pain_release: prepare_release
 	@tmp_release_assets="$(patsubst %, $(RELEASEDIR)/%, $(RELEASE_ASSETS))"; \
 	for f in $$tmp_release_assets; do \
+		case "$$f" in \
+			*.tsv) continue ;; \
+		esac; \
 		$(call remove-obsolete-class,$$f); \
 	done
 
@@ -169,6 +172,9 @@ pain_release_fast:
 pain_initial_release: prepare_initial_release
 	@tmp_release_assets="$(patsubst %, $(RELEASEDIR)/%, $(RELEASE_ASSETS))"; \
 	for f in $$tmp_release_assets; do \
+		case "$$f" in \
+			*.tsv) continue ;; \
+		esac; \
 		$(call remove-obsolete-class,$$f); \
 	done
 

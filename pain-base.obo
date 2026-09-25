@@ -1,0 +1,3828 @@
+format-version: 1.2
+data-version: pain/releases/2026-09-25/pain-base.owl
+date: 25:09:2026 19:36
+subsetdef: PAIN:0010296 ""
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: prov http://www.w3.org/ns/prov# 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
+idspace: terms http://purl.org/dc/terms/ 
+ontology: pain/pain-base
+property_value: dc:type IAO:8000001
+property_value: owl:versionInfo "2026-09-25" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:contributor https://orcid.org/0009-0006-7251-3026
+property_value: terms:created "2022-08-23" xsd:string
+property_value: terms:description "The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee)." xsd:string
+property_value: terms:license "http://creativecommons.org/licenses/by/4.0/" xsd:string
+property_value: terms:title "The Pain Ontology" xsd:string
+
+[Term]
+id: GO:0050967
+is_a: GO:0062149
+
+[Term]
+id: GO:0062149
+is_a: oboInOwl:ObsoleteClass ! obsolete class
+
+[Term]
+id: OHD:0010220
+name: chronic frequent pain
+def: "Chronic pain that occurs 1-14 days a month." []
+intersection_of: PAIN:0000040 ! chronic pain
+intersection_of: RO:0000053 PATO:0000380
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:11:00Z" xsd:dateTime
+
+[Term]
+id: OHD:0010221
+name: chronic infrequent pain
+def: "Chronic pain that occurs less than one day a month." []
+intersection_of: PAIN:0000040 ! chronic pain
+intersection_of: RO:0000053 PATO:0000381
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:13:04Z" xsd:dateTime
+
+[Term]
+id: OHD:0010222
+name: chronic frequent pain with pain referral
+def: "Chronic frequent pain that occurs beyond the affected site." []
+intersection_of: OHD:0010220 ! chronic frequent pain
+intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:14:42Z" xsd:dateTime
+
+[Term]
+id: OHD:0010223
+name: chronic frequent pain without pain referral
+def: "Chronic frequent pain that s localized to the affected area." []
+is_a: OHD:0010220 ! chronic frequent pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:15:41Z" xsd:dateTime
+
+[Term]
+id: OHD:0010226
+name: chronic highly frequent pain
+def: "Chronic pain that occurs more than 15 days a month for more than 4 months." []
+is_a: OHD:0010220 ! chronic frequent pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:22:21Z" xsd:dateTime
+
+[Term]
+id: OHD:0010229
+name: chronic highly frequent pain without pain referral
+def: "Chronic highly frequent pain that is localized to the affected area." []
+is_a: OHD:0010226 ! chronic highly frequent pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:35:37Z" xsd:dateTime
+
+[Term]
+id: OHD:0010230
+name: chronic highly frequent pain with pain referral
+def: "Chronic highly frequent pain with pain referral that occurs beyond the affected area." []
+intersection_of: OHD:0010226 ! chronic highly frequent pain
+intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:37:56Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000000
+name: temporomandibular joint pain
+def: "Pain that is experienced in the temporomandibular joint." []
+subset: http://purl.obolibrary.org/obo/PAIN_0010296
+synonym: "TMJ pain" EXACT []
+intersection_of: PAIN:0000090 ! orofacial pain
+intersection_of: PAIN:0000062 UBERON:0003700 ! experienced in
+property_value: IAO:0000589 "temporomandibular joint pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2026-03-17T13:10:32Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000001
+name: concomitant continuous pain
+def: "Persistent background pain that occurs alongside paroxysmal pain attacks, characteristic of conditions such as trigeminal neuralgia." [] {IAO:0000119="https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1277654/full", IAO:0000119="PMID:32791919"}
+is_a: PAIN:0000040 ! chronic pain
+relationship: RO:0000053 PATO:0000689
+property_value: IAO:0000589 "concomitant continuous pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2026-04-08T16:42:44Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000002
+name: somatic pain
+def: "Pain that is experienced in the skin, muscles, joints, and bones." [] {IAO:0000119="https://www.verywellhealth.com/what-is-somatic-pain-2564619"}
+is_a: PAIN:0000036 ! pain
+is_a: PAIN:0000130 ! spatially specified pain
+property_value: IAO:0000589 "somatic pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/48429009
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-04-08T18:15:23Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000003
+name: allodynia
+def: "Pain due to a stimulus that does not normally provoke pain." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology"}
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "allodynia (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0012533" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C180616" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SYMP_0000840" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/UPHENO_7000639" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/247404004" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T15:38:59Z" xsd:dateTime
+property_value: terms:description "The stimulus leads to an unexpectedly painful response. This is a clinical term that does not imply a mechanism. Allodynia may be seen after different types of somatosensory stimuli applied to many different tissues.\nSee entry in https://www.iasp-pain.org/resources/terminology." xsd:string
+
+[Term]
+id: PAIN:0000004
+name: sensitivity to painful stimulus
+def: "A sensitivity of a process that characterizes a response to a painful stimulus." []
+is_a: PATO:0001457
+property_value: IAO:0000589 "sensitivity to painful stimulus (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T23:13:11Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000006
+name: hyperalgesia
+def: "Increased pain from a stimulus that normally provokes pain." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology"}
+is_a: PAIN:0000036 ! pain
+relationship: RO:0000053 PAIN:0000117 ! increased sensitivity to painful stimulus
+property_value: IAO:0000589 "hyperalgesia (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/MP_0005407" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SYMP_0000836" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/55406008" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T23:22:01Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000007
+name: hypoalgesia
+def: "Diminished pain in response to a normally painful stimulus." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology"}
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "hypoalgesia (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/MP_0003043" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SYMP_0000835" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/6810008" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T23:29:23Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000008
+name: paresthesia
+def: "An abnormal sensory experience, whether spontaneous or evoked, that is not unpleasant." []
+is_a: EMRO:0000005
+property_value: IAO:0000589 "paresthesia (PAIN)" xsd:string
+property_value: skos:closeMatch "http://id.nlm.nih.gov/mesh/D010292" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0003401" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C28177" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SYMP_0000435" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/91019004" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T23:48:57Z" xsd:dateTime
+property_value: terms:description "Paresthesia be used to describe an abnormal sensation that is not unpleasant while dysesthesia be used preferentially for an abnormal sensation that is considered to be unpleasant. The use of one term (paresthesia) to indicate spontaneous sensations and the other to refer to evoked sensations is not favored. There is a sense in which, since paresthesia refers to abnormal sensations in general, it might include dysesthesia, but the reverse is not true. Dysesthesia does not include all abnormal sensations, but only those that are unpleasant.\nSee entry in https://www.iasp-pain.org/resources/terminology." xsd:string
+
+[Term]
+id: PAIN:0000009
+name: obsolete pain testing procedure
+is_a: oboInOwl:ObsoleteClass ! obsolete class
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000010
+name: obsolete temperature pain testing procedure
+is_a: PAIN:0000009 ! obsolete pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000011
+name: obsolete heat pain testing procedure
+is_a: PAIN:0000010 ! obsolete temperature pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000012
+name: obsolete cold pain testing procedure
+is_a: PAIN:0000010 ! obsolete temperature pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000013
+name: obsolete temporal summation pain testing procedure
+is_a: PAIN:0000009 ! obsolete pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000014
+name: obsolete temporal summation of heat pain testing procedure
+is_a: PAIN:0000011 ! obsolete heat pain testing procedure
+is_a: PAIN:0000019 ! obsolete temporal summation of temperature pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000015
+name: obsolete temporal summation of cold pain testing procedure
+is_a: PAIN:0000012 ! obsolete cold pain testing procedure
+is_a: PAIN:0000019 ! obsolete temporal summation of temperature pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000016
+name: obsolete pressure pain testing procedure
+is_a: PAIN:0000009 ! obsolete pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000017
+name: obsolete punctate pain testing procedure
+is_a: PAIN:0000009 ! obsolete pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000018
+name: obsolete temporal summation of punctate pain testing procedure
+is_a: PAIN:0000013 ! obsolete temporal summation pain testing procedure
+is_a: PAIN:0000017 ! obsolete punctate pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000019
+name: obsolete temporal summation of temperature pain testing procedure
+is_a: PAIN:0000010 ! obsolete temperature pain testing procedure
+is_a: PAIN:0000013 ! obsolete temporal summation pain testing procedure
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000020
+name: obsolete pain sensitivity
+is_a: oboInOwl:ObsoleteClass ! obsolete class
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000021
+name: paroxysmal pain
+def: "Pain occurring as sudden, brief, recurrent attacks. It is often severe in intensity." []
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "paroxysmal pain (PAIN)" xsd:string
+property_value: skos:relatedMatch "http://purl.obolibrary.org/obo/MONDO_0008179" xsd:string
+property_value: skos:relatedMatch "http://snomed.info/id/699190008" xsd:string
+property_value: skos:relatedMatch "http://www.orpha.net/ORDO/Orphanet_46348" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T23:58:46Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000022
+name: pelvic pain
+def: "Pain that is experienced in the pelvis." []
+intersection_of: PAIN:0000056 ! localized pain
+intersection_of: PAIN:0000062 UBERON:0002355 ! experienced in
+property_value: IAO:0000589 "pelvic pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://id.nlm.nih.gov/mesh/D017699" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C40122" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/30473006" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T00:09:24Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000023
+name: postsurgical pain
+def: "Pain that develops after a surgical procedure, occurring at or near the surgical site." []
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "postsurgical pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://id.nlm.nih.gov/mesh/D010149" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C34887" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/213299007" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T00:15:17Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000024
+name: pressure sensation quality
+def: "A sensation quality that characterizes a sensation as involving compression, heaviness, or sustained force applied to a body region." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "pressure sensation quality (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T00:18:59Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000025
+name: pressure pain
+def: "Pain that is experienced as a sensation of compression, heaviness, or sustained force." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000024 ! experienced as pressure sensation quality
+property_value: IAO:0000589 "pressure pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T00:22:19Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000026
+name: obsolete pain questionnaire
+is_a: oboInOwl:ObsoleteClass ! obsolete class
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000027
+name: obsolete In Vivo Coping Questionnaire
+is_a: PAIN:0000026 ! obsolete pain questionnaire
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000028
+name: obsolete Pain Vigilance and Awareness Questionnaire
+is_a: PAIN:0000026 ! obsolete pain questionnaire
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000029
+name: obsolete pain scale score
+is_a: oboInOwl:ObsoleteClass ! obsolete class
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000030
+name: obsolete Kohn Reactivity Scale
+is_a: PAIN:0000029 ! obsolete pain scale score
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000031
+name: obsolete Graded Chronic Pain Scale
+is_a: PAIN:0000029 ! obsolete pain scale score
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000032
+name: obsolete Likert Scale
+is_a: PAIN:0000029 ! obsolete pain scale score
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000033
+name: obsolete Western Ontario and McMaster Universities Osteoarthritis Index
+is_a: PAIN:0000029 ! obsolete pain scale score
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000034
+name: obsolete widespread condition questionnaire
+is_a: PAIN:0000026 ! obsolete pain questionnaire
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+is_obsolete: true
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000035
+name: temporomandibular disorder pain
+def: "Pain associated with temporomandibular disorders, affecting the masticatory muscles, the temporomandibular joint, or associated structures." []
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "temporomandibular disorder pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T00:24:58Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000036
+name: pain
+def: "An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology/"}
+comment: Six key notes and etymology:\n\n - Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.\n \n- Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.\n\n- Through their life experiences, individuals learn the concept of pain.\n \n- A person’s report of an experience as pain should be respected.\n \n- Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.\n\n - Verbal description is only one of several behaviors to express pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.
+comment: The "emotional" part of pain captures the affective (i.e., unpleasant) dimension of experiencing pain.
+is_a: EMRO:0000005
+relationship: BFO:0000050 EMRO:0000000
+relationship: RO:0002404 GO:0019233
+property_value: IAO:0000589 "pain (PAIN)" xsd:string
+property_value: seeAlso "- The Revised IASP definition of pain: concepts, challenges, and compromises. \nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/\n\n- Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums." xsd:string
+property_value: skos:closeMatch HP:0012531
+property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D010146
+property_value: skos:closeMatch MFOEM:000203
+property_value: skos:closeMatch NCIT:C3303
+property_value: skos:closeMatch OGMS:0000085
+property_value: skos:closeMatch OMIT:0011149
+property_value: skos:closeMatch SCDO:0000851
+property_value: skos:closeMatch SIO:000951
+property_value: skos:closeMatch SYMP:0000099
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T18:46:52Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000037
+name: idiopathic pain
+def: "Pain without known cause or of spontaneous origin." [] {IAO:0000119="https://en.wikipedia.org/wiki/Idiopathic_disease", IAO:0000119="PMID:41307755"}
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0000053 PAIN:0000127 ! idiopathic
+property_value: IAO:0000589 "idiopathic pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2026-04-08T17:09:41Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000038
+name: episodic pain
+def: "Acute transient pain that is severe and has an intensity that flares over baseline." [] {IAO:0000119="PMID:16675817"}
+synonym: "breakthrough pain" RELATED []
+is_a: PAIN:0000128 ! temporally specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0000053 PATO:0002630
+property_value: IAO:0000589 "episodic pain (PAIN)" xsd:string
+property_value: skos:closeMatch HP:0032148
+property_value: skos:relatedMatch NCIT:C9203
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2026-04-08T17:10:12Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000039
+name: tingling sensation quality
+def: "A prickling, pins-and-needles sensation quality, often with a fine, vibratory character." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "tingling sensation quality (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T00:27:41Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000040
+name: chronic pain
+def: "Pain that persists or recurs for longer than 3 months, in which each incidence of pain is attributed to the same underlying condition." [] {IAO:0000119="https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/"}
+comment: In many cases, the pain is initially caused by tissue damage or disease. The continuation of the pain is often the result of pathological changes in the central nervous system.
+is_a: PAIN:0000128 ! temporally specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0000053 PATO:0001863
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+property_value: IAO:0000589 "chronic pain (PAIN)" xsd:string
+property_value: skos:closeMatch HP:0012532
+property_value: skos:closeMatch NCIT:C26940
+property_value: skos:closeMatch SYMP:0000837
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000041
+name: nociceptive pain
+def: "Pain that arises from actual or threatened damage to non-neural tissue and is due to the activation of nociceptors." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology/"}
+is_a: PAIN:0000132 ! neurobiological pain process
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0002333 CL:0000198
+intersection_of: RO:0002404 GO:0048265
+property_value: IAO:0000589 "nociceptive pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D059226
+property_value: skos:closeMatch SYMP:0000831
+property_value: skos:note "The term is used to describe pain occurring with a normally functioning somatosensory nervous system to contrast with the abnormal function seen in neuropathic or nociplasitic pain." xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2024-06-13T18:47:03Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000042
+name: sensation quality
+def: "A process quality that is the characteristic of a sensory experience." []
+is_a: PATO:0001236
+relationship: RO:0000052 EMRO:0000005
+property_value: IAO:0000589 "sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/272144002
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:02:29Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000043
+name: nociplastic pain
+def: "Pain that arises from altered nociception despite no clear evidence of actual or threatened tissue damage causing the activation of peripheral nociceptors or evidence for disease or lesion of the somatosensory system causing the pain." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology/"}
+is_a: PAIN:0000132 ! neurobiological pain process
+intersection_of: PAIN:0000036 ! pain
+intersection_of: BFO:0000051 GO:0046960
+property_value: IAO:0000589 "nociplastic pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D000098653
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T18:47:11Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000044
+name: neuropathic pain
+def: "Pain caused by a lesion or disease of the somatosensory nervous system." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology/"}
+is_a: PAIN:0000132 ! neurobiological pain process
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0002410 PAIN:0000045 ! damaged neural tissue
+property_value: IAO:0000589 "neuropathic pain (PAIN)" xsd:string
+property_value: skos:closeMatch EFO:0005762
+property_value: skos:closeMatch HP:6000040
+property_value: skos:closeMatch http://snomed.info/id/247398009
+property_value: skos:closeMatch MONDO:0009752
+property_value: skos:closeMatch MONDO:0700057
+property_value: skos:closeMatch NCIT:C96210
+property_value: skos:closeMatch SYMP:0000832
+property_value: skos:note "Neuropathic pain is a clinical description (and not a diagnosis) which requires a demonstrable lesion or a disease that satisfies established neurological diagnostic criteria. The term lesion is commonly used when diagnostic investigations (e.g. imaging, neurophysiology, biopsies, lab tests) reveal an abnormality or when there was obvious trauma." xsd:string
+property_value: skos:note "Somatosensory refers to information about the body per se including visceral organs, rather than information about the external world (e.g., vision, hearing, or olfaction). The presence of symptoms or signs (e.g., touch-evoked pain) alone does not justify the use of the term neuropathic. Some disease entities, such as trigeminal neuralgia, are currently defined by their clinical presentation rather than by objective diagnostic testing. Other diagnoses such as postherpetic neuralgia are normally based upon the history. It is common when investigating neuropathic pain that diagnostic testing may yield inconclusive or even inconsistent data. In such instances, clinical judgment is required to reduce the totality of findings in a patient into one putative diagnosis or concise group of diagnoses." xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2024-06-13T18:47:32Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000045
+name: damaged neural tissue
+intersection_of: UBERON:0003714
+intersection_of: RO:0000053 PATO:0001167
+property_value: IAO:0000589 "damaged neural tissue (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T20:45:30Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000046
+name: central nervous system neuropathic pain
+def: "Pain caused by a lesion or disease of the central somatosensory nervous system." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology/"}
+is_a: PAIN:0000044 ! neuropathic pain
+property_value: IAO:0000589 "central nervous system neuropathic pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/1259040000
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T21:22:21Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000047
+name: dull sensation quality
+def: "A sensation quality that characterizes a sensation as being persistent, deep, or nagging rather than a sharp or stabbing." [] {IAO:0000119="https://www.healthline.com/health/dull-pain", IAO:0000119="https://www.merriam-webster.com/dictionary/dull"}
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "dull sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/410708008
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:02:36Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000048
+name: generalized pain
+def: "Pain that is experienced throughout the body rather than in a specific area." []
+synonym: "widespread pain" EXACT []
+is_a: PAIN:0000130 ! spatially specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0000053 PATO:0001566
+property_value: IAO:0000589 "generalized pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/82991003" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-04-12T22:16:38Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000049
+name: tingling pain
+def: "Pain that is experienced as a prickling, pins-and-needles sensation." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000039 ! experienced as tingling sensation quality
+property_value: IAO:0000589 "tingling pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/786837007" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T00:28:59Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000050
+name: wrist pain
+def: "Pain that is experienced in the wrist." []
+intersection_of: PAIN:0000077 ! limb pain
+intersection_of: PAIN:0000062 UBERON:0004452 ! experienced in
+property_value: IAO:0000589 "wrist pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0030836" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/56608008" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T00:35:00Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000051
+name: abdominal pain
+def: "Pain that is experienced in the abdomen." []
+is_a: PAIN:0000130 ! spatially specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000062 UBERON:0000916 ! experienced in
+property_value: IAO:0000589 "abdominal pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://id.nlm.nih.gov/mesh/D015746" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0002027" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C26682" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/OMIT_0016397" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SYMP_0000457" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/21522001" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T01:25:36Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000052
+name: peripheral nervous system neuropathic pain
+def: "Pain caused by a lesion or disease of the peripheral somatosensory nervous system." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology/"}
+is_a: PAIN:0000044 ! neuropathic pain
+property_value: IAO:0000589 "peripheral nervous system neuropathic pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/279981003
+property_value: skos:closeMatch MONDO:0005244
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T21:22:44Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000053
+name: acute pain
+def: "Pain of recent onset and probable limited duration, usually having an identifiable temporal and causal relationship to injury or disease." [] {IAO:0000119="https://www.iasp-pain.org/resources/topics/acute-pain/"}
+comment: Acute pain is caused by injury, surgery, illness, trauma, or painful medical procedures and generally lasts from a few minutes to less than six months. Acute pain usually disappears whenever the underlying cause is treated or healed.
+is_a: PAIN:0000128 ! temporally specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0000053 PATO:0000389
+property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
+property_value: IAO:0000589 "acute pain (PAIN)" xsd:string
+property_value: skos:closeMatch NCIT:C27003
+property_value: skos:closeMatch OMIT:0027663
+property_value: skos:closeMatch SYMP:0000839
+creation_date: 2022-11-24T06:02:26Z
+
+[Term]
+id: PAIN:0000054
+name: referred pain
+def: "Pain that is experienced in an area different from the area stimulated." [] {IAO:0000119="https://dictionary.apa.org/referred-sensation", IAO:0000119="PMID:37448749"}
+is_a: PAIN:0000130 ! spatially specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site
+property_value: IAO:0000589 "referred pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D053591
+property_value: skos:closeMatch http://snomed.info/id/6617009
+property_value: skos:closeMatch OMIT:0025470
+property_value: skos:closeMatch SYMP:0000862
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T21:22:52Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000055
+name: phantom limb pain
+def: "Pain that is experienced in an area where a limb no longer exists." []
+is_a: PAIN:0000036 ! pain
+is_a: PAIN:0000130 ! spatially specified pain
+relationship: PAIN:0000061 PAIN:0000056 ! experienced as localized pain
+property_value: IAO:0000589 "phantom limb pain (PAIN)" xsd:string
+property_value: skos:closeMatch EFO:0022850
+property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D010591
+property_value: skos:closeMatch http://snomed.info/id/710110008
+property_value: skos:closeMatch NCIT:C79703
+property_value: skos:closeMatch OAE:0002792
+property_value: skos:closeMatch SYMP:0000830
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T21:23:11Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000056
+name: localized pain
+def: "Pain that is confined or restricted to a particular anatomical area (or zone) of the body." [] {IAO:0000119="https://ospinamedical.com/orthopedic-blog/localized-vs-radicular-pain-decoding-your-discomfort", IAO:0000119="PMID:18077092"}
+is_a: PAIN:0000130 ! spatially specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0000053 PATO:0000627
+property_value: IAO:0000589 "localized pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/112104007
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T21:27:59Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000057
+name: knee osteoarthritis pain
+def: "knee pain resulting from knee osteoarthritis." []
+is_a: PAIN:0000094 ! knee pain
+property_value: IAO:0000589 "knee osteoarthritis pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T21:33:51Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000058
+name: throbbing sensation quality
+def: "A rhythmic, pulsating, or beating sensation quality in which the intensity waxes and wanes in periodic bursts." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "throbbing sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/410704005
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:06:15Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000059
+name: burning sensation quality
+def: "An intense, searing, or hot sensation quality." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "burning sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/62404004
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:06:31Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000060
+name: lower back pain
+def: "Pain that is experienced in the lower back." []
+intersection_of: PAIN:0000081 ! back pain
+intersection_of: PAIN:0000062 UBERON:0005462 ! experienced in
+property_value: IAO:0000589 "lower back pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D017116
+property_value: skos:closeMatch NCIT:C34788
+property_value: skos:closeMatch SYMP:0000006
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-17T03:22:33Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000063
+name: stump pain
+def: "Pain that is experienced in the area proximal to an amputation site." []
+synonym: "residual limb pain" EXACT []
+is_a: PAIN:0000056 ! localized pain
+property_value: IAO:0000589 "stump pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/247381009
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-04-28T16:45:26Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000064
+name: freezing sensation quality
+def: "A sensation quality that characterizes a sensation as being intensely cold, typically accompanied by qualities of stillness, heaviness, numbness, and in extreme cases a paradoxical burning or painful character." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "freezing sensation quality (PAIN)" xsd:string
+property_value: skos:relatedMatch http://snomed.info/id/84162001
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:06:51Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000065
+name: aching pain
+def: "Pain that is experienced as a diffuse, sustained, low-to-moderate intensity, dull, deep, pressure-like sensation that lacks sharp localization." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000069 ! experienced as aching sensation quality
+property_value: IAO:0000589 "aching pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C100856" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/27635008" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T01:37:54Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000066
+name: ankle pain
+name: shooting sensation quality
+def: "A sudden, intense, and sharp sensation quality." []
+def: "Pain that is experienced in the ankle." []
+is_a: PAIN:0000042 ! sensation quality
+intersection_of: PAIN:0000079 ! lower limb pain
+intersection_of: PAIN:0000062 UBERON:0004454 ! experienced in
+property_value: IAO:0000589 "ankle pain (PAIN)" xsd:string
+property_value: IAO:0000589 "shooting sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0030840" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/247373008" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/410705006
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:07:06Z" xsd:dateTime
+property_value: terms:created "2026-07-01T15:55:25Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000067
+name: sharp sensation quality
+def: "A piercing, stabbing, cutting, or prickling sensation quality." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "sharp sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch HP:0025281
+property_value: skos:closeMatch http://snomed.info/id/410707003
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:08:02Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000068
+name: intense sensation quality
+def: "A great or extreme sensation quality." [] {IAO:0000119="https://www.merriam-webster.com/dictionary/intense"}
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "intense sensation quality (PAIN)" xsd:string
+property_value: skos:relatedMatch ExO:0000065
+property_value: skos:relatedMatch FBcv:0000169
+property_value: skos:relatedMatch SIO:001212
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:08:30Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000069
+name: aching sensation quality
+def: "A diffuse, sustained, low-to-moderate intensity, dull, deep, pressure-like sensation quality that lacks sharp localization." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "aching sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/410711009
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:08:36Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000070
+name: stabbing sensation quality
+def: "An intense, sudden, and sharp sensation, often described as a knife-like or shooting, sensation quality that pierces a specific area." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "stabbing sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/410706007
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:09:02Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000071
+name: stabbing pain
+def: "Pain experienced as an intense, sudden, and sharp sensation, often described as a knife-like or shooting pain that pierces a specific body area." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000070 ! experienced as stabbing sensation quality
+property_value: IAO:0000589 "stabbing pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/55145008
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:09:33Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000072
+name: sharp pain
+def: "Pain that is experienced as piercing, stabbing, cutting, or prickling." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000067 ! experienced as sharp sensation quality
+property_value: IAO:0000589 "sharp pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/8708008
+property_value: skos:closeMatch NCIT:C101179
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:09:47Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000073
+name: dull pain
+def: "Pain that is experienced as a deep ache, pressure, or heaviness rather than a sharp, stabbing sensation." [] {IAO:0000119="https://www.healthline.com/health/dull-pain"}
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000047 ! experienced as dull sensation quality
+property_value: IAO:0000589 "dull pain (PAIN)" xsd:string
+property_value: skos:closeMatch NCIT:C101175
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:09:53Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000074
+name: burning pain
+def: "Pain that is experienced as an intense, searing, or hot sensation." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000059 ! experienced as burning sensation quality
+property_value: IAO:0000589 "burning pain (PAIN)" xsd:string
+property_value: skos:closeMatch NCIT:C101172
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:10:00Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000075
+name: freezing pain
+def: "Pain that is experienced as a burning or aching sensation and is the result of cold stimuli." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000064 ! experienced as freezing sensation quality
+property_value: IAO:0000589 "freezing pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/723300005
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:10:18Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000076
+name: shooting pain
+def: "Pain that is experienced as a sudden, intense, and sharp sensation that moves or radiates through the body, often from one point to another." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000066 ! experienced as shooting sensation quality
+property_value: IAO:0000589 "shooting pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/49575005
+property_value: skos:closeMatch NCIT:C101180
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-05-12T17:10:35Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000077
+name: limb pain
+def: "Pain that is experienced in a limb, such as an arm or leg." []
+intersection_of: PAIN:0000056 ! localized pain
+intersection_of: PAIN:0000062 UBERON:0002529 ! experienced in
+property_value: IAO:0000589 "limb pain (PAIN)" xsd:string
+property_value: skos:closeMatch NCIT:C187370
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T16:57:24Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000078
+name: finger pain
+def: "Pain that is experienced in the finger." []
+intersection_of: PAIN:0000084 ! hand pain
+intersection_of: PAIN:0000062 UBERON:0002389 ! experienced in
+property_value: IAO:0000589 "finger pain (PAIN)" xsd:string
+property_value: skos:closeMatch HP:0030837
+property_value: skos:closeMatch http://snomed.info/id/18876004
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T16:57:32Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000079
+name: lower limb pain
+def: "Pain that is experienced in a lower limb." []
+intersection_of: PAIN:0000077 ! limb pain
+intersection_of: PAIN:0000062 UBERON:0008784 ! experienced in
+property_value: IAO:0000589 "lower limb pain (PAIN)" xsd:string
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T16:57:36Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000080
+name: axial pain
+def: "Pain that is experienced in the main axis of the body." []
+intersection_of: PAIN:0000056 ! localized pain
+intersection_of: PAIN:0000062 UBERON:0013701 ! experienced in
+property_value: IAO:0000589 "axial pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T16:58:46Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000081
+name: back pain
+def: "Pain that is experienced in the back." []
+intersection_of: PAIN:0000080 ! axial pain
+intersection_of: PAIN:0000062 UBERON:0001137 ! experienced in
+property_value: IAO:0000589 "back pain (PAIN)" xsd:string
+property_value: skos:closeMatch HP:0003418
+property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D001416
+property_value: skos:closeMatch NCIT:C41830
+property_value: skos:closeMatch OMIT:0002792
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T16:59:01Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000082
+name: neck pain
+def: "Pain that is experienced in the neck." []
+intersection_of: PAIN:0000080 ! axial pain
+intersection_of: PAIN:0000062 UBERON:0000974 ! experienced in
+property_value: IAO:0000589 "neck pain (PAIN)" xsd:string
+property_value: skos:closeMatch NCIT:C50663
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T16:59:08Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000083
+name: upper limb pain
+def: "Pain that is experienced in an upper limb." []
+intersection_of: PAIN:0000077 ! limb pain
+intersection_of: PAIN:0000062 UBERON:0008785 ! experienced in
+property_value: IAO:0000589 "upper limb pain (PAIN)" xsd:string
+property_value: skos:closeMatch HP:0012513
+property_value: skos:closeMatch http://snomed.info/id/102556003
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T16:59:31Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000084
+name: hand pain
+def: "Pain that is experienced in the hand." []
+intersection_of: PAIN:0000083 ! upper limb pain
+intersection_of: PAIN:0000062 UBERON:0002398 ! experienced in
+property_value: IAO:0000589 "hand pain (PAIN)" xsd:string
+property_value: skos:closeMatch HP:0046505
+property_value: skos:closeMatch http://snomed.info/id/53057004
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T17:01:00Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000085
+name: elbow pain
+def: "Pain that is experienced in the elbow." []
+intersection_of: PAIN:0000083 ! upper limb pain
+intersection_of: PAIN:0000062 UBERON:0001461 ! experienced in
+property_value: IAO:0000589 "elbow pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/202480001
+property_value: skos:closeMatch SYMP:0000441
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T17:01:20Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000086
+name: shoulder pain
+def: "Pain that is experienced in the shoulder." []
+intersection_of: PAIN:0000083 ! upper limb pain
+intersection_of: PAIN:0000062 UBERON:0001467 ! experienced in
+property_value: IAO:0000589 "shoulder pain (PAIN)" xsd:string
+property_value: skos:closeMatch HP:0030834
+property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D020069
+property_value: skos:closeMatch NCIT:C35022
+property_value: skos:closeMatch OMIT:0019996
+property_value: skos:closeMatch SYMP:0000443
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T17:01:25Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000087
+name: foot pain
+def: "Pain that is experienced in the foot." []
+intersection_of: PAIN:0000079 ! lower limb pain
+intersection_of: PAIN:0000062 UBERON:0002387 ! experienced in
+property_value: IAO:0000589 "foot pain (PAIN)" xsd:string
+property_value: skos:closeMatch NCIT:C34618
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T17:01:49Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000088
+name: toe pain
+def: "Pain that is experienced in the toe." []
+intersection_of: PAIN:0000087 ! foot pain
+intersection_of: PAIN:0000062 UBERON:0001466 ! experienced in
+property_value: IAO:0000589 "toe pain (PAIN)" xsd:string
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T17:01:54Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000089
+name: head pain
+def: "Pain that is experienced in the head." []
+intersection_of: PAIN:0000056 ! localized pain
+intersection_of: PAIN:0000062 UBERON:0003129 ! experienced in
+property_value: IAO:0000589 "head pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T17:02:29Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000090
+name: orofacial pain
+def: "Pain that is experienced in the orofacial region, which includes the mouth and face." [] {IAO:0000119="PMID:32103673"}
+subset: PAIN:0010296
+is_a: PAIN:0000036 ! pain
+is_a: PAIN:0000130 ! spatially specified pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: IAO:0000589 "orofacial pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-04-04T15:42:46Z" xsd:dateTime
+property_value: terms:created "2025-04-04T15:42:46Z" xsd:string
+
+[Term]
+id: PAIN:0000091
+name: visceral pain
+def: "Pain that is experienced in the internal organs." [] {IAO:0000119="https://www.ncbi.nlm.nih.gov/books/NBK12991/", terms:source="PMID:26516492"}
+is_a: PAIN:0000056 ! localized pain
+property_value: IAO:0000589 "visceral pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D059265
+property_value: skos:closeMatch http://snomed.info/id/73645008
+property_value: skos:closeMatch OAE:0005440
+property_value: skos:closeMatch OMIT:0027553
+property_value: skos:closeMatch SYMP:0000833
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T17:05:02Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000092
+name: chronic widespread pain
+def: "Chronic pain that is diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen)." [] {IAO:0000119="https://www.findacode.com/icd-11/code-849253504.html", IAO:0000119="PMID:39445928"}
+comment: Chronic widespread pain (CWP) is associated with significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles). CWP is multifactorial: biological, psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate when the pain is not directly attributable to a nociceptive process in these regions and there are features consistent with nociplastic pain and identified psychological and social contributors. {terms:source="https://www.findacode.com/icd-11/code-849253504.html"}
+intersection_of: PAIN:0000040 ! chronic pain
+intersection_of: RO:0000053 PATO:0001566
+property_value: IAO:0000589 "chronic widespread pain (PAIN)" xsd:string
+property_value: skos:note "Additional criteria to consider:\n- Include quantrants/regions of body in the definition. \n  - E.g., >= 3 quadrants & axial\n  - >= 4 body regions\n- Use the notion of functional region instead of regions divided by joints.\n\ndefine as chronic & multi-localized." xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-06-23T17:11:58Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000093
+name: upper back pain
+def: "Pain that is experienced in the upper back." []
+intersection_of: PAIN:0000081 ! back pain
+intersection_of: PAIN:0000062 UBERON:0006073 ! experienced in
+property_value: IAO:0000589 "upper back pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-17T03:22:41Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000094
+name: knee pain
+def: "Pain that is experienced in the knee." []
+intersection_of: PAIN:0000079 ! lower limb pain
+intersection_of: PAIN:0000062 UBERON:0001465 ! experienced in
+property_value: IAO:0000589 "knee pain (PAIN)" xsd:string
+property_value: skos:closeMatch HP:0030839
+property_value: skos:closeMatch SYMP:0000442
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-17T03:25:24Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000095
+name: breakthrough pain
+def: "A transient flare of pain that occurs in a person with otherwise controlled background pain." []
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "breakthrough pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://id.nlm.nih.gov/mesh/D059390" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0032149" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SCDO_0000162" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SYMP_0000838" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/879969009" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T16:04:35Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000096
+name: cancer pain
+def: "Pain that caused by the effects of cancer (e.g., neoplasm growth, tissue invasion, metastases), the diagnosis of cancer, or the treatment of cancer." []
+synonym: "cancer-associated pain" EXACT []
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "cancer pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://id.nlm.nih.gov/mesh/D000072716" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C178565" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SCDO_1000452" xsd:string
+property_value: skos:closeMatch "http://www.ebi.ac.uk/efo/EFO_0801084" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T16:09:05Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000097
+name: chest pain
+def: "Pain that is experienced in the chest." []
+intersection_of: PAIN:0000080 ! axial pain
+intersection_of: PAIN:0000062 UBERON:0001443 ! experienced in
+property_value: IAO:0000589 "chest pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://id.nlm.nih.gov/mesh/D002637" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0100749" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C38665" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/OMIT_0003962" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SYMP_0000576" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/29857009" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T16:31:16Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000098
+name: chronic low back pain
+def: "Chronic pain that is experienced in the lower back." []
+intersection_of: PAIN:0000040 ! chronic pain
+intersection_of: PAIN:0000062 UBERON:0005462 ! experienced in
+property_value: IAO:0000589 "chronic low back pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/278860009" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T16:38:17Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000099
+name: cold sensation quality
+def: "A sensation quality that characterizes a sensation as being cooler than the surrounding environment or stimulus." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "cold sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/84162001" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T16:47:04Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000100
+name: cold pain
+def: "Pain that is experienced as a result of cold stimuli at intensities below the freezing threshold." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000099 ! experienced as cold sensation quality
+property_value: IAO:0000589 "cold pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T16:57:37Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000101
+name: continuous pain
+def: "Pain that is persistently present without pain-free intervals." []
+synonym: "concomitant continuous pain" EXACT []
+is_a: PAIN:0000128 ! temporally specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0000053 PATO:0000689
+property_value: IAO:0000589 "continuous pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/426206001" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T17:07:58Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000102
+name: cramping sensation quality
+def: "A constricting, gripping, or squeezing sensation quality. It is often associated with involuntary muscle contraction." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "cramping sensation quality (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/410709000" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T17:36:26Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000103
+name: cramping pain
+def: "Pain that is experienced as a constricting, gripping, or squeezing sensation. It is often associated with involuntary muscle contraction." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000102 ! experienced as cramping sensation quality
+property_value: IAO:0000589 "cramping pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C101173" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/279093005" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T17:39:15Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000104
+name: dysesthesia
+def: "An unpleasant abnormal sensory experience, whether spontaneous or evoked." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology"}
+is_a: EMRO:0000005
+property_value: IAO:0000589 "dysesthesia (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C28246" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/279079003" xsd:string
+property_value: skos:relatedMatch "http://purl.obolibrary.org/obo/HP_0012534" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T17:55:31Z" xsd:dateTime
+property_value: terms:description "An unpleasant abnormal sensation, whether spontaneous or evoked. Note: Compare with pain and with paresthesia. Special cases of dysesthesia include hyperalgesia and allodynia. A dysesthesia should always be unpleasant and a paresthesia should not be unpleasant, although it is recognized that the borderline may present some difficulties when it comes to deciding as to whether a sensation is pleasant or unpleasant. It should always be specified whether the sensations are spontaneous or evoked.\nSee entry in https://www.iasp-pain.org/resources/terminology." xsd:string
+
+[Term]
+id: PAIN:0000105
+name: electric sensation quality
+def: "A sudden, brief, shock-like sensation quality resembling an electric current." []
+is_a: PAIN:0000042 ! sensation quality
+property_value: IAO:0000589 "electric sensation quality (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T19:11:49Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000106
+name: electric pain
+def: "Pain that is experienced as a sudden, brief, shock-like sensation resembling an electric current." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000105 ! experienced as electric sensation quality
+property_value: IAO:0000589 "electric pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/723316007" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T19:13:35Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000107
+name: fibromyalgia pain
+def: "Chronic widespread pain associated with fibromyalgia, typically accompanied by fatigue, sleep disturbance, and somatic and cognitive symptoms." []
+is_a: PAIN:0000092 ! chronic widespread pain
+property_value: IAO:0000589 "fibromyalgia pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T19:16:27Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000108
+name: myofascial pain
+def: "Musculoskeletal pain that arises from muscle and surrounding fascia, often associated with the presence of trigger points." []
+is_a: PAIN:0000109 ! musculoskeletal pain
+relationship: RO:0000053 PATO:0000627
+property_value: IAO:0000589 "myofascial pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/279062009" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T19:36:55Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000109
+name: musculoskeletal pain
+def: "Somatic pain that originates in the musculoskeletal system." []
+is_a: PAIN:0000002 ! somatic pain
+property_value: IAO:0000589 "musculoskeletal pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C3244" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/OMIT_0027581" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/279069000" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T19:47:10Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000110
+name: facial pain
+def: "Orofacial pain that is experienced in the face." []
+intersection_of: PAIN:0000090 ! orofacial pain
+intersection_of: PAIN:0000062 UBERON:0001456 ! experienced in
+property_value: IAO:0000589 "facial pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C79594" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/OMIT_0006381" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/95668009" xsd:string
+property_value: skos:closeMatch "http://www.ebi.ac.uk/efo/EFO_0009625" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T20:00:46Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000111
+name: hip pain
+def: "Pain that is experienced in the hip." []
+intersection_of: PAIN:0000056 ! localized pain
+intersection_of: PAIN:0000062 UBERON:0001464 ! experienced in
+property_value: IAO:0000589 "hip pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T20:20:30Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000112
+name: inflammatory pain
+def: "Nociceptive pain that arises from the activation and sensitization of nociceptors by inflammatory mediators released in response to tissue injury or disease." []
+is_a: PAIN:0000041 ! nociceptive pain
+property_value: IAO:0000589 "inflammatory pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/65761003" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T20:25:50Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000113
+name: intermittent
+def: "A process quality that characterizes a process as being marked by breaks or interruptions." []
+is_a: PATO:0000057
+property_value: IAO:0000589 "intermittent (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/ExO_0000052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T20:36:04Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000114
+name: intermittent pain
+def: "Pain that occurs in discrete episodes separated by pain-free intervals." []
+is_a: PAIN:0000128 ! temporally specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: RO:0000053 PAIN:0000113 ! intermittent
+property_value: IAO:0000589 "intermittent pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/314642004" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T20:40:34Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000115
+name: jaw pain
+def: "Orofacial pain that is experienced in the jaw." []
+intersection_of: PAIN:0000090 ! orofacial pain
+intersection_of: PAIN:0000062 UBERON:0011595 ! experienced in
+property_value: IAO:0000589 "jaw pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T20:49:02Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000116
+name: decreased sensitivity to painful stimulus
+def: "A sensitivity to painful stimulus which is lower than normal or average." []
+is_a: PAIN:0000004 ! sensitivity to painful stimulus
+is_a: PATO:0001552
+property_value: IAO:0000589 "decreased sensitivity to painful stimulus (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T22:48:40Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000117
+name: increased sensitivity to painful stimulus
+def: "A sensitivity to painful stimulus which is higher than normal or average." []
+is_a: PAIN:0000004 ! sensitivity to painful stimulus
+is_a: PATO:0001551
+property_value: IAO:0000589 "increased sensitivity to painful stimulus (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T22:49:50Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000118
+name: trigeminal neuralgia pain
+def: "Orofacial neuropathic pain originating from one or more branches of the trigeminal nerve." []
+is_a: PAIN:0000090 ! orofacial pain
+relationship: RO:0002410 PAIN:0000045 ! damaged neural tissue
+property_value: IAO:0000589 "trigeminal neuralgia pain (PAIN)" xsd:string
+property_value: skos:relatedMatch "http://id.nlm.nih.gov/mesh/D014277" xsd:string
+property_value: skos:relatedMatch "http://purl.obolibrary.org/obo/HP_0100661" xsd:string
+property_value: skos:relatedMatch "http://purl.obolibrary.org/obo/MONDO_0008599" xsd:string
+property_value: skos:relatedMatch "http://snomed.info/id/31681005" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T00:42:45Z" xsd:dateTime
+property_value: terms:description "Trigeminal neuralgia pain typically presents as paroxysmal, electric shock-like attacks and sometimes accompanied by concomitant continuous pain." xsd:string
+
+[Term]
+id: PAIN:0000119
+name: mixed pain
+def: "Pain in which nociceptive and neuropathic mechanisms coexist and contribute to the pain experience." []
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "mixed pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T01:37:49Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000120
+name: mechanical pain
+def: "Pain that is provoked or worsened by mechanical loading, movement, or postural change." []
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "mechanical pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/9626006" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T01:40:44Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000121
+name: movement-evoked pain
+def: "Mechanical pain that is elicited or intensified by active or passive movement of the affected body region." []
+is_a: PAIN:0000120 ! mechanical pain
+property_value: IAO:0000589 "movement-evoked pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/425423002" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T01:44:08Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000122
+name: osteoarthritis pain
+def: "Pain resulting from osteoarthritis, a degenerative joint disease characterized by cartilage loss, subchondral bone changes, and joint inflammation." []
+is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "osteoarthritis pain (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-02T01:48:41Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000123
+name: throbbing pain
+def: "Pain that is experienced as a rhythmic, pulsating, or beating sensation in which the pain's intensity waxes and wanes in periodic bursts. Throbbing pain is typically synchronized with the cardiac cycle." []
+is_a: PAIN:0000129 ! sensorily specified pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000058 ! experienced as throbbing sensation quality
+property_value: IAO:0000589 "throbbing pain (PAIN)" xsd:string
+property_value: skos:closeMatch http://snomed.info/id/29695002
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-04-08T19:58:42Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000124
+name: chronic high impact pain
+def: "Chronic pain that frequently limits life or work activities." [] {IAO:0000119="https://www.iasp-pain.org/resources/fact-sheets/high-impact-chronic-pain/"}
+def: "Chronic pain that significantly impacts a person's ability to function." []
+is_a: PAIN:0000040 ! chronic pain
+property_value: IAO:0000589 "chronic high impact (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-05-01T20:50:40Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000127
+name: idiopathic
+def: "A characteristic of an entity whose causal origin has not been identified. It usually characterizes diseases whose etiology are obscure." [] {IAO:0000119="https://dictionary.apa.org/idiopathic"}
+is_a: COB:0000502
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-10T23:52:19Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000128
+name: temporally specified pain
+is_a: PAIN:0000036 ! pain
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-14T16:26:40Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000129
+name: sensorily specified pain
+is_a: PAIN:0000036 ! pain
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-14T16:27:03Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000130
+name: spatially specified pain
+is_a: PAIN:0000036 ! pain
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-14T16:27:16Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000131
+name: anatomically specified pain process
+is_a: PAIN:0000130 ! spatially specified pain
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-14T16:27:26Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000132
+name: neurobiological pain process
+is_a: PAIN:0000036 ! pain
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-14T16:27:45Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010001
+name: dental pain
+def: "Orofacial pain caused by lesions or disorders affecting one or more teeth or their immediately surrounding and supporting structures: the tooth pulp, periodontium and gingivae." []
+comment: ICOP term 1.1
+subset: PAIN:0010296
+is_a: PAIN:0000090 ! orofacial pain
+relationship: PAIN:0000062 UBERON:0000165 ! experienced in
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-04-04T15:48:49Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010002
+name: pulpal pain
+def: "Dental pain caused by a lesion or disorder involving the tooth pulp." []
+comment: http://purl.obolibrary.org/obo/UBERON_0001754
+comment: ICOP term 1.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010001 ! dental pain
+relationship: PAIN:0000062 UBERON:0001754 ! experienced in
+property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-04-04T15:57:09Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010003
+name: myofascial orofacial pain
+def: "Orofacial pain involving the masticatory muscles." []
+comment: http://purl.obolibrary.org/obo/FMA_74060
+comment: http://purl.obolibrary.org/obo/UBERON_0003681
+comment: ICOP term: 2.
+subset: PAIN:0010296
+is_a: PAIN:0000090 ! orofacial pain
+relationship: PAIN:0000062 UBERON:0004473 ! experienced in
+property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-04-08T14:15:24Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010005
+name: periodontal pain
+def: "Dental pain caused by a lesion or disorder involving the periodontium." []
+comment: http://purl.obolibrary.org/obo/UBERON_0001758
+comment: ICOP term: 1.1.2
+comment: related ICOP number: 1.1.2.2
+subset: PAIN:0010296
+synonym: "periodontal pain due to local non-inflammatory cause" RELATED []
+is_a: PAIN:0010001 ! dental pain
+relationship: PAIN:0000062 UBERON:0008266 ! experienced in
+property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-04-08T14:31:12Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010006
+name: gingival pain
+def: "Dental pain caused by a lesion or disorder involving the gingival tissues." []
+comment: http://purl.obolibrary.org/obo/UBERON_0001828
+comment: ICOP term: 1.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010001 ! dental pain
+relationship: PAIN:0000062 UBERON:0001828 ! experienced in
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-04-08T14:34:14Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010007
+name: jaw bone pain
+def: "Dental pain due to a lesion or disorder involving the jaw bone tissue." []
+comment: http://purl.obolibrary.org/obo/UBERON_0012360
+comment: ICOP term: 1.2.3
+subset: PAIN:0010296
+synonym: "mandible pain" NARROW []
+synonym: "maxilla pain" NARROW []
+is_a: PAIN:0010186 ! oral mucosal, salivary gland and jaw bone pains
+property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-04-08T14:38:30Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010008
+name: pulpal pain due to hypersensitivity
+def: "Pulpal pain due to hypersensitivity occurring in clinically normal pulp." []
+comment: contributing factor: sensory hypersensitivity
+comment: http://purl.obolibrary.org/obo/UBERON_0001754
+comment: ICOP term: 1.1.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010002 ! pulpal pain
+relationship: BFO:0000055 OHD:0010009
+property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-05T14:10:57Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010013
+name: pulpal pain due to crack in enamel
+def: "Pulpal pain due to hypersensitivity resulting from a crack or incomplete fracture of the affected tooth, involving the enamel with at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, or cold hypersensitivity." []
+comment: http://purl.obolibrary.org/obo/UBERON_0001754
+comment: ICOP term: 1.1.1.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010008 ! pulpal pain due to hypersensitivity
+relationship: BFO:0000055 OHD:0010012
+property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-05T14:48:49Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010015
+name: pulpal pain due to exposed dentin
+def: "Pulpal pain due to hypersensistivity resulting from an exposed dentin surface." []
+comment: http://purl.obolibrary.org/obo/UBERON_0001754
+comment: ICOP term: 1.1.1.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010008 ! pulpal pain due to hypersensitivity
+relationship: BFO:0000055 OHD:0010014
+property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-05T14:57:43Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010017
+name: pulpal pain due to tooth wear or abrasion
+def: "Pulpal pain due to exposed dentin resulting from wear or abrasion on the affected tooth." []
+comment: http://purl.obolibrary.org/obo/UBERON_0001754
+comment: ICOP term: 1.1.1.1.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010015 ! pulpal pain due to exposed dentin
+relationship: BFO:0000055 OHD:0010016
+property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-05T15:06:33Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010019
+name: pulpal pain due to a fracture resulting in exposed dentin
+def: "Pulpal pain due to exposed dentin resulting from a fracture of the affected tooth involving the enamel, root cementum, dentin, or any combination thereof." []
+comment: http://purl.obolibrary.org/obo/UBERON_0001754
+comment: ICOP term: 1.1.1.1.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010015 ! pulpal pain due to exposed dentin
+relationship: BFO:0000055 OHD:0010018
+property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-05T15:21:45Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010022
+name: oral mucosal pain
+def: "Pain due to a disease or disorder involving the oral mucosa." []
+comment: ICOP number: 1.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010186 ! oral mucosal, salivary gland and jaw bone pains
+relationship: PAIN:0000062 UBERON:0000344 ! experienced in
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-06T20:08:07Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010023
+name: salivary gland pain
+def: "Pain due to a lesion or disorder involving the salivary glands." []
+comment: ICOP number: 1.2.2
+comment: related ICOP number: 1.2.2.5
+subset: PAIN:0010296
+synonym: "salivary gland pain due to other cause" RELATED []
+is_a: PAIN:0010186 ! oral mucosal, salivary gland and jaw bone pains
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-06T20:10:46Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010024
+name: gingival pain due to gingivitis
+comment: ICOP number: 1.1.3.1
+comment: related ICOP number: 1.1.3.1.5
+subset: PAIN:0010296
+synonym: "gingival pain due to gingival inflammation resulting from another cause" RELATED []
+is_a: PAIN:0010006 ! gingival pain
+relationship: RO:0002410 OHD:0010025
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T17:57:43Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010027
+name: gingival pain due to infection
+def: "Gingival pain due to gingivitis due to an infection of the gingival tissue." []
+comment: ICOP number: 1.1.3.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010024 ! gingival pain due to gingivitis
+relationship: RO:0002410 OHD:0010026
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T18:15:01Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010030
+name: gingival pain due to bacterial infection
+def: "Gingival pain due to infection resulting form bacteria." []
+comment: ICOP number: 1.1.3.1.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010027 ! gingival pain due to infection
+relationship: RO:0002410 OHD:0010029
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T18:37:15Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010033
+name: gingival pain due to viral infection
+def: "Gingival pain due to infection resulting from a virus." []
+comment: ICOP number: 1.1.3.1.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010027 ! gingival pain due to infection
+relationship: RO:0002410 OHD:0010032
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T18:45:56Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010036
+name: gingival pain due to fungal infection
+def: "Gingival pain due to infection resulting from a fungus." []
+comment: ICOP number: 1.1.3.1.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010027 ! gingival pain due to infection
+relationship: RO:0002410 OHD:0010035
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T19:03:53Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010037
+name: salivary gland pain due to infection
+def: "Salivary gland pain due to infection of the salivary glands." []
+comment: ICOP number: 1.2.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010023 ! salivary gland pain
+relationship: RO:0002410 IDO:0000586
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T19:25:03Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010038
+name: salivary gland pain due to bacterial infection
+def: "Salivary gland pain due to bacterial infection." []
+comment: ICOP number: 1.2.2.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010037 ! salivary gland pain due to infection
+relationship: RO:0002410 OHD:0010096
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T19:27:44Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010039
+name: salivary gland pain due to viral infection
+def: "Salivary gland pain due to viral infection." []
+comment: ICOP number: 1.2.2.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010037 ! salivary gland pain due to infection
+relationship: RO:0002410 OHD:0010031
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T19:29:37Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010040
+name: oral mucosal pain due to infection
+def: "Oral mucosal pain due to oral mucosal inflammation resulting from an infection of the oral mucosa." []
+comment: ICOP term: 1.2.1.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010041 ! oral mucosal pain due to oral mucosal inflammation
+relationship: RO:0002410 OHD:0010043
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T19:33:29Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010041
+name: oral mucosal pain due to oral mucosal inflammation
+def: "Oral mucosa pain due to inflamation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation." []
+comment: ICOP number: 1.2.1.1
+comment: related ICOP number: 1.2.1.1.5
+subset: PAIN:0010296
+synonym: "oral mucosal pain due to oral mucosal inflammation due to other cause" RELATED []
+is_a: PAIN:0010022 ! oral mucosal pain
+relationship: RO:0002410 OHD:0010042
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T19:36:10Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010045
+name: oral mucosal pain due to bacterial infection
+def: "Oral mucosal pain due to bacterial infection." []
+comment: ICOP number: 1.2.1.1.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010040 ! oral mucosal pain due to infection
+relationship: RO:0002410 OHD:0010044
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T19:54:47Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010047
+name: oral mucosal pain due to viral infection
+def: "Oral mucosal pain due to viral infection." []
+comment: ICOP term: 1.2.1.1.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010040 ! oral mucosal pain due to infection
+relationship: RO:0002410 OHD:0010046
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T19:59:20Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010049
+name: oral mucosal pain due to fungal infection
+def: "Oral mucosal pain due to fungal infection." []
+comment: ICOP number: 1.2.1.1.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010040 ! oral mucosal pain due to infection
+relationship: RO:0002410 OHD:0010048
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-10T20:04:32Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010050
+name: jaw bone pain due to infection
+def: "Jaw bone pain due to an infection of the jaw bone." []
+comment: ICOP number: 1.2.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010007 ! jaw bone pain
+relationship: RO:0002410 IDO:0000586
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T17:28:40Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010051
+name: jaw bone pain due to bacterial infection
+def: "Jaw bone pain due to a bacterial infection in the jaw bone." []
+comment: ICOP number: 1.2.3.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010050 ! jaw bone pain due to infection
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T17:30:16Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010052
+name: jaw bone pain due to viral infection
+def: "Jaw bone pain due to a viral infection in the jaw bone." []
+comment: ICOP number: 1.2.3.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010050 ! jaw bone pain due to infection
+relationship: RO:0002410 OHD:0010031
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T17:31:51Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010053
+name: jaw bone pain due to fungal infection
+def: "Jaw bone pain due to a fungal infection in the jaw bone." []
+comment: ICOP number: 1.2.3.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010050 ! jaw bone pain due to infection
+relationship: RO:0002410 OHD:0010034
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T17:33:07Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010055
+name: gingival pain due to injury
+def: "Gingival pain due to gingivitis due to resulting from trauma or injury with pain localizaed to the traumatized tissue that develops within minutes or days after the trauma." []
+comment: ICOP number: 1.1.3.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010024 ! gingival pain due to gingivitis
+relationship: RO:0002410 OHD:0010054
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T17:49:38Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010057
+name: oral mucosal pain due to injury
+def: "Oral mucosal pain due to oral mucose inflammation resulting from tauma to the oral mucosa tissue with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma." []
+comment: ICOP number: 1.2.1.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010041 ! oral mucosal pain due to oral mucosal inflammation
+relationship: RO:0002410 OHD:0010056
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T17:54:47Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010058
+name: jaw bone pain due to injury
+def: "Jaw bone pain due to trauma or injury involving the jaw bone." []
+comment: ICOP number: 1.2.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010007 ! jaw bone pain
+relationship: RO:0002410 OGMS:0000102
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T17:57:52Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010059
+name: pain due to lesion or disease of the trigeminal nerve
+def: "Orofacial pain attributed to lesion or disease of the trigeminal nerve." []
+comment: ICOP numuber: 4.1
+subset: PAIN:0010296
+is_a: PAIN:0010142 ! orofacial pain due to lesion or disease of the cranial nerves
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T18:05:48Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010061
+name: pulpal pain due to pulpitis
+def: "Pulpal pain due to diagnosed pulpitis in affected tooth." []
+comment: ICOP number: 1.1.1.3
+comment: related ICOP number: 1.1.1.3.5
+subset: PAIN:0010296
+synonym: "pulpal pain due to pulpitis resulting from another cause" RELATED []
+is_a: PAIN:0010002 ! pulpal pain
+relationship: RO:0002410 OHD:0010060
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T18:17:44Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010067
+name: pulpal pain due to reversible pulpitis resulting from a dentin infection
+def: "Pulpal pain due to pulpitis that is reversible due to an infection in the dentin." []
+comment: ICOP number: 1.1.1.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010061 ! pulpal pain due to pulpitis
+relationship: RO:0002410 OHD:0010066
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T18:54:11Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010069
+name: pulpal pain due to irreversible pulpitis resulting from a dentin infection
+def: "Pulpal pain attributed to pulpitis that is reversible due to an infection in the dentin." []
+comment: ICOP number: 1.1.1.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010061 ! pulpal pain due to pulpitis
+relationship: RO:0002410 OHD:0010068
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T18:59:55Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010071
+name: periodontal pain due to periodontitis
+def: "Periodontal pain due to periodontal inflammation" []
+comment: ICOP number: 1.1.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010005 ! periodontal pain
+relationship: RO:0002410 OHD:0010070
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T19:06:58Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010073
+name: periodontal pain due to injury-induced periodontitis
+def: "Periodontal pain attributed to periodontitis because of trauma or injury that has occured to the periodontal tissue." []
+comment: ICOP number: 1.1.2.1.1
+comment: related ICOP term: 1.1.2.1.1.4
+subset: PAIN:0010296
+synonym: "periodontal pain due to other trauma or injury" RELATED []
+is_a: PAIN:0010071 ! periodontal pain due to periodontitis
+relationship: RO:0002410 OHD:0010072
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-11T19:58:44Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010076
+name: pulpal pain due to developmental dental hard tissue defect
+def: "Pulpal pain due to a developmental defect of the affected tooth involving the enamel, root cementum, or dentin." []
+comment: ICOP number: 1.1.1.1.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010015 ! pulpal pain due to exposed dentin
+relationship: BFO:0000055 OHD:0010075
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-12T16:56:25Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010078
+name: pulpal pain due to dental procedure
+def: "Pulpal pain due to hypersensitivity resulting from a recent dental procedure to the affected tooth." []
+comment: ICOP number: 1.1.1.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010008 ! pulpal pain due to hypersensitivity
+relationship: RO:0002410 OHD:0000002
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-12T17:30:59Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010081
+name: pulpal pain due to reversible pulpitis resulting from caries not extending to the pulp
+def: "ICOP number: 1.1.1.3.1.1" []
+def: "Pulpal pain cuased by reversible pulpitis due to an infection of the dentin with no clinical or radiographic evidence of extension to the pulp." []
+subset: PAIN:0010296
+is_a: PAIN:0010067 ! pulpal pain due to reversible pulpitis resulting from a dentin infection
+relationship: RO:0002410 OHD:0010080
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-12T18:16:30Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010083
+name: pulpal pain due to reversible pulpitis resulting from dental hard-tissue defect with exposed dentin
+def: "Pulpal pain caused by reversible pulpitis due to infection of the dentin with clinical and/or radiographic evidence of a fracture of the following in the affected tooth, with exposure of dentin: enamel alone, enamel and dentin, root cementum alone, root cementum and dentin, enamel, or root cementum and dentin." []
+comment: ICOP number: 1.1.1.3.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010067 ! pulpal pain due to reversible pulpitis resulting from a dentin infection
+relationship: RO:0002410 OHD:0010082
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-12T18:39:15Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010086
+name: pulpal due to irreversible pulpitis resulting from caries extending to the pulp
+def: "Pulpal pain attributed to irreversible pulpitis due to infection of dentin because of deep caries in the affected tooth." []
+comment: ICOP number: 1.1.1.3.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010069 ! pulpal pain due to irreversible pulpitis resulting from a dentin infection
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-12T19:15:53Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010087
+name: postoperative periodontal pain
+def: "Periodontal pain due to traumatically induced periodontal inflammation which has been caused by surgical intervention." []
+comment: ICOP number: 1.1.2.1.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010073 ! periodontal pain due to injury-induced periodontitis
+relationship: RO:0002410 OHD:0010021
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-19T18:52:23Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010091
+name: periodontal pain due to apical periodontitis resulting from endodontic disease
+def: "Periodontal pain due to periodontits that is apical occuring becayse of an endodontic disease." []
+comment: ICOP number: 1.1.2.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010071 ! periodontal pain due to periodontitis
+relationship: RO:0002410 OHD:0010090
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-19T19:11:03Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010093
+name: pulpal pain due to pulp exposure resulting from dental trauma
+def: "Pulpal pain due to dental trauma that has exposes vital pulp tissue in the affected tooth because of any of the following: fracture involving enamel, dentin and pulp (complicated crown fracture), fracture involving root cementum, dentin and pulp (complicated root fracture), and fracture involving enamel, root cementum, dentin and pulp (complicated crown-root fracture) and occurs within minutes to hours after the trauma." []
+comment: ICOP number: 1.1.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010002 ! pulpal pain
+relationship: RO:0002410 OHD:0010092
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-23T19:54:50Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010099
+name: pulpal pain due to irreversible pulpitis resulting from an infection of the dental pulp
+def: "Pulpal pain due to irreversible pulpitis caused by an infection in the pulp of the affected tooth." []
+comment: ICOP number: 1.1.1.3.3
+subset: PAIN:0010296
+is_a: PAIN:0010061 ! pulpal pain due to pulpitis
+relationship: RO:0002410 OHD:0010098
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-16T18:30:41Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010102
+name: periodontal pain due to periodontal disease
+def: "Periodontal pain due to periodontitis resulting from a periodontal disease that has been diagnosed." []
+comment: ICOP number: 1.1.2.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010071 ! periodontal pain due to periodontitis
+relationship: BFO:0000055 OHD:0010100
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-16T18:38:33Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010105
+name: periodontal pain due to chronic periodontitis
+def: "Periodontal pain due to periodontal disease resulting from chronic periodontitis. Chronic periodontitis is characterized by slowly progressing attachment loss, sometimes with periods of more rapid progression." []
+comment: ICOP number: 1.1.2.1.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010102 ! periodontal pain due to periodontal disease
+relationship: RO:0002410 OHD:0010103
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-16T18:46:46Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010106
+name: pulpal pain due to placement of a restoration
+def: "Pulpal pain due to a dental procedure involving a recent placement of a direct or indirect dental restoration in the affected tooth." []
+comment: ICOP number: 1.1.1.1.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010078 ! pulpal pain due to dental procedure
+relationship: RO:0002410 OHD:0000004
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-17T18:03:25Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010108
+name: pulpal pain due to reversible pulpitis resulting from tooth crack without evidence of missing tooth substance.
+def: "Pulpal pain caused by reversible pulpitis due to infection of dentin because of a crack or incomplete fracture of the affected tooth, involving the enamel or enamel and dentin. Has evidence of at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity." []
+comment: ICOP number: 1.1.1.3.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010067 ! pulpal pain due to reversible pulpitis resulting from a dentin infection
+relationship: RO:0002410 OHD:0010107
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-23T20:21:16Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010111
+name: periodontal pain due to aggressive periodontitis
+def: "Periodontal pain due to periodontal disease resulitng from aggressive periodontitis." []
+comment: ICOP number: 1.1.2.1.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010102 ! periodontal pain due to periodontal disease
+relationship: BFO:0000055 OHD:0010110
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-17T18:40:51Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010114
+name: periodontal pain due to necrotizing ulcerative periodontitis
+def: "Periodontal pain due to periodontal disease resulting from necrotizing ulcerative periodontitis, with the development of pain within hours to days of onset of the ulcerations." []
+comment: ICOP term: 1.1.2.1.3.4
+subset: PAIN:0010296
+is_a: PAIN:0010102 ! periodontal pain due to periodontal disease
+relationship: RO:0002410 OHD:0010113
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-17T18:55:03Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010118
+name: primary temporomandibular joint pain
+def: "Temporomandibular pain localized to the temporomandibular joint (TMJ), occurring at rest or during jaw movement or palpation, with no known causative disorder. The diagnosis corresponds fully to the DC/TMD diagnosis temporomandibular joint pain." []
+comment: ICOP number: 3.1
+subset: PAIN:0010296
+is_a: PAIN:0000000 ! temporomandibular joint pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:28:17Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010119
+name: acute primary temporomandibular joint pain
+def: "Primary temporomandibular joint pain with onset within the last 3 months." []
+comment: ICOP number: 3.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010118 ! primary temporomandibular joint pain
+relationship: RO:0000053 PATO:0000389
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:29:46Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010120
+name: chronic primary temporomandibular joint pain
+def: "Primary temporomandibular pain with onset more than 3 months." []
+comment: ICOP number: 3.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010118 ! primary temporomandibular joint pain
+relationship: RO:0000053 PATO:0001863
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:31:29Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010121
+name: chronic infrequent primary temporomandibular joint pain
+def: "Chronic primary temporomandibular joint pain occuring less than one day a month." []
+comment: ICOP number: 3.1.2.1
+subset: PAIN:0010296
+intersection_of: PAIN:0010120 ! chronic primary temporomandibular joint pain
+intersection_of: RO:0000053 PATO:0000381
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:34:26Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010122
+name: chronic frequent primary temporomandibular joint pain
+def: "Chronic primary temporomandibular joint pain occuring one to 14 days a month for an avergae of more than 3 months." []
+comment: ICOP number: 3.1.2.2
+subset: PAIN:0010296
+intersection_of: PAIN:0010120 ! chronic primary temporomandibular joint pain
+intersection_of: RO:0000053 PATO:0000380
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:35:41Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010123
+name: chronic frequent primary temporomandibular joint pain without pain referral
+def: "Chronic frequent primary temporomandibular joint pain with temporomandibular joint palpation pain localizaed to the immediate site of palpatation." []
+comment: ICOP number: 3.1.2.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010122 ! chronic frequent primary temporomandibular joint pain
+relationship: RO:0002410 OHD:0010223 ! chronic frequent pain without pain referral
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:38:56Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010124
+name: chronic frequent primary temporomandibular joint pain with pain referral
+def: "Chronic frequent primary temporomandibular joint pain with TMJ palpatation beyond the area of the joint." []
+comment: ICOP number: 3.1.2.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010122 ! chronic frequent primary temporomandibular joint pain
+relationship: RO:0002410 OHD:0010222 ! chronic frequent pain with pain referral
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:39:52Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010125
+name: chronic highly frequent primary temporomandibular joint pain
+def: "Chronic frequent primary temporomandibular joint pain occuring on more than 15 days a month on average for more than 3 months." []
+comment: ICOP number: 3.1.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010122 ! chronic frequent primary temporomandibular joint pain
+relationship: RO:0002410 OHD:0010226 ! chronic highly frequent pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:41:31Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010126
+name: chronic highly frequent primary temporomandibular joint pain without pain referral
+def: "Chronic highly frequent primary temporomandibular joint pain on temporomandibular joint palpation localized to the immediate site of palpation." []
+comment: ICOP number: 3.1.2.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010125 ! chronic highly frequent primary temporomandibular joint pain
+relationship: RO:0002410 OHD:0010229 ! chronic highly frequent pain without pain referral
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:42:50Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010127
+name: chronic highly frequent primary temporomandibular joint pain with pain referral
+def: "Chronic highly frequent primary temporomandibular joint pain on temporomandibular joint palpation beyond the area of the joint." []
+comment: ICOP number: 3.1.2.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010125 ! chronic highly frequent primary temporomandibular joint pain
+relationship: RO:0002410 OHD:0010230 ! chronic highly frequent pain with pain referral
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:44:03Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010128
+name: secondary temporomandibular joint pain
+def: "Pain localized to the temporomandibular joint (TMJ) and caused by another identified disorder, such as inflammation (due, for example, to trauma, infection, crystal deposition or autoimmune disorder), sensitization of the tissues, structural changes (such as osteoarthrosis, disc displacement or subluxation) or injury." []
+comment: ICOP number: 3.2
+subset: PAIN:0010296
+is_a: PAIN:0000000 ! temporomandibular joint pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:46:47Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010129
+name: trigeminal neuralgic pain
+def: "Orofacial pain experienced as unilateral brief electric shock-like pains, abrupt in onset and termination, limited to the distribution of one or more divisions of the trigeminal nerve and triggered by innocuous stimuli." []
+comment: ICOP number: 4.1.1
+comment: related ICOP number: 4.1.1.2.3
+comment: Trigeminal neuralgic pain may develop without apparent cause or be a result of another disorder. Additionally, there may or may not be concomitant continuous pain of moderate intensity within the affected division(s).
+subset: PAIN:0010296
+synonym: "trigeminal neuralgia" RELATED []
+synonym: "trigeminal neuralgia attributed to other cause" RELATED []
+is_a: PAIN:0010059 ! pain due to lesion or disease of the trigeminal nerve
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:50:39Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010130
+name: classic trigeminal neuralgia
+def: "Trigeminal neuralgia developing without apparent cause other than neurovascular compression." []
+comment: ICOP number: 4.1.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010129 ! trigeminal neuralgic pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:51:40Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010131
+name: secondary trigeminal neuralgia
+def: "Trigeminal neuralgia caused by an underlying disease. Clinical examination shows sensory changes in a substantial percentage of these patients." []
+comment: ICOP number: 4.1.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010129 ! trigeminal neuralgic pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:53:30Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010132
+name: pain due to lesion or disease of the glossopharyngeal nerve
+def: "Orofacial pain attributed to lesion or disease of the glossopharyngeal nerve." []
+comment: ICOP number: 4.2
+subset: PAIN:0010296
+synonym: "glossopharyngeal nerve associated pain" EXACT []
+is_a: PAIN:0010142 ! orofacial pain due to lesion or disease of the cranial nerves
+relationship: RO:0002410 PAIN:0000044 ! neuropathic pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:55:16Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010133
+name: glossopharyngeal neuralgia
+def: "A disorder characterized by unilateral brief stabbing pain, abrupt in onset and termination, in the distributions not only of the glossopharyngeal nerve but also of the auricular and pharyngeal branches of the vagus nerve. Pain is experienced in the ear, base of the tongue, tonsillar fossa and/or beneath the angle of the jaw. It is commonly provoked by swallowing, talking or coughing and may remit and relapse in the fashion of Trigeminal neuralgia." []
+comment: ICOP number: 4.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010132 ! pain due to lesion or disease of the glossopharyngeal nerve
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:56:55Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010134
+name: classical glossopharyngeal neuralgia
+def: "Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain with the demonstration of magnetic resonance imaging." []
+comment: ICOP number: 4.2.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010133 ! glossopharyngeal neuralgia
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:58:02Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010135
+name: secondary glossopharyngeal neuralgia
+def: "Glossopharyngeal neuralgia caused by an underlying disease." []
+comment: ICOP number: 4.2.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010133 ! glossopharyngeal neuralgia
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T17:59:32Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010136
+name: idiopathic glossopharyngeal neuralgia
+def: "Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain without neurovascular compression or an underlying disease know to cause secondary glossopharyngeal neuralgia." []
+comment: ICOP number: 4.2.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010133 ! glossopharyngeal neuralgia
+relationship: RO:0000053 PAIN:0000127 ! idiopathic
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-18T18:01:40Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010137
+name: pulpal pain due to hyperocclusion or hyperarticulation following dental restorative procedure
+def: "Pulpal pain due to a dental procedure involving a restorative procedure which has caused the affected tooth to be in hyperocclusion or hyperarticulation." []
+comment: ICOP number: 1.1.1.1.3.3
+subset: PAIN:0010296
+is_a: PAIN:0010078 ! pulpal pain due to dental procedure
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-24T15:28:57Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010138
+name: pulpal pain due to hyperocclusion following dental restorative procedure
+def: "Pulpal pain due to a dental procedure involving a restorative procedure which has caused the affected tooth to be in hyperocclusion." []
+subset: PAIN:0010296
+is_a: PAIN:0010137 ! pulpal pain due to hyperocclusion or hyperarticulation following dental restorative procedure
+relationship: RO:0002410 OHD:0010145
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-24T15:29:21Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010139
+name: pulpal pain due to hyperarticulation following dental restorative procedure
+def: "Pulpal pain due to a dental procedure involving a restorative procedure which has caused the affected tooth to be in hyperarticulation." []
+subset: PAIN:0010296
+is_a: PAIN:0010137 ! pulpal pain due to hyperocclusion or hyperarticulation following dental restorative procedure
+relationship: RO:0002410 OHD:0010146
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-24T15:29:40Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010142
+name: orofacial pain due to lesion or disease of the cranial nerves
+def: "Orofacial pain due to lesisoin or disease of the cranial nerves." []
+comment: ICOP number: 4
+subset: PAIN:0010296
+is_a: PAIN:0000090 ! orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-25T18:18:22Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010147
+name: pulpal pain due to extensive removal of dentin
+def: "Pulpal pain due to a dental procedure resulting in the removal of dentin from the affected tooth, which was wide, deep, or both." []
+comment: ICOP number: 1.1.1.1.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010078 ! pulpal pain due to dental procedure
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-25T18:55:26Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010152
+name: pulpal pain due to irreversible pulpitis resulting from a dental hard-tissue fracture without pulp exposure
+def: "pulpal pain attributed to irreversible pulpitis due to infection of dentin with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture)." []
+comment: ICOP number: 1.1.1.3.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010069 ! pulpal pain due to irreversible pulpitis resulting from a dentin infection
+relationship: RO:0002410 OHD:0010151
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-25T19:18:31Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010161
+name: pulpal pain due to irreversible pulpitis resulting from tooth crack without evidence of missing tooth substance
+def: "Pulpal pain attributed to irreversible pulpitis due to infection of dentin because of a crack or incompletel fracture in the enamel or enamel dentin, along with at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity." []
+comment: ICOP number: 1.1.1.3.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010069 ! pulpal pain due to irreversible pulpitis resulting from a dentin infection
+relationship: RO:0002410 OHD:0010160
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-25T19:41:39Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010164
+name: pulpal pain due to irreversible pulpitis resulting from a dental hard-tissue fracture with pulp exposure
+def: "pulpal pain attirbuted to irreversible pulpitis due to infection of the dental pulp with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture) along with pain that has developed in close temporal relation to the fracture with pain developing in close temporal relation to the fracture." []
+comment: ICOP number: 1.1.1.3.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010099 ! pulpal pain due to irreversible pulpitis resulting from an infection of the dental pulp
+relationship: RO:0002410 OHD:0010163
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-25T19:59:42Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010166
+name: pulpal pain due to pulpitis resulting from an external cervical root resorption
+def: "Pulpal pain attributed to pulpitis with an external cervical root resorption with pain that has developed in temporal relation to onset of the resorption." []
+comment: ICOP number: 1.1.1.3.4
+subset: PAIN:0010296
+is_a: PAIN:0010061 ! pulpal pain due to pulpitis
+relationship: RO:0002410 OHD:0010165
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:22:36Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010167
+name: periodontal pain due to hyperocclusion or hyperarticulation
+def: "Periodontal pain attributed to traumatically induced periodontal inflammation because of a change in occlusal conditions that has occurred, with resultant hyperocclusion or hyperarticulation identified by at least one of the following: primary contact affecting a tooth in occlusion or articulation or hypermobility of a tooth." []
+comment: ICOP number: 1.1.2.1.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010073 ! periodontal pain due to injury-induced periodontitis
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:26:26Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010168
+name: periodontal pain due to hyperocclusion
+def: "periodontal pain attributed to traumatically induced periodontal inflammation because of a change in occlusal conditions that has occurred, with resultant hyperocclusion identified by primary contact affecting a tooth in occlusion or hypermobility of a tooth." []
+subset: PAIN:0010296
+is_a: PAIN:0010167 ! periodontal pain due to hyperocclusion or hyperarticulation
+relationship: RO:0002410 OHD:0010143
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:26:36Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010169
+name: periodontal pain due to hyperarticulation
+def: "periodontal pain attributed to traumatically induced periodontal inflammation because of a change in occlusal conditions that has occurred, with resultant hyperarticulation identified by primary contact affecting a tooth in articulation or hypermobility of a tooth." []
+subset: PAIN:0010296
+is_a: PAIN:0010167 ! periodontal pain due to hyperocclusion or hyperarticulation
+relationship: RO:0002410 OHD:0010144
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:26:45Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010170
+name: periodontal pain due to accidental dental injury
+def: "Periodontal pain attributed to traumatically induced periodontal inflammation because of accidental trauma with evidence of one of the following: concussion, subluxation, lateral luxation, intrusion, extrusion, avulsion, or root fracture." []
+comment: ICOP number: 1.1.2.1.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010073 ! periodontal pain due to injury-induced periodontitis
+relationship: RO:0000057 OHD:0010148
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:31:30Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010171
+name: periodontal pain due to pulpal inflammation
+def: "Periodontal pain attributed to apical periodontitis due to endodontic disease because of pulpitis that has been diagnosed because of one of the following: evidence of dental disorder involving the affected tooth or vital pulp evidenced by response to pulp vitality testing." []
+comment: ICOP number: 1.1.2.1.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010091 ! periodontal pain due to apical periodontitis resulting from endodontic disease
+relationship: RO:0002410 OHD:0010060
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:33:57Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010173
+name: periodontal pain due to endodontic infection
+def: "Periodontal pain attributed to apical periodontitis due to endodontic disease because of partial or total pulp necrosis and endodontic infection that have been diagnosed by: non-vital pulp, evidenced by either: direct inspection, or non-response to pulp vitality testing or a previously debrided root canal or clinical or radiographic evidence of apical inflammation." []
+comment: ICOP number: 1.1.2.1.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010091 ! periodontal pain due to apical periodontitis resulting from endodontic disease
+relationship: RO:0002410 OHD:0010172
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:37:38Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010175
+name: periodontal pain due to intraradicular endodontic infection
+def: "Periodontal pain due to endodontic infection resulting from to a tooth that has a root canal infection." []
+comment: ICOP number: 1.1.2.1.2.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010173 ! periodontal pain due to endodontic infection
+relationship: RO:0002410 OHD:0010174
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:44:16Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010177
+name: periodontal pain due to extraradicular endodontic infection
+def: "Periodontal pain attributed to endodontic infection due to an extraradicular infection around one or more teeth." []
+comment: ICOP number: 1.1.2.1.2.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010173 ! periodontal pain due to endodontic infection
+relationship: RO:0002410 OHD:0010176
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:47:51Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010178
+name: periodontal pain due to periodontitis as a manifestation of a systemic disorder
+def: "Periodontal pain due to periodontal disease that results from a systematic disorder." []
+comment: ICOP number: 1.1.2.1.3.3
+comment: related ICOP term: 1.1.2.1.3.3.3
+subset: PAIN:0010296
+synonym: "periodontal pain due to unspecified systemic disorder" RELATED []
+is_a: PAIN:0010102 ! periodontal pain due to periodontal disease
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:53:25Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010179
+name: periodontal pain due to genetic disorder
+def: "Periodontal pain due to periodontitis as a manifestion of a systematic genetic disorder. Genetic disorders which can result in periodontitis include familial and cyclic neutropenia, Down syndrome, leukocyte adhesion deficiency syndromes, Papillon–Lefèvre syndrome, Chediak–Higashi syndrome, histiocytosis syndromes, glycogen storage disease, infantile genetic agranulocytosis, Cohen syndrome, Ehler–Danlos syndrome (types IV and VIII), and hypophosphatasia." []
+comment: ICOP number: 1.1.2.1.3.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010178 ! periodontal pain due to periodontitis as a manifestation of a systemic disorder
+relationship: RO:0002410 OGMS:0000047
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:54:59Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010181
+name: periodontal pain due to haematological disorder
+def: "Periodontal pain due to periodontitis as a manifestation of a systematic haematological disorder. Haematological disorders which can result in periodontitis include acquired neutropenia and leukaemia." []
+comment: ICOP number: 1.1.2.1.3.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010178 ! periodontal pain due to periodontitis as a manifestation of a systemic disorder
+relationship: RO:0002410 OHD:0010180
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T18:59:27Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010182
+name: periodontal pain due to periodontal abscess
+def: "Periodontal pain due to periodontal disease resulting from either or both of the following: acute inflammation and loss of attatchement, or marginal and periradicular bone resorption." []
+comment: ICOP number: 1.1.2.1.3.5
+subset: PAIN:0010296
+is_a: PAIN:0010102 ! periodontal pain due to periodontal disease
+relationship: RO:0002410 OHD:0010183
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T19:02:46Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010185
+name: gingival pain due to malignant lesion
+def: "Gingival pain due to a malignant lesion of the gingival tissues." []
+comment: ICOP number: 1.1.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010006 ! gingival pain
+relationship: RO:0002410 OHD:0010184
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T19:22:46Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010186
+name: oral mucosal, salivary gland and jaw bone pains
+def: "Pain due to a lesion or disorder affecting the non-dental oral and peri-oral tissues: the oral mucosa, the salivary glands and the jaw bone tissues." []
+comment: ICOP number: 1.2
+subset: PAIN:0010296
+is_a: PAIN:0010001 ! dental pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-26T19:24:13Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010190
+name: periodontal pain due to infective peri-implantitis
+def: "Periodontal paind due to periodontitis, with the exception that it involves an implant and not a natural tooth, resulitng from a peri-implant infection with casuation from anatomical, functional, or temporal association." []
+comment: ICOP number: 1.1.2.1.5
+subset: PAIN:0010296
+is_a: PAIN:0010071 ! periodontal pain due to periodontitis
+relationship: RO:0002410 OHD:0010189
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T17:05:54Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010192
+name: periodontal pain due to apical and marginal periodontitis resulting from combined endodontic infection and periodontal disease
+def: "Periodontal pain due to periodontitis resulting from partial or total pulp necrosis or periodontal disease." []
+comment: ICOP number: 1.1.2.1.4
+subset: PAIN:0010296
+is_a: PAIN:0010071 ! periodontal pain due to periodontitis
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T17:16:38Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010195
+name: pulpal pain due to irreversible pulpitis resulting from carious pulp exposure and infection of the pulp
+def: "pulpal pain due to irreversible pulpitis resulting from an infection of the dental pulp because of deep caries in the affected tooth." []
+comment: ICOP number: 1.1.1.3.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010099 ! pulpal pain due to irreversible pulpitis resulting from an infection of the dental pulp
+relationship: RO:0002410 OHD:0010194
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T17:32:59Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010198
+name: oral mucosal pain due to non-iatrogenic injury
+def: "Oral mucosal pain due to oral mucosal inflammation resulting from non-iatrogenic injury." []
+comment: ICOP number: 1.2.1.1.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010057 ! oral mucosal pain due to injury
+relationship: RO:0002410 OHD:0010197
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T17:47:50Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010200
+name: oral mucosal pain due to radiation or chemotherapy
+def: "Oral mucosal pain due to injury from radiation or chemotherapy" []
+comment: ICOP number: 1.2.1.1.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010057 ! oral mucosal pain due to injury
+relationship: RO:0002410 OHD:0010199
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T17:53:15Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010201
+name: oral mucosal pain due to malignant lesion
+def: "Oral mucoal pain due to meoplasia of the oral mucosa." []
+comment: ICOP number: 1.2.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010022 ! oral mucosal pain
+relationship: RO:0002410 OHD:0010184
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T17:57:07Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010206
+name: salivary gland pain due to recurrent juvenile parotitis
+def: "Salivary gland pain due to recurrent juvenile parotitis." []
+comment: ICOP number: 1.2.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010023 ! salivary gland pain
+relationship: RO:0002410 OHD:0010205
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:10:29Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010207
+name: jaw bone pain due to malignant lesion
+def: "Jaw bone pain that results from a primary or seconday malignant lesion." []
+comment: ICOP number: 1.2.3.4
+subset: PAIN:0010296
+is_a: PAIN:0010007 ! jaw bone pain
+relationship: RO:0002410 OHD:0010184
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:16:50Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010209
+name: jaw bone pain due to local benign lesion
+def: "Jaw bone pain that results from a local benign lesion." []
+comment: ICOP number: 1.2.3.3
+subset: PAIN:0010296
+is_a: PAIN:0010007 ! jaw bone pain
+relationship: RO:0002410 OHD:0010208
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:22:25Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010211
+name: jaw bone pain due to local malignancy
+def: "Jaw bone pain due to a primary malignant lesion." []
+comment: ICOP number: 1.2.3.4.1
+subset: PAIN:0010296
+is_a: PAIN:0010207 ! jaw bone pain due to malignant lesion
+relationship: RO:0002410 OHD:0010210
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:27:19Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010213
+name: jaw bone pain due to remote malignancy
+def: "Jaw bone pain due to a remote malignant lesion." []
+comment: ICOP number: 1.2.3.4.2
+subset: PAIN:0010296
+is_a: PAIN:0010207 ! jaw bone pain due to malignant lesion
+relationship: RO:0002410 OHD:0010212
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:29:32Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010214
+name: jaw bone pain due to therapy
+def: "Jaw bone pain due to a theraputic intervention that has resulted in a lesion." []
+comment: ICOP number: 1.2.3.5
+subset: PAIN:0010296
+is_a: PAIN:0010007 ! jaw bone pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:30:41Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010215
+name: primary myofascial orofacial pain
+def: "Pain in masticatory muscles, with or without functional impairment, not attributable to another disorder." []
+comment: ICOP number: 2.1
+subset: PAIN:0010296
+is_a: PAIN:0010003 ! myofascial orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:37:54Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010216
+name: acute primary myofascial orofacial pain
+def: "Mild to moderate levels of deep aching or pressing pain in the masticatory muscles, occurring episodically or unremittingly, often associated with functional impairment such as perceived difficulties in moving the lower jaw, chewing and/or yawning, etc., and with onset within the last 3 months." []
+comment: ICOP number: 2.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010215 ! primary myofascial orofacial pain
+relationship: RO:0000053 PATO:0000389
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:38:53Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010217
+name: chronic primary myofascial orofacial pain
+def: "Mild to moderate levels of deep aching or pressing pain in the masticatory muscles, occurring episodically or unremittingly, often associated with functional impairment such as perceived difficulties in moving the lower jaw, chewing and/or yawning, etc., and with onset more than 3 months ago. It is often associated with psychosocial distress." []
+comment: ICOP number: 2.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010215 ! primary myofascial orofacial pain
+relationship: RO:0000053 PATO:0001863
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:39:42Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010218
+name: chronic infrequent primary myofascial orofacial pain
+def: "Chronic primary myofascial orofacial pain occurring on less than one day a month." []
+comment: ICOP number: 2.1.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010217 ! chronic primary myofascial orofacial pain
+relationship: RO:0000053 PATO:0000381
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:41:37Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010219
+name: chronic frequent primary myofascial orofacial pain
+def: "Chronic primary myofascial pain occurring 1-14 days a month for more than 3 months." []
+comment: ICOP number: 2.1.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010217 ! chronic primary myofascial orofacial pain
+relationship: RO:0000053 PATO:0000380
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-06-30T18:42:07Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010224
+name: chronic frequent primary myofascial orofacial pain without pain referral
+def: "Chronic frequent primary myofascial pain with no report of pain at a site beyond the boundary of the muscle (temporalis or masseter) being palpated." []
+comment: ICOP number: 2.1.2.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010219 ! chronic frequent primary myofascial orofacial pain
+relationship: RO:0002410 OHD:0010223 ! chronic frequent pain without pain referral
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:18:27Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010225
+name: chronic frequent primary myofascial orofacial pain with pain referral
+def: "Chronic frequent primary myofascial pain with a report of pain at a site beyond the boudary of the muscle being palpated." []
+comment: ICOP number: 2.1.2.2.2
+subset: PAIN:0010296
+intersection_of: PAIN:0010219 ! chronic frequent primary myofascial orofacial pain
+intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:20:22Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010227
+name: chronic highly frequent primary myofascial orofacial pain
+def: "Chronic frequent primary myofascial pain occuring more than 15 days a month for an average of more than 3 months." []
+comment: ICOP number: 2.1.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010219 ! chronic frequent primary myofascial orofacial pain
+relationship: RO:0002410 OHD:0010226 ! chronic highly frequent pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:25:28Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010228
+name: chronic highly frequent primary myofascial orofacial pain without pain referral
+def: "Chronic highly frequent primary myofascial orofacial pain with no report of pain at a site beyond the boundary of the muscle (temporalis or masseter) being palpated." []
+comment: ICOP number: 2.1.2.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010227 ! chronic highly frequent primary myofascial orofacial pain
+relationship: RO:0002410 OHD:0010229 ! chronic highly frequent pain without pain referral
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:31:39Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010231
+name: chronic highly frequent primary myofascial orofacial pain with pain referral
+def: "Chronic highly frequent primary myofascial orofascial pain with a report of pain at a site beyond the boundary of the muscle being palpated." []
+comment: ICOP number: 2.1.2.3.2
+subset: PAIN:0010296
+intersection_of: PAIN:0010227 ! chronic highly frequent primary myofascial orofacial pain
+intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:39:54Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010232
+name: secondary myofascial orofacial pain
+def: "Myofascial pain caused by an underlying disorder (inflammation, infection or muscle spasm)." []
+comment: ICOP number: 2.2
+subset: PAIN:0010296
+is_a: PAIN:0010003 ! myofascial orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:44:16Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010233
+name: myofascial orofacial pain attributed to tendonitis
+def: "Pain of tendon origin, affected by jaw movement, function or parafunction and replicated by provocation-testing of the relevant masticatory tendon. Limitation of mandibular movement(s) secondary to pain may be present. The temporalis tendon is a common site of tendonitis and may refer pain to the teeth and other nearby structures. Tendonitis can also occur in other masticatory muscle tendons." []
+comment: ICOP number: 2.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010232 ! secondary myofascial orofacial pain
+relationship: RO:0002410 OHD:0010291
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:46:19Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010234
+name: myofascial orofacial pain attributed to myositis
+def: "Pain caused by myositis affecting one or more masticatory muscles, with clinical characteristics of inﬂammation or infection: oedema, erythema and/or increased temperature. It generally arises acutely following direct trauma of the muscle or from infection, or chronically with autoimmune disease. Limitation of unassisted mandibular movements secondary to pain is often present. Calciﬁcation of the muscle can occur (i.e. myositis ossiﬁcans)." []
+comment: ICOP number: 2.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010232 ! secondary myofascial orofacial pain
+relationship: RO:0002410 OHD:0010305
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:48:14Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010235
+name: myofascial orofacial pain attributed to muscle spasm
+def: "Pain caused by sudden, involuntary, reversible tonic contraction of a muscle. Such spasm may affect any of the masticatory muscles. Acute malocclusion may be present." []
+comment: ICOP number: 2.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010232 ! secondary myofascial orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:49:34Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010236
+name: temporomandibular joint pain attributed to arthritis
+def: "TMJ pain caused by persistent inflammation of articular tissues (due, for example, to trauma, infection, crystal deposition or autoimmune disorder). TMJ pain is common in TMJ arthritis, but TMJ arthritis can be present without pain." []
+comment: ICOP number: 3.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010128 ! secondary temporomandibular joint pain
+relationship: RO:0002410 OHD:0010306
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:52:37Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010237
+name: temporomandibular joint pain attributed to non-systemic arthritis
+def: "Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease but not evidence that associates it with the TMJ pain or no evidence of rheumatological disease." []
+comment: ICOP number: 3.2.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010236 ! temporomandibular joint pain attributed to arthritis
+relationship: RO:0002410 OHD:0010307
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:53:36Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010238
+name: temporomandibular joint pain attributed to systemic arthritis
+def: "Temporomandibular joint due to arthritis with evidence of systemic inflammatory joint disease, pain developed in close temporal relation to other symptoms, and either the pain has significantly worsened in parallel with worsening of the systemic inflammatory joint disease or the pain has significantly improved or resolved with treatment of the systemic inflammatory joint disease." []
+comment: ICOP number: 3.2.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010236 ! temporomandibular joint pain attributed to arthritis
+relationship: RO:0002410 OHD:0010308
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:54:43Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010239
+name: temporomandibular joint pain attributed to disc displacement
+def: "TMJ pain caused by TMJ disc displacement in the absence of TMJ arthritis. TMJ pain can here be due to mechanical derangements within the joint." []
+comment: ICOP number: 3.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010128 ! secondary temporomandibular joint pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:58:05Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010240
+name: temporomandibular joint pain attributed to disc displacement with reduction
+def: "Secondary temporomandibular joint pain due to TMJ disc displacement with reduction that any TMJ noise on jaw movement or function have been reported and clicking, popping, or snapping noises detected with palpation on the jaw opening and closing." []
+comment: ICOP number: 3.2.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010239 ! temporomandibular joint pain attributed to disc displacement
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T18:01:04Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010241
+name: temporomandibular joint pain attributed to disc displacement with reduction, with intermittent locking
+def: "Temporomandibular joint pain due to disc displacement with reduction with intermittent jaw locking with limited mouth opening." []
+comment: ICOP number: 3.2.2.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010240 ! temporomandibular joint pain attributed to disc displacement with reduction
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T18:02:56Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010242
+name: temporomandibular joint pain attributed to disc displacement without reduction
+def: "Secondary temporomandibulare join pain due to TMJ disc displacement without reduction, which has been diagnosed by jaw locking or limitation of jaw opening. Along with evidence of pain developing in close temporal relation to the disc dsiplacement, a significant worsening in pain paralelle." []
+comment: ICOP number: 3.2.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010239 ! temporomandibular joint pain attributed to disc displacement
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T18:04:14Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010243
+name: temporomandibular joint pain due to degenerative joint disease
+def: "TMJ pain caused by degenerative joint disorder (osteoarthrosis, osteoarthritis) in the absence of TMJ arthritis." []
+comment: ICOP number: 3.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010128 ! secondary temporomandibular joint pain
+relationship: RO:0002410 OHD:0010309
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T18:06:11Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010244
+name: temporomandibular joint pain due to subluxation
+def: "TMJ pain caused by subluxation, in the absence of TMJ arthritis. It is usually acute, and probably due to overstretching of tissues." []
+comment: ICOP number: 3.2.4
+subset: PAIN:0010296
+is_a: PAIN:0010128 ! secondary temporomandibular joint pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T18:06:56Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010245
+name: idiopathic trigeminal neuralgia
+def: "Trigeminal neuralgia with neither electrophysiological tests nor MRI showing significant abnormalities." []
+comment: ICOP term: 4.1.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010129 ! trigeminal neuralgic pain
+relationship: RO:0000053 PAIN:0000127 ! idiopathic
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T18:12:38Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010246
+name: trigeminal neuralgia due to multiple sclerosis
+def: "Trigeminal neuralgia caused by a multiple sclerosis (MS) plaque or plaques in the pons or trigeminal root entry zone, and associated with other symptoms and/or clinical or laboratory findings of MS." []
+comment: ICOP number: 4.1.1.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010131 ! secondary trigeminal neuralgia
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:04:21Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010247
+name: trigeminal neuralgia due to space-occupying lesion
+def: "Trigeminal neuralgia caused by contact between the affected trigeminal nerve and a space-occupying lesion." []
+comment: ICOP number: 4.1.1.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010131 ! secondary trigeminal neuralgia
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:07:10Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010249
+name: classical trigeminal neuralgia with concomitant continuous pain
+def: "Classical trigeminal neuralgia with persistent background pain." []
+comment: ICOP number: 4.1.1.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010130 ! classic trigeminal neuralgia
+relationship: RO:0002410 PAIN:0000001 ! concomitant continuous pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:15:13Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010250
+name: idiopathic trigeminal neuralgia with concomitant continuous pain
+def: "Idiopathic trigeminal neuralgia with recurrent paroxysms of unilateral facial pain that is concomitant continuous of near-continuous pain between attacks in the affected trigeminal distirbution." []
+comment: ICOP number: 4.1.1.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010245 ! idiopathic trigeminal neuralgia
+relationship: RO:0002410 PAIN:0000001 ! concomitant continuous pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:16:21Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010253
+name: glossopharyngeal neuropathic pain
+def: "Glossopharyngeal nerve associated pain that occurs within the distribution of the glossopharyngeal nerve (posterior part of the tongue, tonsillar fossa, pharynx or beneath the angle of the lower jaw). In addition, pain is commonly perceived in the ipsilateral ear. The primary pain is usually continuous or near-continuous, and commonly described as burning or squeezing, or likened to pins and needles. Brief paroxysms may be superimposed but they are not the predominant pain type. This combination distinguishes 4.2.2 Glossopharyngeal neuropathic pain from 4.2.1 Glossopharyngeal neuralgia. Sensory deficits may be present in the ipsilateral posterior part of the tongue and tonsillar fossa, and the gag reflex may be weak or missing." []
+comment: ICOP number: 4.2.2
+comment: realted ICOP number: 4.2.2.1
+subset: PAIN:0010296
+synonym: "glossopharyngeal neuropathic pain due to a known cause" RELATED []
+is_a: PAIN:0010132 ! pain due to lesion or disease of the glossopharyngeal nerve
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:24:40Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010254
+name: idiopathic glossopharyngeal neuropathic pain
+def: "Unilateral continuous or near-continuous pain, with or without superimposed brief paroxysms, in the distribution(s) of the glossopharyngeal nerve and of unknown aetiology." []
+comment: ICOP number: 4.2.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010253 ! glossopharyngeal neuropathic pain
+relationship: RO:0000053 PAIN:0000127 ! idiopathic
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:28:43Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010255
+name: orofacial pain with headache presentation
+def: "Orofacial pains resembling presentations of primary headaches." []
+comment: ICOP number: 5
+subset: PAIN:0010296
+is_a: PAIN:0000090 ! orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:31:48Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010256
+name: orofacial migraine
+def: "Episodic or chronic pain exclusively in the orofacial region, without head pain, with the characteristics and associated features of 1. Migraine described in ICHD-3." []
+comment: ICOP number: 5.1
+subset: PAIN:0010296
+is_a: PAIN:0010255 ! orofacial pain with headache presentation
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:32:24Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010257
+name: episodic orofacial migraine
+def: "Recurrent orofacial pain (OFP) attacks, without head pain, lasting 4–72 hours. Typical characteristics of the pain are unilateral location, pulsating quality, moderate or severe intensity, aggravation by routine physical activity and association with nausea and/or photophobia and phonophobia." []
+comment: ICOP number: 5.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010256 ! orofacial migraine
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:33:53Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010258
+name: chronic orofacial migraine
+def: "Facial or oral pain occurring on 15 or more days per month for more than 3 months, which has the features of migraine on at least 8 days per month." []
+comment: ICOP number: 5.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010256 ! orofacial migraine
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:34:44Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010259
+name: tension-type orofacial pain
+def: "Episodic or chronic pain exclusively in the orofacial region, without head pain, with the characteristics and associated features of 2. Tension-type headache described in the International Classification of Headache Disorders 3rd Edition, which can include pressing or tightening with mild to moderate intensity with bilateral location." []
+comment: ICOP number: 5.2
+subset: PAIN:0010296
+is_a: PAIN:0010255 ! orofacial pain with headache presentation
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:36:31Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010260
+name: trigeminal autonomic orofacial pain
+def: "Attacks of pain, exclusively in the orofacial region, without head pain, with the characteristics and associated features of a disorder described under 3. Trigeminal autonomic cephalalgias in the International Classification of Headache Disorders 3rd Edition, which include conjunctival injection and/or lacrimation, nasal congestion and/or rhinorrhoea, eyelid oedema, forehead and facial sweating, miosis and/or ptosis." []
+comment: ICOP number: 5.3
+subset: PAIN:0010296
+is_a: PAIN:0010255 ! orofacial pain with headache presentation
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-02T19:37:03Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010261
+name: orofacial cluster attacks
+def: "Attacks of severe, strictly unilateral facial and/or oral pain, without head pain, lasting 15–180 minutes and occurring from once every other day to eight times a day. The pain is associated with ipsilateral conjunctival injection, lacrimation, nasal congestion, rhinorrhoea, forehead and facial sweating, miosis, ptosis and/or eyelid oedema, and/or with restlessness or agitation." []
+comment: ICOP number: 5.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010260 ! trigeminal autonomic orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:16:21Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010262
+name: episodic orofacial cluster attacks
+def: "Orofacial cluster attacks occurring in periods lasting from 7 days to 1 year, separated by pain-free periods lasting at least 3 months." []
+comment: ICOP number: 5.3.1.1
+subset: PAIN:0010296
+intersection_of: PAIN:0010261 ! orofacial cluster attacks
+intersection_of: RO:0000053 PATO:0002630
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:16:59Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010263
+name: chronic orofacial cluster attacks
+def: "Orofacial cluster attacks occurring for more than 1 year without remission, or with remission periods lasting less than 3 months." []
+comment: ICOP number: 5.3.1.2
+subset: PAIN:0010296
+intersection_of: PAIN:0010261 ! orofacial cluster attacks
+intersection_of: RO:0000053 PATO:0001863
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:17:49Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010264
+name: paroxysmal hemifacial pain
+def: "Attacks of severe, strictly hemifacial pain, without head pain, lasting 2–30 minutes and occurring several or many times a day. The attacks may be associated with ipsilateral conjunctival injection, lacrimation, nasal congestion, rhinorrhoea, forehead and facial sweating, miosis, ptosis and/or eyelid oedema." []
+comment: ICOP number: 5.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010260 ! trigeminal autonomic orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:18:22Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010265
+name: episodic paroxysmal hemifacial pain
+def: "Attacks of paroxysmal hemifacial pain occurring in periods lasting from 7 days to 1 year, separated by pain-free periods lasting at least 3 months." []
+comment: ICOP number: 5.3.2.1
+subset: PAIN:0010296
+intersection_of: PAIN:0010264 ! paroxysmal hemifacial pain
+intersection_of: RO:0000053 PATO:0002630
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:19:05Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010267
+name: chronic paroxysmal hemifacial pain
+def: "Attacks of paroxysmal hemifacial pain occurring for more than 1 year without remission, or with remission periods lasting less than 3 months." []
+comment: ICOP number: 5.3.2.2
+subset: PAIN:0010296
+intersection_of: PAIN:0010264 ! paroxysmal hemifacial pain
+intersection_of: RO:0000053 PATO:0001863
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:22:04Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010268
+name: short-lasting unilateral neuralgiform facial pain attacks with cranial autonomic symptoms (SUNFA)
+def: "Attacks of moderate or severe, strictly unilateral oral and/or facial pain, without head pain, lasting seconds to minutes, occurring at least once a day and usually associated with prominent lacrimation and redness of the ipsilateral eye and/or other local autonomic symptoms and/or signs." []
+comment: ICOP number: 5.3.3
+subset: PAIN:0010296
+is_a: PAIN:0010260 ! trigeminal autonomic orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:23:06Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010269
+name: episodic SUNFA
+def: "Attacks of SUNFA occurring in periods lasting from 7 days to 1 year, separated by pain-free periods lasting at least 3 months." []
+comment: ICOP number: 5.3.3.1
+subset: PAIN:0010296
+intersection_of: PAIN:0010268 ! short-lasting unilateral neuralgiform facial pain attacks with cranial autonomic symptoms (SUNFA)
+intersection_of: RO:0000053 PATO:0002630
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:26:23Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010270
+name: chronic SUNFA
+def: "Attacks of SUNFA occurring for more than 1 year without remission, or with remission periods lasting less than 3 months." []
+comment: ICOP number: 5.3.3.2
+subset: PAIN:0010296
+intersection_of: PAIN:0010268 ! short-lasting unilateral neuralgiform facial pain attacks with cranial autonomic symptoms (SUNFA)
+intersection_of: RO:0000053 PATO:0001863
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:26:56Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010271
+name: hemifacial continuous pain with autonomic symptoms
+def: "While no isolated facial equivalent of 3.4 Hemicrania continua, described in International Classification of Headache Disorders 3rd Edition,, has so far been clearly established, extension of pain into the face in hemicrania continua has been described. Thus, pain referral and/or radiation to oral and/or facial structures may cause diagnostic difficulties." []
+comment: ICOP number: 5.3.4
+subset: PAIN:0010296
+is_a: PAIN:0010260 ! trigeminal autonomic orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:27:44Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010272
+name: neurovascular orofacial pain
+def: "Attacks of variable duration of moderate or severe intraoral pain, without head pain, often accompanied by toothache-like symptoms, with mild autonomic and/or migrainous symptoms. Two subforms are represented by patients with relatively short attacks (1–4 hours) and those with longer attacks (>4 hours)." []
+comment: ICOP number: 5.4
+subset: PAIN:0010296
+is_a: PAIN:0010255 ! orofacial pain with headache presentation
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:28:50Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010273
+name: short-lasting neurovascular orofacial pain
+def: "Neurovascular orofacial pain that lasts between 1-4 hours." []
+comment: ICOP number: 5.4.1
+subset: PAIN:0010296
+is_a: PAIN:0010272 ! neurovascular orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:30:01Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010274
+name: long-lasting neurovascular orofacial pain
+def: "Neurovascular orofacial pain that lasts more than 4 hours." []
+comment: ICOP number: 5.4.2
+subset: PAIN:0010296
+is_a: PAIN:0010272 ! neurovascular orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:30:34Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010275
+name: idiopathic orofacial pain
+def: "Orofacial pain involving unilateral or bilateral intraoral or facial pain in the distribution(s) of one or more branches of the trigeminal nerve(s) for which the aetiology is unknown. The pain is usually persistent, of moderate intensity, poorly localized and described as dull, pressing or of burning character." []
+comment: ICOP number: 6
+subset: PAIN:0010296
+intersection_of: PAIN:0000090 ! orofacial pain
+intersection_of: RO:0000053 PAIN:0000127 ! idiopathic
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:31:21Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010276
+name: burning mouth syndrome (BMS)
+def: "An intraoral burning or dysaesthetic sensation, recurring daily for more than 2 hours per day for more than 3 months, without evident causative lesions on clinical examination and investigation." []
+comment: ICOP number: 6.1
+subset: PAIN:0010296
+is_a: PAIN:0010275 ! idiopathic orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:32:34Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010277
+name: burning mouth syndrome without somatosensory changes
+def: "An intraoral burning or dysaesthetic sensation, recurring daily for more than 2 hours per day for more than 3 months, unaccompanied by somatosensory changes and without evident causative lesions on clinical examination and investigation." []
+comment: ICOP number: 6.1.1
+subset: PAIN:0010296
+is_a: PAIN:0010276 ! burning mouth syndrome (BMS)
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:33:11Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010278
+name: burning mouth syndrome with somatosensory changes
+def: "An intraoral burning or dysaesthetic sensation, recurring daily for more than 2 hours per day for more than 3 months and accompanied by negative and/or positive somatosensory changes, without evident causative lesion(s) on clinical examination and investigation." []
+comment: ICOP number: 6.1.2
+subset: PAIN:0010296
+is_a: PAIN:0010276 ! burning mouth syndrome (BMS)
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:34:39Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010279
+name: probable burning mouth syndrome
+def: "An intraoral burning or dysaesthetic sensation, recurring daily for more than 2 hours per day but for less than 3 months, without evident causative lesions on clinical examination and investigation." []
+comment: ICOP number: 6.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010276 ! burning mouth syndrome (BMS)
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:35:50Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010280
+name: persistent idiopathic facial pain (PIFP)
+def: "Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months, in the absence of clinical neurological deficit or preceding causative event." []
+comment: ICOP number: 6.2
+subset: PAIN:0010296
+is_a: PAIN:0010275 ! idiopathic orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:36:33Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010281
+name: persistent idiopathic facial pain without somatosensory changes
+def: "Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months, unaccompanied by somatosensory changes and in the absence of clinical neurological deficit or preceding causative event." []
+comment: ICOP number: 6.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010280 ! persistent idiopathic facial pain (PIFP)
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:37:25Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010282
+name: persistent idiopathic facial pain with somatosensory changes
+def: "Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months and accompanied by negative and/or positive somatosensory changes, in the absence of clinical neurological deficit or preceding causative event." []
+comment: ICOP number: 6.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010280 ! persistent idiopathic facial pain (PIFP)
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:38:09Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010283
+name: probable persistent idiopathic facial pain
+def: "Facial pain, with variable features, recurring daily for more than 2 hours per day but for less than 3 months, in the absence of clinical neurological deficit or preceding causative event." []
+comment: ICOP number: 6.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010280 ! persistent idiopathic facial pain (PIFP)
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:38:41Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010284
+name: persistent idiopathic dentoalveolar pain
+def: "Persistent unilateral intraoral dentoalveolar pain, rarely occurring in multiple sites, with variable features but recurring daily for more than 2 hours per day for more than 3 months, in the absence of any preceding causative event." []
+comment: ICOP number: 6.3
+subset: PAIN:0010296
+is_a: PAIN:0010275 ! idiopathic orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:39:28Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010285
+name: persistent idiopathic dentoalveolar pain without somatosensory changes
+def: "Persistent unilateral intraoral dentoalveolar pain, rarely occurring in multiple sites, with variable features, recurring daily for more than 2 hours per day for more than 3 months, unaccompanied by somatosensory changes and in the absence of any preceding causative event." []
+comment: ICOP number: 6.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010284 ! persistent idiopathic dentoalveolar pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:41:16Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010286
+name: persistent idiopathic dentoalveolar pain with somatosensory changes
+def: "Persistent unilateral intraoral dentoalveolar pain, rarely occurring in multiple sites, with variable features, recurring daily for more than 2 hours per day for more than 3 months and accompanied by negative and/or positive somatosensory changes, in the absence of any preceding causative event." []
+comment: ICOP number: 6.3.2
+subset: PAIN:0010296
+is_a: PAIN:0010284 ! persistent idiopathic dentoalveolar pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:41:53Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010287
+name: probable persistent idiopathic dentoalveolar pain
+def: "Unilateral intraoral dentoalveolar pain, rarely occurring in multiple sites, with variable features, recurring daily for more than 2 hours per day but for less than 3 months, in the absence of any preceding causative event." []
+comment: ICOP number: 6.3.3
+subset: PAIN:0010296
+is_a: PAIN:0010284 ! persistent idiopathic dentoalveolar pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:42:36Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010288
+name: constant unilateral facial pain with additional attacks (CUFPA)
+def: "Constant (unremitting) dull unilateral facial pain of mild to moderate intensity, accompanied by distinct attacks of moderate to severe pain in the same location lasting 10--30 minutes. There are no typical autonomic and/or migrainoid features accompanying either the constant pain or the additional pain attacks." []
+comment: ICOP number: 6.4
+subset: PAIN:0010296
+is_a: PAIN:0010275 ! idiopathic orofacial pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-07T17:43:15Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010292
+name: gingival pain due to autoimmunity
+def: "Gingival pain due to gingivitis resulting from an autoimmune disease or disorder." []
+comment: ICOP number: 1.1.3.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010024 ! gingival pain due to gingivitis
+relationship: RO:0002410 OBI:1110054
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:26:49Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010293
+name: gingival pain attributed to hypersensitivity or allergic reaction
+def: "GIngival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues." []
+comment: ICOP number: 1.1.3.1.4
+subset: PAIN:0010296
+is_a: PAIN:0010024 ! gingival pain due to gingivitis
+relationship: RO:0002410 GO:0002524
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:28:26Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010294
+name: oral mucosal pain due to autoimmunity
+def: "Oral mucosal pain due to oralmucosal inflammation resulting from an autoimmue disease." []
+comment: ICOP number: 1.2.1.1.3
+subset: PAIN:0010296
+is_a: PAIN:0010041 ! oral mucosal pain due to oral mucosal inflammation
+relationship: RO:0002410 OBI:1110054
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:29:51Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010295
+name: oral mucosal pain due to hypersensitivity or allergic reaction
+def: "Oral mucosal pain due to oral mucosal inflammation resulting from a hypersensitivity or allergic reaction in the oral mucosa." []
+comment: ICOP number: 1.2.1.1.4
+subset: PAIN:0010296
+is_a: PAIN:0010041 ! oral mucosal pain due to oral mucosal inflammation
+relationship: RO:0002410 GO:0002524
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:31:05Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010297
+name: salivary gland pain due to immunologically mediated disorder
+def: "Salivary gland pain due to an immunologically mediated disorder." []
+comment: ICOP number: 1.2.2.4
+subset: PAIN:0010296
+is_a: PAIN:0010023 ! salivary gland pain
+relationship: RO:0002410 GO:0006955
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:37:30Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010298
+name: salivary gland pain due to obstructive cause
+def: "Salivary gland pain due to an obstruction of the salivary duct." []
+comment: ICOP number: 1.2.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010023 ! salivary gland pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:38:39Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010299
+name: trigeminal neuropathic pain
+def: "Orofacial pain in the distribution of one or more branches of the trigeminal nerve. The primary pain is usually continuous or near-continuous, and commonly described as burning, squeezing, aching or likened to pins and needles." []
+comment: ICOP number: 4.1.2
+comment: related ICOP number: 4.1.2.4
+comment: Superimposed brief pain paroxysms may occur but these are not the predominant pain type. This combination is distinct from that of 4.1.1 Trigeminal neuralgia. There are clinically detectable somatosensory changes within the trigeminal distribution, and mechanical allodynia and cold hyperalgesia/allodynia are common, fulfilling the IASP criteria for neuropathic pain. Allodynic areas may be much larger than the punctate trigger zones present in 4.1.1 Trigeminal neuralgia.
+subset: PAIN:0010296
+synonym: "trigeminal neuropathic pain attributed to other disorder" RELATED []
+is_a: PAIN:0010059 ! pain due to lesion or disease of the trigeminal nerve
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:40:50Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010300
+name: trigeminal neuropathic pain attributed to herpes zoster
+def: "Unilateral facial pain of less than 3 months’ duration in the distribution of one or more branches of the trigeminal nerve, caused by, and associated with other symptoms and/or clinical signs of, acute herpes zoster." []
+comment: ICOP number: 4.1.2.1
+subset: PAIN:0010296
+is_a: PAIN:0010299 ! trigeminal neuropathic pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:41:58Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010301
+name: trigeminal postherpetic neuralgia
+def: "Unilateral facial pain persisting or recurring for at least 3 months in the distribution(s) of one or more branches of the trigeminal nerve, with variable sensory changes, caused by herpes zoster." []
+comment: ICOP number: 4.1.2.2
+subset: PAIN:0010296
+is_a: PAIN:0010299 ! trigeminal neuropathic pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:42:37Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010302
+name: post-traumatic trigeminal neuropathic pain
+def: "Unilateral or bilateral facial or oral pain following and caused by trauma to the trigeminal nerve(s), with other symptoms and/or clinical signs of trigeminal nerve dysfunction, and persisting or recurring for more than 3 months." []
+comment: ICOP number: 4.1.2.3
+subset: PAIN:0010296
+is_a: PAIN:0010299 ! trigeminal neuropathic pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:43:22Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010303
+name: probable post-traumatic trigeminal neuropathic pain
+def: "Post-traumatic trigeminal neuropathic pain without a diagnostic test confirmation of a lesion of the peripheral trieminal nerve explaining the pain." []
+comment: ICOP number: 4.1.2.3.1
+subset: PAIN:0010296
+is_a: PAIN:0010302 ! post-traumatic trigeminal neuropathic pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:43:57Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010304
+name: idiopathic trigeminal neuropathic pain
+def: "Unilateral or bilateral facial pain in the distribution(s) of one or more branches of the trigeminal nerve, indicative of neural damage and persisting or recurring for more than 3 months, but of unknown aetiology." []
+comment: ICOP number: 4.1.2.5
+subset: PAIN:0010296
+is_a: PAIN:0010299 ! trigeminal neuropathic pain
+relationship: RO:0000053 PAIN:0000127 ! idiopathic
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-08T17:45:22Z" xsd:dateTime
+
+[Term]
+id: PATO:0000068
+is_a: COB:0000502
+
+[Term]
+id: PATO:0001236
+is_a: COB:0000502
+
+[Term]
+id: PATO:0001241
+is_a: COB:0000502
+
+[Term]
+id: oboInOwl:ObsoleteClass
+name: obsolete class
+
+[Typedef]
+id: PAIN:0000061
+name: experienced as
+def: "A relation between a nervous system process and a cognitive process in which the nervous system process is gives rise to an experiential mental process." []
+property_value: example_of_usage "Concomitant continuous pain (CCP) in trigeminal neuralgia is often experienced as burning or throbbing." xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T22:09:02Z" xsd:dateTime
+domain: GO:0050877
+range: GO:0050890
+
+[Typedef]
+id: PAIN:0000062
+name: experienced in
+def: "A relation between a nervous system process and a cognitive process in which a physical sensation is subjectively experienced as occurring in an anatomical entity, site, or a site where an anatomical entity is usually located." []
+property_value: example_of_usage "Brain freeze is a brief, intense pain experienced in the forehead." xsd:string
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-04-28T16:36:53Z" xsd:dateTime
+domain: GO:0050877
+range: GO:0050890
+
+[Typedef]
+id: PAIN:0000126
+name: experienced in referred site
+def: "A relation between a physical sensation and an anatomical entity or site, distinct from the site of the causal stimulus underlying the sensation, in which the sensation is subjectively experienced as occurring in the anatomical entity or site." []
+property_value: example_of_usage "chest pain of myocardial infarction experienced in referred site left arm" xsd:string
+property_value: example_of_usage "headache pain of a cold-stimulus response (brain freeze) experienced in referred site forehead" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-10T22:40:49Z" xsd:dateTime
+is_a: PAIN:0000062 ! experienced in
+
+[Typedef]
+id: editor_note
+name: editor note {prov:wasDerivedFrom="caro:import.owl"}
+name: editor note
+namespace: uberon {prov:wasDerivedFrom="caro:import.owl"}
+def: "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology." []
+xref: IAO:0000116 {prov:wasDerivedFrom="caro:import.owl"}
+property_value: IAO:0000111 "editor note" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Daniel Schober" xsd:string
+property_value: IAO:0000119 "GROUP:OBI:<http://purl.obfoundry.org/obo/obi>" xsd:string
+property_value: IAO:0000119 "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>" xsd:string
+property_value: isDefinedBy caro:import.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ecto.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ido.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/omo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: isDefinedBy mf:import.owl
+property_value: isDefinedBy uberon:import.owl
+is_metadata_tag: true {prov:wasDerivedFrom="caro:import.owl"}
+
+[Typedef]
+id: example_of_usage
+name: example of usage
+name: example of usage {prov:wasDerivedFrom="caro:import.owl"}
+namespace: uberon {prov:wasDerivedFrom="caro:import.owl"}
+def: "A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not" []
+def: "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold." []
+xref: IAO:0000112 {prov:wasDerivedFrom="caro:import.owl"}
+property_value: IAO:0000111 "example" xsd:string
+property_value: IAO:0000111 "example of usage" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Daniel Schober" xsd:string
+property_value: IAO:0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>" xsd:string
+property_value: isDefinedBy caro:import.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ecto.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ido.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/omo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: isDefinedBy mf:import.owl
+property_value: isDefinedBy uberon:import.owl
+is_metadata_tag: true {prov:wasDerivedFrom="caro:import.owl"}
+
+[Typedef]
+id: term_tracker_item
+name: term tracker item
+namespace: external
+def: "An IRI or similar locator for a request or discussion of an ontology term." []
+comment: The 'tracker item' can associate a tracker with a specific ontology term.
+xref: IAO:0000233
+property_value: example_of_usage "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/" xsd:string
+property_value: IAO:0000111 "term tracker item" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/omo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+is_metadata_tag: true
+is_class_level: true
+

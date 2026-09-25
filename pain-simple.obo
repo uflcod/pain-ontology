@@ -1,0 +1,266 @@
+format-version: 1.2
+data-version: pain/releases/2026-09-25/pain-simple.owl
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
+subsetdef: PAIN:0010296 ""
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: prov http://www.w3.org/ns/prov# 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
+idspace: terms http://purl.org/dc/terms/ 
+ontology: pain/pain-simple
+property_value: owl:versionInfo "2026-09-25" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:contributor https://orcid.org/0009-0006-7251-3026
+property_value: terms:created "2022-08-23" xsd:string
+property_value: terms:description "The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee)." xsd:string
+property_value: terms:license "http://creativecommons.org/licenses/by/4.0/" xsd:string
+property_value: terms:title "The Pain Ontology" xsd:string
+
+[Typedef]
+id: BFO:0000055
+name: realizes
+def: "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" []
+comment: Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+property_value: example_of_usage "this disease course realizes this disease" xsd:string
+property_value: example_of_usage "this investigation realizes this investigator role" xsd:string
+property_value: example_of_usage "this shattering realizes this fragility" xsd:string
+property_value: IAO:0000111 "realizes" xsd:string
+property_value: IAO:0000600 "to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+
+[Typedef]
+id: PAIN:0000061
+name: experienced as
+def: "A relation between a nervous system process and a cognitive process in which the nervous system process is gives rise to an experiential mental process." []
+property_value: example_of_usage "Concomitant continuous pain (CCP) in trigeminal neuralgia is often experienced as burning or throbbing." xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2024-06-13T22:09:02Z" xsd:dateTime
+
+[Typedef]
+id: PAIN:0000062
+name: experienced in
+def: "A relation between a nervous system process and a cognitive process in which a physical sensation is subjectively experienced as occurring in an anatomical entity, site, or a site where an anatomical entity is usually located." []
+property_value: example_of_usage "Brain freeze is a brief, intense pain experienced in the forehead." xsd:string
+property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-04-28T16:36:53Z" xsd:dateTime
+
+[Typedef]
+id: PAIN:0000126
+name: experienced in referred site
+def: "A relation between a physical sensation and an anatomical entity or site, distinct from the site of the causal stimulus underlying the sensation, in which the sensation is subjectively experienced as occurring in the anatomical entity or site." []
+property_value: example_of_usage "chest pain of myocardial infarction experienced in referred site left arm" xsd:string
+property_value: example_of_usage "headache pain of a cold-stimulus response (brain freeze) experienced in referred site forehead" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-10T22:40:49Z" xsd:dateTime
+is_a: PAIN:0000062 ! experienced in
+
+[Typedef]
+id: RO:0000052
+name: characteristic of
+def: "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence." []
+comment: Note that this relation was previously called "inheres in", but was changed to be called "characteristic of" because BFO2 uses "inheres in" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.
+property_value: example_of_usage "this fragility is a characteristic of this vase" xsd:string
+property_value: example_of_usage "this red color is a characteristic of this apple" xsd:string
+property_value: IAO:0000111 "inheres in" xsd:string
+property_value: IAO:0000118 "inheres_in" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: RO:0001900 RO:0001901
+is_functional: true
+inverse_of: RO:0000053 ! has characteristic
+
+[Typedef]
+id: RO:0000053
+name: has characteristic
+def: "Inverse of characteristic_of" []
+property_value: example_of_usage "this apple is bearer of this red color" xsd:string
+property_value: example_of_usage "this vase is bearer of this fragility" xsd:string
+property_value: IAO:0000111 "bearer of" xsd:string
+property_value: IAO:0000118 "bearer_of" xsd:string
+property_value: IAO:0000118 "is bearer of" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: RO:0001900 RO:0001901
+is_inverse_functional: true
+
+[Typedef]
+id: RO:0000057
+name: has participant
+def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
+property_value: example_of_usage "this blood coagulation has participant this blood clot" xsd:string
+property_value: example_of_usage "this investigation has participant this investigator" xsd:string
+property_value: example_of_usage "this process has participant this input material (or this output material)" xsd:string
+property_value: IAO:0000111 "has participant" xsd:string
+property_value: IAO:0000118 "has_participant" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: terms:source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
+holds_over_chain: has_part RO:0000057
+
+[Typedef]
+id: RO:0002333
+name: enabled by
+def: "inverse of enables" []
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: seeAlso "https://wiki.geneontology.org/Enabled_by" xsd:anyURI
+is_a: RO:0000057 ! has participant
+
+[Typedef]
+id: RO:0002404
+name: causally downstream of
+def: "inverse of upstream of" []
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+is_a: RO:0002410 ! causally related to
+inverse_of: RO:0002411 ! causally upstream of
+
+[Typedef]
+id: RO:0002410
+name: causally related to
+def: "relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause." [https://en.wikipedia.org/wiki/Causality]
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+
+[Typedef]
+id: RO:0002411
+name: causally upstream of
+def: "p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+is_transitive: true
+is_a: RO:0002410 ! causally related to
+
+[Typedef]
+id: editor_note
+name: editor note {prov:wasDerivedFrom="caro:import.owl"}
+name: editor note
+namespace: uberon {prov:wasDerivedFrom="caro:import.owl"}
+def: "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology." []
+xref: IAO:0000116 {prov:wasDerivedFrom="caro:import.owl"}
+property_value: IAO:0000111 "editor note" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Daniel Schober" xsd:string
+property_value: IAO:0000119 "GROUP:OBI:<http://purl.obfoundry.org/obo/obi>" xsd:string
+property_value: IAO:0000119 "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>" xsd:string
+property_value: isDefinedBy caro:import.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ecto.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ido.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/omo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: isDefinedBy mf:import.owl
+property_value: isDefinedBy uberon:import.owl
+is_metadata_tag: true {prov:wasDerivedFrom="caro:import.owl"}
+
+[Typedef]
+id: example_of_usage
+name: example of usage
+name: example of usage {prov:wasDerivedFrom="caro:import.owl"}
+namespace: uberon {prov:wasDerivedFrom="caro:import.owl"}
+def: "A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not" []
+def: "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold." []
+xref: IAO:0000112 {prov:wasDerivedFrom="caro:import.owl"}
+property_value: IAO:0000111 "example" xsd:string
+property_value: IAO:0000111 "example of usage" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Daniel Schober" xsd:string
+property_value: IAO:0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>" xsd:string
+property_value: isDefinedBy caro:import.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ecto.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ido.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/omo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: isDefinedBy mf:import.owl
+property_value: isDefinedBy uberon:import.owl
+is_metadata_tag: true {prov:wasDerivedFrom="caro:import.owl"}
+
+[Typedef]
+id: has_part
+name: has part
+name: has_part
+namespace: external
+namespace: quality
+def: "a core relation that holds between a whole and its part" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+xref: BFO:0000051
+property_value: example_of_usage "my body has part my brain (continuant parthood, two material entities)" xsd:string
+property_value: example_of_usage "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
+property_value: example_of_usage "this year has part this day (occurrent parthood)" xsd:string
+property_value: IAO:0000111 "has part" xsd:string
+property_value: IAO:0000118 "has_part" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+property_value: RO:0001900 RO:0001901
+is_transitive: true
+
+[Typedef]
+id: part_of
+name: part of
+name: part_of
+namespace: external
+namespace: quality
+def: "a core relation that holds between a part and its whole" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+xref: BFO:0000050
+property_value: example_of_usage "my brain is part of my body (continuant parthood, two material entities)" xsd:string
+property_value: example_of_usage "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
+property_value: example_of_usage "this day is part of this year (occurrent parthood)" xsd:string
+property_value: IAO:0000111 "is part of" xsd:string
+property_value: IAO:0000118 "part_of" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+property_value: RO:0001900 RO:0001901
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
+property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
+is_transitive: true
+inverse_of: has_part ! has part
+
+[Typedef]
+id: term_tracker_item
+name: term tracker item
+namespace: external
+def: "A URL for a request or discussion of an ontology term." []
+def: "An IRI or similar locator for a request or discussion of an ontology term." []
+comment: The 'tracker item' can associate a tracker with a specific ontology term.
+xref: IAO:0000233
+property_value: example_of_usage "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/" xsd:string
+property_value: example_of_usage "the URL for an ontology term tracker issue, such as https://github.com/monarch-initiative/mondo/issues/7588" xsd:string
+property_value: IAO:0000111 "term tracker item" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/omo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+is_metadata_tag: true
+is_class_level: true
+
