@@ -20,7 +20,7 @@ $(SUBSETDIR)/icop.owl: $(ONT).owl $(SPARQLDIR)/icop-subset.rq $(SUBSETDIR)/icop-
 	$(ROBOT) query -i $< -q $(word 2, $^) $@.tmp.csv &&\
 	tail -n +2 $@.tmp.csv > $@.tmp.txt &&\
 	rm $@.tmp.csv &&\
-	$(ROBOT) extract --method STAR \
+	$(ROBOT) extract --method BOT \
 			--input $< \
 			--term-file $@.tmp.txt \
 		--output $@.tmp.owl &&\

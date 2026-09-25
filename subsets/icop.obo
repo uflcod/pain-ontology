@@ -22,9 +22,112 @@ property_value: terms:license http://creativecommons.org/licenses/by/4.0/
 property_value: terms:title "International Classification of Orofacial Pain (ICOP)" xsd:string
 
 [Term]
+id: BFO:0000015
+name: process
+namespace: source
+def: "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." []
+def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" []
+def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
+property_value: BFO:0000179 "process" xsd:string
+property_value: BFO:0000180 "Process" xsd:string
+property_value: IAO:0000112 "a process of cell-division, \\ a beating of the heart" xsd:string
+property_value: IAO:0000112 "a process of meiosis" xsd:string
+property_value: IAO:0000112 "a process of sleeping" xsd:string
+property_value: IAO:0000112 "the course of a disease" xsd:string
+property_value: IAO:0000112 "the flight of a bird" xsd:string
+property_value: IAO:0000112 "the life of an organism" xsd:string
+property_value: IAO:0000112 "your process of aging." xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/agro.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cob.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ecocore.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/envo.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+property_value: IAO:0000602 "(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: BFO:0000016
+name: disposition
+is_a: BFO:0000017 ! realizable entity
+property_value: BFO:0000179 "disposition" xsd:string
+property_value: BFO:0000180 "Disposition" xsd:string
+property_value: IAO:0000112 "an atom of element X has the disposition to decay to an atom of element Y" xsd:string
+property_value: IAO:0000112 "certain people have a predisposition to colon cancer" xsd:string
+property_value: IAO:0000112 "children are innately disposed to categorize objects in certain ways." xsd:string
+property_value: IAO:0000112 "the cell wall is disposed to filter chemicals in endocytosis and exocytosis" xsd:string
+property_value: IAO:0000600 "b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/062-002"}
+property_value: IAO:0000601 "If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/063-002"}
+property_value: IAO:0000602 "(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/063-002"}
+property_value: IAO:0000602 "(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/062-002"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cob.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: BFO:0000017
+name: realizable entity
+def: "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." []
+is_a: COB:0000502 ! characteristic
+property_value: BFO:0000179 "realizable" xsd:string
+property_value: BFO:0000180 "RealizableEntity" xsd:string
+property_value: IAO:0000112 "the disposition of this piece of metal to conduct electricity." xsd:string
+property_value: IAO:0000112 "the disposition of your blood to coagulate" xsd:string
+property_value: IAO:0000112 "the function of your reproductive organs" xsd:string
+property_value: IAO:0000112 "the role of being a doctor" xsd:string
+property_value: IAO:0000112 "the role of this boundary to delineate where Utah and Colorado meet" xsd:string
+property_value: IAO:0000600 "To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/058-002"}
+property_value: IAO:0000601 "All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/060-002"}
+property_value: IAO:0000602 "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/060-002"}
+property_value: IAO:0000602 "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/058-002"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cob.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: BFO:0000040
+name: material entity
+def: "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." []
+property_value: BFO:0000179 "material" xsd:string
+property_value: BFO:0000180 "MaterialEntity" xsd:string
+property_value: IAO:0000112 "a flame" xsd:string
+property_value: IAO:0000112 "a forest fire" xsd:string
+property_value: IAO:0000112 "a human being" xsd:string
+property_value: IAO:0000112 "a hurricane" xsd:string
+property_value: IAO:0000112 "a photon" xsd:string
+property_value: IAO:0000112 "a puff of smoke" xsd:string
+property_value: IAO:0000112 "a sea wave" xsd:string
+property_value: IAO:0000112 "a tornado" xsd:string
+property_value: IAO:0000112 "an aggregate of human beings." xsd:string
+property_value: IAO:0000112 "an energy wave" xsd:string
+property_value: IAO:0000112 "an epidemic" xsd:string
+property_value: IAO:0000112 "the undetached arm of a human being" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/envo.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ogg.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+property_value: IAO:0000600 "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/019-002"}
+property_value: IAO:0000601 "every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/021-002"}
+property_value: IAO:0000601 "Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/020-002"}
+property_value: IAO:0000602 "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/021-002"}
+property_value: IAO:0000602 "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/020-002"}
+property_value: IAO:0000602 "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/019-002"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+property_value: isDefinedBy uberon:import.owl
+
+[Term]
+id: COB:0000502
+name: characteristic
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cob.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
 id: EMRO:0000000
 name: emotion process
 def: "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences)." []
+is_a: GO:0007610 ! behavior
 property_value: IAO:0000589 "emotion process (EMRO)" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/emro.owl
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -36,6 +139,7 @@ property_value: terms:created "2025-11-24T20:50:19Z" xsd:dateTime
 id: EMRO:0000001
 name: phenomenal cognitive experience
 def: "A cognitive process during which an organism is aware of something either internal or external to itself." [] {IAO:0000119="https://dictionary.apa.org/consciousness"}
+is_a: GO:0050890 ! cognition
 property_value: IAO:0000589 "phenomenal cognitive experience (EMRO)" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/emro.owl
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -71,10 +175,27 @@ property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T20:59:47Z" xsd:dateTime
 
 [Term]
+id: GO:0002376
+name: immune system process
+namespace: biological_process
+def: "Any process involved in the development or functioning of the immune system, an organismal system for calibrated responses to potential internal or invasive threats." [GO_REF:0000022, GOC:add]
+comment: Note that this term is a direct child of 'biological_process ; GO:0008150' because some immune system processes are types of cellular process (GO:0009987), whereas others are types of multicellular organism process (GO:0032501).
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_flybase_ribbon
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+xref: Wikipedia:Immune_system
+is_a: GO:0008150 ! biological_process
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+
+[Term]
 id: GO:0002437
 name: inflammatory response to antigenic stimulus
 namespace: biological_process
 def: "An inflammatory response to an antigenic stimulus, which can be include any number of T cell or B cell epitopes." [GOC:add, ISBN:0781735149]
+is_a: GO:0006954 ! inflammatory response
 is_a: GO:0006955 ! immune response
 property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
 
@@ -84,6 +205,7 @@ name: acute inflammatory response to antigenic stimulus
 namespace: biological_process
 def: "An acute inflammatory response to an antigenic stimulus. An acute inflammatory response occurs within a matter of minutes or hours, and either resolves within a few days or becomes a chronic inflammatory response." [GO_REF:0000022, GOC:add, ISBN:0781735149]
 is_a: GO:0002437 ! inflammatory response to antigenic stimulus
+is_a: GO:0002526 ! acute inflammatory response
 property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
 
 [Term]
@@ -97,12 +219,140 @@ is_a: GO:0002438 ! acute inflammatory response to antigenic stimulus
 property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
 
 [Term]
+id: GO:0002526
+name: acute inflammatory response
+namespace: biological_process
+def: "Inflammation which comprises a rapid, short-lived, relatively uniform response to acute injury or antigenic challenge and is characterized by accumulations of fluid, plasma proteins, and granulocytic leukocytes. An acute inflammatory response occurs within a matter of minutes or hours, and either resolves within a few days or becomes a chronic inflammatory response." [GO_REF:0000022, GOC:add, ISBN:0781735149]
+is_a: GO:0006954 ! inflammatory response
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0003008
+name: system process
+namespace: biological_process
+def: "A multicellular organismal process carried out by any of the organs or tissues in an organ system. An organ system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a biological objective." [GOC:mtg_cardio]
+synonym: "organ system process" EXACT []
+is_a: GO:0032501 ! multicellular organismal process
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+property_value: RO:0002161 NCBITaxon:2
+property_value: RO:0002161 NCBITaxon:2157
+property_value: RO:0002161 NCBITaxon:4896
+property_value: RO:0002161 NCBITaxon:4932
+
+[Term]
+id: GO:0006950
+name: response to stress
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_drosophila
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: goslim_plant_ribbon
+synonym: "response to abiotic stress" RELATED []
+synonym: "response to biotic stress" RELATED []
+is_a: GO:0050896 ! response to stimulus
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26810" xsd:anyURI
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0006952
+name: defense response
+namespace: biological_process
+alt_id: GO:0002217
+alt_id: GO:0042829
+def: "Reactions, triggered in response to the presence of a foreign body or the occurrence of an injury, which result in restriction of damage to the organism attacked or prevention/recovery from the infection caused by the attack." [GOC:curators]
+synonym: "antimicrobial peptide activity" RELATED []
+synonym: "defence response" EXACT []
+synonym: "defense/immunity protein activity" RELATED []
+synonym: "physiological defense response" EXACT []
+is_a: GO:0006950 ! response to stress
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0006954
+name: inflammatory response
+namespace: biological_process
+def: "The immediate defensive reaction (by vertebrate tissue) to infection or injury caused by chemical or physical agents. The process is characterized by local vasodilation, extravasation of plasma into intercellular spaces and accumulation of white blood cells and macrophages." [GO_REF:0000022, ISBN:0198506732]
+subset: goslim_generic
+synonym: "inflammation" BROAD []
+xref: Wikipedia:Inflammation
+is_a: GO:0006952 ! defense response
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+
+[Term]
 id: GO:0006955
 name: immune response
 namespace: biological_process
 def: "Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat." [GO_REF:0000022, GOC:add]
 subset: goslim_drosophila
+is_a: GO:0002376 ! immune system process
+is_a: GO:0050896 ! response to stimulus
 property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0007600
+name: sensory perception
+namespace: biological_process
+def: "The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process." [GOC:ai, GOC:dph]
+subset: goslim_drosophila
+xref: Reactome:R-HSA-9709957 "Sensory Perception"
+xref: Wikipedia:Perception
+is_a: GO:0050877 ! nervous system process
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0007610
+name: behavior
+namespace: biological_process
+alt_id: GO:0023032
+alt_id: GO:0044708
+alt_id: GO:0044709
+def: "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity." [GOC:ems, GOC:jl, ISBN:0395448956, PMID:20160973]
+comment: 1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.\n2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).
+subset: gocheck_do_not_annotate
+subset: goslim_agr
+subset: goslim_flybase_ribbon
+synonym: "behavioral response to stimulus" EXACT []
+synonym: "behaviour" EXACT []
+synonym: "behavioural response to stimulus" EXACT []
+synonym: "single-organism behavior" RELATED []
+xref: Wikipedia:Behavior
+is_a: GO:0032501 ! multicellular organismal process
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+property_value: skos:prefLabel "behavioral response to stimulus" xsd:string
+created_by: jl
+creation_date: 2012-09-20T14:06:08Z
+
+[Term]
+id: GO:0008150
+name: biological_process
+namespace: biological_process
+alt_id: GO:0000004
+alt_id: GO:0007582
+alt_id: GO:0044699
+def: "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
+comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+synonym: "biological process" EXACT []
+synonym: "physiological process" EXACT []
+synonym: "single organism process" RELATED []
+synonym: "single-organism process" RELATED []
+xref: Wikipedia:Biological_process
+is_a: BFO:0000015 ! process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/24968" xsd:anyURI
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+created_by: jl
+creation_date: 2012-09-19T15:05:24Z
 
 [Term]
 id: GO:0019233
@@ -112,7 +362,78 @@ def: "The series of events required for an organism to receive a painful stimulu
 synonym: "nociception" RELATED []
 synonym: "perception of physiological pain" NARROW []
 xref: Wikipedia:Nociception
+is_a: GO:0007600 ! sensory perception
 property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/29807" xsd:anyURI
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0032501
+name: multicellular organismal process
+namespace: biological_process
+alt_id: GO:0044707
+alt_id: GO:0050874
+def: "Any biological process, occurring at the level of a multicellular organism, pertinent to its function." [GOC:curators, GOC:dph, GOC:isa_complete, GOC:tb]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_annotate
+subset: goslim_pir
+synonym: "organismal physiological process" EXACT []
+synonym: "single-multicellular organism process" RELATED []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/27189" xsd:anyURI
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+property_value: RO:0002161 NCBITaxon:2
+property_value: RO:0002161 NCBITaxon:2157
+property_value: RO:0002161 NCBITaxon:4896
+property_value: RO:0002161 NCBITaxon:4932
+created_by: jl
+creation_date: 2012-09-19T16:07:47Z
+
+[Term]
+id: GO:0050877
+name: nervous system process
+namespace: biological_process
+def: "An organ system process carried out by any of the organs or tissues of the neurological system." [GOC:ai, GOC:mtg_cardio]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_flybase_ribbon
+subset: goslim_generic
+subset: goslim_pir
+synonym: "neurological system process" EXACT []
+synonym: "neurophysiological process" EXACT []
+synonym: "pan-neural process" RELATED []
+is_a: GO:0003008 ! system process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/13824" xsd:anyURI
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0050890
+name: cognition
+namespace: biological_process
+def: "The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory." [ISBN:0721619908]
+subset: goslim_drosophila
+xref: Wikipedia:Cognition
+is_a: GO:0050877 ! nervous system process
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
+property_value: skos:prefLabel "cognitive process" xsd:string
+
+[Term]
+id: GO:0050896
+name: response to stimulus
+namespace: biological_process
+alt_id: GO:0051869
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism." [GOC:ai, GOC:bf]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_annotate
+subset: goslim_agr
+subset: goslim_flybase_ribbon
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_prokaryote
+subset: goslim_prokaryote_ribbon
+synonym: "physiological response to stimulus" EXACT []
+is_a: GO:0008150 ! biological_process
 property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
 
 [Term]
@@ -133,24 +454,52 @@ id: IDO:0000586
 name: infection
 def: "A part of an extended organism that itself has as part a population of one or more infectious agents and that (1) exists as a result of processes initiated by members of the infectious agent population and is (2) clinically abnormal in virtue of the presence of this infectious agent population, or (3) has a disposition to bring clinical abnormality to immunocompetent organisms of the same Species as the host (the organism corresponding to the extended organism) through transmission of a member or offspring of a member of the infectious agent population." []
 comment: The organism corresponding to the extended organism is host to the infectious agents.  By this definition, parts of the host can be considered part of the infection.
+is_a: BFO:0000040 ! material entity
 property_value: IAO:0000117 "Albert Goldfain" xsd:string
 property_value: IAO:0000117 "Alexander Diehl" xsd:string
 property_value: IAO:0000117 "Lindsay Cowell" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ido.owl
 
 [Term]
+id: OBI:0000011
+name: planned process
+def: "A process that realizes a plan which is the concretization of a plan specification." []
+is_a: BFO:0000015 ! process
+property_value: IAO:0000111 "planned process" xsd:string
+property_value: IAO:0000112 "Injecting mice with a vaccine in order to test its efficacy" xsd:string
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "branch derived" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+
+[Term]
 id: OBI:1110054
 name: autoimmune disease
 def: "Is a disease characterized by an immune response of an organism against parts of itself" []
+is_a: OGMS:0000031 ! disease
 property_value: IAO:0000111 "autoimmune disease" xsd:string
 property_value: IAO:0000117 "IEDB" xsd:string
 property_value: IAO:0000119 "IEDB" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OGMS:0000031
+name: disease
+def: "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." []
+is_a: BFO:0000016 ! disposition
+property_value: IAO:0000111 "disease" xsd:string
+property_value: IAO:0000117 "Albert Goldfain" xsd:string
+property_value: IAO:0000119 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ogms.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ido.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/obi.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+
+[Term]
 id: OGMS:0000045
 name: disorder
 def: "A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease." []
+is_a: BFO:0000040 ! material entity
 property_value: IAO:0000117 "Albert Goldfain" xsd:string
 property_value: IAO:0000119 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ogms.owl
@@ -167,6 +516,44 @@ property_value: IAO:0000119 "http://ontology.buffalo.edu/medo/Disease_and_Diagno
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
 
 [Term]
+id: OGMS:0000060
+name: bodily process
+def: "A process in which at least one bodily component of an organsim participates." []
+comment: From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060
+is_a: BFO:0000015 ! process
+property_value: IAO:0000117 "Albert Goldfain" xsd:string
+property_value: IAO:0000119 "http://www.jbiomedsem.com/content/1/1/10" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+property_value: isDefinedBy mf:import.owl
+
+[Term]
+id: OGMS:0000061
+name: pathological bodily process
+def: "A bodily process that is clinically abnormal." []
+is_a: OGMS:0000060 ! bodily process
+property_value: IAO:0000117 "Albert Goldfain" xsd:string
+property_value: IAO:0000119 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+
+[Term]
+id: OGMS:0000096
+name: health care process
+def: "A planned process with the objective to improve the health status of a patient that directly involves the treatment, diagnosis, or prevention of disease or injury of a patient" []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000117 "Albert Goldfain\nSagar Jain" xsd:string
+property_value: IAO:0000119 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+
+[Term]
+id: OGMS:0000097
+name: health care encounter
+def: "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter" []
+is_a: OGMS:0000096 ! health care process
+property_value: IAO:0000117 "Albert Goldfain" xsd:string
+property_value: IAO:0000119 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
+
+[Term]
 id: OGMS:0000102
 name: injury
 def: "A disorder that involves some structural damage that is immediately caused by a catastrophic external force." []
@@ -179,6 +566,8 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/ogms.owl
 id: OHD:0000002
 name: dental procedure
 def: "A healthcare encounter that realizes a dental patient role in which the patient undergoes a diagnostic or therapeutic process." []
+is_a: OGMS:0000097 ! health care encounter
+is_a: OHD:0008039 ! process during dental visit
 property_value: IAO:0000117 "PERSON:Pedro Cott" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
 
@@ -215,6 +604,17 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2023-06-06T21:30:39Z" xsd:dateTime
 
 [Term]
+id: OHD:0000404
+name: mouth disease
+def: "A disease that is a characteristic of a mouth." []
+is_a: OGMS:0000031 ! disease
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
+property_value: skos:exactMatch DOID:403
+property_value: skos:exactMatch MONDO:0006858
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-01-17T19:58:44Z" xsd:dateTime
+
+[Term]
 id: OHD:0000414
 name: mouth disorder
 def: "A disorder that is part of a mouth." []
@@ -225,9 +625,19 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2025-01-17T20:08:15Z" xsd:dateTime
 
 [Term]
+id: OHD:0008039
+name: process during dental visit
+def: "A process that happens during a dental visit and involves the patient participating in the dental visit." []
+is_a: BFO:0000015 ! process
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-03-28T12:51:33Z" xsd:dateTime
+
+[Term]
 id: OHD:0010009
 name: sensory hypersensitivity
 def: "A disposition to decreased tolerance to sensory stimuli that triggers emotional or physical distress." []
+is_a: BFO:0000016 ! disposition
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
@@ -596,6 +1006,7 @@ property_value: terms:created "2025-06-16T18:27:39Z" xsd:dateTime
 id: OHD:0010100
 name: periodontal disease
 def: "A mouth disease occuring within the periodontium." []
+is_a: OHD:0000404 ! mouth disease
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-16T18:34:32Z" xsd:dateTime
@@ -794,6 +1205,7 @@ property_value: terms:created "2025-06-25T19:57:58Z" xsd:dateTime
 id: OHD:0010165
 name: external cervical root resorption process
 def: "A pathological bodily process that abnormally occurs when dentin is resorbed by osteoclastic activity." []
+is_a: OGMS:0000061 ! pathological bodily process
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-26T18:19:19Z" xsd:dateTime
@@ -1116,6 +1528,7 @@ property_value: terms:created "2025-07-08T18:13:59Z" xsd:dateTime
 id: OHD:0010309
 name: degenerative joint disease
 def: "A disease in which the cartilage around the joint is gradually worn away." []
+is_a: OGMS:0000031 ! disease
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-08T18:18:25Z" xsd:dateTime
@@ -1363,6 +1776,7 @@ property_value: terms:created "2026-07-01T20:49:02Z" xsd:dateTime
 id: PAIN:0000127
 name: idiopathic
 def: "A characteristic of an entity whose causal origin has not been identified. It usually characterizes diseases whose etiology are obscure." [] {IAO:0000119="https://dictionary.apa.org/idiopathic"}
+is_a: COB:0000502 ! characteristic
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-09-10T23:52:19Z" xsd:dateTime
 
@@ -3645,6 +4059,24 @@ is_a: PATO:0000051 ! morphology
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
+id: PATO:0000068
+name: qualitative
+namespace: quality
+def: "A quality of an entity that is descriptive or observational, typically not represented numerically." [https://libguides.macalester.edu/c.php?g=527786&p=3608639, https://www.ncbi.nlm.nih.gov/books/NBK470395/]
+comment: TODO: define this or obsolete it and move children somewhere else.
+is_a: COB:0000502 ! characteristic
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000069
+name: deviation (from_normal)
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the whether the bearer differs from normal or average." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0000068 ! qualitative
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
 id: PATO:0000141
 name: structure
 namespace: quality
@@ -3789,6 +4221,7 @@ synonym: "quality of a process" EXACT []
 synonym: "quality of occurrent" EXACT []
 synonym: "quality of process" EXACT []
 synonym: "relational quality of occurrent" EXACT []
+is_a: COB:0000502 ! characteristic
 disjoint_from: PATO:0001241 ! physical object quality
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 
@@ -3809,6 +4242,7 @@ synonym: "quality of a single physical entity" EXACT []
 synonym: "quality of an object" EXACT []
 synonym: "quality of continuant" EXACT []
 xref: snap:Quality
+is_a: COB:0000502 ! characteristic
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -3847,11 +4281,34 @@ property_value: terms:contributor https://orcid.org/0000-0002-2061-091X
 creation_date: 2009-06-05T09:16:46Z
 
 [Term]
+id: PATO:0002300
+name: increased quality
+namespace: quality
+def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
+is_a: PATO:0000069 ! deviation (from_normal)
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: RO:0002604 PATO:0002301
+property_value: terms:contributor https://orcid.org/0000-0002-2061-091X
+creation_date: 2011-06-16T06:39:43Z
+
+[Term]
+id: PATO:0002301
+name: decreased quality
+namespace: quality
+def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
+is_a: PATO:0000069 ! deviation (from_normal)
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: RO:0002604 PATO:0002300
+property_value: terms:contributor https://orcid.org/0000-0002-2061-091X
+creation_date: 2011-06-16T06:40:15Z
+
+[Term]
 id: PATO:0002302
 name: decreased process quality
 namespace: quality
 def: "A quality of a process that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0001236 ! process quality
+is_a: PATO:0002301 ! decreased quality
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0002304
 property_value: terms:contributor https://orcid.org/0000-0002-2061-091X
@@ -3863,6 +4320,7 @@ name: increased process quality
 namespace: quality
 def: "A quality of a process that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0001236 ! process quality
+is_a: PATO:0002300 ! increased quality
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0002302
 property_value: terms:contributor https://orcid.org/0000-0002-2061-091X
@@ -4197,6 +4655,7 @@ xref: HAO:0000006
 xref: TAO:0001836
 xref: TGMA:0001826
 xref: VHOG:0001721
+is_a: BFO:0000040 ! material entity
 is_a: UBERON:0001062 ! anatomical entity
 property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
 property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
@@ -5583,12 +6042,40 @@ property_value: IAO:0000600 "to say that b realizes c at t is to assert that the
 property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
 
 [Typedef]
+id: BFO:0000062
+name: preceded by
+def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+subset: ro-eco
+property_value: IAO:0000111 "preceded by" xsd:string
+property_value: IAO:0000118 "is preceded by" xsd:string
+property_value: IAO:0000118 "preceded_by" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: terms:source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
+holds_over_chain: part_of BFO:0000062
+is_transitive: true
+is_a: RO:0002086 ! ends after
+inverse_of: BFO:0000063 ! precedes
+
+[Typedef]
+id: BFO:0000063
+name: precedes
+def: "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+subset: ro-eco
+property_value: IAO:0000111 "precedes" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+holds_over_chain: part_of BFO:0000063
+is_transitive: true
+is_a: RO:0002222 ! temporally related to
+
+[Typedef]
 id: PAIN:0000062
 name: experienced in
 def: "A relation between a nervous system process and a cognitive process in which a physical sensation is subjectively experienced as occurring in an anatomical entity, site, or a site where an anatomical entity is usually located." []
 property_value: IAO:0000112 "Brain freeze is a brief, intense pain experienced in the forehead." xsd:string
 property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2025-04-28T16:36:53Z" xsd:dateTime
+domain: GO:0050877 ! nervous system process
+range: GO:0050890 ! cognition
 
 [Typedef]
 id: PAIN:0000126
@@ -5612,6 +6099,7 @@ property_value: IAO:0000118 "inheres_in" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0001900 RO:0001901
 is_functional: true
+is_a: RO:0002314 ! characteristic of part of
 inverse_of: RO:0000053 ! has characteristic
 
 [Typedef]
@@ -5653,11 +6141,57 @@ property_value: terms:source "http://www.obofoundry.org/ro/#OBO_REL:has_particip
 holds_over_chain: has_part RO:0000057
 
 [Typedef]
+id: RO:0002086
+name: ends after
+comment: X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)
+subset: ro-eco
+property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+is_transitive: true
+is_a: RO:0002222 ! temporally related to
+
+[Typedef]
+id: RO:0002222
+name: temporally related to
+comment: A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.
+subset: ro-eco
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000119 https://en.wikipedia.org/wiki/Allen%27s_interval_algebra
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: terms:source "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1" xsd:anyURI
+
+[Typedef]
+id: RO:0002314
+name: characteristic of part of
+def: "q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w." []
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000118 "inheres in part of" xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: RO:0001900 RO:0001901
+property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
+holds_over_chain: RO:0000052 part_of
+is_a: RO:0002502 ! depends on
+transitive_over: part_of ! part_of
+
+[Typedef]
+id: RO:0002323
+name: mereotopologically related to
+def: "A mereological relationship or a topological relationship" []
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+property_value: RO:0001900 RO:0001901
+
+[Typedef]
 id: RO:0002404
 name: causally downstream of
 def: "inverse of upstream of" []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+is_a: BFO:0000062 ! preceded by
 is_a: RO:0002427 ! causally downstream of or within
 inverse_of: RO:0002411 ! causally upstream of
 
@@ -5680,6 +6214,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_transitive: true
+is_a: BFO:0000063 ! precedes
 is_a: RO:0002418 ! causally upstream of or within
 
 [Typedef]
@@ -5716,6 +6251,13 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002410 ! causally related to
 
 [Typedef]
+id: RO:0002502
+name: depends on
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: seeAlso BFO:0000169
+
+[Typedef]
 id: has_part
 name: has part
 name: has_part
@@ -5738,6 +6280,30 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
 property_value: RO:0001900 RO:0001901
 is_transitive: true
+is_a: overlaps ! overlaps
+
+[Typedef]
+id: overlaps
+name: overlaps
+def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
+def: "x overlaps y iff they have some part in common." [BSPO:cjm]
+comment: "(forall (x y) (iff (overlaps x y) (exists (z) (and (part of z x) (part of z y)))))" CLIF []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+subset: ro-eco
+xref: RO:0002131
+property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+property_value: RO:0001900 RO:0001901
+holds_over_chain: has_part overlaps
+holds_over_chain: has_part part_of
+holds_over_chain: part_of part_of
+is_symmetric: true
+is_a: RO:0002323 ! mereotopologically related to
+transitive_over: part_of ! part_of
+expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
 
 [Typedef]
 id: part_of
@@ -5767,5 +6333,6 @@ property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartO
 property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
 property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
 is_transitive: true
+is_a: overlaps ! overlaps
 inverse_of: has_part ! has part
 
