@@ -1315,8 +1315,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000041> "no
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000041> <http://id.nlm.nih.gov/mesh/D059226>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000041> <http://purl.obolibrary.org/obo/SYMP_0000831>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.obolibrary.org/obo/PAIN_0000041> "The term is used to describe pain occurring with a normally functioning somatosensory nervous system to contrast with the abnormal function seen in neuropathic or nociplasitic pain.")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0048265>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000041> <http://purl.obolibrary.org/obo/PAIN_0000132>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000132> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0048265>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000042> (sensation quality)
 
@@ -1337,8 +1336,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000043> "2024-06-13T18:47:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000043> "nociplastic pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000043> <http://id.nlm.nih.gov/mesh/D000098653>)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000043> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0046960>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000043> <http://purl.obolibrary.org/obo/PAIN_0000132>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000043> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000132> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0046960>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000044> (neuropathic pain)
 
@@ -1357,8 +1355,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000044> <http://www.ebi.ac.uk/efo/EFO_0005762>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.obolibrary.org/obo/PAIN_0000044> "Neuropathic pain is a clinical description (and not a diagnosis) which requires a demonstrable lesion or a disease that satisfies established neurological diagnostic criteria. The term lesion is commonly used when diagnostic investigations (e.g. imaging, neurophysiology, biopsies, lab tests) reveal an abnormality or when there was obvious trauma.")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.obolibrary.org/obo/PAIN_0000044> "Somatosensory refers to information about the body per se including visceral organs, rather than information about the external world (e.g., vision, hearing, or olfaction). The presence of symptoms or signs (e.g., touch-evoked pain) alone does not justify the use of the term neuropathic. Some disease entities, such as trigeminal neuralgia, are currently defined by their clinical presentation rather than by objective diagnostic testing. Other diagnoses such as postherpetic neuralgia are normally based upon the history. It is common when investigating neuropathic pain that diagnostic testing may yield inconclusive or even inconsistent data. In such instances, clinical judgment is required to reduce the totality of findings in a patient into one putative diagnosis or concise group of diagnoses.")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000044> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <http://purl.obolibrary.org/obo/PAIN_0000045>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000044> <http://purl.obolibrary.org/obo/PAIN_0000132>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000044> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000132> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <http://purl.obolibrary.org/obo/PAIN_0000045>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000045> (damaged neural tissue)
 
@@ -4482,5 +4479,6 @@ AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#Obs
 
 
 
-SubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectUnionOf(<http://purl.obolibrary.org/obo/PATO_0000057> <http://purl.obolibrary.org/obo/PATO_0001309>)) <http://purl.obolibrary.org/obo/PAIN_0000128>)
+SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0048265>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0046960>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <http://purl.obolibrary.org/obo/PAIN_0000045>))) <http://purl.obolibrary.org/obo/PAIN_0000132>)
+SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectUnionOf(<http://purl.obolibrary.org/obo/PATO_0000057> <http://purl.obolibrary.org/obo/PATO_0001309>))) <http://purl.obolibrary.org/obo/PAIN_0000128>)
 )
