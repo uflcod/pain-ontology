@@ -1280,8 +1280,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSyno
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000038> "episodic pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000038> <http://purl.obolibrary.org/obo/HP_0032148>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.obolibrary.org/obo/PAIN_0000038> <http://purl.obolibrary.org/obo/NCIT_C9203>)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000038> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002630>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000038> <http://purl.obolibrary.org/obo/PAIN_0000128>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000038> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002630>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000039> (tingling sensation quality)
 
@@ -1303,8 +1302,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000040> "ch
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/HP_0012532>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/NCIT_C26940>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/SYMP_0000837>)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001863>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000040> <http://purl.obolibrary.org/obo/PAIN_0000128>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000040> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001863>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000041> (nociceptive pain)
 
@@ -1462,8 +1460,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000053> "ac
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/NCIT_C27003>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/OMIT_0027663>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/SYMP_0000839>)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000389>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000053> <http://purl.obolibrary.org/obo/PAIN_0000128>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000389>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000054> (referred pain)
 
@@ -1995,8 +1992,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PAIN_0000101> "concomitant continuous pain")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000101> "continuous pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000101> "http://snomed.info/id/426206001")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000101> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000689>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000101> <http://purl.obolibrary.org/obo/PAIN_0000128>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000101> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000689>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000102> (cramping sensation quality)
 
@@ -4486,4 +4482,5 @@ AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#Obs
 
 
 
+SubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectUnionOf(<http://purl.obolibrary.org/obo/PATO_0000057> <http://purl.obolibrary.org/obo/PATO_0001309>)) <http://purl.obolibrary.org/obo/PAIN_0000128>)
 )
