@@ -12,3 +12,5 @@ http://purl.obolibrary.org/obo/RO_0002352     # input of
 http://purl.obolibrary.org/obo/RO_0002234     # has output
 http://purl.obolibrary.org/obo/RO_0002353     # output ofi
 http://purl.obolibrary.org/obo/BFO_0000055    # realizes
+http://purl.obolibrary.org/obo/RO_0015007     # increased in magnitude relative to
+http://purl.obolibrary.org/obo/RO_0015008     # decreased in magnitude relative to
