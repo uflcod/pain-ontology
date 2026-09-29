@@ -912,13 +912,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000001> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000002> (somatic pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.verywellhealth.com/what-is-somatic-pain-2564619") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000002> "Pain that is experienced in the skin, muscles, joints, and bones.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.verywellhealth.com/what-is-somatic-pain-2564619") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000002> "Nociceptive pain that originates from activation of nociceptors in somatic tissues, such as the skin, mucosa, muscles, bones, joints, tendons, ligaments, and fascia, as distinct from nociceptors in visceral organs.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000002> "somatic pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000002> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000002> "2026-04-08T18:15:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000002> "Superficial somatic pain, from skin and mucosa, is typically sharp and precisely localized at its source. Deep somatic pain, from muscle, bone, joint, and connective tissue, is typically aching, less precisely localized, and may be referred.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000002> "somatic pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000002> <http://snomed.info/id/48429009>)
-SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000002> <http://purl.obolibrary.org/obo/PAIN_0000130>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000002> <http://purl.obolibrary.org/obo/PAIN_0000041>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000003> (allodynia)
 
@@ -2236,6 +2237,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000127> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000128> (temporally specified pain)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000128> "Pain that is characterized by its temporal features, such as its duration, its frequency of occurrence, or its pattern of occurrence over time.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000128> "temporally specified pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000128> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000128> "2026-09-14T16:26:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000128> "temporally specified pain"@en)
@@ -2244,6 +2246,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000128> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000129> (sensorily specified pain)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000129> "Pain that is characterized by the qualitative sensory character with which it is experienced.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000129> "sensorily specified pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000129> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000129> "2026-09-14T16:27:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000129> "sensorily specified pain"@en)
@@ -2252,6 +2255,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000129> ObjectIntersecti
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000130> (spatially specified pain)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000130> "Pain that is characterized by its spatial features, such as the location at which it is experienced, its spatial extent, or the spatial relation between where it is experienced and where it originates.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000130> "spatially specified pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000130> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000130> "2026-09-14T16:27:16Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000130> "spatially specified pain"@en)
@@ -2260,6 +2264,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000130> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000132> (neurobiological pain process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000132> "Pain that is characterized by the neurobiological mechanism by which it arises, such as activation of nociceptors, damaged neural tissue, a lesion or disease of the nervous system, or altered nociceptive processing.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000132> "neurobiological pain process (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000132> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000132> "2026-09-14T16:27:45Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000132> "neurobiological pain process"@en)
@@ -4496,6 +4501,7 @@ AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#Obs
 
 
 SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0001062>)) <http://purl.obolibrary.org/obo/PAIN_0000130>)
+SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000126> <http://purl.obolibrary.org/obo/UBERON_0001062>)) <http://purl.obolibrary.org/obo/PAIN_0000130>)
 SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000627>)) <http://purl.obolibrary.org/obo/PAIN_0000130>)
 SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001566>)) <http://purl.obolibrary.org/obo/PAIN_0000130>)
 SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectUnionOf(<http://purl.obolibrary.org/obo/PATO_0000057> <http://purl.obolibrary.org/obo/PATO_0001309>))) <http://purl.obolibrary.org/obo/PAIN_0000128>)
