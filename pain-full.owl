@@ -17,7 +17,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-09-25/pain-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-09-29/pain-full.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -29,7 +29,7 @@
         <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>The Pain Ontology</terms:title>
-        <owl:versionInfo>2026-09-25</owl:versionInfo>
+        <owl:versionInfo>2026-09-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2409,6 +2409,61 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0015006 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0015006">
+        <obo:IAO_0000115>q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:label>different in magnitude relative to</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0015006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0015007 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0015007">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0015006"/>
+        <obo:IAO_0000115>q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) &gt; magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</obo:IAO_0000115>
+        <rdfs:comment>This relation is used to determine the &apos;directionality&apos; of relative qualities such as &apos;increased strength&apos;, relative to the parent type, &apos;strength&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:label>increased in magnitude relative to</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) &gt; magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0015008 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0015008">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0015006"/>
+        <obo:IAO_0000115>q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) &lt; magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</obo:IAO_0000115>
+        <rdfs:comment>This relation is used to determine the &apos;directionality&apos; of relative qualities such as &apos;decreased strength&apos;, relative to the parent type, &apos;strength&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:label>decreased in magnitude relative to</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) &lt; magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -3057,6 +3112,12 @@ Despite their overarching function in the support and protection of neurons, gli
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ZFA:0009248</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The basic cellular unit of nervous tissue. Each neuron consists of a body, an axon, and dendrites. Their purpose is to receive, conduct, and transmit impulses in the nervous system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>MESH:D009474</oboInOwl:hasDbXref>
@@ -3067,12 +3128,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>FBbt:00005106</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>ZFA:0009248</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     
 
@@ -6326,18 +6381,19 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
     <!-- http://purl.obolibrary.org/obo/PAIN_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000130"/>
-        <obo:IAO_0000115>Pain that is experienced in the skin, muscles, joints, and bones.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000041"/>
+        <obo:IAO_0000115>Nociceptive pain that originates from activation of nociceptors in somatic tissues, such as the skin, mucosa, muscles, bones, joints, tendons, ligaments, and fascia, as distinct from nociceptors in visceral organs.</obo:IAO_0000115>
         <obo:IAO_0000589>somatic pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T18:15:23Z</terms:created>
+        <rdfs:comment>Superficial somatic pain, from skin and mucosa, is typically sharp and precisely localized at its source. Deep somatic pain, from muscle, bone, joint, and connective tissue, is typically aching, less precisely localized, and may be referred.</rdfs:comment>
         <rdfs:label xml:lang="en">somatic pain</rdfs:label>
         <skos:closeMatch rdf:resource="http://snomed.info/id/48429009"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pain that is experienced in the skin, muscles, joints, and bones.</owl:annotatedTarget>
+        <owl:annotatedTarget>Nociceptive pain that originates from activation of nociceptors in somatic tissues, such as the skin, mucosa, muscles, bones, joints, tendons, ligaments, and fascia, as distinct from nociceptors in visceral organs.</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.verywellhealth.com/what-is-somatic-pain-2564619</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -6347,6 +6403,12 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Pain due to a stimulus that does not normally provoke pain.</obo:IAO_0000115>
         <obo:IAO_0000589>allodynia (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
@@ -6372,12 +6434,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PAIN_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001457"/>
-        <obo:IAO_0000115>A sensitivity of a process that characterizes a response to a painful stimulus.</obo:IAO_0000115>
-        <obo:IAO_0000589>sensitivity to painful stimulus (PAIN)</obo:IAO_0000589>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000133"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A sensitivity to somatosensory stimulus that normally provokes pain which characterizes the degreee of the response to the stimulus.</obo:IAO_0000115>
+        <obo:IAO_0000589>sensitivity to normally painful stimulus (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T23:13:11Z</terms:created>
-        <rdfs:label xml:lang="en">sensitivity to painful stimulus</rdfs:label>
+        <rdfs:label xml:lang="en">sensitivity to normally painful stimulus</rdfs:label>
     </owl:Class>
     
 
@@ -6536,7 +6604,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000024"/>
@@ -6670,7 +6738,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000128"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002630"/>
@@ -6690,7 +6758,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-08T17:10:12Z</terms:created>
-        <oboInOwl:hasRelatedSynonym>breakthrough pain</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym>breakthrough pain</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>intermittent pain</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">episodic pain</rdfs:label>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0032148"/>
         <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9203"/>
@@ -6723,7 +6792,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000128"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
@@ -6763,14 +6832,10 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000132"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000198"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002404"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0048265"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -6780,12 +6845,6 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000198"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002404"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0048265"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Pain that arises from actual or threatened damage to non-neural tissue and is due to the activation of nociceptors.</obo:IAO_0000115>
@@ -6830,22 +6889,11 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
     <!-- http://purl.obolibrary.org/obo/PAIN_0000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000043">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0046960"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000132"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0046960"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000134"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Pain that arises from altered nociception despite no clear evidence of actual or threatened tissue damage causing the activation of peripheral nociceptors or evidence for disease or lesion of the somatosensory system causing the pain.</obo:IAO_0000115>
@@ -6870,7 +6918,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000132"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000045"/>
@@ -6986,7 +7034,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000130"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001566"/>
@@ -7018,7 +7066,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000039"/>
@@ -7081,7 +7129,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000130"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000916"/>
@@ -7138,7 +7186,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000128"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
@@ -7178,7 +7226,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000130"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000126"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
@@ -7244,7 +7292,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000130"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000627"/>
@@ -7385,7 +7433,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000069"/>
@@ -7521,7 +7569,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000070"/>
@@ -7552,7 +7600,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000067"/>
@@ -7584,7 +7632,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000047"/>
@@ -7621,7 +7669,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000059"/>
@@ -7652,7 +7700,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000064"/>
@@ -7683,7 +7731,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000066"/>
@@ -8122,25 +8170,6 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
     <!-- http://purl.obolibrary.org/obo/PAIN_0000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000090">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000089"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000165"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001456"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000089"/>
         <obo:IAO_0000115>Pain that is experienced in the orofacial region, which includes the mouth and face.</obo:IAO_0000115>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
@@ -8381,6 +8410,7 @@ define as chronic &amp; multi-localized.</skos:note>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000130"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
@@ -8417,7 +8447,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000099"/>
@@ -8447,7 +8477,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000128"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000689"/>
@@ -8493,7 +8523,7 @@ define as chronic &amp; multi-localized.</skos:note>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000102"/>
@@ -8562,7 +8592,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000105"/>
@@ -8709,51 +8739,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000113 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000057"/>
-        <obo:IAO_0000115>A process quality that characterizes a process as being marked by breaks or interruptions.</obo:IAO_0000115>
-        <obo:IAO_0000589>intermittent (PAIN)</obo:IAO_0000589>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T20:36:04Z</terms:created>
-        <rdfs:label xml:lang="en">intermittent</rdfs:label>
-        <skos:closeMatch>http://purl.obolibrary.org/obo/ExO_0000052</skos:closeMatch>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000114 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000114">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000113"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000128"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Pain that occurs in discrete episodes separated by pain-free intervals.</obo:IAO_0000115>
-        <obo:IAO_0000589>intermittent pain (PAIN)</obo:IAO_0000589>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T20:40:34Z</terms:created>
-        <rdfs:label xml:lang="en">intermittent pain</rdfs:label>
-        <skos:closeMatch>http://snomed.info/id/314642004</skos:closeMatch>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PAIN_0000115 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000115">
@@ -8788,12 +8773,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000004"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001552"/>
-        <obo:IAO_0000115>A sensitivity to painful stimulus which is lower than normal or average.</obo:IAO_0000115>
-        <obo:IAO_0000589>decreased sensitivity to painful stimulus (PAIN)</obo:IAO_0000589>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000135"/>
+        <obo:IAO_0000115>A sensitivity to normally painful stimulus that characterizes the pain as being lower than normal or average.</obo:IAO_0000115>
+        <obo:IAO_0000589>decreased sensitivity to normally painful stimulus (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T22:48:40Z</terms:created>
-        <rdfs:label xml:lang="en">decreased sensitivity to painful stimulus</rdfs:label>
+        <rdfs:label xml:lang="en">decreased sensitivity to normally painful stimulus</rdfs:label>
     </owl:Class>
     
 
@@ -8802,12 +8787,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000004"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001551"/>
-        <obo:IAO_0000115>A sensitivity to painful stimulus which is higher than normal or average.</obo:IAO_0000115>
-        <obo:IAO_0000589>increased sensitivity to painful stimulus (PAIN)</obo:IAO_0000589>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000134"/>
+        <obo:IAO_0000115>A sensitivity to normally painful stimulus that characterizes pain as being higher than normal or average.</obo:IAO_0000115>
+        <obo:IAO_0000589>increased sensitivity to normally painful stimulus (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T22:49:50Z</terms:created>
-        <rdfs:label xml:lang="en">increased sensitivity to painful stimulus</rdfs:label>
+        <rdfs:label xml:lang="en">increased sensitivity to normally painful stimulus</rdfs:label>
     </owl:Class>
     
 
@@ -8891,7 +8876,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000058"/>
@@ -8958,6 +8943,8 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+        <obo:IAO_0000115>Pain that is characterized by its temporal features, such as its duration, its frequency of occurrence, or its pattern of occurrence over time.</obo:IAO_0000115>
+        <obo:IAO_0000589>temporally specified pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-14T16:26:40Z</terms:created>
         <rdfs:label xml:lang="en">temporally specified pain</rdfs:label>
@@ -8968,7 +8955,26 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PAIN_0000129 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000129">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000042"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000061"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Pain that is characterized by the qualitative sensory character with which it is experienced.</obo:IAO_0000115>
+        <obo:IAO_0000589>sensorily specified pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-14T16:27:03Z</terms:created>
         <rdfs:label xml:lang="en">sensorily specified pain</rdfs:label>
@@ -8980,20 +8986,11 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+        <obo:IAO_0000115>Pain that is characterized by its spatial features, such as the location at which it is experienced, its spatial extent, or the spatial relation between where it is experienced and where it originates.</obo:IAO_0000115>
+        <obo:IAO_0000589>spatially specified pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-14T16:27:16Z</terms:created>
         <rdfs:label xml:lang="en">spatially specified pain</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PAIN_0000131 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000130"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-14T16:27:26Z</terms:created>
-        <rdfs:label xml:lang="en">anatomically specified pain process</rdfs:label>
     </owl:Class>
     
 
@@ -9002,6 +8999,8 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+        <obo:IAO_0000115>Pain that is characterized by the neurobiological mechanism by which it arises, such as activation of nociceptors, damaged neural tissue, a lesion or disease of the nervous system, or altered nociceptive processing.</obo:IAO_0000115>
+        <obo:IAO_0000589>neurobiological pain process (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-14T16:27:45Z</terms:created>
         <rdfs:label xml:lang="en">neurobiological pain process</rdfs:label>
@@ -9009,9 +9008,98 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PAIN_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001457"/>
+        <obo:IAO_0000115>A sensitivity of a process that characterizes the degree to which the process responds to a somatosensory stimulus.</obo:IAO_0000115>
+        <obo:IAO_0000589>sensitivity to somatosensory stimulus (PAIN)</obo:IAO_0000589>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-28T22:39:24Z</terms:created>
+        <rdfs:comment>A somatosensory stimulus is a stimulus that is detected by receptors of the somatosensory nervous system and conveys information about the body itself. This includes mechanical stimuli (touch, pressure, vibration, stretch), thermal stimuli (warmth, cold), noxious stimuli (mechanical, thermal, or chemical), proprioceptive stimuli (joint position, muscle length and tension), and visceral stimuli (such as organ distension or chemical stimulation of visceral tissue). It excludes stimuli of the special senses: vision, hearing, olfaction, taste, and vestibular sensation.</rdfs:comment>
+        <rdfs:label xml:lang="en">sensitivity to somatosensory stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PAIN_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000134">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000133"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000133"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001551"/>
+        <obo:IAO_0000115>A sensitivity to somatosensory stimulus that characterizes the degree to which the process responds as being higher than normal or average.</obo:IAO_0000115>
+        <obo:IAO_0000589>increased sensitivity to somatosensory stimulus (PAIN)</obo:IAO_0000589>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-28T22:52:34Z</terms:created>
+        <rdfs:label xml:lang="en">increased sensitivity to somatosensory stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PAIN_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000135">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000133"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000133"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001552"/>
+        <obo:IAO_0000115>A sensitivity to somatosensory stimulus that characterizes the degree to which the process responds as being lower than normal or average.</obo:IAO_0000115>
+        <obo:IAO_0000589>decreased sensitivity to somatosensory stimulus (PAIN)</obo:IAO_0000589>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-28T22:53:08Z</terms:created>
+        <rdfs:label xml:lang="en">decreased sensitivity to somatosensory stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PAIN_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000134"/>
+        <obo:IAO_0000115>An increased sensitivity to somatosensory stimulus that characterizes a normally non-painful stimulus as provoking pain.</obo:IAO_0000115>
+        <obo:IAO_0000589>pain response to normally non-painful stimulus (PAIN)</obo:IAO_0000589>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-29T02:22:59Z</terms:created>
+        <rdfs:comment>This quality underlies allodynia, which the IASP defines as pain due to a stimulus that does not normally provoke pain. Unlike increased sensitivity to normally painful stimulus (hyperalgesia), the stimulus mode and the response mode differ: a normally non-painful modality, such as light touch or mild warmth, evokes pain. That change of modality is why the term is not labeled as an &quot;increased sensitivity to&quot; term.</rdfs:comment>
+        <rdfs:label xml:lang="en">pain response to normally non-painful stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PAIN_0010001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000090"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000165"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000090"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9033,6 +9121,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PAIN_0010002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0010001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001754"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9080,6 +9179,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PAIN_0010005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010005">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0010001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008266"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9105,6 +9215,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PAIN_0010006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010006">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0010001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001828"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12739,6 +12860,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0000380 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000380">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000044"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000044"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0055003"/>
         <obo:IAO_0000115>A frequency which is relatively high.</obo:IAO_0000115>
@@ -12764,6 +12896,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0000381 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000381">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000044"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000044"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0055004"/>
         <obo:IAO_0000115>A frequency which is relatively low.</obo:IAO_0000115>
@@ -12805,6 +12948,30 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A quality of a process inhering in a bearer by virtue of the bearer&apos;s having a sudden onset, sharp rise, and short course.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>dictionary:reference</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000461 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000068"/>
+        <obo:IAO_0000115>A quality inhering in a bearer by virtue of the bearer&apos;s exhibiting no deviation from normal or average.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000460"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>average</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000461</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#abnormal_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>normal</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s exhibiting no deviation from normal or average.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -12859,6 +13026,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0000911 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000911">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000161"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002302"/>
         <obo:IAO_0000115>A rate which is relatively low.</obo:IAO_0000115>
@@ -12883,6 +13061,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0000912 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000912">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000161"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002304"/>
         <obo:IAO_0000115>A rate which is relatively high.</obo:IAO_0000115>
@@ -13054,6 +13243,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0001551 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001551">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001457"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001457"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002304"/>
         <obo:IAO_0000115>A sensitivity of a process which is higher than normal or average.</obo:IAO_0000115>
@@ -13079,6 +13279,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0001552 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001552">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001457"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001457"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002302"/>
         <obo:IAO_0000115>A sensitivity of a process which is lower than normal or average.</obo:IAO_0000115>
@@ -13190,6 +13401,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002300">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A quality that has a value that is increased compared to normal or average.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002301"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
@@ -13212,6 +13429,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002301">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A quality that has a value that is decreased compared to normal or average.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002300"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
@@ -13233,6 +13456,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0002302 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002302">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001236"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002301"/>
         <obo:IAO_0000115>A quality of a process that has a value that is decreased compared to normal or average.</obo:IAO_0000115>
@@ -13256,6 +13490,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0002304 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002304">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001236"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002300"/>
         <obo:IAO_0000115>A quality of a process that has a value that is increased compared to normal or average.</obo:IAO_0000115>
@@ -13389,6 +13634,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0055003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055003">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0050000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000912"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
         <obo:IAO_0000115>A rate of occurrence that is relatively high.</obo:IAO_0000115>
@@ -13411,6 +13667,17 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <!-- http://purl.obolibrary.org/obo/PATO_0055004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0050000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000911"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
         <obo:IAO_0000115>A rate of occurrence that is relatively low.</obo:IAO_0000115>
@@ -16476,6 +16743,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001828"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>gum</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:59762</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001828"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>gum tissue</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001828"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The fibrous investing tissue, covered by keratinized epithelium, that immediately surrounds a tooth and is contiguous with its periodontal ligament and with the mucosal tissues of the mouth[Glossary of Periodontal Terms 2001].</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:0013002015</oboInOwl:hasDbXref>
@@ -16486,18 +16765,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C0017562</owl:annotatedTarget>
         <oboInOwl:source>ncithesaurus:Gingiva</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001828"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>gum</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FMA:59762</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001828"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>gum tissue</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17219,6 +17486,19 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002398"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Distal segment of the fore limb, including carpal region, metacarpal region and digits.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Hand</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Manus_(anatomy)</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002398"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0018563</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Hand</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002398"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>forelimb autopod</owl:annotatedTarget>
         <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
@@ -17281,19 +17561,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <owl:annotatedTarget>forepaw</owl:annotatedTarget>
         <oboInOwl:hasDbXref>MA:0000037</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#SENSU"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002398"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Distal segment of the fore limb, including carpal region, metacarpal region and digits.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Wikipedia:Hand</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Manus_(anatomy)</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002398"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0018563</owl:annotatedTarget>
-        <oboInOwl:source>ncithesaurus:Hand</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -20654,6 +20921,100 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000130"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000126"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000130"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000627"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000130"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001566"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000130"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000057"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001309"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000128"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000198"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000132"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000036"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000045"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000132"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000089"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000165"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001456"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000090"/>
+    </owl:Class>
     <owl:Restriction>
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000916"/>
