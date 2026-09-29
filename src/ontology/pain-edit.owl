@@ -1844,7 +1844,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000090> "2025-04-04T15:42:46Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0000090> <http://purl.obolibrary.org/obo/PAIN_0010296>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000090> "orofacial pain"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000090> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000089> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0000165>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0001456>))))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000090> <http://purl.obolibrary.org/obo/PAIN_0000089>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000091> (visceral pain)
 
@@ -2347,7 +2347,8 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0010003> "
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0010003> "http://purl.obolibrary.org/obo/FMA_74060")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0010003> "http://purl.obolibrary.org/obo/UBERON_0003681")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0010003> "myofascial orofacial pain"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0010003> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000090> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0004473>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010003> <http://purl.obolibrary.org/obo/PAIN_0000090>)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/UBERON_0004473>))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010005> (periodontal pain)
 
@@ -4504,4 +4505,5 @@ AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#Obs
 
 SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectUnionOf(<http://purl.obolibrary.org/obo/PAIN_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <http://purl.obolibrary.org/obo/PAIN_0000045>))) <http://purl.obolibrary.org/obo/PAIN_0000132>)
 SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectUnionOf(<http://purl.obolibrary.org/obo/PATO_0000057> <http://purl.obolibrary.org/obo/PATO_0001309>))) <http://purl.obolibrary.org/obo/PAIN_0000128>)
+SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PAIN_0000062> ObjectUnionOf(<http://purl.obolibrary.org/obo/UBERON_0000165> <http://purl.obolibrary.org/obo/UBERON_0001456>))) <http://purl.obolibrary.org/obo/PAIN_0000090>)
 )
