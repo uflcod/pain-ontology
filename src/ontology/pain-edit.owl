@@ -939,7 +939,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000003> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000004> (sensitivity to normally painful stimulus)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000004> "A sensitivity to somatosensory stimulus that normally provokes pain which characterizes the degreee of the response to the stimulus.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000004> "sensitivity to painful stimulus (PAIN)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000004> "sensitivity to normally painful stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000004> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000004> "2026-07-01T23:13:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000004> "sensitivity to normally painful stimulus"@en)
@@ -2146,7 +2146,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000115> ObjectIntersecti
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000116> (decreased sensitivity to normally painful stimulus)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000116> "A sensitivity to a stimulus that normally provokes pain which is lower than normal or average.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000116> "decreased sensitivity to painful stimulus (PAIN)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000116> "decreased sensitivity to normally painful stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000116> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000116> "2026-07-01T22:48:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000116> "decreased sensitivity to normally painful stimulus"@en)
@@ -2156,7 +2156,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000116> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000117> (increased sensitivity to normally painful stimulus)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000117> "A sensitivity to a stimulus that normally provokes pain which is higher than normal or average.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000117> "increased sensitivity to painful stimulus (PAIN)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000117> "increased sensitivity to normally painful stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000117> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000117> "2026-07-01T22:49:50Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000117> "increased sensitivity to normally painful stimulus"@en)
@@ -2283,6 +2283,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000132> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000133> (sensitivity to somatosensory stimulus)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000133> "A sensitivity of a process that characterize the degree to which the process responds to a somatosensory stimulus.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000133> "sensitivity to somatosensory stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000133> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000133> "2026-09-28T22:39:24Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000133> "A somatosensory stimulus is a stimulus that is detected by receptors of the somatosensory nervous system and conveys information about the body itself. This includes mechanical stimuli (touch, pressure, vibration, stretch), thermal stimuli (warmth, cold), noxious stimuli (mechanical, thermal, or chemical), proprioceptive stimuli (joint position, muscle length and tension), and visceral stimuli (such as organ distension or chemical stimulation of visceral tissue). It excludes stimuli of the special senses: vision, hearing, olfaction, taste, and vestibular sensation.")
@@ -2291,6 +2292,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000133> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000134> (increased sensitivity to somatosensory stimulus)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000134> "increased sensitivity to somatosensory stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000134> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000134> "2026-09-28T22:52:34Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000134> "increased sensitivity to somatosensory stimulus"@en)
@@ -2298,6 +2300,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000134> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000135> (decreased sensitivity to somatosensory stimulus)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000135> "decreased sensitivity to somatosensory stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000135> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000135> "2026-09-28T22:53:08Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000135> "decreased sensitivity to somatosensory stimulus"@en)
