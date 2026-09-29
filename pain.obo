@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2026-09-25
+data-version: releases/2026-09-29
 subsetdef: PAIN:0010296 ""
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
@@ -24,7 +24,7 @@ idspace: skos http://www.w3.org/2004/02/skos/core#
 idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: pain
-property_value: owl:versionInfo "2026-09-25" xsd:string
+property_value: owl:versionInfo "2026-09-29" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
@@ -2241,8 +2241,9 @@ property_value: terms:created "2026-04-08T16:42:44Z" xsd:dateTime
 [Term]
 id: PAIN:0000002
 name: somatic pain
-def: "Pain that is experienced in the skin, muscles, joints, and bones." [] {IAO:0000119="https://www.verywellhealth.com/what-is-somatic-pain-2564619"}
-is_a: PAIN:0000130 ! spatially specified pain
+def: "Nociceptive pain that originates from activation of nociceptors in somatic tissues, such as the skin, mucosa, muscles, bones, joints, tendons, ligaments, and fascia, as distinct from nociceptors in visceral organs." [] {IAO:0000119="https://www.verywellhealth.com/what-is-somatic-pain-2564619"}
+comment: Superficial somatic pain, from skin and mucosa, is typically sharp and precisely localized at its source. Deep somatic pain, from muscle, bone, joint, and connective tissue, is typically aching, less precisely localized, and may be referred.
+is_a: PAIN:0000041 ! nociceptive pain
 property_value: IAO:0000589 "somatic pain (PAIN)" xsd:string
 property_value: skos:closeMatch http://snomed.info/id/48429009
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -2253,6 +2254,7 @@ id: PAIN:0000003
 name: allodynia
 def: "Pain due to a stimulus that does not normally provoke pain." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology"}
 is_a: PAIN:0000036 ! pain
+relationship: RO:0000053 PAIN:0000136 ! has characteristic pain response to normally non-painful stimulus
 property_value: IAO:0000589 "allodynia (PAIN)" xsd:string
 property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0012533" xsd:string
 property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C180616" xsd:string
@@ -2265,10 +2267,11 @@ property_value: terms:description "The stimulus leads to an unexpectedly painful
 
 [Term]
 id: PAIN:0000004
-name: sensitivity to painful stimulus
-def: "A sensitivity of a process that characterizes a response to a painful stimulus." []
-is_a: PATO:0001457 ! sensitivity of a process
-property_value: IAO:0000589 "sensitivity to painful stimulus (PAIN)" xsd:string
+name: sensitivity to normally painful stimulus
+def: "A sensitivity to somatosensory stimulus that normally provokes pain which characterizes the degreee of the response to the stimulus." []
+is_a: PAIN:0000133 ! sensitivity to somatosensory stimulus
+relationship: RO:0000052 PAIN:0000036 ! characteristic of pain
+property_value: IAO:0000589 "sensitivity to normally painful stimulus (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-07-01T23:13:11Z" xsd:dateTime
 
@@ -2277,7 +2280,7 @@ id: PAIN:0000006
 name: hyperalgesia
 def: "Increased pain from a stimulus that normally provokes pain." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology"}
 is_a: PAIN:0000036 ! pain
-relationship: RO:0000053 PAIN:0000117 ! has characteristic increased sensitivity to painful stimulus
+relationship: RO:0000053 PAIN:0000117 ! has characteristic increased sensitivity to normally painful stimulus
 property_value: IAO:0000589 "hyperalgesia (PAIN)" xsd:string
 property_value: skos:closeMatch "http://purl.obolibrary.org/obo/MP_0005407" xsd:string
 property_value: skos:closeMatch "http://purl.obolibrary.org/obo/SYMP_0000836" xsd:string
@@ -2465,7 +2468,7 @@ id: PAIN:0000025
 name: pressure pain
 def: "Pain that is experienced as a sensation of compression, heaviness, or sustained force." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000024 ! experienced as pressure sensation quality
 relationship: PAIN:0000061 PAIN:0000024 ! experienced as pressure sensation quality
 property_value: IAO:0000589 "pressure pain (PAIN)" xsd:string
@@ -2561,6 +2564,12 @@ comment: Six key notes and etymology:\n\n - Pain is always a personal experience
 comment: The "emotional" part of pain captures the affective (i.e., unpleasant) dimension of experiencing pain.
 is_a: EMRO:0000002 ! emotional experience
 is_a: EMRO:0000005 ! sensory experience
+is_a: PAIN:0000130 {gci_relation="PAIN:0000126", gci_filler="UBERON:0001062"} ! spatially specified pain
+is_a: PAIN:0000130 {gci_filler="PATO:0000627", gci_relation="RO:0000053"} ! spatially specified pain
+is_a: PAIN:0000130 {gci_filler="UBERON:0001062", gci_relation="PAIN:0000062"} ! spatially specified pain
+is_a: PAIN:0000130 {gci_filler="PATO:0001566", gci_relation="RO:0000053"} ! spatially specified pain
+is_a: PAIN:0000132 {gci_relation="RO:0002333", gci_filler="CL:0000198"} ! neurobiological pain process
+is_a: PAIN:0000132 {gci_filler="PAIN:0000045", gci_relation="RO:0002410"} ! neurobiological pain process
 relationship: RO:0002404 GO:0019233 ! causally downstream of sensory perception of pain
 property_value: IAO:0000589 "pain (PAIN)" xsd:string
 property_value: seeAlso "- The Revised IASP definition of pain: concepts, challenges, and compromises. \nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/\n\n- Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums." xsd:string
@@ -2593,9 +2602,10 @@ property_value: terms:created "2026-04-08T17:09:41Z" xsd:dateTime
 id: PAIN:0000038
 name: episodic pain
 def: "Acute transient pain that is severe and has an intensity that flares over baseline." [] {IAO:0000119="PMID:16675817"}
-synonym: "breakthrough pain" RELATED []
+synonym: "breakthrough pain" BROAD []
+synonym: "intermittent pain" EXACT []
 is_a: PAIN:0000128 ! temporally specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000128 ! temporally specified pain
 intersection_of: RO:0000053 PATO:0002630 ! has characteristic episodic
 relationship: RO:0000053 PATO:0002630 ! has characteristic episodic
 property_value: IAO:0000589 "episodic pain (PAIN)" xsd:string
@@ -2620,7 +2630,7 @@ name: chronic pain
 def: "Pain that persists or recurs for longer than 3 months, in which each incidence of pain is attributed to the same underlying condition." [] {IAO:0000119="https://www.iasp-pain.org/advocacy/definitions-of-chronic-pain-syndromes/"}
 comment: In many cases, the pain is initially caused by tissue damage or disease. The continuation of the pain is often the result of pathological changes in the central nervous system.
 is_a: PAIN:0000128 ! temporally specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000128 ! temporally specified pain
 intersection_of: RO:0000053 PATO:0001863 ! has characteristic chronic
 relationship: RO:0000053 PATO:0001863 ! has characteristic chronic
 property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
@@ -2635,11 +2645,9 @@ id: PAIN:0000041
 name: nociceptive pain
 def: "Pain that arises from actual or threatened damage to non-neural tissue and is due to the activation of nociceptors." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology/"}
 is_a: PAIN:0000132 ! neurobiological pain process
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000132 ! neurobiological pain process
 intersection_of: RO:0002333 CL:0000198 ! enabled by pain receptor cell
-intersection_of: RO:0002404 GO:0048265 ! causally downstream of response to pain
 relationship: RO:0002333 CL:0000198 ! enabled by pain receptor cell
-relationship: RO:0002404 GO:0048265 ! causally downstream of response to pain
 property_value: IAO:0000589 "nociceptive pain (PAIN)" xsd:string
 property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D059226
 property_value: skos:closeMatch SYMP:0000831
@@ -2664,9 +2672,7 @@ id: PAIN:0000043
 name: nociplastic pain
 def: "Pain that arises from altered nociception despite no clear evidence of actual or threatened tissue damage causing the activation of peripheral nociceptors or evidence for disease or lesion of the somatosensory system causing the pain." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology/"}
 is_a: PAIN:0000132 ! neurobiological pain process
-intersection_of: PAIN:0000036 ! pain
-intersection_of: has_part GO:0046960 ! sensitization
-relationship: has_part GO:0046960 ! sensitization
+relationship: RO:0000053 PAIN:0000134 ! has characteristic increased sensitivity to somatosensory stimulus
 property_value: IAO:0000589 "nociplastic pain (PAIN)" xsd:string
 property_value: skos:closeMatch http://id.nlm.nih.gov/mesh/D000098653
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -2677,7 +2683,7 @@ id: PAIN:0000044
 name: neuropathic pain
 def: "Pain caused by a lesion or disease of the somatosensory nervous system." [] {IAO:0000119="https://www.iasp-pain.org/resources/terminology/"}
 is_a: PAIN:0000132 ! neurobiological pain process
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000132 ! neurobiological pain process
 intersection_of: RO:0002410 PAIN:0000045 ! causally related to damaged neural tissue
 relationship: RO:0002410 PAIN:0000045 ! causally related to damaged neural tissue
 property_value: IAO:0000589 "neuropathic pain (PAIN)" xsd:string
@@ -2731,7 +2737,7 @@ name: generalized pain
 def: "Pain that is experienced throughout the body rather than in a specific area." []
 synonym: "widespread pain" EXACT []
 is_a: PAIN:0000130 ! spatially specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000130 ! spatially specified pain
 intersection_of: RO:0000053 PATO:0001566 ! has characteristic distributed
 relationship: RO:0000053 PATO:0001566 ! has characteristic distributed
 property_value: IAO:0000589 "generalized pain (PAIN)" xsd:string
@@ -2744,7 +2750,7 @@ id: PAIN:0000049
 name: tingling pain
 def: "Pain that is experienced as a prickling, pins-and-needles sensation." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000039 ! experienced as tingling sensation quality
 relationship: PAIN:0000061 PAIN:0000039 ! experienced as tingling sensation quality
 property_value: IAO:0000589 "tingling pain (PAIN)" xsd:string
@@ -2771,7 +2777,7 @@ id: PAIN:0000051
 name: abdominal pain
 def: "Pain that is experienced in the abdomen." []
 is_a: PAIN:0000130 ! spatially specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000130 ! spatially specified pain
 intersection_of: PAIN:0000062 UBERON:0000916 ! experienced in abdomen
 relationship: PAIN:0000062 UBERON:0000916 ! experienced in abdomen
 property_value: IAO:0000589 "abdominal pain (PAIN)" xsd:string
@@ -2801,7 +2807,7 @@ name: acute pain
 def: "Pain of recent onset and probable limited duration, usually having an identifiable temporal and causal relationship to injury or disease." [] {IAO:0000119="https://www.iasp-pain.org/resources/topics/acute-pain/"}
 comment: Acute pain is caused by injury, surgery, illness, trauma, or painful medical procedures and generally lasts from a few minutes to less than six months. Acute pain usually disappears whenever the underlying cause is treated or healed.
 is_a: PAIN:0000128 ! temporally specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000128 ! temporally specified pain
 intersection_of: RO:0000053 PATO:0000389 ! has characteristic acute
 relationship: RO:0000053 PATO:0000389 ! has characteristic acute
 property_value: dc:contributor "https://orcid.org/0000-0001-9625-1899" xsd:string
@@ -2816,7 +2822,7 @@ id: PAIN:0000054
 name: referred pain
 def: "Pain that is experienced in an area different from the area stimulated." [] {IAO:0000119="https://dictionary.apa.org/referred-sensation", IAO:0000119="PMID:37448749"}
 is_a: PAIN:0000130 ! spatially specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000130 ! spatially specified pain
 intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site anatomical entity
 relationship: PAIN:0000126 UBERON:0001062 ! experienced in referred site anatomical entity
 property_value: IAO:0000589 "referred pain (PAIN)" xsd:string
@@ -2848,7 +2854,7 @@ id: PAIN:0000056
 name: localized pain
 def: "Pain that is confined or restricted to a particular anatomical area (or zone) of the body." [] {IAO:0000119="https://ospinamedical.com/orthopedic-blog/localized-vs-radicular-pain-decoding-your-discomfort", IAO:0000119="PMID:18077092"}
 is_a: PAIN:0000130 ! spatially specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000130 ! spatially specified pain
 intersection_of: RO:0000053 PATO:0000627 ! has characteristic localized
 relationship: RO:0000053 PATO:0000627 ! has characteristic localized
 property_value: IAO:0000589 "localized pain (PAIN)" xsd:string
@@ -2926,7 +2932,7 @@ id: PAIN:0000065
 name: aching pain
 def: "Pain that is experienced as a diffuse, sustained, low-to-moderate intensity, dull, deep, pressure-like sensation that lacks sharp localization." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000069 ! experienced as aching sensation quality
 relationship: PAIN:0000061 PAIN:0000069 ! experienced as aching sensation quality
 property_value: IAO:0000589 "aching pain (PAIN)" xsd:string
@@ -3004,7 +3010,7 @@ id: PAIN:0000071
 name: stabbing pain
 def: "Pain experienced as an intense, sudden, and sharp sensation, often described as a knife-like or shooting pain that pierces a specific body area." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000070 ! experienced as stabbing sensation quality
 relationship: PAIN:0000061 PAIN:0000070 ! experienced as stabbing sensation quality
 property_value: IAO:0000589 "stabbing pain (PAIN)" xsd:string
@@ -3017,7 +3023,7 @@ id: PAIN:0000072
 name: sharp pain
 def: "Pain that is experienced as piercing, stabbing, cutting, or prickling." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000067 ! experienced as sharp sensation quality
 relationship: PAIN:0000061 PAIN:0000067 ! experienced as sharp sensation quality
 property_value: IAO:0000589 "sharp pain (PAIN)" xsd:string
@@ -3031,7 +3037,7 @@ id: PAIN:0000073
 name: dull pain
 def: "Pain that is experienced as a deep ache, pressure, or heaviness rather than a sharp, stabbing sensation." [] {IAO:0000119="https://www.healthline.com/health/dull-pain"}
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000047 ! experienced as dull sensation quality
 relationship: PAIN:0000061 PAIN:0000047 ! experienced as dull sensation quality
 property_value: IAO:0000589 "dull pain (PAIN)" xsd:string
@@ -3044,7 +3050,7 @@ id: PAIN:0000074
 name: burning pain
 def: "Pain that is experienced as an intense, searing, or hot sensation." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000059 ! experienced as burning sensation quality
 relationship: PAIN:0000061 PAIN:0000059 ! experienced as burning sensation quality
 property_value: IAO:0000589 "burning pain (PAIN)" xsd:string
@@ -3057,7 +3063,7 @@ id: PAIN:0000075
 name: freezing pain
 def: "Pain that is experienced as a burning or aching sensation and is the result of cold stimuli." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000064 ! experienced as freezing sensation quality
 relationship: PAIN:0000061 PAIN:0000064 ! experienced as freezing sensation quality
 property_value: IAO:0000589 "freezing pain (PAIN)" xsd:string
@@ -3070,7 +3076,7 @@ id: PAIN:0000076
 name: shooting pain
 def: "Pain that is experienced as a sudden, intense, and sharp sensation that moves or radiates through the body, often from one point to another." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000066 ! experienced as shooting sensation quality
 relationship: PAIN:0000061 PAIN:0000066 ! experienced as shooting sensation quality
 property_value: IAO:0000589 "shooting pain (PAIN)" xsd:string
@@ -3373,6 +3379,7 @@ id: PAIN:0000098
 name: chronic low back pain
 def: "Chronic pain that is experienced in the lower back." []
 is_a: PAIN:0000040 ! chronic pain
+is_a: PAIN:0000130 ! spatially specified pain
 intersection_of: PAIN:0000040 ! chronic pain
 intersection_of: PAIN:0000062 UBERON:0005462 ! experienced in lower back
 relationship: PAIN:0000062 UBERON:0005462 ! experienced in lower back
@@ -3396,7 +3403,7 @@ id: PAIN:0000100
 name: cold pain
 def: "Pain that is experienced as a result of cold stimuli at intensities below the freezing threshold." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000099 ! experienced as cold sensation quality
 relationship: PAIN:0000061 PAIN:0000099 ! experienced as cold sensation quality
 property_value: IAO:0000589 "cold pain (PAIN)" xsd:string
@@ -3409,7 +3416,7 @@ name: continuous pain
 def: "Pain that is persistently present without pain-free intervals." []
 synonym: "concomitant continuous pain" EXACT []
 is_a: PAIN:0000128 ! temporally specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000128 ! temporally specified pain
 intersection_of: RO:0000053 PATO:0000689 ! has characteristic continuous
 relationship: RO:0000053 PATO:0000689 ! has characteristic continuous
 property_value: IAO:0000589 "continuous pain (PAIN)" xsd:string
@@ -3432,7 +3439,7 @@ id: PAIN:0000103
 name: cramping pain
 def: "Pain that is experienced as a constricting, gripping, or squeezing sensation. It is often associated with involuntary muscle contraction." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000102 ! experienced as cramping sensation quality
 relationship: PAIN:0000061 PAIN:0000102 ! experienced as cramping sensation quality
 property_value: IAO:0000589 "cramping pain (PAIN)" xsd:string
@@ -3468,7 +3475,7 @@ id: PAIN:0000106
 name: electric pain
 def: "Pain that is experienced as a sudden, brief, shock-like sensation resembling an electric current." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000105 ! experienced as electric sensation quality
 relationship: PAIN:0000061 PAIN:0000105 ! experienced as electric sensation quality
 property_value: IAO:0000589 "electric pain (PAIN)" xsd:string
@@ -3548,26 +3555,29 @@ property_value: terms:created "2026-07-01T20:25:50Z" xsd:dateTime
 
 [Term]
 id: PAIN:0000113
-name: intermittent
-def: "A process quality that characterizes a process as being marked by breaks or interruptions." []
-is_a: PATO:0000057 ! occurrence
+name: obsolete intermittent
+def: "OBSOLETE. A process quality that characterizes a process as being marked by breaks or interruptions." []
+comment: The defintion is too close to PATO:episodic to be useful.
+is_a: oboInOwl:ObsoleteClass ! obsolete class
+property_value: IAO:0000231 "http://purl.obolibrary.org/obo/IAO_0000103" xsd:string
 property_value: IAO:0000589 "intermittent (PAIN)" xsd:string
 property_value: skos:closeMatch "http://purl.obolibrary.org/obo/ExO_0000052" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-07-01T20:36:04Z" xsd:dateTime
+is_obsolete: true
 
 [Term]
 id: PAIN:0000114
-name: intermittent pain
-def: "Pain that occurs in discrete episodes separated by pain-free intervals." []
-is_a: PAIN:0000128 ! temporally specified pain
-intersection_of: PAIN:0000036 ! pain
-intersection_of: RO:0000053 PAIN:0000113 ! has characteristic intermittent
-relationship: RO:0000053 PAIN:0000113 ! has characteristic intermittent
+name: obsolete intermittent pain
+def: "OBSOLETE. Pain that occurs in discrete episodes separated by pain-free intervals." []
+comment: Could not adaquately distinguish intermittent pain from episodic pain. So, intermittent pain is now a synonym of episodic pain.
+is_a: oboInOwl:ObsoleteClass ! obsolete class
+property_value: IAO:0000231 "http://purl.obolibrary.org/obo/IAO_0000103" xsd:string
 property_value: IAO:0000589 "intermittent pain (PAIN)" xsd:string
 property_value: skos:closeMatch "http://snomed.info/id/314642004" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-07-01T20:40:34Z" xsd:dateTime
+is_obsolete: true
 
 [Term]
 id: PAIN:0000115
@@ -3583,21 +3593,21 @@ property_value: terms:created "2026-07-01T20:49:02Z" xsd:dateTime
 
 [Term]
 id: PAIN:0000116
-name: decreased sensitivity to painful stimulus
-def: "A sensitivity to painful stimulus which is lower than normal or average." []
-is_a: PAIN:0000004 ! sensitivity to painful stimulus
-is_a: PATO:0001552 ! decreased sensitivity of a process
-property_value: IAO:0000589 "decreased sensitivity to painful stimulus (PAIN)" xsd:string
+name: decreased sensitivity to normally painful stimulus
+def: "A sensitivity to normally painful stimulus that characterizes the pain as being lower than normal or average." []
+is_a: PAIN:0000004 ! sensitivity to normally painful stimulus
+is_a: PAIN:0000135 ! decreased sensitivity to somatosensory stimulus
+property_value: IAO:0000589 "decreased sensitivity to normally painful stimulus (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-07-01T22:48:40Z" xsd:dateTime
 
 [Term]
 id: PAIN:0000117
-name: increased sensitivity to painful stimulus
-def: "A sensitivity to painful stimulus which is higher than normal or average." []
-is_a: PAIN:0000004 ! sensitivity to painful stimulus
-is_a: PATO:0001551 ! increased sensitivity of a process
-property_value: IAO:0000589 "increased sensitivity to painful stimulus (PAIN)" xsd:string
+name: increased sensitivity to normally painful stimulus
+def: "A sensitivity to normally painful stimulus that characterizes pain as being higher than normal or average." []
+is_a: PAIN:0000004 ! sensitivity to normally painful stimulus
+is_a: PAIN:0000134 ! increased sensitivity to somatosensory stimulus
+property_value: IAO:0000589 "increased sensitivity to normally painful stimulus (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-07-01T22:49:50Z" xsd:dateTime
 
@@ -3659,7 +3669,7 @@ id: PAIN:0000123
 name: throbbing pain
 def: "Pain that is experienced as a rhythmic, pulsating, or beating sensation in which the pain's intensity waxes and wanes in periodic bursts. Throbbing pain is typically synchronized with the cardiac cycle." []
 is_a: PAIN:0000129 ! sensorily specified pain
-intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000129 ! sensorily specified pain
 intersection_of: PAIN:0000061 PAIN:0000058 ! experienced as throbbing sensation quality
 relationship: PAIN:0000061 PAIN:0000058 ! experienced as throbbing sensation quality
 property_value: IAO:0000589 "throbbing pain (PAIN)" xsd:string
@@ -3688,37 +3698,85 @@ property_value: terms:created "2026-09-10T23:52:19Z" xsd:dateTime
 [Term]
 id: PAIN:0000128
 name: temporally specified pain
+def: "Pain that is characterized by its temporal features, such as its duration, its frequency of occurrence, or its pattern of occurrence over time." []
 is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "temporally specified pain (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-09-14T16:26:40Z" xsd:dateTime
 
 [Term]
 id: PAIN:0000129
 name: sensorily specified pain
+def: "Pain that is characterized by the qualitative sensory character with which it is experienced." []
 is_a: PAIN:0000036 ! pain
+intersection_of: PAIN:0000036 ! pain
+intersection_of: PAIN:0000061 PAIN:0000042 ! experienced as sensation quality
+relationship: PAIN:0000061 PAIN:0000042 ! experienced as sensation quality
+property_value: IAO:0000589 "sensorily specified pain (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-09-14T16:27:03Z" xsd:dateTime
 
 [Term]
 id: PAIN:0000130
 name: spatially specified pain
+def: "Pain that is characterized by its spatial features, such as the location at which it is experienced, its spatial extent, or the spatial relation between where it is experienced and where it originates." []
 is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "spatially specified pain (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-09-14T16:27:16Z" xsd:dateTime
 
 [Term]
-id: PAIN:0000131
-name: anatomically specified pain process
-is_a: PAIN:0000130 ! spatially specified pain
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:created "2026-09-14T16:27:26Z" xsd:dateTime
-
-[Term]
 id: PAIN:0000132
 name: neurobiological pain process
+def: "Pain that is characterized by the neurobiological mechanism by which it arises, such as activation of nociceptors, damaged neural tissue, a lesion or disease of the nervous system, or altered nociceptive processing." []
 is_a: PAIN:0000036 ! pain
+property_value: IAO:0000589 "neurobiological pain process (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-09-14T16:27:45Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000133
+name: sensitivity to somatosensory stimulus
+def: "A sensitivity of a process that characterizes the degree to which the process responds to a somatosensory stimulus." []
+comment: A somatosensory stimulus is a stimulus that is detected by receptors of the somatosensory nervous system and conveys information about the body itself. This includes mechanical stimuli (touch, pressure, vibration, stretch), thermal stimuli (warmth, cold), noxious stimuli (mechanical, thermal, or chemical), proprioceptive stimuli (joint position, muscle length and tension), and visceral stimuli (such as organ distension or chemical stimulation of visceral tissue). It excludes stimuli of the special senses: vision, hearing, olfaction, taste, and vestibular sensation.
+is_a: PATO:0001457 ! sensitivity of a process
+property_value: IAO:0000589 "sensitivity to somatosensory stimulus (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-28T22:39:24Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000134
+name: increased sensitivity to somatosensory stimulus
+def: "A sensitivity to somatosensory stimulus that characterizes the degree to which the process responds as being higher than normal or average." []
+is_a: PAIN:0000133 ! sensitivity to somatosensory stimulus
+is_a: PATO:0001551 ! increased sensitivity of a process
+intersection_of: PAIN:0000133 ! sensitivity to somatosensory stimulus
+intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
+property_value: IAO:0000589 "increased sensitivity to somatosensory stimulus (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-28T22:52:34Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000135
+name: decreased sensitivity to somatosensory stimulus
+def: "A sensitivity to somatosensory stimulus that characterizes the degree to which the process responds as being lower than normal or average." []
+is_a: PAIN:0000133 ! sensitivity to somatosensory stimulus
+is_a: PATO:0001552 ! decreased sensitivity of a process
+intersection_of: PAIN:0000133 ! sensitivity to somatosensory stimulus
+intersection_of: RO:0015008 PATO:0000461 ! decreased in magnitude relative to normal
+property_value: IAO:0000589 "decreased sensitivity to somatosensory stimulus (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-28T22:53:08Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000136
+name: pain response to normally non-painful stimulus
+def: "An increased sensitivity to somatosensory stimulus that characterizes a normally non-painful stimulus as provoking pain." []
+comment: This quality underlies allodynia, which the IASP defines as pain due to a stimulus that does not normally provoke pain. Unlike increased sensitivity to normally painful stimulus (hyperalgesia), the stimulus mode and the response mode differ: a normally non-painful modality, such as light touch or mild warmth, evokes pain. That change of modality is why the term is not labeled as an "increased sensitivity to" term.
+is_a: PAIN:0000134 ! increased sensitivity to somatosensory stimulus
+property_value: IAO:0000589 "pain response to normally non-painful stimulus (PAIN)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-09-29T02:22:59Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010001
@@ -3727,6 +3785,8 @@ def: "Orofacial pain caused by lesions or disorders affecting one or more teeth 
 comment: ICOP term 1.1
 subset: PAIN:0010296
 is_a: PAIN:0000090 ! orofacial pain
+intersection_of: PAIN:0000090 ! orofacial pain
+intersection_of: PAIN:0000062 UBERON:0000165 ! experienced in mouth
 relationship: PAIN:0000062 UBERON:0000165 ! experienced in mouth
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
@@ -3740,6 +3800,8 @@ comment: http://purl.obolibrary.org/obo/UBERON_0001754
 comment: ICOP term 1.1.1
 subset: PAIN:0010296
 is_a: PAIN:0010001 ! dental pain
+intersection_of: PAIN:0010001 ! dental pain
+intersection_of: PAIN:0000062 UBERON:0001754 ! experienced in dental pulp
 relationship: PAIN:0000062 UBERON:0001754 ! experienced in dental pulp
 property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
 property_value: IAO:0000119 "PMID:32103673" xsd:string
@@ -3771,6 +3833,8 @@ comment: related ICOP number: 1.1.2.2
 subset: PAIN:0010296
 synonym: "periodontal pain due to local non-inflammatory cause" RELATED []
 is_a: PAIN:0010001 ! dental pain
+intersection_of: PAIN:0010001 ! dental pain
+intersection_of: PAIN:0000062 UBERON:0008266 ! experienced in periodontal ligament
 relationship: PAIN:0000062 UBERON:0008266 ! experienced in periodontal ligament
 property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
 property_value: IAO:0000119 "PMID:32103673" xsd:string
@@ -3785,6 +3849,8 @@ comment: http://purl.obolibrary.org/obo/UBERON_0001828
 comment: ICOP term: 1.1.3
 subset: PAIN:0010296
 is_a: PAIN:0010001 ! dental pain
+intersection_of: PAIN:0010001 ! dental pain
+intersection_of: PAIN:0000062 UBERON:0001828 ! experienced in gingiva
 relationship: PAIN:0000062 UBERON:0001828 ! experienced in gingiva
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
@@ -6028,6 +6094,8 @@ synonym: "frequent" RELATED []
 synonym: "high frequency" EXACT []
 is_a: PATO:0000044 ! frequency
 is_a: PATO:0055003 ! increased rate of occurrence
+intersection_of: PATO:0000044 ! frequency
+intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0000381
 
@@ -6042,6 +6110,8 @@ synonym: "infrequent" RELATED []
 synonym: "low frequency" EXACT []
 is_a: PATO:0000044 ! frequency
 is_a: PATO:0055004 ! decreased rate of occurrence
+intersection_of: PATO:0000044 ! frequency
+intersection_of: RO:0015008 PATO:0000461 ! decreased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0000380
 
@@ -6056,6 +6126,19 @@ subset: value_slim
 is_a: PATO:0001309 ! duration
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0001863
+
+[Term]
+id: PATO:0000461
+name: normal
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's exhibiting no deviation from normal or average." [PATOC:GVG]
+subset: abnormal_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "average" RELATED []
+is_a: PATO:0000068 ! qualitative
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: RO:0002604 PATO:0000460
 
 [Term]
 id: PATO:0000627
@@ -6092,6 +6175,8 @@ subset: value_slim
 synonym: "slow rate" EXACT []
 is_a: PATO:0000161 ! rate
 is_a: PATO:0002302 ! decreased process quality
+intersection_of: PATO:0000161 ! rate
+intersection_of: RO:0015008 PATO:0000461 ! decreased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0000912
 
@@ -6106,6 +6191,8 @@ synonym: "fast rate" EXACT []
 synonym: "high rate" EXACT []
 is_a: PATO:0000161 ! rate
 is_a: PATO:0002304 ! increased process quality
+intersection_of: PATO:0000161 ! rate
+intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0000911
 
@@ -6200,6 +6287,8 @@ synonym: "high sensitivity of occurrent" EXACT []
 synonym: "increased sensitivity of occurrent" EXACT []
 is_a: PATO:0001457 ! sensitivity of a process
 is_a: PATO:0002304 ! increased process quality
+intersection_of: PATO:0001457 ! sensitivity of a process
+intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0001552
 
@@ -6214,6 +6303,8 @@ synonym: "decreased sensitivity of occurrent" EXACT []
 synonym: "low sensitivity of occurrent" EXACT []
 is_a: PATO:0001457 ! sensitivity of a process
 is_a: PATO:0002302 ! decreased process quality
+intersection_of: PATO:0001457 ! sensitivity of a process
+intersection_of: RO:0015008 PATO:0000461 ! decreased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0001551
 
@@ -6270,6 +6361,7 @@ name: increased quality
 namespace: quality
 def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation (from_normal)
+relationship: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0002301
 property_value: terms:contributor https://orcid.org/0000-0002-2061-091X
@@ -6281,6 +6373,7 @@ name: decreased quality
 namespace: quality
 def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation (from_normal)
+relationship: RO:0015008 PATO:0000461 ! decreased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0002300
 property_value: terms:contributor https://orcid.org/0000-0002-2061-091X
@@ -6293,6 +6386,8 @@ namespace: quality
 def: "A quality of a process that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002301 ! decreased quality
+intersection_of: PATO:0001236 ! process quality
+intersection_of: RO:0015008 PATO:0000461 ! decreased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0002304
 property_value: terms:contributor https://orcid.org/0000-0002-2061-091X
@@ -6305,6 +6400,8 @@ namespace: quality
 def: "A quality of a process that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002300 ! increased quality
+intersection_of: PATO:0001236 ! process quality
+intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: RO:0002604 PATO:0002302
 property_value: terms:contributor https://orcid.org/0000-0002-2061-091X
@@ -6372,6 +6469,8 @@ namespace: quality
 def: "A rate of occurrence that is relatively high." [https://orcid.org/0000-0003-4148-4606]
 is_a: PATO:0000912 ! increased rate
 is_a: PATO:0050000 ! rate of occurence
+intersection_of: PATO:0050000 ! rate of occurence
+intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
 property_value: dc:date "2020-08-19T09:23:19Z" xsd:dateTime
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: terms:contributor https://orcid.org/0000-0003-4148-4606
@@ -6383,6 +6482,8 @@ namespace: quality
 def: "A rate of occurrence that is relatively low." [https://orcid.org/0000-0003-4148-4606]
 is_a: PATO:0000911 ! decreased rate
 is_a: PATO:0050000 ! rate of occurence
+intersection_of: PATO:0050000 ! rate of occurence
+intersection_of: RO:0015008 PATO:0000461 ! decreased in magnitude relative to normal
 property_value: dc:date "2020-08-19T09:24:35Z" xsd:dateTime
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 property_value: terms:contributor https://orcid.org/0000-0003-4148-4606
@@ -9518,6 +9619,31 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
 domain: BFO:0000040 ! material entity
 range: BFO:0000015 ! process
 is_a: RO:0002410 ! causally related to
+
+[Typedef]
+id: RO:0015006
+name: different in magnitude relative to
+def: "q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [https://orcid.org/0000-0002-6601-2165]
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+
+[Typedef]
+id: RO:0015007
+name: increased in magnitude relative to
+def: "q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) > magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [https://orcid.org/0000-0002-6601-2165]
+comment: This relation is used to determine the 'directionality' of relative qualities such as 'increased strength', relative to the parent type, 'strength'.
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+is_a: RO:0015006 ! different in magnitude relative to
+
+[Typedef]
+id: RO:0015008
+name: decreased in magnitude relative to
+def: "q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) < magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [https://orcid.org/0000-0002-6601-2165]
+comment: This relation is used to determine the 'directionality' of relative qualities such as 'decreased strength', relative to the parent type, 'strength'.
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+is_a: RO:0015006 ! different in magnitude relative to
 
 [Typedef]
 id: capable_of
