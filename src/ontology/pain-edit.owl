@@ -174,6 +174,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000132>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000133>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000134>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000135>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0000136>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0010001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0010002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PAIN_0010003>))
@@ -2145,7 +2146,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000115> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000116> (decreased sensitivity to normally painful stimulus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000116> "A sensitivity to a stimulus that normally provokes pain which is lower than normal or average.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000116> "A sensitivity to normally painful stimulus that characterizes the pain as being lower than normal or average.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000116> "decreased sensitivity to normally painful stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000116> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000116> "2026-07-01T22:48:40Z"^^xsd:dateTime)
@@ -2155,7 +2156,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000116> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000117> (increased sensitivity to normally painful stimulus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000117> "A sensitivity to a stimulus that normally provokes pain which is higher than normal or average.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000117> "A sensitivity to normally painful stimulus that characterizes pain as being higher than normal or average.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000117> "increased sensitivity to normally painful stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000117> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000117> "2026-07-01T22:49:50Z"^^xsd:dateTime)
@@ -2305,6 +2306,16 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000135> "2026-09-28T22:53:08Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000135> "decreased sensitivity to somatosensory stimulus"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000135> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015008> <http://purl.obolibrary.org/obo/PATO_0000461>)))
+
+# Class: <http://purl.obolibrary.org/obo/PAIN_0000136> (pain response to normally non-painful stimulus)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000136> "An increased sensitivity to somatosensory stimulus that characterizes a normally non-painful stimulus as provoking pain.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000136> "pain response to normally non-painful stimulus (PAIN)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000136> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000136> "2026-09-29T02:22:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000136> "This quality underlies allodynia, which the IASP defines as pain due to a stimulus that does not normally provoke pain. Unlike increased sensitivity to normally painful stimulus (hyperalgesia), the stimulus mode and the response mode differ: a normally non-painful modality, such as light touch or mild warmth, evokes pain. That change of modality is why the term is not labeled as an \"increased sensitivity to\" term.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000136> "pain response to normally non-painful stimulus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000136> <http://purl.obolibrary.org/obo/PAIN_0000134>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010001> (dental pain)
 
