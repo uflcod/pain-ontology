@@ -13,3 +13,6 @@ http://purl.obolibrary.org/obo/PATO_0001552   # decreased sensitivity of a proce
 http://purl.obolibrary.org/obo/PATO_0000380   # increased frequency
 http://purl.obolibrary.org/obo/PATO_0000381   # decreased frequency
 http://purl.obolibrary.org/obo/PATO_0002630   # episodic
+http://purl.obolibrary.org/obo/PATO_0000461   # normal
+http://purl.obolibrary.org/obo/RO_0015007     # increased in magnitude relative to
+http://purl.obolibrary.org/obo/RO_0015008     # decreased in magnitude relative to
