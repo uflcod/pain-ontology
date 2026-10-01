@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: pain/releases/2026-09-29/pain-non-classified.owl
+data-version: pain/releases/2026-10-01/pain-non-classified.owl
 subsetdef: PAIN:0010296 ""
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
@@ -24,7 +24,7 @@ idspace: skos http://www.w3.org/2004/02/skos/core#
 idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: pain/pain-non-classified
-property_value: owl:versionInfo "2026-09-29" xsd:string
+property_value: owl:versionInfo "2026-10-01" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
@@ -2071,73 +2071,6 @@ is_a: OHD:0010184 ! malignant lesion
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T18:28:29Z" xsd:dateTime
-
-[Term]
-id: OHD:0010220
-name: chronic frequent pain
-def: "Chronic pain that occurs 1-14 days a month." []
-intersection_of: PAIN:0000040 ! chronic pain
-intersection_of: RO:0000053 PATO:0000380 ! has characteristic increased frequency
-property_value: IAO:0000119 "PMID:32103673" xsd:string
-property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
-property_value: terms:created "2025-07-01T17:11:00Z" xsd:dateTime
-
-[Term]
-id: OHD:0010221
-name: chronic infrequent pain
-def: "Chronic pain that occurs less than one day a month." []
-intersection_of: PAIN:0000040 ! chronic pain
-intersection_of: RO:0000053 PATO:0000381 ! has characteristic decreased frequency
-property_value: IAO:0000119 "PMID:32103673" xsd:string
-property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
-property_value: terms:created "2025-07-01T17:13:04Z" xsd:dateTime
-
-[Term]
-id: OHD:0010222
-name: chronic frequent pain with pain referral
-def: "Chronic frequent pain that occurs beyond the affected site." []
-intersection_of: OHD:0010220 ! chronic frequent pain
-intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site anatomical entity
-property_value: IAO:0000119 "PMID:32103673" xsd:string
-property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
-property_value: terms:created "2025-07-01T17:14:42Z" xsd:dateTime
-
-[Term]
-id: OHD:0010223
-name: chronic frequent pain without pain referral
-def: "Chronic frequent pain that s localized to the affected area." []
-is_a: OHD:0010220 ! chronic frequent pain
-property_value: IAO:0000119 "PMID:32103673" xsd:string
-property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
-property_value: terms:created "2025-07-01T17:15:41Z" xsd:dateTime
-
-[Term]
-id: OHD:0010226
-name: chronic highly frequent pain
-def: "Chronic pain that occurs more than 15 days a month for more than 4 months." []
-is_a: OHD:0010220 ! chronic frequent pain
-property_value: IAO:0000119 "PMID:32103673" xsd:string
-property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
-property_value: terms:created "2025-07-01T17:22:21Z" xsd:dateTime
-
-[Term]
-id: OHD:0010229
-name: chronic highly frequent pain without pain referral
-def: "Chronic highly frequent pain that is localized to the affected area." []
-is_a: OHD:0010226 ! chronic highly frequent pain
-property_value: IAO:0000119 "PMID:32103673" xsd:string
-property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
-property_value: terms:created "2025-07-01T17:35:37Z" xsd:dateTime
-
-[Term]
-id: OHD:0010230
-name: chronic highly frequent pain with pain referral
-def: "Chronic highly frequent pain with pain referral that occurs beyond the affected area." []
-intersection_of: OHD:0010226 ! chronic highly frequent pain
-intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site anatomical entity
-property_value: IAO:0000119 "PMID:32103673" xsd:string
-property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
-property_value: terms:created "2025-07-01T17:37:56Z" xsd:dateTime
 
 [Term]
 id: OHD:0010289
@@ -4409,7 +4342,7 @@ def: "Chronic frequent primary temporomandibular joint pain with temporomandibul
 comment: ICOP number: 3.1.2.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010122 ! chronic frequent primary temporomandibular joint pain
-relationship: RO:0002410 OHD:0010223 ! causally related to chronic frequent pain without pain referral
+relationship: RO:0002410 PAIN:0010223 ! causally related to chronic frequent pain without pain referral
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-18T17:38:56Z" xsd:dateTime
@@ -4421,7 +4354,7 @@ def: "Chronic frequent primary temporomandibular joint pain with TMJ palpatation
 comment: ICOP number: 3.1.2.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010122 ! chronic frequent primary temporomandibular joint pain
-relationship: RO:0002410 OHD:0010222 ! causally related to chronic frequent pain with pain referral
+relationship: RO:0002410 PAIN:0010222 ! causally related to chronic frequent pain with pain referral
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-18T17:39:52Z" xsd:dateTime
@@ -4433,7 +4366,7 @@ def: "Chronic frequent primary temporomandibular joint pain occuring on more tha
 comment: ICOP number: 3.1.2.3
 subset: PAIN:0010296
 is_a: PAIN:0010122 ! chronic frequent primary temporomandibular joint pain
-relationship: RO:0002410 OHD:0010226 ! causally related to chronic highly frequent pain
+relationship: RO:0002410 PAIN:0010226 ! causally related to chronic highly frequent pain
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-18T17:41:31Z" xsd:dateTime
@@ -4445,7 +4378,7 @@ def: "Chronic highly frequent primary temporomandibular joint pain on temporoman
 comment: ICOP number: 3.1.2.3.1
 subset: PAIN:0010296
 is_a: PAIN:0010125 ! chronic highly frequent primary temporomandibular joint pain
-relationship: RO:0002410 OHD:0010229 ! causally related to chronic highly frequent pain without pain referral
+relationship: RO:0002410 PAIN:0010229 ! causally related to chronic highly frequent pain without pain referral
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-18T17:42:50Z" xsd:dateTime
@@ -4457,7 +4390,7 @@ def: "Chronic highly frequent primary temporomandibular joint pain on temporoman
 comment: ICOP number: 3.1.2.3.2
 subset: PAIN:0010296
 is_a: PAIN:0010125 ! chronic highly frequent primary temporomandibular joint pain
-relationship: RO:0002410 OHD:0010230 ! causally related to chronic highly frequent pain with pain referral
+relationship: RO:0002410 PAIN:0010230 ! causally related to chronic highly frequent pain with pain referral
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-18T17:44:03Z" xsd:dateTime
@@ -5044,13 +4977,52 @@ property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T18:42:07Z" xsd:dateTime
 
 [Term]
+id: PAIN:0010220
+name: chronic frequent pain
+def: "Chronic pain that occurs 1-14 days a month." []
+intersection_of: PAIN:0000040 ! chronic pain
+intersection_of: RO:0000053 PATO:0000380 ! has characteristic increased frequency
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:11:00Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010221
+name: chronic infrequent pain
+def: "Chronic pain that occurs less than one day a month." []
+intersection_of: PAIN:0000040 ! chronic pain
+intersection_of: RO:0000053 PATO:0000381 ! has characteristic decreased frequency
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:13:04Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010222
+name: chronic frequent pain with pain referral
+def: "Chronic frequent pain that occurs beyond the affected site." []
+intersection_of: PAIN:0010220 ! chronic frequent pain
+intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site anatomical entity
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:14:42Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010223
+name: chronic frequent pain without pain referral
+def: "Chronic frequent pain that s localized to the affected area." []
+is_a: PAIN:0010220 ! chronic frequent pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:15:41Z" xsd:dateTime
+
+[Term]
 id: PAIN:0010224
 name: chronic frequent primary myofascial orofacial pain without pain referral
 def: "Chronic frequent primary myofascial pain with no report of pain at a site beyond the boundary of the muscle (temporalis or masseter) being palpated." []
 comment: ICOP number: 2.1.2.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010219 ! chronic frequent primary myofascial orofacial pain
-relationship: RO:0002410 OHD:0010223 ! causally related to chronic frequent pain without pain referral
+relationship: RO:0002410 PAIN:0010223 ! causally related to chronic frequent pain without pain referral
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-01T17:18:27Z" xsd:dateTime
@@ -5068,13 +5040,22 @@ property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-01T17:20:22Z" xsd:dateTime
 
 [Term]
+id: PAIN:0010226
+name: chronic highly frequent pain
+def: "Chronic pain that occurs more than 15 days a month for more than 4 months." []
+is_a: PAIN:0010220 ! chronic frequent pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:22:21Z" xsd:dateTime
+
+[Term]
 id: PAIN:0010227
 name: chronic highly frequent primary myofascial orofacial pain
 def: "Chronic frequent primary myofascial pain occuring more than 15 days a month for an average of more than 3 months." []
 comment: ICOP number: 2.1.2.3
 subset: PAIN:0010296
 is_a: PAIN:0010219 ! chronic frequent primary myofascial orofacial pain
-relationship: RO:0002410 OHD:0010226 ! causally related to chronic highly frequent pain
+relationship: RO:0002410 PAIN:0010226 ! causally related to chronic highly frequent pain
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-01T17:25:28Z" xsd:dateTime
@@ -5086,10 +5067,29 @@ def: "Chronic highly frequent primary myofascial orofacial pain with no report o
 comment: ICOP number: 2.1.2.3.1
 subset: PAIN:0010296
 is_a: PAIN:0010227 ! chronic highly frequent primary myofascial orofacial pain
-relationship: RO:0002410 OHD:0010229 ! causally related to chronic highly frequent pain without pain referral
+relationship: RO:0002410 PAIN:0010229 ! causally related to chronic highly frequent pain without pain referral
 property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-01T17:31:39Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010229
+name: chronic highly frequent pain without pain referral
+def: "Chronic highly frequent pain that is localized to the affected area." []
+is_a: PAIN:0010226 ! chronic highly frequent pain
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:35:37Z" xsd:dateTime
+
+[Term]
+id: PAIN:0010230
+name: chronic highly frequent pain with pain referral
+def: "Chronic highly frequent pain with pain referral that occurs beyond the affected area." []
+intersection_of: PAIN:0010226 ! chronic highly frequent pain
+intersection_of: PAIN:0000126 UBERON:0001062 ! experienced in referred site anatomical entity
+property_value: IAO:0000119 "PMID:32103673" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
+property_value: terms:created "2025-07-01T17:37:56Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010231
