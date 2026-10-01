@@ -9323,7 +9323,6 @@ property_value: example_of_usage "Concomitant continuous pain (CCP) in trigemina
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2024-06-13T22:09:02Z" xsd:dateTime
 domain: GO:0050877 ! nervous system process
-range: GO:0050890 ! cognition
 
 [Typedef]
 id: PAIN:0000062
@@ -9333,7 +9332,6 @@ property_value: example_of_usage "Brain freeze is a brief, intense pain experien
 property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2025-04-28T16:36:53Z" xsd:dateTime
 domain: GO:0050877 ! nervous system process
-range: GO:0050890 ! cognition
 
 [Typedef]
 id: PAIN:0000126

@@ -586,7 +586,6 @@ The ICOP ontology is based upon the International Classification of Orofacial Pa
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PAIN_0000062">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GO_0050877"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
         <obo:IAO_0000112>Brain freeze is a brief, intense pain experienced in the forehead.</obo:IAO_0000112>
         <obo:IAO_0000115>A relation between a nervous system process and a cognitive process in which a physical sensation is subjectively experienced as occurring in an anatomical entity, site, or a site where an anatomical entity is usually located.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
