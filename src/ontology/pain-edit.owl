@@ -788,7 +788,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000061> "2024-06-13T22:09:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000061> "experienced as"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/GO_0050877>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.obolibrary.org/obo/GO_0050890>)
 
 # Object Property: <http://purl.obolibrary.org/obo/PAIN_0000062> (experienced in)
 
@@ -798,7 +797,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000062> "2025-04-28T16:36:53Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "experienced in"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/GO_0050877>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/PAIN_0000062> <http://purl.obolibrary.org/obo/GO_0050890>)
 
 # Object Property: <http://purl.obolibrary.org/obo/PAIN_0000126> (experienced in referred site)
 
