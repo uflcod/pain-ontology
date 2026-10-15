@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: pain/releases/2026-10-14/pain-base.owl
-date: 14:10:2026 20:35
+date: 14:10:2026 21:09
 subsetdef: PAIN:0010296 ""
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -651,7 +651,7 @@ property_value: terms:created "2024-06-13T21:27:59Z" xsd:dateTime
 [Term]
 id: PAIN:0000057
 name: knee osteoarthritis pain
-def: "knee pain resulting from knee osteoarthritis." []
+def: "Knee pain resulting from knee osteoarthritis." []
 is_a: PAIN:0000094 ! knee pain
 property_value: IAO:0000589 "knee osteoarthritis pain (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -725,22 +725,13 @@ property_value: terms:created "2026-07-01T01:37:54Z" xsd:dateTime
 
 [Term]
 id: PAIN:0000066
-name: ankle pain
 name: shooting sensation quality
 def: "A sudden, intense, and sharp sensation quality." []
-def: "Pain that is experienced in the ankle." []
 is_a: PAIN:0000042 ! sensation quality
-intersection_of: PAIN:0000079 ! lower limb pain
-intersection_of: PAIN:0000062 UBERON:0004454 ! experienced in
-property_value: IAO:0000589 "ankle pain (PAIN)" xsd:string
 property_value: IAO:0000589 "shooting sensation quality (PAIN)" xsd:string
-property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0030840" xsd:string
-property_value: skos:closeMatch "http://snomed.info/id/247373008" xsd:string
 property_value: skos:closeMatch http://snomed.info/id/410705006
-property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2025-05-12T17:07:06Z" xsd:dateTime
-property_value: terms:created "2026-07-01T15:55:25Z" xsd:dateTime
 
 [Term]
 id: PAIN:0000067
@@ -1396,7 +1387,6 @@ property_value: terms:created "2026-04-08T19:58:42Z" xsd:dateTime
 id: PAIN:0000124
 name: chronic high impact pain
 def: "Chronic pain that frequently limits life or work activities." [] {IAO:0000119="https://www.iasp-pain.org/resources/fact-sheets/high-impact-chronic-pain/"}
-def: "Chronic pain that significantly impacts a person's ability to function." []
 is_a: PAIN:0000040 ! chronic pain
 property_value: IAO:0000589 "chronic high impact (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -1486,6 +1476,18 @@ is_a: PAIN:0000134 ! increased sensitivity to somatosensory stimulus
 property_value: IAO:0000589 "pain response to normally non-painful stimulus (PAIN)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-09-29T02:22:59Z" xsd:dateTime
+
+[Term]
+id: PAIN:0000137
+name: ankle pain
+def: "Pain that is experienced in the ankle." []
+intersection_of: PAIN:0000079 ! lower limb pain
+intersection_of: PAIN:0000062 UBERON:0004454 ! experienced in
+property_value: IAO:0000589 "ankle pain (PAIN)" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/HP_0030840" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/247373008" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-07-01T15:55:25Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010001
@@ -2017,8 +2019,8 @@ property_value: terms:created "2025-06-12T17:30:59Z" xsd:dateTime
 [Term]
 id: PAIN:0010081
 name: pulpal pain due to reversible pulpitis resulting from caries not extending to the pulp
-def: "ICOP number: 1.1.1.3.1.1" []
 def: "Pulpal pain cuased by reversible pulpitis due to an infection of the dentin with no clinical or radiographic evidence of extension to the pulp." []
+comment: ICOP number: 1.1.1.3.1.1
 subset: PAIN:0010296
 is_a: PAIN:0010067 ! pulpal pain due to reversible pulpitis resulting from a dentin infection
 relationship: RO:0002410 OHD:0010080
@@ -2453,7 +2455,7 @@ property_value: terms:created "2025-06-25T18:55:26Z" xsd:dateTime
 [Term]
 id: PAIN:0010152
 name: pulpal pain due to irreversible pulpitis resulting from a dental hard-tissue fracture without pulp exposure
-def: "pulpal pain attributed to irreversible pulpitis due to infection of dentin with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture)." []
+def: "Pulpal pain attributed to irreversible pulpitis due to infection of dentin with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture)." []
 comment: ICOP number: 1.1.1.3.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010069 ! pulpal pain due to irreversible pulpitis resulting from a dentin infection
@@ -2477,7 +2479,7 @@ property_value: terms:created "2025-06-25T19:41:39Z" xsd:dateTime
 [Term]
 id: PAIN:0010164
 name: pulpal pain due to irreversible pulpitis resulting from a dental hard-tissue fracture with pulp exposure
-def: "pulpal pain attirbuted to irreversible pulpitis due to infection of the dental pulp with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture) along with pain that has developed in close temporal relation to the fracture with pain developing in close temporal relation to the fracture." []
+def: "Pulpal pain attirbuted to irreversible pulpitis due to infection of the dental pulp with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture) along with pain that has developed in close temporal relation to the fracture with pain developing in close temporal relation to the fracture." []
 comment: ICOP number: 1.1.1.3.3.2
 subset: PAIN:0010296
 is_a: PAIN:0010099 ! pulpal pain due to irreversible pulpitis resulting from an infection of the dental pulp
@@ -2512,7 +2514,7 @@ property_value: terms:created "2025-06-26T18:26:26Z" xsd:dateTime
 [Term]
 id: PAIN:0010168
 name: periodontal pain due to hyperocclusion
-def: "periodontal pain attributed to traumatically induced periodontal inflammation because of a change in occlusal conditions that has occurred, with resultant hyperocclusion identified by primary contact affecting a tooth in occlusion or hypermobility of a tooth." []
+def: "Periodontal pain attributed to traumatically induced periodontal inflammation because of a change in occlusal conditions that has occurred, with resultant hyperocclusion identified by primary contact affecting a tooth in occlusion or hypermobility of a tooth." []
 subset: PAIN:0010296
 is_a: PAIN:0010167 ! periodontal pain due to hyperocclusion or hyperarticulation
 relationship: RO:0002410 OHD:0010143
@@ -2523,7 +2525,7 @@ property_value: terms:created "2025-06-26T18:26:36Z" xsd:dateTime
 [Term]
 id: PAIN:0010169
 name: periodontal pain due to hyperarticulation
-def: "periodontal pain attributed to traumatically induced periodontal inflammation because of a change in occlusal conditions that has occurred, with resultant hyperarticulation identified by primary contact affecting a tooth in articulation or hypermobility of a tooth." []
+def: "Periodontal pain attributed to traumatically induced periodontal inflammation because of a change in occlusal conditions that has occurred, with resultant hyperarticulation identified by primary contact affecting a tooth in articulation or hypermobility of a tooth." []
 subset: PAIN:0010296
 is_a: PAIN:0010167 ! periodontal pain due to hyperocclusion or hyperarticulation
 relationship: RO:0002410 OHD:0010144
@@ -2692,7 +2694,7 @@ property_value: terms:created "2025-06-30T17:16:38Z" xsd:dateTime
 [Term]
 id: PAIN:0010195
 name: pulpal pain due to irreversible pulpitis resulting from carious pulp exposure and infection of the pulp
-def: "pulpal pain due to irreversible pulpitis resulting from an infection of the dental pulp because of deep caries in the affected tooth." []
+def: "Pulpal pain due to irreversible pulpitis resulting from an infection of the dental pulp because of deep caries in the affected tooth." []
 comment: ICOP number: 1.1.1.3.3.1
 subset: PAIN:0010296
 is_a: PAIN:0010099 ! pulpal pain due to irreversible pulpitis resulting from an infection of the dental pulp
