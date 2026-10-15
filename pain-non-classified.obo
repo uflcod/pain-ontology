@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: pain/releases/2026-10-14/pain-non-classified.owl
+data-version: pain/releases/2026-10-15/pain-non-classified.owl
 subsetdef: PAIN:0010296 ""
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
@@ -24,7 +24,7 @@ idspace: skos http://www.w3.org/2004/02/skos/core#
 idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: pain/pain-non-classified
-property_value: owl:versionInfo "2026-10-14" xsd:string
+property_value: owl:versionInfo "2026-10-15" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
@@ -3663,15 +3663,12 @@ property_value: terms:created "2025-04-08T14:34:14Z" xsd:dateTime
 [Term]
 id: PAIN:0010007
 name: jaw bone pain
-def: "Dental pain due to a lesion or disorder involving the jaw bone tissue." []
-comment: http://purl.obolibrary.org/obo/UBERON_0012360
+def: "Dental pain due to a lesion or disorder involving the jaw bone tissue." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP term: 1.2.3
 subset: PAIN:0010296
 synonym: "mandible pain" NARROW []
 synonym: "maxilla pain" NARROW []
 is_a: PAIN:0010186 ! oral mucosal, salivary gland and jaw bone pains
-property_value: IAO:0000119 "https://doi.org/10.1177/0333102419893823" xsd:string
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-04-08T14:38:30Z" xsd:dateTime
 
@@ -3738,267 +3735,244 @@ property_value: terms:created "2025-06-05T15:21:45Z" xsd:dateTime
 [Term]
 id: PAIN:0010022
 name: oral mucosal pain
-def: "Pain due to a disease or disorder involving the oral mucosa." []
+def: "Pain due to a disease or disorder involving the oral mucosa." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010186 ! oral mucosal, salivary gland and jaw bone pains
 relationship: PAIN:0000062 UBERON:0000344 ! experienced in mucosa
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-06T20:08:07Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010023
 name: salivary gland pain
-def: "Pain due to a lesion or disorder involving the salivary glands." []
+def: "Pain due to a lesion or disorder involving the salivary glands." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.2
 comment: related ICOP number: 1.2.2.5
 subset: PAIN:0010296
 synonym: "salivary gland pain due to other cause" RELATED []
 is_a: PAIN:0010186 ! oral mucosal, salivary gland and jaw bone pains
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-06T20:10:46Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010024
 name: gingival pain due to gingivitis
+def: "Gingival pain that occurs as result of gingivitis." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.3.1
-comment: related ICOP number: 1.1.3.1.5
 subset: PAIN:0010296
 synonym: "gingival pain due to gingival inflammation resulting from another cause" RELATED []
 is_a: PAIN:0010006 ! gingival pain
 relationship: RO:0002410 OHD:0010025 ! causally related to gingivitis
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T17:57:43Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010027
 name: gingival pain due to infection
-def: "Gingival pain due to gingivitis due to an infection of the gingival tissue." []
+def: "Gingival pain due to gingivitis due to an infection of the gingival tissue." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.3.1.2
 subset: PAIN:0010296
 is_a: PAIN:0010024 ! gingival pain due to gingivitis
 relationship: RO:0002410 OHD:0010026 ! causally related to gingivitis due to infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T18:15:01Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010030
 name: gingival pain due to bacterial infection
-def: "Gingival pain due to infection resulting form bacteria." []
+def: "Gingival pain due to infection resulting form bacteria." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.3.1.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010027 ! gingival pain due to infection
 relationship: RO:0002410 OHD:0010029 ! causally related to gingivitis due to bacterial infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T18:37:15Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010033
 name: gingival pain due to viral infection
-def: "Gingival pain due to infection resulting from a virus." []
+def: "Gingival pain due to infection resulting from a virus." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.3.1.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010027 ! gingival pain due to infection
 relationship: RO:0002410 OHD:0010032 ! causally related to gingivitis due to viral infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T18:45:56Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010036
 name: gingival pain due to fungal infection
-def: "Gingival pain due to infection resulting from a fungus." []
+def: "Gingival pain due to infection resulting from a fungus." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.3.1.2.3
 subset: PAIN:0010296
 is_a: PAIN:0010027 ! gingival pain due to infection
 relationship: RO:0002410 OHD:0010035 ! causally related to gingivitis due to fungal infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:03:53Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010037
 name: salivary gland pain due to infection
-def: "Salivary gland pain due to infection of the salivary glands." []
+def: "Salivary gland pain due to infection of the salivary glands." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010023 ! salivary gland pain
 relationship: RO:0002410 IDO:0000586 ! causally related to infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:25:03Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010038
 name: salivary gland pain due to bacterial infection
-def: "Salivary gland pain due to bacterial infection." []
+def: "Salivary gland pain due to bacterial infection." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.2.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010037 ! salivary gland pain due to infection
 relationship: RO:0002410 OHD:0010096 ! causally related to bacterial infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:27:44Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010039
 name: salivary gland pain due to viral infection
-def: "Salivary gland pain due to viral infection." []
+def: "Salivary gland pain that occurs as a result of a viral infection." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.2.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010037 ! salivary gland pain due to infection
 relationship: RO:0002410 OHD:0010031 ! causally related to viral infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:29:37Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010040
 name: oral mucosal pain due to infection
-def: "Oral mucosal pain due to oral mucosal inflammation resulting from an infection of the oral mucosa." []
+def: "Oral mucosal pain due to oral mucosal inflammation resulting from an infection of the oral mucosa." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP term: 1.2.1.1.2
 subset: PAIN:0010296
 is_a: PAIN:0010041 ! oral mucosal pain due to oral mucosal inflammation
 relationship: RO:0002410 OHD:0010043 ! causally related to oral mucosal inflammation due to infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:33:29Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010041
 name: oral mucosal pain due to oral mucosal inflammation
-def: "Oral mucosa pain due to inflamation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation." []
+def: "Oral mucosa pain due to inflamation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1.1
-comment: related ICOP number: 1.2.1.1.5
 subset: PAIN:0010296
 synonym: "oral mucosal pain due to oral mucosal inflammation due to other cause" RELATED []
 is_a: PAIN:0010022 ! oral mucosal pain
 relationship: RO:0002410 OHD:0010042 ! causally related to oral mucosal inflammation
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:36:10Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010045
 name: oral mucosal pain due to bacterial infection
-def: "Oral mucosal pain due to bacterial infection." []
+def: "Oral mucosal pain due to bacterial infection." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1.1.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010040 ! oral mucosal pain due to infection
 relationship: RO:0002410 OHD:0010044 ! causally related to oral mucosal inflammation due to bacterial infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:54:47Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010047
 name: oral mucosal pain due to viral infection
-def: "Oral mucosal pain due to viral infection." []
+def: "Oral mucosal pain due to viral infection." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP term: 1.2.1.1.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010040 ! oral mucosal pain due to infection
 relationship: RO:0002410 OHD:0010046 ! causally related to oral mucosal inflammation due to viral infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:59:20Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010049
 name: oral mucosal pain due to fungal infection
-def: "Oral mucosal pain due to fungal infection." []
+def: "Oral mucosal pain due to fungal infection." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1.1.2.3
 subset: PAIN:0010296
 is_a: PAIN:0010040 ! oral mucosal pain due to infection
 relationship: RO:0002410 OHD:0010048 ! causally related to oral mucosal inflammation due to fungal infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T20:04:32Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010050
 name: jaw bone pain due to infection
-def: "Jaw bone pain due to an infection of the jaw bone." []
+def: "Jaw bone pain due to an infection of the jaw bone." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.3.2
 subset: PAIN:0010296
 is_a: PAIN:0010007 ! jaw bone pain
 relationship: RO:0002410 IDO:0000586 ! causally related to infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-11T17:28:40Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010051
 name: jaw bone pain due to bacterial infection
-def: "Jaw bone pain due to a bacterial infection in the jaw bone." []
+def: "Jaw bone pain due to a bacterial infection in the jaw bone." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.3.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010050 ! jaw bone pain due to infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-11T17:30:16Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010052
 name: jaw bone pain due to viral infection
-def: "Jaw bone pain due to a viral infection in the jaw bone." []
+def: "Jaw bone pain due to a viral infection in the jaw bone." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.3.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010050 ! jaw bone pain due to infection
 relationship: RO:0002410 OHD:0010031 ! causally related to viral infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-11T17:31:51Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010053
-name: jaw bone pain due to fungal infection
+name: jaw bone pain due to fungal infection {IAO:0000119="PMID:32103673"}
 def: "Jaw bone pain due to a fungal infection in the jaw bone." []
 comment: ICOP number: 1.2.3.2.3
 subset: PAIN:0010296
 is_a: PAIN:0010050 ! jaw bone pain due to infection
 relationship: RO:0002410 OHD:0010034 ! causally related to fungal infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-11T17:33:07Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010055
 name: gingival pain due to injury
-def: "Gingival pain due to gingivitis due to resulting from trauma or injury with pain localizaed to the traumatized tissue that develops within minutes or days after the trauma." []
+def: "Gingival pain due to gingivitis due to resulting from trauma or injury with pain localizaed to the traumatized tissue that develops within minutes or days after the trauma." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.3.1.1
 subset: PAIN:0010296
 is_a: PAIN:0010024 ! gingival pain due to gingivitis
 relationship: RO:0002410 OHD:0010054 ! causally related to gingivitis due to injury
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-11T17:49:38Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010057
 name: oral mucosal pain due to injury
-def: "Oral mucosal pain due to oral mucose inflammation resulting from tauma to the oral mucosa tissue with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma." []
+def: "Oral mucosal pain due to oral mucose inflammation resulting from tauma to the oral mucosa tissue with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1.1.1
 subset: PAIN:0010296
 is_a: PAIN:0010041 ! oral mucosal pain due to oral mucosal inflammation
 relationship: RO:0002410 OHD:0010056 ! causally related to oral mucosal inflammation due to injury
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-11T17:54:47Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010058
 name: jaw bone pain due to injury
-def: "Jaw bone pain due to trauma or injury involving the jaw bone." []
+def: "Jaw bone pain due to trauma or injury involving the jaw bone." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.3.1
 subset: PAIN:0010296
 is_a: PAIN:0010007 ! jaw bone pain
 relationship: RO:0002410 OGMS:0000102 ! causally related to injury
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-11T17:57:52Z" xsd:dateTime
 
@@ -4083,12 +4057,11 @@ property_value: terms:created "2025-06-12T16:56:25Z" xsd:dateTime
 [Term]
 id: PAIN:0010078
 name: pulpal pain due to dental procedure
-def: "Pulpal pain due to hypersensitivity resulting from a recent dental procedure to the affected tooth." []
+def: "Pulpal pain due to hypersensitivity resulting from a recent dental procedure to the affected tooth." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.1.1.3
 subset: PAIN:0010296
 is_a: PAIN:0010008 ! pulpal pain due to hypersensitivity
 relationship: RO:0002410 OHD:0000002 ! causally related to dental procedure
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-12T17:30:59Z" xsd:dateTime
 
@@ -4258,12 +4231,11 @@ property_value: terms:created "2025-06-18T17:29:46Z" xsd:dateTime
 [Term]
 id: PAIN:0010120
 name: chronic primary temporomandibular joint pain
-def: "Primary temporomandibular pain with onset more than 3 months." []
+def: "Primary temporomandibular pain with onset more than 3 months." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 3.1.2
 subset: PAIN:0010296
 is_a: PAIN:0010118 ! primary temporomandibular joint pain
 relationship: RO:0000053 PATO:0001863 ! has characteristic chronic
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-18T17:31:29Z" xsd:dateTime
 
@@ -4601,24 +4573,22 @@ property_value: terms:created "2025-06-26T18:37:38Z" xsd:dateTime
 [Term]
 id: PAIN:0010175
 name: periodontal pain due to intraradicular endodontic infection
-def: "Periodontal pain due to endodontic infection resulting from to a tooth that has a root canal infection." []
+def: "Periodontal pain due to endodontic infection resulting from to a tooth that has a root canal infection." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.2.1.2.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010173 ! periodontal pain due to endodontic infection
 relationship: RO:0002410 OHD:0010174 ! causally related to intraradicular endodontic infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-26T18:44:16Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010177
 name: periodontal pain due to extraradicular endodontic infection
-def: "Periodontal pain attributed to endodontic infection due to an extraradicular infection around one or more teeth." []
+def: "Periodontal pain attributed to endodontic infection due to an extraradicular infection around one or more teeth." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.2.1.2.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010173 ! periodontal pain due to endodontic infection
 relationship: RO:0002410 OHD:0010176 ! causally related to extraradicular endodontic infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-26T18:47:51Z" xsd:dateTime
 
@@ -4672,12 +4642,11 @@ property_value: terms:created "2025-06-26T19:02:46Z" xsd:dateTime
 [Term]
 id: PAIN:0010185
 name: gingival pain due to malignant lesion
-def: "Gingival pain due to a malignant lesion of the gingival tissues." []
+def: "Gingival pain due to a malignant lesion of the gingival tissues." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.3.2
 subset: PAIN:0010296
 is_a: PAIN:0010006 ! gingival pain
 relationship: RO:0002410 OHD:0010184 ! causally related to malignant lesion
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-26T19:22:46Z" xsd:dateTime
 
@@ -4726,60 +4695,55 @@ property_value: terms:created "2025-06-30T17:32:59Z" xsd:dateTime
 [Term]
 id: PAIN:0010198
 name: oral mucosal pain due to non-iatrogenic injury
-def: "Oral mucosal pain due to oral mucosal inflammation resulting from non-iatrogenic injury." []
+def: "Oral mucosal pain due to oral mucosal inflammation resulting from non-iatrogenic injury." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1.1.1.1
 subset: PAIN:0010296
 is_a: PAIN:0010057 ! oral mucosal pain due to injury
 relationship: RO:0002410 OHD:0010197 ! causally related to oral mucosal inflammation due to non-iatrogenic injury
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T17:47:50Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010200
 name: oral mucosal pain due to radiation or chemotherapy
-def: "Oral mucosal pain due to injury from radiation or chemotherapy" []
+def: "Oral mucosal pain due to injury from radiation or chemotherapy" [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1.1.1.3
 subset: PAIN:0010296
 is_a: PAIN:0010057 ! oral mucosal pain due to injury
 relationship: RO:0002410 OHD:0010199 ! causally related to oral mucosal inflammation due to radiation or chemotherapy
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T17:53:15Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010201
 name: oral mucosal pain due to malignant lesion
-def: "Oral mucoal pain due to meoplasia of the oral mucosa." []
+def: "Oral mucoal pain due to meoplasia of the oral mucosa." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1.2
 subset: PAIN:0010296
 is_a: PAIN:0010022 ! oral mucosal pain
 relationship: RO:0002410 OHD:0010184 ! causally related to malignant lesion
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T17:57:07Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010206
 name: salivary gland pain due to recurrent juvenile parotitis
-def: "Salivary gland pain due to recurrent juvenile parotitis." []
+def: "Salivary gland pain due to recurrent juvenile parotitis." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.2.3
 subset: PAIN:0010296
 is_a: PAIN:0010023 ! salivary gland pain
 relationship: RO:0002410 OHD:0010205 ! causally related to recurrent juvenile parotitis
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T18:10:29Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010207
 name: jaw bone pain due to malignant lesion
-def: "Jaw bone pain that results from a primary or seconday malignant lesion." []
+def: "Jaw bone pain that results from a primary or seconday malignant lesion." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.3.4
 subset: PAIN:0010296
 is_a: PAIN:0010007 ! jaw bone pain
 relationship: RO:0002410 OHD:0010184 ! causally related to malignant lesion
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T18:16:50Z" xsd:dateTime
@@ -4787,12 +4751,11 @@ property_value: terms:created "2025-06-30T18:16:50Z" xsd:dateTime
 [Term]
 id: PAIN:0010209
 name: jaw bone pain due to local benign lesion
-def: "Jaw bone pain that results from a local benign lesion." []
+def: "Jaw bone pain that results from a local benign lesion." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.3.3
 subset: PAIN:0010296
 is_a: PAIN:0010007 ! jaw bone pain
 relationship: RO:0002410 OHD:0010208 ! causally related to local benign lesion
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T18:22:25Z" xsd:dateTime
@@ -4800,35 +4763,32 @@ property_value: terms:created "2025-06-30T18:22:25Z" xsd:dateTime
 [Term]
 id: PAIN:0010211
 name: jaw bone pain due to local malignancy
-def: "Jaw bone pain due to a primary malignant lesion." []
+def: "Jaw bone pain due to a primary malignant lesion." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.3.4.1
 subset: PAIN:0010296
 is_a: PAIN:0010207 ! jaw bone pain due to malignant lesion
 relationship: RO:0002410 OHD:0010210 ! causally related to local malignancy
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T18:27:19Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010213
 name: jaw bone pain due to remote malignancy
-def: "Jaw bone pain due to a remote malignant lesion." []
+def: "Jaw bone pain due to a remote malignant lesion." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.3.4.2
 subset: PAIN:0010296
 is_a: PAIN:0010207 ! jaw bone pain due to malignant lesion
 relationship: RO:0002410 OHD:0010212 ! causally related to remote malignancy
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T18:29:32Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010214
 name: jaw bone pain due to therapy
-def: "Jaw bone pain due to a theraputic intervention that has resulted in a lesion." []
+def: "Jaw bone pain due to a theraputic intervention that has resulted in a lesion." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.3.5
 subset: PAIN:0010296
 is_a: PAIN:0010007 ! jaw bone pain
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-30T18:30:41Z" xsd:dateTime
 
@@ -5471,33 +5431,30 @@ property_value: terms:created "2025-07-07T17:36:33Z" xsd:dateTime
 [Term]
 id: PAIN:0010281
 name: persistent idiopathic facial pain without somatosensory changes
-def: "Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months, unaccompanied by somatosensory changes and in the absence of clinical neurological deficit or preceding causative event." []
+def: "Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months, unaccompanied by somatosensory changes and in the absence of clinical neurological deficit or preceding causative event." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 6.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010280 ! persistent idiopathic facial pain (PIFP)
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-07T17:37:25Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010282
 name: persistent idiopathic facial pain with somatosensory changes
-def: "Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months and accompanied by negative and/or positive somatosensory changes, in the absence of clinical neurological deficit or preceding causative event." []
+def: "Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months and accompanied by negative and/or positive somatosensory changes, in the absence of clinical neurological deficit or preceding causative event." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 6.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010280 ! persistent idiopathic facial pain (PIFP)
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-07T17:38:09Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010283
 name: probable persistent idiopathic facial pain
-def: "Facial pain, with variable features, recurring daily for more than 2 hours per day but for less than 3 months, in the absence of clinical neurological deficit or preceding causative event." []
+def: "Facial pain, with variable features, recurring daily for more than 2 hours per day but for less than 3 months, in the absence of clinical neurological deficit or preceding causative event." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 6.2.3
 subset: PAIN:0010296
 is_a: PAIN:0010280 ! persistent idiopathic facial pain (PIFP)
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-07T17:38:41Z" xsd:dateTime
 
@@ -5555,12 +5512,11 @@ property_value: terms:created "2025-07-07T17:43:15Z" xsd:dateTime
 [Term]
 id: PAIN:0010292
 name: gingival pain due to autoimmunity
-def: "Gingival pain due to gingivitis resulting from an autoimmune disease or disorder." []
+def: "Gingival pain due to gingivitis resulting from an autoimmune disease or disorder." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.3.1.3
 subset: PAIN:0010296
 is_a: PAIN:0010024 ! gingival pain due to gingivitis
 relationship: RO:0002410 OBI:1110054 ! causally related to autoimmune disease
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-08T17:26:49Z" xsd:dateTime
@@ -5568,24 +5524,22 @@ property_value: terms:created "2025-07-08T17:26:49Z" xsd:dateTime
 [Term]
 id: PAIN:0010293
 name: gingival pain attributed to hypersensitivity or allergic reaction
-def: "GIngival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues." []
+def: "GIngival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.1.3.1.4
 subset: PAIN:0010296
 is_a: PAIN:0010024 ! gingival pain due to gingivitis
 relationship: RO:0002410 GO:0002524 ! causally related to hypersensitivity
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-08T17:28:26Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010294
 name: oral mucosal pain due to autoimmunity
-def: "Oral mucosal pain due to oralmucosal inflammation resulting from an autoimmue disease." []
+def: "Oral mucosal pain due to oralmucosal inflammation resulting from an autoimmue disease." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1.1.3
 subset: PAIN:0010296
 is_a: PAIN:0010041 ! oral mucosal pain due to oral mucosal inflammation
 relationship: RO:0002410 OBI:1110054 ! causally related to autoimmune disease
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-08T17:29:51Z" xsd:dateTime
@@ -5593,35 +5547,32 @@ property_value: terms:created "2025-07-08T17:29:51Z" xsd:dateTime
 [Term]
 id: PAIN:0010295
 name: oral mucosal pain due to hypersensitivity or allergic reaction
-def: "Oral mucosal pain due to oral mucosal inflammation resulting from a hypersensitivity or allergic reaction in the oral mucosa." []
+def: "Oral mucosal pain due to oral mucosal inflammation resulting from a hypersensitivity or allergic reaction in the oral mucosa." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.1.1.4
 subset: PAIN:0010296
 is_a: PAIN:0010041 ! oral mucosal pain due to oral mucosal inflammation
 relationship: RO:0002410 GO:0002524 ! causally related to hypersensitivity
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-08T17:31:05Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010297
 name: salivary gland pain due to immunologically mediated disorder
-def: "Salivary gland pain due to an immunologically mediated disorder." []
+def: "Salivary gland pain due to an immunologically mediated disorder." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.2.4
 subset: PAIN:0010296
 is_a: PAIN:0010023 ! salivary gland pain
 relationship: RO:0002410 GO:0006955 ! causally related to immune response
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-08T17:37:30Z" xsd:dateTime
 
 [Term]
 id: PAIN:0010298
 name: salivary gland pain due to obstructive cause
-def: "Salivary gland pain due to an obstruction of the salivary duct." []
+def: "Salivary gland pain due to an obstruction of the salivary duct." [] {IAO:0000119="PMID:32103673"}
 comment: ICOP number: 1.2.2.1
 subset: PAIN:0010296
 is_a: PAIN:0010023 ! salivary gland pain
-property_value: IAO:0000119 "PMID:32103673" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-07-08T17:38:39Z" xsd:dateTime
 

@@ -17,7 +17,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-10-14/pain-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-10-15/pain-full.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -29,7 +29,7 @@
         <terms:description>An ontology for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Pain Ontology</terms:title>
-        <owl:versionInfo>2026-10-14</owl:versionInfo>
+        <owl:versionInfo>2026-10-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -9149,17 +9149,20 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Dental pain due to a lesion or disorder involving the jaw bone tissue.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <obo:IAO_0000119>https://doi.org/10.1177/0333102419893823</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-08T14:38:30Z</terms:created>
         <oboInOwl:hasNarrowSynonym>mandible pain</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>maxilla pain</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP term: 1.2.3</rdfs:comment>
-        <rdfs:comment>http://purl.obolibrary.org/obo/UBERON_0012360</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Dental pain due to a lesion or disorder involving the jaw bone tissue.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9309,13 +9312,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Pain due to a disease or disorder involving the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T20:08:07Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.1</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010022"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain due to a disease or disorder involving the oral mucosa.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9324,7 +9332,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010186"/>
         <obo:IAO_0000115>Pain due to a lesion or disorder involving the salivary glands.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T20:10:46Z</terms:created>
         <oboInOwl:hasRelatedSynonym>salivary gland pain due to other cause</oboInOwl:hasRelatedSynonym>
@@ -9333,6 +9340,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <rdfs:comment>related ICOP number: 1.2.2.5</rdfs:comment>
         <rdfs:label xml:lang="en">salivary gland pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010023"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pain due to a lesion or disorder involving the salivary glands.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9346,15 +9359,20 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+        <obo:IAO_0000115>Gingival pain that occurs as result of gingivitis.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T17:57:43Z</terms:created>
         <oboInOwl:hasRelatedSynonym>gingival pain due to gingival inflammation resulting from another cause</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.3.1</rdfs:comment>
-        <rdfs:comment>related ICOP number: 1.1.3.1.5</rdfs:comment>
         <rdfs:label xml:lang="en">gingival pain due to gingivitis</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010024"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Gingival pain that occurs as result of gingivitis.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9369,13 +9387,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gingival pain due to gingivitis due to an infection of the gingival tissue.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T18:15:01Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.3.1.2</rdfs:comment>
         <rdfs:label xml:lang="en">gingival pain due to infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010027"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Gingival pain due to gingivitis due to an infection of the gingival tissue.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9390,13 +9413,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gingival pain due to infection resulting form bacteria.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T18:37:15Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.3.1.2.1</rdfs:comment>
         <rdfs:label xml:lang="en">gingival pain due to bacterial infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010030"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Gingival pain due to infection resulting form bacteria.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9411,13 +9439,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gingival pain due to infection resulting from a virus.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T18:45:56Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.3.1.2.2</rdfs:comment>
         <rdfs:label xml:lang="en">gingival pain due to viral infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Gingival pain due to infection resulting from a virus.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9432,13 +9465,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gingival pain due to infection resulting from a fungus.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:03:53Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.3.1.2.3</rdfs:comment>
         <rdfs:label xml:lang="en">gingival pain due to fungal infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010036"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Gingival pain due to infection resulting from a fungus.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9453,13 +9491,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Salivary gland pain due to infection of the salivary glands.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:25:03Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.2.2</rdfs:comment>
         <rdfs:label xml:lang="en">salivary gland pain due to infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Salivary gland pain due to infection of the salivary glands.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9474,13 +9517,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Salivary gland pain due to bacterial infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:27:44Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.2.2.1</rdfs:comment>
         <rdfs:label xml:lang="en">salivary gland pain due to bacterial infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010038"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Salivary gland pain due to bacterial infection.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9494,14 +9542,19 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Salivary gland pain due to viral infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+        <obo:IAO_0000115>Salivary gland pain that occurs as a result of a viral infection.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:29:37Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.2.2.2</rdfs:comment>
         <rdfs:label xml:lang="en">salivary gland pain due to viral infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010039"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Salivary gland pain that occurs as a result of a viral infection.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9516,13 +9569,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosal pain due to oral mucosal inflammation resulting from an infection of the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:33:29Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP term: 1.2.1.1.2</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosal pain due to oral mucosal inflammation resulting from an infection of the oral mucosa.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9537,15 +9595,19 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosa pain due to inflamation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:36:10Z</terms:created>
         <oboInOwl:hasRelatedSynonym>oral mucosal pain due to oral mucosal inflammation due to other cause</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.1.1</rdfs:comment>
-        <rdfs:comment>related ICOP number: 1.2.1.1.5</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to oral mucosal inflammation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosa pain due to inflamation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9560,13 +9622,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosal pain due to bacterial infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:54:47Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.1.1.2.1</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to bacterial infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010045"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosal pain due to bacterial infection.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9581,13 +9648,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosal pain due to viral infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:59:20Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP term: 1.2.1.1.2.2</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to viral infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010047"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosal pain due to viral infection.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9602,13 +9674,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosal pain due to fungal infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T20:04:32Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.1.1.2.3</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to fungal infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010049"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosal pain due to fungal infection.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9623,13 +9700,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Jaw bone pain due to an infection of the jaw bone.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:28:40Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.3.2</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010050"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Jaw bone pain due to an infection of the jaw bone.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9638,13 +9720,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010050"/>
         <obo:IAO_0000115>Jaw bone pain due to a bacterial infection in the jaw bone.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:30:16Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.3.2.1</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to bacterial infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010051"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Jaw bone pain due to a bacterial infection in the jaw bone.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9659,13 +9746,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Jaw bone pain due to a viral infection in the jaw bone.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:31:51Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.3.2.2</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to viral infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010052"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Jaw bone pain due to a viral infection in the jaw bone.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9680,13 +9772,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Jaw bone pain due to a fungal infection in the jaw bone.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:33:07Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.3.2.3</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to fungal infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010053"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">jaw bone pain due to fungal infection</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9701,13 +9798,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gingival pain due to gingivitis due to resulting from trauma or injury with pain localizaed to the traumatized tissue that develops within minutes or days after the trauma.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:49:38Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.3.1.1</rdfs:comment>
         <rdfs:label xml:lang="en">gingival pain due to injury</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010055"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Gingival pain due to gingivitis due to resulting from trauma or injury with pain localizaed to the traumatized tissue that develops within minutes or days after the trauma.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9722,13 +9824,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosal pain due to oral mucose inflammation resulting from tauma to the oral mucosa tissue with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:54:47Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.1.1.1</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to injury</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010057"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosal pain due to oral mucose inflammation resulting from tauma to the oral mucosa tissue with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9743,13 +9850,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Jaw bone pain due to trauma or injury involving the jaw bone.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:57:52Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.3.1</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to injury</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010058"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Jaw bone pain due to trauma or injury involving the jaw bone.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -9942,13 +10054,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Pulpal pain due to hypersensitivity resulting from a recent dental procedure to the affected tooth.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-12T17:30:59Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.1.1.3</rdfs:comment>
         <rdfs:label xml:lang="en">pulpal pain due to dental procedure</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pulpal pain due to hypersensitivity resulting from a recent dental procedure to the affected tooth.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -10331,13 +10448,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010118"/>
         <obo:IAO_0000115>Primary temporomandibular pain with onset more than 3 months.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:31:29Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 3.1.2</rdfs:comment>
         <rdfs:label xml:lang="en">chronic primary temporomandibular joint pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010120"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Primary temporomandibular pain with onset more than 3 months.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11100,13 +11222,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Periodontal pain due to endodontic infection resulting from to a tooth that has a root canal infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:44:16Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.2.1.2.2.1</rdfs:comment>
         <rdfs:label xml:lang="en">periodontal pain due to intraradicular endodontic infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010175"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Periodontal pain due to endodontic infection resulting from to a tooth that has a root canal infection.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11121,13 +11248,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Periodontal pain attributed to endodontic infection due to an extraradicular infection around one or more teeth.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:47:51Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.2.1.2.2.2</rdfs:comment>
         <rdfs:label xml:lang="en">periodontal pain due to extraradicular endodontic infection</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010177"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Periodontal pain attributed to endodontic infection due to an extraradicular infection around one or more teeth.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11244,13 +11376,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gingival pain due to a malignant lesion of the gingival tissues.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T19:22:46Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.3.2</rdfs:comment>
         <rdfs:label xml:lang="en">gingival pain due to malignant lesion</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010185"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Gingival pain due to a malignant lesion of the gingival tissues.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11357,13 +11494,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosal pain due to oral mucosal inflammation resulting from non-iatrogenic injury.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:47:50Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.1.1.1.1</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to non-iatrogenic injury</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010198"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosal pain due to oral mucosal inflammation resulting from non-iatrogenic injury.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11378,13 +11520,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosal pain due to injury from radiation or chemotherapy</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:53:15Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.1.1.1.3</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to radiation or chemotherapy</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010200"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosal pain due to injury from radiation or chemotherapy</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11399,13 +11546,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucoal pain due to meoplasia of the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:57:07Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.1.2</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to malignant lesion</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010201"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucoal pain due to meoplasia of the oral mucosa.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11420,13 +11572,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Salivary gland pain due to recurrent juvenile parotitis.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:10:29Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.2.3</rdfs:comment>
         <rdfs:label xml:lang="en">salivary gland pain due to recurrent juvenile parotitis</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010206"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Salivary gland pain due to recurrent juvenile parotitis.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11441,7 +11598,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Jaw bone pain that results from a primary or seconday malignant lesion.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:16:50Z</terms:created>
@@ -11449,6 +11605,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <rdfs:comment>ICOP number: 1.2.3.4</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to malignant lesion</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010207"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Jaw bone pain that results from a primary or seconday malignant lesion.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11463,7 +11625,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Jaw bone pain that results from a local benign lesion.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:22:25Z</terms:created>
@@ -11471,6 +11632,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <rdfs:comment>ICOP number: 1.2.3.3</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to local benign lesion</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010209"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Jaw bone pain that results from a local benign lesion.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11485,13 +11652,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Jaw bone pain due to a primary malignant lesion.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:27:19Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.3.4.1</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to local malignancy</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010211"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Jaw bone pain due to a primary malignant lesion.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11506,13 +11678,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Jaw bone pain due to a remote malignant lesion.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:29:32Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.3.4.2</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to remote malignancy</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010213"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Jaw bone pain due to a remote malignant lesion.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -11521,13 +11698,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010214">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010007"/>
         <obo:IAO_0000115>Jaw bone pain due to a theraputic intervention that has resulted in a lesion.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:30:41Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.3.5</rdfs:comment>
         <rdfs:label xml:lang="en">jaw bone pain due to therapy</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010214"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Jaw bone pain due to a theraputic intervention that has resulted in a lesion.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13000,13 +13182,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010281">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010280"/>
         <obo:IAO_0000115>Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months, unaccompanied by somatosensory changes and in the absence of clinical neurological deficit or preceding causative event.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-07T17:37:25Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 6.2.1</rdfs:comment>
         <rdfs:label xml:lang="en">persistent idiopathic facial pain without somatosensory changes</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010281"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months, unaccompanied by somatosensory changes and in the absence of clinical neurological deficit or preceding causative event.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13015,13 +13202,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010282">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010280"/>
         <obo:IAO_0000115>Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months and accompanied by negative and/or positive somatosensory changes, in the absence of clinical neurological deficit or preceding causative event.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-07T17:38:09Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 6.2.2</rdfs:comment>
         <rdfs:label xml:lang="en">persistent idiopathic facial pain with somatosensory changes</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010282"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Persistent facial pain, with variable features, recurring daily for more than 2 hours per day for more than 3 months and accompanied by negative and/or positive somatosensory changes, in the absence of clinical neurological deficit or preceding causative event.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13030,13 +13222,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010280"/>
         <obo:IAO_0000115>Facial pain, with variable features, recurring daily for more than 2 hours per day but for less than 3 months, in the absence of clinical neurological deficit or preceding causative event.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-07T17:38:41Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 6.2.3</rdfs:comment>
         <rdfs:label xml:lang="en">probable persistent idiopathic facial pain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010283"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Facial pain, with variable features, recurring daily for more than 2 hours per day but for less than 3 months, in the absence of clinical neurological deficit or preceding causative event.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13152,7 +13349,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gingival pain due to gingivitis resulting from an autoimmune disease or disorder.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:26:49Z</terms:created>
@@ -13160,6 +13356,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <rdfs:comment>ICOP number: 1.1.3.1.3</rdfs:comment>
         <rdfs:label xml:lang="en">gingival pain due to autoimmunity</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010292"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Gingival pain due to gingivitis resulting from an autoimmune disease or disorder.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13174,13 +13376,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>GIngival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:28:26Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.3.1.4</rdfs:comment>
         <rdfs:label xml:lang="en">gingival pain attributed to hypersensitivity or allergic reaction</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010293"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>GIngival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13195,7 +13402,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosal pain due to oralmucosal inflammation resulting from an autoimmue disease.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:29:51Z</terms:created>
@@ -13203,6 +13409,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <rdfs:comment>ICOP number: 1.2.1.1.3</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to autoimmunity</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010294"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosal pain due to oralmucosal inflammation resulting from an autoimmue disease.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13217,13 +13429,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Oral mucosal pain due to oral mucosal inflammation resulting from a hypersensitivity or allergic reaction in the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:31:05Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.1.1.4</rdfs:comment>
         <rdfs:label xml:lang="en">oral mucosal pain due to hypersensitivity or allergic reaction</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010295"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Oral mucosal pain due to oral mucosal inflammation resulting from a hypersensitivity or allergic reaction in the oral mucosa.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13238,13 +13455,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Salivary gland pain due to an immunologically mediated disorder.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:37:30Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.2.4</rdfs:comment>
         <rdfs:label xml:lang="en">salivary gland pain due to immunologically mediated disorder</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010297"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Salivary gland pain due to an immunologically mediated disorder.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13253,13 +13475,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010298">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010023"/>
         <obo:IAO_0000115>Salivary gland pain due to an obstruction of the salivary duct.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:38:39Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.2.2.1</rdfs:comment>
         <rdfs:label xml:lang="en">salivary gland pain due to obstructive cause</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010298"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Salivary gland pain due to an obstruction of the salivary duct.</owl:annotatedTarget>
+        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -14914,6 +15141,28 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+        <owl:annotatedTarget>Compared with their Ediacarian predecessor, Cambrian animals in general were characterized by their much stouter bodies. The stoutness of the body is likely due to the formation of ligaments and tendons, which in turn requires the crosslinking of collagen triple helices.[well established][VHOG]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>VHOG:0001272</oboInOwl:external_class>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
+        <oboInOwl:source>PMID:8710894 Ohno S, The notion of the Cambrian pananimalia genome. PNAS (1996)</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0023685</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Ligament</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ligament organ</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:21496</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Dense regular connective tissue connecting two or more adjacent skeletal elements or supporting an organ.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GO_REF:0000034</oboInOwl:hasDbXref>
@@ -14934,28 +15183,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <oboInOwl:external_class>TAO:0001682</oboInOwl:external_class>
         <oboInOwl:ontology>TAO</oboInOwl:ontology>
         <oboInOwl:source>TAO:wd</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
-        <owl:annotatedTarget>Compared with their Ediacarian predecessor, Cambrian animals in general were characterized by their much stouter bodies. The stoutness of the body is likely due to the formation of ligaments and tendons, which in turn requires the crosslinking of collagen triple helices.[well established][VHOG]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
-        <oboInOwl:external_class>VHOG:0001272</oboInOwl:external_class>
-        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
-        <oboInOwl:source>PMID:8710894 Ohno S, The notion of the Cambrian pananimalia genome. PNAS (1996)</oboInOwl:source>
-        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0023685</owl:annotatedTarget>
-        <oboInOwl:source>ncithesaurus:Ligament</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>ligament organ</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FMA:21496</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -15553,18 +15780,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000978"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000013"/>
-        <owl:annotatedTarget>The term leg can mean: [1] an appendage on which an animal walks [2] the entire hindlimb of a tetrapod [3] the segment of a human leg between knee and ankle (cf FMA) [4] the region of a hindlimb include the stylopod and zeugopod, but excluding the autopod. We define this class as [4], and thus &apos;leg&apos; is compltely analagous to &apos;arm&apos;. For [1], see the class &apos;locomotive weight-bearing appendage&apos;. For [2] we use &apos;hindlimb&apos;. For</owl:annotatedTarget>
-        <oboInOwl:source>3</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000978"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>lower extremity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MESH:A01.378.610</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000978"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The portion of the hindlimb that contains both the stylopod and zeugopod.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:Leg#Limb</oboInOwl:hasDbXref>
@@ -15578,6 +15793,18 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <oboInOwl:ontology>VHOG</oboInOwl:ontology>
         <oboInOwl:source>ISBN:978-0198540472 Janvier P, Early vertebrates (1996) p.268</oboInOwl:source>
         <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000978"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000013"/>
+        <owl:annotatedTarget>The term leg can mean: [1] an appendage on which an animal walks [2] the entire hindlimb of a tetrapod [3] the segment of a human leg between knee and ankle (cf FMA) [4] the region of a hindlimb include the stylopod and zeugopod, but excluding the autopod. We define this class as [4], and thus &apos;leg&apos; is compltely analagous to &apos;arm&apos;. For [1], see the class &apos;locomotive weight-bearing appendage&apos;. For [2] we use &apos;hindlimb&apos;. For</owl:annotatedTarget>
+        <oboInOwl:source>3</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000978"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>lower extremity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MESH:A01.378.610</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
