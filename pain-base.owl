@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-10-01/pain-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-10-14/pain-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
@@ -23,11 +23,11 @@
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0006-7251-3026"/>
         <terms:created>2022-08-23</terms:created>
-        <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
+        <terms:description>An ontology for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <terms:title>The Pain Ontology</terms:title>
-        <oboInOwl:date>01:10:2026 18:16</oboInOwl:date>
-        <owl:versionInfo>2026-10-01</owl:versionInfo>
+        <terms:title>Pain Ontology</terms:title>
+        <oboInOwl:date>14:10:2026 20:35</oboInOwl:date>
+        <owl:versionInfo>2026-10-14</owl:versionInfo>
     </owl:Ontology>
     
 

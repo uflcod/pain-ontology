@@ -17,7 +17,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-10-01/pain-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-10-14/pain-full.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -26,10 +26,10 @@
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0006-7251-3026"/>
         <terms:created>2022-08-23</terms:created>
-        <terms:description>The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
+        <terms:description>An ontology for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <terms:title>The Pain Ontology</terms:title>
-        <owl:versionInfo>2026-10-01</owl:versionInfo>
+        <terms:title>Pain Ontology</terms:title>
+        <owl:versionInfo>2026-10-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3196,14 +3196,21 @@ Despite their overarching function in the support and protection of neurons, gli
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <obo:IAO_0000115 xml:lang="en">A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">emotion process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</obo:IAO_0000115>
+        <obo:IAO_0000589>emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:50:19Z</terms:created>
+        <oboInOwl:hasExactSynonym>emotion</oboInOwl:hasExactSynonym>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/emro.owl"/>
-        <rdfs:label xml:lang="en">emotion process</rdfs:label>
+        <rdfs:label xml:lang="en">emotion response process</rdfs:label>
+        <skos:closeMatch>http://opendata.inrae.fr/PO2/Ontology/TransformON/c_5qTfIv</skos:closeMatch>
+        <skos:closeMatch>http://purl.obolibrary.org/obo/GECKO_0000121</skos:closeMatch>
+        <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C54266</skos:closeMatch>
+        <skos:closeMatch>http://semanticscience.org/resource/SIO_000276</skos:closeMatch>
+        <skos:closeMatch>http://snomed.info/id/285854004</skos:closeMatch>
+        <skos:prefLabel>emotion response</skos:prefLabel>
     </owl:Class>
     
 
@@ -3212,8 +3219,8 @@ Despite their overarching function in the support and protection of neurons, gli
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
-        <obo:IAO_0000115 xml:lang="en">A cognitive process during which an organism is aware of something either internal or external to itself.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">phenomenal cognitive experience (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A cognitive process during which an organism is aware of something either internal or external to itself.</obo:IAO_0000115>
+        <obo:IAO_0000589>phenomenal cognitive experience (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -3224,7 +3231,7 @@ Despite their overarching function in the support and protection of neurons, gli
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A cognitive process during which an organism is aware of something either internal or external to itself.</owl:annotatedTarget>
+        <owl:annotatedTarget>A cognitive process during which an organism is aware of something either internal or external to itself.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/consciousness</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -3251,8 +3258,8 @@ Despite their overarching function in the support and protection of neurons, gli
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A phenomenal cognitive experience evaluated as pleasant or unpleasant.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">emotional experience (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</obo:IAO_0000115>
+        <obo:IAO_0000589>emotional experience (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -3263,7 +3270,7 @@ Despite their overarching function in the support and protection of neurons, gli
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A phenomenal cognitive experience evaluated as pleasant or unpleasant.</owl:annotatedTarget>
+        <owl:annotatedTarget>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/feeling</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -3273,8 +3280,8 @@ Despite their overarching function in the support and protection of neurons, gli
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">sensory experience (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
+        <obo:IAO_0000589>sensory experience (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -3285,7 +3292,7 @@ Despite their overarching function in the support and protection of neurons, gli
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</owl:annotatedTarget>
+        <owl:annotatedTarget>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/sensation</obo:IAO_0000119>
     </owl:Axiom>
     

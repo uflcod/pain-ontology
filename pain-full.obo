@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: pain/releases/2026-10-01/pain-full.owl
+data-version: pain/releases/2026-10-14/pain-full.owl
 subsetdef: PAIN:0010296 ""
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
@@ -24,7 +24,7 @@ idspace: skos http://www.w3.org/2004/02/skos/core#
 idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: pain/pain-full
-property_value: owl:versionInfo "2026-10-01" xsd:string
+property_value: owl:versionInfo "2026-10-14" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
@@ -33,9 +33,9 @@ property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:contributor https://orcid.org/0009-0006-7251-3026
 property_value: terms:created "2022-08-23" xsd:string
-property_value: terms:description "The Pain Ontology contains terms for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee)." xsd:string
+property_value: terms:description "An ontology for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee)." xsd:string
 property_value: terms:license "http://creativecommons.org/licenses/by/4.0/" xsd:string
-property_value: terms:title "The Pain Ontology" xsd:string
+property_value: terms:title "Pain Ontology" xsd:string
 
 [Term]
 id: BFO:0000015
@@ -370,11 +370,18 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
 id: EMRO:0000000
-name: emotion process
+name: emotion response process
 def: "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences)." []
+synonym: "emotion" EXACT []
 is_a: GO:0007610 ! behavior
-property_value: IAO:0000589 "emotion process (EMRO)" xsd:string
+property_value: IAO:0000589 "emotion response process (EMRO)" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/emro.owl
+property_value: skos:closeMatch "http://opendata.inrae.fr/PO2/Ontology/TransformON/c_5qTfIv" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/GECKO_0000121" xsd:string
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/NCIT_C54266" xsd:string
+property_value: skos:closeMatch "http://semanticscience.org/resource/SIO_000276" xsd:string
+property_value: skos:closeMatch "http://snomed.info/id/285854004" xsd:string
+property_value: skos:prefLabel "emotion response" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -398,8 +405,8 @@ name: emotional experience
 def: "A phenomenal cognitive experience evaluated as pleasant or unpleasant." [] {IAO:0000119="https://dictionary.apa.org/feeling"}
 is_a: EMRO:0000001 ! phenomenal cognitive experience
 intersection_of: EMRO:0000001 ! phenomenal cognitive experience
-intersection_of: part_of EMRO:0000000 ! emotion process
-relationship: part_of EMRO:0000000 ! emotion process
+intersection_of: part_of EMRO:0000000 ! emotion response process
+relationship: part_of EMRO:0000000 ! emotion response process
 property_value: IAO:0000589 "emotional experience (EMRO)" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/emro.owl
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
