@@ -784,7 +784,7 @@ AnnotationAssertion(rdfs:label rdfs:label "rdfs:label"@en)
 # Object Property: <http://purl.obolibrary.org/obo/PAIN_0000061> (experienced as)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/PAIN_0000061> "Concomitant continuous pain (CCP) in trigeminal neuralgia is often experienced as burning or throbbing.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000061> "A relation between a nervous system process and a cognitive process in which the nervous system process is gives rise to an experiential mental process.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000061> "A relation between a nervous system process and a cognitive process in which the nervous system process gives rise to an experiential mental process.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000061> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000061> "2024-06-13T22:09:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000061> "experienced as"@en)
@@ -793,7 +793,7 @@ ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PAIN_0000061> <http://purl.
 # Object Property: <http://purl.obolibrary.org/obo/PAIN_0000062> (experienced in)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/PAIN_0000062> "Brain freeze is a brief, intense pain experienced in the forehead.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000062> "A relation between a nervous system process and a cognitive process in which a physical sensation is subjectively experienced as occurring in an anatomical entity, site, or a site where an anatomical entity is usually located.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000062> "A relation between a nervous system process and a cognitive process in which a physical sensation is subjectively experienced as occurring in an anatomical entity or a site where an anatomical entity is usually located.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000062> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000062> "2025-04-28T16:36:53Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000062> "experienced in"@en)
@@ -837,7 +837,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000000> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000001> (concomitant continuous pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32791919") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1277654/full") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000001> "Persistent background pain that occurs alongside paroxysmal pain attacks, characteristic of conditions such as trigeminal neuralgia.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32791919") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1277654/full") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000001> "Persistent background pain that occurs alongside paroxysmal pain attacks. It is characteristic of conditions such as trigeminal neuralgia.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000001> "concomitant continuous pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000001> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000001> <https://orcid.org/0009-0003-5583-4731>)
@@ -876,7 +876,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000003> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000004> (sensitivity to normally painful stimulus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000004> "A sensitivity to somatosensory stimulus that normally provokes pain which characterizes the degreee of the response to the stimulus.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000004> "A sensitivity to a somatosensory stimulus that normally provokes pain which characterizes the degree of the response to the stimulus.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000004> "sensitivity to normally painful stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000004> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000004> "2026-07-01T23:13:11Z"^^xsd:dateTime)
@@ -915,7 +915,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000008> "paresthesia (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000008> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000008> "2026-07-01T23:48:57Z"^^xsd:dateTime)
-AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/PAIN_0000008> "Paresthesia be used to describe an abnormal sensation that is not unpleasant while dysesthesia be used preferentially for an abnormal sensation that is considered to be unpleasant. The use of one term (paresthesia) to indicate spontaneous sensations and the other to refer to evoked sensations is not favored. There is a sense in which, since paresthesia refers to abnormal sensations in general, it might include dysesthesia, but the reverse is not true. Dysesthesia does not include all abnormal sensations, but only those that are unpleasant.
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/PAIN_0000008> "Paresthesia is used to describe an abnormal sensation that is not unpleasant, while dysesthesia is used preferentially for an abnormal sensation that is considered to be unpleasant. The use of one term (paresthesia) to indicate spontaneous sensations and the other to refer to evoked sensations is not favored. There is a sense in which, since paresthesia refers to abnormal sensations in general, it might include dysesthesia, but the reverse is not true. Dysesthesia does not include all abnormal sensations, but only those that are unpleasant.
 See entry in https://www.iasp-pain.org/resources/terminology.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000008> "paresthesia"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000008> "http://id.nlm.nih.gov/mesh/D010292")
@@ -1153,7 +1153,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000034> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000035> (temporomandibular disorder pain)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000035> "Pain associated with temporomandibular disorders, affecting the masticatory muscles, the temporomandibular joint, or associated structures.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000035> "Pain associated with temporomandibular disorders. It affects the masticatory muscles, the temporomandibular joint, or associated structures.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000035> "temporomandibular disorder pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000035> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000035> "2026-07-02T00:24:58Z"^^xsd:dateTime)
@@ -1166,6 +1166,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000036> "pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000036> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000036> "2024-06-13T18:46:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "The \"emotional\" part of pain captures the affective (i.e., unpleasant) dimension of experiencing pain.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "Six key notes and etymology:
 
  - Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.
@@ -1178,8 +1179,7 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "
  
 - Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
 
- - Verbal description is only one of several behaviors to express pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "The \"emotional\" part of pain captures the affective (i.e., unpleasant) dimension of experiencing pain.")
+ - Verbal description is only one of several behaviors which expresses pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000036> "pain"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PAIN_0000036> "- The Revised IASP definition of pain: concepts, challenges, and compromises. 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
@@ -1254,7 +1254,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000041> "nociceptive pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000041> <http://id.nlm.nih.gov/mesh/D059226>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000041> <http://purl.obolibrary.org/obo/SYMP_0000831>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.obolibrary.org/obo/PAIN_0000041> "The term is used to describe pain occurring with a normally functioning somatosensory nervous system to contrast with the abnormal function seen in neuropathic or nociplasitic pain.")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.obolibrary.org/obo/PAIN_0000041> "The term is used to describe pain occurring with a normally functioning somatosensory nervous system to contrast with the abnormal function seen in neuropathic or nociplastic pain.")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000041> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PAIN_0000132> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002333> <http://purl.obolibrary.org/obo/CL_0000198>)))
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000042> (sensation quality)
@@ -1318,7 +1318,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000046> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000047> (dull sensation quality)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.healthline.com/health/dull-pain") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.merriam-webster.com/dictionary/dull") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000047> "A sensation quality that characterizes a sensation as being persistent, deep, or nagging rather than a sharp or stabbing.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.healthline.com/health/dull-pain") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.merriam-webster.com/dictionary/dull") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000047> "A sensation quality that characterizes a sensation as being persistent, deep, or nagging rather than sharp or stabbing.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000047> "dull sensation quality (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000047> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000047> "2025-05-12T17:02:36Z"^^xsd:dateTime)
@@ -1554,7 +1554,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000069> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000070> (stabbing sensation quality)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000070> "An intense, sudden, and sharp sensation, often described as a knife-like or shooting, sensation quality that pierces a specific area.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000070> "An intense, sudden, and sharp sensation, often described as a knife-like or shooting sensation quality that pierces a specific area.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000070> "stabbing sensation quality (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000070> <http://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000070> "2025-05-12T17:09:02Z"^^xsd:dateTime)
@@ -1790,14 +1790,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000091> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000092> (chronic widespread pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:39445928") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.findacode.com/icd-11/code-849253504.html") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000092> "Chronic pain that is diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:39445928") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.findacode.com/icd-11/code-849253504.html") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000092> "Chronic pain that is diffuse and experienced in body regions and in at least 3 body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000092> "chronic widespread pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000092> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000092> "2025-06-23T17:11:58Z"^^xsd:dateTime)
 AnnotationAssertion(Annotation(<http://purl.org/dc/terms/source> "https://www.findacode.com/icd-11/code-849253504.html") rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000092> "Chronic widespread pain (CWP) is associated with significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles). CWP is multifactorial: biological, psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate when the pain is not directly attributable to a nociceptive process in these regions and there are features consistent with nociplastic pain and identified psychological and social contributors.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000092> "chronic widespread pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.obolibrary.org/obo/PAIN_0000092> "Additional criteria to consider:
-- Include quantrants/regions of body in the definition. 
+- Include quadrants/regions of body in the definition. 
   - E.g., >= 3 quadrants & axial
   - >= 4 body regions
 - Use the notion of functional region instead of regions divided by joints.
@@ -1841,7 +1841,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000095> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000096> (cancer pain)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000096> "Pain that caused by the effects of cancer (e.g., neoplasm growth, tissue invasion, metastases), the diagnosis of cancer, or the treatment of cancer.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000096> "Pain that is caused by the effects of cancer (e.g., neoplasm growth, tissue invasion, metastases), the diagnosis of cancer, or the treatment of cancer.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000096> "cancer pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000096> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000096> "2026-07-01T16:09:05Z"^^xsd:dateTime)
@@ -2033,7 +2033,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000231> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000113> "intermittent (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000113> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000113> "2026-07-01T20:36:04Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000113> "The defintion is too close to PATO:episodic to be useful.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000113> "The definition is too close to PATO:episodic to be useful.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000113> "obsolete intermittent"@en)
 AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PAIN_0000113> "true"^^xsd:boolean)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000113> "http://purl.obolibrary.org/obo/ExO_0000052")
@@ -2046,7 +2046,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000231> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000114> "intermittent pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000114> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000114> "2026-07-01T20:40:34Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000114> "Could not adaquately distinguish intermittent pain from episodic pain. So, intermittent pain is now a synonym of episodic pain.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000114> "Could not adequately distinguish intermittent pain from episodic pain. So, intermittent pain is now a synonym of episodic pain.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000114> "obsolete intermittent pain"@en)
 AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PAIN_0000114> "true"^^xsd:boolean)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000114> "http://snomed.info/id/314642004")
@@ -2063,7 +2063,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000115> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000116> (decreased sensitivity to normally painful stimulus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000116> "A sensitivity to normally painful stimulus that characterizes the pain as being lower than normal or average.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000116> "A sensitivity to a normally painful stimulus that characterizes the pain as being lower than normal or average.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000116> "decreased sensitivity to normally painful stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000116> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000116> "2026-07-01T22:48:40Z"^^xsd:dateTime)
@@ -2073,7 +2073,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000116> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000117> (increased sensitivity to normally painful stimulus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000117> "A sensitivity to normally painful stimulus that characterizes pain as being higher than normal or average.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000117> "A sensitivity to a normally painful stimulus that characterizes pain as being higher than normal or average.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000117> "increased sensitivity to normally painful stimulus (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000117> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000117> "2026-07-01T22:49:50Z"^^xsd:dateTime)
@@ -2087,7 +2087,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000118> "trigeminal neuralgia pain (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000118> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000118> "2026-07-02T00:42:45Z"^^xsd:dateTime)
-AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/PAIN_0000118> "Trigeminal neuralgia pain typically presents as paroxysmal, electric shock-like attacks and sometimes accompanied by concomitant continuous pain.")
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/PAIN_0000118> "Trigeminal neuralgia pain typically presents as paroxysmal, electric shock-like attacks and sometimes is accompanied by concomitant continuous pain.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000118> "trigeminal neuralgia pain"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.obolibrary.org/obo/PAIN_0000118> "http://id.nlm.nih.gov/mesh/D014277")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.obolibrary.org/obo/PAIN_0000118> "http://purl.obolibrary.org/obo/HP_0100661")
@@ -2155,7 +2155,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000124> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000127> (idiopathic)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/idiopathic") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000127> "A characteristic of an entity whose causal origin has not been identified. It usually characterizes diseases whose etiology are obscure.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/idiopathic") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000127> "A characteristic of an entity whose causal origin has not been identified. It usually characterizes diseases whose etiologies are obscure.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000127> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000127> "2026-09-10T23:52:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000127> "idiopathic"@en)
@@ -2338,7 +2338,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010013> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010015> (pulpal pain due to exposed dentin)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010015> "Pulpal pain due to hypersensistivity resulting from an exposed dentin surface.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010015> "Pulpal pain due to hypersensitivity resulting from an exposed dentin surface.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010015> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010015> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010015> "2025-06-05T14:57:43Z"^^xsd:dateTime)
@@ -2397,7 +2397,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010023> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010024> (gingival pain due to gingivitis)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010024> "Gingival pain that occurs as result of gingivitis.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010024> "Gingival pain that occurs as a result of gingivitis.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010024> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010024> "2025-06-10T17:57:43Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PAIN_0010024> "gingival pain due to gingival inflammation resulting from another cause")
@@ -2409,7 +2409,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010024> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010027> (gingival pain due to infection)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010027> "Gingival pain due to gingivitis due to an infection of the gingival tissue.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010027> "Gingival pain due to gingivitis that is caused by an infection of the gingival tissue.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010027> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010027> "2025-06-10T18:15:01Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010027> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2420,7 +2420,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010027> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010030> (gingival pain due to bacterial infection)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010030> "Gingival pain due to infection resulting form bacteria.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010030> "Gingival pain due to infection resulting from bacteria.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010030> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010030> "2025-06-10T18:37:15Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010030> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2497,7 +2497,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010040> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010041> (oral mucosal pain due to oral mucosal inflammation)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010041> "Oral mucosa pain due to inflamation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010041> "Oral mucosa pain due to inflammation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010041> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010041> "2025-06-10T19:36:10Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PAIN_0010041> "oral mucosal pain due to oral mucosal inflammation due to other cause")
@@ -2585,7 +2585,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010053> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010055> (gingival pain due to injury)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010055> "Gingival pain due to gingivitis due to resulting from trauma or injury with pain localizaed to the traumatized tissue that develops within minutes or days after the trauma.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010055> "Gingival pain due to gingivitis that results from trauma or injury with pain localized to the traumatized tissue that develops within minutes or days after the trauma.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010055> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010055> "2025-06-11T17:49:38Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010055> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2596,7 +2596,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010055> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010057> (oral mucosal pain due to injury)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010057> "Oral mucosal pain due to oral mucose inflammation resulting from tauma to the oral mucosa tissue with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010057> "Oral mucosal pain due to oral mucosal inflammation resulting from trauma to the oral mucosa tissue, with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010057> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010057> "2025-06-11T17:54:47Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010057> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2622,13 +2622,13 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMI
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010059> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010059> "2025-06-11T18:05:48Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010059> <http://purl.obolibrary.org/obo/PAIN_0010296>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0010059> "ICOP numuber: 4.1")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0010059> "ICOP number: 4.1")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0010059> "pain due to lesion or disease of the trigeminal nerve"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010059> <http://purl.obolibrary.org/obo/PAIN_0010142>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010061> (pulpal pain due to pulpitis)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010061> "Pulpal pain due to diagnosed pulpitis in affected tooth.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010061> "Pulpal pain due to diagnosed pulpitis in the affected tooth.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010061> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010061> "2025-06-11T18:17:44Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PAIN_0010061> "pulpal pain due to pulpitis resulting from another cause")
@@ -2640,7 +2640,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010061> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010067> (pulpal pain due to reversible pulpitis resulting from a dentin infection)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010067> "Pulpal pain due to pulpitis that is reversible due to an infection in the dentin.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010067> "Pulpal pain due to pulpitis that is reversible and results from an infection in the dentin.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010067> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010067> "2025-06-11T18:54:11Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010067> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2651,7 +2651,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010067> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010069> (pulpal pain due to irreversible pulpitis resulting from a dentin infection)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010069> "Pulpal pain attributed to pulpitis that is reversible due to an infection in the dentin.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010069> "Pulpal pain attributed to pulpitis that is irreversible and results from an infection in the dentin.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010069> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010069> "2025-06-11T18:59:55Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010069> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2707,7 +2707,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010078> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010081> (pulpal pain due to reversible pulpitis resulting from caries not extending to the pulp)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010081> "Pulpal pain cuased by reversible pulpitis due to an infection of the dentin with no clinical or radiographic evidence of extension to the pulp.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010081> "Pulpal pain caused by reversible pulpitis due to an infection of the dentin with no clinical or radiographic evidence of extension to the pulp.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010081> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010081> "2025-06-12T18:16:30Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010081> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2727,14 +2727,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0010083> "pu
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010083> <http://purl.obolibrary.org/obo/PAIN_0010067>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <http://purl.obolibrary.org/obo/OHD_0010082>))
 
-# Class: <http://purl.obolibrary.org/obo/PAIN_0010086> (pulpal due to irreversible pulpitis resulting from caries extending to the pulp)
+# Class: <http://purl.obolibrary.org/obo/PAIN_0010086> (pulpal pain due to irreversible pulpitis resulting from caries extending to the pulp)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010086> "Pulpal pain attributed to irreversible pulpitis due to infection of dentin because of deep caries in the affected tooth.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010086> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010086> "2025-06-12T19:15:53Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010086> <http://purl.obolibrary.org/obo/PAIN_0010296>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0010086> "ICOP number: 1.1.1.3.2.1")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0010086> "pulpal due to irreversible pulpitis resulting from caries extending to the pulp"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0010086> "pulpal pain due to irreversible pulpitis resulting from caries extending to the pulp"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010086> <http://purl.obolibrary.org/obo/PAIN_0010069>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010087> (postoperative periodontal pain)
@@ -2750,7 +2750,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010087> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010091> (periodontal pain due to apical periodontitis resulting from endodontic disease)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010091> "Periodontal pain due to periodontits that is apical occuring becayse of an endodontic disease.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010091> "Periodontal pain due to periodontitis that is apical and occurring because of an endodontic disease.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010091> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010091> "2025-06-19T19:11:03Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010091> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2761,7 +2761,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010091> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010093> (pulpal pain due to pulp exposure resulting from dental trauma)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010093> "Pulpal pain due to dental trauma that has exposes vital pulp tissue in the affected tooth because of any of the following: fracture involving enamel, dentin and pulp (complicated crown fracture), fracture involving root cementum, dentin and pulp (complicated root fracture), and fracture involving enamel, root cementum, dentin and pulp (complicated crown-root fracture) and occurs within minutes to hours after the trauma.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010093> "Pulpal pain due to dental trauma that results from exposed vital pulp tissue in the affected tooth which is because of any of the following: fracture involving enamel, dentin and pulp (complicated crown fracture), fracture involving root cementum, dentin and pulp (complicated root fracture), and fracture involving enamel, root cementum, dentin and pulp (complicated crown-root fracture) and occurs within minutes to hours after the trauma.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010093> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010093> "2025-06-23T19:54:50Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010093> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2816,7 +2816,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010106> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010108> (pulpal pain due to reversible pulpitis resulting from tooth crack without evidence of missing tooth substance.)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010108> "Pulpal pain caused by reversible pulpitis due to infection of dentin because of a crack or incomplete fracture of the affected tooth, involving the enamel or enamel and dentin. Has evidence of at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010108> "Pulpal pain caused by reversible pulpitis due to infection of dentin because of a crack or incomplete fracture of the affected tooth, involving the enamel or both enamel and dentin. Has evidence of at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010108> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010108> "2025-06-23T20:21:16Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010108> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2827,7 +2827,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010108> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010111> (periodontal pain due to aggressive periodontitis)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010111> "Periodontal pain due to periodontal disease resulitng from aggressive periodontitis.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010111> "Periodontal pain due to periodontal disease resulting from aggressive periodontitis.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010111> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010111> "2025-06-17T18:40:51Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010111> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2881,7 +2881,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010120> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010121> (chronic infrequent primary temporomandibular joint pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010121> "Chronic primary temporomandibular joint pain occuring less than one day a month.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010121> "Chronic primary temporomandibular joint pain occurring less than one day a month.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010121> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010121> "2025-06-18T17:34:26Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010121> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2891,7 +2891,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0010121> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010122> (chronic frequent primary temporomandibular joint pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010122> "Chronic primary temporomandibular joint pain occuring one to 14 days a month for an avergae of more than 3 months.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010122> "Chronic primary temporomandibular joint pain occurring one to 14 days a month for an average of more than 3 months.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010122> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010122> "2025-06-18T17:35:41Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010122> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2901,7 +2901,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0010122> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010123> (chronic frequent primary temporomandibular joint pain without pain referral)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010123> "Chronic frequent primary temporomandibular joint pain with temporomandibular joint palpation pain localizaed to the immediate site of palpatation.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010123> "Chronic frequent primary temporomandibular joint pain with temporomandibular joint palpation pain localized to the immediate site of palpation.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010123> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010123> "2025-06-18T17:38:56Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010123> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -2923,7 +2923,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010124> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010125> (chronic highly frequent primary temporomandibular joint pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010125> "Chronic frequent primary temporomandibular joint pain occuring on more than 15 days a month on average for more than 3 months.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010125> "Chronic frequent primary temporomandibular joint pain occurring on more than 15 days a month on average for more than 3 months.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010125> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010125> "2025-06-18T17:41:31Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010125> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3012,7 +3012,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010132> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010133> (glossopharyngeal neuralgia)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010133> "A disorder characterized by unilateral brief stabbing pain, abrupt in onset and termination, in the distributions not only of the glossopharyngeal nerve but also of the auricular and pharyngeal branches of the vagus nerve. Pain is experienced in the ear, base of the tongue, tonsillar fossa and/or beneath the angle of the jaw. It is commonly provoked by swallowing, talking or coughing and may remit and relapse in the fashion of Trigeminal neuralgia.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010133> "A disorder characterized by unilateral brief stabbing pain, abrupt in onset and termination, in the distributions not only of the glossopharyngeal nerve but also of the auricular and pharyngeal branches of the vagus nerve. Pain is experienced in the ear, base of the tongue, tonsillar fossa and/or beneath the angle of the jaw. It is commonly provoked by swallowing, talking or coughing and may remit and relapse in the fashion of trigeminal neuralgia.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010133> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010133> "2025-06-18T17:56:55Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010133> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3022,7 +3022,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010133> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010134> (classical glossopharyngeal neuralgia)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010134> "Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain with the demonstration of magnetic resonance imaging.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010134> "Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain, where the findings are demonstrated by magnetic resonance imaging.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010134> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010134> "2025-06-18T17:58:02Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010134> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3042,7 +3042,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010135> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010136> (idiopathic glossopharyngeal neuralgia)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010136> "Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain without neurovascular compression or an underlying disease know to cause secondary glossopharyngeal neuralgia.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010136> "Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain without neurovascular compression or an underlying disease known to cause secondary glossopharyngeal neuralgia.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010136> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010136> "2025-06-18T18:01:40Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010136> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3083,7 +3083,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010139> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010142> (orofacial pain due to lesion or disease of the cranial nerves)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010142> "Orofacial pain due to lesisoin or disease of the cranial nerves.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010142> "Orofacial pain due to lesion or disease of the cranial nerves.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010142> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010142> "2025-06-25T18:18:22Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010142> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3103,7 +3103,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010147> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010152> (pulpal pain due to irreversible pulpitis resulting from a dental hard-tissue fracture without pulp exposure)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010152> "Pulpal pain attributed to irreversible pulpitis due to infection of dentin with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture).")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010152> "Pulpal pain attributed to irreversible pulpitis due to infection of dentin with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture), root cementum and dentin (uncomplicated root fracture), or enamel, root cementum, and dentin (uncomplicated crown-root fracture).")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010152> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010152> "2025-06-25T19:18:31Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010152> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3114,7 +3114,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010152> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010161> (pulpal pain due to irreversible pulpitis resulting from tooth crack without evidence of missing tooth substance)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010161> "Pulpal pain attributed to irreversible pulpitis due to infection of dentin because of a crack or incompletel fracture in the enamel or enamel dentin, along with at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010161> "Pulpal pain attributed to irreversible pulpitis due to infection of dentin because of a crack or incomplete fracture in the enamel or enamel dentin, along with at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, or cold hypersensitivity.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010161> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010161> "2025-06-25T19:41:39Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010161> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3125,7 +3125,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010161> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010164> (pulpal pain due to irreversible pulpitis resulting from a dental hard-tissue fracture with pulp exposure)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010164> "Pulpal pain attirbuted to irreversible pulpitis due to infection of the dental pulp with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture) along with pain that has developed in close temporal relation to the fracture with pain developing in close temporal relation to the fracture.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010164> "Pulpal pain attributed to irreversible pulpitis due to infection of the dental pulp with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture) along with pain that has developed in close temporal relation to the fracture.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010164> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010164> "2025-06-25T19:59:42Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010164> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3136,7 +3136,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010164> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010166> (pulpal pain due to pulpitis resulting from an external cervical root resorption)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010166> "Pulpal pain attributed to pulpitis with an external cervical root resorption with pain that has developed in temporal relation to onset of the resorption.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010166> "Pulpal pain attributed to pulpitis associated with with external cervical root resorption with pain that has developed in temporal relation to onset of the resorption.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010166> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010166> "2025-06-26T18:22:36Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010166> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3188,7 +3188,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010170> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010171> (periodontal pain due to pulpal inflammation)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010171> "Periodontal pain attributed to apical periodontitis due to endodontic disease because of pulpitis that has been diagnosed because of one of the following: evidence of dental disorder involving the affected tooth or vital pulp evidenced by response to pulp vitality testing.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010171> "Periodontal pain attributed to apical periodontitis due to endodontic disease because of pulpitis that has been diagnosed as a result of one of the following: evidence of dental disorder involving the affected tooth or vital pulp evidenced by response to pulp vitality testing.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010171> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010171> "2025-06-26T18:33:57Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010171> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3210,7 +3210,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010173> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010175> (periodontal pain due to intraradicular endodontic infection)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010175> "Periodontal pain due to endodontic infection resulting from to a tooth that has a root canal infection.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010175> "Periodontal pain due to endodontic infection resulting from a tooth that has a root canal infection.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010175> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010175> "2025-06-26T18:44:16Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010175> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3232,7 +3232,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010177> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010178> (periodontal pain due to periodontitis as a manifestation of a systemic disorder)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010178> "Periodontal pain due to periodontal disease that results from a systematic disorder.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010178> "Periodontal pain due to periodontal disease that results from a systemic disorder.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010178> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010178> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010178> "2025-06-26T18:53:25Z"^^xsd:dateTime)
@@ -3244,7 +3244,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010178> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010179> (periodontal pain due to genetic disorder)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010179> "Periodontal pain due to periodontitis as a manifestion of a systematic genetic disorder. Genetic disorders which can result in periodontitis include familial and cyclic neutropenia, Down syndrome, leukocyte adhesion deficiency syndromes, Papillon–Lefèvre syndrome, Chediak–Higashi syndrome, histiocytosis syndromes, glycogen storage disease, infantile genetic agranulocytosis, Cohen syndrome, Ehler–Danlos syndrome (types IV and VIII), and hypophosphatasia.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010179> "Periodontal pain due to periodontitis as a manifestation of a systemic genetic disorder. Genetic disorders which can result in periodontitis include familial and cyclic neutropenia, Down syndrome, leukocyte adhesion deficiency syndromes, Papillon–Lefèvre syndrome, Chediak–Higashi syndrome, histiocytosis syndromes, glycogen storage disease, infantile genetic agranulocytosis, Cohen syndrome, Ehler–Danlos syndrome (types IV and VIII), and hypophosphatasia.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010179> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010179> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010179> "2025-06-26T18:54:59Z"^^xsd:dateTime)
@@ -3256,7 +3256,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010179> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010181> (periodontal pain due to haematological disorder)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010181> "Periodontal pain due to periodontitis as a manifestation of a systematic haematological disorder. Haematological disorders which can result in periodontitis include acquired neutropenia and leukaemia.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010181> "Periodontal pain due to periodontitis as a manifestation of a systemic haematological disorder. Haematological disorders which can result in periodontitis include acquired neutropenia and leukaemia.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010181> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010181> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010181> "2025-06-26T18:59:27Z"^^xsd:dateTime)
@@ -3268,7 +3268,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010181> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010182> (periodontal pain due to periodontal abscess)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010182> "Periodontal pain due to periodontal disease resulting from either or both of the following: acute inflammation and loss of attatchement, or marginal and periradicular bone resorption.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010182> "Periodontal pain due to periodontal disease resulting from either or both of the following: acute inflammation and loss of attachment, or marginal and periradicular bone resorption.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010182> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010182> "2025-06-26T19:02:46Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010182> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3300,7 +3300,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010186> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010190> (periodontal pain due to infective peri-implantitis)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010190> "Periodontal paind due to periodontitis, with the exception that it involves an implant and not a natural tooth, resulitng from a peri-implant infection with casuation from anatomical, functional, or temporal association.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010190> "Periodontal pain due to periodontitis, with the exception that it involves an implant and not a natural tooth, resulting from a peri-implant infection with causation from anatomical, functional, or temporal association.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010190> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010190> "2025-06-30T17:05:54Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010190> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3354,7 +3354,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010200> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010201> (oral mucosal pain due to malignant lesion)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010201> "Oral mucoal pain due to meoplasia of the oral mucosa.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010201> "Oral mucosal pain due to neoplasia of the oral mucosa.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010201> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010201> "2025-06-30T17:57:07Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010201> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3376,7 +3376,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010206> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010207> (jaw bone pain due to malignant lesion)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010207> "Jaw bone pain that results from a primary or seconday malignant lesion.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010207> "Jaw bone pain that results from a primary or secondary malignant lesion.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010207> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010207> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010207> "2025-06-30T18:16:50Z"^^xsd:dateTime)
@@ -3422,7 +3422,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010213> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010214> (jaw bone pain due to therapy)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010214> "Jaw bone pain due to a theraputic intervention that has resulted in a lesion.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010214> "Jaw bone pain due to a therapeutic intervention that has resulted in a lesion.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010214> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010214> "2025-06-30T18:30:41Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010214> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3475,7 +3475,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010218> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010219> (chronic frequent primary myofascial orofacial pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010219> "Chronic primary myofascial pain occurring 1-14 days a month for more than 3 months.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010219> "Chronic primary myofascial orofacial pain occurring 1-14 days a month for more than 3 months.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010219> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010219> "2025-06-30T18:42:07Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010219> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3510,7 +3510,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0010222> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010223> (chronic frequent pain without pain referral)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010223> "Chronic frequent pain that s localized to the affected area.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010223> "Chronic frequent pain that is localized to the affected area.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010223> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010223> "2025-07-01T17:15:41Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0010223> "chronic frequent pain without pain referral"@en)
@@ -3529,7 +3529,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010224> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010225> (chronic frequent primary myofascial orofacial pain with pain referral)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010225> "Chronic frequent primary myofascial pain with a report of pain at a site beyond the boudary of the muscle being palpated.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010225> "Chronic frequent primary myofascial pain with a report of pain at a site beyond the boundary of the muscle being palpated.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010225> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010225> "2025-07-01T17:20:22Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010225> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3547,7 +3547,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010226> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010227> (chronic highly frequent primary myofascial orofacial pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010227> "Chronic frequent primary myofascial pain occuring more than 15 days a month for an average of more than 3 months.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010227> "Chronic frequent primary myofascial pain occurring more than 15 days a month for an average of more than 3 months.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010227> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010227> "2025-07-01T17:25:28Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010227> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3585,7 +3585,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0010230> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010231> (chronic highly frequent primary myofascial orofacial pain with pain referral)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010231> "Chronic highly frequent primary myofascial orofascial pain with a report of pain at a site beyond the boundary of the muscle being palpated.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010231> "Chronic highly frequent primary myofascial orofacial pain with a report of pain at a site beyond the boundary of the muscle being palpated.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010231> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010231> "2025-07-01T17:39:54Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010231> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3616,7 +3616,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010233> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010234> (myofascial orofacial pain attributed to myositis)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010234> "Pain caused by myositis affecting one or more masticatory muscles, with clinical characteristics of inﬂammation or infection: oedema, erythema and/or increased temperature. It generally arises acutely following direct trauma of the muscle or from infection, or chronically with autoimmune disease. Limitation of unassisted mandibular movements secondary to pain is often present. Calciﬁcation of the muscle can occur (i.e. myositis ossiﬁcans).")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010234> "Pain caused by myositis affecting one or more masticatory muscles, with clinical characteristics of inﬂammation or infection: oedema, erythema and/or increased temperature. It generally arises acutely following direct trauma to the muscle or from infection, or chronically with autoimmune disease. Limitation of unassisted mandibular movements secondary to pain is often present. Calciﬁcation of the muscle can occur (i.e. myositis ossiﬁcans).")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010234> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010234> "2025-07-01T17:48:14Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010234> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3648,7 +3648,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010236> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010237> (temporomandibular joint pain attributed to non-systemic arthritis)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010237> "Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease but not evidence that associates it with the TMJ pain or no evidence of rheumatological disease.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010237> "Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease but without evidence that associates it with the TMJ pain or no evidence of rheumatological disease.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010237> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010237> "2025-07-01T17:53:36Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010237> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3659,7 +3659,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010237> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010238> (temporomandibular joint pain attributed to systemic arthritis)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010238> "Temporomandibular joint due to arthritis with evidence of systemic inflammatory joint disease, pain developed in close temporal relation to other symptoms, and either the pain has significantly worsened in parallel with worsening of the systemic inflammatory joint disease or the pain has significantly improved or resolved with treatment of the systemic inflammatory joint disease.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010238> "Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease, pain developed in close temporal relation to other symptoms, and either the pain has significantly worsened in parallel with worsening of the systemic inflammatory joint disease or the pain has significantly improved or resolved with treatment of the systemic inflammatory joint disease.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010238> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010238> "2025-07-01T17:54:43Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010238> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3680,7 +3680,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010239> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010240> (temporomandibular joint pain attributed to disc displacement with reduction)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010240> "Secondary temporomandibular joint pain due to TMJ disc displacement with reduction that any TMJ noise on jaw movement or function have been reported and clicking, popping, or snapping noises detected with palpation on the jaw opening and closing.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010240> "Secondary temporomandibular joint pain due to TMJ disc displacement with reduction where any TMJ noise upon jaw movement or function has been reported and clicking, popping, or snapping noises detected with palpation on the jaw opening and closing.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010240> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010240> "2025-07-01T18:01:04Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010240> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3700,7 +3700,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010241> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010242> (temporomandibular joint pain attributed to disc displacement without reduction)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010242> "Secondary temporomandibulare join pain due to TMJ disc displacement without reduction, which has been diagnosed by jaw locking or limitation of jaw opening. Along with evidence of pain developing in close temporal relation to the disc dsiplacement, a significant worsening in pain paralelle.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010242> "Secondary temporomandibular joint pain due to TMJ disc displacement without reduction, which has been diagnosed by jaw locking or limitation of jaw opening. The pain develops in close temporal relation to the disc displacement and significantly worsens in parallel with it.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010242> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010242> "2025-07-01T18:04:14Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010242> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3742,7 +3742,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010245> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010246> (trigeminal neuralgia due to multiple sclerosis)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010246> "Trigeminal neuralgia caused by a multiple sclerosis (MS) plaque or plaques in the pons or trigeminal root entry zone, and associated with other symptoms and/or clinical or laboratory findings of MS.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010246> "Trigeminal neuralgia caused by plaque or plaques associated with multiple sclerosis (MS) in the pons or trigeminal root entry zone, and associated with other symptoms and/or clinical or laboratory findings of MS.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010246> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010246> "2025-07-02T19:04:21Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010246> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3773,7 +3773,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010249> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010250> (idiopathic trigeminal neuralgia with concomitant continuous pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010250> "Idiopathic trigeminal neuralgia with recurrent paroxysms of unilateral facial pain that is concomitant continuous of near-continuous pain between attacks in the affected trigeminal distirbution.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010250> "Idiopathic trigeminal neuralgia with recurrent paroxysms of unilateral facial pain accompabied by continuous or near-continuous pain between attacks in the affected trigeminal distribution.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010250> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010250> "2025-07-02T19:16:21Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010250> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3825,7 +3825,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010256> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010257> (episodic orofacial migraine)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010257> "Recurrent orofacial pain (OFP) attacks, without head pain, lasting 4–72 hours. Typical characteristics of the pain are unilateral location, pulsating quality, moderate or severe intensity, aggravation by routine physical activity and association with nausea and/or photophobia and phonophobia.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010257> "Recurrent orofacial pain (OFP) attacks, without head pain, lasting 4–72 hours. Typical characteristics of the pain are unilateral location, pulsating quality, moderate or severe intensity, aggravation by routine physical activity, and association with nausea and/or photophobia and phonophobia.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010257> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010257> "2025-07-02T19:33:53Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010257> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3845,7 +3845,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010258> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010259> (tension-type orofacial pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010259> "Episodic or chronic pain exclusively in the orofacial region, without head pain, with the characteristics and associated features of 2. Tension-type headache described in the International Classification of Headache Disorders 3rd Edition, which can include pressing or tightening with mild to moderate intensity with bilateral location.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010259> "Episodic or chronic pain exclusively in the orofacial region, without head pain, with the characteristics and associated features of \"2. Tension-type headache\" described in the International Classification of Headache Disorders 3rd Edition, which can include pressing or tightening with mild to moderate intensity with bilateral location.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010259> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010259> "2025-07-02T19:36:31Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010259> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3855,7 +3855,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010259> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010260> (trigeminal autonomic orofacial pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010260> "Attacks of pain, exclusively in the orofacial region, without head pain, with the characteristics and associated features of a disorder described under 3. Trigeminal autonomic cephalalgias in the International Classification of Headache Disorders 3rd Edition, which include conjunctival injection and/or lacrimation, nasal congestion and/or rhinorrhoea, eyelid oedema, forehead and facial sweating, miosis and/or ptosis.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010260> "Attacks of pain, exclusively in the orofacial region, without head pain, with the characteristics and associated features of a disorder described under \"3. Trigeminal autonomic cephalalgias\" in the International Classification of Headache Disorders 3rd Edition, which include conjunctival injection and/or lacrimation, nasal congestion and/or rhinorrhoea, eyelid oedema, forehead and facial sweating, miosis and/or ptosis.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010260> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010260> "2025-07-02T19:37:03Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010260> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3955,7 +3955,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0010270> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010271> (hemifacial continuous pain with autonomic symptoms)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010271> "While no isolated facial equivalent of 3.4 Hemicrania continua, described in International Classification of Headache Disorders 3rd Edition,, has so far been clearly established, extension of pain into the face in hemicrania continua has been described. Thus, pain referral and/or radiation to oral and/or facial structures may cause diagnostic difficulties.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010271> "While no isolated facial equivalent of 3.4 Hemicrania continua, described in International Classification of Headache Disorders 3rd Edition, has so far been clearly established, extension of pain into the face in hemicrania continua has been described. Thus, pain referral and/or radiation to oral and/or facial structures may cause diagnostic difficulties.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010271> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010271> "2025-07-07T17:27:44Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010271> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -3975,7 +3975,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010272> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010273> (short-lasting neurovascular orofacial pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010273> "Neurovascular orofacial pain that lasts between 1-4 hours.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010273> "Neurovascular orofacial pain that lasts from 1-4 hours.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010273> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010273> "2025-07-07T17:30:01Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010273> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -4148,7 +4148,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010292> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010293> (gingival pain attributed to hypersensitivity or allergic reaction)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010293> "GIngival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010293> "Gingival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010293> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010293> "2025-07-08T17:28:26Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010293> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -4159,7 +4159,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010293> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010294> (oral mucosal pain due to autoimmunity)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010294> "Oral mucosal pain due to oralmucosal inflammation resulting from an autoimmue disease.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010294> "Oral mucosal pain due to oral mucosal inflammation resulting from an autoimmune disease.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010294> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010294> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010294> "2025-07-08T17:29:51Z"^^xsd:dateTime)
@@ -4210,13 +4210,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PAIN_0010299> "trigeminal neuropathic pain attributed to other disorder")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010299> <http://purl.obolibrary.org/obo/PAIN_0010296>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0010299> "ICOP number: 4.1.2")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0010299> "Superimposed brief pain paroxysms may occur but these are not the predominant pain type. This combination is distinct from that of 4.1.1 Trigeminal neuralgia. There are clinically detectable somatosensory changes within the trigeminal distribution, and mechanical allodynia and cold hyperalgesia/allodynia are common, fulfilling the IASP criteria for neuropathic pain. Allodynic areas may be much larger than the punctate trigger zones present in 4.1.1 Trigeminal neuralgia.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0010299> "Superimposed brief pain paroxysms may occur, but these are not the predominant pain type. This combination is distinct from that of 4.1.1 Trigeminal neuralgia. There are clinically detectable somatosensory changes within the trigeminal distribution, and mechanical allodynia and cold hyperalgesia/allodynia are common, fulfilling the IASP criteria for neuropathic pain. Allodynic areas may be much larger than the punctate trigger zones present in 4.1.1 Trigeminal neuralgia.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0010299> "trigeminal neuropathic pain"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010299> <http://purl.obolibrary.org/obo/PAIN_0010059>)
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010300> (trigeminal neuropathic pain attributed to herpes zoster)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010300> "Unilateral facial pain of less than 3 months’ duration in the distribution of one or more branches of the trigeminal nerve, caused by, and associated with other symptoms and/or clinical signs of, acute herpes zoster.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010300> "Unilateral facial pain of less than 3 months’ duration in the distribution of one or more branches of the trigeminal nerve, caused by acute herpes zoster and associated with other symptoms and/or clinical signs of the condition.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010300> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010300> "2025-07-08T17:41:58Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010300> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -4236,7 +4236,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010301> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010302> (post-traumatic trigeminal neuropathic pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010302> "Unilateral or bilateral facial or oral pain following and caused by trauma to the trigeminal nerve(s), with other symptoms and/or clinical signs of trigeminal nerve dysfunction, and persisting or recurring for more than 3 months.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010302> "Unilateral or bilateral facial or oral pain caused by trauma to the trigeminal nerve(s), with other symptoms and/or clinical signs of trigeminal nerve dysfunction, and persisting or recurring for more than 3 months.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010302> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010302> "2025-07-08T17:43:22Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010302> <http://purl.obolibrary.org/obo/PAIN_0010296>)
@@ -4246,7 +4246,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0010302> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0010303> (probable post-traumatic trigeminal neuropathic pain)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010303> "Post-traumatic trigeminal neuropathic pain without a diagnostic test confirmation of a lesion of the peripheral trieminal nerve explaining the pain.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "PMID:32103673") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0010303> "Post-traumatic trigeminal neuropathic pain without a diagnostic test confirmation of a lesion of the peripheral trigeminal nerve explaining the pain.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0010303> <https://orcid.org/0009-0003-5583-4731>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0010303> "2025-07-08T17:43:57Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PAIN_0010303> <http://purl.obolibrary.org/obo/PAIN_0010296>)
