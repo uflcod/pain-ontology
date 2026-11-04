@@ -44,6 +44,7 @@ namespace: source
 def: "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." []
 def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" []
 def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
+comment: An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.
 property_value: BFO:0000179 "process" xsd:string
 property_value: BFO:0000180 "Process" xsd:string
 property_value: example_of_usage "a process of cell-division, \\ a beating of the heart" xsd:string
@@ -55,9 +56,12 @@ property_value: example_of_usage "the life of an organism" xsd:string
 property_value: example_of_usage "your process of aging." xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/agro.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cob.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/dron.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ecocore.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/envo.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/stato.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 property_value: IAO:0000602 "(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
@@ -99,6 +103,7 @@ property_value: IAO:0000602 "(forall (x) (if (RealizableEntity x) (and (Specific
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 property_value: isDefinedBy http://purl.obolibrary.org/obo/cob.owl
 property_value: isDefinedBy http://purl.obolibrary.org/obo/obi.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/omrse.owl
 
 [Term]
 id: BFO:0000040
@@ -130,6 +135,7 @@ property_value: IAO:0000602 "(forall (x) (if (and (Entity x) (exists (y t) (and 
 property_value: IAO:0000602 "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/019-002"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 property_value: isDefinedBy http://purl.obolibrary.org/obo/cl.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/omrse.owl
 property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
 property_value: isDefinedBy uberon:import.owl
 
@@ -1510,26 +1516,6 @@ property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:51:14Z" xsd:dateTime
 
 [Term]
-id: OHD:0010046
-name: oral mucosal inflammation due to viral infection
-def: "Oral mucosal inflammation occuring due to a viral infection within the oral mucosa." []
-is_a: OHD:0010043 ! oral mucosal inflammation due to infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
-property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
-property_value: terms:created "2025-06-10T19:57:38Z" xsd:dateTime
-
-[Term]
-id: OHD:0010048
-name: oral mucosal inflammation due to fungal infection
-def: "Oral mucosal inflammation occuring due to a viral infection within the oral mucosa." []
-is_a: OHD:0010043 ! oral mucosal inflammation due to infection
-property_value: IAO:0000119 "PMID:32103673" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
-property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
-property_value: terms:created "2025-06-10T20:03:18Z" xsd:dateTime
-
-[Term]
 id: OHD:0010054
 name: gingivitis due to injury
 def: "Gingivitis caused by  structural damage to the gingival tissue from an external force." []
@@ -1613,6 +1599,7 @@ property_value: terms:created "2025-06-11T19:56:24Z" xsd:dateTime
 [Term]
 id: OHD:0010075
 name: dentin hypersensitivity due to developmental dental hard tissue defect
+def: "Dentin hypersensitivity due to exposed dentin resulting from a developmental dental hard tissue defect." []
 def: "dentin hypersensitivity due to exposed dentin resulting from a developmental dental hard tissue defect." []
 is_a: OHD:0010014 ! dentin hypersensitivity due to exposed dentin
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
@@ -1662,6 +1649,7 @@ property_value: terms:created "2025-06-19T19:09:00Z" xsd:dateTime
 [Term]
 id: OHD:0010092
 name: exposed dental pulp due to dental injury
+def: "Exposed dental pulp occuring because of some dental injury." []
 comment: Exposed dental pulp occuring because of some dental injury.
 is_a: OHD:0010028 ! exposed dental pulp
 property_value: IAO:0000119 "PMID:32103673" xsd:string
@@ -1765,6 +1753,7 @@ property_value: terms:created "2025-06-18T17:20:17Z" xsd:dateTime
 [Term]
 id: OHD:0010143
 name: hyperocclusion
+def: "A tooth disorder resulting in a tooth making excessive contact with an opposing tooth, enroaching on the intercostal space." []
 def: "A tooth disorder resulting in a tooth making excessive contact with and opposing tooth, enroaching on the intercostal space." []
 is_a: OHD:0000260 ! tooth disorder
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
@@ -1919,8 +1908,10 @@ property_value: terms:created "2025-06-26T18:41:03Z" xsd:dateTime
 [Term]
 id: OHD:0010176
 name: extraradicular endodontic infection
+def: "An endodontic infection of extraradicular tissue caused by infection of the pulp spreading to it." []
 is_a: OHD:0010172 ! endodontic infection
 property_value: isDefinedBy http://purl.obolibrary.org/obo/ohd.owl
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-26T18:45:35Z" xsd:dateTime
 
@@ -3884,7 +3875,7 @@ def: "Oral mucosal pain due to viral infection." [] {IAO:0000119="PMID:32103673"
 comment: ICOP term: 1.2.1.1.2.2
 subset: PAIN:0010296
 is_a: PAIN:0010040 ! oral mucosal pain due to infection
-relationship: RO:0002410 OHD:0010046 ! causally related to oral mucosal inflammation due to viral infection
+relationship: RO:0002410 OHD:0010046 ! causally related to
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T19:59:20Z" xsd:dateTime
 
@@ -3895,7 +3886,7 @@ def: "Oral mucosal pain due to fungal infection." [] {IAO:0000119="PMID:32103673
 comment: ICOP number: 1.2.1.1.2.3
 subset: PAIN:0010296
 is_a: PAIN:0010040 ! oral mucosal pain due to infection
-relationship: RO:0002410 OHD:0010048 ! causally related to oral mucosal inflammation due to fungal infection
+relationship: RO:0002410 OHD:0010048 ! causally related to
 property_value: terms:contributor https://orcid.org/0009-0003-5583-4731
 property_value: terms:created "2025-06-10T20:04:32Z" xsd:dateTime
 
