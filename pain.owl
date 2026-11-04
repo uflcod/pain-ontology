@@ -1653,12 +1653,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
@@ -2485,25 +2479,10 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000112 xml:lang="en">the flight of a bird</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">your process of aging.</obo:IAO_0000112>
-        <obo:IAO_0000115>An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</obo:IAO_0000115>
-        <obo:IAO_0000115>p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/agro.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cob.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/dron.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ecocore.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <obo:IAO_0000602>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </obo:IAO_0000602>
-        <oboInOwl:hasOBONamespace>source</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>BFO:0000015</oboInOwl:id>
-        <rdfs:comment xml:lang="en">An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:label>process</rdfs:label>
         <rdfs:label xml:lang="en">process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2525,45 +2504,10 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <obo:BFO_0000179>disposition</obo:BFO_0000179>
-        <obo:BFO_0000180>Disposition</obo:BFO_0000180>
-        <obo:IAO_0000112 xml:lang="en">an atom of element X has the disposition to decay to an atom of element Y</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">certain people have a predisposition to colon cancer</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">children are innately disposed to categorize objects in certain ways.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the cell wall is disposed to filter chemicals in endocytosis and exocytosis</obo:IAO_0000112>
-        <obo:IAO_0000600 xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</obo:IAO_0000600>
-        <obo:IAO_0000601 xml:lang="en">If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])</obo:IAO_0000601>
-        <obo:IAO_0000602>(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] </obo:IAO_0000602>
-        <obo:IAO_0000602>(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] </obo:IAO_0000602>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cob.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">disposition</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/062-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/063-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/063-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/062-002"/>
-    </owl:Axiom>
     
 
 
@@ -2571,48 +2515,10 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <obo:BFO_0000179>realizable</obo:BFO_0000179>
-        <obo:BFO_0000180>RealizableEntity</obo:BFO_0000180>
-        <obo:IAO_0000112 xml:lang="en">the disposition of this piece of metal to conduct electricity.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the disposition of your blood to coagulate</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the function of your reproductive organs</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the role of this boundary to delineate where Utah and Colorado meet</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</obo:IAO_0000115>
-        <obo:IAO_0000600 xml:lang="en">To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])</obo:IAO_0000600>
-        <obo:IAO_0000601 xml:lang="en">All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])</obo:IAO_0000601>
-        <obo:IAO_0000602>(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] </obo:IAO_0000602>
-        <obo:IAO_0000602>(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] </obo:IAO_0000602>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cob.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <rdfs:label xml:lang="en">realizable entity</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/058-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/060-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/060-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/058-002"/>
-    </owl:Axiom>
     
 
 
@@ -2634,10 +2540,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000112 xml:lang="en">an epidemic</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the undetached arm of a human being</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <obo:IAO_0000600 xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</obo:IAO_0000600>
         <obo:IAO_0000601 xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</obo:IAO_0000601>
@@ -2646,10 +2548,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd/imports/uberon_import.owl"/>
-        <rdfs:label>material entity</rdfs:label>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3116,12 +3015,6 @@ Despite their overarching function in the support and protection of neurons, gli
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>ZFA:0009248</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The basic cellular unit of nervous tissue. Each neuron consists of a body, an axon, and dendrites. Their purpose is to receive, conduct, and transmit impulses in the nervous system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>MESH:D009474</oboInOwl:hasDbXref>
@@ -3132,6 +3025,12 @@ Despite their overarching function in the support and protection of neurons, gli
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>FBbt:00005106</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ZFA:0009248</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     
 
@@ -4730,29 +4629,6 @@ Despite their overarching function in the support and protection of neurons, gli
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IDO_0000504 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000504">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000586"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000586"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000115 xml:lang="en">An infection that is clinically abnormal.</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
-        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-        <rdfs:label xml:lang="en">infectious disorder</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IDO_0000586 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000586">
@@ -4764,22 +4640,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <rdfs:comment>The organism corresponding to the extended organism is host to the infectious agents.  By this definition, parts of the host can be considered part of the infection.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <rdfs:label xml:lang="en">infection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000111>planned process</obo:IAO_0000111>
-        <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
-        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
 
@@ -4804,12 +4664,8 @@ Despite their overarching function in the support and protection of neurons, gli
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000111>disease</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
         <rdfs:label>disease</rdfs:label>
     </owl:Class>
     
@@ -4822,8 +4678,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <obo:IAO_0000115 xml:lang="en">A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
         <rdfs:label>disorder</rdfs:label>
     </owl:Class>
@@ -4843,479 +4697,117 @@ Despite their overarching function in the support and protection of neurons, gli
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
-        <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd/imports/mf_import.owl"/>
-        <rdfs:label>bodily process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000061 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000061">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <obo:IAO_0000115 xml:lang="en">A bodily process that is clinically abnormal.</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:label>pathological bodily process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000096 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000096">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to improve the health status of a patient that directly involves the treatment, diagnosis, or prevention of disease or injury of a patient</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain
-Sagar Jain</obo:IAO_0000117>
-        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:label>health care process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
-        <obo:IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:label>health care encounter</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OGMS_0000102 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000115 xml:lang="en">A disorder that involves some structural damage that is immediately caused by a catastrophic external force.</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain
-Sagar Jain</obo:IAO_0000117>
-        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5
-
-OGMS call adoption- 16 SEPT 2015
-https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/edit</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:label>injury</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000102"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0008039"/>
-        <obo:IAO_0000115>A healthcare encounter that realizes a dental patient role in which the patient undergoes a diagnostic or therapeutic process.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A healthcare encounter that realizes a dental patient role in which the patient undergoes a diagnostic or therapeutic process.</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON:Pedro Cott</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">dental procedure</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0000002"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000002"/>
-        <obo:IAO_0000115>A dental procedure in which either a whole tooth or a part of a tooth is replaced by dental restoration material in order to reestablish the tooth&apos;s anatomical and functional form and function.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A dental procedure in which either a whole tooth or a part of a tooth is replaced by dental restoration material in order to reestablish the tooth&apos;s anatomical and functional form and function.</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117>PERSON:Pedro Cott</obo:IAO_0000117>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">tooth restoration procedure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0000043 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0000043">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010011"/>
-        <obo:IAO_0000115>A disposition of the tooth that is realized in an experience of pain derived from exposed dentin.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disposition of the tooth that is realized in an experience of pain derived from exposed dentin.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0006-7251-3026"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-21T14:26:11Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">dentin hypersensitivity</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OHD_0000043"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A disposition of the tooth that is realized in an experience of pain derived from exposed dentin.</owl:annotatedTarget>
-        <obo:IAO_0000119>PMID:24724135</obo:IAO_0000119>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OHD_0000043"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A disposition of the tooth that is realized in an experience of pain derived from exposed dentin.</owl:annotatedTarget>
-        <obo:IAO_0000119>PMID:24724135</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0000260 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0000260">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000414"/>
-        <obo:IAO_0000115>A disorder that is part of a tooth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disorder that is part of a tooth.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-06T21:30:39Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">tooth disorder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0000404 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0000404">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
-        <obo:IAO_0000115>A disease that is a characteristic of a mouth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disease that is a characteristic of a mouth.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-17T19:58:44Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">mouth disease</rdfs:label>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_403"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/MONDO_0006858"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0000414 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0000414">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000115>A disorder that is part of a mouth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disorder that is part of a mouth.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-17T20:08:15Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">mouth disorder</rdfs:label>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/MONDO_0006858"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0008039 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0008039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>A process that happens during a dental visit and involves the patient participating in the dental visit.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A process that happens during a dental visit and involves the patient participating in the dental visit.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-28T12:51:33Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">process during dental visit</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0000004"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000115>A disposition to decreased tolerance to sensory stimuli that triggers emotional or physical distress.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disposition to decreased tolerance to sensory stimuli that triggers emotional or physical distress.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-05T14:17:34Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">sensory hypersensitivity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010009"/>
-        <obo:IAO_0000115>Sensory hypersensitivity involving a tooth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Sensory hypersensitivity involving a tooth.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-05T14:34:40Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">dental sensory hypersensitivity</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010009"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010011"/>
-        <obo:IAO_0000115>Dental sensory hypersensitivity related a crack in the enamel of a tooth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Dental sensory hypersensitivity related a crack in the enamel of a tooth.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-05T14:40:56Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">sensory hypersensitivity due to crack in enamel</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010012"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000043"/>
-        <obo:IAO_0000115>Dentin hypersensitivity related to exposed dentin on a tooth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Dentin hypersensitivity related to exposed dentin on a tooth.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-05T14:53:38Z</terms:created>
-        <oboInOwl:hasExactSynonym>dentine hypersensitivity due to exposed dentine</oboInOwl:hasExactSynonym>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">dentin hypersensitivity due to exposed dentin</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010014"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010014"/>
-        <obo:IAO_0000115>Dentin hypersensitivity related to wear or abrasion of a tooth resulting in exposed dentin.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Dentin hypersensitivity related to wear or abrasion of a tooth resulting in exposed dentin.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-05T15:03:12Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">dentin hypersensitivity due to tooth wear or abrasion</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010016"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010018 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010014"/>
-        <obo:IAO_0000115>Dentin hypersensitivity due to exposed dentin resulting from a tooth fracture.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Dentin hypersensitivity due to exposed dentin resulting from a tooth fracture.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-05T15:17:38Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">dentin hypersensitivity due to a fracture resulting in exposed dentin</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010060"/>
-        <obo:IAO_0000115>Pulpitis that has not yet progressed to being permanent.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Pulpitis that has not yet progressed to being permanent.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label>reversible pulpitis</rdfs:label>
-        <rdfs:label xml:lang="en">reversible pulpitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010018"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010021 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010072"/>
-        <obo:IAO_0000115>Periodontitis due to injury occuring because of an operation.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Periodontitis due to injury occuring because of an operation.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-19T18:48:48Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">periodontitis due to operation</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010021"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010025 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010070"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010115"/>
-        <obo:IAO_0000115>A gingival disorder involving inflammation of the gingival tissue.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A gingival disorder involving inflammation of the gingival tissue.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T17:58:35Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">gingivitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010025"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010026 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010025"/>
-        <obo:IAO_0000115>Gingivitis due to an infection.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Gingivitis due to an infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T18:08:21Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">gingivitis due to infection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010028 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000260"/>
-        <obo:IAO_0000115>A tooth disorder invovling the exposure of dental pulp.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A tooth disorder invovling the exposure of dental pulp.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T19:47:27Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">exposed dental pulp</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010026"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010029 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010026"/>
-        <obo:IAO_0000115>Gingivitis due to a bacterial infection.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Gingivitis due to a bacterial infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T18:30:06Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">gingivitis due to bacterial infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010029"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010031 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000504"/>
-        <obo:IAO_0000115>An infectious disorder caused by viruses.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An infectious disorder caused by viruses.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T18:41:27Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">viral infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010031"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010032 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010026"/>
-        <obo:IAO_0000115>Gingivitis due to a viral infection.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Gingivitis due to a viral infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T18:44:24Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">gingivitis due to viral infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010032"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010034 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000504"/>
-        <obo:IAO_0000115>An infectious disorder caused by fungi.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An infectious disorder caused by fungi.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:01:22Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">fungal infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010034"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010035 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010026"/>
-        <obo:IAO_0000115>Gingivitis due to a fungal infection.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Gingivitis due to a fungal infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:02:08Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">gingivitis due to fungal infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010035"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010042 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010116"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010289"/>
-        <obo:IAO_0000115>An inflammatory response causing inflammation in the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An inflammatory response causing inflammation in the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:39:13Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">oral mucosal inflammation</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010042"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010043 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010043">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010042"/>
-        <obo:IAO_0000115>Oral mucosal inflammation occuring due to an infection within the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Oral mucosal inflammation occuring due to an infection within the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:44:06Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">oral mucosal inflammation due to infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010043"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010044 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010044">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010043"/>
-        <obo:IAO_0000115>Oral mucosal inflammation occuring due to a bacterial infection within the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Oral mucosal inflammation occuring due to a bacterial infection within the oral mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:51:14Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">oral mucosal inflammation due to bacterial infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010044"/>
     
 
 
@@ -5333,936 +4825,289 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010054 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010025"/>
-        <obo:IAO_0000115>Gingivitis caused by  structural damage to the gingival tissue from an external force.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Gingivitis caused by  structural damage to the gingival tissue from an external force.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:45:20Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">gingivitis due to injury</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010054"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010056 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010042"/>
-        <obo:IAO_0000115>Oral mucosal inflammation caused by structural damage to the oral mucosa from an external force.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Oral mucosal inflammation caused by structural damage to the oral mucosa from an external force.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:53:05Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">oral mucosal inflammation due to injury</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010056"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010060 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000260"/>
-        <obo:IAO_0000115>An inflammatory response causing inflammation of the pulpal tissue.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An inflammatory response causing inflammation of the pulpal tissue.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T18:15:26Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">pulpitis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010064 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010060"/>
-        <obo:IAO_0000115>Pulpitis that is permanent.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Pulpitis that is permanent.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T18:32:32Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">irreversible pulpitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010060"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010066 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010020"/>
-        <obo:IAO_0000115>Reverisble pulpitis due to an infection within the dentin.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Reverisble pulpitis due to an infection within the dentin.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T18:50:51Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">reversible pulpitis due to dentin infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010066"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010068 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010068">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010064"/>
-        <obo:IAO_0000115>Irreverisble pulpitis due to an infection within the dentin.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Irreverisble pulpitis due to an infection within the dentin.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T18:57:00Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">irreversible pulpitis due to dentin infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010068"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010070 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010070">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010117"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010289"/>
-        <obo:IAO_0000115>A periodontal disorder that results from inflammation of the periodontium.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A periodontal disorder that results from inflammation of the periodontium.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T19:03:19Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">periodontitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010070"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010072 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010072">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010070"/>
-        <obo:IAO_0000115>Periodontitis caused by  structural damage to the periodontium from an external force.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Periodontitis caused by  structural damage to the periodontium from an external force.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T19:56:24Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">periodontitis due to injury</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010072"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010075 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010075">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010014"/>
-        <obo:IAO_0000115 xml:lang="en">Dentin hypersensitivity due to exposed dentin resulting from a developmental dental hard tissue defect.</obo:IAO_0000115>
-        <obo:IAO_0000115>dentin hypersensitivity due to exposed dentin resulting from a developmental dental hard tissue defect.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-12T16:52:56Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">dentin hypersensitivity due to developmental dental hard tissue defect</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010075"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010080 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010080">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010157"/>
-        <obo:IAO_0000115>Reversible pulpitis due dental caries that have not extended to the dental pulp.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Reversible pulpitis due dental caries that have not extended to the dental pulp.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-12T18:12:50Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">reversible pulpitis due to dental caries not extending to the pulp</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010080"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010082 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010155"/>
-        <obo:IAO_0000115>Reversible pulpitis dental hard-tissue fracture involving exposed dentin.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Reversible pulpitis dental hard-tissue fracture involving exposed dentin.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-12T18:26:48Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">reversible pulpitis due to dental hard tissue fracture with exposed dentin</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010088 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010070"/>
-        <obo:IAO_0000115>Periodontitis occuring around the apex of the affected tooth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Periodontitis occuring around the apex of the affected tooth.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-19T19:04:30Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">apical periodontitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010082"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010090 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010090">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010088"/>
-        <obo:IAO_0000115>Apical periodontitis occuring because of a diagnosed endodontic disease.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Apical periodontitis occuring because of a diagnosed endodontic disease.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-19T19:09:00Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">apical periodontitis due to endodontic disease</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010090"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010092 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010028"/>
-        <obo:IAO_0000115 xml:lang="en">Exposed dental pulp occuring because of some dental injury.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T19:50:16Z</terms:created>
-        <rdfs:comment>Exposed dental pulp occuring because of some dental injury.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">exposed dental pulp due to dental injury</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010092"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010096 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010096">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000504"/>
-        <obo:IAO_0000115>An infectious disorder caused by bacteria.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An infectious disorder caused by bacteria.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-16T14:52:46Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">bacterial infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010096"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010098 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010098">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010064"/>
-        <obo:IAO_0000115>Irreversible pulpitis occuring due to an infection within the dental pulp.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Irreversible pulpitis occuring due to an infection within the dental pulp.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-16T18:27:39Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">irreversible pulpitis due to dental pulp infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010098"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010100 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000404"/>
-        <obo:IAO_0000115>A mouth disease occuring within the periodontium.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A mouth disease occuring within the periodontium.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-16T18:34:32Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">periodontal disease</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010100"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010103 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010103">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010070"/>
-        <obo:IAO_0000115>Periodontitis that invovles slowly progressing attachment loss, sometimes with periods of more rapid progression.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Periodontitis that invovles slowly progressing attachment loss, sometimes with periods of more rapid progression.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-16T18:42:35Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">chronic periodontitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010103"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010107 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010107">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010153"/>
-        <obo:IAO_0000115>Reversible pulpitits due to a tooth crack without evidence of missing tooth substances.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Reversible pulpitits due to a tooth crack without evidence of missing tooth substances.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T20:17:04Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">reversible pulpitis due to tooth crack without evidence of missing tooth substance</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010107"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010110 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010110">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010100"/>
-        <obo:IAO_0000115>Periodontal disease resulting from aggressive periodontitis.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Periodontal disease resulting from aggressive periodontitis.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-17T18:38:52Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">periodontal disease due to aggressive periodontitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010110"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010113 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010100"/>
-        <obo:IAO_0000115>Periodontal disease resulting from necrotizing ulcerative periodontitis.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Periodontal disease resulting from necrotizing ulcerative periodontitis.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-17T18:50:48Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">periodontal disease due to necrotizing ulcerative periodontitis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010115 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010115">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010117"/>
-        <obo:IAO_0000115>A mouth disorder that is part of the gingival tissue.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A mouth disorder that is part of the gingival tissue.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:06:36Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">gingival disorder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010116 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010116">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000414"/>
-        <obo:IAO_0000115>A mouth disorder that is part of the mucosa.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A mouth disorder that is part of the mucosa.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:16:52Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">oral mucosal disorder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010117 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010117">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000414"/>
-        <obo:IAO_0000115>A mouth disorder that is part of the periodontium.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A mouth disorder that is part of the periodontium.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:20:17Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">periodontal disorder</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010113"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010143 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010143">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000260"/>
-        <obo:IAO_0000115 xml:lang="en">A tooth disorder resulting in a tooth making excessive contact with an opposing tooth, enroaching on the intercostal space.</obo:IAO_0000115>
-        <obo:IAO_0000115>A tooth disorder resulting in a tooth making excessive contact with and opposing tooth, enroaching on the intercostal space.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T18:29:47Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">hyperocclusion</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010143"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010144 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010144">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000260"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T18:32:17Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">hyperarticulation</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010144"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010145 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010145">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010143"/>
-        <obo:IAO_0000115>Hyperocclusion occuring after a dental restorative procedure.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Hyperocclusion occuring after a dental restorative procedure.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T18:49:54Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">hyperocclusion following dental restorative procedure</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010145"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010146 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010146">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010144"/>
-        <obo:IAO_0000115>Hyperarticulation occuring after a dental restoative procedure.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Hyperarticulation occuring after a dental restoative procedure.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T18:50:29Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">hyperarticulation following dental restorative procedure</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010146"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010148 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010148">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000102"/>
-        <obo:IAO_0000115>An injury occuring within the the tooth pulp, periodontium or gingivae.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An injury occuring within the the tooth pulp, periodontium or gingivae.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T18:59:05Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">dental injury</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010148"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010151 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010151">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010154"/>
-        <obo:IAO_0000115>Irreversible pulpitis due to a dental hard tissue fracture without pulp exposure.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Irreversible pulpitis due to a dental hard tissue fracture without pulp exposure.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:15:09Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">irreversible pulpitis due to dental hard tissue fracture without pulp exposure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010153 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010153">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010066"/>
-        <obo:IAO_0000115>Reversible pulpitis due to dentin infection occuring because of a tooth crack</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Reversible pulpitis due to dentin infection occuring because of a tooth crack</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:22:26Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">reversible pulpitis due to tooth crack</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010154 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010154">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010068"/>
-        <obo:IAO_0000115>Irreversible pulpitis due to dentin infection occuring becayse of a dental hard tissude fracture.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Irreversible pulpitis due to dentin infection occuring becayse of a dental hard tissude fracture.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:23:53Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">irreversible pulpitis due to dental hard tissue fracture</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010155 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010155">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010066"/>
-        <obo:IAO_0000115>Reversible pulpitis due to dentin infection resulting from a dental hard tissue fracture.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Reversible pulpitis due to dentin infection resulting from a dental hard tissue fracture.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:26:50Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">reversible pulpitis due to dental hard tissue fracture</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010157 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010157">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010066"/>
-        <obo:IAO_0000115>Reversible pulpitis due to dentin infection occuring because of dental caries.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Reversible pulpitis due to dentin infection occuring because of dental caries.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:34:08Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">reversible pulpitis due to dental caries</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010159 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010159">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010068"/>
-        <obo:IAO_0000115>Irreversible pulpitis due to a dentin infection occuring because of a tooth crack.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Irreversible pulpitis due to a dentin infection occuring because of a tooth crack.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:38:43Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">irreversible pulpitis due to tooth crack</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010151"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010160 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010160">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010159"/>
-        <obo:IAO_0000115>Irreversible pulpitits due to a tooth crack without evidence of missing tooth substances.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Irreversible pulpitits due to a tooth crack without evidence of missing tooth substances.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:39:40Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">irreversible pulpitis due to tooth crack without evidence of missing tooth substance</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010160"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010163 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010163">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010098"/>
-        <obo:IAO_0000115>Irreversible pulpitis due to dental pulp infection uccring because of a dental hard tissue fracture involving the exposure of dental pulp.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Irreversible pulpitis due to dental pulp infection uccring because of a dental hard tissue fracture involving the exposure of dental pulp.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:57:58Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">irreversible pulpitis due to dental hard tissue fracture with pulp exposure</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010163"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010165 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010165">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
-        <obo:IAO_0000115>A pathological bodily process that abnormally occurs when dentin is resorbed by osteoclastic activity.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A pathological bodily process that abnormally occurs when dentin is resorbed by osteoclastic activity.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:19:19Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">external cervical root resorption process</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010165"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010172 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010172">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000504"/>
-        <obo:IAO_0000115>An infectious disorer occuring within the tooth pulp.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An infectious disorer occuring within the tooth pulp.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:36:01Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">endodontic infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010172"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010174 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010174">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010172"/>
-        <obo:IAO_0000115>An endodontic infection occuring within the root canal system of the affected tooth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An endodontic infection occuring within the root canal system of the affected tooth.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:41:03Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">intraradicular endodontic infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010174"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010176 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010176">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010172"/>
-        <obo:IAO_0000115 xml:lang="en">An endodontic infection of extraradicular tissue caused by infection of the pulp spreading to it.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:45:35Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">extraradicular endodontic infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010176"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010180 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010180">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010187"/>
-        <obo:IAO_0000115>A hematological disorder caused by an infectious disorder.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A hematological disorder caused by an infectious disorder.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:58:07Z</terms:created>
-        <rdfs:comment>The disorder might arise from an infection, but is not necessarily an infection.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">hematological disorder due to infectious disorder</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010180"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010183 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010183">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000504"/>
-        <obo:IAO_0000115>An infectious disorder occuring within the periodontium, characterized by a collection of pus.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An infectious disorder occuring within the periodontium, characterized by a collection of pus.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T19:07:48Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">periodontal abscess</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010183"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010184 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010184">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000115>A disorder characterized by the presence of malignant cells.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disorder characterized by the presence of malignant cells.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T19:20:29Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">malignant lesion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010187 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010187">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000115>A disorder of the hematopoietic system.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disorder of the hematopoietic system.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-27T14:46:19Z</terms:created>
-        <oboInOwl:hasExactSynonym>haematological disorder</oboInOwl:hasExactSynonym>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">hematological disorder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010188 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010188">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010070"/>
-        <obo:IAO_0000115>A periodontal disorder resulting in inflammation surronding a dental implant.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A periodontal disorder resulting in inflammation surronding a dental implant.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:03:00Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">peri-implantitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010184"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010189 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010189">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010188"/>
-        <obo:IAO_0000115>Peri-implantitis resulting from an infectious disorder.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Peri-implantitis resulting from an infectious disorder.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:05:04Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">infective peri-implantitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010189"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010194 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010194">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010098"/>
-        <obo:IAO_0000115>Irreversible pulpitis due to infection of the dental pulp because of deep dental caries in the affected tooth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Irreversible pulpitis due to infection of the dental pulp because of deep dental caries in the affected tooth.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:31:17Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">irreversible pulpitis due to carious pulp exposure and dental pulp infection</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010194"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010197 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010197">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010056"/>
-        <obo:IAO_0000115>Oral mucosal inflammation due to an injury that is non-iatrogenic.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Oral mucosal inflammation due to an injury that is non-iatrogenic.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:46:25Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">oral mucosal inflammation due to non-iatrogenic injury</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010197"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010199 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010199">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010056"/>
-        <obo:IAO_0000115>Oral mucosal inflammation due to injury resulting from radiation or chemotherapy.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Oral mucosal inflammation due to injury resulting from radiation or chemotherapy.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:51:49Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">oral mucosal inflammation due to radiation or chemotherapy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010202 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010202">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0000414"/>
-        <obo:IAO_0000115>A mouth disorder that is part of the salivary glands.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A mouth disorder that is part of the salivary glands.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:02:18Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">salivary gland disorder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010203 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010203">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010202"/>
-        <obo:IAO_0000115>A salivary gland disorder occuring within the parotid glands.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A salivary gland disorder occuring within the parotid glands.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:03:40Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">parotid disorder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010204 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010204">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010203"/>
-        <obo:IAO_0000115>A parotid disorder involving inflammation of the parotid glands.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A parotid disorder involving inflammation of the parotid glands.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:06:41Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">parotitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010199"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010205 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010205">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010204"/>
-        <obo:IAO_0000115>Parotitis occuring in children ages 2-10 years old and occuring about eight times a year.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Parotitis occuring in children ages 2-10 years old and occuring about eight times a year.</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:07:42Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">recurrent juvenile parotitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010205"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010208 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010208">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000115>A disorder characterized by a non-cancerous growth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disorder characterized by a non-cancerous growth.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:19:03Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">local benign lesion</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010208"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010210 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010210">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010184"/>
-        <obo:IAO_0000115>A malignant lesion that is confined to where the malignant cells began.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A malignant lesion that is confined to where the malignant cells began.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:25:59Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">local malignancy</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010210"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010212 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010212">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010184"/>
-        <obo:IAO_0000115>A malignant lesion that has spread from where teh malignant cells first began.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A malignant lesion that has spread from where teh malignant cells first began.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:28:29Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">remote malignancy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OHD_0010289 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010289">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000115>A disorder in a tissue or organ that is marked by capillary dilatation, leukocytic infiltration, redness, heat, pain, swelling, and often loss of function, which is a response cellular injury or infection.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disorder in a tissue or organ that is marked by capillary dilatation, leukocytic infiltration, redness, heat, pain, swelling, and often loss of function, which is a response cellular injury or infection.</obo:IAO_0000115>
-        <obo:IAO_0000119>ISBN:978-0-8153-4505-3</obo:IAO_0000119>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-14T15:26:18Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">inflammation</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010212"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010291 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010291">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010289"/>
-        <obo:IAO_0000115>A disorder of a tendon caused by inflammation.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disorder of a tendon caused by inflammation.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-07T18:48:59Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">tendonitis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010291"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010305 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010305">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010289"/>
-        <obo:IAO_0000115>A disorder of a muscle caused by inflammation.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disorder of a muscle caused by inflammation.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T18:08:24Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">myositis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010305"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010306 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010306">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010289"/>
-        <obo:IAO_0000115>A disorder of a joint caused by inflammation.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disorder of a joint caused by inflammation.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T18:10:02Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">inflammatory arthritis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010306"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010307 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010307">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010306"/>
-        <obo:IAO_0000115>Arthritis that primarily affects the joints.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Arthritis that primarily affects the joints.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T18:11:28Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">non-systemic inflammatory arthritis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010307"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010308 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010308">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHD_0010306"/>
-        <obo:IAO_0000115>Arthritis that affects the joints and causes inflammation within the rest of the body.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Arthritis that affects the joints and causes inflammation within the rest of the body.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T18:13:59Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">systemic inflammatory arthritis</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010308"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OHD_0010309 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010309">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
-        <obo:IAO_0000115>A disease in which the cartilage around the joint is gradually worn away.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A disease in which the cartilage around the joint is gradually worn away.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T18:18:25Z</terms:created>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ohd.owl"/>
-        <rdfs:label xml:lang="en">degenerative joint disease</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0010309"/>
     
 
 
@@ -15324,6 +14169,32 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000344"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>mucous membrane</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:85355</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000344"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>organ mucosa</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:85355</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000344"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>region of mucosa</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:85358</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000344"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>tunica mucosa</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000886</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Mucous_membrane</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000344"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A lining of mostly endodermal origin, covered in epithelium, which is involved in absorption and secretion. They line various body cavities that are exposed to the external environment and internal organs. It is at several places continuous with skin: at the nostrils, the lips, the ears, the genital area, and the anus. The sticky, thick fluid secreted by the mucous membranes and gland is termed mucus. The term mucous membrane refers to where they are found in the body and not every mucous membrane secretes mucus[WP].</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:Mucous_membrane</oboInOwl:hasDbXref>
@@ -15357,32 +14228,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>mucosal region</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:85358</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000344"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>mucous membrane</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FMA:85355</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000344"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>organ mucosa</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FMA:85355</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000344"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>region of mucosa</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FMA:85358</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000344"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>tunica mucosa</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BTO:0000886</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Mucous_membrane</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
     </owl:Axiom>
     
 
