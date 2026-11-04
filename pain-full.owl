@@ -17,7 +17,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pain/pain-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-10-15/pain-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pain/releases/2026-11-04/pain-full.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -29,7 +29,7 @@
         <terms:description>An ontology for representing pain as defined by the International Association For the Study of Pain (IASP), meaning that pain is both an unpleasant physical sensation and unpleasant emotional experience. It includes terms and axioms to represent the multidimensional aspect of pain, such as temporality (e.g., acute, chronic), qualitative (e.g., sharp, throbbing), extent (e.g., local, widespread), biological mechanism (e.g., nociceptive, neuropathic), and specific anatomical locations (e.g., back, knee).</terms:description>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Pain Ontology</terms:title>
-        <owl:versionInfo>2026-10-15</owl:versionInfo>
+        <owl:versionInfo>2026-11-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1860,7 +1860,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PAIN_0000061">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GO_0050877"/>
         <obo:IAO_0000112>Concomitant continuous pain (CCP) in trigeminal neuralgia is often experienced as burning or throbbing.</obo:IAO_0000112>
-        <obo:IAO_0000115>A relation between a nervous system process and a cognitive process in which the nervous system process is gives rise to an experiential mental process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a nervous system process and a cognitive process in which the nervous system process gives rise to an experiential mental process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T22:09:02Z</terms:created>
         <rdfs:label xml:lang="en">experienced as</rdfs:label>
@@ -1873,7 +1873,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PAIN_0000062">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GO_0050877"/>
         <obo:IAO_0000112>Brain freeze is a brief, intense pain experienced in the forehead.</obo:IAO_0000112>
-        <obo:IAO_0000115>A relation between a nervous system process and a cognitive process in which a physical sensation is subjectively experienced as occurring in an anatomical entity, site, or a site where an anatomical entity is usually located.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a nervous system process and a cognitive process in which a physical sensation is subjectively experienced as occurring in an anatomical entity or a site where an anatomical entity is usually located.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-28T16:36:53Z</terms:created>
         <rdfs:label xml:lang="en">experienced in</rdfs:label>
@@ -6223,7 +6223,7 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000101"/>
-        <obo:IAO_0000115>Persistent background pain that occurs alongside paroxysmal pain attacks, characteristic of conditions such as trigeminal neuralgia.</obo:IAO_0000115>
+        <obo:IAO_0000115>Persistent background pain that occurs alongside paroxysmal pain attacks. It is characteristic of conditions such as trigeminal neuralgia.</obo:IAO_0000115>
         <obo:IAO_0000589>concomitant continuous pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
@@ -6233,7 +6233,7 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Persistent background pain that occurs alongside paroxysmal pain attacks, characteristic of conditions such as trigeminal neuralgia.</owl:annotatedTarget>
+        <owl:annotatedTarget>Persistent background pain that occurs alongside paroxysmal pain attacks. It is characteristic of conditions such as trigeminal neuralgia.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32791919</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1277654/full</obo:IAO_0000119>
     </owl:Axiom>
@@ -6303,7 +6303,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A sensitivity to somatosensory stimulus that normally provokes pain which characterizes the degreee of the response to the stimulus.</obo:IAO_0000115>
+        <obo:IAO_0000115>A sensitivity to a somatosensory stimulus that normally provokes pain which characterizes the degree of the response to the stimulus.</obo:IAO_0000115>
         <obo:IAO_0000589>sensitivity to normally painful stimulus (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T23:13:11Z</terms:created>
@@ -6370,7 +6370,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>paresthesia (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T23:48:57Z</terms:created>
-        <terms:description>Paresthesia be used to describe an abnormal sensation that is not unpleasant while dysesthesia be used preferentially for an abnormal sensation that is considered to be unpleasant. The use of one term (paresthesia) to indicate spontaneous sensations and the other to refer to evoked sensations is not favored. There is a sense in which, since paresthesia refers to abnormal sensations in general, it might include dysesthesia, but the reverse is not true. Dysesthesia does not include all abnormal sensations, but only those that are unpleasant.
+        <terms:description>Paresthesia is used to describe an abnormal sensation that is not unpleasant, while dysesthesia is used preferentially for an abnormal sensation that is considered to be unpleasant. The use of one term (paresthesia) to indicate spontaneous sensations and the other to refer to evoked sensations is not favored. There is a sense in which, since paresthesia refers to abnormal sensations in general, it might include dysesthesia, but the reverse is not true. Dysesthesia does not include all abnormal sensations, but only those that are unpleasant.
 See entry in https://www.iasp-pain.org/resources/terminology.</terms:description>
         <rdfs:label xml:lang="en">paresthesia</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D010292</skos:closeMatch>
@@ -6494,7 +6494,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
-        <obo:IAO_0000115>Pain associated with temporomandibular disorders, affecting the masticatory muscles, the temporomandibular joint, or associated structures.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pain associated with temporomandibular disorders. It affects the masticatory muscles, the temporomandibular joint, or associated structures.</obo:IAO_0000115>
         <obo:IAO_0000589>temporomandibular disorder pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:24:58Z</terms:created>
@@ -6518,25 +6518,11 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T18:46:52Z</terms:created>
-        <rdfs:comment>Six key notes and etymology:
-
- - Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.
- 
-- Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.
-
-- Through their life experiences, individuals learn the concept of pain.
- 
-- A person’s report of an experience as pain should be respected.
- 
-- Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
-
- - Verbal description is only one of several behaviors to express pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.</rdfs:comment>
         <rdfs:comment>The &quot;emotional&quot; part of pain captures the affective (i.e., unpleasant) dimension of experiencing pain.</rdfs:comment>
         <rdfs:label xml:lang="en">pain</rdfs:label>
-        <rdfs:seeAlso>- The Revised IASP definition of pain: concepts, challenges, and compromises. 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
-
-- Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.</rdfs:seeAlso>
+        <rdfs:seeAlso>Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.</rdfs:seeAlso>
+        <rdfs:seeAlso>The Revised IASP definition of pain: concepts, challenges, and compromises. 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/</rdfs:seeAlso>
         <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D010146"/>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/HP_0012531"/>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000203"/>
@@ -6546,6 +6532,13 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SCDO_0000851"/>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000099"/>
         <skos:closeMatch rdf:resource="http://semanticscience.org/resource/SIO_000951"/>
+        <skos:note>Six key notes and etymology:
+ - Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.
+- Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.
+- Through their life experiences, individuals learn the concept of pain.
+- A person’s report of an experience as pain should be respected.
+- Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
+ - Verbal description is only one of several behaviors which expresses pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.</skos:note>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
@@ -6717,7 +6710,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         <rdfs:label xml:lang="en">nociceptive pain</rdfs:label>
         <skos:closeMatch rdf:resource="http://id.nlm.nih.gov/mesh/D059226"/>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000831"/>
-        <skos:note>The term is used to describe pain occurring with a normally functioning somatosensory nervous system to contrast with the abnormal function seen in neuropathic or nociplasitic pain.</skos:note>
+        <skos:note>The term is used to describe pain occurring with a normally functioning somatosensory nervous system to contrast with the abnormal function seen in neuropathic or nociplastic pain.</skos:note>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000041"/>
@@ -6873,7 +6866,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000042"/>
-        <obo:IAO_0000115>A sensation quality that characterizes a sensation as being persistent, deep, or nagging rather than a sharp or stabbing.</obo:IAO_0000115>
+        <obo:IAO_0000115>A sensation quality that characterizes a sensation as being persistent, deep, or nagging rather than sharp or stabbing.</obo:IAO_0000115>
         <obo:IAO_0000589>dull sensation quality (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:02:36Z</terms:created>
@@ -6883,7 +6876,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000047"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A sensation quality that characterizes a sensation as being persistent, deep, or nagging rather than a sharp or stabbing.</owl:annotatedTarget>
+        <owl:annotatedTarget>A sensation quality that characterizes a sensation as being persistent, deep, or nagging rather than sharp or stabbing.</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.healthline.com/health/dull-pain</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.merriam-webster.com/dictionary/dull</obo:IAO_0000119>
     </owl:Axiom>
@@ -7390,7 +7383,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000042"/>
-        <obo:IAO_0000115>An intense, sudden, and sharp sensation, often described as a knife-like or shooting, sensation quality that pierces a specific area.</obo:IAO_0000115>
+        <obo:IAO_0000115>An intense, sudden, and sharp sensation, often described as a knife-like or shooting sensation quality that pierces a specific area.</obo:IAO_0000115>
         <obo:IAO_0000589>stabbing sensation quality (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-12T17:09:02Z</terms:created>
@@ -8068,14 +8061,14 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000048"/>
-        <obo:IAO_0000115>Chronic pain that is diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic pain that is diffuse and experienced in body regions and in at least 3 body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</obo:IAO_0000115>
         <obo:IAO_0000589>chronic widespread pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T17:11:58Z</terms:created>
         <rdfs:comment>Chronic widespread pain (CWP) is associated with significant emotional distress (anxiety, anger/frustration or depressed mood) or functional disability (interference in daily life activities and reduced participation in social roles). CWP is multifactorial: biological, psychological and social factors contribute to the pain syndrome. The diagnosis is appropriate when the pain is not directly attributable to a nociceptive process in these regions and there are features consistent with nociplastic pain and identified psychological and social contributors.</rdfs:comment>
         <rdfs:label xml:lang="en">chronic widespread pain</rdfs:label>
         <skos:note>Additional criteria to consider:
-- Include quantrants/regions of body in the definition. 
+- Include quadrants/regions of body in the definition. 
   - E.g., &gt;= 3 quadrants &amp; axial
   - &gt;= 4 body regions
 - Use the notion of functional region instead of regions divided by joints.
@@ -8085,7 +8078,7 @@ define as chronic &amp; multi-localized.</skos:note>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000092"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic pain that is diffuse and experienced in body regions and in at least 3 or more body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic pain that is diffuse and experienced in body regions and in at least 3 body quadrants (as defined by upper-lower/left-right side of the body) and axial skeleton (neck, back, chest, and abdomen).</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:39445928</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.findacode.com/icd-11/code-849253504.html</obo:IAO_0000119>
     </owl:Axiom>
@@ -8182,7 +8175,7 @@ define as chronic &amp; multi-localized.</skos:note>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000096">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000036"/>
-        <obo:IAO_0000115>Pain that caused by the effects of cancer (e.g., neoplasm growth, tissue invasion, metastases), the diagnosis of cancer, or the treatment of cancer.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pain that is caused by the effects of cancer (e.g., neoplasm growth, tissue invasion, metastases), the diagnosis of cancer, or the treatment of cancer.</obo:IAO_0000115>
         <obo:IAO_0000589>cancer pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T16:09:05Z</terms:created>
@@ -8585,7 +8578,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000090"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011595"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011595"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -8594,7 +8592,12 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011595"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011595"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Orofacial pain that is experienced in the jaw.</obo:IAO_0000115>
@@ -8611,7 +8614,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000135"/>
-        <obo:IAO_0000115>A sensitivity to normally painful stimulus that characterizes the pain as being lower than normal or average.</obo:IAO_0000115>
+        <obo:IAO_0000115>A sensitivity to a normally painful stimulus that characterizes the pain as being lower than normal or average.</obo:IAO_0000115>
         <obo:IAO_0000589>decreased sensitivity to normally painful stimulus (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T22:48:40Z</terms:created>
@@ -8625,7 +8628,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000134"/>
-        <obo:IAO_0000115>A sensitivity to normally painful stimulus that characterizes pain as being higher than normal or average.</obo:IAO_0000115>
+        <obo:IAO_0000115>A sensitivity to a normally painful stimulus that characterizes pain as being higher than normal or average.</obo:IAO_0000115>
         <obo:IAO_0000589>increased sensitivity to normally painful stimulus (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T22:49:50Z</terms:created>
@@ -8643,7 +8646,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <obo:IAO_0000589>trigeminal neuralgia pain (PAIN)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-02T00:42:45Z</terms:created>
-        <terms:description>Trigeminal neuralgia pain typically presents as paroxysmal, electric shock-like attacks and sometimes accompanied by concomitant continuous pain.</terms:description>
+        <terms:description>Trigeminal neuralgia pain typically presents as paroxysmal, electric shock-like attacks and sometimes is accompanied by concomitant continuous pain.</terms:description>
         <rdfs:label xml:lang="en">trigeminal neuralgia pain</rdfs:label>
         <skos:relatedMatch>http://id.nlm.nih.gov/mesh/D014277</skos:relatedMatch>
         <skos:relatedMatch>http://purl.obolibrary.org/obo/HP_0100661</skos:relatedMatch>
@@ -8761,7 +8764,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0000127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <obo:IAO_0000115>A characteristic of an entity whose causal origin has not been identified. It usually characterizes diseases whose etiology are obscure.</obo:IAO_0000115>
+        <obo:IAO_0000115>A characteristic of an entity whose causal origin has not been identified. It usually characterizes diseases whose etiologies are obscure.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-10T23:52:19Z</terms:created>
         <rdfs:label xml:lang="en">idiopathic</rdfs:label>
@@ -8769,7 +8772,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000127"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A characteristic of an entity whose causal origin has not been identified. It usually characterizes diseases whose etiology are obscure.</owl:annotatedTarget>
+        <owl:annotatedTarget>A characteristic of an entity whose causal origin has not been identified. It usually characterizes diseases whose etiologies are obscure.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/idiopathic</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9106,6 +9109,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000115"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9230,7 +9234,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain due to hypersensistivity resulting from an exposed dentin surface.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain due to hypersensitivity resulting from an exposed dentin surface.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-05T14:57:43Z</terms:created>
@@ -9241,7 +9245,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010015"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain due to hypersensistivity resulting from an exposed dentin surface.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain due to hypersensitivity resulting from an exposed dentin surface.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9359,7 +9363,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Gingival pain that occurs as result of gingivitis.</obo:IAO_0000115>
+        <obo:IAO_0000115>Gingival pain that occurs as a result of gingivitis.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T17:57:43Z</terms:created>
         <oboInOwl:hasRelatedSynonym>gingival pain due to gingival inflammation resulting from another cause</oboInOwl:hasRelatedSynonym>
@@ -9370,7 +9374,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010024"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Gingival pain that occurs as result of gingivitis.</owl:annotatedTarget>
+        <owl:annotatedTarget>Gingival pain that occurs as a result of gingivitis.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9386,7 +9390,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Gingival pain due to gingivitis due to an infection of the gingival tissue.</obo:IAO_0000115>
+        <obo:IAO_0000115>Gingival pain due to gingivitis that is caused by an infection of the gingival tissue.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T18:15:01Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -9396,7 +9400,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Gingival pain due to gingivitis due to an infection of the gingival tissue.</owl:annotatedTarget>
+        <owl:annotatedTarget>Gingival pain due to gingivitis that is caused by an infection of the gingival tissue.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9412,7 +9416,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Gingival pain due to infection resulting form bacteria.</obo:IAO_0000115>
+        <obo:IAO_0000115>Gingival pain due to infection resulting from bacteria.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T18:37:15Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -9422,7 +9426,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010030"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Gingival pain due to infection resulting form bacteria.</owl:annotatedTarget>
+        <owl:annotatedTarget>Gingival pain due to infection resulting from bacteria.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9594,7 +9598,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Oral mucosa pain due to inflamation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Oral mucosa pain due to inflammation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T19:36:10Z</terms:created>
         <oboInOwl:hasRelatedSynonym>oral mucosal pain due to oral mucosal inflammation due to other cause</oboInOwl:hasRelatedSynonym>
@@ -9605,7 +9609,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010041"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Oral mucosa pain due to inflamation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation.</owl:annotatedTarget>
+        <owl:annotatedTarget>Oral mucosa pain due to inflammation of the oral mucosa, with pain that has developed in close temporal relation to the inflammation.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9797,7 +9801,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Gingival pain due to gingivitis due to resulting from trauma or injury with pain localizaed to the traumatized tissue that develops within minutes or days after the trauma.</obo:IAO_0000115>
+        <obo:IAO_0000115>Gingival pain due to gingivitis that results from trauma or injury with pain localized to the traumatized tissue that develops within minutes or days after the trauma.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:49:38Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -9807,7 +9811,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010055"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Gingival pain due to gingivitis due to resulting from trauma or injury with pain localizaed to the traumatized tissue that develops within minutes or days after the trauma.</owl:annotatedTarget>
+        <owl:annotatedTarget>Gingival pain due to gingivitis that results from trauma or injury with pain localized to the traumatized tissue that develops within minutes or days after the trauma.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9823,7 +9827,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Oral mucosal pain due to oral mucose inflammation resulting from tauma to the oral mucosa tissue with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma.</obo:IAO_0000115>
+        <obo:IAO_0000115>Oral mucosal pain due to oral mucosal inflammation resulting from trauma to the oral mucosa tissue, with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T17:54:47Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -9833,7 +9837,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010057"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Oral mucosal pain due to oral mucose inflammation resulting from tauma to the oral mucosa tissue with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma.</owl:annotatedTarget>
+        <owl:annotatedTarget>Oral mucosal pain due to oral mucosal inflammation resulting from trauma to the oral mucosa tissue, with pain that is localized to the traumatized tissue and developed within minutes to days after the trauma.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9873,7 +9877,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T18:05:48Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
-        <rdfs:comment>ICOP numuber: 4.1</rdfs:comment>
+        <rdfs:comment>ICOP number: 4.1</rdfs:comment>
         <rdfs:label xml:lang="en">pain due to lesion or disease of the trigeminal nerve</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -9895,7 +9899,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain due to diagnosed pulpitis in affected tooth.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain due to diagnosed pulpitis in the affected tooth.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T18:17:44Z</terms:created>
         <oboInOwl:hasRelatedSynonym>pulpal pain due to pulpitis resulting from another cause</oboInOwl:hasRelatedSynonym>
@@ -9906,7 +9910,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010061"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain due to diagnosed pulpitis in affected tooth.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain due to diagnosed pulpitis in the affected tooth.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9922,7 +9926,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain due to pulpitis that is reversible due to an infection in the dentin.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain due to pulpitis that is reversible and results from an infection in the dentin.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T18:54:11Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -9932,7 +9936,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010067"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain due to pulpitis that is reversible due to an infection in the dentin.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain due to pulpitis that is reversible and results from an infection in the dentin.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -9948,7 +9952,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain attributed to pulpitis that is reversible due to an infection in the dentin.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain attributed to pulpitis that is irreversible and results from an infection in the dentin.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T18:59:55Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -9958,7 +9962,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010069"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain attributed to pulpitis that is reversible due to an infection in the dentin.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain attributed to pulpitis that is irreversible and results from an infection in the dentin.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10079,7 +10083,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010080"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain cuased by reversible pulpitis due to an infection of the dentin with no clinical or radiographic evidence of extension to the pulp.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain caused by reversible pulpitis due to an infection of the dentin with no clinical or radiographic evidence of extension to the pulp.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-12T18:16:30Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10089,7 +10093,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010081"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain cuased by reversible pulpitis due to an infection of the dentin with no clinical or radiographic evidence of extension to the pulp.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain caused by reversible pulpitis due to an infection of the dentin with no clinical or radiographic evidence of extension to the pulp.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10130,7 +10134,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-12T19:15:53Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 1.1.1.3.2.1</rdfs:comment>
-        <rdfs:label xml:lang="en">pulpal due to irreversible pulpitis resulting from caries extending to the pulp</rdfs:label>
+        <rdfs:label xml:lang="en">pulpal pain due to irreversible pulpitis resulting from caries extending to the pulp</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010086"/>
@@ -10177,7 +10181,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Periodontal pain due to periodontits that is apical occuring becayse of an endodontic disease.</obo:IAO_0000115>
+        <obo:IAO_0000115>Periodontal pain due to periodontitis that is apical and occurring because of an endodontic disease.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-19T19:11:03Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10187,7 +10191,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010091"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Periodontal pain due to periodontits that is apical occuring becayse of an endodontic disease.</owl:annotatedTarget>
+        <owl:annotatedTarget>Periodontal pain due to periodontitis that is apical and occurring because of an endodontic disease.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10203,7 +10207,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010092"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain due to dental trauma that has exposes vital pulp tissue in the affected tooth because of any of the following: fracture involving enamel, dentin and pulp (complicated crown fracture), fracture involving root cementum, dentin and pulp (complicated root fracture), and fracture involving enamel, root cementum, dentin and pulp (complicated crown-root fracture) and occurs within minutes to hours after the trauma.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain due to dental trauma that results from exposed vital pulp tissue in the affected tooth which is because of any of the following: fracture involving enamel, dentin and pulp (complicated crown fracture), fracture involving root cementum, dentin and pulp (complicated root fracture), and fracture involving enamel, root cementum, dentin and pulp (complicated crown-root fracture) and occurs within minutes to hours after the trauma.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T19:54:50Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10213,7 +10217,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010093"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain due to dental trauma that has exposes vital pulp tissue in the affected tooth because of any of the following: fracture involving enamel, dentin and pulp (complicated crown fracture), fracture involving root cementum, dentin and pulp (complicated root fracture), and fracture involving enamel, root cementum, dentin and pulp (complicated crown-root fracture) and occurs within minutes to hours after the trauma.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain due to dental trauma that results from exposed vital pulp tissue in the affected tooth which is because of any of the following: fracture involving enamel, dentin and pulp (complicated crown fracture), fracture involving root cementum, dentin and pulp (complicated root fracture), and fracture involving enamel, root cementum, dentin and pulp (complicated crown-root fracture) and occurs within minutes to hours after the trauma.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10333,7 +10337,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain caused by reversible pulpitis due to infection of dentin because of a crack or incomplete fracture of the affected tooth, involving the enamel or enamel and dentin. Has evidence of at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain caused by reversible pulpitis due to infection of dentin because of a crack or incomplete fracture of the affected tooth, involving the enamel or both enamel and dentin. Has evidence of at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-23T20:21:16Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10343,7 +10347,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010108"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain caused by reversible pulpitis due to infection of dentin because of a crack or incomplete fracture of the affected tooth, involving the enamel or enamel and dentin. Has evidence of at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain caused by reversible pulpitis due to infection of dentin because of a crack or incomplete fracture of the affected tooth, involving the enamel or both enamel and dentin. Has evidence of at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10359,7 +10363,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Periodontal pain due to periodontal disease resulitng from aggressive periodontitis.</obo:IAO_0000115>
+        <obo:IAO_0000115>Periodontal pain due to periodontal disease resulting from aggressive periodontitis.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-17T18:40:51Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10369,7 +10373,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010111"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Periodontal pain due to periodontal disease resulitng from aggressive periodontitis.</owl:annotatedTarget>
+        <owl:annotatedTarget>Periodontal pain due to periodontal disease resulting from aggressive periodontitis.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10479,7 +10483,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010120"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010221"/>
-        <obo:IAO_0000115>Chronic primary temporomandibular joint pain occuring less than one day a month.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic primary temporomandibular joint pain occurring less than one day a month.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:34:26Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10489,7 +10493,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010121"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic primary temporomandibular joint pain occuring less than one day a month.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic primary temporomandibular joint pain occurring less than one day a month.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10511,7 +10515,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010120"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010220"/>
-        <obo:IAO_0000115>Chronic primary temporomandibular joint pain occuring one to 14 days a month for an avergae of more than 3 months.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic primary temporomandibular joint pain occurring one to 14 days a month for an average of more than 3 months.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:35:41Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10521,7 +10525,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010122"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic primary temporomandibular joint pain occuring one to 14 days a month for an avergae of more than 3 months.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic primary temporomandibular joint pain occurring one to 14 days a month for an average of more than 3 months.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10537,7 +10541,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Chronic frequent primary temporomandibular joint pain with temporomandibular joint palpation pain localizaed to the immediate site of palpatation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic frequent primary temporomandibular joint pain with temporomandibular joint palpation pain localized to the immediate site of palpation.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:38:56Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10547,7 +10551,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010123"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic frequent primary temporomandibular joint pain with temporomandibular joint palpation pain localizaed to the immediate site of palpatation.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic frequent primary temporomandibular joint pain with temporomandibular joint palpation pain localized to the immediate site of palpation.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10589,7 +10593,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010226"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Chronic frequent primary temporomandibular joint pain occuring on more than 15 days a month on average for more than 3 months.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic frequent primary temporomandibular joint pain occurring on more than 15 days a month on average for more than 3 months.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:41:31Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10599,7 +10603,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010125"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic frequent primary temporomandibular joint pain occuring on more than 15 days a month on average for more than 3 months.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic frequent primary temporomandibular joint pain occurring on more than 15 days a month on average for more than 3 months.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10772,7 +10776,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010133">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010132"/>
-        <obo:IAO_0000115>A disorder characterized by unilateral brief stabbing pain, abrupt in onset and termination, in the distributions not only of the glossopharyngeal nerve but also of the auricular and pharyngeal branches of the vagus nerve. Pain is experienced in the ear, base of the tongue, tonsillar fossa and/or beneath the angle of the jaw. It is commonly provoked by swallowing, talking or coughing and may remit and relapse in the fashion of Trigeminal neuralgia.</obo:IAO_0000115>
+        <obo:IAO_0000115>A disorder characterized by unilateral brief stabbing pain, abrupt in onset and termination, in the distributions not only of the glossopharyngeal nerve but also of the auricular and pharyngeal branches of the vagus nerve. Pain is experienced in the ear, base of the tongue, tonsillar fossa and/or beneath the angle of the jaw. It is commonly provoked by swallowing, talking or coughing and may remit and relapse in the fashion of trigeminal neuralgia.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:56:55Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10782,7 +10786,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010133"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A disorder characterized by unilateral brief stabbing pain, abrupt in onset and termination, in the distributions not only of the glossopharyngeal nerve but also of the auricular and pharyngeal branches of the vagus nerve. Pain is experienced in the ear, base of the tongue, tonsillar fossa and/or beneath the angle of the jaw. It is commonly provoked by swallowing, talking or coughing and may remit and relapse in the fashion of Trigeminal neuralgia.</owl:annotatedTarget>
+        <owl:annotatedTarget>A disorder characterized by unilateral brief stabbing pain, abrupt in onset and termination, in the distributions not only of the glossopharyngeal nerve but also of the auricular and pharyngeal branches of the vagus nerve. Pain is experienced in the ear, base of the tongue, tonsillar fossa and/or beneath the angle of the jaw. It is commonly provoked by swallowing, talking or coughing and may remit and relapse in the fashion of trigeminal neuralgia.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10792,7 +10796,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010133"/>
-        <obo:IAO_0000115>Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain with the demonstration of magnetic resonance imaging.</obo:IAO_0000115>
+        <obo:IAO_0000115>Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain, where the findings are demonstrated by magnetic resonance imaging.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T17:58:02Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10802,7 +10806,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010134"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain with the demonstration of magnetic resonance imaging.</owl:annotatedTarget>
+        <owl:annotatedTarget>Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain, where the findings are demonstrated by magnetic resonance imaging.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10833,7 +10837,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010136">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010133"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010275"/>
-        <obo:IAO_0000115>Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain without neurovascular compression or an underlying disease know to cause secondary glossopharyngeal neuralgia.</obo:IAO_0000115>
+        <obo:IAO_0000115>Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain without neurovascular compression or an underlying disease known to cause secondary glossopharyngeal neuralgia.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-18T18:01:40Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10843,7 +10847,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010136"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain without neurovascular compression or an underlying disease know to cause secondary glossopharyngeal neuralgia.</owl:annotatedTarget>
+        <owl:annotatedTarget>Glossopharyngeal neuralgia with recurrent paroxysms of unilateral pain without neurovascular compression or an underlying disease known to cause secondary glossopharyngeal neuralgia.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10923,7 +10927,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000090"/>
-        <obo:IAO_0000115>Orofacial pain due to lesisoin or disease of the cranial nerves.</obo:IAO_0000115>
+        <obo:IAO_0000115>Orofacial pain due to lesion or disease of the cranial nerves.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T18:18:22Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10933,7 +10937,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010142"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Orofacial pain due to lesisoin or disease of the cranial nerves.</owl:annotatedTarget>
+        <owl:annotatedTarget>Orofacial pain due to lesion or disease of the cranial nerves.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10969,7 +10973,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010151"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain attributed to irreversible pulpitis due to infection of dentin with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture).</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain attributed to irreversible pulpitis due to infection of dentin with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture), root cementum and dentin (uncomplicated root fracture), or enamel, root cementum, and dentin (uncomplicated crown-root fracture).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:18:31Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -10979,7 +10983,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010152"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain attributed to irreversible pulpitis due to infection of dentin with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture).</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain attributed to irreversible pulpitis due to infection of dentin with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture), root cementum and dentin (uncomplicated root fracture), or enamel, root cementum, and dentin (uncomplicated crown-root fracture).</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -10995,7 +10999,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010160"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain attributed to irreversible pulpitis due to infection of dentin because of a crack or incompletel fracture in the enamel or enamel dentin, along with at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain attributed to irreversible pulpitis due to infection of dentin because of a crack or incomplete fracture in the enamel or enamel dentin, along with at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, or cold hypersensitivity.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:41:39Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11005,7 +11009,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010161"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain attributed to irreversible pulpitis due to infection of dentin because of a crack or incompletel fracture in the enamel or enamel dentin, along with at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, and cold hypersensitivity.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain attributed to irreversible pulpitis due to infection of dentin because of a crack or incomplete fracture in the enamel or enamel dentin, along with at least one of the following: sharp pain upon biting, pain on release of occlusal biting pressure or external application of force, or cold hypersensitivity.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11021,7 +11025,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010163"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain attirbuted to irreversible pulpitis due to infection of the dental pulp with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture) along with pain that has developed in close temporal relation to the fracture with pain developing in close temporal relation to the fracture.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain attributed to irreversible pulpitis due to infection of the dental pulp with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture) along with pain that has developed in close temporal relation to the fracture.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-25T19:59:42Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11031,7 +11035,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010164"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain attirbuted to irreversible pulpitis due to infection of the dental pulp with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture) along with pain that has developed in close temporal relation to the fracture with pain developing in close temporal relation to the fracture.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain attributed to irreversible pulpitis due to infection of the dental pulp with evidence of a fracture in one of the following: enamel and dentin (uncomplicated crown fracture),  root cementum and dentin (uncomplicated root fracture), or enamel, root cementum and dentin (uncomplicated crown-root fracture) along with pain that has developed in close temporal relation to the fracture.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11047,7 +11051,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010165"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pulpal pain attributed to pulpitis with an external cervical root resorption with pain that has developed in temporal relation to onset of the resorption.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pulpal pain attributed to pulpitis associated with with external cervical root resorption with pain that has developed in temporal relation to onset of the resorption.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:22:36Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11057,7 +11061,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010166"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pulpal pain attributed to pulpitis with an external cervical root resorption with pain that has developed in temporal relation to onset of the resorption.</owl:annotatedTarget>
+        <owl:annotatedTarget>Pulpal pain attributed to pulpitis associated with with external cervical root resorption with pain that has developed in temporal relation to onset of the resorption.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11169,7 +11173,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Periodontal pain attributed to apical periodontitis due to endodontic disease because of pulpitis that has been diagnosed because of one of the following: evidence of dental disorder involving the affected tooth or vital pulp evidenced by response to pulp vitality testing.</obo:IAO_0000115>
+        <obo:IAO_0000115>Periodontal pain attributed to apical periodontitis due to endodontic disease because of pulpitis that has been diagnosed as a result of one of the following: evidence of dental disorder involving the affected tooth or vital pulp evidenced by response to pulp vitality testing.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:33:57Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11179,7 +11183,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010171"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Periodontal pain attributed to apical periodontitis due to endodontic disease because of pulpitis that has been diagnosed because of one of the following: evidence of dental disorder involving the affected tooth or vital pulp evidenced by response to pulp vitality testing.</owl:annotatedTarget>
+        <owl:annotatedTarget>Periodontal pain attributed to apical periodontitis due to endodontic disease because of pulpitis that has been diagnosed as a result of one of the following: evidence of dental disorder involving the affected tooth or vital pulp evidenced by response to pulp vitality testing.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11221,7 +11225,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010174"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Periodontal pain due to endodontic infection resulting from to a tooth that has a root canal infection.</obo:IAO_0000115>
+        <obo:IAO_0000115>Periodontal pain due to endodontic infection resulting from a tooth that has a root canal infection.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:44:16Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11231,7 +11235,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010175"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Periodontal pain due to endodontic infection resulting from to a tooth that has a root canal infection.</owl:annotatedTarget>
+        <owl:annotatedTarget>Periodontal pain due to endodontic infection resulting from a tooth that has a root canal infection.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11267,7 +11271,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010102"/>
-        <obo:IAO_0000115>Periodontal pain due to periodontal disease that results from a systematic disorder.</obo:IAO_0000115>
+        <obo:IAO_0000115>Periodontal pain due to periodontal disease that results from a systemic disorder.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:53:25Z</terms:created>
@@ -11279,7 +11283,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010178"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Periodontal pain due to periodontal disease that results from a systematic disorder.</owl:annotatedTarget>
+        <owl:annotatedTarget>Periodontal pain due to periodontal disease that results from a systemic disorder.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11295,7 +11299,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Periodontal pain due to periodontitis as a manifestion of a systematic genetic disorder. Genetic disorders which can result in periodontitis include familial and cyclic neutropenia, Down syndrome, leukocyte adhesion deficiency syndromes, Papillon–Lefèvre syndrome, Chediak–Higashi syndrome, histiocytosis syndromes, glycogen storage disease, infantile genetic agranulocytosis, Cohen syndrome, Ehler–Danlos syndrome (types IV and VIII), and hypophosphatasia.</obo:IAO_0000115>
+        <obo:IAO_0000115>Periodontal pain due to periodontitis as a manifestation of a systemic genetic disorder. Genetic disorders which can result in periodontitis include familial and cyclic neutropenia, Down syndrome, leukocyte adhesion deficiency syndromes, Papillon–Lefèvre syndrome, Chediak–Higashi syndrome, histiocytosis syndromes, glycogen storage disease, infantile genetic agranulocytosis, Cohen syndrome, Ehler–Danlos syndrome (types IV and VIII), and hypophosphatasia.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:54:59Z</terms:created>
@@ -11306,7 +11310,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010179"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Periodontal pain due to periodontitis as a manifestion of a systematic genetic disorder. Genetic disorders which can result in periodontitis include familial and cyclic neutropenia, Down syndrome, leukocyte adhesion deficiency syndromes, Papillon–Lefèvre syndrome, Chediak–Higashi syndrome, histiocytosis syndromes, glycogen storage disease, infantile genetic agranulocytosis, Cohen syndrome, Ehler–Danlos syndrome (types IV and VIII), and hypophosphatasia.</owl:annotatedTarget>
+        <owl:annotatedTarget>Periodontal pain due to periodontitis as a manifestation of a systemic genetic disorder. Genetic disorders which can result in periodontitis include familial and cyclic neutropenia, Down syndrome, leukocyte adhesion deficiency syndromes, Papillon–Lefèvre syndrome, Chediak–Higashi syndrome, histiocytosis syndromes, glycogen storage disease, infantile genetic agranulocytosis, Cohen syndrome, Ehler–Danlos syndrome (types IV and VIII), and hypophosphatasia.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11322,7 +11326,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010180"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Periodontal pain due to periodontitis as a manifestation of a systematic haematological disorder. Haematological disorders which can result in periodontitis include acquired neutropenia and leukaemia.</obo:IAO_0000115>
+        <obo:IAO_0000115>Periodontal pain due to periodontitis as a manifestation of a systemic haematological disorder. Haematological disorders which can result in periodontitis include acquired neutropenia and leukaemia.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T18:59:27Z</terms:created>
@@ -11333,7 +11337,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010181"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Periodontal pain due to periodontitis as a manifestation of a systematic haematological disorder. Haematological disorders which can result in periodontitis include acquired neutropenia and leukaemia.</owl:annotatedTarget>
+        <owl:annotatedTarget>Periodontal pain due to periodontitis as a manifestation of a systemic haematological disorder. Haematological disorders which can result in periodontitis include acquired neutropenia and leukaemia.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11349,7 +11353,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010183"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Periodontal pain due to periodontal disease resulting from either or both of the following: acute inflammation and loss of attatchement, or marginal and periradicular bone resorption.</obo:IAO_0000115>
+        <obo:IAO_0000115>Periodontal pain due to periodontal disease resulting from either or both of the following: acute inflammation and loss of attachment, or marginal and periradicular bone resorption.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-26T19:02:46Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11359,7 +11363,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010182"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Periodontal pain due to periodontal disease resulting from either or both of the following: acute inflammation and loss of attatchement, or marginal and periradicular bone resorption.</owl:annotatedTarget>
+        <owl:annotatedTarget>Periodontal pain due to periodontal disease resulting from either or both of the following: acute inflammation and loss of attachment, or marginal and periradicular bone resorption.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11421,7 +11425,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010189"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Periodontal paind due to periodontitis, with the exception that it involves an implant and not a natural tooth, resulitng from a peri-implant infection with casuation from anatomical, functional, or temporal association.</obo:IAO_0000115>
+        <obo:IAO_0000115>Periodontal pain due to periodontitis, with the exception that it involves an implant and not a natural tooth, resulting from a peri-implant infection with causation from anatomical, functional, or temporal association.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:05:54Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11431,7 +11435,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010190"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Periodontal paind due to periodontitis, with the exception that it involves an implant and not a natural tooth, resulitng from a peri-implant infection with casuation from anatomical, functional, or temporal association.</owl:annotatedTarget>
+        <owl:annotatedTarget>Periodontal pain due to periodontitis, with the exception that it involves an implant and not a natural tooth, resulting from a peri-implant infection with causation from anatomical, functional, or temporal association.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11545,7 +11549,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010184"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Oral mucoal pain due to meoplasia of the oral mucosa.</obo:IAO_0000115>
+        <obo:IAO_0000115>Oral mucosal pain due to neoplasia of the oral mucosa.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T17:57:07Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11555,7 +11559,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010201"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Oral mucoal pain due to meoplasia of the oral mucosa.</owl:annotatedTarget>
+        <owl:annotatedTarget>Oral mucosal pain due to neoplasia of the oral mucosa.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11597,7 +11601,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010184"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Jaw bone pain that results from a primary or seconday malignant lesion.</obo:IAO_0000115>
+        <obo:IAO_0000115>Jaw bone pain that results from a primary or secondary malignant lesion.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:16:50Z</terms:created>
@@ -11608,7 +11612,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010207"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Jaw bone pain that results from a primary or seconday malignant lesion.</owl:annotatedTarget>
+        <owl:annotatedTarget>Jaw bone pain that results from a primary or secondary malignant lesion.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11697,7 +11701,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010214">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010007"/>
-        <obo:IAO_0000115>Jaw bone pain due to a theraputic intervention that has resulted in a lesion.</obo:IAO_0000115>
+        <obo:IAO_0000115>Jaw bone pain due to a therapeutic intervention that has resulted in a lesion.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:30:41Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11707,7 +11711,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010214"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Jaw bone pain due to a theraputic intervention that has resulted in a lesion.</owl:annotatedTarget>
+        <owl:annotatedTarget>Jaw bone pain due to a therapeutic intervention that has resulted in a lesion.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11801,7 +11805,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010219">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010217"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010220"/>
-        <obo:IAO_0000115>Chronic primary myofascial pain occurring 1-14 days a month for more than 3 months.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic primary myofascial orofacial pain occurring 1-14 days a month for more than 3 months.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T18:42:07Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11811,7 +11815,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010219"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic primary myofascial pain occurring 1-14 days a month for more than 3 months.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic primary myofascial orofacial pain occurring 1-14 days a month for more than 3 months.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11921,7 +11925,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010223">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010220"/>
-        <obo:IAO_0000115>Chronic frequent pain that s localized to the affected area.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic frequent pain that is localized to the affected area.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-01T17:15:41Z</terms:created>
         <rdfs:label xml:lang="en">chronic frequent pain without pain referral</rdfs:label>
@@ -11929,7 +11933,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010223"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic frequent pain that s localized to the affected area.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic frequent pain that is localized to the affected area.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -11977,7 +11981,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010219"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010222"/>
-        <obo:IAO_0000115>Chronic frequent primary myofascial pain with a report of pain at a site beyond the boudary of the muscle being palpated.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic frequent primary myofascial pain with a report of pain at a site beyond the boundary of the muscle being palpated.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-01T17:20:22Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -11987,7 +11991,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010225"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic frequent primary myofascial pain with a report of pain at a site beyond the boudary of the muscle being palpated.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic frequent primary myofascial pain with a report of pain at a site beyond the boundary of the muscle being palpated.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12021,7 +12025,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010226"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Chronic frequent primary myofascial pain occuring more than 15 days a month for an average of more than 3 months.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic frequent primary myofascial pain occurring more than 15 days a month for an average of more than 3 months.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-01T17:25:28Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12031,7 +12035,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010227"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic frequent primary myofascial pain occuring more than 15 days a month for an average of more than 3 months.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic frequent primary myofascial pain occurring more than 15 days a month for an average of more than 3 months.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12127,7 +12131,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010225"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010227"/>
-        <obo:IAO_0000115>Chronic highly frequent primary myofascial orofascial pain with a report of pain at a site beyond the boundary of the muscle being palpated.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chronic highly frequent primary myofascial orofacial pain with a report of pain at a site beyond the boundary of the muscle being palpated.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-01T17:39:54Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12137,7 +12141,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010231"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Chronic highly frequent primary myofascial orofascial pain with a report of pain at a site beyond the boundary of the muscle being palpated.</owl:annotatedTarget>
+        <owl:annotatedTarget>Chronic highly frequent primary myofascial orofacial pain with a report of pain at a site beyond the boundary of the muscle being palpated.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12199,7 +12203,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010305"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Pain caused by myositis affecting one or more masticatory muscles, with clinical characteristics of inﬂammation or infection: oedema, erythema and/or increased temperature. It generally arises acutely following direct trauma of the muscle or from infection, or chronically with autoimmune disease. Limitation of unassisted mandibular movements secondary to pain is often present. Calciﬁcation of the muscle can occur (i.e. myositis ossiﬁcans).</obo:IAO_0000115>
+        <obo:IAO_0000115>Pain caused by myositis affecting one or more masticatory muscles, with clinical characteristics of inﬂammation or infection: oedema, erythema and/or increased temperature. It generally arises acutely following direct trauma to the muscle or from infection, or chronically with autoimmune disease. Limitation of unassisted mandibular movements secondary to pain is often present. Calciﬁcation of the muscle can occur (i.e. myositis ossiﬁcans).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-01T17:48:14Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12209,7 +12213,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010234"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pain caused by myositis affecting one or more masticatory muscles, with clinical characteristics of inﬂammation or infection: oedema, erythema and/or increased temperature. It generally arises acutely following direct trauma of the muscle or from infection, or chronically with autoimmune disease. Limitation of unassisted mandibular movements secondary to pain is often present. Calciﬁcation of the muscle can occur (i.e. myositis ossiﬁcans).</owl:annotatedTarget>
+        <owl:annotatedTarget>Pain caused by myositis affecting one or more masticatory muscles, with clinical characteristics of inﬂammation or infection: oedema, erythema and/or increased temperature. It generally arises acutely following direct trauma to the muscle or from infection, or chronically with autoimmune disease. Limitation of unassisted mandibular movements secondary to pain is often present. Calciﬁcation of the muscle can occur (i.e. myositis ossiﬁcans).</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12271,7 +12275,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010307"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease but not evidence that associates it with the TMJ pain or no evidence of rheumatological disease.</obo:IAO_0000115>
+        <obo:IAO_0000115>Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease but without evidence that associates it with the TMJ pain or no evidence of rheumatological disease.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-01T17:53:36Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12281,7 +12285,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010237"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease but not evidence that associates it with the TMJ pain or no evidence of rheumatological disease.</owl:annotatedTarget>
+        <owl:annotatedTarget>Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease but without evidence that associates it with the TMJ pain or no evidence of rheumatological disease.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12297,7 +12301,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0010308"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Temporomandibular joint due to arthritis with evidence of systemic inflammatory joint disease, pain developed in close temporal relation to other symptoms, and either the pain has significantly worsened in parallel with worsening of the systemic inflammatory joint disease or the pain has significantly improved or resolved with treatment of the systemic inflammatory joint disease.</obo:IAO_0000115>
+        <obo:IAO_0000115>Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease, pain developed in close temporal relation to other symptoms, and either the pain has significantly worsened in parallel with worsening of the systemic inflammatory joint disease or the pain has significantly improved or resolved with treatment of the systemic inflammatory joint disease.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-01T17:54:43Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12307,7 +12311,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010238"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Temporomandibular joint due to arthritis with evidence of systemic inflammatory joint disease, pain developed in close temporal relation to other symptoms, and either the pain has significantly worsened in parallel with worsening of the systemic inflammatory joint disease or the pain has significantly improved or resolved with treatment of the systemic inflammatory joint disease.</owl:annotatedTarget>
+        <owl:annotatedTarget>Temporomandibular joint pain due to arthritis with evidence of systemic inflammatory joint disease, pain developed in close temporal relation to other symptoms, and either the pain has significantly worsened in parallel with worsening of the systemic inflammatory joint disease or the pain has significantly improved or resolved with treatment of the systemic inflammatory joint disease.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12337,7 +12341,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010240">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010239"/>
-        <obo:IAO_0000115>Secondary temporomandibular joint pain due to TMJ disc displacement with reduction that any TMJ noise on jaw movement or function have been reported and clicking, popping, or snapping noises detected with palpation on the jaw opening and closing.</obo:IAO_0000115>
+        <obo:IAO_0000115>Secondary temporomandibular joint pain due to TMJ disc displacement with reduction where any TMJ noise upon jaw movement or function has been reported and clicking, popping, or snapping noises detected with palpation on the jaw opening and closing.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-01T18:01:04Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12347,7 +12351,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010240"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Secondary temporomandibular joint pain due to TMJ disc displacement with reduction that any TMJ noise on jaw movement or function have been reported and clicking, popping, or snapping noises detected with palpation on the jaw opening and closing.</owl:annotatedTarget>
+        <owl:annotatedTarget>Secondary temporomandibular joint pain due to TMJ disc displacement with reduction where any TMJ noise upon jaw movement or function has been reported and clicking, popping, or snapping noises detected with palpation on the jaw opening and closing.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12377,7 +12381,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010242">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010239"/>
-        <obo:IAO_0000115>Secondary temporomandibulare join pain due to TMJ disc displacement without reduction, which has been diagnosed by jaw locking or limitation of jaw opening. Along with evidence of pain developing in close temporal relation to the disc dsiplacement, a significant worsening in pain paralelle.</obo:IAO_0000115>
+        <obo:IAO_0000115>Secondary temporomandibular joint pain due to TMJ disc displacement without reduction, which has been diagnosed by jaw locking or limitation of jaw opening. The pain develops in close temporal relation to the disc displacement and significantly worsens in parallel with it.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-01T18:04:14Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12387,7 +12391,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010242"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Secondary temporomandibulare join pain due to TMJ disc displacement without reduction, which has been diagnosed by jaw locking or limitation of jaw opening. Along with evidence of pain developing in close temporal relation to the disc dsiplacement, a significant worsening in pain paralelle.</owl:annotatedTarget>
+        <owl:annotatedTarget>Secondary temporomandibular joint pain due to TMJ disc displacement without reduction, which has been diagnosed by jaw locking or limitation of jaw opening. The pain develops in close temporal relation to the disc displacement and significantly worsens in parallel with it.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12464,7 +12468,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010246">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010131"/>
-        <obo:IAO_0000115>Trigeminal neuralgia caused by a multiple sclerosis (MS) plaque or plaques in the pons or trigeminal root entry zone, and associated with other symptoms and/or clinical or laboratory findings of MS.</obo:IAO_0000115>
+        <obo:IAO_0000115>Trigeminal neuralgia caused by plaque or plaques associated with multiple sclerosis (MS) in the pons or trigeminal root entry zone, and associated with other symptoms and/or clinical or laboratory findings of MS.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-02T19:04:21Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12474,7 +12478,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010246"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Trigeminal neuralgia caused by a multiple sclerosis (MS) plaque or plaques in the pons or trigeminal root entry zone, and associated with other symptoms and/or clinical or laboratory findings of MS.</owl:annotatedTarget>
+        <owl:annotatedTarget>Trigeminal neuralgia caused by plaque or plaques associated with multiple sclerosis (MS) in the pons or trigeminal root entry zone, and associated with other symptoms and/or clinical or laboratory findings of MS.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12536,7 +12540,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Idiopathic trigeminal neuralgia with recurrent paroxysms of unilateral facial pain that is concomitant continuous of near-continuous pain between attacks in the affected trigeminal distirbution.</obo:IAO_0000115>
+        <obo:IAO_0000115>Idiopathic trigeminal neuralgia with recurrent paroxysms of unilateral facial pain accompabied by continuous or near-continuous pain between attacks in the affected trigeminal distribution.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-02T19:16:21Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12546,7 +12550,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010250"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Idiopathic trigeminal neuralgia with recurrent paroxysms of unilateral facial pain that is concomitant continuous of near-continuous pain between attacks in the affected trigeminal distirbution.</owl:annotatedTarget>
+        <owl:annotatedTarget>Idiopathic trigeminal neuralgia with recurrent paroxysms of unilateral facial pain accompabied by continuous or near-continuous pain between attacks in the affected trigeminal distribution.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12637,7 +12641,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010257">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010256"/>
-        <obo:IAO_0000115>Recurrent orofacial pain (OFP) attacks, without head pain, lasting 4–72 hours. Typical characteristics of the pain are unilateral location, pulsating quality, moderate or severe intensity, aggravation by routine physical activity and association with nausea and/or photophobia and phonophobia.</obo:IAO_0000115>
+        <obo:IAO_0000115>Recurrent orofacial pain (OFP) attacks, without head pain, lasting 4–72 hours. Typical characteristics of the pain are unilateral location, pulsating quality, moderate or severe intensity, aggravation by routine physical activity, and association with nausea and/or photophobia and phonophobia.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-02T19:33:53Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12647,7 +12651,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010257"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Recurrent orofacial pain (OFP) attacks, without head pain, lasting 4–72 hours. Typical characteristics of the pain are unilateral location, pulsating quality, moderate or severe intensity, aggravation by routine physical activity and association with nausea and/or photophobia and phonophobia.</owl:annotatedTarget>
+        <owl:annotatedTarget>Recurrent orofacial pain (OFP) attacks, without head pain, lasting 4–72 hours. Typical characteristics of the pain are unilateral location, pulsating quality, moderate or severe intensity, aggravation by routine physical activity, and association with nausea and/or photophobia and phonophobia.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12677,7 +12681,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010259">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010255"/>
-        <obo:IAO_0000115>Episodic or chronic pain exclusively in the orofacial region, without head pain, with the characteristics and associated features of 2. Tension-type headache described in the International Classification of Headache Disorders 3rd Edition, which can include pressing or tightening with mild to moderate intensity with bilateral location.</obo:IAO_0000115>
+        <obo:IAO_0000115>Episodic or chronic pain exclusively in the orofacial region, without head pain, with the characteristics and associated features of &quot;2. Tension-type headache&quot; described in the International Classification of Headache Disorders 3rd Edition, which can include pressing or tightening with mild to moderate intensity with bilateral location.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-02T19:36:31Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12687,7 +12691,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010259"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Episodic or chronic pain exclusively in the orofacial region, without head pain, with the characteristics and associated features of 2. Tension-type headache described in the International Classification of Headache Disorders 3rd Edition, which can include pressing or tightening with mild to moderate intensity with bilateral location.</owl:annotatedTarget>
+        <owl:annotatedTarget>Episodic or chronic pain exclusively in the orofacial region, without head pain, with the characteristics and associated features of &quot;2. Tension-type headache&quot; described in the International Classification of Headache Disorders 3rd Edition, which can include pressing or tightening with mild to moderate intensity with bilateral location.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12697,7 +12701,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010260">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010255"/>
-        <obo:IAO_0000115>Attacks of pain, exclusively in the orofacial region, without head pain, with the characteristics and associated features of a disorder described under 3. Trigeminal autonomic cephalalgias in the International Classification of Headache Disorders 3rd Edition, which include conjunctival injection and/or lacrimation, nasal congestion and/or rhinorrhoea, eyelid oedema, forehead and facial sweating, miosis and/or ptosis.</obo:IAO_0000115>
+        <obo:IAO_0000115>Attacks of pain, exclusively in the orofacial region, without head pain, with the characteristics and associated features of a disorder described under &quot;3. Trigeminal autonomic cephalalgias&quot; in the International Classification of Headache Disorders 3rd Edition, which include conjunctival injection and/or lacrimation, nasal congestion and/or rhinorrhoea, eyelid oedema, forehead and facial sweating, miosis and/or ptosis.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-02T19:37:03Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12707,7 +12711,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010260"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Attacks of pain, exclusively in the orofacial region, without head pain, with the characteristics and associated features of a disorder described under 3. Trigeminal autonomic cephalalgias in the International Classification of Headache Disorders 3rd Edition, which include conjunctival injection and/or lacrimation, nasal congestion and/or rhinorrhoea, eyelid oedema, forehead and facial sweating, miosis and/or ptosis.</owl:annotatedTarget>
+        <owl:annotatedTarget>Attacks of pain, exclusively in the orofacial region, without head pain, with the characteristics and associated features of a disorder described under &quot;3. Trigeminal autonomic cephalalgias&quot; in the International Classification of Headache Disorders 3rd Edition, which include conjunctival injection and/or lacrimation, nasal congestion and/or rhinorrhoea, eyelid oedema, forehead and facial sweating, miosis and/or ptosis.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -12969,7 +12973,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010271">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010260"/>
-        <obo:IAO_0000115>While no isolated facial equivalent of 3.4 Hemicrania continua, described in International Classification of Headache Disorders 3rd Edition,, has so far been clearly established, extension of pain into the face in hemicrania continua has been described. Thus, pain referral and/or radiation to oral and/or facial structures may cause diagnostic difficulties.</obo:IAO_0000115>
+        <obo:IAO_0000115>While no isolated facial equivalent of 3.4 Hemicrania continua, described in International Classification of Headache Disorders 3rd Edition, has so far been clearly established, extension of pain into the face in hemicrania continua has been described. Thus, pain referral and/or radiation to oral and/or facial structures may cause diagnostic difficulties.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-07T17:27:44Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -12979,7 +12983,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010271"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>While no isolated facial equivalent of 3.4 Hemicrania continua, described in International Classification of Headache Disorders 3rd Edition,, has so far been clearly established, extension of pain into the face in hemicrania continua has been described. Thus, pain referral and/or radiation to oral and/or facial structures may cause diagnostic difficulties.</owl:annotatedTarget>
+        <owl:annotatedTarget>While no isolated facial equivalent of 3.4 Hemicrania continua, described in International Classification of Headache Disorders 3rd Edition, has so far been clearly established, extension of pain into the face in hemicrania continua has been described. Thus, pain referral and/or radiation to oral and/or facial structures may cause diagnostic difficulties.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -13009,7 +13013,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010273">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010272"/>
-        <obo:IAO_0000115>Neurovascular orofacial pain that lasts between 1-4 hours.</obo:IAO_0000115>
+        <obo:IAO_0000115>Neurovascular orofacial pain that lasts from 1-4 hours.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-07T17:30:01Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -13019,7 +13023,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010273"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Neurovascular orofacial pain that lasts between 1-4 hours.</owl:annotatedTarget>
+        <owl:annotatedTarget>Neurovascular orofacial pain that lasts from 1-4 hours.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -13375,7 +13379,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0002524"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>GIngival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues.</obo:IAO_0000115>
+        <obo:IAO_0000115>Gingival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:28:26Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -13385,7 +13389,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010293"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>GIngival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues.</owl:annotatedTarget>
+        <owl:annotatedTarget>Gingival pain due to gingivitis resulting from a hypersensitivity or allergic reaction in the gingival tissues.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -13401,7 +13405,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_1110054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Oral mucosal pain due to oralmucosal inflammation resulting from an autoimmue disease.</obo:IAO_0000115>
+        <obo:IAO_0000115>Oral mucosal pain due to oral mucosal inflammation resulting from an autoimmune disease.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:29:51Z</terms:created>
@@ -13412,7 +13416,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010294"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Oral mucosal pain due to oralmucosal inflammation resulting from an autoimmue disease.</owl:annotatedTarget>
+        <owl:annotatedTarget>Oral mucosal pain due to oral mucosal inflammation resulting from an autoimmune disease.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -13501,7 +13505,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <oboInOwl:hasRelatedSynonym>trigeminal neuropathic pain attributed to other disorder</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
         <rdfs:comment>ICOP number: 4.1.2</rdfs:comment>
-        <rdfs:comment>Superimposed brief pain paroxysms may occur but these are not the predominant pain type. This combination is distinct from that of 4.1.1 Trigeminal neuralgia. There are clinically detectable somatosensory changes within the trigeminal distribution, and mechanical allodynia and cold hyperalgesia/allodynia are common, fulfilling the IASP criteria for neuropathic pain. Allodynic areas may be much larger than the punctate trigger zones present in 4.1.1 Trigeminal neuralgia.</rdfs:comment>
+        <rdfs:comment>Superimposed brief pain paroxysms may occur, but these are not the predominant pain type. This combination is distinct from that of 4.1.1 Trigeminal neuralgia. There are clinically detectable somatosensory changes within the trigeminal distribution, and mechanical allodynia and cold hyperalgesia/allodynia are common, fulfilling the IASP criteria for neuropathic pain. Allodynic areas may be much larger than the punctate trigger zones present in 4.1.1 Trigeminal neuralgia.</rdfs:comment>
         <rdfs:label xml:lang="en">trigeminal neuropathic pain</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -13517,7 +13521,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010300">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010299"/>
-        <obo:IAO_0000115>Unilateral facial pain of less than 3 months’ duration in the distribution of one or more branches of the trigeminal nerve, caused by, and associated with other symptoms and/or clinical signs of, acute herpes zoster.</obo:IAO_0000115>
+        <obo:IAO_0000115>Unilateral facial pain of less than 3 months’ duration in the distribution of one or more branches of the trigeminal nerve, caused by acute herpes zoster and associated with other symptoms and/or clinical signs of the condition.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:41:58Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -13527,7 +13531,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010300"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Unilateral facial pain of less than 3 months’ duration in the distribution of one or more branches of the trigeminal nerve, caused by, and associated with other symptoms and/or clinical signs of, acute herpes zoster.</owl:annotatedTarget>
+        <owl:annotatedTarget>Unilateral facial pain of less than 3 months’ duration in the distribution of one or more branches of the trigeminal nerve, caused by acute herpes zoster and associated with other symptoms and/or clinical signs of the condition.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -13557,7 +13561,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010302">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010299"/>
-        <obo:IAO_0000115>Unilateral or bilateral facial or oral pain following and caused by trauma to the trigeminal nerve(s), with other symptoms and/or clinical signs of trigeminal nerve dysfunction, and persisting or recurring for more than 3 months.</obo:IAO_0000115>
+        <obo:IAO_0000115>Unilateral or bilateral facial or oral pain caused by trauma to the trigeminal nerve(s), with other symptoms and/or clinical signs of trigeminal nerve dysfunction, and persisting or recurring for more than 3 months.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:43:22Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -13567,7 +13571,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010302"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Unilateral or bilateral facial or oral pain following and caused by trauma to the trigeminal nerve(s), with other symptoms and/or clinical signs of trigeminal nerve dysfunction, and persisting or recurring for more than 3 months.</owl:annotatedTarget>
+        <owl:annotatedTarget>Unilateral or bilateral facial or oral pain caused by trauma to the trigeminal nerve(s), with other symptoms and/or clinical signs of trigeminal nerve dysfunction, and persisting or recurring for more than 3 months.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -13577,7 +13581,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PAIN_0010303">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010302"/>
-        <obo:IAO_0000115>Post-traumatic trigeminal neuropathic pain without a diagnostic test confirmation of a lesion of the peripheral trieminal nerve explaining the pain.</obo:IAO_0000115>
+        <obo:IAO_0000115>Post-traumatic trigeminal neuropathic pain without a diagnostic test confirmation of a lesion of the peripheral trigeminal nerve explaining the pain.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-5583-4731"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T17:43:57Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010296"/>
@@ -13587,7 +13591,7 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PAIN_0010303"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Post-traumatic trigeminal neuropathic pain without a diagnostic test confirmation of a lesion of the peripheral trieminal nerve explaining the pain.</owl:annotatedTarget>
+        <owl:annotatedTarget>Post-traumatic trigeminal neuropathic pain without a diagnostic test confirmation of a lesion of the peripheral trigeminal nerve explaining the pain.</owl:annotatedTarget>
         <obo:IAO_0000119>PMID:32103673</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -15141,6 +15145,21 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget>Nonparenchymatous organ that primarily consists of dense connective tissue aggregated into fasciculi by connective tissue. Examples: sutural ligament, radiate sternocostal ligament, ligament of liver, ovarian ligament[FMA][FMA:21496].</owl:annotatedTarget>
+        <oboInOwl:source>FMA:21496</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget>Portion of connective tissue that connects bone or cartilage.[TAO]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved>2012-08-14</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>TAO:0001682</oboInOwl:external_class>
+        <oboInOwl:ontology>TAO</oboInOwl:ontology>
+        <oboInOwl:source>TAO:wd</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
         <owl:annotatedTarget>Compared with their Ediacarian predecessor, Cambrian animals in general were characterized by their much stouter bodies. The stoutness of the body is likely due to the formation of ligaments and tendons, which in turn requires the crosslinking of collagen triple helices.[well established][VHOG]</owl:annotatedTarget>
         <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
@@ -15168,21 +15187,6 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
         <oboInOwl:hasDbXref>GO_REF:0000034</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VSAO:0000073</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://dx.plos.org/10.1371/journal.pone.0051070</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
-        <owl:annotatedTarget>Nonparenchymatous organ that primarily consists of dense connective tissue aggregated into fasciculi by connective tissue. Examples: sutural ligament, radiate sternocostal ligament, ligament of liver, ovarian ligament[FMA][FMA:21496].</owl:annotatedTarget>
-        <oboInOwl:source>FMA:21496</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000211"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
-        <owl:annotatedTarget>Portion of connective tissue that connects bone or cartilage.[TAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved>2012-08-14</oboInOwl:date_retrieved>
-        <oboInOwl:external_class>TAO:0001682</oboInOwl:external_class>
-        <oboInOwl:ontology>TAO</oboInOwl:ontology>
-        <oboInOwl:source>TAO:wd</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -21953,6 +21957,34 @@ See entry in https://www.iasp-pain.org/resources/terminology.</terms:description
             </owl:Restriction>
         </owl:intersectionOf>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000090"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PAIN_0000090"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011595"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000115"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001684"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000062"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002397"/>
+            </owl:Restriction>
+        </owl:unionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PAIN_0000115"/>
     </owl:Class>
     <owl:Restriction>
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
