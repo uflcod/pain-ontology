@@ -1167,24 +1167,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000036> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PAIN_0000036> "2024-06-13T18:46:52Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "The \"emotional\" part of pain captures the affective (i.e., unpleasant) dimension of experiencing pain.")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PAIN_0000036> "Six key notes and etymology:
-
- - Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.
- 
-- Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.
-
-- Through their life experiences, individuals learn the concept of pain.
- 
-- A person’s report of an experience as pain should be respected.
- 
-- Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
-
- - Verbal description is only one of several behaviors which expresses pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PAIN_0000036> "pain"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PAIN_0000036> "- The Revised IASP definition of pain: concepts, challenges, and compromises. 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/
-
-- Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PAIN_0000036> "Merskey H, Albe-Fessard DG, Bonica JJ, et al: Pain terms: A list with definitions and notes on usage. Recommended by the IASP Subcommittee on Taxonomy. Pain 1979; 6:249-252. http://www.iasp-pain.org/source/eforums.")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PAIN_0000036> "The Revised IASP definition of pain: concepts, challenges, and compromises. 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680716/")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000036> <http://id.nlm.nih.gov/mesh/D010146>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/HP_0012531>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/MFOEM_000203>)
@@ -1194,6 +1180,13 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/SCDO_0000851>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/SYMP_0000099>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/PAIN_0000036> <http://semanticscience.org/resource/SIO_000951>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://purl.obolibrary.org/obo/PAIN_0000036> "Six key notes and etymology:
+ - Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.
+- Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.
+- Through their life experiences, individuals learn the concept of pain.
+- A person’s report of an experience as pain should be respected.
+- Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.
+ - Verbal description is only one of several behaviors which expresses pain; inability to communicate does not negate the possibility that a human or a nonhuman animal experiences pain.")
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> <http://purl.obolibrary.org/obo/EMRO_0000005>)
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/EMRO_0000000>))
 SubClassOf(<http://purl.obolibrary.org/obo/PAIN_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002404> <http://purl.obolibrary.org/obo/GO_0019233>))
