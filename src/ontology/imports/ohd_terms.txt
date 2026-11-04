@@ -16,8 +16,8 @@ http://purl.obolibrary.org/obo/OHD_0010035 # gingivitis due to fungal infection
 http://purl.obolibrary.org/obo/OHD_0010042 # oral mucosal inflammation
 http://purl.obolibrary.org/obo/OHD_0010043 # oral mucosal inflammation due to infection
 http://purl.obolibrary.org/obo/OHD_0010044 # oral mucosal inflammation due to bacterial infection
-http://purl.obolibrary.org/obo/OHD_0010046 # oral mucosal inflammation due to viral infection
-http://purl.obolibrary.org/obo/OHD_0010048 # oral mucosal inflammation due to fungal infection
+# http://purl.obolibrary.org/obo/OHD_0010046 # oral mucosal inflammation due to viral infection
+# http://purl.obolibrary.org/obo/OHD_0010048 # oral mucosal inflammation due to fungal infection
 http://purl.obolibrary.org/obo/OHD_0010054 # gingivitis due to injury
 http://purl.obolibrary.org/obo/OHD_0010056 # oral mucosal inflammation due to injury
 http://purl.obolibrary.org/obo/OHD_0010060 # pulpitis
@@ -37,7 +37,7 @@ http://purl.obolibrary.org/obo/OHD_0010103 # chronic periodontitis
 http://purl.obolibrary.org/obo/OHD_0010107 # reversible pulpitis due to tooth crack without evidence of missing tooth substance
 http://purl.obolibrary.org/obo/OHD_0010110 # periodontal disease due to aggressive periodontitis
 http://purl.obolibrary.org/obo/OHD_0010113 # periodontal disease due to necrotizing ulcerative periodontitis
-http://purl.obolibrary.org/obo/OHD_0010143 # hyperocclusion
+# http://purl.obolibrary.org/obo/OHD_0010143 # hyperocclusion
 http://purl.obolibrary.org/obo/OHD_0010144 # hyperarticulation
 http://purl.obolibrary.org/obo/OHD_0010145 # hyperocclusion following dental restorative procedure
 http://purl.obolibrary.org/obo/OHD_0010146 # hyperarticulation following dental restorative procedure
