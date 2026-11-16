@@ -1305,7 +1305,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PAIN_0000044> ObjectIntersecti
 
 # Class: <http://purl.obolibrary.org/obo/PAIN_0000045> (damaged neural tissue)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000045> "Neural tissue that is afflicted with injury or disease."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PAIN_0000045> "Neural tissue that is damaged."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/PAIN_0000045> "damaged neural tissue (PAIN)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000045> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PAIN_0000045> <https://orcid.org/0009-0002-7282-0836>)
